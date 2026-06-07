@@ -1,6 +1,6 @@
 # AITasks — petsMetrics AI 编程任务书
 
-> **用途**：AI 编程助手（GitHub Copilot / Claude）的分阶段执行计划。  
+> **用途**：AI 编程助手的分阶段执行计划。  
 > **读取顺序**（执行任何任务前必须先读）：`README.MD` → `ArkCon.md` → `.github/copilot-instructions.md` → 对应 `Docs/` 设计文档。  
 > **约束来源**：所有编码规范来自 `ArkCon.md §Core Principles` 和 `.github/copilot-instructions.md`；架构模式来自 `ArkCon.md §1–§10`。
 

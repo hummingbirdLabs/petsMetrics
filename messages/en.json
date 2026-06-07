@@ -1,0 +1,13 @@
+{
+  "common": {
+    "button": { "submit": "", "calculate": "", "reset": "", "download": "", "share": "" },
+    "disclaimer": { "standard": "This tool provides general reference information only and does not constitute veterinary advice. Always consult a licensed veterinarian for health decisions." },
+    "unit": { "kg": "kg", "lb": "lb", "ml": "ml", "oz": "oz", "kcal": "kcal" }
+  },
+  "nav": {},
+  "home": {},
+  "dog": {},
+  "cat": {},
+  "profile": {},
+  "shared": {}
+}

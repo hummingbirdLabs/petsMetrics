@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* 全局品牌色 */
+  --brand-navy: #1B2D4F;
+  --brand-teal: #0D9488;
+  --brand-teal-light: #CCFBF1;
+  --white: #FFFFFF;
+  --gray-50: #F8FAFC;
+  --gray-100: #F1F5F9;
+  --gray-300: #CBD5E1;
+  --gray-500: #64748B;
+  --gray-700: #334155;
+  --gray-900: #0F172A;
+
+  /* 狗狗板块 — 温暖琥珀色 */
+  --dog-primary: #D97706;
+  --dog-primary-dark: #92400E;
+  --dog-primary-light: #FEF3C7;
+  --dog-accent: #F59E0B;
+  --dog-surface: #FFFBEB;
+
+  /* 猫咪板块 — 优雅紫罗兰 */
+  --cat-primary: #7C3AED;
+  --cat-primary-dark: #4C1D95;
+  --cat-primary-light: #EDE9FE;
+  --cat-accent: #A78BFA;
+  --cat-surface: #F5F3FF;
+
+  /* 语义状态色 */
+  --status-safe: #10B981;
+  --status-safe-bg: #D1FAE5;
+  --status-caution: #F59E0B;
+  --status-caution-bg: #FEF3C7;
+  --status-toxic: #EF4444;
+  --status-toxic-bg: #FEE2E2;
+  --status-info: #3B82F6;
+  --status-info-bg: #DBEAFE;
+}
+
+/* 深色模式覆盖 */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --white: #0F172A;
+    --gray-50: #1E293B;
+    --gray-100: #334155;
+    --gray-300: #475569;
+    --gray-500: #94A3B8;
+    --gray-700: #CBD5E1;
+    --gray-900: #F1F5F9;
+    --brand-navy: #E2E8F0;
+    --brand-teal-light: #0F766E;
+    --dog-primary-light: #451A03;
+    --dog-surface: #1C0E00;
+    --cat-primary-light: #2E1065;
+    --cat-surface: #13072B;
+    --status-safe-bg: #064E3B;
+    --status-caution-bg: #451A03;
+    --status-toxic-bg: #450A0A;
+    --status-info-bg: #1E3A5F;
+  }
+}
