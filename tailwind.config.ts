@@ -9,9 +9,9 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        display: ['"Plus Jakarta Sans"', '"Inter"', 'system-ui', 'sans-serif'],
-        body: ['"Inter"', 'system-ui', '-apple-system', 'sans-serif'],
-        mono: ['"DM Mono"', '"JetBrains Mono"', 'monospace'],
+        display: ['var(--font-display)', '"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+        body: ['var(--font-body)', '"Inter"', 'system-ui', 'sans-serif'],
+        mono: ['var(--font-mono)', '"DM Mono"', 'monospace'],
       },
       colors: {
         brand: {
