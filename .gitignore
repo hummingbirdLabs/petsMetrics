@@ -1,0 +1,55 @@
+# --- [ 核心依赖 ] ---
+node_modules/
+.pnpm-debug.log*
+
+# 本地 npm/pnpm 缓存
+.npm/
+.npm_cache/
+_cacache/
+.pnpm-store/
+
+# --- [ Next.js & 构建输出 ] ---
+.next/
+out/
+dist/
+# 如果后续使用了类似 Contentlayer 的库
+.contentlayer/
+
+# --- [ 任务运行器 (Turborepo) ] ---
+.turbo/
+
+# --- [ 环境变量 & 私密信息 (绝对禁止上传) ] ---
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.pem
+# 你的 Vercel 部署生成的本地元数据
+.vercel/
+
+# --- [ 测试 (Vitest) ] ---
+coverage/
+__snapshots__/
+
+# --- [ 调试 & 操作系统 ] ---
+*.log
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# --- [ IDE & 编辑器 ] ---
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/launch.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
