@@ -1,39 +1,45 @@
-# --- [ 核心依赖 ] ---
+# === Dependencies ===
 node_modules/
 .pnpm-debug.log*
-
-# 本地 npm/pnpm 缓存
 .npm/
-.npm_cache/
-_cacache/
 .pnpm-store/
 
-# --- [ Next.js & 构建输出 ] ---
+# === Build Outputs ===
 .next/
 out/
 dist/
-# 如果后续使用了类似 Contentlayer 的库
 .contentlayer/
 
-# --- [ 任务运行器 (Turborepo) ] ---
-.turbo/
+# === TypeScript ===
+*.tsbuildinfo
+next-env.d.ts
 
-# --- [ 环境变量 & 私密信息 (绝对禁止上传) ] ---
+# === Vercel ===
+.vercel/
+
+# === Environment Variables (NEVER commit secrets) ===
 .env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 *.pem
-# 你的 Vercel 部署生成的本地元数据
-.vercel/
 
-# --- [ 测试 (Vitest) ] ---
+# === Testing ===
 coverage/
 __snapshots__/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
 
-# --- [ 调试 & 操作系统 ] ---
+# === Debug & Logs ===
 *.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# === OS Artifacts ===
 .DS_Store
 .AppleDouble
 .LSOverride
@@ -42,7 +48,7 @@ Thumbs.db
 ehthumbs.db
 desktop.ini
 
-# --- [ IDE & 编辑器 ] ---
+# === IDE & Editors ===
 .vscode/*
 !.vscode/extensions.json
 !.vscode/settings.json
