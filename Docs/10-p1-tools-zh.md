@@ -1,481 +1,477 @@
-# Page Design: P0/P1 Tools — EU Travel Checker, BARF Calculator, Insurance Estimator
+# 页面设计：P0/P1 工具 — 欧盟旅行检查器、BARF 计算器、保险估算器
 
-This document covers tools across two priority tiers:
+本文档涵盖两个优先级的工具：
 
-**P0 (launch day):**
-- **EU Pet Travel Requirements Checker** — `petsmetrics.com/shared/eu-pet-travel-checker/` ← **upgraded from P1**
+**P0（上线日）：**
+- **欧盟宠物旅行要求检查器** — `petsmetrics.com/shared/eu-pet-travel-checker/` ← **从 P1 升级**
 
-**P1 (within 3 months of P0):**
-- **BARF Raw Feeding Calculator** — `petsmetrics.com/shared/barf-calculator/`
-- **Pet Insurance Cost Estimator** — `petsmetrics.com/shared/pet-insurance-estimator/`
+**P1（P0 后 3 个月内）：**
+- **BARF 生食喂养计算器** — `petsmetrics.com/shared/barf-calculator/`
+- **宠物保险费用估算器** — `petsmetrics.com/shared/pet-insurance-estimator/`
 
-> **EU Travel Checker priority upgrade rationale**: This is the only English-language tool covering EU pet travel requirements with low competition (DA < 30 incumbents). It is the fastest path to acquiring media backlinks from European pet publications and travel blogs — a critical lever for early domain authority. It launches with P0 tools to immediately target the European market and seed the external link profile. See README §3.2 for full link-building strategy.
+> **欧盟旅行检查器优先级提升理由**：这是唯一涵盖欧盟宠物旅行要求且竞争较低（DA < 30 的现有工具）的英语工具。这是从欧洲宠物出版物和旅行博客获取媒体反向链接的最快途径——这是早期域名权威性的关键杠杆。它与 P0 工具一起发布，立即瞄准欧洲市场并建立外部链接配置文件。完整的链接建设策略见 README §3.2。
 
 ---
 
-# TOOL 1: EU Pet Travel Requirements Checker ← P0
+# 工具 1：欧盟宠物旅行要求检查器 ← P0
 
 **URL**: `petsmetrics.com/shared/barf-calculator/`  
-**Template**: A — Tool Page (2-column with sidebar)  
-**Audience**: High-intent raw feeding community (Reddit r/rawpetfood 400k+ members)  
-**Monetization**: Paid PDF download ($4.99) — highest-converting paid product
+**模板**: A — 工具页面（带侧边栏的两列布局）  
+**受众**: 高意图的生食喂养社区（Reddit r/rawpetfood 40 万+成员）  
+**变现方式**: 付费 PDF 下载（$4.99）— 转化率最高的付费产品
 
 ---
 
-## 1. SEO Metadata
+## 1. SEO 元数据
 
 ```
-Title:    BARF Calculator — Raw Feeding Portions for Dogs & Cats | petsMetrics
-Desc:     Calculate exact raw feeding portions using scientifically validated BARF ratios. 
-          Dog and cat daily amounts by ingredient. Download weekly shopping list PDF.
+Title:    BARF 计算器 — 狗狗与猫咪的生食喂养量 | petsMetrics
+Desc:     使用经过科学验证的 BARF 比例计算确切的生食喂养量。
+          狗狗和猫咪每日按成分计算的量。下载每周购物清单 PDF。
 Canonical: https://petsmetrics.com/shared/barf-calculator/
 Schema:   WebApplication + FAQPage
-H1:       BARF & Raw Feeding Calculator for Dogs and Cats
+H1:       狗狗与猫咪的 BARF 与生食喂养计算器
 ```
 
 ---
 
-## 2. Full Page Layout
+## 2. 完整页面布局
 
 ```
 ┌──────────────────────────────────────────────────────────────────┐
-│  Global Nav                                                      │
+│  全局导航                                                        │
 ├──────────────────────────────────────────────────────────────────┤
-│  Pet Profile Bar                                                 │
+│  宠物档案栏                                                      │
 ├─────────────────────────────────────┬────────────────────────────┤
 │                                     │                            │
-│  MAIN CONTENT                       │  SIDEBAR                   │
+│  主内容                             │  侧边栏                   │
 │                                     │                            │
-│  [1] Page Header + species toggle   │  [A] What is BARF?        │
-│  [2] Input Form                     │  [B] Safety Warning        │
-│  [3] Daily Portions Result          │  [C] Related Tools         │
-│  [4] Weekly Shopping List Preview   │                            │
-│  [5] Paid PDF CTA                   │                            │
-│  [6] Disclaimer                     │                            │
+│  [1] 页面标题 + 物种切换            │  [A] 什么是 BARF？        │
+│  [2] 输入表单                       │  [B] 安全警告            │
+│  [3] 每日喂养量结果                 │  [C] 相关工具             │
+│  [4] 每周购物清单预览               │                            │
+│  [5] 付费 PDF 号召性用语            │                            │
+│  [6] 免责声明                       │                            │
 │  [7] SEO FAQ                        │                            │
 │                                     │                            │
 └─────────────────────────────────────┴────────────────────────────┘
-│  Footer                                                          │
+│  页脚                                                            │
 ```
 
 ---
 
-## 3. Species Toggle
+## 3. 物种切换
 
 ```
-  Calculate for:
+  为以下内容计算：
   ┌──────────────────┬──────────────────┐
-  │  🐕  Dog         │  🐱  Cat         │
+  │  🐕  狗狗         │  🐱  猫咪         │
   └──────────────────┴──────────────────┘
 ```
 
-Selecting cat hides "Vegetables/Berries" row in results (cats don't require plant matter in BARF).
+选择猫咪会隐藏结果中的"蔬菜/浆果"行（猫咪在 BARF 中不需要植物性物质）。
 
 ---
 
-## 4. Input Form
+## 4. 输入表单
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
 │                                                                 │
-│  Target body weight *                                           │
+│  目标体重 *                                                      │
 │  ┌────────────────────────────┬──────────────┐                 │
 │  │  28                        │  kg  │  lb   │                 │
 │  └────────────────────────────┴──────────────┘                 │
-│  Use ideal weight for overweight pets, not current weight.      │
+│  超重宠物使用理想体重，而非当前体重。                            │
 │                                                                 │
-│  Daily feeding percentage *                                     │
+│  每日喂养百分比 *                                               │
 │  ┌──────────────────────────────────────────────────────────┐  │
-│  │  Feeding %: [────────●────────────] 2.5%                 │  │
+│  │  喂养 %：[────────●────────────] 2.5%                 │  │
 │  └──────────────────────────────────────────────────────────┘  │
 │                                                                 │
-│  ○  1.5% — Weight loss / obese                                  │
-│  ○  2.0% — Sedentary adult                                      │
-│  ●  2.5% — Active adult (typical)    ← default                 │
-│  ○  3.0% — Very active / working dog                            │
-│  ○  10%  — Puppy (< 6 months)                                  │
+│  ○  1.5% — 体重减轻 / 肥胖                                      │
+│  ○  2.0% — 久坐成年犬                                            │
+│  ●  2.5% — 活跃成年犬（典型情况）    ← 默认                     │
+│  ○  3.0% — 非常活跃 / 工作犬                                    │
+│  ○  10% — 幼犬（< 6 个月）                                        │
 │                                                                 │
-│  Optional — Ingredients I have / prefer:                        │
-│  ☑ Chicken    ☑ Beef     ☑ Pork     □ Venison                  │
-│  ☑ Chicken bones  ☑ Beef bones   □ Turkey wings                │
-│  ☑ Chicken liver  □ Duck liver   ☑ Beef liver                  │
-│  ☑ Kidney    ☑ Spleen   □ Pancreas                             │
-│  ☑ Leafy greens  ☑ Blueberries  □ Broccoli  (dog only)        │
+│  可选 — 我有/偏好的成分：                                         │
+│  ☑ 鸡肉    ☑ 牛肉     ☑ 猪肉     □ 鹿肉                      │
+│  ☑ 鸡骨头  ☑ 牛骨头   □ 火鸡翅膀                                │
+│  ☑ 鸡肝    □ 鸭肝     ☑ 牛肝                                  │
+│  ☑ 肾脏    ☑ 脾脏   □ 胰腺                                     │
+│  ☑ 绿叶菜  ☑ 蓝莓  □ 西兰花  （仅狗狗）                      │
 │                                                                 │
-│              [Calculate Portions →]                             │
+│              [计算喂养量 →]                                     │
 │                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## 5. Daily Portions Result
+## 5. 每日喂养量结果
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
 │                                                                 │
-│  🥩 Buddy's Daily Raw Feeding Plan         (H2)                 │
-│  Target: 2.5% of 28 kg = 700g / day total                      │
+│  🥩 Buddy 的每日生食喂养计划         （H2）                      │
+│  目标：28 kg 的 2.5% = 700g / 天总计                            │
 │                                                                 │
 │  ┌──────────────────────────────────────────────────────────┐  │
-│  │  Component              % of Diet   Daily Amount          │  │
+│  │  成分                  饮食占比   每日量                 │  │
 │  ├──────────────────────────────────────────────────────────┤  │
-│  │  🥩 Muscle Meat          70%         490g  (1.08 lb)      │  │
-│  │     e.g. Chicken thigh,              ──────────────────   │  │
-│  │     Beef mince                       245g AM + 245g PM    │  │
+│  │  🥩 肌肉肉              70%         490g  （1.08 lb）      │
+│  │     例如 鸡大腿，              ──────────────────   │  │
+│  │     牛肉碎                       245g 上午 + 245g 下午    │  │
 │  ├──────────────────────────────────────────────────────────┤  │
-│  │  🦴 Raw Meaty Bone        10%          70g               │  │
-│  │     e.g. Chicken wing,               ──────────────────   │  │
-│  │     Beef neck                        35g AM or PM        │  │
+│  │  🦴 生骨肉              10%          70g               │  │
+│  │     例如 鸡翅膀，               ──────────────────   │  │
+│  │     牛颈骨                        35g 上午或下午        │  │
 │  ├──────────────────────────────────────────────────────────┤  │
-│  │  🫀 Liver                  5%          35g               │  │
-│  │     ⚠️ MAX per week:      ───         245g (DO NOT exceed)│  │
+│  │  🫀 肝脏                  5%          35g               │  │
+│  │     ⚠️ 每周最多：      ───         245g（切勿超过）       │
 │  ├──────────────────────────────────────────────────────────┤  │
-│  │  🫁 Secreting Organ        5%          35g               │  │
-│  │     e.g. Kidney, spleen               Alternate daily    │  │
+│  │  🫁 分泌器官            5%          35g               │  │
+│  │     例如 肾脏，脾脏               每天交替              │  │
 │  ├──────────────────────────────────────────────────────────┤  │
-│  │  🥦 Vegetables/Berries    10%          70g               │  │
-│  │     (Dog only)                        Blended/pureed     │  │
+│  │  🥦 蔬菜/浆果            10%          70g               │  │
+│  │     （仅狗狗）                        混合/打成泥           │  │
 │  └──────────────────────────────────────────────────────────┘  │
 │                                                                 │
-│  ⚠️  Liver warning: Exceeding 5% of diet can cause            │
-│     Vitamin A toxicity. Never exceed 5% weekly.               │
+│  ⚠️  肝脏警告：超过饮食的 5% 会导致                            │
+│     维生素 A 中毒。切勿每周超过 5%。                             │
 │                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## 6. Weekly Shopping List Preview & PDF CTA
+## 6. 每周购物清单预览与 PDF 号召性用语
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
 │                                                                 │
-│  📋 Weekly Shopping List Preview                                │
+│  📋 每周购物清单预览                                            │
 │  ─────────────────────────────────────────────────────────────  │
 │                                                                 │
-│  For 7 days of feeding:                                         │
+│  7 天喂养量：                                                     │
 │                                                                 │
-│  🥩 Muscle Meat:     3.43 kg  total                            │
-│  🦴 Raw Meaty Bone:  0.49 kg  total   (blurred — preview only) │
-│  🫀 Liver:           0.24 kg  total   (blurred — preview only) │
-│  🫁 Secreting Organ: 0.24 kg  total   (blurred — preview only) │
-│  🥦 Vegetables:      0.49 kg  total   (blurred — preview only) │
+│  🥩 肌肉肉：     3.43 kg  总计                                  │
+│  🦴 生骨肉：    0.49 kg  总计   （模糊 — 仅预览）              │
+│  🫀 肝脏：       0.24 kg  总计   （模糊 — 仅预览）              │
+│  🫁 分泌器官：    0.24 kg  总计   （模糊 — 仅预览）              │
+│  🥦 蔬菜：      0.49 kg  总计   （模糊 — 仅预览）              │
 │                                                                 │
 │  ─────────────────────────────────────────────────────────────  │
 │                                                                 │
-│  📄  Download the Full Weekly Shopping List                     │
+│  📄  下载完整的每周购物清单                                      │
 │                                                                 │
-│  · Itemized ingredients with exact weights per day             │
-│  · 7-day rotation plan for variety                             │
-│  · Printable grocery checklist format                           │
+│  · 按天分列的详细成分与确切重量                                  │
+│  · 7 天轮换计划以获得多样性                                      │
+│  · 可打印的购物清单格式                                          │
 │                                                                 │
 │  ┌──────────────────────────────────────────────────────────┐  │
-│  │  🔒  Download PDF — $4.99                                 │  │
-│  │  [Pay with Card]  or  [Pay with PayPal]                  │  │
+│  │  🔒  下载 PDF — $4.99                                     │  │
+│  │  [用卡支付]  或  [用 PayPal 支付]                  │  │
 │  │                                                          │  │
-│  │  Processed by Stripe · Secure · Instant download         │  │
+│  │  Stripe 处理 · 安全 · 即时下载                            │  │
 │  └──────────────────────────────────────────────────────────┘  │
 │                                                                 │
-│  Or: $9.99/year — unlimited downloads for all your pets         │
+│  或者：$9.99/年 — 您所有宠物的无限下载                          │
 │                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
-**Payment implementation**: Stripe Payment Links (no backend required). Redirects to Stripe-hosted checkout.
+**支付实现**：Stripe 支付链接（无需后端）。重定向到 Stripe 托管的结账页面。
 
 ---
 
-# TOOL 2: EU Pet Travel Requirements Checker ← **P0 · Launch Day**
+# 工具 2：欧盟宠物旅行要求检查器 ← **P0 · 上线日**
 
 **URL**: `petsmetrics.com/shared/eu-pet-travel-checker/`  
-**Template**: A — Tool Page (2-column)  
-**Strategic priority**: Best chance for early media coverage and backlinks (niche, no strong competitors in English). Launched with P0 tools to seed EU domain authority from day one.
+**模板**: A — 工具页面（两列布局）  
+**战略优先级**：早期媒体报道和反向链接的最佳机会（利基市场，英语中没有强大竞争对手）。与 P0 工具一起发布，从第一天开始建立欧盟域名权威性。
 
 ---
 
-## 1. SEO Metadata
+## 1. SEO 元数据
 
 ```
-Title:    EU Pet Travel Requirements Checker 2026 — Dogs & Cats | petsMetrics
-Desc:     Check official EU pet travel requirements by destination country. Microchip, 
-          rabies vaccination, tapeworm treatment, pet passport & more. Updated 2026.
+Title:    欧盟宠物旅行要求检查器 2026 — 狗狗与猫咪 | petsMetrics
+Desc:     按目的地国家检查官方欧盟宠物旅行要求。微芯片、狂犬病疫苗、绦虫治疗、宠物护照等。2026 年更新。
 Canonical: https://petsmetrics.com/shared/eu-pet-travel-checker/
 Schema:   WebApplication + FAQPage
-H1:       EU Pet Travel Requirements Checker
+H1:       欧盟宠物旅行要求检查器
 ```
 
 ---
 
-## 2. Input Form
+## 2. 输入表单
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
 │                                                                 │
-│  Your travel details                                            │
+│  您的旅行详情                                                   │
 │                                                                 │
-│  Departing from:                                                │
+│  出发地：                                                       │
 │  ┌──────────────────────────────────────────────────────────┐  │
-│  │  🇩🇪  Germany                                         ▾  │  │
+│  │  🇩🇪  德国                                         ▾  │  │
 │  └──────────────────────────────────────────────────────────┘  │
 │                                                                 │
-│  Destination:                                                   │
+│  目的地：                                                       │
 │  ┌──────────────────────────────────────────────────────────┐  │
-│  │  🇬🇧  United Kingdom                                   ▾  │  │
+│  │  🇬🇧  英国                                       ▾  │  │
 │  └──────────────────────────────────────────────────────────┘  │
 │                                                                 │
-│  Pet type:                                                      │
+│  宠物类型：                                                     │
 │  ┌──────────────────┬──────────────────┐                       │
-│  │  🐕  Dog         │  🐱  Cat         │                       │
+│  │  🐕  狗狗         │  🐱  猫咪         │                       │
 │  └──────────────────┴──────────────────┘                       │
 │                                                                 │
-│  What documents do you already have? (check all that apply)     │
-│  ☑  EU Pet Passport                                            │
-│  ☑  Microchip (ISO 11784/11785)                               │
-│  ☑  Rabies vaccination (current)                               │
-│  □  Rabies antibody titre test (blood test)                    │
-│  □  Tapeworm treatment certificate                              │
-│  □  Health certificate from vet (AHC)                          │
+│  您已有哪些文件？（选中所有适用项）                            │
+│  ☑  欧盟宠物护照                                                │
+│  ☑  微芯片（ISO 11784/11785）                                  │
+│  ☑  狂犬病疫苗（当前有效）                                      │
+│  □  狂犬病抗体滴度测试（血液测试）                              │
+│  □  绦虫治疗证书                                                │
+│  □  兽医健康证书（AHC）                                        │
 │                                                                 │
-│  Planned travel date:                                           │
+│  计划旅行日期：                                                 │
 │  ┌──────────────────────────────────────────────────────────┐  │
 │  │  📅  MM / DD / YYYY                                       │  │
 │  └──────────────────────────────────────────────────────────┘  │
 │                                                                 │
-│              [Check Requirements →]                             │
+│              [检查要求 →]                                       │
 │                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## 3. Results Display
+## 3. 结果显示
 
-### Checklist Result
+### 清单结果
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
 │                                                                 │
-│  ✈️  Germany → United Kingdom — Dog Travel Requirements (2026)  │
+│  ✈️  德国 → 英国 — 狗狗旅行要求（2026）                        │
 │                                                                 │
 │  ┌──────────────────────────────────────────────────────────┐  │
-│  │  Requirements                    Status    Deadline       │  │
+│  │  要求                          状态     截止日期          │  │
 │  ├──────────────────────────────────────────────────────────┤  │
-│  │  ✅ Microchip (ISO 15-digit)     Complete  —              │  │
-│  │  ✅ Rabies Vaccination           Complete  —              │  │
-│  │  ❌ AHC (Animal Health Cert.)   Missing   Get before     │  │
-│  │     (from accredited UK vet)              Jul 1, 2026    │  │
-│  │  ❌ Tapeworm Treatment           Missing   1–5 days       │  │
-│  │     (Praziquantel, documented)             before entry  │  │
-│  │  ✅ EU Pet Passport              Complete  UK entry: ✓   │  │
+│  │  ✅ 微芯片（ISO 15 位）         已完成  —                │  │
+│  │  ✅ 狂犬病疫苗                 已完成  —                │  │
+│  │  ❌ AHC（动物健康证书）        缺失    7 月 1 日前获取  │  │
+│  │     （英国认证兽医签发）                      2026 年      │  │
+│  │  ❌ 绦虫治疗                   缺失    入境前 1–5 天     │  │
+│  │     （吡喹酮，有记录）                        前             │  │
+│  │  ✅ 欧盟宠物护照              已完成  英国入境：✓       │  │
 │  └──────────────────────────────────────────────────────────┘  │
 │                                                                 │
 │  ─────────────────────────────────────────────────────────────  │
 │                                                                 │
-│  ❗  2 requirements missing. You may be denied entry.           │
+│  ❗  缺失 2 项要求。您可能会被拒绝入境。                         │
 │                                                                 │
 │  ─────────────────────────────────────────────────────────────  │
 │                                                                 │
-│  📋  What you need to do:                                       │
+│  📋  您需要做什么：                                               │
 │                                                                 │
-│  1.  Get an Animal Health Certificate (AHC)                     │
-│      · Must be issued by a UK-government-listed vet             │
-│      · Valid for 10 days from date of issue to entry           │
-│      · ⚠️ Cannot be issued by a vet in Germany                 │
-│      → Timeline: Book appointment at least 2 weeks before      │
+│  1.  获取动物健康证书（AHC）                                     │
+│      · 必须由英国政府指定的兽医签发                               │
+│      · 从签发日期到入境有效期 10 天                             │
+│      · ⚠️ 不能由德国兽医签发                                    │
+│      → 时间线：至少提前 2 周预约                                │
 │                                                                 │
-│  2.  Get Tapeworm Treatment                                     │
-│      · Must contain praziquantel                                │
-│      · Must be administered by a vet AND documented            │
-│      · Must be done 1–5 days before entry into UK             │
-│      · Exact timing matters — too early or late = denied       │
+│  2.  获取绦虫治疗                                               │
+│      · 必须含吡喹酮                                              │
+│      · 必须由兽医管理 AND 有记录                                │
+│      · 必须在入境英国前 1–5 天完成                               │
+│      · 确切时间很重要 — 太早或太晚 = 拒绝入境                   │
 │                                                                 │
 │  ─────────────────────────────────────────────────────────────  │
 │                                                                 │
-│  📎  Official Sources:                                          │
-│  · UK Gov: Pet travel rules (gov.uk)                           │
-│  · DEFRA: Bringing pets into Great Britain (gov.uk)            │
-│  · EU Commission: Pet movement rules (ec.europa.eu)            │
+│  📎  官方来源：                                                   │
+│  · 英国政府：宠物旅行规则（gov.uk）                              │
+│  · DEFRA：将宠物带入大不列颠（gov.uk）                          │
+│  · 欧盟委员会：宠物移动规则（ec.europa.eu）                      │
 │                                                                 │
-│  ⚠️  Rules last verified: January 2026. Always confirm with    │
-│     official sources before travel.                             │
+│  ⚠️  规则最后验证：2026 年 1 月。旅行前始终确认官方来源。      │
 │                                                                 │
-│  [🔗 Share This Checklist]  [📄 Save as PDF]  [📤 Share]       │
+│  [🔗 分享此清单]  [📄 保存为 PDF]  [📤 分享]                  │
 │                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
-### Country Coverage Matrix
+### 国家覆盖矩阵
 
-**Available route combinations** (shown as info below form):
+**可用路线组合**（显示在表单下方作为信息）：
 
-| Scenario | Special Requirements |
+| 情景 | 特殊要求 |
 |---|---|
-| EU → EU (Schengen) | EU Pet Passport + microchip + rabies (standard) |
-| EU → UK | AHC required (not EU Pet Passport) + tapeworm treatment |
-| EU → Finland / Ireland / Malta / Norway | Rabies antibody titre test + 3-month wait |
-| UK → EU | Revert to AHC system (post-Brexit) |
-| Non-EU → EU | Rabies titre test (if from non-listed country) |
+| 欧盟 → 欧盟（申根） | 欧盟宠物护照 + 微芯片 + 狂犬病（标准） |
+| 欧盟 → 英国 | 需要 AHC（非欧盟宠物护照）+ 绦虫治疗 |
+| 欧盟 → 芬兰 / 爱尔兰 / 马耳他 / 挪威 | 狂犬病抗体滴度测试 + 3 个月等待 |
+| 英国 → 欧盟 | 恢复到 AHC 系统（脱欧后） |
+| 非欧盟 → 欧盟 | 狂犬病滴度测试（如果来自非所列国家） |
 
 ---
 
-# TOOL 3: Pet Insurance Cost Estimator
+# 工具 3：宠物保险费用估算器
 
 **URL**: `petsmetrics.com/shared/pet-insurance-estimator/`  
-**Template**: A — Tool Page (2-column)  
-**Monetization**: All insurance links are affiliate (CPA $25–$80)
+**模板**: A — 工具页面（两列布局）  
+**变现方式**：所有保险链接都是联盟链接（CPA $25–$80）
 
 ---
 
-## 1. SEO Metadata
+## 1. SEO 元数据
 
 ```
-Title:    Pet Insurance Cost Estimator 2026 — Compare Dog & Cat Plans | petsMetrics
-Desc:     Estimate your pet insurance monthly cost and compare top providers: Lemonade, 
-          Pumpkin, Trupanion. Get ranges by breed, age and location. Free, no sign-up.
-H1:       Pet Insurance Cost Estimator & Plan Comparison
+Title:    宠物保险费用估算器 2026 — 比较狗狗与猫咪计划 | petsMetrics
+Desc:     估算您的宠物保险月费并比较顶级提供商：Lemonade、Pumpkin、Trupanion。按品种、年龄和位置获取范围。免费，无需注册。
+H1:       宠物保险费用估算器与计划比较
 ```
 
 ---
 
-## 2. Input Form
+## 2. 输入表单
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
 │                                                                 │
-│  About your pet                                                 │
+│  关于您的宠物                                                   │
 │                                                                 │
-│  Species:  ● Dog  ○ Cat                                        │
+│  物种：  ● 狗狗  ○ 猫咪                                          │
 │                                                                 │
-│  Breed:                                                         │
+│  品种：                                                         │
 │  ┌──────────────────────────────────────────────────────────┐  │
-│  │  🔍  Search breed...                                      │  │
+│  │  🔍  搜索品种...                                          │  │
 │  └──────────────────────────────────────────────────────────┘  │
-│  (Breed affects premium — high-risk breeds cost more)          │
+│  （品种影响保费 — 高风险品种成本更高）                          │
 │                                                                 │
-│  Age:                                                           │
+│  年龄：                                                         │
 │  ┌────────────────────────────────────┐                        │
-│  │  3  years   (puppy <1yr: lower)   │                        │
+│  │  3  年   （幼犬 <1 岁：较低）                                │
 │  └────────────────────────────────────┘                        │
 │                                                                 │
-│  Location:                                                      │
+│  位置：                                                         │
 │  ┌──────────────────────────────────────────────────────────┐  │
-│  │  🇺🇸 United States — State: California ▾                  │  │
+│  │  🇺🇸 美国 — 州：加利福尼亚 ▾                           │  │
 │  └──────────────────────────────────────────────────────────┘  │
-│  Or: 🇬🇧 UK · 🇩🇪 Germany · 🇫🇷 France · 🇳🇱 Netherlands        │
+│  或： 🇬🇧 英国 · 🇩🇪 德国 · 🇫🇷 法国 · 🇳🇱 荷兰              │
 │                                                                 │
-│  Coverage type:                                                 │
-│  ○  Accident-only (cheapest)                                   │
-│  ●  Accident + Illness (recommended)                           │
-│  ○  Comprehensive (includes wellness/preventive)               │
+│  保障类型：                                                     │
+│  ○  仅事故（最便宜）                                           │
+│  ●  事故 + 疾病（推荐）                                        │
+│  ○  全面（包括健康/预防）                                      │
 │                                                                 │
-│              [Compare Plans →]                                  │
+│              [比较计划 →]                                       │
 │                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## 3. Results Display — Comparison Table
+## 3. 结果显示 — 比较表
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
 │                                                                 │
-│  🛡️ Estimated Monthly Premiums                                  │
-│  Buddy · Labrador · 3 years · California · Accident + Illness  │
+│  🛡️ 估计月保费                                                 │
+│  Buddy · 拉布拉多 · 3 岁 · 加利福尼亚 · 事故 + 疾病            │
 │                                                                 │
 │  ┌───────────────┬──────────┬──────────┬──────────┬──────────┐ │
-│  │  Provider     │ Monthly  │ Deducti. │ Reimb.   │  Link    │ │
+│  │  提供商       │ 月费     │ 免赔额   │ 报销比例   │  链接    │ │
 │  ├───────────────┼──────────┼──────────┼──────────┼──────────┤ │
-│  │ 🍋 Lemonade   │ $35–$55  │  $250    │   80%    │[Get →]   │ │
-│  │ 🎃 Pumpkin    │ $40–$65  │  $100    │   90%    │[Get →]   │ │
-│  │ 🐾 Trupanion  │ $55–$85  │  $0/mo   │   90%    │[Get →]   │ │
-│  │ 🐶 Embrace    │ $45–$70  │  $200    │   80%    │[Get →]   │ │
+│  │ 🍋 Lemonade   │ $35–$55  │  $250    │   80%    │[获取 →]  │ │
+│  │ 🎃 Pumpkin    │ $40–$65  │  $100    │   90%    │[获取 →]  │ │
+│  │ 🐾 Trupanion  │ $55–$85  │  $0/月   │   90%    │[获取 →]  │ │
+│  │ 🐶 Embrace    │ $45–$70  │  $200    │   80%    │[获取 →]  │ │
 │  └───────────────┴──────────┴──────────┴──────────┴──────────┘ │
 │                                                                 │
 │  ─────────────────────────────────────────────────────────────  │
 │                                                                 │
-│  💡 Our estimate is based on publicly available rate data       │
-│     (2026). Exact premiums vary by pet health history.          │
-│     Click each provider for an accurate personalized quote.    │
+│  💡 我们的估算基于公开可用的费率数据                            │
+│     （2026）。确切保费因宠物健康史而异。                        │
+│     点击每个提供商获取准确的个性化报价。                        │
 │                                                                 │
 │  ─────────────────────────────────────────────────────────────  │
 │                                                                 │
-│  📊 Quick Comparison                                            │
+│  📊 快速比较                                                     │
 │                                                                 │
-│  Best for low monthly cost:     🍋 Lemonade                    │
-│  Best for high reimbursement:   🎃 Pumpkin (90%, $100 deduct.) │
-│  Best for zero deductible:      🐾 Trupanion                   │
-│  Best for multi-pet discount:   🐶 Embrace                     │
+│  最适合低月费：      🍋 Lemonade                                │
+│  最适合高报销：      🎃 Pumpkin（90%，$100 免赔额）           │
+│  最适合零免赔：      🐾 Trupanion                               │
+│  最适合多宠物折扣：   🐶 Embrace                                │
 │                                                                 │
-│  [📄 Download Full Comparison PDF — Free]                       │
+│  [📄 下载完整比较 PDF — 免费]                                    │
 │                                                                 │
 │  ─────────────────────────────────────────────────────────────  │
 │                                                                 │
-│  Sponsored links — We may earn a commission if you purchase    │
-│  through these links, at no extra cost to you. (FTC compliant) │
+│  赞助链接 — 通过这些链接购买我们可能会获得佣金，对您无额外费用。（符合 FTC 要求） │
 │                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## 4. Sidebar (All Three P1 Tools)
+## 4. 侧边栏（所有三个 P1 工具）
 
-### [A] Tool-Specific Tips
+### [A] 工具特定提示
 
-**BARF**: "Is raw feeding safe? Key food safety practices →"  
-**EU Travel**: "Common mistakes at EU border crossing →"  
-**Insurance**: "When to get pet insurance — before or after diagnosis →"
+**BARF**："生食喂养安全吗？关键食品安全实践 →"  
+**欧盟旅行**："欧盟边境检查的常见错误 →"  
+**保险**："何时购买宠物保险 — 诊断前或诊断后 →"
 
-### [B] Related Tools
+### [B] 相关工具
 
 ```
-│  Vaccination Schedule — understand what's covered by insurance  │
-│  Age Calculator — older pets = higher premiums                  │
-│  Gestation Calculator — insure puppies from birth              │
+│  疫苗接种计划 — 了解保险涵盖哪些内容  │
+│  年龄计算器 — 老年宠物 = 更高保费      │
+│  怀孕计算器 — 幼犬从出生开始投保       │
 ```
 
-### [C] Trust / Credibility Signal
+### [C] 信任/可信度信号
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│  🔒 Data sources updated January 2026                           │
-│  Rules verified against official government sources             │
-│  No medical advice — consult your vet for health decisions      │
+│  🔒 数据源 2026 年 1 月更新                                       │
+│  针对官方政府来源验证规则                                         │
+│  无医疗建议 — 健康决策请咨询您的兽医                                │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## 5. Mobile Layouts (All P1 Tools)
+## 5. 移动端布局（所有 P1 工具）
 
-**BARF Calculator**:
-- Ingredient toggles: 2-column grid of checkboxes
-- Portion table: Horizontal scroll
-- PDF CTA: Sticky bottom bar with price
+**BARF 计算器**：
+- 成分切换：2 列复选框网格
+- 喂养量表：水平滚动
+- PDF CTA：带价格的粘性底部栏
 
-**EU Travel Checker**:
-- Country selects: Full-width, native select on iOS
-- Requirements checklist: Full-width, stacked rows
-- Missing items: Highlighted in red, full-width action steps
+**欧盟旅行检查器**：
+- 国家选择：全宽，iOS 原生选择
+- 要求清单：全宽，堆叠行
+- 缺失项：红色高亮，全宽操作步骤
 
-**Insurance Estimator**:
-- Comparison table: Cards per provider (vertical stack instead of table)
-- Each card shows: Logo, monthly range, key differentiator, CTA
-- Quick comparison highlights: Row of colored badges
+**保险估算器**：
+- 比较表：每个提供商一张卡片（垂直堆叠而非表格）
+- 每张卡片显示：标志、月费范围、关键差异、CTA
+- 快速比较亮点：彩色徽章行
 
 ---
 
-## 6. Content Maintenance Schedule
+## 6. 内容维护计划
 
-| Tool | Update Frequency | Trigger |
+| 工具 | 更新频率 | 触发条件 |
 |---|---|---|
-| BARF Calculator | Annually | WSAVA guideline updates |
-| EU Travel Checker | Quarterly | EU regulatory changes, post-Brexit reviews |
-| Insurance Estimator | Semi-annually | Provider rate updates |
+| BARF 计算器 | 每年 | WSAVA 指南更新 |
+| 欧盟旅行检查器 | 每季度 | 欧盟法规变更，脱欧后审查 |
+| 保险估算器 | 每半年 | 提供商费率更新 |
 
-**Data source references** (all static JSON, manually maintained):
-- EU Travel: `data/eu-travel-rules.json` — source: ec.europa.eu, gov.uk DEFRA
-- Insurance: `data/insurance-rates.json` — source: published provider rate cards
-- BARF: `data/barf-ratios.json` — source: WSAVA, raw feeding veterinary literature
+**数据源引用**（所有静态 JSON，手动维护）：
+- 欧盟旅行：`data/eu-travel-rules.json` — 来源：ec.europa.eu，gov.uk DEFRA
+- 保险：`data/insurance-rates.json` — 来源：已发布的提供商费率卡
+- BARF：`data/barf-ratios.json` — 来源：WSAVA，生食喂养兽医文献

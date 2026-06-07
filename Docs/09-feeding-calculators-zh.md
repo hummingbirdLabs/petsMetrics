@@ -1,482 +1,478 @@
-# Page Design: Feeding & Weight Calculators
+# 页面设计：喂养与体重计算器
 
-This document covers three related feeding/nutrition tools:
-1. **Dog Calorie / MER Calculator** — `petsmetrics.com/dog/calorie-calculator/`
-2. **Cat BCS & Weight Management Calculator** — `petsmetrics.com/cat/bcs-weight-tracker/`
-3. **Cat Hydration Calculator** — `petsmetrics.com/cat/hydration-calculator/`
-4. **Puppy Growth Predictor** — `petsmetrics.com/dog/puppy-growth-predictor/`
+本文档涵盖三个相关的喂养/营养工具：
+1. **狗狗卡路里 / MER 计算器** — `petsmetrics.com/dog/calorie-calculator/`
+2. **猫咪 BCS 与体重管理计算器** — `petsmetrics.com/cat/bcs-weight-tracker/`
+3. **猫咪水分摄入计算器** — `petsmetrics.com/cat/hydration-calculator/`
+4. **幼犬生长预测器** — `petsmetrics.com/dog/puppy-growth-predictor/`
 
-All are **P0 · Launch Day**.
+所有工具均为 **P0 · 上线日**。
 
 ---
 
-# TOOL 1: Dog Calorie / MER Calculator
+# 工具 1：狗狗卡路里 / MER 计算器
 
 **URL**: `petsmetrics.com/dog/calorie-calculator/`  
-**Template**: A — Tool Page (2-column with sidebar)
+**模板**: A — 工具页面（带侧边栏的两列布局）
 
-## 1. SEO Metadata
+## 1. SEO 元数据
 
 ```
-Title:    Dog Calorie Calculator — How Much to Feed Your Dog | petsMetrics
-Desc:     Calculate your dog's exact daily calorie needs using the AAFCO MER formula. 
-          Get feeding amounts for any dog food brand. Based on weight & activity level.
-H1:       Dog Daily Calorie Calculator
+Title:    狗狗卡路里计算器 — 您的狗狗应该吃多少 | petsMetrics
+Desc:     使用 AAFCO MER 公式计算您狗狗的确切每日卡路里需求。
+          获取任何狗粮品牌的喂养量。基于体重和活动水平。
+H1:       狗狗每日卡路里计算器
 ```
 
-**Target keywords**: "how much to feed my dog", "dog calorie calculator", "dog daily food amount", "dog MER calculator"
+**目标关键词**: "how much to feed my dog", "dog calorie calculator", "dog daily food amount", "dog MER calculator"
 
 ---
 
-## 2. Input Form
+## 2. 输入表单
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
 │                                                                 │
-│  Step 1 of 2 — About Buddy              (step indicator dots)   │
+│  第 1/2 步 — 关于 Buddy              （步骤指示器圆点）         │
 │                                                                 │
-│  Current weight *                                               │
+│  当前体重 *                                                      │
 │  ┌────────────────────────────┬──────────────┐                 │
 │  │  28                        │  kg  │  lb   │                 │
 │  └────────────────────────────┴──────────────┘                 │
 │                                                                 │
-│  Life stage / Activity level *                                  │
+│  生命阶段 / 活动水平 *                                           │
 │                                                                 │
 │  ┌─────────────────────────────────────────────────────────┐   │
-│  │  Activity Scenario                         Coefficient  │   │
+│  │  活动场景                         系数          │   │
 │  ├─────────────────────────────────────────────────────────┤   │
-│  │  ○  Puppy under 4 months                        3.0    │   │
-│  │  ○  Puppy 4 months to adult                     2.0    │   │
-│  │  ●  Adult, neutered (typical)            ←      1.6    │   │
-│  │  ○  Adult, intact (unneutered)                  1.8    │   │
-│  │  ○  Weight loss / obese tendency                1.0    │   │
-│  │  ○  Senior dog (7+ years)                       1.4    │   │
-│  │  ○  Active / working dog                    2.5–4.8   │   │
+│  │  ○  4 个月以下幼犬                        3.0    │   │
+│  │  ○  4 个月到成年幼犬                     2.0    │   │
+│  │  ●  成年，已绝育（典型情况）      ←      1.6    │   │
+│  │  ○  成年，未绝育                          1.8    │   │
+│  │  ○  体重减轻 / 肥胖倾向                  1.0    │   │
+│  │  ○  老年犬（7+ 岁）                       1.4    │   │
+│  │  ○  活跃 / 工作犬                    2.5–4.8   │   │
 │  └─────────────────────────────────────────────────────────┘   │
 │                                                                 │
 │  ─────────────────────────────────────────────────────────────  │
 │                                                                 │
-│  Step 2 of 2 — Your Dog Food (optional)                         │
+│  第 2/2 步 — 您的狗粮（可选）                                     │
 │                                                                 │
-│  Dog food caloric density (if known):                           │
+│  狗粮卡路里密度（如果已知）：                                     │
 │  ┌───────────────────────────────────────────┐                 │
-│  │  e.g. 3500  kcal/kg   (check your bag)   │                 │
+│  │  例如 3500  kcal/kg   （检查您的包装）   │                 │
 │  └───────────────────────────────────────────┘                 │
-│  Leave blank to get kcal/day only.                              │
+│  留空仅获取卡路里/天。                                           │
 │                                                                 │
-│              [Calculate →]                                      │
+│              [计算 →]                                           │
 │                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## 3. Results Display
+## 3. 结果显示
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
 │                                                                 │
-│  🍖 Buddy's Daily Calorie Needs                                 │
+│  🍖 Buddy 的每日卡路里需求                                      │
 │                                                                 │
-│       1,117  kcal / day                 (48px / 700-weight)    │
+│       1,117  kcal / day                 （48px / 700 字重）   │
 │                                                                 │
 │  ─────────────────────────────────────────────────────────────  │
 │                                                                 │
-│  How we calculated this:                                        │
+│  我们如何计算：                                                 │
 │                                                                 │
 │  RER  =  70 × (28 kg)^0.75  =  697 kcal/day                   │
-│  MER  =  697 × 1.6 (neutered adult)  =  1,115 kcal/day        │
+│  MER  =  697 × 1.6 (已绝育成年)  =  1,115 kcal/day        │
 │                                                                 │
-│  Source: AAFCO / AAHA Energy Requirements for Dogs             │
-│                                                                 │
-│  ─────────────────────────────────────────────────────────────  │
-│                                                                 │
-│  If your food has 3,500 kcal/kg:                               │
-│                                                                 │
-│       319 g / day              (28px bold)                      │
-│       ( ≈  2 cups for typical kibble density )                 │
+│  来源：AAFCO / AAHA 狗狗能量需求                                │
 │                                                                 │
 │  ─────────────────────────────────────────────────────────────  │
 │                                                                 │
-│  📊 Daily breakdown (if feeding twice):                         │
-│     Morning:  160 g  (1 cup)                                   │
-│     Evening:  159 g  (1 cup)                                   │
+│  如果您的食物含 3,500 kcal/kg：                               │
+│                                                                 │
+│       319 g / day              （28px 粗体）                    │
+│       （≈ 2 杯典型 kibble 密度）                               │
+│                                                                 │
+│  ─────────────────────────────────────────────────────────────  │
+│                                                                 │
+│  📊 每日细分（如果一天喂两次）：                                 │
+│     早上： 160 g  （1 杯）                                      │
+│     晚上： 159 g  （1 杯）                                      │
 │                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
-Formula transparency: Show the full RER and MER calculation inline. This builds credibility and differentiates from "black box" calculators.
+公式透明度：内联显示完整的 RER 和 MER 计算。这建立了可信度，并与"黑匣子"计算器区分开来。
 
-**Formula display styling**:
-- Monospace font for numbers
-- `RER =` and `MER =` labels: `--gray-500`
-- Result values: `--gray-900` bold
+**公式显示样式**：
+- 数字使用等宽字体
+- `RER =` 和 `MER =` 标签：`--gray-500`
+- 结果值：`--gray-900` 粗体
 
-**Affiliate banner (after result)**:
+**结果后的联盟横幅**：
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│  Sponsored                                                      │
+│  赞助推广                                                       │
 │                                                                 │
-│  [The Farmer's Dog Logo]                                        │
-│  Personalized meal plans calculated just for Buddy.            │
-│  Fresh ingredients, vet-developed recipes.                      │
-│  First box: 50% off.                     [Try It →]            │
+│  [The Farmer's Dog 标志]                                        │
+│  为 Buddy 定制的个性化膳食计划。                                │
+│  新鲜食材，兽医开发的配方。                                      │
+│  第一箱：50% 折扣。                     [尝试它 →]            │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-# TOOL 2: Cat BCS & Weight Management Calculator
+# 工具 2：猫咪 BCS 与体重管理计算器
 
 **URL**: `petsmetrics.com/cat/bcs-weight-tracker/`  
-**Template**: A — Tool Page (2-column)
+**模板**: A — 工具页面（两列布局）
 
-## 1. SEO Metadata
+## 1. SEO 元数据
 
 ```
-Title:    Cat Body Condition Score Calculator — Is My Cat Overweight? | petsMetrics
-Desc:     Use our visual BCS assessment to check if your cat is a healthy weight. 
-          Get a safe weight-loss calorie plan. Based on AAHA 9-point BCS scale.
-H1:       Cat Body Condition Score & Weight Calculator
+Title:    猫咪身体状况评分计算器 — 我的猫咪超重了吗？ | petsMetrics
+Desc:     使用我们的可视化 BCS 评估检查您的猫咪体重是否健康。
+          获取安全的减重卡路里计划。基于 AAHA 9 分 BCS 量表。
+H1:       猫咪身体状况评分与体重计算器
 ```
 
 ---
 
-## 2. BCS Assessment Flow (3-step visual quiz)
+## 2. BCS 评估流程（3 步可视化测验）
 
-### Step 1 — Feel Your Cat's Ribs
+### 第 1 步 — 感受您猫咪的肋骨
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│  Step 1 of 3  ●○○                                              │
+│  第 1/3 步  ●○○                                              │
 │                                                                 │
-│  Run your fingers along your cat's ribcage.                     │
-│  What do you feel?                           (H2, centered)     │
+│  沿着您猫咪的胸腔移动手指。                                     │
+│  您感觉到什么？                           （H2，居中）         │
 │                                                                 │
 │  ┌───────────────────────────────────────────────────────────┐  │
 │  │                                                           │  │
-│  │  ○  Ribs very prominent, no fat covering — bones visible  │  │
-│  │     [Illustration: thin cat silhouette]                   │  │
+│  │  ○  肋骨非常突出，无脂肪覆盖 — 可见骨骼                  │  │
+│  │     [插图：瘦猫咪轮廓]                   │  │
 │  │                                                           │  │
-│  │  ○  Ribs easily felt with no fat layer                    │  │
-│  │     [Illustration: lean cat silhouette]                   │  │
+│  │  ○  肋骨容易摸到，无脂肪层                              │  │
+│  │     [插图：精瘦猫咪轮廓]                   │  │
 │  │                                                           │  │
-│  ●  Ribs felt with slight fat covering (ideal)               │  │
-│  │     [Illustration: ideal cat silhouette]   ← default      │  │
+│  ●  肋骨摸到有轻微脂肪覆盖（理想）               │  │
+│  │     [插图：理想猫咪轮廓]   ← 默认      │  │
 │  │                                                           │  │
-│  │  ○  Ribs difficult to feel, moderate fat layer            │  │
-│  │     [Illustration: slightly heavy cat]                    │  │
+│  │  ○  肋骨难以摸到，中等脂肪层                            │  │
+│  │     [插图：稍重猫咪]                    │  │
 │  │                                                           │  │
-│  │  ○  Ribs cannot be felt, heavy fat layer                  │  │
-│  │     [Illustration: obese cat silhouette]                  │  │
+│  │  ○  肋骨摸不到，厚脂肪层                              │  │
+│  │     [插图：肥胖猫咪轮廓]                  │  │
 │  │                                                           │  │
 │  └───────────────────────────────────────────────────────────┘  │
 │                                                                 │
-│                             [Next →]                            │
+│                             [下一步 →]                            │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
-**Illustrations**: Simple SVG line drawings of cat body profiles (not photographs). Must be distinctive enough to guide self-assessment but not medically authoritative.
+**插图**：猫咪身体轮廓的简单 SVG 线条图（不是照片）。必须足够独特以指导自我评估，但不要作为医学权威。
 
 ---
 
-### Step 2 — Waist Viewed from Above
+### 第 2 步 — 从上方看腰部
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│  Step 2 of 3  ●●○                             [← Back]         │
+│  第 2/3 步  ●●○                             [← 返回]         │
 │                                                                 │
-│  Look at your cat from directly above.                          │
-│  What is the waist shape?                                       │
+│  从正上方看您的猫咪。                                           │
+│  腰部形状是什么？                                               │
 │                                                                 │
-│  ○  No waist visible — rectangular/oval body shape             │
-│     [Top-view SVG: no visible waist]                            │
+│  ○  无可见腰部 — 矩形/椭圆形体型                              │
+│     [俯视图 SVG：无可见腰部]                            │
 │                                                                 │
-│  ●  Slight hourglass shape visible behind ribs   (ideal)        │
-│     [Top-view SVG: gentle tuck behind ribs]                     │
+│  ●  肋骨后可见轻微沙漏形（理想）        │  │
+│     [俯视图 SVG：肋骨后轻微收腰]                     │  │
 │                                                                 │
-│  ○  No waist — belly extends to same width as chest            │
-│     [Top-view SVG: barrel shape]                                │
+│  ○  无腰部 — 腹部延伸到与胸部相同宽度                          │
+│     [俯视图 SVG：桶形]                                │
 │                                                                 │
-│                             [Next →]                            │
+│                             [下一步 →]                            │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-### Step 3 — Weight & Desired Goal
+### 第 3 步 — 体重与期望目标
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│  Step 3 of 3  ●●●                             [← Back]         │
+│  第 3/3 步  ●●●                             [← 返回]         │
 │                                                                 │
-│  Current weight (if known):                                     │
+│  当前体重（如果已知）：                                         │
 │  ┌────────────────────────────┬──────────────┐                 │
 │  │  4.5                       │  kg  │  lb   │                 │
 │  └────────────────────────────┴──────────────┘                 │
 │                                                                 │
-│  Activity level:                                                │
-│  ○  Indoor, sedentary (mostly sleeping)                         │
-│  ●  Indoor, moderately active                                   │
-│  ○  Indoor-outdoor mix                                          │
+│  活动水平：                                                     │
+│  ○  仅室内，久坐（主要睡觉）                                     │
+│  ●  仅室内，中等活跃                                           │
+│  ○  室内-室外混合                                              │
 │                                                                 │
-│              [Calculate BCS & Calorie Plan →]                   │
+│              [计算 BCS 与卡路里计划 →]                        │
 │                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## 3. BCS Results Display
+## 3. BCS 结果显示
 
-### Case A: Ideal Weight (BCS 4–5/9)
-
-```
-┌─────────────────────────────────────────────────────────────────┐
-│                                                                 │
-│  ✅  Luna is at an ideal weight!           (emerald banner)     │
-│                                                                 │
-│  Body Condition Score:  5 / 9                                   │
-│  Estimated ideal weight range:  4.0–5.0 kg                     │
-│                                                                 │
-│  Luna's daily calorie target: 220 kcal/day                     │
-│  (Maintenance, neutered indoor adult)                           │
-│                                                                 │
-│  Keep it up! Weigh Luna monthly to maintain ideal condition.   │
-│                                                                 │
-└─────────────────────────────────────────────────────────────────┘
-```
-
-### Case B: Overweight (BCS 6–7/9)
+### 情况 A：理想体重（BCS 4–5/9）
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
 │                                                                 │
-│  ⚠️  Luna is slightly overweight           (amber banner)       │
+│  ✅  Luna 处于理想体重！           （翡翠绿横幅）             │
 │                                                                 │
-│  Body Condition Score:  6 / 9                                   │
-│  Current weight: 5.2 kg · Ideal range: 4.0–5.0 kg             │
-│  Excess weight: ~0.2–1.2 kg                                    │
+│  身体状况评分：  5 / 9                                          │
+│  估计理想体重范围：  4.0–5.0 kg                               │
 │                                                                 │
-│  ─────────────────────────────────────────────────────────────  │
+│  Luna 的每日卡路里目标：220 kcal/day                          │
+│  （维持量，已绝育室内成年猫）                                     │
 │                                                                 │
-│  🎯  Recommended weight-loss plan:                              │
-│                                                                 │
-│  Daily calorie target:  176 kcal/day                           │
-│  (80% of ideal-weight RER — safe minimum for cats)             │
-│  Estimated time to ideal weight: 16–20 weeks                   │
-│                                                                 │
-│  ─────────────────────────────────────────────────────────────  │
-│                                                                 │
-│  ⚠️  IMPORTANT: Do not reduce below 176 kcal/day for cats.     │
-│  Rapid weight loss can cause Hepatic Lipidosis (fatty liver     │
-│  disease), a serious and potentially fatal condition.          │
-│  If you are unsure about your cat's body condition, have your  │
-│  cat weighed and assessed at a veterinary clinic before making │
-│  dietary changes.                                               │
+│  继续保持！每月给 Luna 称重以保持理想状况。                     │
 │                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
-### BCS Visual Scale
+### 情况 B：超重（BCS 6–7/9）
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                                                                 │
+│  ⚠️  Luna 轻微超重           （琥珀色横幅）                     │
+│                                                                 │
+│  身体状况评分：  6 / 9                                          │
+│  当前体重：5.2 kg · 理想范围：4.0–5.0 kg                       │
+│  多余体重：~0.2–1.2 kg                                         │
+│                                                                 │
+│  ─────────────────────────────────────────────────────────────  │
+│                                                                 │
+│  🎯  推荐的减重计划：                                          │
+│                                                                 │
+│  每日卡路里目标：  176 kcal/day                                │
+│  （理想体重 RER 的 80% — 猫咪安全最低值）                     │
+│  估计达到理想体重的时间：16–20 周                             │
+│                                                                 │
+│  ─────────────────────────────────────────────────────────────  │
+│                                                                 │
+│  ⚠️  重要：不要将猫咪的卡路里减少到 176 kcal/day 以下。      │
+│  快速减重会导致肝脂质沉积症（脂肪肝），一种严重且潜在致命的情况。  │
+│  如果您不确定您猫咪的身体状况，请在改变饮食前让您的猫在兽医诊所称重和评估。  │
+│                                                                 │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+### BCS 可视化量表
 
 ```
   BCS 1    BCS 2    BCS 3    BCS 4    BCS 5    BCS 6    BCS 7    BCS 8    BCS 9
   ●────────●────────●────────●────────●────────●────────●────────●────────●
-  Very thin                  Ideal                              Obese
+  非常瘦                  理想                                  肥胖
                                               ↑ Luna
 ```
 
-Color gradient: red → amber → green → amber → red (visual severity indicator).
+颜色渐变：红色 → 琥珀色 → 绿色 → 琥珀色 → 红色（视觉严重程度指示器）。
 
 ---
 
-# TOOL 3: Cat Hydration Calculator
+# 工具 3：猫咪水分摄入计算器
 
 **URL**: `petsmetrics.com/cat/hydration-calculator/`  
-**Template**: A — Tool Page (2-column)
+**模板**: A — 工具页面（两列布局）
 
-## 1. SEO Metadata
+## 1. SEO 元数据
 
 ```
-Title:    Cat Water Intake Calculator — How Much Water Does My Cat Need? | petsMetrics
-Desc:     Calculate your cat's daily water needs based on weight and diet. Find out if 
-          your cat is drinking enough. Includes dehydration self-check quiz.
-H1:       Cat Daily Water Intake Calculator
+Title:    猫咪水分摄入计算器 — 我的猫咪需要多少水？ | petsMetrics
+Desc:     根据体重和饮食计算您猫咪的每日水分需求。了解您的猫咪是否喝够了水。包括脱水自我检查测验。
+H1:       猫咪每日水分摄入计算器
 ```
 
 ---
 
-## 2. Input Form
+## 2. 输入表单
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
 │                                                                 │
-│  About Luna's diet                                              │
+│  关于 Luna 的饮食                                               │
 │                                                                 │
-│  Current weight *                                               │
+│  当前体重 *                                                      │
 │  ┌────────────────────────────┬──────────────┐                 │
 │  │  4.5                       │  kg  │  lb   │                 │
 │  └────────────────────────────┴──────────────┘                 │
 │                                                                 │
-│  Daily food intake:                                             │
+│  每日食物摄入：                                                 │
 │                                                                 │
-│  Dry food (kibble):                                             │
-│  ┌──────────────────────────┐  grams per day                   │
-│  │  40                      │  (enter 0 if not fed)            │
+│  干粮（kibble）：                                               │
+│  ┌──────────────────────────┐  克/天                          │
+│  │  40                      │  （如果不喂填 0）             │
 │  └──────────────────────────┘                                   │
 │                                                                 │
-│  Wet food / canned:                                             │
-│  ┌──────────────────────────┐  grams per day                   │
-│  │  85                      │  (one standard can ≈ 85–156g)    │
+│  湿粮 / 罐头：                                                 │
+│  ┌──────────────────────────┐  克/天                          │
+│  │  85                      │  （一个标准罐头 ≈ 85–156g）    │
 │  └──────────────────────────┘                                   │
 │                                                                 │
-│              [Calculate Water Needs →]                          │
+│              [计算水分需求 →]                                  │
 │                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## 3. Results Display
+## 3. 结果显示
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
 │                                                                 │
-│  💧 Luna's Daily Water Needs                                    │
+│  💧 Luna 的每日水分需求                                        │
 │                                                                 │
-│  Total daily water requirement:  225 ml / day                  │
-│  Water from food:               72 ml  (dry 4ml + wet 68ml)   │
-│                                                                 │
-│  ─────────────────────────────────────────────────────────────  │
-│                                                                 │
-│  💧  Luna needs to drink at least:                             │
-│                                                                 │
-│       153 ml / day  from her water bowl                         │
-│       (about ⅔ cup, or 5 oz)           (32px bold, violet)     │
+│  总每日水分需求：  225 ml / day                                │
+│  从食物中获得的水分：           72 ml  （干粮 4ml + 湿粮 68ml）  │
 │                                                                 │
 │  ─────────────────────────────────────────────────────────────  │
 │                                                                 │
-│  Calculation breakdown:                                         │
-│  Total need = 4.5 kg × 50 ml = 225 ml                         │
-│  Dry food water (40g × 10%) = 4 ml                             │
-│  Wet food water (85g × 80%) = 68 ml                            │
-│  Remaining to drink = 225 – 72 = 153 ml                        │
+│  💧  Luna 需要从她的水碗中至少喝：                            │
+│                                                                 │
+│       153 ml / day  从她的水碗                                 │
+│       （约 ⅔ 杯，或 5 盎司）           （32px 粗体，紫罗兰色）│
+│                                                                 │
+│  ─────────────────────────────────────────────────────────────  │
+│                                                                 │
+│  计算细分：                                                     │
+│  总需求 = 4.5 kg × 50 ml = 225 ml                             │
+│  干粮水分（40g × 10%） = 4 ml                                  │
+│  湿粮水分（85g × 80%） = 68 ml                                 │
+│  剩余需要喝的 = 225 – 72 = 153 ml                              │
 │                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-### Dehydration Self-Check Quiz
+### 脱水自我检查测验
 
 ```
-  🔍  5-Minute Dehydration Check for Luna    (H3)
+  🔍  Luna 的 5 分钟脱水检查    （H3）
   ─────────────────────────────────────────────────
 
-  Answer 5 quick questions to check for dehydration signs:
+  回答 5 个快速问题检查脱水迹象：
 
-  1. Does Luna's skin spring back quickly when gently pinched?
-     ● Yes, immediately    ○ Slowly (1–2 sec)    ○ Very slowly / stays tented
+  1. 轻轻捏 Luna 的皮肤时，它会迅速弹回吗？
+     ● 是的，立即弹回    ○ 缓慢（1–2 秒）    ○ 非常缓慢 / 保持帐篷状
 
-  2. Are Luna's gums moist and pink?
-     ● Yes                 ○ Dry / tacky         ○ Pale
+  2. Luna 的牙龈湿润且呈粉红色吗？
+     ● 是的                ○ 干燥 / 粘腻          ○ 苍白
 
-  3. How often does Luna use the litter box per day?
-     ● 2–4 times          ○ 1 time               ○ Not today
+  3. Luna 每天使用猫砂盆多少次？
+     ● 2–4 次          ○ 1 次               ○ 今天没有
 
-  4. Is Luna's urine pale yellow?
-     ● Yes                ○ Dark yellow / orange ○ Uncertain
+  4. Luna 的尿液是浅淡黄色的吗？
+     ● 是的               ○ 深黄色 / 橙色 ○ 不确定
 
-  5. Is Luna drinking from her bowl today?
-     ● Yes                ○ Unusual — less than normal  ○ I haven't seen her drink
+  5. Luna 今天从她的碗里喝水了吗？
+     ● 是的               ○ 不寻常 — 比平时少  ○ 我没看到她喝
 
-  [Check for Dehydration Signs →]
+  [检查脱水迹象 →]
 ```
 
-**Quiz result**:
-- All "Yes": "Luna appears well-hydrated. Keep monitoring daily."
-- 1–2 concerns: "Some potential hydration concerns. Monitor closely and consult your vet if symptoms persist."
-- 3+ concerns: "Signs of possible dehydration. We recommend consulting your vet soon." (+ emergency vet link)
+**测验结果**：
+- 所有"是的"："Luna 看起来水分充足。继续每日监测。"
+- 1–2 个担忧："一些潜在的水分担忧。密切监测，如果症状持续请咨询兽医。"
+- 3+ 个担忧："可能脱水的迹象。我们建议尽快咨询兽医。"（+ 紧急兽医链接）
 
-**Affiliate banner**:
+**联盟横幅**：
 ```
-  Sponsored: "Luna needs 153ml/day — wet food helps!
-  Chewy: Shop vet-recommended wet cat food →"
+  赞助推广："Luna 需要 153ml/天 — 湿粮有帮助！
+  Chewy：购买兽医推荐的湿猫粮 →"
 ```
 
 ---
 
-# TOOL 4: Puppy Growth Predictor
+# 工具 4：幼犬生长预测器
 
 **URL**: `petsmetrics.com/dog/puppy-growth-predictor/`  
-**Template**: A — Tool Page (2-column)
+**模板**: A — 工具页面（两列布局）
 
-## 1. SEO Metadata
+## 1. SEO 元数据
 
 ```
-Title:    Puppy Growth Chart Calculator — Predict Adult Weight | petsMetrics
-Desc:     How big will my puppy get? Predict adult weight from current age and weight. 
-          Includes a personalized growth curve chart. AAHA breed size guidelines.
-H1:       Puppy Growth Predictor & Adult Weight Calculator
+Title:    幼犬生长图表计算器 — 预测成年体重 | petsMetrics
+Desc:     我的幼犬会多大？从当前年龄和体重预测成年体重。
+          包括个性化生长曲线图表。AAHA 品种体型指南。
+H1:       幼犬生长预测器与成年体重计算器
 ```
 
 ---
 
-## 2. Input Form
+## 2. 输入表单
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
 │                                                                 │
-│  About your puppy                                               │
+│  关于您的幼犬                                                   │
 │                                                                 │
-│  Current age *                                                  │
-│  ┌──────────────────┐  weeks old                               │
-│  │  12              │  (or switch to months)                    │
+│  当前年龄 *                                                      │
+│  ┌──────────────────┐  周龄                                  │
+│  │  12              │  （或切换到月份）                      │
 │  └──────────────────┘                                           │
 │                                                                 │
-│  Current weight *                                               │
+│  当前体重 *                                                      │
 │  ┌────────────────────────────┬──────────────┐                 │
 │  │  4.2                       │  kg  │  lb   │                 │
 │  └────────────────────────────┴──────────────┘                 │
 │                                                                 │
-│  Breed size:                                                    │
-│  ○  Small (< 10 kg adult)        ○  Medium (10–25 kg adult)    │
-│  ○  Large (25–45 kg adult)       ○  Giant (> 45 kg adult)      │
-│  [Or search by breed for automatic size →]                     │
+│  品种体型：                                                     │
+│  ○  小型（< 10 kg 成年）        ○  中型（10–25 kg 成年）      │
+│  ○  大型（25–45 kg 成年）       ○  巨型（> 45 kg 成年）        │
+│  [或按品种搜索自动获取体型 →]                                  │
 │                                                                 │
-│              [Predict Adult Size →]                             │
+│              [预测成年体型 →]                                   │
 │                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## 3. Results Display
+## 3. 结果显示
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
 │                                                                 │
-│  🐣 Buddy Jr.'s Predicted Adult Size                            │
+│  🐣 Buddy Jr. 的预测成年体型                                      │
 │                                                                 │
-│  Estimated adult weight:  22–26 kg  (48–57 lb)                 │
-│  Estimated full growth by:  10–12 months                       │
+│  估计成年体重：  22–26 kg  （48–57 lb）                          │
+│  估计完全生长时间：  10–12 个月                               │
 │                                                                 │
-│  (Based on: 12-week weight of 4.2 kg, Medium breed)            │
+│  （基于：12 周龄体重 4.2 kg，中型品种）                         │
 │                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
-### Growth Curve Chart
+### 生长曲线图表
 
 ```
-  Growth Curve — Buddy Jr. (Medium Breed)     (H3)
+  生长曲线 — Buddy Jr.（中型品种）     （H3）
   ──────────────────────────────────────────────────
 
-  Weight
+  体重
   (kg)
-  28 │                                      ......■ Predicted max
+  28 │                                      ......■ 预测最大值
   26 │                                  ..··
   24 │                              ..··
   22 │                          ..··
@@ -487,47 +483,47 @@ H1:       Puppy Growth Predictor & Adult Weight Calculator
   12 │      ..··
   10 │  ..··
    8 │ ·
-   6 │●                     ← Today (week 12, 4.2 kg)
+   6 │●                     ← 今天（第 12 周，4.2 kg）
    4 │
    2 │
      └─────────────────────────────────────────────────────
        8wk  12wk  16wk  20wk  4mo  6mo  8mo  10mo  12mo  18mo
 ```
 
-**Chart component**: Chart.js line chart (< 15KB)
-- X-axis: Age in weeks/months
-- Y-axis: Weight in kg or lb (toggle)
-- **Solid line**: Breed median growth curve
-- **Shaded band**: 25th–75th percentile range
-- **Red dot**: Current puppy position (today)
-- **Dashed line**: Projected trajectory to adult weight
-- Tooltip on hover: shows expected weight at each age
+**图表组件**：Chart.js 折线图（< 15KB）
+- X 轴：周/月龄
+- Y 轴：kg 或 lb 体重（可切换）
+- **实线**：品种中位生长曲线
+- **阴影带**：25th–75th 百分位范围
+- **红点**：当前幼犬位置（今天）
+- **虚线**：到成年体重的预测轨迹
+- 悬停工具提示：显示每个年龄的预期体重
 
-**Visual**: Amber-colored chart for dog pages, clean grid lines `--gray-100`.
-
----
-
-## 4. Sidebar (All Four Tools)
-
-All four tools share this sidebar structure:
-
-**[A] Affiliate Banner** — context-matched to tool:
-- Calorie calc → The Farmer's Dog / Nom Nom
-- BCS calc → Hill's Prescription Diet (affiliate)
-- Hydration → Chewy wet food
-- Puppy predictor → Nom Nom puppy plans
-
-**[B] Related Tools** — cross-links to complementary tools
-
-**[C] Formula Source** — brief citation box showing data source
+**视觉**：狗狗页面为琥珀色图表，干净的网格线 `--gray-100`。
 
 ---
 
-## 5. Mobile Layouts
+## 4. 侧边栏（所有四个工具）
 
-All four tools:
-- Input forms: Full-width, single-column
-- Results: Full-width result cards (no sidebar on mobile)
-- Charts: Touch-friendly (pinch zoom, tap for data points)
-- Affiliate banners: Full-width below results
-- Related tools: Horizontal scroll cards
+所有四个工具共享此侧边栏结构：
+
+**[A] 联盟横幅** — 与工具上下文匹配：
+- 卡路里计算器 → The Farmer's Dog / Nom Nom
+- BCS 计算器 → Hill's Prescription Diet（联盟）
+- 水分 → Chewy 湿粮
+- 幼犬预测器 → Nom Nom 幼犬计划
+
+**[B] 相关工具** — 互补工具的交叉链接
+
+**[C] 公式来源** — 显示数据来源的简短引用框
+
+---
+
+## 5. 移动端布局
+
+所有四个工具：
+- 输入表单：全宽，单列
+- 结果：全宽结果卡片（移动端无侧边栏）
+- 图表：触摸友好（捏合缩放，点击查看数据点）
+- 联盟横幅：结果下方全宽
+- 相关工具：水平滚动卡片

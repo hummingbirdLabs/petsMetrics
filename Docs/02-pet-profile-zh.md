@@ -1,463 +1,460 @@
-# Page Design: Pet Profile Manager
+# 页面设计：宠物档案管理器
 
 **URL**: `https://petsmetrics.com/profile/`  
-**Template**: B — Hub layout (full-width, no sidebar)  
-**Priority**: P0 · Launch Day (core differentiator)
+**模板**: B — 枢纽布局（全宽，无侧边栏）  
+**优先级**: P0 · 上线日（核心差异化）
 
 ---
 
-## 1. Page Goal
+## 1. 页面目标
 
-The Pet Profile is the **product's core competitive advantage**. Users create a profile once; every calculator on the site auto-fills from it. This page must:
+宠物档案是 **产品的核心竞争优势**。用户只需创建一次档案；网站上的每个计算器都会从中自动填充。此页面必须：
 
-1. Make profile creation feel effortless (< 30 seconds)
-2. Show immediate value after creation (dashboard of auto-calculated insights)
-3. Clearly communicate that data stays private (localStorage only)
-4. **Proactively guide users to back up their profile** — localStorage is cleared by browser cache-clearing, private/incognito mode (Safari: 7-day expiry), and device switching. The "One profile. Every answer." promise breaks if data disappears silently.
+1. 让档案创建感觉毫不费力（< 30 秒）
+2. 创建后立即显示价值（自动计算见解的仪表板）
+3. 清楚传达数据保持私密（仅使用 localStorage）
+4. **主动引导用户备份档案** — localStorage 会因浏览器缓存清除、隐私/无痕模式（Safari: 7 天过期）和设备切换而被清除。如果数据默默消失，"一个档案。所有答案。"的承诺就会破灭。
 
-> ⚠️ **Critical risk**: A user who loses their profile data and has to re-enter everything will form a strongly negative impression of the site’s reliability — directly undermining the core differentiator. The Export flow must be prominent, not buried.
+> ⚠️ **关键风险**: 失去档案数据并不得不重新输入所有内容的用户会对网站的可靠性形成强烈的负面印象 — 直接破坏核心差异化。导出流程必须突出，不能被埋没。
 
-**Data persistence strategy**:
-- Primary: `localStorage` (instant, no backend required)
-- Safety net: Trigger a `[Download Backup]` prompt immediately after profile creation (JSON file to device)
-- Recovery: `[Import from Backup]` always visible on the empty state page
-- Optional: Email-to-self backup (user enters email, we send them their profile JSON as an attachment — zero marketing, one transactional send only)
+**数据持久化策略**:
+- 主要: `localStorage`（即时，无需后端）
+- 安全网: 档案创建后立即触发 `[下载备份]` 提示（JSON 文件到设备）
+- 恢复: 空状态页面上始终可见 `[从备份导入]`
+- 可选: 发送到自己邮箱的备份（用户输入邮箱，我们将其档案 JSON 作为附件发送 — 零营销，仅一次事务性发送）
 
 ---
 
-## 2. SEO Metadata
+## 2. SEO 元数据
 
 ```
-Title:    My Pet Profile — Free Dog & Cat Health Dashboard | petsMetrics
-Desc:     Create a free pet profile for your dog or cat. All health calculators 
-          auto-fill from your profile. No login required. 100% private.
+Title:    我的宠物档案 — 免费狗狗和猫咪健康仪表板 | petsMetrics
+Desc:     为你的狗狗或猫咪创建免费宠物档案。所有健康计算器都从你的档案自动填充。无需登录。100% 私密。
 Canonical: https://petsmetrics.com/profile/
 Schema:   WebApplication
 ```
 
 ---
 
-## 3. Full Page Layout (Two States)
+## 3. 完整页面布局（两种状态）
 
-### State A — Empty State (No profile yet)
+### 状态 A — 空状态（尚无档案）
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│  Global Nav                                                     │
+│  全局导航                                                        │
 ├─────────────────────────────────────────────────────────────────┤
 │                                                                 │
-│  [HERO — Centered]                                              │
-│  Your pet's command center.          (H1)                       │
-│  Create a profile in 30 seconds,     (subtext)                  │
-│  and never retype your pet's info again.                        │
+│  [HERO — 居中]                                                   │
+│  你的宠物指挥中心。                  （H1）                     │
+│  30 秒内创建档案，                  （子文本）                 │
+│  再也不用重新输入宠物信息了。                                    │
 │                                                                 │
 │  ┌─────────────────────────────────────────────────────────┐   │
 │  │                                                         │   │
-│  │  [Create Your First Pet]   (large teal CTA)             │   │
+│  │  [创建你的第一个宠物]       （大号 teal CTA）           │   │
 │  │                                                         │   │
-│  │  🔒 100% Private · Stored on your device only          │   │
-│  │     No account needed · Export/Import anytime           │   │
+│  │  🔒 100% 私密 · 仅存储在你的设备上                     │   │
+│  │     无需账户 · 随时导出/导入                             │   │
 │  └─────────────────────────────────────────────────────────┘   │
 │                                                                 │
-│  [Preview of what a filled profile looks like — screenshot]    │
+│  [已填充档案预览 — 截图]                                         │
 │                                                                 │
 └─────────────────────────────────────────────────────────────────┘
-│  Footer                                                         │
+│  页脚                                                           │
 ```
 
-### State B — Profile Exists (Dashboard)
+### 状态 B — 档案存在（仪表板）
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│  Global Nav                                                     │
+│  全局导航                                                        │
 ├─────────────────────────────────────────────────────────────────┤
-│  Pet Switcher Bar + [+ Add Pet] button                          │
+│  宠物切换栏 + [+ 添加宠物] 按钮                                  │
 ├─────────────────────────────────────────────────────────────────┤
-│  [Pet Profile Card — Hero]                                      │
-│  Photo / Avatar · Name · Breed · Age · Weight · Status          │
+│  [宠物档案卡片 — Hero]                                           │
+│  照片 / 头像 · 名字 · 品种 · 年龄 · 体重 · 状态                 │
 ├─────────────────────────────────────────────────────────────────┤
-│  [Quick Stats Row]                                              │
-│  Calorie Need · Human Age · Next Vaccine · BCS Score            │
+│  [快速统计行]                                                    │
+│  卡路里需求 · 人类年龄 · 下次疫苗接种 · BCS 评分               │
 ├─────────────────────────────────────────────────────────────────┤
-│  [Linked Tools Grid]                                            │
-│  All tools with "Open with [Pet Name]'s data" buttons           │
+│  [关联工具网格]                                                  │
+│  所有工具都带有"用 [宠物名] 的数据打开"按钮                     │
 ├─────────────────────────────────────────────────────────────────┤
-│  [Data Management]                                              │
-│  Export JSON · Import JSON · Edit Profile · Delete              │
+│  [数据管理]                                                      │
+│  导出 JSON · 导入 JSON · 编辑档案 · 删除                       │
 └─────────────────────────────────────────────────────────────────┘
-│  Footer                                                         │
+│  页脚                                                           │
 ```
 
 ---
 
-## 4. Create Profile Flow (Modal / Inline Form)
+## 4. 创建档案流程（模态框 / 内联表单）
 
-Triggered by CTA. Uses step-by-step single-question flow (wizard style).
+由 CTA 触发。使用分步单问题流程（向导风格）。
 
-### Step Layout Shell
+### 步骤布局外壳
 
 ```
 ┌────────────────────────────────────────────────────────────────┐
 │                                                                │
-│  Step 2 of 5  ●●○○○                     [← Back]             │
+│  第 2 步，共 5 步  ●●○○○                    [← 返回]         │
 │                                                                │
 │  ─────────────────────────────────────────────────────────    │
 │                                                                │
-│            [STEP CONTENT — centered, max-width 480px]         │
+│            [步骤内容 — 居中，最大宽度 480px]                  │
 │                                                                │
 │  ─────────────────────────────────────────────────────────    │
 │                                                                │
-│                             [Continue →]                       │
+│                             [继续 →]                          │
 │                                                                │
 └────────────────────────────────────────────────────────────────┘
 ```
 
-- Progress dots: 5 steps. Filled = complete, current = teal pulsing, empty = gray
-- Back button: Only on steps 2+
-- Continue button: Disabled until current step is valid
-- Step transition: Slide left (forward) / slide right (backward), 250ms
+- 进度点: 5 个步骤。填充 = 完成，当前 = teal 脉动，空 = 灰色
+- 返回按钮: 仅在第 2+ 步显示
+- 继续按钮: 当前步骤有效前禁用
+- 步骤过渡: 左滑（前进）/ 右滑（后退），250ms
 
 ---
 
-### Step 1 — Pet Type
+### 步骤 1 — 宠物类型
 
 ```
 ┌────────────────────────────────────────────────────────────────┐
-│  Step 1 of 5  ●○○○○                                           │
+│  第 1 步，共 5 步  ●○○○○                                       │
 │                                                                │
-│         What kind of pet is this profile for?                  │
-│                    (H2, centered)                              │
+│         这个档案是给什么类型的宠物的？                          │
+│                    （H2，居中）                                │
 │                                                                │
 │     ┌─────────────────────┐   ┌─────────────────────┐        │
 │     │                     │   │                     │        │
 │     │     🐕              │   │     🐱              │        │
-│     │   Dog               │   │   Cat               │        │
+│     │   狗狗               │   │   猫咪               │        │
 │     │                     │   │                     │        │
 │     └─────────────────────┘   └─────────────────────┘        │
-│       (large selection card)    (large selection card)        │
+│       （大号选择卡片）          （大号选择卡片）                │
 │                                                                │
-│  Selecting a type sets the color theme for this profile.      │
+│  选择类型会设置此档案的颜色主题。                              │
 │                                                                │
-│                             [Continue →]                       │
+│                             [继续 →]                          │
 └────────────────────────────────────────────────────────────────┘
 ```
 
-- Cards: 200px × 200px, border-radius 16px
-- Unselected: `--gray-100` bg, `--gray-300` border
-- Dog selected: `--dog-primary-light` bg, `--dog-primary` border (2px), amber icon
-- Cat selected: `--cat-primary-light` bg, `--cat-primary` border (2px), violet icon
-- Click: instant selection, auto-advance after 300ms delay
+- 卡片: 200px × 200px，border-radius 16px
+- 未选择: `--gray-100` 背景，`--gray-300` 边框
+- 狗狗已选: `--dog-primary-light` 背景，`--dog-primary` 边框（2px），琥珀色图标
+- 猫咪已选: `--cat-primary-light` 背景，`--cat-primary` 边框（2px），紫罗兰色图标
+- 点击: 即时选择，300ms 延迟后自动前进
 
 ---
 
-### Step 2 — Name & Breed
+### 步骤 2 — 名字和品种
 
 ```
 ┌────────────────────────────────────────────────────────────────┐
-│  Step 2 of 5  ●●○○○                            [← Back]       │
+│  第 2 步，共 5 步  ●●○○○                      [← 返回]       │
 │                                                                │
-│         Tell us about your dog.                                │
-│                    (H2, centered)                              │
+│         告诉我们关于你的狗狗。                                 │
+│                    （H2，居中）                                │
 │                                                                │
-│  Pet Name *                                                    │
+│  宠物名字 *                                                    │
 │  ┌────────────────────────────────────────────────────────┐   │
-│  │  e.g. Buddy, Luna, Max...                              │   │
+│  │  例如 Buddy、Luna、Max…                               │   │
 │  └────────────────────────────────────────────────────────┘   │
 │                                                                │
-│  Breed *                                                       │
+│  品种 *                                                       │
 │  ┌────────────────────────────────────────────────────────┐   │
-│  │  🔍 Search breed or select...                  ▾       │   │
+│  │  🔍 搜索品种或选择…                        ▾            │   │
 │  └────────────────────────────────────────────────────────┘   │
-│  → Dropdown with search, grouped: Small / Medium / Large /    │
-│    Giant / Mixed Breed                                         │
+│  → 带搜索的下拉菜单，分组: 小型 / 中型 / 大型 / 巨型 / 混种  │
 │                                                                │
-│  If mixed breed, select primary mix or "Mixed / Unknown"       │
+│  如果是混种，选择主要混种或"混种 / 未知"                        │
 │                                                                │
-│                             [Continue →]                       │
+│                             [继续 →]                          │
 └────────────────────────────────────────────────────────────────┘
 ```
 
-**Breed selector**: Virtualized list (react-window), 400+ dog breeds, 80+ cat breeds.  
-Groups: Popular → Alphabetical. Search uses fuzzy matching.
+**品种选择器**: 虚拟列表（react-window），400+ 狗品种，80+ 猫品种。  
+分组: 热门 → 按字母顺序。搜索使用模糊匹配。
 
 ---
 
-### Step 3 — Birthday & Weight
+### 步骤 3 — 生日和体重
 
 ```
 ┌────────────────────────────────────────────────────────────────┐
-│  Step 3 of 5  ●●●○○                            [← Back]       │
+│  第 3 步，共 5 步  ●●●○○                      [← 返回]       │
 │                                                                │
-│         Now the numbers.                                       │
-│                    (H2, centered)                              │
+│         现在是数字。                                           │
+│                    （H2，居中）                                │
 │                                                                │
-│  Birthday *    or    Current Age                               │
+│  生日 *      或    当前年龄                                    │
 │  ┌──────────────────┐    ┌──────────────────────────────┐     │
-│  │  MM / DD / YYYY  │    │  ___  years  ___  months     │     │
+│  │  MM / DD / YYYY  │    │  ___  年  ___  月           │     │
 │  └──────────────────┘    └──────────────────────────────┘     │
 │                                                                │
-│  If exact birthday is unknown, enter approximate age.          │
+│  如果不知道确切生日，输入近似年龄。                            │
 │                                                                │
-│  Current Weight *                                              │
+│  当前体重 *                                                    │
 │  ┌───────────────────────────┬──────────────┐                 │
 │  │  28                       │  kg  │  lb   │                 │
 │  └───────────────────────────┴──────────────┘                 │
 │                                                                │
-│  Weight unit toggle saves to localStorage preference.          │
+│  体重单位切换保存到 localStorage 偏好设置。                   │
 │                                                                │
-│                             [Continue →]                       │
+│                             [继续 →]                          │
 └────────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-### Step 4 — Health Status
+### 步骤 4 — 健康状态
 
 ```
 ┌────────────────────────────────────────────────────────────────┐
-│  Step 4 of 5  ●●●●○                            [← Back]       │
+│  第 4 步，共 5 步  ●●●●○                      [← 返回]       │
 │                                                                │
-│         A few quick health details.                            │
-│                    (H2, centered)                              │
+│         几个快速的健康细节。                                   │
+│                    （H2，居中）                                │
 │                                                                │
-│  Sex *                                                         │
+│  性别 *                                                       │
 │  ┌──────────────────┬──────────────────┐                      │
-│  │    ♂  Male       │    ♀  Female     │                      │
+│  │    ♂  雄性       │    ♀  雌性       │                      │
 │  └──────────────────┴──────────────────┘                      │
 │                                                                │
-│  Spayed / Neutered? *                                          │
+│  绝育了吗？*                                                  │
 │  ┌──────────────────┬──────────────────┐                      │
-│  │    ✓  Yes        │    ✗  No         │                      │
+│  │    ✓  是         │    ✗  否         │                      │
 │  └──────────────────┴──────────────────┘                      │
 │                                                                │
-│  Why we ask: Affects calorie and hormone-related calculations. │
+│  我们为什么要问: 影响卡路里和激素相关计算。                    │
 │                                                                │
-│  Activity Level                                                │
-│  ○ Sedentary (mostly indoors)                                  │
-│  ● Moderate (daily walks)         ← default                   │
-│  ○ Active (runs, sports)                                       │
-│  ○ Working dog (high intensity)                                │
+│  活动水平                                                      │
+│  ○ 久坐（主要在室内）                                          │
+│  ● 适度（每日散步）              ← 默认                      │
+│  ○ 活跃（跑步、运动）                                          │
+│  ○ 工作犬（高强度）                                            │
 │                                                                │
-│                             [Continue →]                       │
+│                             [继续 →]                          │
 └────────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-### Step 5 — Optional Photo & Confirm
+### 步骤 5 — 可选照片和确认
 
 ```
 ┌────────────────────────────────────────────────────────────────┐
-│  Step 5 of 5  ●●●●●                            [← Back]       │
+│  第 5 步，共 5 步  ●●●●●                      [← 返回]       │
 │                                                                │
-│         Almost done — looking good!                            │
-│                    (H2, centered)                              │
+│         快完成了 — 看起来不错！                                │
+│                    （H2，居中）                                │
 │                                                                │
 │  ┌──────────────────────────────────────────────────────┐     │
 │  │                                                      │     │
 │  │   🐕 Buddy                                           │     │
-│  │   Labrador · Male · Neutered                         │     │
-│  │   3 years old · 28 kg                                │     │
-│  │   Activity: Moderate                                  │     │
+│  │   拉布拉多 · 雄性 · 绝育                             │     │
+│  │   3 岁 · 28 kg                                       │     │
+│  │   活动: 适度                                          │     │
 │  │                                                      │     │
 │  └──────────────────────────────────────────────────────┘     │
 │                                                                │
-│  Add a photo (optional)                                        │
+│  添加照片（可选）                                              │
 │  ┌──────────────────────────────────────────────────────┐     │
-│  │  [📷 Upload Photo]   or   [Choose Avatar]             │     │
+│  │  [📷 上传照片]   或   [选择头像]                       │     │
 │  └──────────────────────────────────────────────────────┘     │
-│  Photo is stored locally, never uploaded.                      │
+│  照片在本地存储，从不上传。                                    │
 │                                                                │
-│                    [🐾 Create Profile]                         │
+│                    [🐾 创建档案]                              │
 │                                                                │
 └────────────────────────────────────────────────────────────────┘
 ```
 
-Avatar library: 12 illustrated dog breeds + 8 cat types (SVG, accessible).  
-Photo upload: Client-side only, compressed to < 200KB using browser Canvas API.
+头像库: 12 个插画狗品种 + 8 个猫类型（SVG，可访问）。  
+照片上传: 仅客户端，使用浏览器 Canvas API 压缩到 < 200KB。
 
 ---
 
-### Completion State — Success
+### 完成状态 — 成功
 
-After clicking "Create Profile":
+点击"创建档案"后:
 
 ```
 ┌────────────────────────────────────────────────────────────────┐
 │                                                                │
 │              ✓                                                 │
-│         (large animated checkmark, teal)                       │
+│         （大号动画对勾，teal）                                 │
 │                                                                │
-│         Buddy's profile is ready!                              │
+│         Buddy 的档案准备好了！                                │
 │                                                                │
-│         All tools will now auto-fill with Buddy's data.        │
+│         所有工具现在都会用 Buddy 的数据自动填充。              │
 │                                                                │
-│  [🍖 Check Calorie Needs →]   [💉 View Vaccine Schedule →]    │
+│  [🍖 检查卡路里需求 →]   [💉 查看疫苗接种计划 →]              │
 │                                                                │
-│              [Go to My Dashboard]                              │
+│              [前往我的仪表板]                                  │
 │                                                                │
 └────────────────────────────────────────────────────────────────┘
 ```
 
-Checkmark animation: Draw SVG stroke, 400ms ease-out.
+对勾动画: 绘制 SVG 笔画，400ms ease-out。
 
-#### Backup Prompt (shown immediately below success state)
+#### 备份提示（立即显示在成功状态下方）
 
-Displayed in-line, not as a blocking modal:
+内联显示，不作为阻塞模态框:
 
 ```
 ┌────────────────────────────────────────────────────────────────────
-│  💾  Your profile is saved on this device.                      │
-│      To keep it safe if you clear your browser or switch       │
-│      devices, download a backup:                               │
+│  💾  你的档案已保存在此设备上。                                  │
+│      如果你清除浏览器或切换设备，为了安全起见，下载备份:         │
 │                                                                │
-│      [⬇️ Download Backup File]   (primary, teal button)         │
+│      [⬇️ 下载备份文件]   （主要，teal 按钮）                    │
 │                                                                │
-│      — or —  Email it to yourself:                            │
-│      ┌──────────────────────────────────────────┐  [📧 Send]  │
+│      — 或者 —  发送到你自己的邮箱:                              │
+│      ┌──────────────────────────────────────────┐  [📧 发送]  │
 │      │  your@email.com                         │            │
 │      └──────────────────────────────────────────┘            │
-│      One-time send. No newsletters. Unsubscribe anytime.       │
-│                                                      [Skip →]  │
+│      一次性发送。无通讯。随时取消订阅。                          │
+│                                                      [跳过 →]  │
 └────────────────────────────────────────────────────────────────────
 ```
 
-- Email send: transactional only — attaches `buddy-profile-backup.json` to email, zero marketing
-- GDPR note: email is used solely for this one delivery; disclose clearly in the UI
-- This is also the primary cold-start email list seed (users who opt in for backup are already high-intent)
+- 邮箱发送: 仅事务性 — 将 `buddy-profile-backup.json` 作为附件发送到邮箱，零营销
+- GDPR 说明: 邮箱仅用于此一次投递；在 UI 中清楚披露
+- 这也是主要的冷启动邮箱列表种子（选择备份的用户已经是高意向用户）
 
-#### Birthday Reminder Prompt (shown below Backup block)
+#### 生日提醒提示（显示在备份区块下方）
 
 ```
 ┌────────────────────────────────────────────────────────────────────
-│  🎂  Want a birthday reminder for Buddy?                         │
-│      We’ll send you a card on March 12 every year. 🐾         │
+│  🎂  想要 Buddy 的生日提醒吗？                                   │
+│      我们会在每年 3 月 12 日给你寄一张卡片。🐾                  │
 │                                                                │
-│      ┌──────────────────────────────────────────┐  [Yes please!]  │
+│      ┌──────────────────────────────────────────┐  [好的！]    │
 │      │  your@email.com                         │               │
 │      └──────────────────────────────────────────┘               │
-│      Annual reminder only. No spam.                 [Skip →]   │
+│      仅年度提醒。无垃圾邮件。                       [跳过 →]    │
 └────────────────────────────────────────────────────────────────────
 ```
 
-- **Highest email opt-in rate** of any pet-related touchpoint (industry avg 40–60% for birthday reminders)
-- If user already provided email in the Backup step above, pre-fill the field and skip directly to confirmation
-- Birthday email content: celebratory, low-key, includes a "check Buddy’s updated calorie needs" link (drives re-engagement)
+- **最高邮箱选择加入率** 任何宠物相关接触点（行业平均生日提醒 40–60%）
+- 如果用户已在上述备份步骤中提供邮箱，预填充该字段并直接跳转到确认
+- 生日邮件内容: 庆祝性的，低调的，包括"检查 Buddy 更新后的卡路里需求"链接（驱动重新参与）
 
 ---
 
-## 5. Dashboard (State B) — Full Specification
+## 5. 仪表板（状态 B）— 完整规范
 
-### Pet Switcher Bar
+### 宠物切换栏
 
 ```
 ┌──────────────────────────────────────────────────────────────────┐
-│ 🐕 Buddy  │  🐱 Luna  │  [+ Add Another Pet]                     │
+│ 🐕 Buddy  │  🐱 Luna  │  [+ 添加另一只宠物]                     │
 └──────────────────────────────────────────────────────────────────┘
 ```
 
-- Tab per pet, max display 4 (overflow: scroll)
-- Active pet tab: bottom border 2px `--brand-teal`
-- Add button: dashed border, teal text
+- 每个宠物一个标签页，最多显示 4 个（溢出: 滚动）
+- 活跃宠物标签页: 底部边框 2px `--brand-teal`
+- 添加按钮: 虚线边框，teal 文本
 
 ---
 
-### Profile Hero Card
+### 档案 Hero 卡片
 
 ```
 ┌──────────────────────────────────────────────────────────────┐
 │                                                              │
-│  [Avatar 80px]   Buddy                    [Edit ✏️]         │
-│                  Labrador Retriever                          │
-│                  ♂ Male · Neutered · Moderate Activity       │
-│                  Born: March 12, 2023 · 28 kg (61.7 lb)     │
+│  [头像 80px]   Buddy                    [编辑 ✏️]            │
+│                  拉布拉多巡回犬                              │
+│                  ♂ 雄性 · 绝育 · 适度活动                   │
+│                  出生日期: 2023年3月12日 · 28 kg (61.7 lb) │
 │                                                              │
 └──────────────────────────────────────────────────────────────┘
 ```
 
-- Background: dog → `--dog-surface`, cat → `--cat-surface`
-- Left accent bar: 4px `--dog-primary` or `--cat-primary`
-- Avatar: circular 80px, border 3px white + shadow
+- 背景: 狗狗 → `--dog-surface`，猫咪 → `--cat-surface`
+- 左侧强调栏: 4px `--dog-primary` 或 `--cat-primary`
+- 头像: 圆形 80px，边框 3px 白色 + 阴影
 
 ---
 
-### Quick Stats Row (Auto-calculated from profile)
+### 快速统计行（从档案自动计算）
 
-4 stat cards in a horizontal row:
+4 个统计卡片排成一行:
 
 ```
 ┌──────────────┐  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐
-│ Daily Calories│  │ Human Age    │  │ Next Vaccine │  │ Life Stage   │
+│ 每日卡路里   │  │ 人类年龄      │  │ 下次疫苗接种 │  │ 生命阶段     │
 │              │  │              │  │              │  │              │
-│  1,240       │  │  ~33 years   │  │  Jun 15      │  │  Adult       │
-│  kcal/day    │  │  (Prime)     │  │  Bordetella  │  │  (Prime)     │
+│  1,240       │  │  ~33 岁      │  │  6月15日     │  │  成年        │
+│  kcal/天     │  │  （最佳）     │  │  博德特氏菌  │  │  （最佳）     │
 │              │  │              │  │              │  │              │
-│ [Recalculate]│  │  [Open →]    │  │  [Full →]    │  │  [Open →]    │
+│ [重新计算]   │  │  [打开 →]    │  │  [完整 →]    │  │  [打开 →]    │
 └──────────────┘  └──────────────┘  └──────────────┘  └──────────────┘
 ```
 
-- Stat number: 32px semibold, `--gray-900`
-- Label: 13px `--gray-500`
-- Card: white bg, 1px `--gray-200` border, 12px radius
-- On mobile: 2×2 grid
+- 统计数字: 32px 半粗体，`--gray-900`
+- 标签: 13px `--gray-500`
+- 卡片: 白色背景，1px `--gray-200` 边框，12px radius
+- 移动端: 2×2 网格
 
 ---
 
-### Linked Tools Grid
+### 关联工具网格
 
 ```
-  Your tools for Buddy          (H2)
+  Buddy 的工具              （H2）
   ─────────────────────────────────
 
-  [Tool Card Grid — same as Hub page but with pre-fill indicator]
+  [工具卡片网格 — 与枢纽页面相同，但带有预填充指示器]
 
-  Each card shows:
+  每个卡片显示:
   ┌────────────────────────────────────────┐
-  │  🍖 Calorie Calculator                │
-  │  Auto-filled: Weight, Activity Level  │
+  │  🍖 卡路里计算器                       │
+  │  自动填充: 体重、活动水平              │
   │  ────────────────────────────────────  │
-  │  [Open with Buddy's data →]           │
+  │  [用 Buddy 的数据打开 →]              │
   └────────────────────────────────────────┘
 ```
 
-Green dot indicator "Auto-filled" means all required fields will be pre-populated.
+绿点指示器"自动填充"意味着所有必填字段都会预先填充。
 
 ---
 
-### Data Management Panel
+### 数据管理面板
 
 ```
 ┌──────────────────────────────────────────────────────────────┐
-│  Your data is 100% private                                   │
-│  Stored only on this device · Never uploaded to any server   │
+│  你的数据是 100% 私密的                                        │
+│  仅存储在此设备上 · 从不上传到任何服务器                      │
 │                                                              │
-│  [📤 Export All Profiles as JSON]   ← always visible, prominent│
-│  [📥 Import JSON from another device]                        │
-│  [✏️ Edit Buddy's Profile]                                    │
-│  [🗑️ Delete Buddy's Profile]   (red, confirmation required)  │
+│  [📤 导出所有档案为 JSON]   ← 始终可见，突出                │
+│  [📥 从另一设备导入 JSON]                                    │
+│  [✏️ 编辑 Buddy 的档案]                                       │
+│  [🗑️ 删除 Buddy 的档案]   （红色，需要确认）                  │
 │                                                              │
-│  ⚠️ Profiles are stored in your browser. Clearing cache or  │
-│     switching devices will erase your data unless you export. │
+│  ⚠️ 档案存储在你的浏览器中。除非你导出，否则清除缓存或    │
+│     切换设备会擦除你的数据。                                  │
 └──────────────────────────────────────────────────────────────
 ```
 
-- Privacy message: lock icon + `--status-safe` color
-- **Export button is top-priority** — not buried at bottom; placed above Edit/Delete
-- Warning banner: amber `--status-caution-bg`, clearly explains localStorage limitation
-- Delete: requires typing pet's name to confirm (destructive action)
+- 隐私消息: 锁图标 + `--status-safe` 颜色
+- **导出按钮是最高优先级** — 不被埋在底部；放在编辑/删除上方
+- 警告横幅: 琥珀色 `--status-caution-bg`，清楚解释 localStorage 限制
+- 删除: 需要输入宠物名字来确认（破坏性操作）
 
 ---
 
-## 6. Mobile Layout (≤ 768px)
+## 6. 移动端布局（≤ 768px）
 
-- Profile hero card: stacked, avatar centered above details
-- Quick stats: 2×2 grid → scrollable 2×2
-- Tools grid: 1 column
-- Wizard: Full-screen steps, bottom CTA fixed
+- 档案 hero 卡片: 堆叠，头像居中在详情上方
+- 快速统计: 2×2 网格 → 可滚动 2×2
+- 工具网格: 1 列
+- 向导: 全屏步骤，底部 CTA 固定
 
 ---
 
-## 7. localStorage Data Schema
+## 7. localStorage 数据架构
 
 ```json
 {
@@ -489,9 +486,9 @@ Green dot indicator "Auto-filled" means all required fields will be pre-populate
 
 ---
 
-## 8. Accessibility Notes
+## 8. 无障碍说明
 
-- Wizard steps: `role="main"`, each step uses `aria-live="assertive"` for step announcement
-- Pet type cards: `role="radio"`, `aria-checked`
-- Progress dots: `aria-label="Step 2 of 5"`
-- Delete confirmation: Focus trap in modal, `role="alertdialog"`
+- 向导步骤: `role="main"`，每个步骤使用 `aria-live="assertive"` 进行步骤公告
+- 宠物类型卡片: `role="radio"`，`aria-checked`
+- 进度点: `aria-label="第 2 步，共 5 步"`
+- 删除确认: 模态框中的焦点陷阱，`role="alertdialog"`
