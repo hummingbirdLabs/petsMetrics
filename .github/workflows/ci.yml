@@ -15,5 +15,5 @@ jobs:
         with: { node-version: '20', cache: 'pnpm' }
       - run: pnpm install --frozen-lockfile
       - run: pnpm exec tsc --noEmit
-      - run: pnpm test --run
+      - run: pnpm exec vitest --run
       - run: pnpm build
