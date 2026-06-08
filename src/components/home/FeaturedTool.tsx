@@ -52,12 +52,12 @@ export function FeaturedTool() {
             onKeyDown={handleKeyDown}
             placeholder={t('searchPlaceholder')}
             aria-label={t('title')}
-            className="flex-1 rounded-xl border border-[--gray-300] bg-white px-5 py-3 text-base shadow-sm placeholder:text-[--gray-400] focus:border-[--brand-teal] focus:outline-none focus:ring-2 focus:ring-[--brand-teal]/20"
+            className="min-w-0 flex-1 rounded-xl border border-[--gray-300] bg-white px-3 py-3 text-sm shadow-sm placeholder:text-[--gray-400] focus:border-[--brand-teal] focus:outline-none focus:ring-2 focus:ring-[--brand-teal]/20 sm:px-5 sm:text-base"
           />
           <button
             type="button"
             onClick={handleCheck}
-            className="inline-flex items-center justify-center rounded-xl bg-[--brand-teal] px-6 py-3 text-base font-semibold text-white transition-colors hover:bg-[--brand-teal]/90"
+            className="inline-flex flex-shrink-0 items-center justify-center rounded-xl bg-[--brand-teal] px-4 py-3 text-sm font-semibold text-white transition-colors hover:bg-[--brand-teal]/90 sm:px-6 sm:text-base"
           >
             {t('check')}
           </button>

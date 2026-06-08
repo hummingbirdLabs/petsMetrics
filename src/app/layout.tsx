@@ -55,7 +55,7 @@ export default async function RootLayout({
       lang="en"
       className={`${plusJakartaSans.variable} ${inter.variable} ${dmMono.variable}`}
     >
-      <body className="min-h-screen bg-[--white] font-body text-[--gray-700] antialiased">
+      <body className="min-h-screen overflow-x-hidden bg-[--white] font-body text-[--gray-700] antialiased">
         <NextIntlClientProvider messages={messages}>
           <ProfileProvider>
             <Header />

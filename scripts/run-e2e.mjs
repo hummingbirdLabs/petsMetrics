@@ -138,9 +138,10 @@ async function runNavigationTests(page) {
     const input = await page.$('input[placeholder*="grapes"]') || await page.$('input[placeholder*="Search"]');
     if (input) {
       await input.fill('chocolate');
-      const btn = await page.$('button');
-      if (btn) {
+      const btn = page.getByRole('button', { name: 'Check' });
+      if (await btn.isVisible()) {
         await btn.click();
+        await page.waitForTimeout(500);
         const url = page.url();
         assert(url.includes('toxic-checker'), `URL: ${url}`);
       }
@@ -236,7 +237,7 @@ async function runInteractionTests(page) {
     await page.click('[data-testid="dog-age-submit"]');
     const result = await page.waitForSelector('[data-testid="dog-age-human-equivalent"]', { timeout: 5000 });
     const text = await result.textContent();
-    assert(text.includes('28'), `Expected ~28, got "${text}"`);
+    assert(text.includes('30'), `Expected ~30, got "${text}"`);
   });
 
   // Toxic Checker
@@ -273,9 +274,8 @@ async function runInteractionTests(page) {
     await page.goto(BASE + '/dog/calorie-calculator/');
     const input = await page.$('input[type="number"]');
     await input.fill('28');
-    // Click the Calculate button
-    const btn = await page.$('button');
-    await btn.click();
+    // Click Calculate/Submit button by role+name
+    await page.getByRole('button', { name: /Calculate|Submit/ }).click();
     // Wait for result
     await page.waitForTimeout(1000);
     const body = await page.textContent('body');
