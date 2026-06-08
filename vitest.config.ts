@@ -9,6 +9,7 @@ export default defineConfig({
     globals: true,
     setupFiles: ['@testing-library/jest-dom/vitest'],
     passWithNoTests: true,
+    exclude: ['e2e/**', 'node_modules/**'],
   },
   resolve: {
     alias: { '@': resolve(__dirname, './src') },

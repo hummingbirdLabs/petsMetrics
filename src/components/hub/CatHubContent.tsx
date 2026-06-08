@@ -43,7 +43,7 @@ export function CatHubContent() {
     { icon: '💉', nameKey: 'vaccination', descKey: 'vaccination.desc', href: pageUrl('cat/vaccination-schedule'), priority: 'P0' },
     { icon: '🤰', nameKey: 'gestation', descKey: 'gestation.desc', href: pageUrl('cat/gestation-calculator'), priority: 'P0' },
     { icon: '🥩', nameKey: 'barf', descKey: 'barf.desc', href: pageUrl('cat/barf-calculator'), priority: 'P1' },
-    { icon: '🛡️', nameKey: 'insurance', descKey: 'insurance.desc', href: '#', priority: 'P1' },
+    { icon: '🛡️', nameKey: 'insurance', descKey: 'insurance.desc', href: pageUrl('shared/pet-insurance-estimator'), priority: 'P1' },
   ];
 
   const toolNames: Record<string, string> = {

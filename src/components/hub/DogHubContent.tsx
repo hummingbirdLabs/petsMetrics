@@ -76,7 +76,7 @@ export function DogHubContent() {
     { icon: '🐣', nameKey: 'puppyGrowth', descKey: 'puppyGrowth.desc', href: pageUrl('dog/puppy-growth-predictor'), priority: 'P0' },
     { icon: '🤰', nameKey: 'gestation', descKey: 'gestation.desc', href: pageUrl('dog/gestation-calculator'), priority: 'P0' },
     { icon: '🥩', nameKey: 'barf', descKey: 'barf.desc', href: pageUrl('dog/barf-calculator'), priority: 'P1' },
-    { icon: '🛡️', nameKey: 'insurance', descKey: 'insurance.desc', href: '#', priority: 'P1' },
+    { icon: '🛡️', nameKey: 'insurance', descKey: 'insurance.desc', href: pageUrl('shared/pet-insurance-estimator'), priority: 'P1' },
   ];
 
   // Map i18n name keys to display names

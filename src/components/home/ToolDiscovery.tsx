@@ -28,7 +28,7 @@ const tools: ToolItem[] = [
   { key: 'catGestation', icon: '🤰', tab: 'cat', href: pageUrl('cat/gestation-calculator'), phase: 'P0' },
   { key: 'dogBarf', icon: '🥩', tab: 'dog', href: pageUrl('dog/barf-calculator'), phase: 'P1' },
   { key: 'catBarf', icon: '🥩', tab: 'cat', href: pageUrl('cat/barf-calculator'), phase: 'P1' },
-  { key: 'insurance', icon: '🛡️', tab: 'shared', href: '#', phase: 'P1' },
+  { key: 'insurance', icon: '🛡️', tab: 'shared', href: pageUrl('shared/pet-insurance-estimator'), phase: 'P1' },
   { key: 'euTravel', icon: '✈️', tab: 'shared', href: pageUrl('shared/eu-pet-travel-checker'), phase: 'P0' },
 ];
 
