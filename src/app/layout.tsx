@@ -4,6 +4,9 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import './globals.css';
 import { SITE_URL, SITE_NAME, BRAND_TAGLINE } from '@/constants';
+import { Header } from '@/components/layout/Header';
+import { Footer } from '@/components/layout/Footer';
+import { ProfileProvider } from '@/contexts/ProfileContext';
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ['latin', 'latin-ext'],
@@ -53,7 +56,13 @@ export default async function RootLayout({
       className={`${plusJakartaSans.variable} ${inter.variable} ${dmMono.variable}`}
     >
       <body className="min-h-screen bg-[--white] font-body text-[--gray-700] antialiased">
-        <NextIntlClientProvider messages={messages}>{children}</NextIntlClientProvider>
+        <NextIntlClientProvider messages={messages}>
+          <ProfileProvider>
+            <Header />
+            <main>{children}</main>
+            <Footer />
+          </ProfileProvider>
+        </NextIntlClientProvider>
       </body>
     </html>
   );

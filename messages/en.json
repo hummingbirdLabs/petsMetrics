@@ -1,13 +1,792 @@
 {
   "common": {
-    "button": { "submit": "", "calculate": "", "reset": "", "download": "", "share": "" },
-    "disclaimer": { "standard": "This tool provides general reference information only and does not constitute veterinary advice. Always consult a licensed veterinarian for health decisions." },
-    "unit": { "kg": "kg", "lb": "lb", "ml": "ml", "oz": "oz", "kcal": "kcal" }
+    "button": {
+      "submit": "Submit",
+      "calculate": "Calculate",
+      "reset": "Reset",
+      "download": "Download",
+      "share": "Share"
+    },
+    "disclaimer": {
+      "standard": "This tool provides general reference information only and does not constitute veterinary advice. Always consult a licensed veterinarian for health decisions."
+    },
+    "unit": {
+      "kg": "kg",
+      "lb": "lb",
+      "ml": "ml",
+      "oz": "oz",
+      "kcal": "kcal"
+    },
+    "error": {
+      "generic": "Something went wrong. Please try again.",
+      "boundaryTitle": "Something went wrong",
+      "boundaryMessage": "An unexpected error occurred. Please refresh the page or try again later.",
+      "dismiss": "Dismiss"
+    },
+    "share": {
+      "copyLink": "Copy Link",
+      "copied": "Link copied!",
+      "shareOnTwitter": "Share on Twitter",
+      "shareOnFacebook": "Share on Facebook"
+    }
   },
-  "nav": {},
-  "home": {},
-  "dog": {},
-  "cat": {},
-  "profile": {},
-  "shared": {}
+  "nav": {
+    "home": "Home",
+    "dog": "Dog",
+    "cat": "Cat",
+    "shared": "Shared",
+    "profile": "Profile"
+  },
+  "speciesToggle": {
+    "label": "Select species"
+  },
+  "affiliateBanner": {
+    "insurance": { "title": "Pet Insurance", "description": "Protect your pet with top-rated insurance plans.", "cta": "Compare Plans" },
+    "food": { "title": "Quality Pet Food", "description": "Discover vet-recommended nutrition brands.", "cta": "Shop Now" },
+    "amazon": { "title": "Pet Supplies", "description": "Find everything your pet needs on Amazon.", "cta": "Browse Products" },
+    "pdf_upsell": { "title": "BARF Feeding Guide PDF", "description": "Download the complete raw feeding guide with meal plans.", "cta": "Download Free PDF" }
+  },
+  "profile": {
+    "noProfile": "No pet profile selected. Create one in the Profile section to auto-fill tool forms.",
+    "empty": {
+      "title": "Your Pet Command Center.",
+      "subtitle": "Create a profile in under 30 seconds. Never re-enter pet info again.",
+      "cta": "Create Your First Pet",
+      "privacyLocal": "100% Private · Stored only on your device",
+      "privacyNoAccount": "No account needed · Export/Import anytime"
+    },
+    "wizard": {
+      "step1Title": "What type of pet is this profile for?",
+      "step1Dog": "Dog",
+      "step1Cat": "Cat",
+      "step1Hint": "Choosing a type sets the color theme for this profile.",
+      "step2TitleDog": "Tell us about your dog.",
+      "step2TitleCat": "Tell us about your cat.",
+      "step2NameLabel": "Pet Name",
+      "step2NamePlaceholder": "e.g. Buddy, Luna, Max…",
+      "step2BreedLabel": "Breed",
+      "step2BreedPlaceholder": "Search breeds or select…",
+      "step3Title": "Now the numbers.",
+      "step3BirthDateLabel": "Birth Date",
+      "step3AgeLabel": "or Current Age",
+      "step3AgeYears": "years",
+      "step3AgeMonths": "months",
+      "step3WeightLabel": "Current Weight",
+      "step3WeightHint": "Weight unit preference is saved to your device.",
+      "step4Title": "A few quick health details.",
+      "step4SexLabel": "Sex",
+      "step4Male": "Male",
+      "step4Female": "Female",
+      "step4NeuteredLabel": "Neutered?",
+      "step4NeuteredYes": "Yes",
+      "step4NeuteredNo": "No",
+      "step4Why": "Why we ask: affects calorie and hormone-related calculations.",
+      "step5Title": "Almost done — looking good!",
+      "step5PhotoLabel": "Add Photo (optional)",
+      "step5PhotoHint": "Photos are stored locally and never uploaded.",
+      "back": "Back",
+      "continue": "Continue",
+      "createButton": "Create Profile",
+      "step2NoBreedMatch": "No breeds match your search.",
+      "step2NoBreedsAvailable": "No breeds available yet.",
+      "step3AgeAriaLabel": "Age input method",
+      "step3WeightAriaLabel": "Weight unit",
+      "step5Unnamed": "(unnamed)"
+    },
+    "success": {
+      "title": "{name}'s profile is ready!",
+      "message": "All tools will now auto-fill with {name}'s data.",
+      "goToDashboard": "Go to My Dashboard"
+    },
+    "backup": {
+      "title": "Your profile is saved on this device.",
+      "body": "If you clear your browser or switch devices, download a backup to be safe:",
+      "download": "Download Backup File",
+      "skip": "Skip"
+    },
+    "dashboard": {
+      "title": "My Pet Profiles",
+      "quickStats": {
+        "calories": "Daily Calories",
+        "humanAge": "Human Age",
+        "nextVaccine": "Next Vaccination",
+        "lifeStage": "Life Stage",
+        "comingSoon": "Coming soon"
+      },
+      "tools": {
+        "title": "All Tools",
+        "openWith": "Open with {name}'s data"
+      },
+      "data": {
+        "export": "Export JSON",
+        "import": "Import JSON",
+        "edit": "Edit Profile",
+        "delete": "Delete Profile",
+        "deleteConfirm": "Are you sure you want to delete this profile? This cannot be undone.",
+        "importFailed": "Import failed."
+      },
+      "addPet": "Add Another Pet",
+      "noProfiles": "No profiles found."
+    },
+    "breadcrumb": {
+      "home": "Home",
+      "profile": "My Pet Profiles"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "One Profile. Every Answer.",
+      "subtitle1": "Create your pet profile once — every calculator auto-fills.",
+      "subtitle2": "No login. No AI. Just science.",
+      "dogCta": "Dog Tools",
+      "catCta": "Cat Tools",
+      "trustLine": "200+ Foods · 14 Tools · 400+ Breeds · AAHA, WSAVA & AAFCO Standards",
+      "cardPetName": "Buddy",
+      "cardBreedAge": "Labrador · 3 yrs · 28 kg",
+      "cardCalories": "Calories: 1,240 kcal/day",
+      "cardAge": "Age: ~33 human years",
+      "cardVaccine": "Next vaccine: Jun 15, 2026",
+      "cardOpenProfile": "Open Full Profile"
+    },
+    "profileFocus": {
+      "title": "Why petsMetrics is different",
+      "subtitle": "Other pet calculators make you re-enter your pet info every single time. We don't.",
+      "step1": "Create a Pet Profile",
+      "step1Desc": "Enter breed, weight, birthday, and neuter status.",
+      "step2": "Open Any Tool",
+      "step2Desc": "Every calculator reads from your profile automatically. Never re-enter data.",
+      "step3": "Get Science-Based Answers",
+      "step3Desc": "AAHA / WSAVA / AAFCO formulas. Sources cited.",
+      "cta": "Create My Pet Profile — Free"
+    },
+    "toolDiscovery": {
+      "title": "Explore Our Tools",
+      "tabDog": "Dog",
+      "tabCat": "Cat",
+      "tabAll": "All",
+      "mostPopular": "Most Popular",
+      "comingSoon": "Coming Soon",
+      "tools": {
+        "toxicChecker": { "name": "Toxic Checker", "desc": "Is that food safe? Check 200+ items instantly." },
+        "dogCalorie": { "name": "Calorie Calculator", "desc": "How much to feed daily? AAFCO-based MER formula." },
+        "dogAge": { "name": "Age Calculator", "desc": "How old is your dog in human years? AAHA standards." },
+        "puppyGrowth": { "name": "Puppy Growth", "desc": "Predict adult size and track growth curves." },
+        "dogVaccination": { "name": "Vaccination Schedule", "desc": "Never miss a vaccine. Personalized timeline." },
+        "dogGestation": { "name": "Gestation Calculator", "desc": "Due dates and stage-by-stage milestones." },
+        "catAge": { "name": "Age Calculator", "desc": "How old is your cat in human years? AAHA/AAFP standards." },
+        "catBcs": { "name": "BCS & Weight", "desc": "Is your cat overweight? 2-minute visual assessment." },
+        "catHydration": { "name": "Hydration Calculator", "desc": "Most cats are chronically dehydrated. Find out how much water Luna needs." },
+        "catVaccination": { "name": "Vaccination Schedule", "desc": "FVRCP, rabies, and more scheduled by age and region." },
+        "catGestation": { "name": "Gestation Calculator", "desc": "Predict kitten arrival and key veterinary milestones." },
+        "dogBarf": { "name": "BARF Calculator", "desc": "Raw feeding portion guide by weight." },
+        "catBarf": { "name": "BARF Calculator", "desc": "Cat raw feeding ratios." },
+        "insurance": { "name": "Insurance Estimator", "desc": "Compare plans from top providers." },
+        "euTravel": { "name": "EU Pet Travel", "desc": "Check passport and vaccine requirements for EU travel." }
+      }
+    },
+    "stats": {
+      "tools": "Tools Available",
+      "foods": "Foods in Database",
+      "standards": "AAHA / WSAVA Standards",
+      "noLogin": "No Login Required"
+    },
+    "featuredTool": {
+      "emergencyTitle": "Pet Emergency?",
+      "emergencyPhone": "ASPCA Poison Control: (888) 426-4435",
+      "title": "Can Your Pet Eat That?",
+      "desc": "Instant checks for 200+ foods and plants. Know before you share from your plate.",
+      "searchPlaceholder": "Search: \"grapes\", \"avocado\", \"lilies\"…",
+      "check": "Check",
+      "recentSearches": "Recent:",
+      "openFull": "Open Full Toxic Checker"
+    }
+  },
+  "dog": {
+    "hero": {
+      "title": "Dog Health Calculators",
+      "subtitle": "Science-based tools for dog owners. From calories to vaccines — everything in one place.",
+      "searchPlaceholder": "Search dog tools…",
+      "breadcrumb": "Home > Dog"
+    },
+    "profileBar": {
+      "autofillActive": "All tools below will auto-fill with {name}'s data",
+      "noProfile": "Create a dog profile to auto-fill all calculators",
+      "createCta": "Create Profile — 30 sec"
+    },
+    "featuredTools": {
+      "title": "Most Used Dog Tools",
+      "heroCard": {
+        "title": "Toxic Food & Plant Checker",
+        "desc": "The #1 most searched tool by dog owners. Instantly check food and plant safety for dogs — from grapes to onions to lilies.",
+        "tagline": "200+ Foods · Severity Levels · Vet Hotline Included",
+        "cta": "Check a Food",
+        "badge": "Most Popular"
+      },
+      "calorie": { "title": "Calorie Calculator", "desc": "Calculate exact daily calorie needs using AAFCO MER formulas.", "cta": "Calculate" },
+      "vaccination": { "title": "Vaccination Schedule", "desc": "Never miss a shot. Get a personalized vaccine timeline for your dog.", "cta": "View Schedule" }
+    },
+    "toolGrid": {
+      "title": "All Dog Tools",
+      "ageCalculator": { "desc": "How old is your dog in human years?" },
+      "puppyGrowth": { "desc": "Predict adult weight and track growth curves." },
+      "gestation": { "desc": "Due dates and milestones for breeders." },
+      "barf": { "desc": "Raw feeding portion guide by weight." },
+      "insurance": { "desc": "Compare plans from top providers." },
+      "rating": "P0",
+      "priority": "P1",
+      "open": "Open"
+    },
+    "seoContent": {
+      "title": "About These Dog Health Calculators",
+      "intro": "Our dog tools are built on peer-reviewed veterinary standards from AAHA, AAFCO, and WSAVA. Here's what each tool does — and why it matters for your dog's health.",
+      "faq1": "What is the most accurate dog age calculator?",
+      "faq1Answer": "Our dog age calculator uses the AAHA 2023 life stage guidelines, which account for breed size differences. Small dogs age slower than large dogs — a 5-year-old Chihuahua is roughly 36 human years, while a 5-year-old Great Dane is about 48.",
+      "faq2": "How do I calculate my dog's daily calorie needs?",
+      "faq2Answer": "Our calorie calculator uses the AAFCO Maintenance Energy Requirement (MER) formula: RER × activity multiplier. RER = 70 × (weight in kg)^0.75. The multiplier adjusts for neuter status, activity level, and life stage.",
+      "faq3": "Which vaccinations does my dog need?",
+      "faq3Answer": "Core vaccines (required for all dogs) include rabies, DHPP (distemper, hepatitis, parvovirus, parainfluenza). Non-core vaccines like Bordetella and Leptospirosis depend on your region and lifestyle. Our schedule follows WSAVA 2024 guidelines.",
+      "faq4": "How long are dogs pregnant?",
+      "faq4Answer": "Dogs are pregnant for approximately 63 days (9 weeks) from ovulation. Our gestation calculator shows the expected due date range and key developmental milestones from implantation through whelping."
+    },
+    "breedContent": {
+      "title": "Tools by Breed",
+      "popularBreeds": "Popular Breeds",
+      "viewAllBreeds": "View All 400+ Breeds",
+      "breeds": {
+        "labrador": { "name": "Labrador Retriever", "calorie": "Labrador Calorie Calculator", "age": "Labrador Human Age", "growth": "Labrador Puppy Growth Chart" },
+        "germanShepherd": { "name": "German Shepherd", "calorie": "German Shepherd Daily Calories", "age": "German Shepherd Human Age" },
+        "frenchBulldog": { "name": "French Bulldog", "weight": "French Bulldog Weight Guide", "calorie": "French Bulldog Calorie Calculator" },
+        "goldenRetriever": { "name": "Golden Retriever", "age": "Golden Retriever Age Calculator", "calorie": "Golden Retriever Calorie Needs" }
+      }
+    }
+  },
+  "cat": {
+    "hero": {
+      "title": "Cat Health Calculators",
+      "subtitle": "Precision tools for indoor cat owners. Nutrition, health, and wellness — calculated.",
+      "searchPlaceholder": "Search cat tools…",
+      "breadcrumb": "Home > Cat"
+    },
+    "profileBar": {
+      "autofillActive": "All tools below will auto-fill with {name}'s data",
+      "noProfile": "Create a cat profile to auto-fill all calculators",
+      "createCta": "Create Profile — 30 sec"
+    },
+    "featuredTools": {
+      "title": "Essential Cat Health Tools",
+      "heroCard": {
+        "title": "Body Condition Score & Weight Management",
+        "desc": "60% of indoor cats are overweight. Is yours one of them? Take a 2-minute visual assessment and get a science-based weight plan — without starving your cat.",
+        "tagline": "BCS 1-9 Scale · AAHA Guidelines · Safe Calorie Targets",
+        "cta": "Check My Cat's Weight",
+        "badge": "#1 for Cat Owners"
+      },
+      "toxicChecker": { "title": "Toxic Food Checker", "desc": "Is that houseplant safe? Lilies are deadly to cats.", "cta": "Check Now" },
+      "hydration": { "title": "Hydration Calculator", "desc": "Most cats are chronically dehydrated. Find out how much water Luna needs.", "cta": "Calculate" }
+    },
+    "toolGrid": {
+      "title": "All Cat Tools",
+      "ageCalculator": { "desc": "How old is your cat in human years? (AAHA/AAFP)" },
+      "vaccination": { "desc": "FVRCP, rabies, and more scheduled by age and region." },
+      "gestation": { "desc": "Predict kitten arrival and key veterinary milestones." },
+      "barf": { "desc": "Cat raw feeding ratios: no vegetables!" },
+      "insurance": { "desc": "Compare cat insurance plans." },
+      "rating": "P0",
+      "priority": "P1",
+      "open": "Open"
+    },
+    "seoContent": {
+      "title": "About These Cat Health Calculators",
+      "intro": "Built on AAHA/AAFP Feline Life Stage Guidelines and WSAVA vaccination standards. Every formula is cited and transparent.",
+      "faq1": "How old is my cat in human years?",
+      "faq1Answer": "Cats age differently from dogs and humans. A 1-year-old cat is roughly 15 human years. A 5-year-old cat is about 36. Our calculator uses the AAHA/AAFP feline life stage guidelines.",
+      "faq2": "Is my cat overweight? How to use the BCS scale?",
+      "faq2Answer": "The Body Condition Score (BCS) is a 1–9 scale developed by veterinarians. You can assess your cat at home by feeling their ribs and looking at their waist from above. 60% of indoor cats score above 5 (ideal). Our BCS tool guides you through the assessment and calculates a safe weight target.",
+      "faq3": "How much water should my cat drink daily?",
+      "faq3Answer": "Cats need approximately 50–60 ml of water per kg of body weight daily. Cats on dry food diets need more supplemental water. Our hydration calculator accounts for both dry and wet food intake.",
+      "faq4": "What vaccines does my indoor cat need?",
+      "faq4Answer": "Core vaccines for all cats include FVRCP (feline viral rhinotracheitis, calicivirus, panleukopenia) and rabies. Even indoor cats need these — the FVRCP series starts at 6–8 weeks with boosters every 3 years.",
+      "faq5": "How long are cats pregnant?",
+      "faq5Answer": "Cats are pregnant for approximately 65 days (range 61–72 days). Our gestation calculator provides the expected due date range and key veterinary milestones during pregnancy."
+    }
+  },
+  "shared": {},
+  "header": {
+    "logoAlt": "petsMetrics"
+  },
+  "footer": {
+    "copyright": "petsMetrics. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "disclaimer": "Disclaimer",
+    "contact": "Contact"
+  },
+  "dogAge": {
+    "title": "Dog Age Calculator: Dog Years to Human Years",
+    "subtitle": "How old is your dog in human years? Our calculator uses breed size — not the outdated 7× rule.",
+    "breadcrumbHome": "Home",
+    "breadcrumbDog": "Dog",
+    "breadcrumbCurrent": "Age Calculator",
+    "form": {
+      "ageLabel": "My dog's age",
+      "years": "years",
+      "monthsOptional": "plus (optional):",
+      "months": "months",
+      "sizeLabel": "My dog's size / breed type",
+      "sizeSmall": "Small",
+      "sizeSmallDesc": "< 10 kg / 22 lb · e.g. Chihuahua, Toy Poodle",
+      "sizeMedium": "Medium",
+      "sizeMediumDesc": "10–25 kg / 22–55 lb · e.g. Beagle, Cocker Spaniel",
+      "sizeLarge": "Large",
+      "sizeLargeDesc": "25–45 kg / 55–99 lb · e.g. Labrador, Husky",
+      "sizeGiant": "Giant",
+      "sizeGiantDesc": "> 45 kg / 99 lb+ · e.g. Great Dane",
+      "submit": "Calculate Age"
+    },
+    "result": {
+      "humanAge": "~{years} human years",
+      "equivalent": "In human terms, {name} is like a {age}-year-old {stageName} — energetic, in their prime, with plenty of healthy years ahead.",
+      "formulaSource": "Formula used: AAHA Age Guidelines (size-adjusted)",
+      "not7xRule": "(not the oversimplified \"7× rule\")"
+    },
+    "lifeStage": {
+      "puppy": "Puppy — rapid growth and socialization period",
+      "junior": "Junior — still maturing emotionally and physically",
+      "adult": "Adult — in prime physical condition",
+      "mature": "Mature — starting to slow down, watch weight",
+      "senior": "Senior — increased health monitoring recommended",
+      "geriatric": "Geriatric — requires specialized senior care",
+      "cardTitle": "{stage} — {stageName}",
+      "healthPriorities": "Health priorities for this life stage:",
+      "vetVisit": "Annual vet check-ups",
+      "dental": "Regular dental cleaning",
+      "weight": "Maintain healthy weight (prevents early joint wear)",
+      "parasite": "Continue monthly parasite prevention"
+    },
+    "comparisonTable": {
+      "title": "Dog Age to Human Age Conversion Table",
+      "dogAge": "Dog Age",
+      "small": "Small <10kg",
+      "medium": "Medium 10-25",
+      "large": "Large 25-45",
+      "giant": "Giant >45kg",
+      "row1": "1 year",
+      "row2": "2 years",
+      "row3": "3 years",
+      "row4": "4 years",
+      "row5": "5 years",
+      "row7": "7 years",
+      "row10": "10 years",
+      "row15": "15 years",
+      "footnote": "Based on AAHA Canine Life Stage Guidelines. Giant breeds have shorter average lifespans, so ratios compress faster."
+    },
+    "scienceSection": {
+      "title": "Why we don't use the \"7× rule\"",
+      "body": "The popular \"multiply by 7\" formula has no scientific basis. Dogs mature rapidly in the first 2 years (reaching sexual maturity and full size), then age more slowly thereafter. Our calculator uses size-adjusted life stage guidelines from: the American Animal Hospital Association (AAHA) and the 2020 UCSD epigenetics methylation study (Labrador reference). Larger breeds age faster due to higher metabolic rates and faster cell division — not because of size itself.",
+      "aaGuidelines": "AAHA Life Stage Guidelines"
+    },
+    "shareCta": {
+      "title": "{name} is {age} in human years!",
+      "sharePrompt": "Just found out my dog {name} is {age} in human years! Check your dog's human age → {url} #DogLife #petsMetrics",
+      "twitter": "Share on Twitter",
+      "facebook": "Share on Facebook",
+      "copyLink": "Copy Link"
+    }
+  },
+  "catAge": {
+    "title": "Cat Age Calculator: Cat Years to Human Years",
+    "subtitle": "How old is your cat in human years? Based on official AAHA/AAFP 2021 Feline Life Stage Guidelines.",
+    "breadcrumbHome": "Home",
+    "breadcrumbCat": "Cat",
+    "breadcrumbCurrent": "Age Calculator",
+    "form": {
+      "ageMonthsLabel": "My cat's age in months",
+      "months": "months",
+      "monthsHint": "1 year = 12 months, 5 years = 60 months",
+      "submit": "Calculate Age"
+    },
+    "result": {
+      "humanAge": "~{years} human years",
+      "equivalent": "In human terms, {name} is like a {age}-year-old person.",
+      "source": "Source: AAHA/AAFP 2021 Feline Life Stage Guidelines",
+      "lifeStage": "Life Stage",
+      "checkupFrequency": "Recommended checkup frequency"
+    },
+    "lifeStage": {
+      "kitten": "Kitten — rapid growth and development; critical socialization period",
+      "junior": "Junior — still maturing physically and behaviorally",
+      "prime": "Prime — fully matured, peak physical condition",
+      "mature": "Mature — starting to slow down; biannual screening recommended",
+      "senior": "Senior — requires regular health monitoring; increased disease risk",
+      "geriatric": "Geriatric — requires specialized senior care and frequent checkups"
+    },
+    "comparisonTable": {
+      "title": "Cat Age to Human Age Conversion Table",
+      "catAge": "Cat Age",
+      "humanAge": "Human Age",
+      "lifeStage": "Life Stage",
+      "footnote": "Based on AAHA/AAFP 2021 Feline Life Stage Guidelines. Cats age rapidly in the first 2 years, then approximately 4 human years per cat year."
+    },
+    "scienceSection": {
+      "title": "The Science Behind Cat Aging",
+      "body": "Cats age rapidly in their first 2 years of life — a 1-year-old cat is roughly equivalent to a 15-year-old human, and a 2-year-old cat is about 24 human years. After age 2, each cat year equals approximately 4 human years. This is based on the AAHA/AAFP Feline Life Stage Guidelines, which define six distinct life stages with different health and nutritional needs.",
+      "aafpGuidelines": "AAHA/AAFP Feline Life Stage Guidelines"
+    },
+    "shareCta": {
+      "title": "{name} is {age} in human years!",
+      "sharePrompt": "My cat {name} is {age} in human years! Find out your cat's human age → {url} #CatLife #petsMetrics"
+    }
+  },
+  "dogCalorie": {
+    "title": "Dog Calorie Calculator — How Much Should My Dog Eat",
+    "subtitle": "Calculate your dog's exact daily calorie needs using the AAFCO MER formula. Get feeding amounts for any dog food brand. Based on weight and activity level.",
+    "breadcrumbHome": "Home",
+    "breadcrumbDog": "Dog",
+    "breadcrumbCurrent": "Calorie Calculator",
+    "form": {
+      "step1Title": "Step 1/2 — About {name}",
+      "weightLabel": "Current weight",
+      "scenarioLabel": "Life stage / activity level",
+      "puppyUnder4m": "Puppy under 4 months",
+      "puppyOver4m": "Puppy 4 months to adult",
+      "neuteredAdult": "Adult, neutered (typical)",
+      "intactAdult": "Adult, intact",
+      "weightLoss": "Weight loss / obesity prone",
+      "senior": "Senior dog (7+ years)",
+      "workingDog": "Active / working dog",
+      "coefficient": "coeff.",
+      "step2Title": "Step 2/2 — Your Dog Food (optional)",
+      "foodDensityLabel": "Dog food calorie density (if known):",
+      "foodDensityPlaceholder": "e.g. 3500 kcal/kg (check your bag)",
+      "foodDensityHint": "Leave blank to get calories/day only.",
+      "submit": "Calculate"
+    },
+    "result": {
+      "dailyCalories": "{name}'s Daily Calorie Needs",
+      "kcalPerDay": "{mer} kcal / day",
+      "howCalculated": "How we calculated it:",
+      "rerFormula": "RER = 70 × ({weight} kg)^0.75 = {rer} kcal/day",
+      "merFormula": "MER = {rer} × {factor} ({scenario}) = {mer} kcal/day",
+      "source": "Source: AAFCO / AAHA Canine Energy Requirements",
+      "foodSection": "If your food contains {density} kcal/kg:",
+      "gramsPerDay": "{grams} g / day",
+      "cupsEquivalent": "(≈ {cups} cups of typical kibble)",
+      "feedingBreakdown": "Daily breakdown (if feeding twice):",
+      "morning": "Morning: {grams} g ({cups} cup)",
+      "evening": "Evening: {grams} g ({cups} cup)"
+    }
+  },
+  "puppyGrowth": {
+    "title": "Puppy Adult Weight Predictor — Estimate Your Puppy's Final Size",
+    "subtitle": "Predict how big your puppy will get using breed size and growth curves. Track weight milestones and see a chart of expected growth to adulthood.",
+    "breadcrumbHome": "Home",
+    "breadcrumbDog": "Dog",
+    "breadcrumbCurrent": "Puppy Growth Predictor",
+    "form": {
+      "ageWeeksLabel": "Puppy's current age (weeks)",
+      "ageWeeksPlaceholder": "e.g. 12",
+      "weightLabel": "Current weight",
+      "sizeLabel": "Expected adult size",
+      "sizeSmall": "Small",
+      "sizeSmallDesc": "< 10 kg · Toy & small breeds",
+      "sizeMedium": "Medium",
+      "sizeMediumDesc": "10–25 kg · Mid-size breeds",
+      "sizeLarge": "Large",
+      "sizeLargeDesc": "25–45 kg · Large breeds",
+      "sizeGiant": "Giant",
+      "sizeGiantDesc": "> 45 kg · Giant breeds",
+      "submit": "Predict Adult Weight"
+    },
+    "result": {
+      "predictedTitle": "Predicted Adult Weight for {name}",
+      "predictedRange": "{min} – {max} kg",
+      "varianceNote": "±15% prediction variance based on breed growth curves",
+      "growthChartTitle": "Growth Curve — {name}",
+      "chartXLabel": "Age (weeks)",
+      "chartYLabel": "Weight (kg)",
+      "currentMarker": "Current: {weight} kg at {age} weeks",
+      "predictedLabel": "Predicted Adult: {min}–{max} kg"
+    }
+  },
+  "gestation": {
+    "title": "Gestation Calculator — Due Date & Milestones",
+    "subtitle": "Calculate your pet's due date and track key developmental milestones.",
+    "breadcrumbHome": "Home",
+    "breadcrumbCurrent": "Gestation Calculator",
+    "form": {
+      "matingDateLabel": "When did mating occur?",
+      "firstMating": "First mating date",
+      "secondMating": "Second mating date (optional)",
+      "addDateButton": "Add another mating date",
+      "multiDateHint": "If multiple matings occurred, we calculate a range showing earliest possible, most likely, and latest dates.",
+      "submit": "Calculate Due Date"
+    },
+    "result": {
+      "expectedDate": "Expected Whelping Date",
+      "earliest": "Earliest: {date}",
+      "likely": "Likely: {date}",
+      "latest": "Latest: {date}",
+      "possibleRange": "Possible range: {earliest} → {latest}",
+      "daysRemaining": "({days} days from today)",
+      "basedOn": "Based on: average gestation of 63 days. Mating date: {date}",
+      "averageNote": "(range: 58–68 days)",
+      "milestonesTitle": "Pregnancy Milestone Timeline",
+      "milestoneDay0": "Day 0 — Mating",
+      "milestoneDay0Desc": "Conception may occur. Monitor for pregnancy signs.",
+      "milestoneDay14": "Day 14 — Embryo Implantation",
+      "milestoneDay14Desc": "Fertilized embryos implant in the uterine wall.",
+      "milestoneDay21": "Day 21 — Morning sickness possible",
+      "milestoneDay21Desc": "Embryo implantation complete. Hormonal changes may cause temporary appetite loss.",
+      "milestoneDay25": "Day 25 — Ultrasound window opens",
+      "milestoneDay25Desc": "Vet can confirm pregnancy via ultrasound starting around day 25.",
+      "milestoneDay28": "Day 28 — Ultrasound recommended (heartbeats)",
+      "milestoneDay28Desc": "Ultrasound confirmation recommended — fetal heartbeats become detectable.",
+      "milestoneDay35": "Day 35 — Fetal development palpable",
+      "milestoneDay35Desc": "Fetal development becomes visible on palpation. Abdomen begins to enlarge.",
+      "milestoneDay42": "Day 42 — Skeletal X-ray possible",
+      "milestoneDay42Desc": "Fetal skeletons begin to calcify. X-ray can estimate litter size.",
+      "milestoneDay45": "Day 45 — X-ray: fetal skeletons visible",
+      "milestoneDay45Desc": "X-ray shows fetal skeletons clearly. Count puppies and verify positioning.",
+      "milestoneDay50": "Day 50 — Increased appetite",
+      "milestoneDay50Desc": "Appetite increases significantly as puppies grow rapidly.",
+      "milestoneDay55": "Day 55 — Prepare whelping box",
+      "milestoneDay55Desc": "Set up whelping box in a quiet, warm, easily accessible location.",
+      "milestoneDay58": "Day 58 — Possible early labor; start temperature monitoring",
+      "milestoneDay58Desc": "Begin daily temperature monitoring. A drop below 37.8°C (100°F) signals labor within 24 hours.",
+      "milestoneDay60": "Day 60 — Nesting behavior",
+      "milestoneDay60Desc": "Nesting behavior intensifies. Ensure the whelping area is fully prepared.",
+      "milestoneDay63": "Day 63 — Most likely due date",
+      "milestoneDay63Desc": "Expected whelping date. Most dogs deliver on or near day 63.",
+      "milestoneDay65": "Day 65 — Late term; contact vet if no labor",
+      "milestoneDay65Desc": "If no signs of labor, consult your veterinarian for assessment.",
+      "milestoneDay68": "Day 68 — Latest boundary; contact vet",
+      "milestoneDay68Desc": "Latest safe boundary. Contact your veterinarian immediately if labor has not started."
+    },
+    "shareCta": {
+      "title": "{name} is expecting puppies around {date}!",
+      "sharePrompt": "Just calculated {name}'s whelping date! Check your dog's gestation timeline → {url} #DogBreeding #petsMetrics"
+    }
+  },
+  "vaccination": {
+    "title": "Vaccination Schedule — Personalized Timeline",
+    "subtitle": "Get a personalized vaccination and deworming schedule based on age and region.",
+    "breadcrumbHome": "Home",
+    "breadcrumbCurrent": "Vaccination Schedule",
+    "form": {
+      "birthDateLabel": "Birth date (or current age)",
+      "regionLabel": "Your region",
+      "submit": "Generate Schedule"
+    },
+    "result": {
+      "scheduleTitle": "{name}'s Vaccination Schedule",
+      "generatedOn": "Generated on: {date} · Based on birth date: {birthDate} · Region: {region} · WSAVA Core Vaccine Guidelines",
+      "nextDue": "Next due: {date}",
+      "tableVaccine": "Vaccine / Treatment",
+      "tableDueDate": "Due Date",
+      "tableStatus": "Status",
+      "nonCoreTitle": "About Non-Core Vaccine Recommendations",
+      "nonCoreBody": "Vaccines marked as non-core depend heavily on your specific region and your dog's daily routine. The recommendations above are a starting point. Consult your veterinarian for a personalized assessment.",
+      "status": {
+        "overdue": "Overdue",
+        "upcoming": "Due Soon",
+        "future": "Upcoming"
+      }
+    },
+    "shareCta": {
+      "title": "{name}'s personalized vaccination schedule",
+      "sharePrompt": "Just generated {name}'s vaccination schedule! Check yours → {url} #DogHealth #petsMetrics"
+    }
+  },
+  "catBcs": {
+    "bcsOptions": {
+      "1": "Emaciated",
+      "2": "Very Thin",
+      "3": "Thin",
+      "4": "Lean",
+      "5": "Ideal",
+      "6": "Slightly Over",
+      "7": "Overweight",
+      "8": "Heavy",
+      "9": "Obese"
+    },
+    "form": {
+      "title": "Body Condition Score Assessment",
+      "description": "Compare your cat's body shape to the BCS 1-9 images below. Select the image that most closely matches your cat's current physique.",
+      "weightLabel": "Current weight",
+      "submit": "Calculate BCS & Weight Plan"
+    },
+    "result": {
+      "bcsScore": "BCS {score}/9",
+      "bodyCondition": "Body condition: {condition}",
+      "condition": {
+        "underweight": "Underweight",
+        "ideal": "Ideal Weight",
+        "overweight": "Overweight",
+        "obese": "Obese"
+      },
+      "idealWeight": "Estimated ideal weight range",
+      "dailyCalorieTarget": "Daily calorie target (weight loss)",
+      "weeksToIdeal": "Estimated {weeks} weeks to reach ideal weight (1% weekly loss)",
+      "maintainWeight": "Maintain current weight. Keep monitoring monthly.",
+      "lipidosisWarning": {
+        "title": "⚠️ Hepatic Lipidosis Warning",
+        "body": "Do NOT restrict calories below this safe floor. Rapid weight loss in cats can cause hepatic lipidosis (fatty liver disease), a serious and potentially fatal condition. Always consult your veterinarian before starting any weight loss program."
+      },
+      "disclaimerTitle": "BCS Assessment Limitations",
+      "disclaimerBody": "BCS is a visual screening tool, not a medical diagnosis. Individual cats vary in bone structure and muscle mass. For accurate assessment, have your veterinarian perform a hands-on BCS evaluation and blood work before starting any calorie-restricted diet."
+    },
+    "shareCta": {
+      "title": "{name}'s BCS assessment is complete!",
+      "sharePrompt": "Assess your cat's body condition and get a science-based weight plan → {url} #CatHealth #petsMetrics"
+    }
+  },
+  "catHydration": {
+    "title": "Cat Hydration Calculator",
+    "subtitle": "Calculate how much water your cat needs daily. Accounts for moisture from dry and wet food.",
+    "breadcrumbHome": "Home",
+    "breadcrumbCurrent": "Hydration Calculator",
+    "form": {
+      "weightLabel": "Cat's weight",
+      "dryFoodLabel": "Dry food per day",
+      "wetFoodLabel": "Wet food per day",
+      "submit": "Calculate Hydration"
+    },
+    "result": {
+      "totalMl": "{name} needs about {ml} ml of water per day.",
+      "fromFood": "Water from food",
+      "extraNeeded": "Extra water needed",
+      "moistureNote": "Dry food ~10% moisture · Wet food ~80% moisture",
+      "statusAdequate": "Adequate intake from food",
+      "statusSlightlyLow": "Slightly low — add a little more water",
+      "statusLow": "Low — needs extra water",
+      "scienceTitle": "Why hydration matters for cats",
+      "scienceBody": "Cats evolved as desert animals and have a low thirst drive. In the wild, they get most of their water from prey (~70–80% moisture). Cats on dry-food-only diets are at highest risk of chronic dehydration, which can contribute to urinary tract disease and kidney problems. Providing fresh water daily and incorporating wet food are the two most effective strategies."
+    },
+    "shareCta": {
+      "title": "{name} needs {ml} ml of water daily!",
+      "sharePrompt": "Most cats are chronically dehydrated — find out how much water yours needs → {url} #CatHealth #petsMetrics"
+    }
+  },
+  "toxicChecker": {
+    "searching": "Searching...",
+    "emptyState": "Start typing a food or plant name above.",
+    "popularSearches": "Popular searches:",
+    "noResults": "No matching items found. Try a different search term.",
+    "affectedSpecies": "Affected species",
+    "form": {
+      "speciesLabel": "Check for:",
+      "searchLabel": "Search food or plant",
+      "searchPlaceholder": "e.g. \"grapes\", \"chocolate\", \"lilies\"...",
+      "clear": "Clear search"
+    },
+    "result": {
+      "toxicHeader": "This item is toxic to your pet. Seek veterinary attention immediately if ingestion occurred.",
+      "cautionHeader": "This item requires caution. Limited or supervised exposure only.",
+      "safeHeader": "This item is generally safe for your pet.",
+      "symptoms": "Common symptoms:",
+      "safeAmount": "If fed, safe amount",
+      "safeAmountLabel": "Safe amount",
+      "emergencyTitle": "If your pet ingested this item, contact immediately:",
+      "emergencyNumbers": "ASPCA Poison Control: (888) 426-4435 · Pet Poison Helpline: (855) 764-7661",
+      "source": "Source",
+      "otherResults": "Other matches"
+    },
+    "shareCta": {
+      "title": "{item} is {level} for pets — check the Toxic Checker!",
+      "sharePrompt": "Is {item} safe for pets? Check 200+ items instantly → {url} #PetSafety #petsMetrics"
+    }
+  },
+  "toxicLanding": {
+    "emergencyTitle": "Emergency Contact Information",
+    "emergencyDescription": "If you believe your pet has ingested this item, contact a poison control center or emergency veterinarian immediately. Time is critical.",
+    "aspcaPhone": "ASPCA Animal Poison Control",
+    "aspcaNumber": "(888) 426-4435",
+    "petPoisonHelpline": "Pet Poison Helpline",
+    "petPoisonNumber": "(855) 764-7661",
+    "emergencyDisclaimer": "These numbers are for the United States. If you are outside the US, contact your local emergency veterinarian or national animal poison control service.",
+    "relatedTitle": "Related Items",
+    "sidebar": {
+      "moreItems": "More Toxicity References",
+      "totalItems": "{count} items in database",
+      "openChecker": "Open Full Toxic Checker"
+    },
+    "notFound": {
+      "title": "Item Not Found",
+      "description": "The toxicity entry you are looking for does not exist. Please use the Toxic Checker to search all items.",
+      "cta": "Open Toxic Checker"
+    }
+  },
+  "euTravel": {
+    "errors": {
+      "SELECT_COUNTRIES": "Please select both origin and destination countries.",
+      "INVALID_COUNTRY": "Invalid country code. Please select a valid EU country."
+    },
+    "form": {
+      "title": "Your Travel Details",
+      "speciesLabel": "Pet type",
+      "originLabel": "Departing from",
+      "destinationLabel": "Destination",
+      "selectCountry": "Select a country...",
+      "documentsLabel": "What documents do you already have? (check all that apply)",
+      "submit": "Check Requirements"
+    },
+    "documents": {
+      "microchip": "Microchip (ISO 11784/11785)",
+      "rabies-vaccination": "Rabies Vaccination (current/valid)",
+      "eu-pet-passport": "EU Pet Passport",
+      "rabies-antibody-titer": "Rabies Antibody Titer Test",
+      "tapeworm-treatment": "Tapeworm Treatment Certificate",
+      "health-certificate-non-eu": "Animal Health Certificate (AHC)",
+      "min-age-rabies": "Minimum Age Met (12+ weeks)",
+      "max-pets-limit": "Within 5-Pet Limit (non-commercial)",
+      "teip-entry-point": "Designated Entry Point (TEP) planned",
+      "uk-specific-docs": "UK-specific AHC (post-Brexit)",
+      "nordic-immunity-zone": "Nordic Echinococcus Treatment"
+    },
+    "result": {
+      "readyToTravel": "All requirements met! Your pet is ready to travel.",
+      "notReady": "Missing requirements detected. You may be denied entry.",
+      "requirementsSummary": "{satisfied} satisfied, {missing} missing",
+      "leadTimeWarning": "You need at least {days} days to complete outstanding requirements before travel.",
+      "leadTimeHint": "Plan ahead — some requirements have mandatory waiting periods that begin after vaccination or testing.",
+      "satisfied": "Satisfied",
+      "missing": "Missing",
+      "leadTime": "Lead time: {days} days before travel",
+      "officialSource": "Official source"
+    },
+    "shareCta": {
+      "title": "EU Pet Travel Requirements Checklist",
+      "sharePrompt": "Everything your pet needs to travel to the EU — microchip, rabies, tapeworm, and more → {url} #PetTravel #petsMetrics"
+    }
+  },
+  "euTravelLanding": {
+    "h1Pattern": "Traveling to {destination} with Your Pet — Requirements Checklist",
+    "subtitle": "Complete guide for traveling from {origin} to {destination} with your dog or cat. Microchip, rabies vaccine, pet passport, tapeworm treatment — all requirements in one place.",
+    "sectionChecklist": "Travel Requirements Checklist",
+    "requirementRequired": "Required",
+    "requirementNotRequired": "Not specifically required for this route",
+    "leadTime": "{days} days before travel",
+    "leadTimeNone": "No waiting period",
+    "noLeadTime": "No specific lead time",
+    "officialSource": "Official Source",
+    "speciesAppliesTo": "Applies to",
+    "speciesDog": "Dogs",
+    "speciesCat": "Cats",
+    "speciesBoth": "Dogs & Cats",
+    "ctaTitle": "Ready to prepare?",
+    "ctaDescription": "Use our interactive EU Pet Travel Checker to verify all requirements for your specific pet.",
+    "ctaButton": "Open EU Pet Travel Checker",
+    "notFoundTitle": "Route Not Found",
+    "notFoundDescription": "The EU travel route you are looking for does not exist. Please use the interactive checker to search all destinations.",
+    "notFoundCta": "Open EU Pet Travel Checker"
+  },
+  "barf": {
+    "form": { "speciesLabel": "Pet Type", "weightLabel": "Target Weight (kg)", "percentageLabel": "Daily Feeding %", "percentageHint": "Typical: 2\u20133% of body weight daily", "submit": "Calculate Portions" },
+    "result": { "muscleMeat": "Muscle Meat", "bone": "Raw Meaty Bone", "liver": "Liver", "organ": "Secreting Organ", "vegetables": "Vegetables / Berries", "total": "Total Daily Portion", "shoppingNote": "These are daily amounts. Multiply by 7 for a weekly shopping list." },
+    "pdfExport": { "comingSoon": "PDF Export \u2014 Coming Soon" },
+    "adviceNote": "BARF diet must be properly balanced with vitamin and mineral supplements. Consult a veterinary nutritionist before starting a raw feeding regimen."
+  },
+  "insurance": {
+    "form": { "breedLabel": "Breed", "ageLabel": "Age (years)", "regionLabel": "State / Region", "submit": "Compare Plans" },
+    "result": { "estimatedRange": "Estimated Monthly Premium", "disclaimer": "Estimates are based on public pricing data and are not binding quotes. Actual premiums vary by insurer underwriting.", "providersTitle": "Compare Providers", "getQuote": "Get Quote", "deductible": "Deductible", "reimburse": "Reimburse" }
+  }
 }
