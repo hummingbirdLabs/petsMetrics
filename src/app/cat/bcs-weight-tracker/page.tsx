@@ -1,13 +1,28 @@
 import type { Metadata } from 'next';
-import { SITE_URL, SITE_NAME } from '@/constants';
+import { SITE_URL } from '@/constants';
+import { pageUrl } from '@/lib/utils/url';
+import {
+  generateSoftwareAppJsonLd,
+  generateHowToJsonLd,
+  generateBreadcrumbJsonLd,
+  graphJsonLd,
+  TOOL_CITATIONS,
+  HOWTO_STEPS,
+} from '@/lib/seo/geo-meta';
+import { generateFaqPageJsonLd, CAT_BCS_FAQ } from '@/lib/seo/geo-faq';
+import { CAT_BCS_KNOWLEDGE, CAT_BCS_SCIENCE } from '@/lib/seo/geo-content';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { SidebarLayout } from '@/components/layout/SidebarLayout';
 import { PetProfileBar } from '@/components/shared/PetProfileBar';
 import { ErrorBoundaryWrapper } from '@/components/shared/ErrorBoundaryWrapper';
 import { JsonLdScript } from '@/components/shared/JsonLdScript';
 import { Card } from '@/components/ui/Card';
+import { getTranslations } from 'next-intl/server';
 import { DisclaimerSection } from '@/components/shared/DisclaimerSection';
 import { AffiliateBanner } from '@/components/shared/AffiliateBanner';
+import { ToolCtaSection } from '@/components/shared/ToolCtaSection';
+import { KnowledgeCards } from '@/components/shared/KnowledgeCards';
+import { ScienceBehindIt } from '@/components/shared/ScienceBehindIt';
 import { CatBCSWidget } from '@/components/cat/CatBCSWidget';
 
 export const metadata: Metadata = {
@@ -26,46 +41,28 @@ export const metadata: Metadata = {
   },
 };
 
-const faqSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: [
-    {
-      '@type': 'Question',
-      name: 'How do I tell if my cat is overweight?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Use the Body Condition Score (BCS) 1-9 scale. Feel your cat\'s ribs — you should feel them with a slight fat cover. Look down from above — there should be a visible waist behind the ribs. About 60% of indoor cats are overweight (BCS 6+).',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'What is hepatic lipidosis in cats?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Hepatic lipidosis (fatty liver disease) is a serious condition that occurs when a cat loses weight too quickly. The liver becomes overwhelmed with fat metabolism and can fail. Never restrict a cat\'s calories below 80% of their ideal-weight RER without veterinary supervision.',
-      },
-    },
-  ],
-};
+const faqSchema = generateFaqPageJsonLd(CAT_BCS_FAQ);
 
-const appSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'WebApplication',
-  name: 'Cat Body Condition Score & Weight Calculator',
-  url: `${SITE_URL}/cat/bcs-weight-tracker/`,
-  description: 'Assess your cat\'s body condition using the AAHA 9-point BCS scale and get a safe weight management plan.',
-  applicationCategory: 'HealthApplication',
-  operatingSystem: 'Web',
-  offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-  isPartOf: { '@type': 'WebSite', name: SITE_NAME, url: SITE_URL },
-};
+const softwareAppSchema = generateSoftwareAppJsonLd({
+  toolName: 'Cat Body Condition Score & Weight Tracker',
+  toolPath: '/cat/bcs-weight-tracker/',
+  description: 'Assess your cat\'s body condition using the WSAVA 9-point BCS scale and get a safe weight management plan.',
+  citations: TOOL_CITATIONS['cat/bcs-weight-tracker'],
+});
 
-export default function CatBCSPage() {
+const howToSchema = generateHowToJsonLd(HOWTO_STEPS['cat/bcs-weight-tracker']);
+
+const breadcrumbSchema = generateBreadcrumbJsonLd([
+  { position: 1, name: 'Home', item: `${SITE_URL}/` },
+  { position: 2, name: 'Cat', item: `${SITE_URL}/cat/` },
+  { position: 3, name: 'Cat BCS & Weight Tracker', item: '' },
+]);
+
+export default async function CatBCSPage() {
+  const t = await getTranslations('common');
   return (
     <>
-      <JsonLdScript data={faqSchema} />
-      <JsonLdScript data={appSchema} />
+      <JsonLdScript data={graphJsonLd(faqSchema, softwareAppSchema, howToSchema, breadcrumbSchema)} />
       <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
         <Breadcrumb
           items={[
@@ -90,7 +87,15 @@ export default function CatBCSPage() {
               </p>
             </div>
             <CatBCSWidget />
-            <DisclaimerSection />
+            <KnowledgeCards cards={CAT_BCS_KNOWLEDGE} />
+            <ScienceBehindIt content={CAT_BCS_SCIENCE} />
+            <ToolCtaSection
+              heading="Check Your Cat's Hydration"
+              description="Weight management and hydration go together. Use our Hydration Calculator to ensure your cat gets enough water — a critical factor in healthy weight loss."
+              href="/cat/hydration-calculator/"
+              buttonLabel="Check Hydration Status →"
+            />
+            <DisclaimerSection text={t('disclaimer.standard')} />
           </div>
         }
         sidebar={
@@ -98,9 +103,9 @@ export default function CatBCSPage() {
             <Card padding="md">
               <p className="text-sm font-semibold text-[--gray-900]">About BCS</p>
               <ul className="mt-2 flex flex-col gap-2 text-sm text-[--gray-600]">
-                <li>Based on the AAHA 9-point Body Condition Score scale</li>
+                <li>Based on the WSAVA 9-point Body Condition Score scale</li>
                 <li>Safe calorie targets prevent hepatic lipidosis</li>
-                <li>60% of indoor cats are overweight (BCS &ge; 6)</li>
+                <li>60% of indoor cats are overweight (BCS ≥ 6)</li>
               </ul>
             </Card>
             <Card padding="md">

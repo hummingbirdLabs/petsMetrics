@@ -1,5 +1,16 @@
 import type { Metadata } from 'next';
 import { SITE_URL, SITE_NAME } from '@/constants';
+import { pageUrl } from '@/lib/utils/url';
+import {
+  generateSoftwareAppJsonLd,
+  generateHowToJsonLd,
+  generateBreadcrumbJsonLd,
+  graphJsonLd,
+  TOOL_CITATIONS,
+  HOWTO_STEPS,
+} from '@/lib/seo/geo-meta';
+import { generateFaqPageJsonLd, DOG_CALORIE_FAQ } from '@/lib/seo/geo-faq';
+import { CALORIE_KNOWLEDGE, CALORIE_SCIENCE } from '@/lib/seo/geo-content';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { SidebarLayout } from '@/components/layout/SidebarLayout';
 import { PetProfileBar } from '@/components/shared/PetProfileBar';
@@ -7,7 +18,11 @@ import { ErrorBoundaryWrapper } from '@/components/shared/ErrorBoundaryWrapper';
 import { JsonLdScript } from '@/components/shared/JsonLdScript';
 import { Card } from '@/components/ui/Card';
 import { AffiliateBanner } from '@/components/shared/AffiliateBanner';
+import { ToolCtaSection } from '@/components/shared/ToolCtaSection';
+import { getTranslations } from 'next-intl/server';
 import { DisclaimerSection } from '@/components/shared/DisclaimerSection';
+import { KnowledgeCards } from '@/components/shared/KnowledgeCards';
+import { ScienceBehindIt } from '@/components/shared/ScienceBehindIt';
 import { DogCalorieWidget } from '@/components/dog/DogCalorieWidget';
 
 export const metadata: Metadata = {
@@ -26,46 +41,28 @@ export const metadata: Metadata = {
   },
 };
 
-const faqSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: [
-    {
-      '@type': 'Question',
-      name: 'How do I calculate my dog\'s daily calorie needs?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Our calorie calculator uses the AAFCO Maintenance Energy Requirement (MER) formula: RER × activity multiplier. RER = 70 × (weight in kg)^0.75. The multiplier adjusts for neuter status, activity level, and life stage.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'How much should I feed my dog each day?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'The amount depends on your dog\'s weight, activity level, neuter status, and the calorie density of their food. Our calculator shows both the daily calorie target and the grams of food needed based on your specific dog food\'s kcal/kg.',
-      },
-    },
-  ],
-};
+const faqSchema = generateFaqPageJsonLd(DOG_CALORIE_FAQ);
 
-const appSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'WebApplication',
-  name: 'Dog Calorie Calculator',
-  url: `${SITE_URL}/dog/calorie-calculator/`,
+const softwareAppSchema = generateSoftwareAppJsonLd({
+  toolName: 'Dog Calorie Calculator',
+  toolPath: '/dog/calorie-calculator/',
   description: 'Calculate your dog\'s exact daily calorie needs using AAFCO MER formulas. Includes feeding amounts for any dog food brand.',
-  applicationCategory: 'HealthApplication',
-  operatingSystem: 'Web',
-  offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-  isPartOf: { '@type': 'WebSite', name: SITE_NAME, url: SITE_URL },
-};
+  citations: TOOL_CITATIONS['dog/calorie-calculator'],
+});
 
-export default function DogCaloriePage() {
+const howToSchema = generateHowToJsonLd(HOWTO_STEPS['dog/calorie-calculator']);
+
+const breadcrumbSchema = generateBreadcrumbJsonLd([
+  { position: 1, name: 'Home', item: `${SITE_URL}/` },
+  { position: 2, name: 'Dog', item: `${SITE_URL}/dog/` },
+  { position: 3, name: 'Dog Calorie Calculator', item: '' },
+]);
+
+export default async function DogCaloriePage() {
+  const t = await getTranslations('common');
   return (
     <>
-      <JsonLdScript data={faqSchema} />
-      <JsonLdScript data={appSchema} />
+      <JsonLdScript data={graphJsonLd(faqSchema, softwareAppSchema, howToSchema, breadcrumbSchema)} />
       <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
         <Breadcrumb
           items={[
@@ -90,7 +87,15 @@ export default function DogCaloriePage() {
               </p>
             </div>
             <DogCalorieWidget />
-            <DisclaimerSection />
+            <KnowledgeCards cards={CALORIE_KNOWLEDGE} />
+            <ScienceBehindIt content={CALORIE_SCIENCE} />
+            <ToolCtaSection
+              heading="Predict Your Puppy's Adult Size"
+              description="Knowing your dog's calorie needs is great — but how big will they get? Use our Puppy Growth Predictor to estimate adult size and adjust feeding accordingly."
+              href="/dog/puppy-growth-predictor/"
+              buttonLabel="Predict Adult Size →"
+            />
+            <DisclaimerSection text={t('disclaimer.standard')} />
           </div>
         }
         sidebar={
@@ -98,9 +103,9 @@ export default function DogCaloriePage() {
             <Card padding="md">
               <p className="text-sm font-semibold text-[--gray-900]">Dog Health Tools</p>
               <ul className="mt-2 flex flex-col gap-2 text-sm text-[--gray-600]">
-                <li><a href="/dog/age-calculator/" className="hover:text-[--dog-primary] transition-colors">Age Calculator</a></li>
-                <li><a href="/dog/calorie-calculator/" className="text-[--dog-primary] hover:underline font-medium">Calorie Calculator</a></li>
-                <li><a href="/dog/puppy-growth-predictor/" className="hover:text-[--dog-primary] transition-colors">Puppy Growth</a></li>
+                <li><a href={pageUrl('dog/age-calculator')} className="hover:text-[--dog-primary] transition-colors">Age Calculator</a></li>
+                <li><a href={pageUrl('dog/calorie-calculator')} className="text-[--dog-primary] hover:underline font-medium">Calorie Calculator</a></li>
+                <li><a href={pageUrl('dog/puppy-growth-predictor')} className="hover:text-[--dog-primary] transition-colors">Puppy Growth</a></li>
               </ul>
             </Card>
             <AffiliateBanner variant="insurance" />

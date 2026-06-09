@@ -15,7 +15,7 @@ import { DisclaimerSection } from '@/components/shared/DisclaimerSection';
 
 type PageView = 'dashboard' | 'wizard' | 'success';
 
-export function ProfilePageContent() {
+export function ProfilePageContent({ disclaimerText }: { disclaimerText: string }) {
   const t = useTranslations('profile');
   const pb = useTranslations('profile.breadcrumb');
   const { profiles, activeProfile, downloadSingleProfileBackup } = useProfile();
@@ -99,7 +99,7 @@ export function ProfilePageContent() {
               </Button>
             </div>
           </div>
-          <DisclaimerSection />
+          <DisclaimerSection text={disclaimerText} />
         </div>
       </div>
     );
@@ -149,7 +149,7 @@ export function ProfilePageContent() {
         onEdit={() => setView('wizard')}
         className="mb-6"
       />
-      <DisclaimerSection />
+      <DisclaimerSection text={disclaimerText} />
     </div>
   );
 }

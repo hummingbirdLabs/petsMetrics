@@ -8,6 +8,8 @@ import { JsonLdScript } from '@/components/shared/JsonLdScript';
 import { Card } from '@/components/ui/Card';
 import { AffiliateBanner } from '@/components/shared/AffiliateBanner';
 import { DisclaimerSection } from '@/components/shared/DisclaimerSection';
+import { ToolCtaSection } from '@/components/shared/ToolCtaSection';
+import { getTranslations } from 'next-intl/server';
 import { DogVaccinationWidget } from '@/components/dog/DogVaccinationWidget';
 
 export const metadata: Metadata = {
@@ -61,7 +63,8 @@ const appSchema = {
   isPartOf: { '@type': 'WebSite', name: SITE_NAME, url: SITE_URL },
 };
 
-export default function DogVaccinationPage() {
+export default async function DogVaccinationPage() {
+  const t = await getTranslations('common');
   return (
     <>
       <JsonLdScript data={faqSchema} />
@@ -90,7 +93,13 @@ export default function DogVaccinationPage() {
               </p>
             </div>
             <DogVaccinationWidget />
-            <DisclaimerSection />
+            <ToolCtaSection
+              heading="Check If Your Dog Eats Something Toxic"
+              description="Vaccination is one part of prevention. Know what foods are dangerous too. Use our Toxic Checker to instantly identify 200+ household dangers for dogs."
+              href="/shared/toxic-checker/"
+              buttonLabel="Check Food Safety →"
+            />
+            <DisclaimerSection text={t('disclaimer.standard')} />
           </div>
         }
         sidebar={

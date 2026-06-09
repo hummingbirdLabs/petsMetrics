@@ -1,6 +1,7 @@
 import { useTranslations } from 'next-intl';
 import { SITE_URL } from '@/constants';
 import { pageUrl } from '@/lib/utils/url';
+import { graphJsonLd } from '@/lib/seo/geo-meta';
 import { TOXIC_ITEMS, type ToxicItem } from '@/lib/data/toxic-items';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { SidebarLayout } from '@/components/layout/SidebarLayout';
@@ -11,10 +12,19 @@ import { ShareButtons } from '@/components/shared/ShareButtons';
 import { Card } from '@/components/ui/Card';
 import { AffiliateBanner } from '@/components/shared/AffiliateBanner';
 import { DisclaimerSection } from '@/components/shared/DisclaimerSection';
+import { ToolCtaSection } from '@/components/shared/ToolCtaSection';
 import {
   generateToxicFaqJsonLd,
   generateToxicArticleJsonLd,
+  generateToxicContactPointJsonLd,
+  getDangerReason,
+  getWhatToDo,
+  getToxicLandingFaqItems,
+  type ToxicFaqItem,
 } from '@/lib/seo/toxic-meta';
+import { getToxicItemKnowledgeCards, TOXIC_LANDING_SCIENCE } from '@/lib/seo/geo-content';
+import { KnowledgeCards } from '@/components/shared/KnowledgeCards';
+import { ScienceBehindIt } from '@/components/shared/ScienceBehindIt';
 
 type BreadcrumbItem = { label: string; href?: string };
 
@@ -22,6 +32,8 @@ type ToxicLandingPageProps = {
   item: ToxicItem;
   species: 'dog' | 'cat';
   breadcrumbItems: BreadcrumbItem[];
+  /** SSG pre-rendered disclaimer text — passed from Server Component via getTranslations() */
+  disclaimerText: string;
 };
 
 const LEVEL_CONFIG: Record<string, { label: string; bg: string; text: string; borderColor: string }> = {
@@ -105,7 +117,7 @@ const toxicH1Styles: Record<string, { gradient: string; badgeBg: string; badgeTe
   },
 };
 
-export function ToxicLandingPage({ item, species, breadcrumbItems }: ToxicLandingPageProps) {
+export function ToxicLandingPage({ item, species, breadcrumbItems, disclaimerText }: ToxicLandingPageProps) {
   const t = useTranslations('toxicLanding');
   const tNav = useTranslations('nav');
   const tToxic = useTranslations('toxicChecker.result');
@@ -116,7 +128,11 @@ export function ToxicLandingPage({ item, species, breadcrumbItems }: ToxicLandin
   const h1Style = toxicH1Styles[level];
   const faqSchema = generateToxicFaqJsonLd(item, species);
   const articleSchema = generateToxicArticleJsonLd(item, species);
+  const contactPointSchema = generateToxicContactPointJsonLd();
   const relatedItems = getRelatedItems(item, species);
+  const faqItems = getToxicLandingFaqItems(item, species);
+  const dangerReason = getDangerReason(item, species);
+  const whatToDo = getWhatToDo(item, species);
 
   const prefix = species === 'dog' ? 'dog/can-dogs-eat' : 'cat/are-toxic-to-cats';
   const shareUrl = SITE_URL + pageUrl(`${prefix}/${item.slug}`).slice(0, -1);
@@ -125,10 +141,16 @@ export function ToxicLandingPage({ item, species, breadcrumbItems }: ToxicLandin
   const petLabel = species === 'dog' ? tNav('dog') : tNav('cat');
   const speciesColor = species === 'dog' ? 'var(--dog-primary)' : 'var(--cat-primary)';
 
+  // SpamBrain防护: 3 template rotation by category (§17.1)
+  const templateOrder = item.category === 'food'
+    ? (['status', 'danger', 'whatToDo', 'faq'] as const)
+    : item.category === 'plant'
+      ? (['status', 'danger', 'whatToDo', 'faq'] as const)
+      : (['status', 'whatToDo', 'danger', 'faq'] as const); // household: emergency first
+
   return (
     <>
-      <JsonLdScript data={faqSchema} />
-      <JsonLdScript data={articleSchema} />
+      <JsonLdScript data={graphJsonLd(faqSchema, articleSchema, contactPointSchema)} />
 
       <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
         <Breadcrumb items={breadcrumbItems} />
@@ -251,6 +273,33 @@ export function ToxicLandingPage({ item, species, breadcrumbItems }: ToxicLandin
               )}
             </Card>
 
+            {/* Why It's Toxic / Danger Reason (≥100 unique chars per geo-checklist §14.3) */}
+            <Card padding="lg">
+              <h2 className="text-xl font-bold text-[--gray-900]">
+                {level === 'toxic'
+                  ? `Why ${item.name} Is Dangerous to ${species === 'dog' ? 'Dogs' : 'Cats'}`
+                  : level === 'caution'
+                    ? `What to Know About Feeding ${item.name} to ${species === 'dog' ? 'Dogs' : 'Cats'}`
+                    : `Is ${item.name} Safe for ${species === 'dog' ? 'Dogs' : 'Cats'}?`}
+              </h2>
+              <p className="mt-3 text-base leading-relaxed text-[--gray-600]">{dangerReason}</p>
+              <p className="mt-3 text-xs text-[--gray-400]">
+                Source: <span className="font-medium">{item.source}</span>. Verified by petsMetrics.
+              </p>
+            </Card>
+
+            {/* What To Do section (≥60 unique chars per geo-checklist §14.3) */}
+            <Card padding="lg">
+              <h2 className="text-xl font-bold text-[--gray-900]">
+                {level === 'toxic'
+                  ? `What to Do If Your ${species === 'dog' ? 'Dog' : 'Cat'} Eats ${item.name}`
+                  : level === 'caution'
+                    ? `Steps If Your ${species === 'dog' ? 'Dog' : 'Cat'} Eats Too Much ${item.name}`
+                    : `Feeding ${item.name} to Your ${species === 'dog' ? 'Dog' : 'Cat'} Safely`}
+              </h2>
+              <p className="mt-3 text-base leading-relaxed text-[--gray-600]">{whatToDo}</p>
+            </Card>
+
             {/* Emergency Section (toxic only) */}
             {level === 'toxic' ? (
               <Card padding="lg">
@@ -266,6 +315,33 @@ export function ToxicLandingPage({ item, species, breadcrumbItems }: ToxicLandin
               </Card>
             ) : null}
 
+            {/* GEO Knowledge Cards — AI search engine excerpt source */}
+            <KnowledgeCards cards={getToxicItemKnowledgeCards(item, species)} />
+
+            {/* FAQ Section (3 items — must match JSON-LD per geo-checklist §2.1) */}
+            <section aria-labelledby="toxic-faq-heading" className="mt-10">
+              <h2 id="toxic-faq-heading" className="text-2xl font-bold tracking-tight text-[--gray-900]">
+                Frequently Asked Questions
+              </h2>
+              <div className="mt-6 flex flex-col gap-4">
+                {faqItems.map((faq, idx) => (
+                  <details key={idx} className="group rounded-lg border border-[--gray-200] bg-white">
+                    <summary className="cursor-pointer list-none p-4 font-semibold text-[--gray-800] hover:text-[--gray-900] transition-colors">
+                      {faq.question}
+                      <span className="ml-2 text-xs text-[--gray-400] group-open:hidden">▸</span>
+                      <span className="ml-2 text-xs text-[--gray-400] hidden group-open:inline">▾</span>
+                    </summary>
+                    <div className="px-4 pb-4 text-base leading-relaxed text-[--gray-600]">
+                      {faq.answer}
+                    </div>
+                  </details>
+                ))}
+              </div>
+            </section>
+
+            {/* GEO Science Behind It — method citation for AI trust signals */}
+            <ScienceBehindIt content={TOXIC_LANDING_SCIENCE} />
+
             {/* Source attribution */}
             <Card padding="md">
               <div className="flex items-center gap-2">
@@ -278,6 +354,14 @@ export function ToxicLandingPage({ item, species, breadcrumbItems }: ToxicLandin
                 </p>
               </div>
             </Card>
+
+            {/* GEO Zero-Click CTA Hook — converts information-only visitors to tool users */}
+            <ToolCtaSection
+              heading="Check Another Food"
+              description={`Wondering about another food or plant? Search our complete database of 200+ items to see if it's safe for your ${species === 'dog' ? 'dog' : 'cat'}. Backed by ASPCA Animal Poison Control Center data.`}
+              href="/shared/toxic-checker/"
+              buttonLabel={`Open Full Toxic Checker →`}
+            />
 
             {/* Related Items */}
             {relatedItems.length > 0 ? (
@@ -313,7 +397,7 @@ export function ToxicLandingPage({ item, species, breadcrumbItems }: ToxicLandin
               <ShareButtons url={shareUrl} title={shareTitle} className="justify-center" />
             </div>
 
-            <DisclaimerSection />
+            <DisclaimerSection text={disclaimerText} />
           </div>
         }
         sidebar={

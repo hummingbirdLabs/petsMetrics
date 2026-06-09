@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
 import { SITE_URL } from '@/constants';
 import { JsonLdScript } from '@/components/shared/JsonLdScript';
 import { ProfilePageContent } from '@/components/profile/ProfilePageContent';
@@ -17,7 +18,8 @@ export const metadata: Metadata = {
   },
 };
 
-export default function ProfilePage() {
+export default async function ProfilePage() {
+  const t = await getTranslations('common');
   const webAppSchema = {
     '@context': 'https://schema.org',
     '@type': 'WebApplication',
@@ -32,7 +34,7 @@ export default function ProfilePage() {
   return (
     <>
       <JsonLdScript data={webAppSchema} />
-      <ProfilePageContent />
+      <ProfilePageContent disclaimerText={t('disclaimer.standard')} />
     </>
   );
 }

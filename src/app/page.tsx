@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { SITE_URL, SITE_NAME } from '@/constants';
+import { graphJsonLd } from '@/lib/seo/geo-meta';
 import { JsonLdScript } from '@/components/shared/JsonLdScript';
 import { HeroSection } from '@/components/home/HeroSection';
 import { ProfileFocusSection } from '@/components/home/ProfileFocusSection';
@@ -38,7 +39,10 @@ const organizationSchema = {
   url: SITE_URL,
   description:
     'Science-based pet health calculators for dogs and cats. Free, no login required.',
-  sameAs: [],
+  sameAs: [
+    'https://github.com/petsmetrics',
+    'https://www.producthunt.com/@petsmetrics',
+  ],
 };
 
 const websiteSchema = {
@@ -61,8 +65,7 @@ const websiteSchema = {
 export default function HomePage() {
   return (
     <>
-      <JsonLdScript data={organizationSchema} />
-      <JsonLdScript data={websiteSchema} />
+      <JsonLdScript data={graphJsonLd(organizationSchema, websiteSchema)} />
       <HeroSection />
       <ProfileFocusSection />
       <ToolDiscovery />

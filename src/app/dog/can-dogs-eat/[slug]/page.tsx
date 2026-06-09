@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { useTranslations } from 'next-intl';
+import { getTranslations } from 'next-intl/server';
 import { TOXIC_ITEMS, type ToxicItem } from '@/lib/data/toxic-items';
 import { ToxicLandingPage } from '@/components/shared/ToxicLandingPage';
 import { generateToxicMetadata } from '@/lib/seo/toxic-meta';
@@ -50,10 +51,13 @@ export default async function DogToxicLandingPage({
     return <NotFoundUI />;
   }
 
+  const t = await getTranslations('common');
+
   return (
     <ToxicLandingPage
       item={item}
       species="dog"
+      disclaimerText={t('disclaimer.standard')}
       breadcrumbItems={[
         { label: 'Home', href: '' },
         { label: 'Dog', href: 'dog' },

@@ -8,7 +8,7 @@ import { SpeciesToggle } from '@/components/shared/SpeciesToggle';
 import { AffiliateBanner } from '@/components/shared/AffiliateBanner';
 import { ResultSection } from '@/components/shared/ResultSection';
 
-export function BARFWidget() {
+export function BARFWidget({ disclaimerText }: { disclaimerText: string }) {
   const t = useTranslations('barf');
   const { species, targetWeightKg, dailyFeedingPercentage, result, error, setSpecies, setWeight, setPercentage, calculate } =
     useBARF();
@@ -105,6 +105,7 @@ export function BARFWidget() {
                 <AffiliateBanner variant="pdf_upsell" />
               </div>
             }
+            disclaimerText={disclaimerText}
           />
           <AdviceNote />
         </>

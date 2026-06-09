@@ -8,6 +8,8 @@ import { JsonLdScript } from '@/components/shared/JsonLdScript';
 import { Card } from '@/components/ui/Card';
 import { AffiliateBanner } from '@/components/shared/AffiliateBanner';
 import { DisclaimerSection } from '@/components/shared/DisclaimerSection';
+import { ToolCtaSection } from '@/components/shared/ToolCtaSection';
+import { getTranslations } from 'next-intl/server';
 import { CatGestationWidget } from '@/components/cat/CatGestationWidget';
 
 export const metadata: Metadata = {
@@ -61,7 +63,8 @@ const appSchema = {
   isPartOf: { '@type': 'WebSite', name: SITE_NAME, url: SITE_URL },
 };
 
-export default function CatGestationPage() {
+export default async function CatGestationPage() {
+  const t = await getTranslations('common');
   return (
     <>
       <JsonLdScript data={faqSchema} />
@@ -90,7 +93,13 @@ export default function CatGestationPage() {
               </p>
             </div>
             <CatGestationWidget />
-            <DisclaimerSection />
+            <ToolCtaSection
+              heading="Check Your Cat's Vaccination Schedule"
+              description="Kittens on the way? Plan their vaccination schedule now. Our calculator generates a personalized immunization timeline from kittenhood through adulthood."
+              href="/cat/vaccination-schedule/"
+              buttonLabel="See Vaccine Schedule →"
+            />
+            <DisclaimerSection text={t('disclaimer.standard')} />
           </div>
         }
         sidebar={

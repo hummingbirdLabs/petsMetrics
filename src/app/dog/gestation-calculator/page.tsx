@@ -1,5 +1,16 @@
 import type { Metadata } from 'next';
-import { SITE_URL, SITE_NAME } from '@/constants';
+import { SITE_URL } from '@/constants';
+import { pageUrl } from '@/lib/utils/url';
+import {
+  generateSoftwareAppJsonLd,
+  generateHowToJsonLd,
+  generateBreadcrumbJsonLd,
+  graphJsonLd,
+  TOOL_CITATIONS,
+  HOWTO_STEPS,
+} from '@/lib/seo/geo-meta';
+import { generateFaqPageJsonLd, DOG_GESTATION_FAQ } from '@/lib/seo/geo-faq';
+import { DOG_GESTATION_KNOWLEDGE, DOG_GESTATION_SCIENCE } from '@/lib/seo/geo-content';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { SidebarLayout } from '@/components/layout/SidebarLayout';
 import { PetProfileBar } from '@/components/shared/PetProfileBar';
@@ -7,7 +18,11 @@ import { ErrorBoundaryWrapper } from '@/components/shared/ErrorBoundaryWrapper';
 import { JsonLdScript } from '@/components/shared/JsonLdScript';
 import { Card } from '@/components/ui/Card';
 import { AffiliateBanner } from '@/components/shared/AffiliateBanner';
+import { ToolCtaSection } from '@/components/shared/ToolCtaSection';
+import { getTranslations } from 'next-intl/server';
 import { DisclaimerSection } from '@/components/shared/DisclaimerSection';
+import { KnowledgeCards } from '@/components/shared/KnowledgeCards';
+import { ScienceBehindIt } from '@/components/shared/ScienceBehindIt';
 import { DogGestationWidget } from '@/components/dog/DogGestationWidget';
 
 export const metadata: Metadata = {
@@ -26,46 +41,28 @@ export const metadata: Metadata = {
   },
 };
 
-const faqSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: [
-    {
-      '@type': 'Question',
-      name: 'How long are dogs pregnant?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Dogs are pregnant for approximately 63 days (9 weeks) from ovulation. The range is 58–68 days. Our gestation calculator shows the expected due date range and key developmental milestones.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'How do I calculate my dog\'s due date?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Enter the first mating date into our calculator. If multiple matings occurred, add additional dates — the calculator averages them for a more accurate estimate. Key milestones include ultrasound at day 25–35, X-ray at day 45, and whelping box preparation at day 55.',
-      },
-    },
-  ],
-};
+const faqSchema = generateFaqPageJsonLd(DOG_GESTATION_FAQ);
 
-const appSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'WebApplication',
-  name: 'Dog Gestation Calculator',
-  url: `${SITE_URL}/dog/gestation-calculator/`,
-  description: 'Calculate your dog\'s whelping due date and track key pregnancy milestones.',
-  applicationCategory: 'HealthApplication',
-  operatingSystem: 'Web',
-  offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-  isPartOf: { '@type': 'WebSite', name: SITE_NAME, url: SITE_URL },
-};
+const softwareAppSchema = generateSoftwareAppJsonLd({
+  toolName: 'Dog Gestation Calculator',
+  toolPath: '/dog/gestation-calculator/',
+  description: 'Calculate your dog\'s whelping due date and track key pregnancy milestones using AAHA canine reproduction guidelines.',
+  citations: TOOL_CITATIONS['dog/gestation-calculator'],
+});
 
-export default function DogGestationPage() {
+const howToSchema = generateHowToJsonLd(HOWTO_STEPS['dog/gestation-calculator']);
+
+const breadcrumbSchema = generateBreadcrumbJsonLd([
+  { position: 1, name: 'Home', item: `${SITE_URL}/` },
+  { position: 2, name: 'Dog', item: `${SITE_URL}/dog/` },
+  { position: 3, name: 'Dog Gestation Calculator', item: '' },
+]);
+
+export default async function DogGestationPage() {
+  const t = await getTranslations('common');
   return (
     <>
-      <JsonLdScript data={faqSchema} />
-      <JsonLdScript data={appSchema} />
+      <JsonLdScript data={graphJsonLd(faqSchema, softwareAppSchema, howToSchema, breadcrumbSchema)} />
       <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
         <Breadcrumb
           items={[
@@ -90,7 +87,15 @@ export default function DogGestationPage() {
               </p>
             </div>
             <DogGestationWidget />
-            <DisclaimerSection />
+            <KnowledgeCards cards={DOG_GESTATION_KNOWLEDGE} />
+            <ScienceBehindIt content={DOG_GESTATION_SCIENCE} />
+            <ToolCtaSection
+              heading="Plan Your Dog's Vaccination Schedule"
+              description="Puppies on the way? Make sure you know the vaccine timeline. Use our vaccination schedule to generate a personalized immunization plan based on age and region."
+              href="/dog/vaccination-schedule/"
+              buttonLabel="See Vaccine Schedule →"
+            />
+            <DisclaimerSection text={t('disclaimer.standard')} />
           </div>
         }
         sidebar={
@@ -108,10 +113,10 @@ export default function DogGestationPage() {
             <Card padding="md">
               <p className="text-sm font-semibold text-[--gray-900]">Dog Tools</p>
               <ul className="mt-2 flex flex-col gap-2 text-sm text-[--gray-600]">
-                <li><a href="/dog/age-calculator/" className="hover:text-[--dog-primary] transition-colors">Age Calculator</a></li>
-                <li><a href="/dog/calorie-calculator/" className="hover:text-[--dog-primary] transition-colors">Calorie Calculator</a></li>
-                <li><a href="/dog/puppy-growth-predictor/" className="hover:text-[--dog-primary] transition-colors">Puppy Growth</a></li>
-                <li><a href="/dog/vaccination-schedule/" className="hover:text-[--dog-primary] transition-colors">Vaccination Schedule</a></li>
+                <li><a href={pageUrl('dog/age-calculator')} className="hover:text-[--dog-primary] transition-colors">Age Calculator</a></li>
+                <li><a href={pageUrl('dog/calorie-calculator')} className="hover:text-[--dog-primary] transition-colors">Calorie Calculator</a></li>
+                <li><a href={pageUrl('dog/puppy-growth-predictor')} className="hover:text-[--dog-primary] transition-colors">Puppy Growth</a></li>
+                <li><a href={pageUrl('dog/vaccination-schedule')} className="hover:text-[--dog-primary] transition-colors">Vaccination Schedule</a></li>
               </ul>
             </Card>
           </div>

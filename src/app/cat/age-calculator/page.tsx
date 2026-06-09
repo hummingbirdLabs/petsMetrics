@@ -8,6 +8,8 @@ import { JsonLdScript } from '@/components/shared/JsonLdScript';
 import { Card } from '@/components/ui/Card';
 import { AffiliateBanner } from '@/components/shared/AffiliateBanner';
 import { DisclaimerSection } from '@/components/shared/DisclaimerSection';
+import { ToolCtaSection } from '@/components/shared/ToolCtaSection';
+import { getTranslations } from 'next-intl/server';
 import { CatAgeWidget } from '@/components/cat/CatAgeWidget';
 
 export const metadata: Metadata = {
@@ -61,7 +63,8 @@ const appSchema = {
   isPartOf: { '@type': 'WebSite', name: SITE_NAME, url: SITE_URL },
 };
 
-export default function CatAgePage() {
+export default async function CatAgePage() {
+  const t = await getTranslations('common');
   return (
     <>
       <JsonLdScript data={faqSchema} />
@@ -90,7 +93,13 @@ export default function CatAgePage() {
               </p>
             </div>
             <CatAgeWidget />
-            <DisclaimerSection />
+            <ToolCtaSection
+              heading="Track Your Cat's Health Over Time"
+              description="Now that you know your cat's life stage, use our BCS Weight Tracker to monitor their body condition and ensure they stay at a healthy weight at every age."
+              href="/cat/bcs-weight-tracker/"
+              buttonLabel="Check Body Condition →"
+            />
+            <DisclaimerSection text={t('disclaimer.standard')} />
           </div>
         }
         sidebar={

@@ -1,5 +1,16 @@
 import type { Metadata } from 'next';
 import { SITE_URL, SITE_NAME } from '@/constants';
+import { pageUrl } from '@/lib/utils/url';
+import {
+  generateSoftwareAppJsonLd,
+  generateHowToJsonLd,
+  generateBreadcrumbJsonLd,
+  graphJsonLd,
+  TOOL_CITATIONS,
+  HOWTO_STEPS,
+} from '@/lib/seo/geo-meta';
+import { generateFaqPageJsonLd, DOG_AGE_FAQ } from '@/lib/seo/geo-faq';
+import { DOG_AGE_KNOWLEDGE, DOG_AGE_SCIENCE } from '@/lib/seo/geo-content';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { SidebarLayout } from '@/components/layout/SidebarLayout';
 import { PetProfileBar } from '@/components/shared/PetProfileBar';
@@ -7,7 +18,11 @@ import { ErrorBoundaryWrapper } from '@/components/shared/ErrorBoundaryWrapper';
 import { JsonLdScript } from '@/components/shared/JsonLdScript';
 import { Card } from '@/components/ui/Card';
 import { AffiliateBanner } from '@/components/shared/AffiliateBanner';
+import { ToolCtaSection } from '@/components/shared/ToolCtaSection';
+import { getTranslations } from 'next-intl/server';
 import { DisclaimerSection } from '@/components/shared/DisclaimerSection';
+import { KnowledgeCards } from '@/components/shared/KnowledgeCards';
+import { ScienceBehindIt } from '@/components/shared/ScienceBehindIt';
 import { DogAgeWidget } from '@/components/dog/DogAgeWidget';
 
 export const metadata: Metadata = {
@@ -26,46 +41,28 @@ export const metadata: Metadata = {
   },
 };
 
-const faqSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: [
-    {
-      '@type': 'Question',
-      name: 'How do I calculate my dog\'s age in human years?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Our dog age calculator uses AAHA 2023 life stage guidelines adjusted by breed size. Small dogs age slower than large dogs — a 5-year-old Chihuahua is roughly 36 human years, while a 5-year-old Great Dane is about 42.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Why is the 7× rule inaccurate for dogs?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'The "multiply by 7" formula ignores the rapid maturation in the first 2 years of a dog\'s life and the size-dependent aging rates. Our calculator accounts for breed size, which is backed by AAHA guidelines and UCSD methylation research.',
-      },
-    },
-  ],
-};
+const faqSchema = generateFaqPageJsonLd(DOG_AGE_FAQ);
 
-const appSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'WebApplication',
-  name: 'Dog Age Calculator',
-  url: `${SITE_URL}/dog/age-calculator/`,
-  description: 'Convert dog years to human years using AAHA breed-size-adjusted life stage guidelines.',
-  applicationCategory: 'HealthApplication',
-  operatingSystem: 'Web',
-  offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-  isPartOf: { '@type': 'WebSite', name: SITE_NAME, url: SITE_URL },
-};
+const softwareAppSchema = generateSoftwareAppJsonLd({
+  toolName: 'Dog Age Calculator',
+  toolPath: '/dog/age-calculator/',
+  description: 'Convert dog years to human years using AAHA breed-size-adjusted life stage guidelines and UCSD epigenetic research.',
+  citations: TOOL_CITATIONS['dog/age-calculator'],
+});
 
-export default function DogAgePage() {
+const howToSchema = generateHowToJsonLd(HOWTO_STEPS['dog/age-calculator']);
+
+const breadcrumbSchema = generateBreadcrumbJsonLd([
+  { position: 1, name: 'Home', item: `${SITE_URL}/` },
+  { position: 2, name: 'Dog', item: `${SITE_URL}/dog/` },
+  { position: 3, name: 'Dog Age Calculator', item: '' },
+]);
+
+export default async function DogAgePage() {
+  const t = await getTranslations('common');
   return (
     <>
-      <JsonLdScript data={faqSchema} />
-      <JsonLdScript data={appSchema} />
+      <JsonLdScript data={graphJsonLd(faqSchema, softwareAppSchema, howToSchema, breadcrumbSchema)} />
       <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
         <Breadcrumb
           items={[
@@ -90,7 +87,15 @@ export default function DogAgePage() {
               </p>
             </div>
             <DogAgeWidget />
-            <DisclaimerSection />
+            <KnowledgeCards cards={DOG_AGE_KNOWLEDGE} />
+            <ScienceBehindIt content={DOG_AGE_SCIENCE} />
+            <ToolCtaSection
+              heading="Predict Your Puppy's Adult Size"
+              description="Curious how big your puppy will get? Use our Puppy Growth Predictor with your dog's current age and weight to estimate their adult size using breed-specific growth curves."
+              href="/dog/puppy-growth-predictor/"
+              buttonLabel="Predict Adult Size →"
+            />
+            <DisclaimerSection text={t('disclaimer.standard')} />
           </div>
         }
         sidebar={
@@ -98,9 +103,9 @@ export default function DogAgePage() {
             <Card padding="md">
               <p className="text-sm font-semibold text-[--gray-900]">Dog Health Tools</p>
               <ul className="mt-2 flex flex-col gap-2 text-sm text-[--gray-600]">
-                <li><a href="/dog/age-calculator/" className="text-[--dog-primary] hover:underline font-medium">Age Calculator</a></li>
-                <li><a href="/dog/calorie-calculator/" className="hover:text-[--dog-primary] transition-colors">Calorie Calculator</a></li>
-                <li><a href="/dog/puppy-growth-predictor/" className="hover:text-[--dog-primary] transition-colors">Puppy Growth</a></li>
+                <li><a href={pageUrl('dog/age-calculator')} className="text-[--dog-primary] hover:underline font-medium">Age Calculator</a></li>
+                <li><a href={pageUrl('dog/calorie-calculator')} className="hover:text-[--dog-primary] transition-colors">Calorie Calculator</a></li>
+                <li><a href={pageUrl('dog/puppy-growth-predictor')} className="hover:text-[--dog-primary] transition-colors">Puppy Growth</a></li>
               </ul>
             </Card>
             <AffiliateBanner variant="insurance" />

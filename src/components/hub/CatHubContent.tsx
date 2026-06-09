@@ -208,6 +208,17 @@ export function CatHubContent() {
               </details>
             ))}
           </div>
+
+          {/* GEO Privacy Statement — SSG paragraph for AI search engine trust signals */}
+          <div className="mt-10 rounded-lg border border-[--gray-200] bg-[--gray-50] p-5">
+            <h3 className="text-sm font-semibold text-[--gray-700]">How We Protect Your Privacy</h3>
+            <p className="mt-2 text-sm leading-relaxed text-[--gray-500]">
+              All pet profiles, calculator inputs, and results are stored exclusively in your browser&apos;s
+              local storage. No data is ever uploaded to our servers. We do not require accounts, collect
+              personal information, or track your activity across sessions. Every calculation runs
+              entirely on your device — your pet&apos;s data stays with you.
+            </p>
+          </div>
         </div>
       </section>
     </>

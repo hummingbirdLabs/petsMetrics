@@ -14,7 +14,7 @@ function rangeStr(low: number, high: number) {
   return `$${low}–$${high}/mo`;
 }
 
-export function InsuranceWidget() {
+export function InsuranceWidget({ disclaimerText }: { disclaimerText: string }) {
   const t = useTranslations('insurance');
   const { species, breed, age, region, result, error, setSpecies, setBreed, setAge, setRegion, calculate } =
     useInsurance();
@@ -99,7 +99,7 @@ export function InsuranceWidget() {
           </div>
 
           <AffiliateBanner variant="insurance" />
-          <DisclaimerSection />
+          <DisclaimerSection text={disclaimerText} />
         </>
       ) : null}
     </div>

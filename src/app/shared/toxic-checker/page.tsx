@@ -1,12 +1,27 @@
 import type { Metadata } from 'next';
-import { SITE_URL, SITE_NAME } from '@/constants';
+import { SITE_URL } from '@/constants';
+import { pageUrl } from '@/lib/utils/url';
+import {
+  generateSoftwareAppJsonLd,
+  generateHowToJsonLd,
+  generateBreadcrumbJsonLd,
+  graphJsonLd,
+  TOOL_CITATIONS,
+  HOWTO_STEPS,
+} from '@/lib/seo/geo-meta';
+import { generateFaqPageJsonLd, TOXIC_CHECKER_FAQ } from '@/lib/seo/geo-faq';
+import { TOXIC_CHECKER_KNOWLEDGE, TOXIC_CHECKER_SCIENCE } from '@/lib/seo/geo-content';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { SidebarLayout } from '@/components/layout/SidebarLayout';
 import { PetProfileBar } from '@/components/shared/PetProfileBar';
 import { ErrorBoundaryWrapper } from '@/components/shared/ErrorBoundaryWrapper';
 import { JsonLdScript } from '@/components/shared/JsonLdScript';
 import { Card } from '@/components/ui/Card';
+import { getTranslations } from 'next-intl/server';
 import { DisclaimerSection } from '@/components/shared/DisclaimerSection';
+import { ToolCtaSection } from '@/components/shared/ToolCtaSection';
+import { KnowledgeCards } from '@/components/shared/KnowledgeCards';
+import { ScienceBehindIt } from '@/components/shared/ScienceBehindIt';
 import { ToxicCheckerWidget } from '@/components/shared/ToxicCheckerWidget';
 
 export const metadata: Metadata = {
@@ -25,51 +40,31 @@ export const metadata: Metadata = {
   },
 };
 
-const faqSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: [
-    {
-      '@type': 'Question',
-      name: 'What foods are toxic to dogs?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Common toxic foods for dogs include grapes, raisins, chocolate, xylitol, onions, garlic, macadamia nuts, avocado, alcohol, coffee/caffeine, raw yeast dough, and moldy food. Our toxic checker instantly identifies 200+ items with severity ratings and symptoms.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'What should I do if my dog ate something toxic?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'If your dog has ingested a toxic substance, contact ASPCA Poison Control at (888) 426-4435 or the Pet Poison Helpline at (855) 764-7661 immediately. Time is critical. Have the food/plant name and approximate amount consumed ready.',
-      },
-    },
-  ],
-};
+const faqSchema = generateFaqPageJsonLd(TOXIC_CHECKER_FAQ);
 
-const appSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'WebApplication',
-  name: 'Toxic Food & Plant Checker',
-  url: `${SITE_URL}/shared/toxic-checker/`,
-  description: 'Check if any food or plant is safe for your dog or cat. 200+ items with toxicity levels and symptoms.',
-  applicationCategory: 'HealthApplication',
-  operatingSystem: 'Web',
-  offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-  isPartOf: { '@type': 'WebSite', name: SITE_NAME, url: SITE_URL },
-};
+const softwareAppSchema = generateSoftwareAppJsonLd({
+  toolName: 'Toxic Food & Plant Checker',
+  toolPath: '/shared/toxic-checker/',
+  description: 'Check if any food or plant is safe for your dog or cat. 200+ items with toxicity levels, symptoms, and ASPCA-backed data.',
+  citations: TOOL_CITATIONS['shared/toxic-checker'],
+});
 
-export default function ToxicCheckerPage() {
+const howToSchema = generateHowToJsonLd(HOWTO_STEPS['shared/toxic-checker']);
+
+const breadcrumbSchema = generateBreadcrumbJsonLd([
+  { position: 1, name: 'Home', item: `${SITE_URL}/` },
+  { position: 2, name: 'Toxic Food & Plant Checker', item: '' },
+]);
+
+export default async function ToxicCheckerPage() {
+  const t = await getTranslations('common');
   return (
     <>
-      <JsonLdScript data={faqSchema} />
-      <JsonLdScript data={appSchema} />
+      <JsonLdScript data={graphJsonLd(faqSchema, softwareAppSchema, howToSchema, breadcrumbSchema)} />
       <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
         <Breadcrumb
           items={[
             { label: 'Home', href: '' },
-            { label: 'Tools', href: '' },
             { label: 'Toxic Checker' },
           ]}
         />
@@ -89,7 +84,15 @@ export default function ToxicCheckerPage() {
               </p>
             </div>
             <ToxicCheckerWidget />
-            <DisclaimerSection />
+            <KnowledgeCards cards={TOXIC_CHECKER_KNOWLEDGE} />
+            <ScienceBehindIt content={TOXIC_CHECKER_SCIENCE} />
+            <ToolCtaSection
+              heading="Check If a Specific Food Is Safe"
+              description="Wondering about a particular food? Browse our 200+ detailed guides covering grapes, chocolate, lilies, and more. Each page shows safety status, symptoms, and emergency steps."
+              href="/dog/can-dogs-eat-grapes/"
+              buttonLabel="Browse All Food Guides →"
+            />
+            <DisclaimerSection text={t('disclaimer.standard')} />
           </div>
         }
         sidebar={

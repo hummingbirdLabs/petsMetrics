@@ -10,6 +10,7 @@ import {
 } from '@/lib/seo/eu-travel-meta';
 import { JsonLdScript } from '@/components/shared/JsonLdScript';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
+import { getTranslations } from 'next-intl/server';
 import { DisclaimerSection } from '@/components/shared/DisclaimerSection';
 
 /**
@@ -61,6 +62,7 @@ export default async function EUTravelLandingPage({
   const originName = countryName(origin);
 
   const faqSchema = generateEUTravelFaqJsonLd(origin, destination);
+  const t = await getTranslations('common');
 
   return (
     <>
@@ -233,7 +235,7 @@ export default async function EUTravelLandingPage({
         </section>
 
         <div className="mt-8">
-          <DisclaimerSection />
+          <DisclaimerSection text={t('disclaimer.standard')} />
         </div>
       </div>
     </>

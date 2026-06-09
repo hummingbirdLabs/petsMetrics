@@ -11,6 +11,8 @@ type ResultSectionProps = {
   resultSlot?: ReactNode;
   footerSlot?: ReactNode;
   className?: string;
+  /** SSG pre-rendered disclaimer text — passed from Server Component via getTranslations() */
+  disclaimerText?: string;
 };
 
 export function ResultSection({
@@ -21,6 +23,7 @@ export function ResultSection({
   resultSlot,
   footerSlot,
   className = '',
+  disclaimerText,
 }: ResultSectionProps) {
   return (
     <Card className={`flex flex-col gap-4 ${className}`}>
@@ -46,7 +49,7 @@ export function ResultSection({
           {footerSlot}
         </>
       ) : null}
-      <DisclaimerSection />
+      {disclaimerText ? <DisclaimerSection text={disclaimerText} /> : null}
     </Card>
   );
 }

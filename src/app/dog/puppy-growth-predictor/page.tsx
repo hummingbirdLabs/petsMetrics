@@ -8,6 +8,8 @@ import { JsonLdScript } from '@/components/shared/JsonLdScript';
 import { Card } from '@/components/ui/Card';
 import { AffiliateBanner } from '@/components/shared/AffiliateBanner';
 import { DisclaimerSection } from '@/components/shared/DisclaimerSection';
+import { ToolCtaSection } from '@/components/shared/ToolCtaSection';
+import { getTranslations } from 'next-intl/server';
 import { PuppyGrowthWidget } from '@/components/dog/PuppyGrowthWidget';
 
 export const metadata: Metadata = {
@@ -61,7 +63,8 @@ const appSchema = {
   isPartOf: { '@type': 'WebSite', name: SITE_NAME, url: SITE_URL },
 };
 
-export default function PuppyGrowthPage() {
+export default async function PuppyGrowthPage() {
+  const t = await getTranslations('common');
   return (
     <>
       <JsonLdScript data={faqSchema} />
@@ -90,7 +93,13 @@ export default function PuppyGrowthPage() {
               </p>
             </div>
             <PuppyGrowthWidget />
-            <DisclaimerSection />
+            <ToolCtaSection
+              heading="Calculate Your Dog's Daily Calories"
+              description="Now that you know how big your puppy will get, calculate their exact daily calorie needs using the AAFCO MER formula. Portion control starts here."
+              href="/dog/calorie-calculator/"
+              buttonLabel="Calculate Daily Calories →"
+            />
+            <DisclaimerSection text={t('disclaimer.standard')} />
           </div>
         }
         sidebar={

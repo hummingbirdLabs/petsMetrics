@@ -8,6 +8,8 @@ import { JsonLdScript } from '@/components/shared/JsonLdScript';
 import { Card } from '@/components/ui/Card';
 import { AffiliateBanner } from '@/components/shared/AffiliateBanner';
 import { DisclaimerSection } from '@/components/shared/DisclaimerSection';
+import { ToolCtaSection } from '@/components/shared/ToolCtaSection';
+import { getTranslations } from 'next-intl/server';
 import { CatVaccinationWidget } from '@/components/cat/CatVaccinationWidget';
 
 export const metadata: Metadata = {
@@ -61,7 +63,8 @@ const appSchema = {
   isPartOf: { '@type': 'WebSite', name: SITE_NAME, url: SITE_URL },
 };
 
-export default function CatVaccinationPage() {
+export default async function CatVaccinationPage() {
+  const t = await getTranslations('common');
   return (
     <>
       <JsonLdScript data={faqSchema} />
@@ -90,7 +93,13 @@ export default function CatVaccinationPage() {
               </p>
             </div>
             <CatVaccinationWidget />
-            <DisclaimerSection />
+            <ToolCtaSection
+              heading="Check Your Cat's Healthy Weight"
+              description="Vaccines keep your cat protected — but what about their weight? Use our BCS Weight Tracker to ensure your cat maintains a healthy body condition."
+              href="/cat/bcs-weight-tracker/"
+              buttonLabel="Check Body Condition →"
+            />
+            <DisclaimerSection text={t('disclaimer.standard')} />
           </div>
         }
         sidebar={
