@@ -29,6 +29,7 @@ export const metadata: Metadata = {
   title: 'Cat Hydration Calculator — How Much Water Your Cat Needs | petsMetrics',
   description:
     'Calculate how much water your cat needs daily. Accounts for moisture from dry and wet food. Most cats are chronically dehydrated — find out if yours is getting enough.',
+  keywords: 'cat hydration calculator, how much water should my cat drink, cat water intake per day, cat not drinking enough water, dehydrated cat symptoms, cat water needs',
   alternates: {
     canonical: `${SITE_URL}/cat/hydration-calculator/`,
   },
@@ -38,6 +39,13 @@ export const metadata: Metadata = {
       'Calculate your cat\'s daily water needs. Accounts for food moisture content and weight-based formula.',
     url: `${SITE_URL}/cat/hydration-calculator/`,
     type: 'website',
+    images: [{ url: `${SITE_URL}/og/cat-hydration-calculator.webp`, width: 1200, height: 630, alt: 'Cat Hydration Calculator — Daily Water Needs' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Cat Hydration Calculator — How Much Water Your Cat Needs | petsMetrics',
+    description: 'Calculate your cat\'s daily water needs. Accounts for food moisture content and weight-based formula.',
+    images: [`${SITE_URL}/og/cat-hydration-calculator.webp`],
   },
 };
 

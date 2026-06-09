@@ -1,5 +1,16 @@
 import type { Metadata } from 'next';
 import { SITE_URL, SITE_NAME } from '@/constants';
+import { pageUrl } from '@/lib/utils/url';
+import {
+  generateSoftwareAppJsonLd,
+  generateHowToJsonLd,
+  generateBreadcrumbJsonLd,
+  graphJsonLd,
+  TOOL_CITATIONS,
+  HOWTO_STEPS,
+} from '@/lib/seo/geo-meta';
+import { generateFaqPageJsonLd, CAT_VACCINE_FAQ } from '@/lib/seo/geo-faq';
+import { CAT_VACCINE_KNOWLEDGE, CAT_VACCINE_SCIENCE } from '@/lib/seo/geo-content';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { SidebarLayout } from '@/components/layout/SidebarLayout';
 import { PetProfileBar } from '@/components/shared/PetProfileBar';
@@ -9,6 +20,8 @@ import { Card } from '@/components/ui/Card';
 import { AffiliateBanner } from '@/components/shared/AffiliateBanner';
 import { DisclaimerSection } from '@/components/shared/DisclaimerSection';
 import { ToolCtaSection } from '@/components/shared/ToolCtaSection';
+import { KnowledgeCards } from '@/components/shared/KnowledgeCards';
+import { ScienceBehindIt } from '@/components/shared/ScienceBehindIt';
 import { getTranslations } from 'next-intl/server';
 import { CatVaccinationWidget } from '@/components/cat/CatVaccinationWidget';
 
@@ -16,6 +29,7 @@ export const metadata: Metadata = {
   title: 'Cat Vaccination Schedule — Free Personalized Timeline | petsMetrics',
   description:
     'Generate a complete vaccination schedule for your cat by age and region. Core (FVRCP, Rabies) and non-core (FeLV) vaccines with WSAVA & AAFP guidelines.',
+  keywords: 'cat vaccination schedule, kitten shot schedule, FVRCP vaccine schedule, kitten vaccination chart, when do kittens need shots, indoor cat vaccine schedule, cat rabies vaccine schedule',
   alternates: {
     canonical: `${SITE_URL}/cat/vaccination-schedule/`,
   },
@@ -25,50 +39,38 @@ export const metadata: Metadata = {
       'Never miss a vaccine. Personalized to your cat\'s age and region. WSAVA core feline vaccine guidelines.',
     url: `${SITE_URL}/cat/vaccination-schedule/`,
     type: 'website',
+    images: [{ url: `${SITE_URL}/og/vaccination-schedule.webp`, width: 1200, height: 630, alt: 'Cat Vaccination Schedule — Free Personalized Timeline' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Cat Vaccination Schedule — Free Personalized Timeline | petsMetrics',
+    description: 'Never miss a vaccine. Personalized to your cat\'s age and region. WSAVA core feline vaccine guidelines.',
+    images: [`${SITE_URL}/og/vaccination-schedule.webp`],
   },
 };
 
-const faqSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: [
-    {
-      '@type': 'Question',
-      name: 'Which vaccinations does my cat need?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Core vaccines (required for all cats) include Rabies and FVRCP (feline viral rhinotracheitis, calicivirus, panleukopenia). Non-core vaccines like FeLV (feline leukemia virus) depend on your region and lifestyle. Our schedule follows WSAVA and AAFP feline guidelines.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'How often does my cat need booster shots?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'FVRCP boosters are typically every 1–3 years after the initial kitten series. Rabies boosters are every 1–3 years depending on local laws. Annual wellness exams are recommended even in non-booster years. Our calculator generates a personalized timeline.',
-      },
-    },
-  ],
-};
+const faqSchema = generateFaqPageJsonLd(CAT_VACCINE_FAQ);
 
-const appSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'WebApplication',
-  name: 'Cat Vaccination Schedule',
-  url: `${SITE_URL}/cat/vaccination-schedule/`,
-  description: 'Generate a personalized cat vaccination schedule based on age and region. WSAVA feline guidelines.',
-  applicationCategory: 'HealthApplication',
-  operatingSystem: 'Web',
-  offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-  isPartOf: { '@type': 'WebSite', name: SITE_NAME, url: SITE_URL },
-};
+const softwareAppSchema = generateSoftwareAppJsonLd({
+  toolName: 'Cat Vaccination Schedule',
+  toolPath: '/cat/vaccination-schedule/',
+  description: 'Generate a personalized vaccination schedule for your cat based on WSAVA global guidelines and AAFP feline vaccination recommendations.',
+  citations: TOOL_CITATIONS['cat/vaccination-schedule'],
+});
+
+const howToSchema = generateHowToJsonLd(HOWTO_STEPS['cat/vaccination-schedule']);
+
+const breadcrumbSchema = generateBreadcrumbJsonLd([
+  { position: 1, name: 'Home', item: `${SITE_URL}/` },
+  { position: 2, name: 'Cat', item: `${SITE_URL}/cat/` },
+  { position: 3, name: 'Cat Vaccination Schedule', item: '' },
+]);
 
 export default async function CatVaccinationPage() {
   const t = await getTranslations('common');
   return (
     <>
-      <JsonLdScript data={faqSchema} />
-      <JsonLdScript data={appSchema} />
+      <JsonLdScript data={graphJsonLd(faqSchema, softwareAppSchema, howToSchema, breadcrumbSchema)} />
       <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
         <Breadcrumb
           items={[
@@ -93,6 +95,8 @@ export default async function CatVaccinationPage() {
               </p>
             </div>
             <CatVaccinationWidget />
+            <KnowledgeCards cards={CAT_VACCINE_KNOWLEDGE} />
+            <ScienceBehindIt content={CAT_VACCINE_SCIENCE} />
             <ToolCtaSection
               heading="Check Your Cat's Healthy Weight"
               description="Vaccines keep your cat protected — but what about their weight? Use our BCS Weight Tracker to ensure your cat maintains a healthy body condition."
@@ -117,9 +121,9 @@ export default async function CatVaccinationPage() {
             <Card padding="md">
               <p className="text-sm font-semibold text-[--gray-900]">Cat Tools</p>
               <ul className="mt-2 flex flex-col gap-2 text-sm text-[--gray-600]">
-                <li><a href="/cat/age-calculator/" className="text-[--cat-primary] hover:underline font-medium">Age Calculator</a></li>
-                <li><a href="/cat/gestation-calculator/" className="hover:text-[--cat-primary] transition-colors">Gestation Calculator</a></li>
-                <li><a href="/cat/hydration-calculator/" className="hover:text-[--cat-primary] transition-colors">Hydration Calculator</a></li>
+                <li><a href={pageUrl('cat/age-calculator')} className="text-[--cat-primary] hover:underline font-medium">Age Calculator</a></li>
+                <li><a href={pageUrl('cat/gestation-calculator')} className="hover:text-[--cat-primary] transition-colors">Gestation Calculator</a></li>
+                <li><a href={pageUrl('cat/hydration-calculator')} className="hover:text-[--cat-primary] transition-colors">Hydration Calculator</a></li>
               </ul>
             </Card>
           </div>

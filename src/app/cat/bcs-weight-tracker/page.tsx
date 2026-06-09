@@ -29,6 +29,7 @@ export const metadata: Metadata = {
   title: 'Cat Body Condition Score — Is My Cat Overweight? | petsMetrics',
   description:
     'Use our visual BCS assessment to check if your cat is at a healthy weight. Get a safe calorie-reduction plan based on the AAHA 9-point BCS scale.',
+  keywords: 'cat body condition score, is my cat overweight, cat weight calculator, how to tell if cat is overweight, cat obesity chart, healthy cat weight by breed, indoor cat weight gain',
   alternates: {
     canonical: `${SITE_URL}/cat/bcs-weight-tracker/`,
   },
@@ -38,6 +39,13 @@ export const metadata: Metadata = {
       'Assess your cat\'s body condition using the 9-point BCS scale. Get a safe weight management plan with calorie targets.',
     url: `${SITE_URL}/cat/bcs-weight-tracker/`,
     type: 'website',
+    images: [{ url: `${SITE_URL}/og/cat-bcs-weight-tracker.webp`, width: 1200, height: 630, alt: 'Cat Body Condition Score — BCS Weight Tracker' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Cat Body Condition Score — Is My Cat Overweight? | petsMetrics',
+    description: 'Assess your cat\'s body condition using the 9-point BCS scale. Get a safe weight management plan.',
+    images: [`${SITE_URL}/og/cat-bcs-weight-tracker.webp`],
   },
 };
 

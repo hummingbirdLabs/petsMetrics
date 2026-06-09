@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   title: 'My Pet Profiles — Free Dog & Cat Health Dashboard',
   description:
     'Create a free pet profile for your dog or cat. All health calculators auto-fill from your profile. No login required. 100% private.',
+  keywords: 'pet profile, dog profile, cat profile, free pet dashboard, pet health tracker, pet weight tracker',
   alternates: {
     canonical: `${SITE_URL}/profile/`,
   },
@@ -15,6 +16,11 @@ export const metadata: Metadata = {
     title: 'My Pet Profiles — petsMetrics',
     description:
       'Create a free pet profile for your dog or cat. All health calculators auto-fill from your profile.',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'My Pet Profiles — Free Dog & Cat Health Dashboard | petsMetrics',
+    description: 'Create a free pet profile for your dog or cat. All health calculators auto-fill from your profile.',
   },
 };
 

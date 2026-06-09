@@ -5,6 +5,7 @@ import { JsonLdScript } from '@/components/shared/JsonLdScript';
 import { HubSearch } from '@/components/hub/HubSearch';
 import { ProfileBar } from '@/components/hub/ProfileBar';
 import { pageUrl } from '@/lib/utils/url';
+import { graphJsonLd } from '@/lib/seo/geo-meta';
 
 const collectionSchema = {
   '@context': 'https://schema.org',
@@ -64,8 +65,7 @@ export function CatHubContent() {
 
   return (
     <>
-      <JsonLdScript data={collectionSchema} />
-      <JsonLdScript data={breadcrumbSchema} />
+      <JsonLdScript data={graphJsonLd(collectionSchema, breadcrumbSchema)} />
 
       {/* Hero */}
       <section

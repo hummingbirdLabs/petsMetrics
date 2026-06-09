@@ -4,6 +4,7 @@ import { SITE_URL, SITE_NAME } from '@/constants';
 import { JsonLdScript } from '@/components/shared/JsonLdScript';
 import { HubSearch } from '@/components/hub/HubSearch';
 import { ProfileBar } from '@/components/hub/ProfileBar';
+import { graphJsonLd } from '@/lib/seo/geo-meta';
 import { pageUrl } from '@/lib/utils/url';
 
 const collectionSchema = {
@@ -91,8 +92,7 @@ export function DogHubContent() {
 
   return (
     <>
-      <JsonLdScript data={collectionSchema} />
-      <JsonLdScript data={breadcrumbSchema} />
+      <JsonLdScript data={graphJsonLd(collectionSchema, breadcrumbSchema)} />
 
       {/* Hero */}
       <section

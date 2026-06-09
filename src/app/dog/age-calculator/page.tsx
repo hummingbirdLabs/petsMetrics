@@ -29,6 +29,7 @@ export const metadata: Metadata = {
   title: 'Dog Age Calculator — Dog to Human Years | petsMetrics',
   description:
     'How old is your dog in human years? Our science-based calculator uses breed size and UCSD methylation research — not the outdated 7× rule. Free and instant.',
+  keywords: 'dog age calculator, dog years to human years, how old is my dog in human years, dog age chart, how long do dogs live, dog life stages, dog years calculator by breed',
   alternates: {
     canonical: `${SITE_URL}/dog/age-calculator/`,
   },
@@ -38,6 +39,13 @@ export const metadata: Metadata = {
       'How old is your dog in human years? Science-based, size-adjusted AAHA guidelines. Not the 7× rule.',
     url: `${SITE_URL}/dog/age-calculator/`,
     type: 'website',
+    images: [{ url: `${SITE_URL}/og/dog-age-calculator.webp`, width: 1200, height: 630, alt: 'Dog Age Calculator — Convert Dog Years to Human Years' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Dog Age Calculator — Dog to Human Years | petsMetrics',
+    description: 'How old is your dog in human years? Science-based, size-adjusted AAHA guidelines. Not the 7× rule.',
+    images: [`${SITE_URL}/og/dog-age-calculator.webp`],
   },
 };
 

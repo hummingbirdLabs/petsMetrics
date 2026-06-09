@@ -50,6 +50,16 @@ export const DOG_AGE_FAQ: FaqItem[] = [
     answer:
       'AAHA defines four canine life stages: Puppy (0-1 year, rapid growth and socialization), Young Adult (1-4 years, peak physical condition), Mature Adult (5-10 years for small breeds, 5-7 for large breeds, preventive care focus), and Senior (varies by breed size — small dogs >10 years, giant breeds >7 years). Each stage requires different nutrition, exercise, and health screening protocols. Recognizing which stage your dog is in helps you provide proactive age-appropriate care.',
   },
+  {
+    question: 'Why do small dogs live longer than large dogs?',
+    answer:
+      'Small dogs live significantly longer than large breeds — Chihuahuas average 14-16 years while Great Danes average 7-10. The leading theory is that large breeds age at an accelerated rate after maturity: large-breed cells divide faster and accumulate more oxidative damage. The UCSD epigenetic clock study found that large dogs\' DNA methylation patterns change faster than small dogs\' after age 2, equivalent to aging ~1.3× faster per year. Other contributing factors include higher cancer rates in large breeds (cancer accounts for ~50% of giant breed deaths vs. ~25% in small breeds), and the metabolic cost of maintaining a larger body mass puts more stress on organ systems. Selective breeding for size has inadvertently selected for faster-aging genetic profiles in giant breeds.',
+  },
+  {
+    question: 'How accurate is the dog age calculator?',
+    answer:
+      'Our dog age calculator is based on the best available science — AAHA breed-size-adjusted life stage guidelines combined with UCSD\'s 2020 DNA methylation study. The calculator accounts for breed size (small/medium/large/giant), which is the single most important variable after age. Accuracy limitations: the UCSD study focused on Labrador Retrievers, so the epigenetic clock is most validated for that breed size. Individual dogs age differently based on genetics, diet, exercise, weight management, dental health, and preventive care. Mixed-breed dogs tend to live 1-2 years longer than purebreds of similar size, and they age more like the smaller parent breed. Our calculator gives the best population-level estimate; individual variation of ±2-3 human years is normal.',
+  },
 ];
 
 // ── Cat Age Calculator ─────────────────────────────────
@@ -74,6 +84,11 @@ export const CAT_AGE_FAQ: FaqItem[] = [
     answer:
       'The AAFP/AAHA feline life stage chart maps cat age to human age: a 6-month-old kitten ≈ 10 human years, a 1-year-old cat ≈ 15, a 2-year-old ≈ 24, a 5-year-old ≈ 36, a 10-year-old ≈ 56, a 15-year-old ≈ 76, and a 20-year-old ≈ 96. After age 3, each cat year adds approximately 4 human years. Senior cats (11+) benefit from biannual veterinary exams and blood work to catch age-related diseases like kidney disease, hyperthyroidism, and dental disease early.',
   },
+  {
+    question: 'What is the oldest cat ever recorded?',
+    answer:
+      'The oldest cat ever recorded was Creme Puff, a domestic shorthair from Austin, Texas, who lived to 38 years and 3 days (1967-2005), as verified by Guinness World Records. The oldest living cat on record (as of 2024) is Flossie, a 28-year-old British tortoiseshell. While these extreme ages are rare, indoor cats routinely live 18-25 years with excellent care. Key longevity factors include a strictly indoor lifestyle (outdoor cats average only 2-5 years), species-appropriate high-moisture nutrition, regular veterinary screening starting at age 7-8, dental care, maintaining a healthy weight, and environmental enrichment. The oldest recorded cats share common traits: indoor living, attentive owners who noticed health changes early, and consistent preventive veterinary care.',
+  },
 ];
 
 // ── Dog Calorie Calculator ─────────────────────────────
@@ -97,6 +112,16 @@ export const DOG_CALORIE_FAQ: FaqItem[] = [
     question: 'How many calories should I feed my puppy?',
     answer:
       "Puppies have much higher energy requirements than adult dogs. A puppy under 4 months needs approximately 3× their RER — that's nearly double an adult dog's calorie needs per kg of body weight. From 4 months to adulthood, the multiplier drops to 2× RER. Because puppies are growing rapidly, they need frequent meals (3-4 per day until 6 months) and calorie-dense nutrition. Our calculator adjusts for your puppy's age to give a calorie target appropriate for their growth stage. Always monitor body condition and adjust — the calculator provides a starting point, not an absolute rule.",
+  },
+  {
+    question: 'Should I feed my dog before or after a walk?',
+    answer:
+      'Veterinarians recommend feeding your dog after a walk, not before — and waiting at least 30-60 minutes after exercise before feeding. The primary reason is bloat (Gastric Dilatation-Volvulus or GDV) prevention: exercising on a full stomach increases the risk of life-threatening stomach twisting, especially in large, deep-chested breeds (Great Danes, German Shepherds, Standard Poodles, Boxers). Bloat has a mortality rate of 10-30% even with emergency surgery. Other reasons to feed after: dogs digest better when resting (blood flow stays with digestion rather than muscles), post-exercise feeding helps with training reinforcement, and a post-walk meal signals relaxation. If you must feed before exercise, wait at least 2 hours, or feed half the portion 2+ hours before and the rest after. Smaller dogs have lower GDV risk but the same digestion principles apply.',
+  },
+  {
+    question: 'Why is my dog always hungry?',
+    answer:
+      'Dogs have a strong evolutionary drive to eat whenever food is available — their wild ancestors didn\'t know when the next meal would come. Common reasons for excessive hunger include: the food lacks sufficient protein or fiber (dogs feel fuller on high-protein, high-fiber diets); feeding too little for their activity level (try our calorie calculator for an accurate target); medical conditions like diabetes, Cushing\'s disease, hyperthyroidism, or exocrine pancreatic insufficiency (EPI) — these cause real physiological hunger; intestinal parasites that steal nutrients; boredom or anxiety that manifests as food-seeking behavior; and certain medications like prednisone that increase appetite. If your dog is eating the right amount but constantly begging, try splitting meals into 2-3 smaller portions, adding low-calorie vegetables (green beans, carrots) as fillers, using slow-feeder bowls, and increasing exercise. If you\'ve ruled out underfeeding and your dog is losing weight despite eating normally, see a vet — this is a red flag for metabolic disease.',
   },
 ];
 
@@ -170,6 +195,16 @@ export const DOG_VACCINE_FAQ: FaqItem[] = [
     answer:
       'Yes, deworming is an important part of preventive care. Puppies should be dewormed at 2, 4, 6, and 8 weeks of age, then monthly until 6 months. Adult dogs typically need deworming every 3-6 months depending on lifestyle and risk factors (hunting, raw food diets, exposure to other animals). Common parasites include roundworms, hookworms, whipworms, and tapeworms. Our vaccination schedule includes deworming reminders alongside vaccine dates so you can coordinate vet visits efficiently.',
   },
+  {
+    question: 'Can I vaccinate my own puppy at home?',
+    answer:
+      'While some feed stores sell DIY vaccines, veterinary organizations strongly discourage at-home vaccination for several critical reasons. First, improper storage or handling renders the vaccine ineffective — vaccines must stay continuously refrigerated at 2-8°C (35-46°F), and even brief temperature excursions can destroy the attenuated viruses. Second, incorrect injection technique (wrong location, depth, or angle) means the vaccine may not produce immunity. Third, and most importantly, anaphylactic reactions occur in approximately 1 in 1,000-5,000 vaccinations — a vet clinic has epinephrine, oxygen, and IV access ready to save your puppy\'s life within minutes. At home, you have none of these. Fourth, vet-administered vaccines create a legal medical record required for boarding, grooming, travel, and dog parks. Fifth, many vaccine manufacturers will not honor their guarantee (e.g., covering treatment costs if a vaccinated dog still gets parvo) unless a licensed veterinarian administered the shot. The cost savings of DIY vaccination ($15-30 per shot) is not worth the risks.',
+  },
+  {
+    question: 'What happens if I miss a puppy vaccination?',
+    answer:
+      'Missing a vaccination by a few days or even 1-2 weeks is usually not catastrophic — your puppy still retains some immunity from the previous dose. However, missing by more than 4 weeks can leave your puppy unprotected because maternal antibody levels decline over time, creating a "window of susceptibility" where the puppy has neither maternal nor vaccine-induced protection. If you miss a dose: do not restart the entire series. Contact your vet — they will typically give the missed dose as soon as possible and adjust the remaining schedule. For example, if the 12-week DHPP is missed until week 16, the vet may give it at week 16 and schedule the final booster 3-4 weeks later. Do NOT take your puppy to high-risk areas (dog parks, pet stores, sidewalks with unknown dog traffic) until the full series is complete, especially if a dose was delayed. The parvovirus can survive in soil for years, and an unvaccinated or partially vaccinated puppy is extremely vulnerable.',
+  },
 ];
 
 // ── Cat Vaccination Schedule ───────────────────────────
@@ -236,6 +271,11 @@ export const CAT_BCS_FAQ: FaqItem[] = [
     question: 'How fast should my overweight cat lose weight?',
     answer:
       'Cats should lose weight very slowly — 0.5-2% of body weight per week is the safe maximum. For a 6 kg cat that should weigh 5 kg, this means losing 30-120 grams per week, taking 2-5 months to reach the target weight. Rapid weight loss (>2% per week) can trigger hepatic lipidosis, a life-threatening condition where fat overwhelms the liver. Our calculator sets a calorie target at 80% of ideal-weight RER, which is the clinical safety floor. Always involve your veterinarian in a weight loss plan, especially for cats that need to lose more than 1 kg.',
+  },
+  {
+    question: 'Should I free feed my cat?',
+    answer:
+      'Veterinary nutritionists generally advise against free feeding (leaving food out 24/7) for most cats, especially indoor cats. The primary reason: 60% of indoor cats are overweight or obese, and free feeding is the #1 contributor — cats are natural grazers in the wild (eating 10-20 small prey per day) but domestic kibble is far more calorie-dense than mice. Free feeding also makes it impossible to monitor appetite changes, which are often the first sign of illness in cats — a cat that suddenly stops eating is a medical emergency. Exceptions exist: underweight cats, recovering cats, and some seniors may benefit from free access to food. Best practice is scheduled meals (2-3 times per day) with measured portions based on your cat\'s MER (use our calorie calculator for the target). Puzzle feeders or food-dispensing toys can simulate the hunting/grazing pattern while preventing overeating. If you must free feed, use a microchip-activated feeder to prevent multi-cat food theft and weigh the food daily to track intake.',
   },
 ];
 
@@ -312,6 +352,11 @@ export const BARF_FAQ: FaqItem[] = [
     question: 'What is the 80-10-10 rule in BARF raw feeding?',
     answer:
       'The 80-10-10 rule is the foundational ratio for BARF (Biologically Appropriate Raw Food) diets: 80% muscle meat (protein source), 10% raw meaty bone (calcium and phosphorus), 5% liver (vitamin A, B vitamins, iron), and 5% other secreting organs like kidney, spleen, or pancreas (additional micronutrients). For cats, the muscle meat increases to 84% and the liver to 5%, while other organs increase to 10% with 0% vegetables (cats are obligate carnivores and do not require plant matter). This ratio mimics the composition of whole prey animals. Variety is key — rotate protein sources weekly across at least 3-4 different animals (beef, chicken, turkey, lamb, fish) for nutritional completeness.',
+  },
+  {
+    question: 'Is raw food better than kibble for dogs?',
+    answer:
+      'This is one of the most debated topics in canine nutrition, and the honest answer is: it depends on the individual dog and owner commitment. Proponents of raw feeding report benefits including shinier coats, healthier skin, smaller/firmer stools, better dental health (from chewing raw bones), and higher energy levels. These improvements likely come from higher moisture content, absence of fillers, and undenatured proteins. However, kibble has clear advantages: it is nutritionally complete and balanced by AAFCO standards (homemade raw diets commonly have calcium/phosphorus imbalances), it\'s safer for immunocompromised household members (raw meat carries Salmonella, Campylobacter, and E. coli risks), it\'s dramatically more convenient, and it\'s far harder to make a dangerous feeding error with kibble. Several peer-reviewed studies have found nutritional deficiencies in 60-90% of homemade raw diets analyzed. The safest raw feeding approach is to follow NRC/FEDIAF guidelines precisely, use our BARF calculator to maintain correct ratios, rotate protein sources, and consult a board-certified veterinary nutritionist. There is no universal "better" — only what works safely for your dog and your household.',
   },
   {
     question: 'Is BARF raw feeding suitable for beginners?',

@@ -29,6 +29,7 @@ export const metadata: Metadata = {
   title: 'Dog Gestation Calculator — Whelping Due Date & Milestones | petsMetrics',
   description:
     'Calculate your dog\'s due date from the mating date. View key pregnancy milestones, vet check windows, and whelping preparation timeline. Based on average 63-day gestation.',
+  keywords: 'dog pregnancy calculator, dog due date calculator, how long are dogs pregnant, dog gestation period, dog pregnancy week by week, dog pregnancy stages timeline',
   alternates: {
     canonical: `${SITE_URL}/dog/gestation-calculator/`,
   },
@@ -38,6 +39,13 @@ export const metadata: Metadata = {
       'Calculate your dog\'s due date. Track key developmental milestones from implantation to whelping.',
     url: `${SITE_URL}/dog/gestation-calculator/`,
     type: 'website',
+    images: [{ url: `${SITE_URL}/og/gestation-calculator.webp`, width: 1200, height: 630, alt: 'Dog Gestation Calculator — Due Date & Milestones' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Dog Gestation Calculator — Whelping Due Date | petsMetrics',
+    description: 'Calculate your dog\'s due date. Track key developmental milestones from implantation to whelping.',
+    images: [`${SITE_URL}/og/gestation-calculator.webp`],
   },
 };
 

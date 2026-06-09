@@ -28,6 +28,7 @@ export const metadata: Metadata = {
   title: 'EU Pet Travel Requirements Checker 2026 | petsMetrics',
   description:
     'Check official EU pet travel requirements by destination country. Microchip, rabies vaccine, tapeworm treatment, pet passport. Updated for 2026.',
+  keywords: 'EU pet travel requirements, taking dog to Europe, pet passport Europe, bringing dog to France from UK, traveling to Europe with cat, EU pet health certificate, USDA pet travel to Europe',
   alternates: {
     canonical: `${SITE_URL}/shared/eu-pet-travel-checker/`,
   },
@@ -37,6 +38,13 @@ export const metadata: Metadata = {
       'Verify all EU pet travel requirements for your dog or cat. Includes UK post-Brexit rules and Nordic tapeworm zones.',
     url: `${SITE_URL}/shared/eu-pet-travel-checker/`,
     type: 'website',
+    images: [{ url: `${SITE_URL}/og/eu-pet-travel-checker.webp`, width: 1200, height: 630, alt: 'EU Pet Travel Requirements Checker 2026' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'EU Pet Travel Requirements Checker 2026 | petsMetrics',
+    description: 'Verify all EU pet travel requirements for your dog or cat. UK post-Brexit rules included.',
+    images: [`${SITE_URL}/og/eu-pet-travel-checker.webp`],
   },
 };
 

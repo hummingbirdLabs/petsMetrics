@@ -28,6 +28,7 @@ export const metadata: Metadata = {
   title: 'Toxic Food & Plant Checker for Dogs & Cats | petsMetrics',
   description:
     'Instantly check if any food or plant is safe for your dog or cat. 200+ items in our database. Severity ratings, symptoms, and vet hotline included.',
+  keywords: 'dog toxic food checker, cat toxic plant checker, is it safe for dogs, can dogs eat, what foods are toxic to dogs, foods dogs can\'t eat list, plants toxic to cats',
   alternates: {
     canonical: `${SITE_URL}/shared/toxic-checker/`,
   },
@@ -37,6 +38,13 @@ export const metadata: Metadata = {
       'Check food and plant safety for your pet — 200+ items. Get toxicity levels, symptoms, and emergency numbers.',
     url: `${SITE_URL}/shared/toxic-checker/`,
     type: 'website',
+    images: [{ url: `${SITE_URL}/og/toxic-checker.webp`, width: 1200, height: 630, alt: 'Toxic Food & Plant Checker for Dogs & Cats' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Toxic Food & Plant Checker for Dogs & Cats | petsMetrics',
+    description: 'Check food and plant safety for your pet — 200+ items. Get toxicity levels, symptoms, and emergency numbers.',
+    images: [`${SITE_URL}/og/toxic-checker.webp`],
   },
 };
 

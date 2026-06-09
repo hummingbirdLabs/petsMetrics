@@ -29,12 +29,18 @@ export const metadata: Metadata = {
   title: 'BARF Raw Feeding Calculator — Free Daily Portion Guide | petsMetrics',
   description:
     'Calculate daily BARF raw feeding portions for dogs and cats. Muscle meat, bone, liver, organ, and vegetable ratios based on NRC guidelines.',
+  keywords: 'BARF calculator, raw dog food calculator, raw feeding calculator, how much raw food to feed dog, 80 10 10 raw diet calculator, BARF diet for beginners, raw feeding guide for dogs',
   alternates: { canonical: `${SITE_URL}/shared/barf-calculator/` },
   openGraph: {
     title: 'BARF Raw Feeding Calculator — Free Daily Portion Guide | petsMetrics',
     description: 'Calculate precise daily raw feeding portions using the 80-10-10 BARF model. Dog and cat calculators.',
     url: `${SITE_URL}/shared/barf-calculator/`,
     type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'BARF Raw Feeding Calculator — Free Daily Portion Guide | petsMetrics',
+    description: 'Calculate precise daily raw feeding portions using the 80-10-10 BARF model. Dog and cat calculators.',
   },
 };
 

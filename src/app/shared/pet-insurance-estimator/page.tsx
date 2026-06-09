@@ -29,12 +29,18 @@ export const metadata: Metadata = {
   title: 'Pet Insurance Cost Estimator — Compare Plans Instantly | petsMetrics',
   description:
     'Compare pet insurance rates from Lemonade, Pumpkin, Trupanion, and Petplan. Get monthly estimates based on breed, age, and location.',
+  keywords: 'pet insurance calculator, pet insurance cost estimator, how much is pet insurance, is pet insurance worth it, best pet insurance for dogs, dog insurance comparison',
   alternates: { canonical: `${SITE_URL}/shared/pet-insurance-estimator/` },
   openGraph: {
     title: 'Pet Insurance Cost Estimator — Compare Plans Instantly | petsMetrics',
     description: 'Compare monthly pet insurance premiums based on breed, age, and location. NAPHIA industry data.',
     url: `${SITE_URL}/shared/pet-insurance-estimator/`,
     type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Pet Insurance Cost Estimator — Compare Plans Instantly | petsMetrics',
+    description: 'Compare monthly pet insurance premiums based on breed, age, and location. NAPHIA industry data.',
   },
 };
 

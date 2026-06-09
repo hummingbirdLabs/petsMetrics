@@ -1,5 +1,16 @@
 import type { Metadata } from 'next';
 import { SITE_URL, SITE_NAME } from '@/constants';
+import { pageUrl } from '@/lib/utils/url';
+import {
+  generateSoftwareAppJsonLd,
+  generateHowToJsonLd,
+  generateBreadcrumbJsonLd,
+  graphJsonLd,
+  TOOL_CITATIONS,
+  HOWTO_STEPS,
+} from '@/lib/seo/geo-meta';
+import { generateFaqPageJsonLd, CAT_AGE_FAQ } from '@/lib/seo/geo-faq';
+import { CAT_AGE_KNOWLEDGE, CAT_AGE_SCIENCE } from '@/lib/seo/geo-content';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { SidebarLayout } from '@/components/layout/SidebarLayout';
 import { PetProfileBar } from '@/components/shared/PetProfileBar';
@@ -9,6 +20,8 @@ import { Card } from '@/components/ui/Card';
 import { AffiliateBanner } from '@/components/shared/AffiliateBanner';
 import { DisclaimerSection } from '@/components/shared/DisclaimerSection';
 import { ToolCtaSection } from '@/components/shared/ToolCtaSection';
+import { KnowledgeCards } from '@/components/shared/KnowledgeCards';
+import { ScienceBehindIt } from '@/components/shared/ScienceBehindIt';
 import { getTranslations } from 'next-intl/server';
 import { CatAgeWidget } from '@/components/cat/CatAgeWidget';
 
@@ -16,6 +29,7 @@ export const metadata: Metadata = {
   title: 'Cat Age Calculator — Cat Years to Human Years | petsMetrics',
   description:
     'How old is your cat in human years? Based on official AAHA/AAFP 2021 Feline Life Stage Guidelines. Learn your cat\'s life stage and health needs.',
+  keywords: 'cat age calculator, cat years to human years, how old is my cat in human years, cat life stages, how long do cats live, cat age chart',
   alternates: {
     canonical: `${SITE_URL}/cat/age-calculator/`,
   },
@@ -25,50 +39,38 @@ export const metadata: Metadata = {
       'Convert cat years to human years using AAHA/AAFP Feline Life Stage Guidelines. Learn your cat\'s life stage and recommended checkup frequency.',
     url: `${SITE_URL}/cat/age-calculator/`,
     type: 'website',
+    images: [{ url: `${SITE_URL}/og/cat-age-calculator.webp`, width: 1200, height: 630, alt: 'Cat Age Calculator — Cat Years to Human Years' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Cat Age Calculator — Cat Years to Human Years | petsMetrics',
+    description: 'Convert cat years to human years using AAHA/AAFP Feline Life Stage Guidelines.',
+    images: [`${SITE_URL}/og/cat-age-calculator.webp`],
   },
 };
 
-const faqSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: [
-    {
-      '@type': 'Question',
-      name: 'How old is my cat in human years?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Cats age differently from dogs and humans. A 1-year-old cat is roughly 15 human years. A 5-year-old cat is about 36. Our calculator uses the AAHA/AAFP feline life stage guidelines.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'What are the feline life stages?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'According to AAHA/AAFP 2021 guidelines: Kitten (0–6 months), Junior (7 months–2 years), Prime (3–6 years), Mature (7–10 years), Senior (11–14 years), Geriatric (15+ years). Each stage has different health and checkup needs.',
-      },
-    },
-  ],
-};
+const faqSchema = generateFaqPageJsonLd(CAT_AGE_FAQ);
 
-const appSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'WebApplication',
-  name: 'Cat Age Calculator',
-  url: `${SITE_URL}/cat/age-calculator/`,
-  description: 'Convert cat years to human years using AAHA/AAFP Feline Life Stage Guidelines.',
-  applicationCategory: 'HealthApplication',
-  operatingSystem: 'Web',
-  offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-  isPartOf: { '@type': 'WebSite', name: SITE_NAME, url: SITE_URL },
-};
+const softwareAppSchema = generateSoftwareAppJsonLd({
+  toolName: 'Cat Age Calculator',
+  toolPath: '/cat/age-calculator/',
+  description: 'Convert cat years to human years using AAFP/AAHA feline life stage guidelines. Understand your cat\'s life stage and recommended health screening frequency.',
+  citations: TOOL_CITATIONS['cat/age-calculator'],
+});
+
+const howToSchema = generateHowToJsonLd(HOWTO_STEPS['cat/age-calculator']);
+
+const breadcrumbSchema = generateBreadcrumbJsonLd([
+  { position: 1, name: 'Home', item: `${SITE_URL}/` },
+  { position: 2, name: 'Cat', item: `${SITE_URL}/cat/` },
+  { position: 3, name: 'Cat Age Calculator', item: '' },
+]);
 
 export default async function CatAgePage() {
   const t = await getTranslations('common');
   return (
     <>
-      <JsonLdScript data={faqSchema} />
-      <JsonLdScript data={appSchema} />
+      <JsonLdScript data={graphJsonLd(faqSchema, softwareAppSchema, howToSchema, breadcrumbSchema)} />
       <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
         <Breadcrumb
           items={[
@@ -93,6 +95,8 @@ export default async function CatAgePage() {
               </p>
             </div>
             <CatAgeWidget />
+            <KnowledgeCards cards={CAT_AGE_KNOWLEDGE} />
+            <ScienceBehindIt content={CAT_AGE_SCIENCE} />
             <ToolCtaSection
               heading="Track Your Cat's Health Over Time"
               description="Now that you know your cat's life stage, use our BCS Weight Tracker to monitor their body condition and ensure they stay at a healthy weight at every age."
@@ -119,10 +123,10 @@ export default async function CatAgePage() {
             <Card padding="md">
               <p className="text-sm font-semibold text-[--gray-900]">Cat Tools</p>
               <ul className="mt-2 flex flex-col gap-2 text-sm text-[--gray-600]">
-                <li><a href="/cat/age-calculator/" className="text-[--cat-primary] hover:underline font-medium">Age Calculator</a></li>
-                <li><a href="/cat/gestation-calculator/" className="hover:text-[--cat-primary] transition-colors">Gestation Calculator</a></li>
-                <li><a href="/cat/vaccination-schedule/" className="hover:text-[--cat-primary] transition-colors">Vaccination Schedule</a></li>
-                <li><a href="/cat/hydration-calculator/" className="hover:text-[--cat-primary] transition-colors">Hydration Calculator</a></li>
+                <li><a href={pageUrl('cat/age-calculator')} className="text-[--cat-primary] hover:underline font-medium">Age Calculator</a></li>
+                <li><a href={pageUrl('cat/gestation-calculator')} className="hover:text-[--cat-primary] transition-colors">Gestation Calculator</a></li>
+                <li><a href={pageUrl('cat/vaccination-schedule')} className="hover:text-[--cat-primary] transition-colors">Vaccination Schedule</a></li>
+                <li><a href={pageUrl('cat/hydration-calculator')} className="hover:text-[--cat-primary] transition-colors">Hydration Calculator</a></li>
               </ul>
             </Card>
           </div>

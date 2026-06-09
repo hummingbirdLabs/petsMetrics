@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   title: `${SITE_NAME} — Free Dog & Cat Health Calculators`,
   description:
     'Science-based tools for dog and cat owners. Calorie calculators, age converters, vaccination schedules, toxic food checker, and more. No login. Free forever.',
+  keywords: 'dog health calculator, cat health calculator, pet calculator, free pet tools, pet health tools online, free dog calculator, free cat calculator',
   alternates: {
     canonical: `${SITE_URL}/`,
   },
@@ -29,6 +30,12 @@ export const metadata: Metadata = {
         alt: `${SITE_NAME} — One Profile. Every Answer.`,
       },
     ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: `${SITE_NAME} — Free Dog & Cat Health Calculators`,
+    description: 'Science-based tools for dog and cat owners. Calorie calculators, age converters, vaccination schedules, toxic food checker, and more. No login. Free forever.',
+    images: [`${SITE_URL}/og/home.webp`],
   },
 };
 
@@ -62,10 +69,41 @@ const websiteSchema = {
   },
 };
 
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'What is petsMetrics?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'petsMetrics is a free, science-based pet health calculator suite for dog and cat owners. Create a pet profile once and all calculators auto-fill — calories, age, vaccines, toxic food checker, and more. No login required. All calculations run in your browser.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Are petsMetrics calculators free?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes, all petsMetrics calculators are completely free. There is no login, no registration, and no paid tier. Our tools use AAHA, WSAVA, ASPCA, and AAFCO veterinary standards to provide accurate, science-backed results for dog and cat owners.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Is my pet data stored on petsMetrics servers?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'No. All pet profile data is stored only in your browser using localStorage. petsMetrics has no backend server to collect or store your data. You can export your profiles as JSON anytime for backup or cross-device transfer.',
+      },
+    },
+  ],
+};
+
 export default function HomePage() {
   return (
     <>
-      <JsonLdScript data={graphJsonLd(organizationSchema, websiteSchema)} />
+      <JsonLdScript data={graphJsonLd(organizationSchema, websiteSchema, faqSchema)} />
       <HeroSection />
       <ProfileFocusSection />
       <ToolDiscovery />

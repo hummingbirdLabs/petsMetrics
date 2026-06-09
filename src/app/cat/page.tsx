@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: 'Free Cat Health Calculators — Calories, Age, BCS & More',
   description:
     'Science-based cat calculators: BCS weight tracker, hydration needs, human age, vaccination schedule, and gestation calculator. Free, no login.',
+  keywords: 'free cat calculator, cat health tools, cat health calculator, kitten tools, cat nutrition calculator, cat age calculator, kitten vaccine schedule',
   alternates: {
     canonical: `${SITE_URL}/cat/`,
   },
@@ -15,7 +16,13 @@ export const metadata: Metadata = {
       'Science-based cat calculators: BCS weight tracker, hydration needs, human age, vaccination schedule, and gestation calculator. Free, no login.',
     url: `${SITE_URL}/cat/`,
     type: 'website',
-    images: [{ url: `${SITE_URL}/og/cat-hub.webp`, width: 1200, height: 630, alt: 'Cat Health Calculators' }],
+    images: [{ url: `${SITE_URL}/og/cat-hub.webp`, width: 1200, height: 630, alt: 'Free Cat Health Calculators — petsMetrics' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Free Cat Health Calculators — Calories, Age, BCS & More | petsMetrics',
+    description: 'Science-based cat calculators: BCS weight tracker, hydration needs, human age, vaccination schedule. Free, no login.',
+    images: [`${SITE_URL}/og/cat-hub.webp`],
   },
 };
 

@@ -29,6 +29,7 @@ export const metadata: Metadata = {
   title: 'Dog Calorie Calculator — How Much to Feed Your Dog | petsMetrics',
   description:
     'Calculate your dog\'s exact daily calorie needs using the AAFCO MER formula. Get feeding amounts for any dog food brand. Based on weight and activity level.',
+  keywords: 'dog calorie calculator, how much to feed my dog, dog daily food amount, how many calories does my dog need, dog MER calculator, dog weight loss calorie calculator, dog feeding guide by weight',
   alternates: {
     canonical: `${SITE_URL}/dog/calorie-calculator/`,
   },
@@ -38,6 +39,13 @@ export const metadata: Metadata = {
       'Calculate your dog\'s exact daily calorie needs. AAFCO MER formula. Weight + activity based.',
     url: `${SITE_URL}/dog/calorie-calculator/`,
     type: 'website',
+    images: [{ url: `${SITE_URL}/og/dog-calorie-calculator.webp`, width: 1200, height: 630, alt: 'Dog Calorie Calculator — Daily Feeding Guide' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Dog Calorie Calculator — How Much to Feed Your Dog | petsMetrics',
+    description: 'Calculate your dog\'s exact daily calorie needs. AAFCO MER formula. Weight + activity based.',
+    images: [`${SITE_URL}/og/dog-calorie-calculator.webp`],
   },
 };
 
