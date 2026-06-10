@@ -97,7 +97,16 @@ export function CatVaccinationWidget() {
                 </p>
               </div>
 
-              {/* Status legend */}
+          {/* Species-specific core vaccine banner */}
+          <div className="rounded-lg border-l-4 border-l-[--cat-primary] bg-[--cat-primary-light] p-4">
+            <p className="text-sm font-semibold text-[--gray-800]">Feline Core Vaccines (FVRCP + Rabies)</p>
+            <p className="mt-1 text-sm text-[--gray-600]">
+              Feline Viral Rhinotracheitis, Calicivirus, Panleukopenia, and Rabies form the WSAVA/AFP-recommended core set for all cats. FeLV is recommended for all kittens and outdoor adult cats based on risk. FIV vaccine is non-core and varies by region.
+            </p>
+            <p className="mt-2 text-xs text-[--gray-400]">Based on WSAVA global guidelines and AAFP feline vaccination advisory panel report.</p>
+          </div>
+
+          {/* Status legend */}
               <div className="flex flex-wrap gap-3">
                 <Badge variant="toxic">{t('result.status.overdue')}</Badge>
                 <Badge variant="caution">{t('result.status.upcoming')}</Badge>

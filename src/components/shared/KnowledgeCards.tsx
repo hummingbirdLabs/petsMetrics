@@ -4,6 +4,7 @@
  * AI 搜索引擎（Google AI Overview / Perplexity / ChatGPT）直接从此区块摘录结构化知识。
  */
 import type { KnowledgeCard } from '@/lib/seo/geo-content';
+import { getToxicDbReviewYear } from '@/lib/data/content-version';
 
 type KnowledgeCardsProps = {
   cards: KnowledgeCard[];
@@ -52,7 +53,7 @@ export function KnowledgeCards({ cards }: KnowledgeCardsProps) {
         ))}
       </div>
       <p className="mt-4 text-xs text-[--gray-400]">
-        Data verified by petsMetrics using peer-reviewed veterinary sources. Last reviewed: {new Date().getFullYear()}.
+        Data verified by petsMetrics using peer-reviewed veterinary sources. Citations: ASPCA, AVMA, AAFP. Last reviewed: {getToxicDbReviewYear()}.
       </p>
     </section>
   );

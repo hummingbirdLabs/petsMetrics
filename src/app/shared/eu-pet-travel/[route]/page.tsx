@@ -235,7 +235,7 @@ export default async function EUTravelLandingPage({
         </section>
 
         <div className="mt-8">
-          <DisclaimerSection text={t('disclaimer.standard')} />
+          <DisclaimerSection text={t('disclaimer.tool')} variant="tool" />
         </div>
       </div>
     </>

@@ -1,0 +1,18 @@
+{
+  "toxicDb": {
+    "version": "1.0.0",
+    "updatedAt": "2026-06-10",
+    "source": "ASPCA Animal Poison Control Center",
+    "notes": "Initial database from ASPCA public data"
+  },
+  "toolMethodology": {
+    "version": "1.0.0",
+    "updatedAt": "2026-06-10",
+    "sources": ["AAFCO 2023", "AAHA 2021", "WSAVA 2022", "UCSD Wang et al. 2020", "AAFP 2021"]
+  },
+  "euTravelRules": {
+    "version": "1.0.0",
+    "updatedAt": "2026-06-10",
+    "source": "EU Regulation 576/2013 + national agriculture ministries"
+  }
+}

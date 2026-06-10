@@ -8,7 +8,10 @@
       "share": "Share"
     },
     "disclaimer": {
-      "standard": "This tool provides general reference information only and does not constitute veterinary advice. Always consult a licensed veterinarian for health decisions."
+      "standard": "All calculations are based on published veterinary guidelines (AAHA, WSAVA, AAFCO, AAFP). Results are estimates.",
+      "tool": "This tool is provided by petsMetrics for general reference only and does not constitute veterinary advice. Always consult a licensed veterinarian for health decisions.",
+      "toxic": "This information is provided by petsMetrics for general reference only. This is NOT veterinary advice. If your pet has ingested a potentially toxic substance, contact your vet or ASPCA Poison Control at (888) 426-4435 immediately.",
+      "emergency": "EMERGENCY: Call ASPCA Animal Poison Control (888) 426-4435 or your nearest emergency vet immediately. This information is provided by petsMetrics for general awareness only — do not delay treatment."
     },
     "unit": {
       "kg": "kg",

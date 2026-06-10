@@ -350,7 +350,12 @@ export function ToxicLandingPage({ item, species, breadcrumbItems, disclaimerTex
                   <path fillRule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z" clipRule="evenodd" />
                 </svg>
                 <p className="text-sm text-[--gray-500]">
-                  {tToxic('source')}: <span className="font-medium text-[--gray-700]">{item.source}</span>
+                  {tToxic('source')}:{' '}
+                  <span className="font-medium text-[--gray-700]">{item.source}</span>
+                  {' · '}
+                  <span className="text-[--gray-400]">
+                    Primary data source and citations: ASPCA Animal Poison Control Center, AVMA, AAFP, AKC.
+                  </span>
                 </p>
               </div>
             </Card>
@@ -397,7 +402,7 @@ export function ToxicLandingPage({ item, species, breadcrumbItems, disclaimerTex
               <ShareButtons url={shareUrl} title={shareTitle} className="justify-center" />
             </div>
 
-            <DisclaimerSection text={disclaimerText} />
+            <DisclaimerSection text={disclaimerText} variant="toxic" />
           </div>
         }
         sidebar={

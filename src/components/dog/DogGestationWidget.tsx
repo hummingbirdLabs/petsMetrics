@@ -8,6 +8,20 @@ import { ShareButtons } from '@/components/shared/ShareButtons';
 import { SITE_URL } from '@/constants';
 import { pageUrl } from '@/lib/utils/url';
 
+/** Species-differentiating content — must differ from CatGestationWidget per geo-checklist §14.2 */
+const DOG_GESTATION_FACTS = {
+  avgDays: 63,
+  range: '58–68 days',
+  keyMilestones: [
+    { day: 28, desc: 'Ultrasound can confirm pregnancy (about Day 25–35).' },
+    { day: 45, desc: 'X-ray can show fetal skeletons — safe after bone calcification.' },
+    { day: 55, desc: 'Prepare whelping box in a quiet, warm area. Start taking dam\'s temperature daily.' },
+    { day: 63, desc: 'Expected whelping day. Dam\'s temperature drops below 99°F 12–24 hours before labor.' },
+  ],
+  healthTip: 'Dog pregnancies average 63 days. Litter size varies widely by breed — from 1–2 puppies in small breeds to 10+ in large breeds.',
+  sourceNote: 'Based on AAHA canine reproductive guidelines and veterinary obstetrics standards.',
+};
+
 export function DogGestationWidget() {
   const t = useTranslations('gestation');
   const { activeProfile: profile } = useProfile();
@@ -106,6 +120,13 @@ export function DogGestationWidget() {
                 <p className="text-xs text-[--gray-400]">{t('result.averageNote')}</p>
               </div>
             </div>
+          </div>
+
+          {/* Species-specific health facts banner */}
+          <div className="rounded-lg border-l-4 border-l-[--dog-primary] bg-[--dog-primary-light] p-4">
+            <p className="text-sm font-semibold text-[--gray-800]">Dog Gestation Facts</p>
+            <p className="mt-1 text-sm text-[--gray-600]">{DOG_GESTATION_FACTS.healthTip}</p>
+            <p className="mt-2 text-xs text-[--gray-400]">{DOG_GESTATION_FACTS.sourceNote}</p>
           </div>
 
           {/* Milestone Timeline */}

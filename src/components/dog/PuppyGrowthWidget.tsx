@@ -1,5 +1,6 @@
 'use client';
 import { useTranslations } from 'next-intl';
+import dynamic from 'next/dynamic';
 import { usePuppyGrowth } from '@/hooks/usePuppyGrowth';
 import { useProfile } from '@/hooks/useProfile';
 import { Card } from '@/components/ui/Card';
@@ -7,21 +8,12 @@ import { Button } from '@/components/ui/Button';
 import { Input } from '@/components/ui/Input';
 import { AffiliateBanner } from '@/components/shared/AffiliateBanner';
 import type { SizeClass } from '@/types/profile.types';
-import {
-  Chart as ChartJS,
-  CategoryScale,
-  LinearScale,
-  PointElement,
-  LineElement,
-  Title,
-  Tooltip,
-  Legend,
-  Filler,
-  type ChartOptions,
-} from 'chart.js';
-import { Line } from 'react-chartjs-2';
 
-ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend, Filler);
+/** Dynamically import chart to avoid bundling 100KB+ chart.js in initial page load */
+const DynamicGrowthChart = dynamic(
+  () => import('./PuppyGrowthChart'),
+  { ssr: false, loading: () => <div className="h-[360px] animate-pulse rounded-lg bg-[--gray-100]" /> },
+);
 
 const SIZE_OPTIONS: { value: SizeClass; key: string; descKey: string }[] = [
   { value: 'small', key: 'sizeSmall', descKey: 'sizeSmallDesc' },
@@ -53,53 +45,6 @@ export function PuppyGrowthWidget() {
   } = usePuppyGrowth();
 
   const petName = profile?.name ?? 'Buddy';
-
-  const chartData = result
-    ? {
-        labels: result.growthCurvePoints.map((p) => `${p.ageWeeks}`),
-        datasets: [
-          {
-            label: t('result.growthChartTitle', { name: petName }),
-            data: result.growthCurvePoints.map((p) => p.weightKg),
-            borderColor: DOG_CHART_COLORS.primary,
-            backgroundColor: DOG_CHART_COLORS.primaryAlpha,
-            fill: true,
-            tension: 0.3,
-            pointRadius: result.growthCurvePoints.map((p) =>
-              p.ageWeeks === currentAgeWeeks ? 6 : 2
-            ),
-            pointBackgroundColor: result.growthCurvePoints.map((p) =>
-              p.ageWeeks === currentAgeWeeks ? '#92400E' : DOG_CHART_COLORS.primary
-            ),
-          },
-        ],
-      }
-    : null;
-
-  const chartOptions: ChartOptions<'line'> = {
-    responsive: true,
-    maintainAspectRatio: false,
-    plugins: {
-      legend: { display: false },
-      tooltip: {
-        callbacks: {
-          label: (ctx) => `${ctx.parsed.y} kg`,
-        },
-      },
-    },
-    scales: {
-      x: {
-        title: { display: true, text: t('result.chartXLabel') },
-        grid: { color: DOG_CHART_COLORS.grid },
-        ticks: { color: DOG_CHART_COLORS.tick },
-      },
-      y: {
-        title: { display: true, text: t('result.chartYLabel') },
-        grid: { color: DOG_CHART_COLORS.grid },
-        ticks: { color: DOG_CHART_COLORS.tick },
-      },
-    },
-  };
 
   return (
     <div className="flex flex-col gap-6">
@@ -202,14 +147,25 @@ export function PuppyGrowthWidget() {
           </div>
 
           {/* Growth Chart */}
-          {chartData ? (
+          {result ? (
             <Card padding="lg">
               <h3 className="mb-3 text-lg font-semibold text-[--gray-900]">
                 {t('result.growthChartTitle', { name: petName })}
               </h3>
-              <div style={{ height: '360px' }}>
-                <Line data={chartData} options={chartOptions} />
-              </div>
+              <DynamicGrowthChart
+                data={result.growthCurvePoints.map((p) => ({
+                  ageWeeks: p.ageWeeks,
+                  weightKg: p.weightKg,
+                }))}
+                currentAgeWeeks={currentAgeWeeks}
+                chartTitle={t('result.growthChartTitle', { name: petName })}
+                chartXLabel={t('result.chartXLabel')}
+                chartYLabel={t('result.chartYLabel')}
+                primaryColor={DOG_CHART_COLORS.primary}
+                primaryAlpha={DOG_CHART_COLORS.primaryAlpha}
+                gridColor={DOG_CHART_COLORS.grid}
+                tickColor={DOG_CHART_COLORS.tick}
+              />
               <p className="mt-2 text-xs text-[--gray-400]">
                 {t('result.predictedLabel', {
                   min: result.predictedAdultWeightKgMin,

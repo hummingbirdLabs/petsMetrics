@@ -8,6 +8,20 @@ import { ShareButtons } from '@/components/shared/ShareButtons';
 import { SITE_URL } from '@/constants';
 import { pageUrl } from '@/lib/utils/url';
 
+/** Species-differentiating content — must differ from DogGestationWidget per geo-checklist §14.2 */
+const CAT_GESTATION_FACTS = {
+  avgDays: 65,
+  range: '63–67 days',
+  keyMilestones: [
+    { day: 21, desc: 'Pregnancy may be detectable via ultrasound (about Day 21–25).' },
+    { day: 45, desc: 'Kittens\' skeletons visible on X-ray. Queen\'s abdomen noticeably enlarged.' },
+    { day: 55, desc: 'Prepare nesting box. Queen may show nesting behavior — provide quiet space.' },
+    { day: 65, desc: 'Expected queening day. Most cats deliver without assistance. Typical litter: 3–5 kittens.' },
+  ],
+  healthTip: 'Cat pregnancies average 65 days — slightly longer than dogs. Cats are induced ovulators, meaning mating triggers egg release, making conception highly reliable after mating.',
+  sourceNote: 'Based on AAFP feline reproductive guidelines and veterinary theriogenology standards.',
+};
+
 export function CatGestationWidget() {
   const t = useTranslations('gestation');
   const { activeProfile: profile } = useProfile();
@@ -106,6 +120,13 @@ export function CatGestationWidget() {
                 <p className="text-xs text-[--gray-400]">{t('result.averageNote')}</p>
               </div>
             </div>
+          </div>
+
+          {/* Species-specific health facts banner */}
+          <div className="rounded-lg border-l-4 border-l-[--cat-primary] bg-[--cat-primary-light] p-4">
+            <p className="text-sm font-semibold text-[--gray-800]">Cat Gestation Facts</p>
+            <p className="mt-1 text-sm text-[--gray-600]">{CAT_GESTATION_FACTS.healthTip}</p>
+            <p className="mt-2 text-xs text-[--gray-400]">{CAT_GESTATION_FACTS.sourceNote}</p>
           </div>
 
           {/* Milestone Timeline */}

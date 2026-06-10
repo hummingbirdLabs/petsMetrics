@@ -100,7 +100,7 @@ export default async function EUTravelCheckerPage() {
               href="/dog/vaccination-schedule/"
               buttonLabel="Check Vaccination Schedule →"
             />
-            <DisclaimerSection text={t('disclaimer.standard')} />
+            <DisclaimerSection text={t('disclaimer.tool')} variant="tool" />
           </div>
         }
         sidebar={

@@ -103,7 +103,7 @@ export default async function CatVaccinationPage() {
               href="/cat/bcs-weight-tracker/"
               buttonLabel="Check Body Condition →"
             />
-            <DisclaimerSection text={t('disclaimer.standard')} />
+            <DisclaimerSection text={t('disclaimer.tool')} variant="tool" />
           </div>
         }
         sidebar={

@@ -97,7 +97,16 @@ export function DogVaccinationWidget() {
                 </p>
               </div>
 
-              {/* Status legend */}
+          {/* Species-specific core vaccine banner */}
+          <div className="rounded-lg border-l-4 border-l-[--dog-primary] bg-[--dog-primary-light] p-4">
+            <p className="text-sm font-semibold text-[--gray-800]">Canine Core Vaccines (DHPP + Rabies)</p>
+            <p className="mt-1 text-sm text-[--gray-600]">
+              Distemper, Hepatitis (Adenovirus-2), Parvovirus, Parainfluenza, and Rabies form the WSAVA-recommended core set for all dogs worldwide. Non-core vaccines (Leptospirosis, Bordetella, Lyme) depend on regional risk and lifestyle. Ask your vet which are right for your dog.
+            </p>
+            <p className="mt-2 text-xs text-[--gray-400]">Based on WSAVA global vaccination guidelines and AAHA canine vaccination recommendations.</p>
+          </div>
+
+          {/* Status legend */}
               <div className="flex flex-wrap gap-3">
                 <Badge variant="toxic">{t('result.status.overdue')}</Badge>
                 <Badge variant="caution">{t('result.status.upcoming')}</Badge>

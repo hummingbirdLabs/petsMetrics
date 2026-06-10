@@ -103,7 +103,7 @@ export default async function CatBCSPage() {
               href="/cat/hydration-calculator/"
               buttonLabel="Check Hydration Status →"
             />
-            <DisclaimerSection text={t('disclaimer.standard')} />
+            <DisclaimerSection text={t('disclaimer.tool')} variant="tool" />
           </div>
         }
         sidebar={

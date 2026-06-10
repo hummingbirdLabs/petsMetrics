@@ -103,7 +103,7 @@ export default async function CatGestationPage() {
               href="/cat/vaccination-schedule/"
               buttonLabel="See Vaccine Schedule →"
             />
-            <DisclaimerSection text={t('disclaimer.standard')} />
+            <DisclaimerSection text={t('disclaimer.tool')} variant="tool" />
           </div>
         }
         sidebar={

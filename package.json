@@ -12,9 +12,16 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "typecheck": "tsc --noEmit",
     "lint": "next lint",
     "test": "vitest",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "risk-check": "node scripts/risk-check.mjs",
+    "verify-geo": "node scripts/verify-geo-ssg.mjs",
+    "check-cross-species-diff": "node scripts/check-cross-species-diff.mjs",
+    "check-eu-uniqueness": "node scripts/check-eu-uniqueness.mjs",
+    "check-breed-page-dimensions": "node scripts/check-breed-page-dimensions.mjs",
+    "precheck": "pnpm build && pnpm risk-check && pnpm verify-geo"
   },
   "dependencies": {
     "chart.js": "^4.4.0",

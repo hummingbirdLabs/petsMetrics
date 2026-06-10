@@ -103,7 +103,7 @@ export default async function DogVaccinationPage() {
               href="/shared/toxic-checker/"
               buttonLabel="Check Food Safety →"
             />
-            <DisclaimerSection text={t('disclaimer.standard')} />
+            <DisclaimerSection text={t('disclaimer.tool')} variant="tool" />
           </div>
         }
         sidebar={

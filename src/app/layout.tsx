@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
     default: `${SITE_NAME} — ${BRAND_TAGLINE}`,
-    template: `%s — ${SITE_NAME}`,
+    template: `%s`, // Pages already include brand; avoid double-brand
   },
   description: 'Free, science-based calculators for dogs and cats. One profile, every answer.',
   alternates: {

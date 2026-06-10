@@ -103,7 +103,7 @@ export default async function PuppyGrowthPage() {
               href="/dog/calorie-calculator/"
               buttonLabel="Calculate Daily Calories →"
             />
-            <DisclaimerSection text={t('disclaimer.standard')} />
+            <DisclaimerSection text={t('disclaimer.tool')} variant="tool" />
           </div>
         }
         sidebar={

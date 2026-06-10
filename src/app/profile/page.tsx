@@ -16,6 +16,9 @@ export const metadata: Metadata = {
     title: 'My Pet Profiles — petsMetrics',
     description:
       'Create a free pet profile for your dog or cat. All health calculators auto-fill from your profile.',
+    url: `${SITE_URL}/profile/`,
+    type: 'website',
+    images: [{ url: `${SITE_URL}/og/home.webp`, width: 1200, height: 630, alt: 'My Pet Profiles — petsMetrics' }],
   },
   twitter: {
     card: 'summary_large_image',

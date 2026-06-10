@@ -57,7 +57,7 @@ export default async function CatToxicLandingPage({
     <ToxicLandingPage
       item={item}
       species="cat"
-      disclaimerText={t('disclaimer.standard')}
+      disclaimerText={t('disclaimer.toxic')}
       breadcrumbItems={[
         { label: 'Home', href: '' },
         { label: 'Cat', href: 'cat' },

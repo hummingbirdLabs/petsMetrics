@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   title: 'Toxic Food & Plant Checker for Dogs & Cats | petsMetrics',
   description:
     'Instantly check if any food or plant is safe for your dog or cat. 200+ items in our database. Severity ratings, symptoms, and vet hotline included.',
-  keywords: 'dog toxic food checker, cat toxic plant checker, is it safe for dogs, can dogs eat, what foods are toxic to dogs, foods dogs can\'t eat list, plants toxic to cats',
+  keywords: 'dog toxic food checker, cat toxic plant checker, is it safe for dogs, can dogs eat, what foods are toxic to dogs, foods dogs can\'t eat list, plants toxic to cats, human foods safe for dogs',
   alternates: {
     canonical: `${SITE_URL}/shared/toxic-checker/`,
   },
@@ -100,7 +100,7 @@ export default async function ToxicCheckerPage() {
               href="/dog/can-dogs-eat-grapes/"
               buttonLabel="Browse All Food Guides →"
             />
-            <DisclaimerSection text={t('disclaimer.standard')} />
+            <DisclaimerSection text={t('disclaimer.tool')} variant="tool" />
           </div>
         }
         sidebar={

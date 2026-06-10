@@ -103,7 +103,7 @@ export default async function DogCaloriePage() {
               href="/dog/puppy-growth-predictor/"
               buttonLabel="Predict Adult Size →"
             />
-            <DisclaimerSection text={t('disclaimer.standard')} />
+            <DisclaimerSection text={t('disclaimer.tool')} variant="tool" />
           </div>
         }
         sidebar={
