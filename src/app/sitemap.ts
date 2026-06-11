@@ -6,9 +6,10 @@ import {
   getToolMethodologyUpdatedDate,
   getEUTravelRulesUpdatedDate,
 } from '@/lib/data/content-version';
+import { routing } from '@/lib/routing';
 
 /** Image SEO: routes that include a chart/infographic worth indexing in Google Images */
-const ROUTE_IMAGES: Record<string, { url: string; caption: string }[]> = {
+const ROUTE_IMAGES: Record<string, { url: string; caption: string; title?: string }[]> = {
   'dog/age-calculator': [
     {
       url: `${SITE_URL}/og/dog-age-calculator.webp`,
@@ -98,85 +99,89 @@ const ROUTE_IMAGES: Record<string, { url: string; caption: string }[]> = {
 export default function sitemap(): MetadataRoute.Sitemap {
   const entries: MetadataRoute.Sitemap = [];
 
-  // 内容新鲜度：每一类页面使用其对应数据源的核验日期，而非 new Date()
   const toolDate = getToolMethodologyUpdatedDate();
   const toxicDate = getToxicDbUpdatedDate();
   const euDate = getEUTravelRulesUpdatedDate();
-  const now = new Date(); // 首页和 Hub 页确实会频繁更新
+  const now = new Date();
 
-  // 首页
-  entries.push({
-    url: `${SITE_URL}/`,
-    lastModified: now,
-    changeFrequency: 'weekly',
-    priority: 1.0,
-  });
+  for (const locale of routing.locales) {
+    const lng = locale as string;
+    const prefix = `/${lng}`;
 
-  // Hub 页面 & profile
-  const hubPages = getAllStaticPaths();
-  for (const path of hubPages) {
+    // 首页
     entries.push({
-      url: `${SITE_URL}/${path}/`,
+      url: `${SITE_URL}${prefix}/`,
       lastModified: now,
       changeFrequency: 'weekly',
-      priority: 0.9,
+      priority: 1.0,
     });
-  }
 
-  // E-E-A-T 信任页面（Gate-0）
-  entries.push({
-    url: `${SITE_URL}/about/`,
-    lastModified: toolDate,
-    changeFrequency: 'monthly',
-    priority: 0.6,
-  });
-  entries.push({
-    url: `${SITE_URL}/privacy/`,
-    lastModified: now,
-    changeFrequency: 'yearly',
-    priority: 0.3,
-  });
-  entries.push({
-    url: `${SITE_URL}/terms/`,
-    lastModified: now,
-    changeFrequency: 'yearly',
-    priority: 0.3,
-  });
+    // Hub 页面 & profile
+    const hubPages = getAllStaticPaths();
+    for (const path of hubPages) {
+      entries.push({
+        url: `${SITE_URL}${prefix}/${path}/`,
+        lastModified: now,
+        changeFrequency: 'weekly',
+        priority: 0.9,
+      });
+    }
 
-  // 工具页面 — lastModified = toolMethodology.updatedAt（非构建时间）
-  const toolRoutes = getAllToolRoutes();
-  for (const route of toolRoutes) {
-    const images = ROUTE_IMAGES[route];
+    // E-E-A-T 信任页面
     entries.push({
-      url: `${SITE_URL}/${route}/`,
+      url: `${SITE_URL}${prefix}/about/`,
       lastModified: toolDate,
       changeFrequency: 'monthly',
-      priority: 0.8,
-      ...(images ? { images } : {}),
+      priority: 0.6,
     });
-  }
-
-  // EU Travel 落地页 — lastModified = euTravelRules.updatedAt
-  const euRoutes = getAllEUTravelRoutes();
-  for (const route of euRoutes) {
     entries.push({
-      url: `${SITE_URL}/shared/eu-pet-travel/${route.origin.toLowerCase()}-to-${route.destination.toLowerCase()}/`,
-      lastModified: euDate,
-      changeFrequency: 'monthly',
-      priority: 0.7,
+      url: `${SITE_URL}${prefix}/privacy/`,
+      lastModified: now,
+      changeFrequency: 'yearly',
+      priority: 0.3,
     });
-  }
-
-  // 毒性落地页 — lastModified = toxicDb.updatedAt（ASPCA 核验日期）
-  const toxicSlugs = getAllToxicSlugs();
-  for (const entry of toxicSlugs) {
-    const pathPrefix = entry.species === 'dog' ? 'dog/can-dogs-eat' : 'cat/are-toxic-to-cats';
     entries.push({
-      url: `${SITE_URL}/${pathPrefix}/${entry.slug}/`,
-      lastModified: toxicDate,
-      changeFrequency: 'monthly' as const,
-      priority: 0.8,
+      url: `${SITE_URL}${prefix}/terms/`,
+      lastModified: now,
+      changeFrequency: 'yearly',
+      priority: 0.3,
     });
+
+    // 工具页面
+    const toolRoutes = getAllToolRoutes();
+    for (const route of toolRoutes) {
+      const images = ROUTE_IMAGES[route];
+      entries.push({
+        url: `${SITE_URL}${prefix}/${route}/`,
+        lastModified: toolDate,
+        changeFrequency: 'monthly',
+        priority: 0.8,
+        ...(images ? { images } : {}),
+      });
+    }
+
+    // EU Travel 落地页
+    const euRoutes = getAllEUTravelRoutes();
+    for (const route of euRoutes) {
+      entries.push({
+        url: `${SITE_URL}${prefix}/shared/eu-pet-travel/${route.origin.toLowerCase()}-to-${route.destination.toLowerCase()}/`,
+        lastModified: euDate,
+        changeFrequency: 'monthly',
+        priority: 0.7,
+      });
+    }
+
+    // 毒性落地页
+    const toxicSlugs = getAllToxicSlugs();
+    for (const entry of toxicSlugs) {
+      const pathPrefix = entry.species === 'dog' ? 'dog/can-dogs-eat' : 'cat/are-toxic-to-cats';
+      entries.push({
+        url: `${SITE_URL}${prefix}/${pathPrefix}/${entry.slug}/`,
+        lastModified: toxicDate,
+        changeFrequency: 'monthly' as const,
+        priority: 0.8,
+      });
+    }
   }
 
   return entries;

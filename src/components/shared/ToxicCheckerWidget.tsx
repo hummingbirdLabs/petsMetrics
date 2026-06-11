@@ -6,7 +6,7 @@ import { Input } from '@/components/ui/Input';
 import { SpeciesToggle } from '@/components/shared/SpeciesToggle';
 import { ShareButtons } from '@/components/shared/ShareButtons';
 import { SITE_URL } from '@/constants';
-import { pageUrl } from '@/lib/utils/url';
+import { usePageUrlBuilder } from '@/hooks/usePageUrl';
 
 const LEVEL_CONFIG: Record<string, { label: string; bg: string; text: string; border: string }> = {
   toxic: {
@@ -45,6 +45,7 @@ export function ToxicCheckerWidget() {
     clearQuery,
     getSpeciesLevel,
   } = useToxicChecker();
+  const pageUrl = usePageUrlBuilder();
 
   const shareUrl = SITE_URL + pageUrl('shared/toxic-checker').slice(0, -1);
   const primaryItem = exactMatch ?? (items.length > 0 ? items[0] : null);

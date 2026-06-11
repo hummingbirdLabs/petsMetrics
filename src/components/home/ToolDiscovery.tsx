@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
-import { pageUrl } from '@/lib/utils/url';
+import { usePageUrlBuilder } from '@/hooks/usePageUrl';
 
 type Tab = 'dog' | 'cat' | 'all';
 
@@ -9,31 +9,32 @@ type ToolItem = {
   key: string;
   icon: string;
   tab: 'dog' | 'cat' | 'shared';
-  href: string;
+  path: string;
   popular?: boolean;
   phase: 'P0' | 'P1';
 };
 
 const tools: ToolItem[] = [
-  { key: 'toxicChecker', icon: '⚠️', tab: 'shared', href: pageUrl('shared/toxic-checker'), popular: true, phase: 'P0' },
-  { key: 'dogCalorie', icon: '🍖', tab: 'dog', href: pageUrl('dog/calorie-calculator'), popular: true, phase: 'P0' },
-  { key: 'dogAge', icon: '📅', tab: 'dog', href: pageUrl('dog/age-calculator'), phase: 'P0' },
-  { key: 'puppyGrowth', icon: '🐣', tab: 'dog', href: pageUrl('dog/puppy-growth-predictor'), phase: 'P0' },
-  { key: 'dogVaccination', icon: '💉', tab: 'dog', href: pageUrl('dog/vaccination-schedule'), phase: 'P0' },
-  { key: 'dogGestation', icon: '🤰', tab: 'dog', href: pageUrl('dog/gestation-calculator'), phase: 'P0' },
-  { key: 'catBcs', icon: '⚖️', tab: 'cat', href: pageUrl('cat/bcs-weight-tracker'), popular: true, phase: 'P0' },
-  { key: 'catHydration', icon: '💧', tab: 'cat', href: pageUrl('cat/hydration-calculator'), phase: 'P0' },
-  { key: 'catAge', icon: '📅', tab: 'cat', href: pageUrl('cat/age-calculator'), phase: 'P0' },
-  { key: 'catVaccination', icon: '💉', tab: 'cat', href: pageUrl('cat/vaccination-schedule'), phase: 'P0' },
-  { key: 'catGestation', icon: '🤰', tab: 'cat', href: pageUrl('cat/gestation-calculator'), phase: 'P0' },
-  { key: 'dogBarf', icon: '🥩', tab: 'dog', href: pageUrl('dog/barf-calculator'), phase: 'P1' },
-  { key: 'catBarf', icon: '🥩', tab: 'cat', href: pageUrl('cat/barf-calculator'), phase: 'P1' },
-  { key: 'insurance', icon: '🛡️', tab: 'shared', href: pageUrl('shared/pet-insurance-estimator'), phase: 'P1' },
-  { key: 'euTravel', icon: '✈️', tab: 'shared', href: pageUrl('shared/eu-pet-travel-checker'), phase: 'P0' },
+  { key: 'toxicChecker', icon: '⚠️', tab: 'shared', path: 'shared/toxic-checker', popular: true, phase: 'P0' },
+  { key: 'dogCalorie', icon: '🍖', tab: 'dog', path: 'dog/calorie-calculator', popular: true, phase: 'P0' },
+  { key: 'dogAge', icon: '📅', tab: 'dog', path: 'dog/age-calculator', phase: 'P0' },
+  { key: 'puppyGrowth', icon: '🐣', tab: 'dog', path: 'dog/puppy-growth-predictor', phase: 'P0' },
+  { key: 'dogVaccination', icon: '💉', tab: 'dog', path: 'dog/vaccination-schedule', phase: 'P0' },
+  { key: 'dogGestation', icon: '🤰', tab: 'dog', path: 'dog/gestation-calculator', phase: 'P0' },
+  { key: 'catBcs', icon: '⚖️', tab: 'cat', path: 'cat/bcs-weight-tracker', popular: true, phase: 'P0' },
+  { key: 'catHydration', icon: '💧', tab: 'cat', path: 'cat/hydration-calculator', phase: 'P0' },
+  { key: 'catAge', icon: '📅', tab: 'cat', path: 'cat/age-calculator', phase: 'P0' },
+  { key: 'catVaccination', icon: '💉', tab: 'cat', path: 'cat/vaccination-schedule', phase: 'P0' },
+  { key: 'catGestation', icon: '🤰', tab: 'cat', path: 'cat/gestation-calculator', phase: 'P0' },
+  { key: 'dogBarf', icon: '🥩', tab: 'dog', path: 'dog/barf-calculator', phase: 'P1' },
+  { key: 'catBarf', icon: '🥩', tab: 'cat', path: 'cat/barf-calculator', phase: 'P1' },
+  { key: 'insurance', icon: '🛡️', tab: 'shared', path: 'shared/pet-insurance-estimator', phase: 'P1' },
+  { key: 'euTravel', icon: '✈️', tab: 'shared', path: 'shared/eu-pet-travel-checker', phase: 'P0' },
 ];
 
 export function ToolDiscovery() {
   const t = useTranslations('home.toolDiscovery');
+  const pageUrl = usePageUrlBuilder();
   const [activeTab, setActiveTab] = useState<Tab>('dog');
 
   const filteredTools = tools.filter((tool) => {
@@ -112,8 +113,8 @@ export function ToolDiscovery() {
             const colors = getColorForTool(tool);
             return (
               <a
-                key={tool.key + tool.href}
-                href={tool.href}
+                key={tool.key + tool.path}
+                href={pageUrl(tool.path)}
                 className={`group relative overflow-hidden rounded-xl bg-white p-5 shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md ${colors.border} border border-transparent`}
               >
                 <div className="flex items-start gap-3">

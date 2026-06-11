@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/Button';
 import { Badge } from '@/components/ui/Badge';
 import { ShareButtons } from '@/components/shared/ShareButtons';
 import { SITE_URL } from '@/constants';
-import { pageUrl } from '@/lib/utils/url';
+import { usePageUrlBuilder } from '@/hooks/usePageUrl';
 
 const STATUS_CONFIG: Record<string, { variant: 'safe' | 'caution' | 'toxic' | 'info'; labelKey: string }> = {
   overdue: { variant: 'toxic', labelKey: 'overdue' },
@@ -31,6 +31,7 @@ export function DogVaccinationWidget() {
     setRegion,
     calculate,
   } = useVaccinationSchedule('dog');
+  const pageUrl = usePageUrlBuilder();
 
   const petName = profile?.name ?? 'Buddy';
   const shareUrl = SITE_URL + pageUrl('dog/vaccination-schedule').slice(0, -1);

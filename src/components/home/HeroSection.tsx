@@ -1,9 +1,10 @@
 'use client';
 import { useTranslations } from 'next-intl';
-import { pageUrl } from '@/lib/utils/url';
+import { usePageUrlBuilder } from '@/hooks/usePageUrl';
 
 export function HeroSection() {
   const t = useTranslations('home.hero');
+  const pageUrl = usePageUrlBuilder();
 
   return (
     <section

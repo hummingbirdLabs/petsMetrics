@@ -1,4 +1,5 @@
-import { pageUrl } from '@/lib/utils/url';
+'use client';
+import { usePageUrlBuilder } from '@/hooks/usePageUrl';
 
 type BreadcrumbItem = {
   label: string;
@@ -11,6 +12,7 @@ type BreadcrumbProps = {
 };
 
 export function Breadcrumb({ items, className = '' }: BreadcrumbProps) {
+  const pageUrl = usePageUrlBuilder();
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',

@@ -4,7 +4,7 @@ import { SITE_URL, SITE_NAME } from '@/constants';
 import { JsonLdScript } from '@/components/shared/JsonLdScript';
 import { HubSearch } from '@/components/hub/HubSearch';
 import { ProfileBar } from '@/components/hub/ProfileBar';
-import { pageUrl } from '@/lib/utils/url';
+import { usePageUrlBuilder } from '@/hooks/usePageUrl';
 import { graphJsonLd } from '@/lib/seo/geo-meta';
 
 const collectionSchema = {
@@ -30,7 +30,7 @@ type ToolCard = {
   icon: string;
   nameKey: string;
   descKey: string;
-  href: string;
+  path: string;
   priority: 'P0' | 'P1';
 };
 
@@ -38,13 +38,14 @@ export function CatHubContent() {
   const t = useTranslations('cat');
   const tg = useTranslations('cat.toolGrid');
   const tseo = useTranslations('cat.seoContent');
+  const pageUrl = usePageUrlBuilder();
 
   const tools: ToolCard[] = [
-    { icon: '📅', nameKey: 'ageCalculator', descKey: 'ageCalculator.desc', href: pageUrl('cat/age-calculator'), priority: 'P0' },
-    { icon: '💉', nameKey: 'vaccination', descKey: 'vaccination.desc', href: pageUrl('cat/vaccination-schedule'), priority: 'P0' },
-    { icon: '🤰', nameKey: 'gestation', descKey: 'gestation.desc', href: pageUrl('cat/gestation-calculator'), priority: 'P0' },
-    { icon: '🥩', nameKey: 'barf', descKey: 'barf.desc', href: pageUrl('cat/barf-calculator'), priority: 'P1' },
-    { icon: '🛡️', nameKey: 'insurance', descKey: 'insurance.desc', href: pageUrl('shared/pet-insurance-estimator'), priority: 'P1' },
+    { icon: '📅', nameKey: 'ageCalculator', descKey: 'ageCalculator.desc', path: 'cat/age-calculator', priority: 'P0' },
+    { icon: '💉', nameKey: 'vaccination', descKey: 'vaccination.desc', path: 'cat/vaccination-schedule', priority: 'P0' },
+    { icon: '🤰', nameKey: 'gestation', descKey: 'gestation.desc', path: 'cat/gestation-calculator', priority: 'P0' },
+    { icon: '🥩', nameKey: 'barf', descKey: 'barf.desc', path: 'cat/barf-calculator', priority: 'P1' },
+    { icon: '🛡️', nameKey: 'insurance', descKey: 'insurance.desc', path: 'shared/pet-insurance-estimator', priority: 'P1' },
   ];
 
   const toolNames: Record<string, string> = {
@@ -158,7 +159,7 @@ export function CatHubContent() {
             {tools.map((tool) => (
               <a
                 key={tool.nameKey}
-                href={tool.href}
+                href={pageUrl(tool.path)}
                 className="group rounded-xl bg-white p-5 shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md border border-transparent hover:border-[--cat-accent]"
               >
                 <div className="flex items-start gap-3">

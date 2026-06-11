@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/Button';
 import { Input } from '@/components/ui/Input';
 import { ShareButtons } from '@/components/shared/ShareButtons';
 import { SITE_URL } from '@/constants';
-import { pageUrl } from '@/lib/utils/url';
+import { usePageUrlBuilder } from '@/hooks/usePageUrl';
 
 export function CatBCSWidget() {
   const t = useTranslations('catBcs');
@@ -23,6 +23,7 @@ export function CatBCSWidget() {
     setCurrentWeightKg,
     calculate,
   } = useCatBCS();
+  const pageUrl = usePageUrlBuilder();
 
   const petName = profile?.name ?? 'Luna';
   const shareUrl = SITE_URL + pageUrl('cat/bcs-weight-tracker').slice(0, -1);

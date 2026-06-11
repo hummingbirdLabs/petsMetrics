@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/Button';
 import { SpeciesToggle } from '@/components/shared/SpeciesToggle';
 import { ShareButtons } from '@/components/shared/ShareButtons';
 import { SITE_URL } from '@/constants';
-import { pageUrl } from '@/lib/utils/url';
+import { usePageUrlBuilder } from '@/hooks/usePageUrl';
 import { EU_COUNTRY_CODES, EU_COUNTRY_LABELS } from '@/lib/data/eu-travel-rules';
 
 const COUNTRY_FLAGS: Record<string, string> = {
@@ -48,6 +48,7 @@ export function EUTravelWidget() {
     toggleDocument,
     calculate,
   } = useEUTravel();
+  const pageUrl = usePageUrlBuilder();
 
   const shareUrl = SITE_URL + pageUrl('shared/eu-pet-travel-checker').slice(0, -1);
 

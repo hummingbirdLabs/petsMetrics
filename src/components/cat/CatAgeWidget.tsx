@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/Button';
 import { Input } from '@/components/ui/Input';
 import { ShareButtons } from '@/components/shared/ShareButtons';
 import { SITE_URL } from '@/constants';
-import { pageUrl } from '@/lib/utils/url';
+import { usePageUrlBuilder } from '@/hooks/usePageUrl';
 import type { CatLifeStage } from '@/lib/calculators/cat-age.calc';
 
 const LIFESTAGE_I18N_MAP: Record<CatLifeStage, string> = {
@@ -31,6 +31,7 @@ export function CatAgeWidget() {
     calculate,
     stageColor,
   } = useCatAge();
+  const pageUrl = usePageUrlBuilder();
 
   const shareUrl = SITE_URL + pageUrl('cat/age-calculator').slice(0, -1);
   const petName = profile?.name ?? 'Luna';

@@ -2,10 +2,11 @@
 import { useEffect, useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { Nav } from '@/components/layout/Nav';
-import { pageUrl } from '@/lib/utils/url';
+import { usePageUrlBuilder } from '@/hooks/usePageUrl';
 
 export function Header() {
   const t = useTranslations('header');
+  const pageUrl = usePageUrlBuilder();
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {

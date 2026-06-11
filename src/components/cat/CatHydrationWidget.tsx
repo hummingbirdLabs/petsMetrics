@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/Button';
 import { Input } from '@/components/ui/Input';
 import { ShareButtons } from '@/components/shared/ShareButtons';
 import { SITE_URL } from '@/constants';
-import { pageUrl } from '@/lib/utils/url';
+import { usePageUrlBuilder } from '@/hooks/usePageUrl';
 
 export function CatHydrationWidget() {
   const t = useTranslations('catHydration');
@@ -25,6 +25,7 @@ export function CatHydrationWidget() {
     setWetFoodG,
     calculate,
   } = useCatHydration();
+  const pageUrl = usePageUrlBuilder();
 
   const petName = profile?.name ?? 'Luna';
   const shareUrl = SITE_URL + pageUrl('cat/hydration-calculator').slice(0, -1);

@@ -6,7 +6,7 @@ import { Card } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
 import { ShareButtons } from '@/components/shared/ShareButtons';
 import { SITE_URL } from '@/constants';
-import { pageUrl } from '@/lib/utils/url';
+import { usePageUrlBuilder } from '@/hooks/usePageUrl';
 
 /** Species-differentiating content — must differ from DogGestationWidget per geo-checklist §14.2 */
 const CAT_GESTATION_FACTS = {
@@ -33,6 +33,7 @@ export function CatGestationWidget() {
     addMatingDate,
     calculate,
   } = useGestation('cat');
+  const pageUrl = usePageUrlBuilder();
 
   const petName = profile?.name ?? 'Luna';
   const shareUrl = SITE_URL + pageUrl('cat/gestation-calculator').slice(0, -1);

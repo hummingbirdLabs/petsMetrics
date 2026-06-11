@@ -1,6 +1,6 @@
 import { useTranslations } from 'next-intl';
 import { SITE_URL } from '@/constants';
-import { pageUrl } from '@/lib/utils/url';
+import { usePageUrlBuilder } from '@/hooks/usePageUrl';
 import { graphJsonLd } from '@/lib/seo/geo-meta';
 import { TOXIC_ITEMS, type ToxicItem } from '@/lib/data/toxic-items';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
@@ -119,6 +119,7 @@ const toxicH1Styles: Record<string, { gradient: string; badgeBg: string; badgeTe
 
 export function ToxicLandingPage({ item, species, breadcrumbItems, disclaimerText }: ToxicLandingPageProps) {
   const t = useTranslations('toxicLanding');
+  const pageUrl = usePageUrlBuilder();
   const tNav = useTranslations('nav');
   const tToxic = useTranslations('toxicChecker.result');
 

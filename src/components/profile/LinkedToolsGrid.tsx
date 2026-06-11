@@ -3,7 +3,7 @@ import { useTranslations } from 'next-intl';
 import type { PetProfile } from '@/types/profile.types';
 import { Card } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
-import { pageUrl } from '@/lib/utils/url';
+import { usePageUrlBuilder } from '@/hooks/usePageUrl';
 
 type ToolLink = {
   label: string;
@@ -30,6 +30,7 @@ type LinkedToolsGridProps = {
 
 export function LinkedToolsGrid({ profile, className = '' }: LinkedToolsGridProps) {
   const t = useTranslations('profile.dashboard');
+  const pageUrl = usePageUrlBuilder();
 
   return (
     <div className={className}>

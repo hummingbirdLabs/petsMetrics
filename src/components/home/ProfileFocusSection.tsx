@@ -1,9 +1,10 @@
 'use client';
 import { useTranslations } from 'next-intl';
-import { pageUrl } from '@/lib/utils/url';
+import { usePageUrlBuilder } from '@/hooks/usePageUrl';
 
 export function ProfileFocusSection() {
   const t = useTranslations('home.profileFocus');
+  const pageUrl = usePageUrlBuilder();
 
   return (
     <section className="border-l-[3px] border-l-[--brand-teal] bg-[--white] py-24">

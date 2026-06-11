@@ -1,0 +1,795 @@
+{
+  "common": {
+    "button": {
+      "submit": "提交",
+      "calculate": "计算",
+      "reset": "重置",
+      "download": "下载",
+      "share": "分享"
+    },
+    "disclaimer": {
+      "standard": "所有计算均基于已发布的兽医指南（AAHA、WSAVA、AAFCO、AAFP）。结果为预估值。",
+      "tool": "本工具由 petsMetrics 提供，仅供一般参考，不构成兽医建议。如需健康决策，请务必咨询持证兽医。",
+      "toxic": "本信息由 petsMetrics 提供，仅供一般参考。这不是兽医建议。如果您的宠物可能误食了有毒物质，请立即联系兽医或拨打 ASPCA 毒物控制热线 (888) 426-4435。",
+      "emergency": "紧急情况：请立即拨打 ASPCA 动物毒物控制热线 (888) 426-4435 或就近的急诊兽医。本信息由 petsMetrics 提供，仅供一般认知参考——请勿延误治疗。"
+    },
+    "unit": {
+      "kg": "公斤",
+      "lb": "磅",
+      "ml": "毫升",
+      "oz": "盎司",
+      "kcal": "千卡"
+    },
+    "error": {
+      "generic": "出了点问题，请重试。",
+      "boundaryTitle": "出了点问题",
+      "boundaryMessage": "发生了意外错误。请刷新页面或稍后重试。",
+      "dismiss": "关闭"
+    },
+    "share": {
+      "copyLink": "复制链接",
+      "copied": "链接已复制！",
+      "shareOnTwitter": "分享至 Twitter",
+      "shareOnFacebook": "分享至 Facebook"
+    }
+  },
+  "nav": {
+    "home": "首页",
+    "dog": "狗狗",
+    "cat": "猫咪",
+    "shared": "共享工具",
+    "profile": "档案"
+  },
+  "speciesToggle": {
+    "label": "选择物种"
+  },
+  "affiliateBanner": {
+    "insurance": { "title": "宠物保险", "description": "为您宠物选择优质保险计划。", "cta": "对比方案" },
+    "food": { "title": "优质宠物食品", "description": "探索兽医推荐的营养品牌。", "cta": "立即选购" },
+    "amazon": { "title": "宠物用品", "description": "在 Amazon 上找到您宠物所需的一切。", "cta": "浏览商品" },
+    "pdf_upsell": { "title": "BARF 喂养指南 PDF", "description": "下载包含餐食计划的完整生食喂养指南。", "cta": "免费下载 PDF" }
+  },
+  "profile": {
+    "noProfile": "尚未选择宠物档案。请在档案模块中创建一个以便自动填充工具表单。",
+    "empty": {
+      "title": "您的宠物指挥中心。",
+      "subtitle": "30 秒内创建档案，从此无需重复输入宠物信息。",
+      "cta": "创建您的第一只宠物",
+      "privacyLocal": "100% 隐私 · 仅存储于您的设备",
+      "privacyNoAccount": "无需账户 · 随时导出/导入"
+    },
+    "wizard": {
+      "step1Title": "该档案对应什么类型的宠物？",
+      "step1Dog": "狗",
+      "step1Cat": "猫",
+      "step1Hint": "选择类型将为此档案设定配色主题。",
+      "step2TitleDog": "介绍一下您的狗狗。",
+      "step2TitleCat": "介绍一下您的猫咪。",
+      "step2NameLabel": "宠物名称",
+      "step2NamePlaceholder": "如：旺财、咪咪、小花…",
+      "step2BreedLabel": "品种",
+      "step2BreedPlaceholder": "搜索或选择品种…",
+      "step3Title": "现在填入基础数据。",
+      "step3BirthDateLabel": "出生日期",
+      "step3AgeLabel": "或当前年龄",
+      "step3AgeYears": "岁",
+      "step3AgeMonths": "个月",
+      "step3WeightLabel": "当前体重",
+      "step3WeightHint": "体重单位偏好将保存在您的设备上。",
+      "step4Title": "一些快速健康信息。",
+      "step4SexLabel": "性别",
+      "step4Male": "公",
+      "step4Female": "母",
+      "step4NeuteredLabel": "是否绝育？",
+      "step4NeuteredYes": "是",
+      "step4NeuteredNo": "否",
+      "step4Why": "收集此项的原因：影响卡路里和激素相关计算。",
+      "step5Title": "即将完成——看起来很赞！",
+      "step5PhotoLabel": "添加照片（可选）",
+      "step5PhotoHint": "照片仅存储在本地，绝不会上传。",
+      "back": "上一步",
+      "continue": "继续",
+      "createButton": "创建档案",
+      "step2NoBreedMatch": "没有匹配的品种。",
+      "step2NoBreedsAvailable": "暂无可选品种。",
+      "step3AgeAriaLabel": "年龄输入方式",
+      "step3WeightAriaLabel": "体重单位",
+      "step5Unnamed": "(未命名)"
+    },
+    "success": {
+      "title": "{name} 的档案已就绪！",
+      "message": "所有工具现在将自动填充 {name} 的数据。",
+      "goToDashboard": "前往我的仪表盘"
+    },
+    "backup": {
+      "title": "您的档案已保存在此设备上。",
+      "body": "如果您清除了浏览器数据或更换设备，请下载备份以确保安全：",
+      "download": "下载备份文件",
+      "skip": "跳过"
+    },
+    "dashboard": {
+      "title": "我的宠物档案",
+      "quickStats": {
+        "calories": "每日卡路里",
+        "humanAge": "人类年龄",
+        "nextVaccine": "下次疫苗",
+        "lifeStage": "生命阶段",
+        "comingSoon": "即将推出"
+      },
+      "tools": {
+        "title": "全部工具",
+        "openWith": "使用 {name} 的数据打开"
+      },
+      "data": {
+        "export": "导出 JSON",
+        "import": "导入 JSON",
+        "edit": "编辑档案",
+        "delete": "删除档案",
+        "deleteConfirm": "确定要删除此档案吗？此操作不可撤销。",
+        "importFailed": "导入失败。"
+      },
+      "addPet": "添加另一只宠物",
+      "noProfiles": "未找到档案。"
+    },
+    "breadcrumb": {
+      "home": "首页",
+      "profile": "我的宠物档案"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "一个档案，所有答案。",
+      "subtitle1": "创建一次宠物档案——所有计算器自动填充。",
+      "subtitle2": "无需登录。无 AI。纯科学。",
+      "dogCta": "狗狗工具",
+      "catCta": "猫咪工具",
+      "trustLine": "200+ 种食物 · 14 个工具 · 400+ 品种 · AAHA、WSAVA 及 AAFCO 标准",
+      "cardPetName": "旺财",
+      "cardBreedAge": "拉布拉多 · 3 岁 · 28 公斤",
+      "cardCalories": "卡路里：1,240 千卡/天",
+      "cardAge": "年龄：约 33 人类岁",
+      "cardVaccine": "下次疫苗：2026年6月15日",
+      "cardOpenProfile": "打开完整档案"
+    },
+    "profileFocus": {
+      "title": "petsMetrics 的不同之处",
+      "subtitle": "其他宠物计算器每次都让您重新输入宠物信息。我们不会。",
+      "step1": "创建宠物档案",
+      "step1Desc": "输入品种、体重、出生日期和绝育状态。",
+      "step2": "打开任意工具",
+      "step2Desc": "每个计算器自动读取您的档案。无需重复输入数据。",
+      "step3": "获取科学答案",
+      "step3Desc": "基于 AAHA / WSAVA / AAFCO 公式，注明出处。",
+      "cta": "免费创建我的宠物档案"
+    },
+    "toolDiscovery": {
+      "title": "探索我们的工具",
+      "tabDog": "狗狗",
+      "tabCat": "猫咪",
+      "tabAll": "全部",
+      "mostPopular": "最受欢迎",
+      "comingSoon": "即将推出",
+      "tools": {
+        "toxicChecker": { "name": "毒性检测器", "desc": "那种食物安全吗？即时查询 200+ 种物品。" },
+        "dogCalorie": { "name": "卡路里计算器", "desc": "每天该喂多少？基于 AAFCO MER 公式。" },
+        "dogAge": { "name": "年龄计算器", "desc": "您的狗狗相当于人类多少岁？AAHA 标准。" },
+        "puppyGrowth": { "name": "幼犬成长预测", "desc": "预测成年体型并追踪生长曲线。" },
+        "dogVaccination": { "name": "疫苗计划", "desc": "不错过任何一针疫苗。个性化时间表。" },
+        "dogGestation": { "name": "怀孕计算器", "desc": "预产期和逐阶段里程碑。" },
+        "catAge": { "name": "年龄计算器", "desc": "您的猫咪相当于人类多少岁？AAHA/AAFP 标准。" },
+        "catBcs": { "name": "体况评分与体重", "desc": "您的猫超重了吗？2 分钟视觉评估。" },
+        "catHydration": { "name": "饮水量计算器", "desc": "大多数猫咪长期缺水。看看您的猫需要多少水。" },
+        "catVaccination": { "name": "疫苗计划", "desc": "按年龄和地区安排的 FVRCP、狂犬病等疫苗。" },
+        "catGestation": { "name": "怀孕计算器", "desc": "预测小猫出生日期和关键兽医节点。" },
+        "dogBarf": { "name": "BARF 计算器", "desc": "按体重计算生食喂养份量。" },
+        "catBarf": { "name": "BARF 计算器", "desc": "猫咪生食比例计算。" },
+        "insurance": { "name": "保险估算器", "desc": "对比顶级提供商的方案。" },
+        "euTravel": { "name": "EU 宠物旅行", "desc": "检查欧盟旅行所需的护照和疫苗要求。" }
+      }
+    },
+    "stats": {
+      "tools": "可用工具",
+      "foods": "数据库中食物种类",
+      "standards": "AAHA / WSAVA 标准",
+      "noLogin": "无需登录"
+    },
+    "featuredTool": {
+      "emergencyTitle": "宠物紧急情况？",
+      "emergencyPhone": "ASPCA 毒物控制热线：(888) 426-4435",
+      "title": "您的宠物能吃那个吗？",
+      "desc": "即时查询 200+ 种食物和植物。在分享盘中食物前先确认是否安全。",
+      "searchPlaceholder": "搜索：\"葡萄\"、\"牛油果\"、\"百合\"…",
+      "check": "查询",
+      "recentSearches": "最近搜索：",
+      "openFull": "打开完整毒性检测器"
+    }
+  },
+  "dog": {
+    "hero": {
+      "title": "狗狗健康计算器",
+      "subtitle": "为狗狗主人打造的科学工具。从卡路里到疫苗——一站式服务。",
+      "searchPlaceholder": "搜索狗狗工具…",
+      "breadcrumb": "首页 > 狗狗"
+    },
+    "profileBar": {
+      "autofillActive": "以下所有工具将自动填充 {name} 的数据",
+      "noProfile": "创建狗狗档案以自动填充所有计算器",
+      "createCta": "创建档案 — 30 秒"
+    },
+    "featuredTools": {
+      "title": "最常用的狗狗工具",
+      "heroCard": {
+        "title": "有毒食物与植物检测器",
+        "desc": "狗狗主人搜索最多的工具。即时检查食物和植物对狗狗的安全性——从葡萄到洋葱再到百合。",
+        "tagline": "200+ 种食物 · 严重程度分级 · 含兽医热线",
+        "cta": "检查一种食物",
+        "badge": "最受欢迎"
+      },
+      "calorie": { "title": "卡路里计算器", "desc": "使用 AAFCO MER 公式精确计算每日卡路里需求。", "cta": "开始计算" },
+      "vaccination": { "title": "疫苗计划", "desc": "不错过任何疫苗。获取您狗狗的个性化疫苗时间表。", "cta": "查看计划" }
+    },
+    "toolGrid": {
+      "title": "所有狗狗工具",
+      "ageCalculator": { "desc": "您的狗狗相当于人类多少岁？" },
+      "puppyGrowth": { "desc": "预测成年体重并追踪生长曲线。" },
+      "gestation": { "desc": "繁育者的预产期和里程碑。" },
+      "barf": { "desc": "按体重计算生食喂养份量。" },
+      "insurance": { "desc": "对比顶级提供商的方案。" },
+      "rating": "P0",
+      "priority": "P1",
+      "open": "打开"
+    },
+    "seoContent": {
+      "title": "关于这些狗狗健康计算器",
+      "intro": "我们的狗狗工具基于 AAHA、AAFCO 和 WSAVA 的同行评审兽医标准构建。以下是每个工具的功能——以及为什么它对您狗狗的健康很重要。",
+      "faq1": "最准确的狗狗年龄计算器是什么？",
+      "faq1Answer": "我们的狗狗年龄计算器使用 AAHA 2023 生命阶段指南，该指南考虑了品种体型差异。小型犬比大型犬衰老更慢——5 岁的吉娃娃大约相当于 36 人类岁，而 5 岁的大丹犬约 48 人类岁。",
+      "faq2": "如何计算狗狗的每日卡路里需求？",
+      "faq2Answer": "我们的卡路里计算器使用 AAFCO 维持能量需求（MER）公式：RER × 活动系数。RER = 70 × (体重 kg)^0.75。系数根据绝育状态、活动水平和生命阶段进行调整。",
+      "faq3": "我的狗狗需要哪些疫苗？",
+      "faq3Answer": "核心疫苗（所有狗均需接种）包括狂犬病、DHPP（犬瘟热、肝炎、细小病毒、副流感）。非核心疫苗如博德特氏菌和钩端螺旋体取决于您所在地区和生活方式。我们的时间表遵循 WSAVA 2024 指南。",
+      "faq4": "狗狗怀孕多长时间？",
+      "faq4Answer": "狗狗从排卵日起约怀孕 63 天（9 周）。我们的怀孕计算器显示预期预产期范围和从着床到分娩的关键发育里程碑。"
+    },
+    "breedContent": {
+      "title": "按品种分类的工具",
+      "popularBreeds": "热门品种",
+      "viewAllBreeds": "查看全部 400+ 品种",
+      "breeds": {
+        "labrador": { "name": "拉布拉多寻回犬", "calorie": "拉布拉多卡路里计算器", "age": "拉布拉多人类年龄", "growth": "拉布拉多幼犬生长曲线" },
+        "germanShepherd": { "name": "德国牧羊犬", "calorie": "德国牧羊犬每日卡路里", "age": "德国牧羊犬人类年龄" },
+        "frenchBulldog": { "name": "法国斗牛犬", "weight": "法国斗牛犬体重指南", "calorie": "法国斗牛犬卡路里计算器" },
+        "goldenRetriever": { "name": "金毛寻回犬", "age": "金毛寻回犬年龄计算器", "calorie": "金毛寻回犬卡路里需求" }
+      }
+    }
+  },
+  "cat": {
+    "hero": {
+      "title": "猫咪健康计算器",
+      "subtitle": "为室内猫咪主人打造的精准工具。营养、健康、保健——尽在掌握。",
+      "searchPlaceholder": "搜索猫咪工具…",
+      "breadcrumb": "首页 > 猫咪"
+    },
+    "profileBar": {
+      "autofillActive": "以下所有工具将自动填充 {name} 的数据",
+      "noProfile": "创建猫咪档案以自动填充所有计算器",
+      "createCta": "创建档案 — 30 秒"
+    },
+    "featuredTools": {
+      "title": "必备猫咪健康工具",
+      "heroCard": {
+        "title": "体况评分与体重管理",
+        "desc": "60% 的室内猫超重。您的猫是其中之一吗？花 2 分钟进行视觉评估，获得科学减重计划——不会让猫挨饿。",
+        "tagline": "BCS 1-9 量表 · AAHA 指南 · 安全卡路里目标",
+        "cta": "检查我的猫的体重",
+        "badge": "猫咪主人首选"
+      },
+      "toxicChecker": { "title": "毒性食物检测器", "desc": "那种室内植物安全吗？百合对猫咪致命。", "cta": "立即查询" },
+      "hydration": { "title": "饮水量计算器", "desc": "大多数猫咪长期缺水。看看 Luna 需要多少水。", "cta": "开始计算" }
+    },
+    "toolGrid": {
+      "title": "所有猫咪工具",
+      "ageCalculator": { "desc": "您的猫咪相当于人类多少岁？（AAHA/AAFP）" },
+      "vaccination": { "desc": "按年龄和地区安排 FVRCP、狂犬病等。" },
+      "gestation": { "desc": "预测小猫出生日期和关键兽医节点。" },
+      "barf": { "desc": "猫咪生食比例：不需要蔬菜！" },
+      "insurance": { "desc": "对比猫咪保险方案。" },
+      "rating": "P0",
+      "priority": "P1",
+      "open": "打开"
+    },
+    "seoContent": {
+      "title": "关于这些猫咪健康计算器",
+      "intro": "基于 AAHA/AAFP 猫科生命阶段指南和 WSAVA 疫苗标准构建。每个公式都附有引用且透明公开。",
+      "faq1": "我的猫咪相当于人类多少岁？",
+      "faq1Answer": "猫咪的衰老方式与狗和人类都不同。1 岁的猫大约相当于 15 人类岁。5 岁的猫约 36 人类岁。我们的计算器使用 AAHA/AAFP 猫科生命阶段指南。",
+      "faq2": "我的猫超重吗？如何使用 BCS 量表？",
+      "faq2Answer": "体况评分（BCS）是兽医制定的 1-9 级量表。您可以在家通过触摸肋骨和从上方观察腰线来评估。60% 的室内猫评分在 5 分（理想）以上。我们的 BCS 工具引导您完成评估并计算安全体重目标。",
+      "faq3": "我的猫每天应该喝多少水？",
+      "faq3Answer": "猫咪每公斤体重每天大约需要 50-60 毫升水。吃干粮的猫需要更多额外饮水。我们的饮水量计算器同时考虑了干粮和湿粮的水分摄入。",
+      "faq4": "我的室内猫需要哪些疫苗？",
+      "faq4Answer": "所有猫咪的核心疫苗包括 FVRCP（猫病毒性鼻气管炎、杯状病毒、泛白细胞减少症）和狂犬病。即便是室内猫也需要这些——FVRCP 系列从 6-8 周龄开始，每 3 年加强一次。",
+      "faq5": "猫咪怀孕多长时间？",
+      "faq5Answer": "猫咪约怀孕 65 天（范围 61-72 天）。我们的怀孕计算器提供预期预产期范围和孕期关键兽医节点。"
+    }
+  },
+  "shared": {},
+  "header": {
+    "logoAlt": "petsMetrics"
+  },
+  "footer": {
+    "copyright": "petsMetrics。保留所有权利。",
+    "privacy": "隐私政策",
+    "disclaimer": "免责声明",
+    "contact": "联系我们"
+  },
+  "dogAge": {
+    "title": "狗狗年龄计算器：狗龄换算人类年龄",
+    "subtitle": "您的狗狗相当于人类多少岁？我们的计算器根据品种体型计算——不是过时的 7 倍法。",
+    "breadcrumbHome": "首页",
+    "breadcrumbDog": "狗狗",
+    "breadcrumbCurrent": "年龄计算器",
+    "form": {
+      "ageLabel": "我的狗狗的年龄",
+      "years": "岁",
+      "monthsOptional": "额外（可选）：",
+      "months": "个月",
+      "sizeLabel": "我的狗狗的体型 / 品种类型",
+      "sizeSmall": "小型",
+      "sizeSmallDesc": "< 10 公斤 / 22 磅 · 如吉娃娃、玩具贵宾",
+      "sizeMedium": "中型",
+      "sizeMediumDesc": "10–25 公斤 / 22–55 磅 · 如比格犬、可卡犬",
+      "sizeLarge": "大型",
+      "sizeLargeDesc": "25–45 公斤 / 55–99 磅 · 如拉布拉多、哈士奇",
+      "sizeGiant": "巨型",
+      "sizeGiantDesc": "> 45 公斤 / 99 磅以上 · 如大丹犬",
+      "submit": "计算年龄"
+    },
+    "result": {
+      "humanAge": "约 {years} 人类岁",
+      "equivalent": "以人类标准，{name} 相当于一位 {age} 岁的{stageName}——充满活力，正值壮年，前面还有很多健康岁月。",
+      "formulaSource": "使用公式：AAHA 年龄指南（根据体型调整）",
+      "not7xRule": "（不是过度简化的\"7 倍规则\"）"
+    },
+    "lifeStage": {
+      "puppy": "幼犬 — 快速成长和社交期",
+      "junior": "青少年 — 情绪和身体仍在成熟中",
+      "adult": "成年 — 处于巅峰状态",
+      "mature": "中年 — 开始变慢，注意体重",
+      "senior": "老年 — 建议加强健康监测",
+      "geriatric": "高龄 — 需要专门的老年护理",
+      "cardTitle": "{stage} — {stageName}",
+      "healthPriorities": "此生命阶段的健康重点：",
+      "vetVisit": "年度兽医检查",
+      "dental": "定期洁牙",
+      "weight": "保持健康体重（防止关节早期磨损）",
+      "parasite": "继续月度寄生虫预防"
+    },
+    "comparisonTable": {
+      "title": "狗狗年龄与人类年龄对照表",
+      "dogAge": "狗龄",
+      "small": "小型 <10kg",
+      "medium": "中型 10-25",
+      "large": "大型 25-45",
+      "giant": "巨型 >45kg",
+      "row1": "1 岁",
+      "row2": "2 岁",
+      "row3": "3 岁",
+      "row4": "4 岁",
+      "row5": "5 岁",
+      "row7": "7 岁",
+      "row10": "10 岁",
+      "row15": "15 岁",
+      "footnote": "基于 AAHA 犬类生命阶段指南。巨型品种平均寿命较短，因此比例压缩更快。"
+    },
+    "scienceSection": {
+      "title": "为什么不使用\"7 倍规则\"",
+      "body": "流行的\"乘以 7\"公式没有科学依据。狗狗在前 2 年快速成熟（达到性成熟和完全体型），之后衰老速度放缓。我们的计算器采用以下来源的体型调整生命阶段指南：美国动物医院协会（AAHA）和 2020 年 UCSD 表观遗传学甲基化研究（拉布拉多参考）。大型品种因代谢率更高、细胞分裂更快而衰老更快——而不仅仅是因为体型大小。",
+      "aaGuidelines": "AAHA 生命阶段指南"
+    },
+    "shareCta": {
+      "title": "{name} 相当于 {age} 人类岁！",
+      "sharePrompt": "刚刚发现我的狗狗 {name} 相当于 {age} 人类岁！查查你家狗狗的人类年龄 → {url} #狗狗生活 #petsMetrics",
+      "twitter": "分享至 Twitter",
+      "facebook": "分享至 Facebook",
+      "copyLink": "复制链接"
+    }
+  },
+  "catAge": {
+    "title": "猫咪年龄计算器：猫龄换算人类年龄",
+    "subtitle": "您的猫咪相当于人类多少岁？基于官方 AAHA/AAFP 2021 猫科生命阶段指南。",
+    "breadcrumbHome": "首页",
+    "breadcrumbCat": "猫咪",
+    "breadcrumbCurrent": "年龄计算器",
+    "form": {
+      "ageMonthsLabel": "我的猫咪的年龄（月）",
+      "months": "个月",
+      "monthsHint": "1 年 = 12 个月，5 年 = 60 个月",
+      "submit": "计算年龄"
+    },
+    "result": {
+      "humanAge": "约 {years} 人类岁",
+      "equivalent": "以人类标准，{name} 相当于一位 {age} 岁的人。",
+      "source": "来源：AAHA/AAFP 2021 猫科生命阶段指南",
+      "lifeStage": "生命阶段",
+      "checkupFrequency": "建议体检频率"
+    },
+    "lifeStage": {
+      "kitten": "幼猫 — 快速成长和发育；关键社交期",
+      "junior": "青少年 — 身体和行为仍在成熟中",
+      "prime": "壮年 — 完全成熟，处于巅峰状态",
+      "mature": "中年 — 开始变慢；建议每年两次筛查",
+      "senior": "老年 — 需要定期健康监测；疾病风险增加",
+      "geriatric": "高龄 — 需要专门的老年护理和频繁检查"
+    },
+    "comparisonTable": {
+      "title": "猫咪年龄与人类年龄对照表",
+      "catAge": "猫龄",
+      "humanAge": "人类年龄",
+      "lifeStage": "生命阶段",
+      "footnote": "基于 AAHA/AAFP 2021 猫科生命阶段指南。猫咪在前 2 年快速衰老，之后每猫年约等于 4 人类年。"
+    },
+    "scienceSection": {
+      "title": "猫咪衰老背后的科学",
+      "body": "猫咪在生命前 2 年快速衰老——1 岁猫约等于 15 岁人类，2 岁猫约等于 24 人类岁。2 岁后，每猫年约等于 4 人类年。这基于 AAHA/AAFP 猫科生命阶段指南，该指南定义了六个不同的生命阶段，每个阶段有不同的健康和营养需求。",
+      "aafpGuidelines": "AAHA/AAFP 猫科生命阶段指南"
+    },
+    "shareCta": {
+      "title": "{name} 相当于 {age} 人类岁！",
+      "sharePrompt": "我的猫 {name} 相当于 {age} 人类岁！看看你家猫咪的人类年龄 → {url} #猫咪生活 #petsMetrics"
+    }
+  },
+  "dogCalorie": {
+    "title": "狗狗卡路里计算器 — 我的狗每天该吃多少",
+    "subtitle": "使用 AAFCO MER 公式精确计算您狗狗的每日卡路里需求。获取任何狗粮品牌的喂食量。基于体重和活动水平。",
+    "breadcrumbHome": "首页",
+    "breadcrumbDog": "狗狗",
+    "breadcrumbCurrent": "卡路里计算器",
+    "form": {
+      "step1Title": "第 1/2 步 — 关于 {name}",
+      "weightLabel": "当前体重",
+      "scenarioLabel": "生命阶段 / 活动水平",
+      "puppyUnder4m": "4 个月以下幼犬",
+      "puppyOver4m": "4 个月至成年幼犬",
+      "neuteredAdult": "成年，已绝育（典型）",
+      "intactAdult": "成年，未绝育",
+      "weightLoss": "减重 / 肥胖倾向",
+      "senior": "老年犬（7 岁以上）",
+      "workingDog": "活跃 / 工作犬",
+      "coefficient": "系数",
+      "step2Title": "第 2/2 步 — 您的狗粮（可选）",
+      "foodDensityLabel": "狗粮卡路里密度（如已知）：",
+      "foodDensityPlaceholder": "如 3500 千卡/公斤（查看包装袋）",
+      "foodDensityHint": "留空则仅显示每日卡路里。",
+      "submit": "计算"
+    },
+    "result": {
+      "dailyCalories": "{name} 的每日卡路里需求",
+      "kcalPerDay": "{mer} 千卡/天",
+      "howCalculated": "计算方式：",
+      "rerFormula": "RER = 70 × ({weight} 公斤)^0.75 = {rer} 千卡/天",
+      "merFormula": "MER = {rer} × {factor} ({scenario}) = {mer} 千卡/天",
+      "source": "来源：AAFCO / AAHA 犬类能量需求",
+      "foodSection": "如果您的狗粮含 {density} 千卡/公斤：",
+      "gramsPerDay": "{grams} 克/天",
+      "cupsEquivalent": "（≈ {cups} 杯标准干粮）",
+      "feedingBreakdown": "每日分配（如每天喂两次）：",
+      "morning": "早上：{grams} 克（{cups} 杯）",
+      "evening": "晚上：{grams} 克（{cups} 杯）"
+    }
+  },
+  "puppyGrowth": {
+    "title": "幼犬成年体重预测器 — 估算您幼犬的最终体型",
+    "subtitle": "使用品种体型和生长曲线预测您的幼犬会长多大。追踪体重里程碑并查看预期成年生长曲线图。",
+    "breadcrumbHome": "首页",
+    "breadcrumbDog": "狗狗",
+    "breadcrumbCurrent": "幼犬成长预测器",
+    "form": {
+      "ageWeeksLabel": "幼犬当前年龄（周）",
+      "ageWeeksPlaceholder": "如 12",
+      "weightLabel": "当前体重",
+      "sizeLabel": "预期成年体型",
+      "sizeSmall": "小型",
+      "sizeSmallDesc": "< 10 公斤 · 玩具及小型品种",
+      "sizeMedium": "中型",
+      "sizeMediumDesc": "10–25 公斤 · 中型品种",
+      "sizeLarge": "大型",
+      "sizeLargeDesc": "25–45 公斤 · 大型品种",
+      "sizeGiant": "巨型",
+      "sizeGiantDesc": "> 45 公斤 · 巨型品种",
+      "submit": "预测成年体重"
+    },
+    "result": {
+      "predictedTitle": "{name} 的预测成年体重",
+      "predictedRange": "{min} – {max} 公斤",
+      "varianceNote": "基于品种生长曲线的 ±15% 预测误差",
+      "growthChartTitle": "生长曲线 — {name}",
+      "chartXLabel": "年龄（周）",
+      "chartYLabel": "体重（公斤）",
+      "currentMarker": "当前：{age} 周 {weight} 公斤",
+      "predictedLabel": "预测成年：{min}–{max} 公斤"
+    }
+  },
+  "gestation": {
+    "title": "怀孕计算器 — 预产期与里程碑",
+    "subtitle": "计算您宠物的预产期并追踪关键发育里程碑。",
+    "breadcrumbHome": "首页",
+    "breadcrumbCurrent": "怀孕计算器",
+    "form": {
+      "matingDateLabel": "交配发生在什么时候？",
+      "firstMating": "首次交配日期",
+      "secondMating": "第二次交配日期（可选）",
+      "addDateButton": "添加另一个交配日期",
+      "multiDateHint": "如果发生了多次交配，我们将计算最早可能、最可能和最晚的日期范围。",
+      "submit": "计算预产期"
+    },
+    "result": {
+      "expectedDate": "预期分娩日期",
+      "earliest": "最早：{date}",
+      "likely": "最可能：{date}",
+      "latest": "最晚：{date}",
+      "possibleRange": "可能范围：{earliest} → {latest}",
+      "daysRemaining": "（距离今天还有 {days} 天）",
+      "basedOn": "基于：平均怀孕期 63 天。交配日期：{date}",
+      "averageNote": "（范围：58–68 天）",
+      "milestonesTitle": "孕期里程碑时间线",
+      "milestoneDay0": "第 0 天 — 交配",
+      "milestoneDay0Desc": "可能已受孕。监测怀孕迹象。",
+      "milestoneDay14": "第 14 天 — 胚胎着床",
+      "milestoneDay14Desc": "受精胚胎在子宫壁着床。",
+      "milestoneDay21": "第 21 天 — 可能出现晨吐",
+      "milestoneDay21Desc": "胚胎着床完成。激素变化可能导致暂时食欲不振。",
+      "milestoneDay25": "第 25 天 — 超声波窗口开启",
+      "milestoneDay25Desc": "兽医可在第 25 天左右通过超声波确认怀孕。",
+      "milestoneDay28": "第 28 天 — 建议进行超声波检查（心跳）",
+      "milestoneDay28Desc": "建议进行超声波确认——可检测到胎儿心跳。",
+      "milestoneDay35": "第 35 天 — 可触及胎儿发育",
+      "milestoneDay35Desc": "触诊可见胎儿发育。腹部开始变大。",
+      "milestoneDay42": "第 42 天 — 可进行骨骼 X 光检查",
+      "milestoneDay42Desc": "胎儿骨骼开始钙化。X 光可估算产仔数量。",
+      "milestoneDay45": "第 45 天 — X 光：胎儿骨骼可见",
+      "milestoneDay45Desc": "X 光清晰显示胎儿骨骼。可数幼崽数量并确认胎位。",
+      "milestoneDay50": "第 50 天 — 食欲增加",
+      "milestoneDay50Desc": "随着幼犬快速成长，食欲显著增加。",
+      "milestoneDay55": "第 55 天 — 准备产箱",
+      "milestoneDay55Desc": "在安静、温暖、方便到达的位置设置产箱。",
+      "milestoneDay58": "第 58 天 — 可能早期分娩；开始体温监测",
+      "milestoneDay58Desc": "开始每日体温监测。体温低于 37.8°C（100°F）预示 24 小时内分娩。",
+      "milestoneDay60": "第 60 天 — 筑巢行为",
+      "milestoneDay60Desc": "筑巢行为加剧。确保分娩区域完全准备就绪。",
+      "milestoneDay63": "第 63 天 — 最可能的预产日期",
+      "milestoneDay63Desc": "预期分娩日期。大多数狗狗在第 63 天左右分娩。",
+      "milestoneDay65": "第 65 天 — 晚期；如无分娩迹象请联系兽医",
+      "milestoneDay65Desc": "如无分娩迹象，请咨询兽医进行评估。",
+      "milestoneDay68": "第 68 天 — 最晚安全边界；联系兽医",
+      "milestoneDay68Desc": "最晚安全边界。如仍未开始分娩，请立即联系兽医。"
+    },
+    "shareCta": {
+      "title": "{name} 的预产期约在 {date}！",
+      "sharePrompt": "刚刚计算出 {name} 的分娩日期！查看您狗狗的孕期时间线 → {url} #狗狗繁育 #petsMetrics"
+    }
+  },
+  "vaccination": {
+    "title": "疫苗计划 — 个性化时间表",
+    "subtitle": "根据年龄和地区获取个性化疫苗和驱虫时间表。",
+    "breadcrumbHome": "首页",
+    "breadcrumbCurrent": "疫苗计划",
+    "form": {
+      "birthDateLabel": "出生日期（或当前年龄）",
+      "regionLabel": "您所在的地区",
+      "submit": "生成时间表"
+    },
+    "result": {
+      "scheduleTitle": "{name} 的疫苗计划",
+      "generatedOn": "生成日期：{date} · 基于出生日期：{birthDate} · 地区：{region} · WSAVA 核心疫苗指南",
+      "nextDue": "下次到期：{date}",
+      "tableVaccine": "疫苗 / 治疗",
+      "tableDueDate": "到期日期",
+      "tableStatus": "状态",
+      "nonCoreTitle": "关于非核心疫苗建议",
+      "nonCoreBody": "标记为非核心的疫苗很大程度上取决于您所在的具体地区和狗狗的日常生活。以上建议是起点。请咨询兽医获取个性化评估。",
+      "status": {
+        "overdue": "已过期",
+        "upcoming": "即将到期",
+        "future": "待接种"
+      }
+    },
+    "shareCta": {
+      "title": "{name} 的个性化疫苗计划",
+      "sharePrompt": "刚刚生成了 {name} 的疫苗计划！查看您的 → {url} #狗狗健康 #petsMetrics"
+    }
+  },
+  "catBcs": {
+    "bcsOptions": {
+      "1": "极度消瘦",
+      "2": "非常瘦",
+      "3": "偏瘦",
+      "4": "较瘦",
+      "5": "理想",
+      "6": "略重",
+      "7": "超重",
+      "8": "偏胖",
+      "9": "肥胖"
+    },
+    "form": {
+      "title": "体况评分评估",
+      "description": "将您猫咪的体型与以下 BCS 1-9 图片进行对比。选择最接近您猫咪当前体型的图片。",
+      "weightLabel": "当前体重",
+      "submit": "计算 BCS 与体重方案"
+    },
+    "result": {
+      "bcsScore": "BCS {score}/9",
+      "bodyCondition": "体况：{condition}",
+      "condition": {
+        "underweight": "体重不足",
+        "ideal": "理想体重",
+        "overweight": "超重",
+        "obese": "肥胖"
+      },
+      "idealWeight": "预估理想体重范围",
+      "dailyCalorieTarget": "每日卡路里目标（减重）",
+      "weeksToIdeal": "预计 {weeks} 周达到理想体重（每周减重 1%）",
+      "maintainWeight": "保持当前体重。继续每月监测。",
+      "lipidosisWarning": {
+        "title": "⚠️ 肝脂沉积症警告",
+        "body": "请不要将卡路里限制在此安全下限之下。猫咪快速减重可能导致肝脂沉积症（脂肪肝），这是一种严重且可能致命的疾病。开始任何减重计划前，请务必咨询兽医。"
+      },
+      "disclaimerTitle": "BCS 评估局限性",
+      "disclaimerBody": "BCS 是一种视觉筛查工具，不是医学诊断。每只猫的骨骼结构和肌肉量各有不同。如需准确评估，请让兽医进行手触 BCS 评估和血液检测，然后再开始任何限制卡路里的饮食。"
+    },
+    "shareCta": {
+      "title": "{name} 的 BCS 评估已完成！",
+      "sharePrompt": "评估您猫咪的体况并获得科学减重方案 → {url} #猫咪健康 #petsMetrics"
+    }
+  },
+  "catHydration": {
+    "title": "猫咪饮水量计算器",
+    "subtitle": "计算您的猫咪每天需要多少水。考虑干粮和湿粮中的水分。",
+    "breadcrumbHome": "首页",
+    "breadcrumbCurrent": "饮水量计算器",
+    "form": {
+      "weightLabel": "猫咪体重",
+      "dryFoodLabel": "每天干粮量",
+      "wetFoodLabel": "每天湿粮量",
+      "submit": "计算饮水量"
+    },
+    "result": {
+      "totalMl": "{name} 每天约需要 {ml} 毫升水。",
+      "fromFood": "来自食物中的水分",
+      "extraNeeded": "还需额外饮水",
+      "moistureNote": "干粮含水约 10% · 湿粮含水约 80%",
+      "statusAdequate": "食物水分摄入充足",
+      "statusSlightlyLow": "略低 — 请适量增加饮水",
+      "statusLow": "偏低 — 需要额外饮水",
+      "scienceTitle": "为什么饮水对猫咪很重要",
+      "scienceBody": "猫咪作为沙漠动物演化而来，口渴驱动力较低。在野外，它们从猎物中获取大部分水分（约 70-80% 含水量）。仅吃干粮的猫咪慢性脱水风险最高，可能导致泌尿道疾病和肾脏问题。每日提供新鲜饮水和搭配湿粮是最有效的两大策略。"
+    },
+    "shareCta": {
+      "title": "{name} 每天需要 {ml} 毫升水！",
+      "sharePrompt": "大多数猫咪长期缺水——看看您的猫需要多少水 → {url} #猫咪健康 #petsMetrics"
+    }
+  },
+  "toxicChecker": {
+    "searching": "搜索中...",
+    "emptyState": "在上方输入食物或植物名称开始搜索。",
+    "popularSearches": "热门搜索：",
+    "noResults": "未找到匹配项。请尝试其他搜索词。",
+    "affectedSpecies": "受影响物种",
+    "form": {
+      "speciesLabel": "检查对象：",
+      "searchLabel": "搜索食物或植物",
+      "searchPlaceholder": "如\"葡萄\"、\"巧克力\"、\"百合\"...",
+      "clear": "清除搜索"
+    },
+    "result": {
+      "toxicHeader": "此物品对您的宠物有毒。如已误食，请立即寻求兽医帮助。",
+      "cautionHeader": "此物品需谨慎。仅限限量或在监督下接触。",
+      "safeHeader": "此物品通常对您的宠物安全。",
+      "symptoms": "常见症状：",
+      "safeAmount": "如喂食，安全份量",
+      "safeAmountLabel": "安全份量",
+      "emergencyTitle": "如果您的宠物误食了此物品，请立即联系：",
+      "emergencyNumbers": "ASPCA 毒物控制：(888) 426-4435 · 宠物毒物热线：(855) 764-7661",
+      "source": "来源",
+      "otherResults": "其他匹配"
+    },
+    "shareCta": {
+      "title": "{item} 对宠物的安全性为{level} — 查看毒性检测器！",
+      "sharePrompt": "{item} 对宠物安全吗？即时查询 200+ 种物品 → {url} #宠物安全 #petsMetrics"
+    }
+  },
+  "toxicLanding": {
+    "emergencyTitle": "紧急联系信息",
+    "emergencyDescription": "如果您认为宠物误食了此物品，请立即联系毒物控制中心或急诊兽医。时间至关重要。",
+    "aspcaPhone": "ASPCA 动物毒物控制中心",
+    "aspcaNumber": "(888) 426-4435",
+    "petPoisonHelpline": "宠物毒物求助热线",
+    "petPoisonNumber": "(855) 764-7661",
+    "emergencyDisclaimer": "以上号码适用于美国。如果您在美国境外，请联系当地急诊兽医或国家动物毒物控制机构。",
+    "relatedTitle": "相关物品",
+    "sidebar": {
+      "moreItems": "更多毒性参考资料",
+      "totalItems": "数据库共有 {count} 项",
+      "openChecker": "打开完整毒性检测器"
+    },
+    "notFound": {
+      "title": "未找到该物品",
+      "description": "您查找的毒性条目不存在。请使用毒性检测器搜索所有物品。",
+      "cta": "打开毒性检测器"
+    }
+  },
+  "euTravel": {
+    "errors": {
+      "SELECT_COUNTRIES": "请选择出发国和目的地国。",
+      "INVALID_COUNTRY": "无效的国家代码。请选择有效的欧盟国家。"
+    },
+    "form": {
+      "title": "您的旅行详情",
+      "speciesLabel": "宠物类型",
+      "originLabel": "出发地",
+      "destinationLabel": "目的地",
+      "selectCountry": "选择国家...",
+      "documentsLabel": "您已经有哪些文件？（勾选所有适用项）",
+      "submit": "检查要求"
+    },
+    "documents": {
+      "microchip": "微芯片（ISO 11784/11785）",
+      "rabies-vaccination": "狂犬病疫苗（现行有效）",
+      "eu-pet-passport": "EU 宠物护照",
+      "rabies-antibody-titer": "狂犬病抗体滴度检测",
+      "tapeworm-treatment": "绦虫治疗证明",
+      "health-certificate-non-eu": "动物健康证明（AHC）",
+      "min-age-rabies": "满足最低年龄（12 周以上）",
+      "max-pets-limit": "在 5 只宠物限额内（非商业）",
+      "teip-entry-point": "已规划指定入境点（TEP）",
+      "uk-specific-docs": "英国专用 AHC（脱欧后）",
+      "nordic-immunity-zone": "北欧棘球绦虫治疗"
+    },
+    "result": {
+      "readyToTravel": "所有要求已满足！您的宠物可以旅行了。",
+      "notReady": "检测到缺失要求。您可能被拒绝入境。",
+      "requirementsSummary": "已满足 {satisfied} 项，缺失 {missing} 项",
+      "leadTimeWarning": "您需要至少 {days} 天来完成旅行前的剩余要求。",
+      "leadTimeHint": "请提前计划——部分要求有强制性等待期，从疫苗接种或检测后开始计算。",
+      "satisfied": "已满足",
+      "missing": "缺失",
+      "leadTime": "准备时间：旅行前 {days} 天",
+      "officialSource": "官方来源"
+    },
+    "shareCta": {
+      "title": "EU 宠物旅行要求清单",
+      "sharePrompt": "带宠物去欧盟旅行所需的全部要求——微芯片、狂犬病、绦虫等 → {url} #宠物旅行 #petsMetrics"
+    }
+  },
+  "euTravelLanding": {
+    "h1Pattern": "带宠物前往{destination} — 要求清单",
+    "subtitle": "从{origin}带狗或猫前往{destination}的完整指南。微芯片、狂犬病疫苗、宠物护照、绦虫治疗——全部要求一站式呈现。",
+    "sectionChecklist": "旅行要求清单",
+    "requirementRequired": "必需",
+    "requirementNotRequired": "此路线无特别要求",
+    "leadTime": "旅行前 {days} 天",
+    "leadTimeNone": "无需等待期",
+    "noLeadTime": "无特定准备时间",
+    "officialSource": "官方来源",
+    "speciesAppliesTo": "适用对象",
+    "speciesDog": "狗",
+    "speciesCat": "猫",
+    "speciesBoth": "狗和猫",
+    "ctaTitle": "准备就绪？",
+    "ctaDescription": "使用我们的互动式 EU 宠物旅行检查器验证您宠物的所有要求。",
+    "ctaButton": "打开 EU 宠物旅行检查器",
+    "notFoundTitle": "路线未找到",
+    "notFoundDescription": "您查找的 EU 旅行路线不存在。请使用互动检查器搜索所有目的地。",
+    "notFoundCta": "打开 EU 宠物旅行检查器"
+  },
+  "barf": {
+    "form": { "speciesLabel": "宠物类型", "weightLabel": "目标体重（公斤）", "percentageLabel": "每日喂食比例", "percentageHint": "通常：每日体重的 2–3%", "submit": "计算份量" },
+    "result": { "muscleMeat": "肌肉肉", "bone": "带肉骨头", "liver": "肝脏", "organ": "分泌器官", "vegetables": "蔬菜/浆果", "total": "每日总份量", "shoppingNote": "以上为每日份量。乘以 7 即为每周采购清单。" },
+    "pdfExport": { "comingSoon": "PDF 导出 — 即将推出" },
+    "adviceNote": "BARF 饮食必须合理搭配维生素和矿物质补充剂。开始生食喂养前请咨询兽医营养师。"
+  },
+  "insurance": {
+    "form": { "breedLabel": "品种", "ageLabel": "年龄（岁）", "regionLabel": "州/地区", "submit": "对比方案" },
+    "result": { "estimatedRange": "预估月保费", "disclaimer": "估算基于公开价格数据，并非约束性报价。实际保费因保险公司核保而异。", "providersTitle": "对比提供商", "getQuote": "获取报价", "deductible": "免赔额", "reimburse": "报销比例" }
+  }
+}

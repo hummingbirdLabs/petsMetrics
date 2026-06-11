@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/Button';
 import { Input } from '@/components/ui/Input';
 import { ShareButtons } from '@/components/shared/ShareButtons';
 import { SITE_URL } from '@/constants';
-import { pageUrl } from '@/lib/utils/url';
+import { usePageUrlBuilder } from '@/hooks/usePageUrl';
 import type { SizeClass } from '@/types/profile.types';
 import type { DogLifeStage } from '@/lib/calculators/dog-age.calc';
 import { calculateDogAge } from '@/lib/calculators/dog-age.calc';
@@ -61,6 +61,7 @@ export function DogAgeWidget() {
     calculate,
     stageColor,
   } = useDogAge();
+  const pageUrl = usePageUrlBuilder();
 
   const shareUrl = SITE_URL + pageUrl('dog/age-calculator').slice(0, -1);
   const petName = profile?.name ?? 'Buddy';

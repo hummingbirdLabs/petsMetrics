@@ -1,6 +1,6 @@
 'use client';
 import { useTranslations } from 'next-intl';
-import { pageUrl } from '@/lib/utils/url';
+import { usePageUrlBuilder } from '@/hooks/usePageUrl';
 
 type ProfileBarProps = {
   species: 'dog' | 'cat';
@@ -8,6 +8,7 @@ type ProfileBarProps = {
 
 export function ProfileBar({ species }: ProfileBarProps) {
   const t = useTranslations(`${species}.profileBar`);
+  const pageUrl = usePageUrlBuilder();
 
   // In a real implementation, this would read from localStorage ProfileContext
   // For Phase 5, we show the "no profile" state as the default

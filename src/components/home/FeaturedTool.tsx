@@ -1,10 +1,11 @@
 'use client';
 import { useState, useRef } from 'react';
 import { useTranslations } from 'next-intl';
-import { pageUrl } from '@/lib/utils/url';
+import { usePageUrlBuilder } from '@/hooks/usePageUrl';
 
 export function FeaturedTool() {
   const t = useTranslations('home.featuredTool');
+  const pageUrl = usePageUrlBuilder();
   const [query, setQuery] = useState('');
   const inputRef = useRef<HTMLInputElement>(null);
 

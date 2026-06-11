@@ -5,7 +5,7 @@ import { JsonLdScript } from '@/components/shared/JsonLdScript';
 import { HubSearch } from '@/components/hub/HubSearch';
 import { ProfileBar } from '@/components/hub/ProfileBar';
 import { graphJsonLd } from '@/lib/seo/geo-meta';
-import { pageUrl } from '@/lib/utils/url';
+import { usePageUrlBuilder } from '@/hooks/usePageUrl';
 
 const collectionSchema = {
   '@context': 'https://schema.org',
@@ -30,7 +30,7 @@ type ToolCard = {
   icon: string;
   nameKey: string;
   descKey: string;
-  href: string;
+  path: string;
   priority: 'P0' | 'P1';
 };
 
@@ -71,13 +71,14 @@ export function DogHubContent() {
   const tg = useTranslations('dog.toolGrid');
   const tseo = useTranslations('dog.seoContent');
   const tb = useTranslations('dog.breedContent');
+  const pageUrl = usePageUrlBuilder();
 
   const tools: ToolCard[] = [
-    { icon: '📅', nameKey: 'ageCalculator', descKey: 'ageCalculator.desc', href: pageUrl('dog/age-calculator'), priority: 'P0' },
-    { icon: '🐣', nameKey: 'puppyGrowth', descKey: 'puppyGrowth.desc', href: pageUrl('dog/puppy-growth-predictor'), priority: 'P0' },
-    { icon: '🤰', nameKey: 'gestation', descKey: 'gestation.desc', href: pageUrl('dog/gestation-calculator'), priority: 'P0' },
-    { icon: '🥩', nameKey: 'barf', descKey: 'barf.desc', href: pageUrl('dog/barf-calculator'), priority: 'P1' },
-    { icon: '🛡️', nameKey: 'insurance', descKey: 'insurance.desc', href: pageUrl('shared/pet-insurance-estimator'), priority: 'P1' },
+    { icon: '📅', nameKey: 'ageCalculator', descKey: 'ageCalculator.desc', path: 'dog/age-calculator', priority: 'P0' },
+    { icon: '🐣', nameKey: 'puppyGrowth', descKey: 'puppyGrowth.desc', path: 'dog/puppy-growth-predictor', priority: 'P0' },
+    { icon: '🤰', nameKey: 'gestation', descKey: 'gestation.desc', path: 'dog/gestation-calculator', priority: 'P0' },
+    { icon: '🥩', nameKey: 'barf', descKey: 'barf.desc', path: 'dog/barf-calculator', priority: 'P1' },
+    { icon: '🛡️', nameKey: 'insurance', descKey: 'insurance.desc', path: 'shared/pet-insurance-estimator', priority: 'P1' },
   ];
 
   // Map i18n name keys to display names
@@ -185,7 +186,7 @@ export function DogHubContent() {
             {tools.map((tool) => (
               <a
                 key={tool.nameKey}
-                href={tool.href}
+                href={pageUrl(tool.path)}
                 className="group rounded-xl bg-white p-5 shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md border border-transparent hover:border-[--dog-accent]"
               >
                 <div className="flex items-start gap-3">
