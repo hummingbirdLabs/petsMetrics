@@ -5,6 +5,7 @@ import { describe, it, expect, vi, beforeEach } from 'vitest';
 const mockT = vi.fn((key: string) => key);
 vi.mock('next-intl', () => ({
   useTranslations: (ns?: string) => (key: string) => ns === 'common' ? key : key,
+  useLocale: () => 'en',
 }));
 
 vi.mock('@/components/shared/AffiliateBanner', () => ({

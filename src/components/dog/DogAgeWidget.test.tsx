@@ -6,6 +6,7 @@ import { describe, it, expect, vi, beforeEach } from 'vitest';
 const mockT = vi.fn((key: string) => key);
 vi.mock('next-intl', () => ({
   useTranslations: () => mockT,
+  useLocale: () => 'en',
 }));
 
 // Mock shared components

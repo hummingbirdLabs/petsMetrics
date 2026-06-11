@@ -10,6 +10,7 @@ const mockT = vi.fn((key: string, params?: Record<string, string>) => {
 });
 vi.mock('next-intl', () => ({
   useTranslations: () => mockT,
+  useLocale: () => 'en',
 }));
 
 vi.mock('@/components/shared/ShareButtons', () => ({
