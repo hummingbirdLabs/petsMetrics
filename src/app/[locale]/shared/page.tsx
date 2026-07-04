@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: { params: { locale: string } 
   };
 }
 
-const collectionSchema = {
+const collectionSchema = (locale: string) => ({
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
   name: 'Shared Pet Health Tools',
@@ -32,7 +32,7 @@ const collectionSchema = {
     'Cross-species pet tools: toxic food checker, EU pet travel rules, BARF calculator, and pet insurance estimator.',
   url: `${SITE_URL}/${locale}/shared/`,
   isPartOf: { '@type': 'WebSite', name: SITE_NAME, url: SITE_URL },
-};
+});
 
 const breadcrumbSchema = {
   '@context': 'https://schema.org',
@@ -76,7 +76,7 @@ export default async function SharedHubPage({ params }: { params: { locale: stri
 
   return (
     <>
-      <JsonLdScript data={graphJsonLd(collectionSchema, breadcrumbSchema)} />
+      <JsonLdScript data={graphJsonLd(collectionSchema(locale), breadcrumbSchema)} />
 
       <section
         className="flex min-h-[280px] items-center px-4 py-12 sm:px-6 lg:px-8"
