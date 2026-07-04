@@ -26,8 +26,8 @@ import { ScienceBehindIt } from '@/components/shared/ScienceBehindIt';
 import { getTranslations } from 'next-intl/server';
 import { CatGestationWidget } from '@/components/cat/CatGestationWidget';
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
-  const { locale } = await params;
+export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
+  const { locale } = params;
   return {
     title: 'Cat Gestation Calculator — Kitten Due Date & Milestones | petsMetrics',
     description:

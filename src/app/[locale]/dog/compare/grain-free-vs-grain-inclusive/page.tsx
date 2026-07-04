@@ -6,7 +6,7 @@ import { getCompareData } from '@/lib/seo/compare-data';
 import { ComparePage } from '@/components/shared/ComparePage';
 import { JsonLdScript } from '@/components/shared/JsonLdScript';
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> { const { locale } = await params; return {
+export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> { const { locale } = params; return {
   title: 'Grain-Free vs Grain-Inclusive Dog Food | petsMetrics',
   description:
     'Science-based comparison of grain-free and grain-inclusive dog food: nutritional value, DCM risk, cost, and AAFCO compliance. FDA investigation data cited.',

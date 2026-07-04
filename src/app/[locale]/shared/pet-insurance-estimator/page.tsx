@@ -26,8 +26,8 @@ import { KnowledgeCards } from '@/components/shared/KnowledgeCards';
 import { ScienceBehindIt } from '@/components/shared/ScienceBehindIt';
 import { InsuranceWidget } from '@/components/shared/InsuranceWidget';
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
-  const { locale } = await params;
+export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
+  const { locale } = params;
   return {
   title: 'Pet Insurance Cost Estimator — Compare Plans Instantly | petsMetrics',
   description:

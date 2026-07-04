@@ -27,8 +27,8 @@ import { KnowledgeCards } from '@/components/shared/KnowledgeCards';
 import { ScienceBehindIt } from '@/components/shared/ScienceBehindIt';
 import { DogCalorieWidget } from '@/components/dog/DogCalorieWidget';
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
-  const { locale } = await params;
+export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
+  const { locale } = params;
   return {
     title: 'Dog Calorie Calculator — How Much to Feed Your Dog | petsMetrics',
     description:

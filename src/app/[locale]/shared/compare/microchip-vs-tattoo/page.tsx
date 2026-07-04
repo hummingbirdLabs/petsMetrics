@@ -6,7 +6,7 @@ import { getCompareData } from '@/lib/seo/compare-data';
 import { ComparePage } from '@/components/shared/ComparePage';
 import { JsonLdScript } from '@/components/shared/JsonLdScript';
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> { const { locale } = await params; return {
+export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> { const { locale } = params; return {
   title: 'Microchip vs Tattoo for Dogs: Which Is Better? | petsMetrics',
   description:
     'Compare microchips and tattoos for pet identification: reliability, safety, cost, and legal acceptance. AVMA and ISO standards cited. Find the best ID method for your dog.',

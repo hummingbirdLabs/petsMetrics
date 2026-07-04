@@ -5,8 +5,8 @@ import { SITE_URL } from '@/constants';
 import { JsonLdScript } from '@/components/shared/JsonLdScript';
 import { ProfilePageContent } from '@/components/profile/ProfilePageContent';
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: string> } }): Promise<Metadata> {
-  const { locale } = await params;
+export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
+  const { locale } = params;
   return {
     title: 'My Pet Profiles — Free Dog & Cat Health Dashboard',
     description:

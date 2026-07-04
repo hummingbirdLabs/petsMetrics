@@ -22,8 +22,8 @@ import { RESCUE_DOG_KNOWLEDGE } from '@/lib/seo/checklist-content';
 import { generateBreadcrumbJsonLd, graphJsonLd } from '@/lib/seo/geo-meta';
 import { generateFaqPageJsonLd } from '@/lib/seo/geo-faq';
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
-  const { locale } = await params;
+export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
+  const { locale } = params;
   return {
   title: 'Adopting a Rescue Dog Checklist: Complete Guide | petsMetrics',
   description:

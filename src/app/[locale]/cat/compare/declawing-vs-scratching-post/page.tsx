@@ -6,7 +6,7 @@ import { getCompareData } from '@/lib/seo/compare-data';
 import { ComparePage } from '@/components/shared/ComparePage';
 import { JsonLdScript } from '@/components/shared/JsonLdScript';
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> { const { locale } = await params; return {
+export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> { const { locale } = params; return {
   title: 'Declawing vs Scratching Post: Humane Alternatives | petsMetrics',
   description:
     'Compare declawing and scratching post training: health impacts, behavioral outcomes, and legal status. AAFP and ISFM guidelines cited. Learn humane alternatives.',

@@ -4,8 +4,8 @@ import { JsonLdScript } from '@/components/shared/JsonLdScript';
 import { graphJsonLd } from '@/lib/seo/geo-meta';
 import { createPageUrl } from '@/lib/utils/url';
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
-  const { locale } = await params;
+export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
+  const { locale } = params;
   return {
     title: 'Free Shared Pet Tools — Toxic Checker, EU Travel & More',
     description:

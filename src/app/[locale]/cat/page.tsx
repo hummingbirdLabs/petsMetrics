@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import { SITE_URL, SITE_NAME } from '@/constants';
 import { CatHubContent } from '@/components/hub/CatHubContent';
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: string> } }): Promise<Metadata> {
-  const { locale } = await params;
+export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
+  const { locale } = params;
   return {
     title: 'Free Cat Health Calculators — Calories, Age, BCS & More',
     description:

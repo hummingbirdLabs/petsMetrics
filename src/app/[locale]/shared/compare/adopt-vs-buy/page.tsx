@@ -6,7 +6,7 @@ import { getCompareData } from '@/lib/seo/compare-data';
 import { ComparePage } from '@/components/shared/ComparePage';
 import { JsonLdScript } from '@/components/shared/JsonLdScript';
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> { const { locale } = await params; return {
+export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> { const { locale } = params; return {
   title: 'Adopt vs Buy a Dog: Cost, Ethics & Health Compared | petsMetrics',
   description:
     'Compare adopting vs buying a dog: cost breakdown, health considerations, ethical implications, and long-term commitment. AVMA and shelter data cited.',

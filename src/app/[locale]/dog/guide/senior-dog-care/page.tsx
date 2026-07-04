@@ -23,8 +23,8 @@ import { SENIOR_DOG_KNOWLEDGE } from '@/lib/seo/checklist-content';
 import { generateBreadcrumbJsonLd, graphJsonLd } from '@/lib/seo/geo-meta';
 import { generateFaqPageJsonLd } from '@/lib/seo/geo-faq';
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
-  const { locale } = await params;
+export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
+  const { locale } = params;
   return {
   title: 'Senior Dog Health Checklist: Complete Care Guide for Aging Dogs | petsMetrics',
   description:

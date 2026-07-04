@@ -6,7 +6,7 @@ import { getCompareData } from '@/lib/seo/compare-data';
 import { ComparePage } from '@/components/shared/ComparePage';
 import { JsonLdScript } from '@/components/shared/JsonLdScript';
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> { const { locale } = await params; return {
+export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> { const { locale } = params; return {
   title: 'Pet Insurance vs Savings Account: Which Is Better? | petsMetrics',
   description:
     'Compare pet insurance vs self-insurance through savings: cost analysis, coverage gaps, and real-world scenarios. NAPHIA data cited. Make the right choice for your pet.',

@@ -23,8 +23,8 @@ import { KITTEN_CHECKLIST_KNOWLEDGE } from '@/lib/seo/checklist-content';
 import { generateBreadcrumbJsonLd, graphJsonLd } from '@/lib/seo/geo-meta';
 import { generateFaqPageJsonLd } from '@/lib/seo/geo-faq';
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
-  const { locale } = await params;
+export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
+  const { locale } = params;
   return {
   title: 'New Kitten Checklist: Everything You Need Before Day One | petsMetrics',
   description:

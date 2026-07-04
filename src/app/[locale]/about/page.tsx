@@ -3,8 +3,8 @@ import { getTranslations } from 'next-intl/server';
 import { SITE_URL, SITE_NAME } from '@/constants';
 import { JsonLdScript } from '@/components/shared/JsonLdScript';
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
-  const { locale } = await params;
+export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
+  const { locale } = params;
   const t = await getTranslations({ locale, namespace: 'about' });
 
   return {
@@ -56,8 +56,8 @@ function RichText({ text, linkHref, linkText }: { text: string; linkHref?: strin
   );
 }
 
-export default async function AboutPage({ params }: { params: Promise<{ locale: string }> }) {
-  const { locale } = await params;
+export default async function AboutPage({ params }: { params: { locale: string } }) {
+  const { locale } = params;
   const t = await getTranslations({ locale, namespace: 'about' });
 
   return (

@@ -6,7 +6,7 @@ import { getCompareData } from '@/lib/seo/compare-data';
 import { ComparePage } from '@/components/shared/ComparePage';
 import { JsonLdScript } from '@/components/shared/JsonLdScript';
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> { const { locale } = await params; return {
+export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> { const { locale } = params; return {
   title: 'Indoor vs Outdoor Cats: Lifespan & Health Comparison | petsMetrics',
   description:
     'Data-driven comparison of indoor-only and outdoor-access cats covering lifespan, disease risk, behavioral needs, and safe enrichment. AAFP and ISFM feline welfare guidelines cited.',

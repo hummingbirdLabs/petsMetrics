@@ -6,7 +6,7 @@ import { getCompareData } from '@/lib/seo/compare-data';
 import { ComparePage } from '@/components/shared/ComparePage';
 import { JsonLdScript } from '@/components/shared/JsonLdScript';
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> { const { locale } = await params; return {
+export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> { const { locale } = params; return {
   title: 'Wet Food vs Dry Food for Cats: Which Is Better? | petsMetrics',
   description:
     'Science-based comparison of wet and dry cat food: hydration, dental health, cost, and urinary health. AAFP and AAFCO data cited. Find the right food for your cat.',

@@ -25,8 +25,8 @@ import { KnowledgeCards } from '@/components/shared/KnowledgeCards';
 import { ScienceBehindIt } from '@/components/shared/ScienceBehindIt';
 import { ToxicCheckerWidget } from '@/components/shared/ToxicCheckerWidget';
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
-  const { locale } = await params;
+export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
+  const { locale } = params;
   return {
   title: 'Toxic Food & Plant Checker for Dogs & Cats | petsMetrics',
   description:

@@ -35,8 +35,8 @@ export function generateStaticParams() {
 // Note: metadata is generated per-locale in generateMetadata below
 // This static metadata serves as fallback for any pages that don't override it
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
-  const { locale } = await params;
+export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
+  const { locale } = params;
   const t = await getTranslations({ locale, namespace: 'common' });
 
   // Map locale to OpenGraph locale format
@@ -85,9 +85,9 @@ export default async function LocaleLayout({
   params,
 }: {
   children: React.ReactNode;
-  params: Promise<{ locale: string }>;
+  params: { locale: string };
 }) {
-  const { locale } = await params;
+  const { locale } = params;
   setRequestLocale(locale);
   const messages = await getMessages();
 

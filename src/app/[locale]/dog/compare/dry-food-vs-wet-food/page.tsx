@@ -6,7 +6,7 @@ import { getCompareData } from '@/lib/seo/compare-data';
 import { ComparePage } from '@/components/shared/ComparePage';
 import { JsonLdScript } from '@/components/shared/JsonLdScript';
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> { const { locale } = await params; return {
+export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> { const { locale } = params; return {
   title: 'Dry Food vs Wet Food for Dogs | petsMetrics',
   description:
     'Science-based comparison of kibble and canned diets: cost, moisture, shelf life, dental health, and palatability. AAFCO and WSAVA data cited. Find the right food for your dog.',

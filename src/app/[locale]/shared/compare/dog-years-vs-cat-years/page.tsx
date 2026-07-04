@@ -6,7 +6,7 @@ import { getCompareData } from '@/lib/seo/compare-data';
 import { ComparePage } from '@/components/shared/ComparePage';
 import { JsonLdScript } from '@/components/shared/JsonLdScript';
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> { const { locale } = await params; return {
+export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> { const { locale } = params; return {
   title: 'Dog Years vs Cat Years: How They Compare | petsMetrics',
   description:
     'Science-based comparison of dog and cat aging: lifespan, life stages, and health implications. AAHA and AAFP data cited. Learn how your pet ages differently.',

@@ -6,7 +6,7 @@ import { getCompareData } from '@/lib/seo/compare-data';
 import { ComparePage } from '@/components/shared/ComparePage';
 import { JsonLdScript } from '@/components/shared/JsonLdScript';
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> { const { locale } = await params; return {
+export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> { const { locale } = params; return {
   title: 'Raw Diet vs Kibble for Dogs: Science & Safety Compared | petsMetrics',
   description:
     'Objective comparison of BARF raw diet vs commercial kibble for dogs: nutritional completeness, bacterial risks, cost, dental benefits, and practical feasibility. NRC and AVMA data cited.',
