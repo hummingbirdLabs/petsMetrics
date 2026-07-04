@@ -75,10 +75,10 @@ const compareGuides = [
 
 /** Life Stage Checklist Guides — 生命阶段新手清单入口数据 */
 const checklistGuides = [
-  { icon: '🐶', titleKey: 'dog.guide.newPuppy', descKey: 'dog.guide.newPuppy.desc', path: 'dog/guide/new-puppy-checklist', sources: 'AAHA, AVSAB' },
-  { icon: '📋', titleKey: 'dog.guide.puppyDevelopment', descKey: 'dog.guide.puppyDevelopment.desc', path: 'dog/guide/puppy-development-stages', sources: 'AVSAB, AKC' },
-  { icon: '🏠', titleKey: 'dog.guide.rescueDog', descKey: 'dog.guide.rescueDog.desc', path: 'dog/guide/adopting-rescue-dog', sources: 'ASPCA, AVSAB' },
-  { icon: '🐕', titleKey: 'dog.guide.seniorDog', descKey: 'dog.guide.seniorDog.desc', path: 'dog/guide/senior-dog-care', sources: 'AAHA Senior' },
+  { icon: '🐶', titleKey: 'newPuppy.title', descKey: 'newPuppy.desc', path: 'dog/guide/new-puppy-checklist', sources: 'AAHA, AVSAB' },
+  { icon: '📋', titleKey: 'puppyDevelopment.title', descKey: 'puppyDevelopment.desc', path: 'dog/guide/puppy-development-stages', sources: 'AVSAB, AKC' },
+  { icon: '🏠', titleKey: 'rescueDog.title', descKey: 'rescueDog.desc', path: 'dog/guide/adopting-rescue-dog', sources: 'ASPCA, AVSAB' },
+  { icon: '🐕', titleKey: 'seniorDog.title', descKey: 'seniorDog.desc', path: 'dog/guide/senior-dog-care', sources: 'AAHA Senior' },
 ];
 
 export function DogHubContent() {
@@ -88,6 +88,7 @@ export function DogHubContent() {
   const tb = useTranslations('dog.breedContent');
   const tc = useTranslations('compare');
   const tGuide = useTranslations('dog.guide');
+  const tCommon = useTranslations('common');
   const pageUrl = usePageUrlBuilder();
 
   const tools: ToolCard[] = [
@@ -123,9 +124,9 @@ export function DogHubContent() {
           </h1>
           <p className="mt-3 text-lg text-white/80">{t('hero.subtitle')}</p>
           <div className="mt-2 text-sm text-white/70">
-            <a href={pageUrl('')} className="hover:text-white">{t('breadcrumb.home')}</a>
+            <a href={pageUrl('')} className="hover:text-white">{tCommon('breadcrumb.home')}</a>
             <span className="mx-1">›</span>
-            <span>{t('breadcrumb.dog')}</span>
+            <span>{tCommon('breadcrumb.dog')}</span>
           </div>
           <HubSearch placeholder={t('hero.searchPlaceholder')} />
         </div>
@@ -292,7 +293,7 @@ export function DogHubContent() {
                 key={guide.path}
                 href={pageUrl(guide.path)}
                 className="group rounded-xl bg-white p-5 shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md border border-transparent hover:border-[--dog-accent]"
-                aria-label={tGuide(`${guide.titleKey}.aria`)}
+                aria-label={tGuide(`${guide.titleKey.replace('.title', '')}.aria`)}
               >
                 <div className="flex items-start gap-3">
                   <span className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-[--dog-primary-light] text-lg text-[--dog-primary]">
@@ -336,10 +337,10 @@ export function DogHubContent() {
                 </summary>
                 <p className="mt-3 text-sm leading-relaxed text-[--gray-500]">
                   {tseo(`${faqKey}Answer`)}{' '}
-                  {faqKey === 'faq1' && <a href={pageUrl('dog/age-calculator')} className="text-[--brand-teal] underline">{t('cta.tryAgeCalculator')}</a>}
-                  {faqKey === 'faq2' && <a href={pageUrl('dog/calorie-calculator')} className="text-[--brand-teal] underline">{t('cta.calculateCalories')}</a>}
-                  {faqKey === 'faq3' && <a href={pageUrl('dog/vaccination-schedule')} className="text-[--brand-teal] underline">{t('cta.viewVaccineSchedule')}</a>}
-                  {faqKey === 'faq4' && <a href={pageUrl('dog/gestation-calculator')} className="text-[--brand-teal] underline">{t('cta.checkDueDates')}</a>}
+                  {faqKey === 'faq1' && <a href={pageUrl('dog/age-calculator')} className="text-[--brand-teal] underline">{tCommon('cta.tryAgeCalculator')}</a>}
+                  {faqKey === 'faq2' && <a href={pageUrl('dog/calorie-calculator')} className="text-[--brand-teal] underline">{tCommon('cta.calculateCalories')}</a>}
+                  {faqKey === 'faq3' && <a href={pageUrl('dog/vaccination-schedule')} className="text-[--brand-teal] underline">{tCommon('cta.viewVaccineSchedule')}</a>}
+                  {faqKey === 'faq4' && <a href={pageUrl('dog/gestation-calculator')} className="text-[--brand-teal] underline">{tCommon('cta.checkDueDates')}</a>}
                 </p>
               </details>
             ))}
@@ -347,9 +348,9 @@ export function DogHubContent() {
 
           {/* GEO Privacy Statement — SSG paragraph for AI search engine trust signals */}
           <div className="mt-10 rounded-lg border border-[--gray-200] bg-[--gray-50] p-5">
-            <h3 className="text-sm font-semibold text-[--gray-700]">{t('privacy.heading')}</h3>
+            <h3 className="text-sm font-semibold text-[--gray-700]">{tCommon('privacy.heading')}</h3>
             <p className="mt-2 text-sm leading-relaxed text-[--gray-500]">
-              {t('privacy.body')}
+              {tCommon('privacy.body')}
             </p>
           </div>
         </div>

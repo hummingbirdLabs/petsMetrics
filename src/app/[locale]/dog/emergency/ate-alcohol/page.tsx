@@ -240,7 +240,7 @@ export default async function DogAteAlcoholPage({ params }: { params: { locale: 
               </ul>
             </div>
             <div className="rounded-lg border-2 border-orange-200 bg-orange-50 p-4">
-              <h3 className="font-bold text-orange-800">{t('shared.vetDecision.urgencyTitle')}</h3>
+              <h3 className="font-bold text-orange-800">{t('shared.vetDecision.urgentTitle')}</h3>
               <ul className="mt-2 list-disc pl-5 text-sm text-gray-700 space-y-1">
                 {vetDecisionUrgent.map((item, i) => <li key={i}>{item}</li>)}
               </ul>

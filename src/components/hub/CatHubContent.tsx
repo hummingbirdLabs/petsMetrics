@@ -41,8 +41,8 @@ const catCompareGuides = [
 
 /** Life Stage Checklist Guides — 生命阶段新手清单入口数据（猫） */
 const catChecklistGuides = [
-  { icon: '🐱', titleKey: 'cat.guide.newKitten', descKey: 'cat.guide.newKitten.desc', path: 'cat/guide/new-kitten-checklist', sources: 'AAFP, ISFM' },
-  { icon: '🐈', titleKey: 'cat.guide.seniorCat', descKey: 'cat.guide.seniorCat.desc', path: 'cat/guide/senior-cat-care', sources: 'AAFP Senior' },
+  { icon: '🐱', titleKey: 'newKitten.title', descKey: 'newKitten.desc', path: 'cat/guide/new-kitten-checklist', sources: 'AAFP, ISFM' },
+  { icon: '🐈', titleKey: 'seniorCat.title', descKey: 'seniorCat.desc', path: 'cat/guide/senior-cat-care', sources: 'AAFP Senior' },
 ];
 
 export function CatHubContent() {
@@ -51,6 +51,7 @@ export function CatHubContent() {
   const tseo = useTranslations('cat.seoContent');
   const tc = useTranslations('compare');
   const tGuide = useTranslations('cat.guide');
+  const tCommon = useTranslations('common');
   const pageUrl = usePageUrlBuilder();
 
   const tools: ToolCard[] = [
@@ -92,9 +93,9 @@ export function CatHubContent() {
           </h1>
           <p className="mt-3 text-lg text-white/80">{t('hero.subtitle')}</p>
           <div className="mt-2 text-sm text-white/70">
-            <a href={pageUrl('')} className="hover:text-white">{t('breadcrumb.home')}</a>
+            <a href={pageUrl('')} className="hover:text-white">{tCommon('breadcrumb.home')}</a>
             <span className="mx-1">›</span>
-            <span>{t('breadcrumb.cat')}</span>
+            <span>{tCommon('breadcrumb.cat')}</span>
           </div>
           <HubSearch placeholder={t('hero.searchPlaceholder')} />
         </div>
@@ -261,7 +262,7 @@ export function CatHubContent() {
                 key={guide.path}
                 href={pageUrl(guide.path)}
                 className="group rounded-xl bg-white p-5 shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md border border-transparent hover:border-[--cat-accent]"
-                aria-label={tGuide(`${guide.titleKey}.aria`)}
+                aria-label={tGuide(`${guide.titleKey.replace('.title', '')}.aria`)}
               >
                 <div className="flex items-start gap-3">
                   <span className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-[--cat-primary-light] text-lg text-[--cat-primary]">
@@ -305,7 +306,7 @@ export function CatHubContent() {
                 </summary>
                 <p className="mt-3 text-sm leading-relaxed text-[--gray-500]">
                   {tseo(`${faqKey}Answer`)}{' '}
-                  {faqLinks[faqKey] && <a href={pageUrl(faqLinks[faqKey])} className="text-[--brand-teal] underline">{t('cta.open')}</a>}
+                  {faqLinks[faqKey] && <a href={pageUrl(faqLinks[faqKey])} className="text-[--brand-teal] underline">{tCommon('cta.open')}</a>}
                 </p>
               </details>
             ))}
@@ -313,9 +314,9 @@ export function CatHubContent() {
 
           {/* GEO Privacy Statement — SSG paragraph for AI search engine trust signals */}
           <div className="mt-10 rounded-lg border border-[--gray-200] bg-[--gray-50] p-5">
-            <h3 className="text-sm font-semibold text-[--gray-700]">{t('privacy.heading')}</h3>
+            <h3 className="text-sm font-semibold text-[--gray-700]">{tCommon('privacy.heading')}</h3>
             <p className="mt-2 text-sm leading-relaxed text-[--gray-500]">
-              {t('privacy.body')}
+              {tCommon('privacy.body')}
             </p>
           </div>
         </div>

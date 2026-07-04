@@ -533,6 +533,7 @@
       "description": "Step-by-step checklists for every stage of your dog's life. Interactive, printable, and based on AAHA/AVSAB guidelines.",
       "open": "View Checklist",
       "newPuppy": {
+        "title": "New Puppy Checklist",
         "desc": "47 essential items for your puppy's first 16 weeks. From supplies to socialization, everything you need for a great start.",
         "aria": "View New Puppy Checklist",
         "meta": {
@@ -541,14 +542,17 @@
         }
       },
       "puppyDevelopment": {
+        "title": "Puppy Development Stages",
         "desc": "Week-by-week guide from birth to 12 months. Neonatal, socialization, fear periods, and adolescence explained.",
         "aria": "View Puppy Development Stages Guide"
       },
       "rescueDog": {
+        "title": "Adopting a Rescue Dog",
         "desc": "Complete 3-3-3 adjustment guide. From decompression through bonding, based on ASPCA behavioral science.",
         "aria": "View Rescue Dog Adoption Guide"
       },
       "seniorDog": {
+        "title": "Senior Dog Care",
         "desc": "32 health monitoring items for aging dogs. Bi-annual vet visits, arthritis management, and cognitive support.",
         "aria": "View Senior Dog Care Checklist"
       }
@@ -629,6 +633,7 @@
       "description": "Step-by-step checklists for every stage of your cat's life. Interactive, printable, and based on AAFP/ISFM guidelines.",
       "open": "View Checklist",
       "newKitten": {
+        "title": "New Kitten Checklist",
         "desc": "40 essential items for your kitten's first 16 weeks. From litter box to vaccination, everything you need for a healthy start.",
         "aria": "View New Kitten Checklist",
         "meta": {
@@ -637,6 +642,7 @@
         }
       },
       "seniorCat": {
+        "title": "Senior Cat Care Checklist",
         "desc": "30 health monitoring items for aging cats. Bi-annual vet visits, CKD screening, and pain management.",
         "aria": "View Senior Cat Care Checklist"
       }
