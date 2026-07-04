@@ -25,19 +25,21 @@ import { KnowledgeCards } from '@/components/shared/KnowledgeCards';
 import { ScienceBehindIt } from '@/components/shared/ScienceBehindIt';
 import { EUTravelWidget } from '@/components/shared/EUTravelWidget';
 
-export const metadata: Metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  return {
   title: 'EU Pet Travel Requirements Checker 2026 | petsMetrics',
   description:
     'Check official EU pet travel requirements by destination country. Microchip, rabies vaccine, tapeworm treatment, pet passport. Updated for 2026.',
   keywords: 'EU pet travel requirements, taking dog to Europe, pet passport Europe, bringing dog to France from UK, traveling to Europe with cat, EU pet health certificate, USDA pet travel to Europe',
   alternates: {
-    canonical: `${SITE_URL}/shared/eu-pet-travel-checker/`,
+    canonical: `${SITE_URL}/${locale}/shared/eu-pet-travel-checker/`,
   },
   openGraph: {
     title: 'EU Pet Travel Requirements Checker 2026 | petsMetrics',
     description:
       'Verify all EU pet travel requirements for your dog or cat. Includes UK post-Brexit rules and Nordic tapeworm zones.',
-    url: `${SITE_URL}/shared/eu-pet-travel-checker/`,
+    url: `${SITE_URL}/${locale}/shared/eu-pet-travel-checker/`,
     type: 'website',
     images: [{ url: `${SITE_URL}/og/eu-pet-travel-checker.webp`, width: 1200, height: 630, alt: 'EU Pet Travel Requirements Checker 2026' }],
   },
@@ -48,6 +50,7 @@ export const metadata: Metadata = {
     images: [`${SITE_URL}/og/eu-pet-travel-checker.webp`],
   },
 };
+}
 
 const faqSchema = generateFaqPageJsonLd(EU_TRAVEL_FAQ);
 
@@ -96,13 +99,13 @@ export default async function EUTravelCheckerPage({ params }: { params: { locale
               </p>
             </div>
             <EUTravelWidget />
-            <KnowledgeCards cards={EU_TRAVEL_KNOWLEDGE} />
+            <KnowledgeCards cards={EU_TRAVEL_KNOWLEDGE} locale={locale} />
             <ScienceBehindIt content={EU_TRAVEL_SCIENCE} />
             <ToolCtaSection
-              heading="Check Your Pet's Vaccination Status"
-              description="Traveling requires up-to-date vaccines. Use our vaccination schedule to ensure your dog or cat meets all country-specific requirements before your trip."
-              href="/dog/vaccination-schedule/"
-              buttonLabel="Check Vaccination Schedule →"
+              heading={t('toolCta.checkEuTravel.heading')}
+              description={t('toolCta.checkEuTravel.description')}
+              href={pageUrl('dog/vaccination-schedule')}
+              buttonLabel={t('toolCta.checkEuTravel.button')}
             />
             <DisclaimerSection text={t('disclaimer.tool')} variant="tool" />
           </div>
@@ -110,7 +113,7 @@ export default async function EUTravelCheckerPage({ params }: { params: { locale
         sidebar={
           <div className="flex flex-col gap-4">
             <Card padding="md">
-              <p className="text-sm font-semibold text-[--gray-900]">Required Documents</p>
+              <p className="text-sm font-semibold text-[--gray-900]">{t('sidebar.requiredDocuments')}</p>
               <ul className="mt-2 flex flex-col gap-2 text-sm text-[--gray-600]">
                 <li>ISO microchip (15-digit)</li>
                 <li>Valid rabies vaccination</li>
@@ -119,7 +122,7 @@ export default async function EUTravelCheckerPage({ params }: { params: { locale
               </ul>
             </Card>
             <Card padding="md">
-              <p className="text-sm font-semibold text-[--gray-900]">Timeline</p>
+              <p className="text-sm font-semibold text-[--gray-900]">{t('sidebar.timeline')}</p>
               <ul className="mt-2 flex flex-col gap-2 text-sm text-[--gray-600]">
                 <li>Start preparation: 3-4 months before</li>
                 <li>Rabies vaccine: 21 days before travel</li>

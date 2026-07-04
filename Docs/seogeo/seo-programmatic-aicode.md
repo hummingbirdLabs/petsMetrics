@@ -14,9 +14,8 @@
 | Gate | 解锁条件 | 阻塞的下游任务 |
 |------|---------|--------------|
 | **Gate-Risk** | `pnpm risk-check` 脚本零 FAIL；§R 全部任务完成 | 禁止进入 §A 任何任务 |
-| **Gate-0** | §A 全部任务完成（About/Privacy/Terms 页已部署 + GEO 验证脚本无报错 + TASK-R0~R4 全部完成） | 禁止发布任何毒性落地页或工具内容页 |
-| **Gate-Social** | 核心工具页（20 页）已上线 ≥ 3 天；Reddit 首发帖有真实互动（≥ 5 条评论） | 禁止发布毒性落地页 Batch 1（先上工具页获得社交信号，再发批量） |
-| **Gate-1** | Batch 1 毒性页（50 页）Google Search Console 索引率 > 80% | 禁止发布 Batch 2 |
+| **Gate-0** | §A 全部任务完成（About/Privacy/Terms 页已部署 + GEO 验证脚本无报错 + TASK-R0~R4 全部完成） | 禁止发布任何工具内容页 |
+| **Gate-Social** | 核心工具页（20 页）已上线 ≥ 3 天；Reddit 首发帖有真实互动（≥ 5 条评论） | 禁止发布 Batch 1（先上工具页获得社交信号，再发批量） |
 | **Gate-2** | Reddit 首发帖已发布且有真实互动（≥ 5 条评论）——若 Gate-Social 已满足，此处自动通过 | 禁止发布 Phase 2（Month 1 起）批量页面 |
 | **Gate-DA10** | Domain Authority ≥ 10（Ahrefs 或 Moz 验证） | 禁止发布品种矩阵（§D） |
 | **Gate-DA20** | Domain Authority ≥ 20 | 禁止执行 TASK-E2（competitor alternative 落地页） |
@@ -32,7 +31,6 @@
 |---|------|---------|---------|
 | **G1** | FAQ Section、Knowledge Section、Medical Disclaimer、The Science Behind It — 全部为 **Server Component**，顶部无 `'use client'` 指令 | GEO 文字对 AI 爬虫不可见，整个 GEO 策略归零 | `grep -r "'use client'" src/components/shared/FAQSection.tsx` 返回空 |
 | **G2** | 所有 Programmatic 页面的 `title` 和 `meta description` 含具体内容关键词（食物名、品种名、国家名等），禁止泛化模板残留 | SpamBrain 批量模板检测触发 | `generateMetadata()` 单元测试 |
-| **G3** | 毒性落地页 `dangerReason` / `symptoms` / `whatToDo` 等描述性字段：每个物品独立撰写，禁止跨物品复用文字 | 不可模板化内容占比下降，SpamBrain 风险上升 | 每批上线前 `pnpm check-content-uniqueness` |
 | **G4** | 每个 Programmatic 页面不可模板化内容（独立于模板的数据内容）≥ 400 字 | 薄内容（Thin Content）判定 | `pnpm check-content-length` |
 | **G5** | 所有健康声明后附可见来源行（`Source: ASPCA / AVMA / AAHA`），同时出现在 HTML 文本和 `citation[]` JSON-LD 中 | E-E-A-T 信号缺失，YMYL 可信度下降 | `curl <url> \| grep "Source:"` 非空 |
 | **G6** | JSON-LD 使用 `@graph` 数组合并多个 Schema 类型，禁止多个独立 `<script type="application/ld+json">` 标签 | 结构化数据解析冲突 | Google Rich Results Test |
@@ -52,7 +50,7 @@
 
 ### TASK-R0: 全局风险自动化检查脚本
 
-**对应风险**: R1、R5、R6、R7、R8、R9、R12、R13  
+**对应风险**: R1、R5、R8、R12、R13  
 **状态**: ⬜ 未开始
 
 **输出文件**: `scripts/risk-check.mjs`
@@ -75,16 +73,6 @@ const checks = [
   { id: 'R5-disclaimer-server', desc: 'MedicalDisclaimer 无 use client',  fn: () => !srcContains('src/components/shared/MedicalDisclaimer.tsx', "'use client'") },
   // GEO SSG 可见性抽检
   { id: 'R5-faq-visible',       desc: '工具页 FAQ 文字在 HTML 源码可见',  fn: () => htmlContains('out/dog/age-calculator/index.html', 'FAQ') },
-
-  // R6: Canonical 标签
-  { id: 'R6-canonical',         desc: '毒性落地页有 canonical 标签',      fn: () => htmlContains('out/dog/can-dogs-eat-grapes/index.html', 'rel="canonical"') },
-
-  // R7: sitemap lastModified 非 new Date()（检查源码）
-  { id: 'R7-sitemap-fresh',     desc: 'sitemap.ts 毒性页 lastModified 引用 content-version', fn: () => srcContains('src/app/sitemap.ts', 'toxicDb.updatedAt') },
-
-  // R9: 品牌钩子（3 位置）
-  { id: 'R9-brand-knowledge',   desc: 'Knowledge Card 含 petsMetrics 品牌钩子', fn: () => htmlContains('out/dog/can-dogs-eat-grapes/index.html', 'petsMetrics Toxicology Guide') },
-  { id: 'R9-brand-disclaimer',  desc: '免责声明含 petsMetrics',           fn: () => htmlContains('out/dog/can-dogs-eat-grapes/index.html', 'provided by petsMetrics') },
 
   // R12: robots.ts AI 爬虫配置
   { id: 'R12-robots',           desc: 'robots.ts 包含全部 5 个 AI 爬虫',  fn: () => ['Google-Extended','GPTBot','PerplexityBot','Claude-Web','CCBot'].every(b => srcContains('src/app/robots.ts', b)) },
@@ -185,7 +173,7 @@ const checks = [
 import { getTranslations } from 'next-intl/server';
 
 type MedicalDisclaimerProps = {
-  variant: 'tool' | 'toxic' | 'emergency';
+  variant: 'tool' | 'emergency';
 };
 
 export async function MedicalDisclaimer({ variant }: MedicalDisclaimerProps) {
@@ -193,7 +181,6 @@ export async function MedicalDisclaimer({ variant }: MedicalDisclaimerProps) {
 
   const variantClass: Record<typeof variant, string> = {
     tool:      'border-amber-200 bg-amber-50/80 text-amber-900',
-    toxic:     'border-red-200 bg-red-50/80 text-red-900',
     emergency: 'border-red-500 bg-red-100 text-red-950 font-medium',
   };
 
@@ -214,21 +201,18 @@ export async function MedicalDisclaimer({ variant }: MedicalDisclaimerProps) {
 "disclaimer": {
   "standard": "All calculations are based on published veterinary guidelines (AAHA, WSAVA, AAFCO, AAFP). Results are estimates.",
   "tool": "This tool is provided by petsMetrics for general reference only and does not constitute veterinary advice. Always consult a licensed veterinarian for health decisions.",
-  "toxic": "This information is provided by petsMetrics for general reference only. This is NOT veterinary advice. If your pet has ingested a potentially toxic substance, contact your vet or ASPCA Poison Control at (888) 426-4435 immediately.",
   "emergency": "EMERGENCY: Call ASPCA Animal Poison Control (888) 426-4435 or your nearest emergency vet immediately. This information is provided by petsMetrics for general awareness only — do not delay treatment."
 }
 ```
 
 **强制使用规范**:
 - 所有工具页模板（Server Component）在结果区块后必须包含 `<MedicalDisclaimer variant="tool" />`
-- 所有毒性落地页模板必须包含 `<MedicalDisclaimer variant="toxic" />`
 - 所有紧急行动指南页必须包含 `<MedicalDisclaimer variant="emergency" />`
 
 **验收 checklist**:
 - [ ] `grep -r "'use client'" src/components/shared/MedicalDisclaimer.tsx` 返回空
 - [ ] `curl /dog/age-calculator/ | grep "does not constitute veterinary advice"` 非空
-- [ ] `curl /dog/can-dogs-eat-grapes/ | grep "426-4435"` 非空（来自 Disclaimer + Emergency Banner 两处）
-- [ ] messages/en.json 包含 `disclaimer.tool`、`disclaimer.toxic`、`disclaimer.emergency` 三个键
+- [ ] messages/en.json 包含 `disclaimer.tool` 和 `disclaimer.emergency` 两个键
 
 ---
 
@@ -267,7 +251,7 @@ export const FORBIDDEN_BREED_PAGE_DIMENSIONS = [
 
 ---
 
-> 这 4 个任务是 **E-E-A-T 物理基础层**。任何一项未完成，均可能导致 200+ 毒性页和 14 个工具页被 Google 系统性拒绝索引。
+> 这 4 个任务是 **E-E-A-T 物理基础层**。任何一项未完成，均可能导致 14 个工具页被 Google 系统性拒绝索引。
 
 ---
 
@@ -327,19 +311,17 @@ export const FORBIDDEN_BREED_PAGE_DIMENSIONS = [
 
 **功能**:
 1. 读取 `out/` 目录中的 HTML 文件（或通过 `localhost:3000` 抓取）
-2. 对每个工具页和毒性落地页检查以下关键词是否出现在原始 HTML 中（非 `__NEXT_DATA__` JSON 中，非 JS bundle 中）
+2. 对每个工具页检查以下关键词是否出现在原始 HTML 中（非 `__NEXT_DATA__` JSON 中，非 JS bundle 中）
 3. 报告不通过的文件列表
 
 **检查项**:
 ```js
 const geoChecks = [
-  { selector: 'Source: ASPCA',    required: ['toxic-landing-pages'] },
-  { selector: '426-4435',         required: ['toxic-landing-pages'] },   // ASPCA 热线
   { selector: 'petsMetrics',      required: ['all'] },
   { selector: 'veterinary advice',required: ['all'] },                   // 免责声明
-  { selector: 'FAQPage',          required: ['tool-pages', 'toxic-landing-pages'] }, // JSON-LD
+  { selector: 'FAQPage',          required: ['tool-pages'] }, // JSON-LD
   { selector: 'SoftwareApplication', required: ['tool-pages'] },
-  { selector: 'citation',         required: ['tool-pages', 'toxic-landing-pages'] },
+  { selector: 'citation',         required: ['tool-pages'] },
 ];
 ```
 
@@ -350,7 +332,6 @@ const geoChecks = [
 
 **验收 checklist**:
 - [ ] `pnpm build && pnpm verify-geo` 对所有已构建页面无 FAIL 输出
-- [ ] 脚本区分"工具页"和"毒性落地页"两类检查规则
 - [ ] 脚本报告中包含不通过的具体文件路径
 
 ---
@@ -402,11 +383,9 @@ export function getContentVersion(): ContentVersion; // 读取 content-version.j
 // 修改前：
 lastModified: new Date()
 
-// 修改后（毒性落地页）：
+// 修改后：
 import { getContentVersion } from '@/lib/data/content-version';
 const cv = getContentVersion();
-// 毒性落地页：
-lastModified: new Date(cv.toxicDb.updatedAt)
 // 工具页：
 lastModified: new Date(cv.toolMethodology.updatedAt)
 // EU 国家页：
@@ -417,7 +396,7 @@ lastModified: new Date(cv.euTravelRules.updatedAt)
 **验收 checklist**:
 - [ ] `content-version.json` 存在且 JSON 格式合法
 - [ ] `getContentVersion()` 有 TypeScript 返回类型，无 `any`
-- [ ] `sitemap.ts` 中毒性落地页 `lastModified` 不再是 `new Date()`，而是读自 `content-version.json`
+- [ ] `sitemap.ts` 中工具页和 EU 国家页 `lastModified` 不再是 `new Date()`，而是读自 `content-version.json`
 - [ ] `pnpm exec tsc --noEmit` 无报错
 
 ---
@@ -437,170 +416,6 @@ curl https://petsmetrics.com/robots.txt | grep -E "Google-Extended|GPTBot|Perple
 ## §B. Month 0 — 核心模板开发
 
 > Gate-0 全部完成后才能开始本节。目标：为所有 Programmatic 页面建立 GEO-Programmatic 融合模板。
-
----
-
-### TASK-B1: 毒性落地页 GEO-Programmatic 融合模板
-
-**策略来源**: [seo-programmatic.md §4.1 策略 1](seo-programmatic.md)、[§4.3 策略 8](seo-programmatic.md)  
-**状态**: ⬜ 未开始  
-**发布节奏**: Batch 1 = 50 页（Month 0）/ Batch 2 = 40 页（Gate-1 + Gate-2 达成后）
-
-#### 数据类型
-
-```ts
-// src/types/toxic.types.ts（追加，勿覆盖现有类型）
-
-export type ToxicityStatus = 'toxic' | 'caution' | 'safe';
-
-export type ToxicItem = {
-  slug: string;
-  name: string;
-  species: 'dog' | 'cat' | 'both';
-  status: ToxicityStatus;
-
-  // === 以下字段：每个物品独立撰写，禁止跨物品复用 ===
-  dangerReason: string;     // ≥ 80 字，解释为什么有毒/安全，含具体化学/生物机制
-  symptoms: string[];       // ≥ 3 条，物品特有症状（非通用"呕吐"列表）
-  whatToDo: string[];       // ≥ 3 步立即行动，第 1 步必须是"Call ASPCA"
-  safeAmount?: string;      // 仅 'safe'/'caution' 状态填写
-  timeToSymptoms?: string;  // 症状出现时间窗口（如 "within 6-12 hours"）
-
-  // === GEO 内容字段 ===
-  knowledgeCards: [
-    { title: string; body: string },  // card 1: Why It's {status}
-    { title: string; body: string },  // card 2: Key Symptoms / Signs
-    { title: string; body: string },  // card 3: What to Do Right Now
-  ];
-  faqs: [
-    { q: string; a: string },  // FAQ 1: "Can [species] eat [name]?"
-    { q: string; a: string },  // FAQ 2: "What happens if [species] eats [name]?"
-    { q: string; a: string },  // FAQ 3: "How much [name] is dangerous for [species]?"
-  ];
-
-  // === 来源与内链 ===
-  primarySource: 'ASPCA' | 'AVMA' | 'Pet Poison Helpline';
-  primarySourceUrl: string;  // 权威机构页面 URL（真实存在）
-  relatedSlugs: string[];    // 3-5 个相关物品 slug（已有数据）
-};
-```
-
-#### 模板组件（Server Component）
-
-**输出文件**: `src/components/shared/ToxicLandingPage.tsx`
-
-```
-页面结构（从上到下，全部 SSG 预渲染）：
-
-1. [H1] "Can Dogs Eat {name}? [{Status Badge}]"
-   - Badge: 🚫 Toxic / ⚠️ Caution / ✅ Safe（文字 + 颜色）
-   - H1 含目标关键词，不能仅是品牌名
-
-2. [Emergency Banner]（status=toxic 时显示）
-   - 背景红色，文字："If your dog ate {name}, call ASPCA now: (888) 426-4435"
-   - 这行文字必须在 HTML 源码中可见
-
-3. [Knowledge Section]（3 张卡片，Server Component）
-   - 卡片 1：Why It's {status}（dangerReason 摘要，含权威外链）
-   - 卡片 2：Symptoms to Watch（symptoms 列表）
-   - 卡片 3：What to Do Now（whatToDo 步骤）
-   - 布局：grid-cols-1 sm:grid-cols-3
-
-4. [Source Line]（SSG 预渲染段落）
-   - "Toxicity data sourced from {primarySource}. Last verified June 2026."
-   - 含指向 primarySourceUrl 的 <a> 链接
-
-5. [FAQ Section]（Server Component，使用 <details>/<summary>）
-   - 3 条问答，文字在 HTML 源码中完全可见
-
-6. [ASPCA Emergency Hotline]（SSG 段落）
-   - "Poison Emergency? Call ASPCA Animal Poison Control: (888) 426-4435 (24/7)"
-   - 电话号码必须是纯 HTML 文字（非 JS 渲染）
-
-7. [Medical Disclaimer]（Server Component）
-   - "This tool is provided by petsMetrics for general reference only.
-      This is not veterinary advice. Contact your vet or ASPCA immediately
-      if your pet has ingested a potentially toxic substance."
-
-8. [Related Items]（3-5 个物品交叉链接）
-   - 每个链接含简短说明（如 "Grapes and raisins share the same kidney toxin"）
-
-9. ["Check Another Food" CTA]
-   - 链接至 /shared/toxic-checker/（内链回流）
-```
-
-#### JSON-LD 规范（`@graph` 合并）
-
-```ts
-// generateMetadata() 返回的 JSON-LD 结构
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Article",
-      "headline": `Can Dogs Eat ${item.name}? [${item.status}]`,
-      "datePublished": contentVersion.toxicDb.updatedAt,
-      "dateModified": contentVersion.toxicDb.updatedAt,
-      "author": { "@type": "Organization", "name": "petsMetrics" },
-      "publisher": { "@type": "Organization", "name": "petsMetrics", "url": SITE_URL },
-      "citation": [
-        { "@type": "CreativeWork", "name": "ASPCA Animal Poison Control Center", "url": item.primarySourceUrl },
-        { "@type": "CreativeWork", "name": "AVMA Pet Health", "url": "https://www.avma.org/resources/pet-owners" }
-      ]
-    },
-    {
-      "@type": "FAQPage",
-      "mainEntity": item.faqs.map(faq => ({
-        "@type": "Question",
-        "name": faq.q,
-        "acceptedAnswer": { "@type": "Answer", "text": faq.a }
-      }))
-    },
-    {
-      "@type": "ContactPoint",
-      "contactType": "emergency",
-      "telephone": "+1-888-426-4435",
-      "name": "ASPCA Animal Poison Control Center",
-      "availableLanguage": "English",
-      "hoursAvailable": "Mo-Su 00:00-24:00"
-    },
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": SITE_URL },
-        { "@type": "ListItem", "position": 2, "name": "Dog", "item": `${SITE_URL}/dog/` },
-        { "@type": "ListItem", "position": 3, "name": `Can Dogs Eat ${item.name}?`, "item": `${SITE_URL}/dog/can-dogs-eat-${item.slug}/` }
-      ]
-    }
-  ]
-};
-```
-
-#### 品牌钩子（必须注入所有 3 个位置）
-
-| 位置 | 文字模式 | 目的 |
-|------|---------|------|
-| Knowledge Card 1 首句 | `"petsMetrics Toxicology Guide: {name} can cause..."` | AI 摘录时保留品牌名 |
-| Medical Disclaimer 开头 | `"This tool is provided by petsMetrics for general reference only."` | AI 引用免责声明时传播品牌 |
-| Source Line | `"...verified by petsMetrics using ASPCA data."` | 用户截图分享时品牌可见 |
-
-#### SpamBrain 内容质量卡点
-
-上线前每批抽检 5 页，人工确认：
-- `dangerReason` 字数 ≥ 80 字且各页内容互不相同（不仅替换物品名）
-- `symptoms` 列表中至少有 1 条是该物品特有（如 grapes→肾衰，xylitol→血糖骤降）
-- 月搜索量 < 500 的冷门物品：`dangerReason` + `symptoms` + `whatToDo` 合计 ≥ 500 字，否则跳过该物品
-
-**验收 checklist**:
-- [ ] `curl /dog/can-dogs-eat-grapes/ | grep "petsMetrics"` ≥ 3 处
-- [ ] `curl /dog/can-dogs-eat-grapes/ | grep "426-4435"` 非空
-- [ ] `curl /dog/can-dogs-eat-grapes/ | grep "Source:"` 非空
-- [ ] `curl /dog/can-dogs-eat-grapes/ | grep '"FAQPage"'` 非空（JSON-LD 存在）
-- [ ] `curl /dog/can-dogs-eat-grapes/ | grep '"Article"'` 非空（JSON-LD 存在）
-- [ ] `curl /dog/can-dogs-eat-grapes/ | grep "citation"` 非空
-- [ ] 抽检 5 页：`dangerReason` 互不相同且 ≥ 80 字
-- [ ] `generateMetadata()` 的 `title` 含食物名，`description` ≤ 160 字符
-- [ ] `pnpm verify-geo` 通过所有检查项
 
 ---
 
@@ -635,7 +450,7 @@ export type KnowledgeCard = {
 
 export type KnowledgeSectionProps = {
   cards: [KnowledgeCard, KnowledgeCard, KnowledgeCard, KnowledgeCard];
-  // 严格 4 张，工具页固定；毒性落地页允许 3 张（类型用 Tuple 约束）
+  // 严格 4 张，工具页固定
 };
 
 export type FAQItem = {
@@ -644,7 +459,7 @@ export type FAQItem = {
 };
 
 export type FAQSectionProps = {
-  items: FAQItem[];           // 工具页 3-5 条，毒性落地页 3 条
+  items: FAQItem[];           // 工具页 3-5 条
   showJsonLd?: boolean;       // 默认 true，输出 FAQPage JSON-LD
 };
 ```
@@ -805,7 +620,7 @@ export type ComparisonItem = {
 
 ## §C. Month 1-3 — 批量扩展页面
 
-> Gate-1 + Gate-2 全部达成后才能开始本节。
+> Gate-2 全部达成后才能开始本节。
 
 ---
 
@@ -878,7 +693,13 @@ export type EUCountryEntry = {
 ```ts
 // src/types/emergency.types.ts（新文件）
 
-export type EmergencyItem = ToxicItem & {
+export type EmergencyItem = {
+  slug: string;
+  name: string;
+  species: 'dog' | 'cat' | 'both';
+  riskLevel: 'toxic' | 'caution' | 'safe';
+  symptoms: string[];       // ≥ 3 条，物品特有症状（非通用"呕吐"列表）
+  whatToDo: string[];       // ≥ 3 步，第 1 步必须是"Call ASPCA"
   immediateSteps: string[];      // 3-5 步，第 1 步必须是"Call ASPCA (888) 426-4435"
   whenToSeeVet: string[];        // 2-3 条判定标准（如"symptoms appear within 30 minutes"）
   symptomsTimeline: string;      // "Symptoms typically appear within {X} hours of ingestion"
@@ -954,8 +775,8 @@ export type SeasonalDangerPage = {
 
   dangerItems: Array<{
     name: string;
-    toxicSlug: string;    // 指向现有毒性落地页 slug（内链）
-    shortReason: string;  // 30 字以内
+    emergencySlug: string;  // 指向紧急行动指南页 slug（内链）
+    shortReason: string;    // 30 字以内
   }>;
 
   preventionTips: string[];  // 4-6 条
@@ -985,7 +806,7 @@ export type SeasonalDangerPage = {
 ```
 
 **验收 checklist**:
-- [ ] `dangerItems` 每项含指向现有毒性落地页的内链
+- [ ] `dangerItems` 每项含指向现有紧急行动指南页的内链
 - [ ] `preventionTips` 列表在 HTML 源码中可见
 - [ ] sitemap 中该类页面 `lastModified` 实现季节性刷新逻辑
 - [ ] FAQPage JSON-LD 存在
@@ -1203,14 +1024,13 @@ grep -c "kg" src/lib/data/dog-breeds/labrador-retriever.json
 |------|------|---------|:---:|---------|
 | **§A** | 上线前 | E-E-A-T 基础页 + 工具模板 | 4 页 + 脚本 | 无（阻塞 Gate-0） |
 | **Batch 0** | Month 0 | 14 工具页 + 2 Hub + 首页 + 档案页 + 法律页 | 20 页 | Gate-0 |
-| **Batch 1** | Month 0 | 毒性落地页 Top 50 + "vs" 对比页 8 页 | 58 页 | Gate-0 |
-| **Batch 2** | Month 1 | 毒性落地页 40 页 + EU 国家 12 页 | 52 页 | Gate-1 + Gate-2 |
-| **Batch 3** | Month 2 | 毒性落地页 40 页 + EU 国家 10 页 + 紧急指南 25 页 + 季节安全 8 页 + 新手清单 6 页 + FAQ Hub 6 页 + "vs" 扩展 10 页 | 105 页 | Batch 2 GSC 索引率 > 80% |
-| **Batch 4** | Month 3 | 毒性落地页 40 页 + EU 国家 5 页 + 品种矩阵 60 页 | 105 页 | Batch 3 GSC 索引率 > 80% + Gate-DA10 |
-| **Batch 5** | Month 4 | 毒性落地页剩余 30 页 | 30 页 | Batch 4 GSC 索引率 > 80% |
-| **Month 0-4 合计** | | | **~370 页** | 分批严格执行，远低于一次全上线风险 |
+| **Batch 1** | Month 0 | "vs" 对比页 8 页 | 8 页 | Gate-0 |
+| **Batch 2** | Month 1 | EU 国家 12 页 | 12 页 | Gate-2 |
+| **Batch 3** | Month 2 | EU 国家 10 页 + 紧急指南 25 页 + 季节安全 8 页 + 新手清单 6 页 + FAQ Hub 6 页 + "vs" 扩展 10 页 | 65 页 | Batch 2 GSC 索引率 > 80% |
+| **Batch 4** | Month 3 | EU 国家 5 页 + 品种矩阵 60 页 | 65 页 | Batch 3 GSC 索引率 > 80% + Gate-DA10 |
+| **Month 0-4 合计** | | | **~150 页** | 分批严格执行，远低于一次全上线风险 |
 
-> ⚠️ **Month 3 单批 105 页偏高**。若 Batch 2 索引率未达 80%，必须将品种矩阵（60 页）推迟至 Batch 5，将 Month 3 实际上线量降至 ~45 页。
+> ⚠️ **Month 3 单批 65 页偏高**。若 Batch 2 索引率未达 80%，必须将品种矩阵（60 页）推迟至 Batch 5，将 Month 3 实际上线量降至 ~5 页。
 
 ---
 
@@ -1219,7 +1039,6 @@ grep -c "kg" src/lib/data/dog-breeds/labrador-retriever.json
 ```
 □ pnpm build 无报错
 □ pnpm verify-geo 无 FAIL
-□ pnpm check-content-uniqueness --batch=N 无 FAIL
 □ pnpm check-content-length --batch=N 无 FAIL（独特文字 ≥ 400 字）
 □ 随机抽检 5 页 View Source：GEO 文字（FAQ答案、Knowledge Card 正文、Disclaimer）出现在原始 HTML 中
 □ 随机抽检 5 页：title 和 description 含具体内容关键词（非泛化模板）

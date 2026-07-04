@@ -27,7 +27,6 @@ Google SpamBrain 专门检测"程序化生成的低质量页面"，对 **YMYL（
 
 | 页面类型 | 不可模板化内容占比 | 判定 |
 |---------|:---:|------|
-| 毒性落地页（"can dogs eat grapes"） | ~75% — 每页毒性症状、安全剂量、相关食物均来自独立数据行 | ✅ 安全 |
 | EU 国家页（"pet travel to France"） | ~50% — 27 国规则大部分相同（芯片+疫苗），仅少数字段差异 | ⚠️ 需增强差异化 |
 | 品种 × 年龄计算器（"labrador 5 years old"） | ~10% — 唯一年龄数字不同，公式完全相同 | 🔴 禁止批量生成 |
 | "vs" 对比页（"dry food vs wet food"） | ~80% — 每篇是独立研究的深度对比文章 | ✅ 安全 |
@@ -44,7 +43,7 @@ Google SpamBrain 专门检测"程序化生成的低质量页面"，对 **YMYL（
 
 ### 0.4 E-E-A-T 实体锚点 — 上线前强制要求（YMYL 新站 DA=0 的信任破局）
 
-> **这是 YMYL 新站的生死条件，非可选**。Google Helpful Content Update 对 YMYL 内容的审核核心是"谁写了这些内容？他们有什么资格？"——一个 DA=0 的新域名发布 200+ 条健康建议（毒性信息、疫苗建议、卡路里建议），如果没有可见的作者/审核者身份，Google 可能直接不索引这些 YMYL 内容。
+> **这是 YMYL 新站的生死条件，非可选**。Google Helpful Content Update 对 YMYL 内容的审核核心是"谁写了这些内容？他们有什么资格？"——一个 DA=0 的新域名发布大量健康建议（疫苗建议、卡路里建议、喂食指南建议），如果没有可见的作者/审核者身份，Google 可能直接不索引这些 YMYL 内容。
 
 > **现实前提**：作为独立开发者/小团队，**不可能**请到执业兽医做内容背书。但这不意味着无法建立 E-E-A-T——关键是换一种策略：**你不制造权威，你只是权威信息的整理者和呈现者**。Google 真正要的是"用户能否验证这些健康建议来自可靠来源"，而非"站长本人是不是兽医"。
 
@@ -53,20 +52,19 @@ Google SpamBrain 专门检测"程序化生成的低质量页面"，对 **YMYL（
 | # | 事项 | 具体要求 | 为什么有效 |
 |:---:|------|------|------|
 | **1** | **About 页真实身份** | 你的真实姓名（或笔名）+ 一句话背景（如 "A pet owner and developer building science-based tools for dog and cat owners since 2026"）。**禁止**完全匿名——匿名 + YMYL 是 Google 最高风险信号 | Google 需要知道"有人在为这个网站负责"。即使不是兽医，一个真实的人名也比匿名好 10 倍 |
-| **2** | **每页标注内容来源（不是审核人）** | 所有健康相关页面底部标注：*"Toxicity information verified against ASPCA Animal Poison Control Center database and AVMA guidelines (last checked: June 2026)."* | 权威来自 ASPCA/AVMA，不是来自你。Google 认可"我引用了权威来源"比"我声称自己是权威"更可信 |
-| **3** | **毒性落地页逐条引用行** | 每页正文中，毒性症状和安全性结论后附上来源标注（如 *"Source: ASPCA Poison Control, AVMA"*）。这既满足 `citation[]` JSON-LD 要求，也在 HTML 文本中可见 | AI 搜索引擎和 Google 爬虫都能看到"这个健康声明有出处"。这是 YMYL 页面最便宜也最有效的信任信号 |
-| **4** | **方法论透明页** | 在 About 页或独立 `/methodology/` 页说明：所有计算器公式来源（AAHA、AAFCO、WSAVA、UCSD 研究）、毒性数据库数据来源（ASPCA 公开数据）、内容更新流程。约 500 字即可 | "我们如何做出来的"比"我们是谁"在 Google 算法中权重更高，因为公式和数据可被外部验证 |
-| **5** | **公式透明度** | 每个计算器结果页明确标注公式来源和年份（如 "RER = 70 × weight^0.75, per AAFCO 2023 guidelines"） | 数学公式不需要权威身份背书——它们本身是可验证事实 |
+| **2** | **每页标注内容来源（不是审核人）** | 所有健康相关页面底部标注：*"Information verified against AAHA, AAFCO, WSAVA, AVMA guidelines (last checked: June 2026)."* | 权威来自 AAHA/AAFCO/WSAVA/AVMA，不是来自你。Google 认可"我引用了权威来源"比"我声称自己是权威"更可信 |
+| **3** | **方法论透明页** | 在 About 页或独立 `/methodology/` 页说明：所有计算器公式来源（AAHA、AAFCO、WSAVA、UCSD 研究）、内容更新流程。约 500 字即可 | "我们如何做出来的"比"我们是谁"在 Google 算法中权重更高，因为公式和数据可被外部验证 |
+| **4** | **公式透明度** | 每个计算器结果页明确标注公式来源和年份（如 "RER = 70 × weight^0.75, per AAFCO 2023 guidelines"） | 数学公式不需要权威身份背书——它们本身是可验证事实 |
 
-> **关键认知转变**：你不是在扮演兽医，你是在扮演一个"负责任的科学信息整理者"。ASPCA、AVMA、AAHA 的名字出现在你的页面上，比一个不知名人士的 "DVM" 头衔更有分量——Google 认识 ASPCA（DA82），不认识你请来的普通兽医。
+> **关键认知转变**：你不是在扮演兽医，你是在扮演一个"负责任的科学信息整理者"。AAHA、AAFCO、WSAVA 的名字出现在你的页面上，比一个不知名人士的 "DVM" 头衔更有分量——Google 认识 AAHA（高 DA），不认识你请来的普通兽医。
 
 > **真实案例参考**：许多成功的 YMYL 工具站（如健康领域的 calorie calculator、BMI calculator）没有医生背书，但通过"公式来源透明 + 数据可验证 + 真实作者"三个信号存活。关键在于：**你的内容可以被用户拿着去 Google 验证——"RER 公式 70 × weight^0.75 AAFCO" 一搜就有结果，说明你不是在编造**。
 
-> ⛔ **Gate-0 — 上线阻塞条件（非可选）**：上述 5 项必须全部到位，**才能发布任何毒性落地页或工具内容页**。缺少任何一项，Google 可能将整批 YMYL 内容判定为"匿名健康建议"并系统性拒绝索引——不是排名差，是根本不进索引库。这不是"尽量完成"，是硬性前置条件。编码执行规范见 [seo-programmatic-aicode.md §A TASK-A1](seo-programmatic-aicode.md)。
+> ⛔ **Gate-0 — 上线阻塞条件（非可选）**：上述 4 项必须全部到位，**才能发布任何工具内容页**。缺少任何一项，Google 可能将整批 YMYL 内容判定为"匿名健康建议"并系统性拒绝索引——不是排名差，是根本不进索引库。这不是"尽量完成"，是硬性前置条件。编码执行规范见 [seo-programmatic-aicode.md §A TASK-A1](seo-programmatic-aicode.md)。
 
 **如果你未来有条件（Month 12+，网站有收入后）**：
 - 在 Fiverr / Upwork 上找一位宠物营养学顾问（Animal Nutritionist），以 \$50-\$100/月的轻量审核合作挂牌为 "Content Consultant"
-- 这属于锦上添花，不是上线前提条件。**上述 5 项做到位，已经远超 90% 的小型 YMYL 新站**
+- 这属于锦上添花，不是上线前提条件。**上述 4 项做到位，已经远超 90% 的小型 YMYL 新站**
 
 ---
 
@@ -80,11 +78,11 @@ Google SpamBrain 专门检测"程序化生成的低质量页面"，对 **YMYL（
 
 | # | 风险名称 | 严重度 | 触发类别 | 影响范围 | 状态 |
 |:---:|---------|:------:|---------|---------|:----:|
-| **R1** | YMYL Gate-0 缺失 — 系统性拒绝索引 | 🔴 **致命** | E-E-A-T / 手动处置 | 全部 200+ 页面不被索引 | ⬜ 未修复 |
+| **R1** | YMYL Gate-0 缺失 — 系统性拒绝索引 | 🔴 **致命** | E-E-A-T / 手动处置 | 全部 YMYL 页面不被索引 | ⬜ 未修复 |
 | **R2** | EU 国家页模板同质（内容差异 < 60%） | 🔴 **致命** | SpamBrain 域名级 | 27 个 EU 页 + 全站 DA 拖累 | ⬜ 未修复 |
 | **R3** | 跨物种工具页重复内容（仅替换物种名） | 🔴 **致命** | SpamBrain / 重复内容 | 6 对跨物种工具页排名互相蚕食 | ⬜ 未修复 |
-| **R4** | Batch 2+ 无社交信号缓冲层 | 🟠 **高** | SpamBrain 批量信号 | Batch 2-5 毒性页被系统性不收录 | ⬜ 未修复 |
-| **R5** | FAQSection 做成 Client Component | 🟠 **高** | GEO 失效 | 全部 214+ 页面 AI Overview 摘录为零 | ⬜ 未修复 |
+| **R4** | Batch 2+ 无社交信号缓冲层 | 🟠 **高** | SpamBrain 批量信号 | Phase 2 页面被系统性不收录 | ⬜ 未修复 |
+| **R5** | FAQSection 做成 Client Component | 🟠 **高** | GEO 失效 | 全部工具页和对比页 AI Overview 摘录为零 | ⬜ 未修复 |
 | **R6** | `canonical` 标签缺失 / 错误 | 🟠 **高** | 技术 SEO | PageRank 分散，批量页排名天花板降低 | ⬜ 未修复 |
 | **R7** | `sitemap.lastModified = new Date()` | 🟠 **高** | 内容新鲜度衰减 | Month 12+ 全站排名集体衰减 | ⬜ 未修复（TASK-A3 待执行） |
 | **R8** | 品种 × 工具矩阵 — 公式相同维度建页 | 🟠 **高** | SpamBrain 薄内容 | 品种年龄换算页被标记 Doorway Page | ⬜ 未修复 |
@@ -105,25 +103,25 @@ Google SpamBrain 专门检测"程序化生成的低质量页面"，对 **YMYL（
 
 #### 🔴 R1 — YMYL Gate-0 缺失：Google 系统性拒绝索引（致命）
 
-**风险机制**：Google 的 Helpful Content System 和 Quality Rater Guidelines 对 YMYL（Your Money or Your Life）新站有一项**非公开但有据可查的行为**：当一个新域名（DA=0）发布大量健康类声明（毒性建议、疫苗建议、卡路里建议）而没有可见的"谁写了这些内容"信息时，Google 质量评估器会将整站打上 "Low Expertise YMYL" 标签——结果不是排名差，而是 **Google 爬虫逐步停止索引这些内容**（不报 manual action，静默处理）。
+**风险机制**：Google 的 Helpful Content System 和 Quality Rater Guidelines 对 YMYL（Your Money or Your Life）新站有一项**非公开但有据可查的行为**：当一个新域名（DA=0）发布大量健康类声明（卡路里建议、喂食建议、年龄换算声明）而没有可见的"谁写了这些内容"信息时，Google 质量评估器会将整站打上 "Low Expertise YMYL" 标签——结果不是排名差，而是 **Google 爬虫逐步停止索引这些内容**（不报 manual action，静默处理）。
 
 **petsMetrics 当前风险暴露**：
 - About 页、Privacy 页、Terms 页**均不存在**（尚未开发）
 - 没有任何可见的作者/创建者身份信息
 - 没有方法论透明度声明（公式来源）
-- **计划发布 200+ 毒性页和 14 个工具页**——这是最高风险组合
+- **计划发布 14 个工具页和多个聚合内容页**——这是最高风险组合
 
 **优化方案（上线前强制完成）**：
 
 | 修复项 | 具体要求 | 最低标准 |
 |--------|---------|---------|
-| **About 页** | 真实姓名/笔名 + 一句话背景 + 方法论段落（公式来源）+ 数据声明（"ASPCA, last checked June 2026"）+ 联系方式 | 至少 300 字，含人名，含 "ASPCA" |
+| **About 页** | 真实姓名/笔名 + 一句话背景 + 方法论段落（公式来源）+ 数据声明（"AAHA/AAFCO/WSAVA, last checked June 2026"）+ 联系方式 | 至少 300 字，含人名，含权威机构名 |
 | **Privacy 页** | localStorage 数据不上传声明 + Cookie 政策（仅统计 Cookie）+ GDPR 基本合规 | 至少 200 字 |
 | **Terms 页** | 标准免责声明（非兽医建议）+ 信息准确性免责 | 至少 150 字，含 "does not constitute veterinary advice" |
-| **全站来源标注** | 每个健康声明页面底部："Toxicity information verified against ASPCA Animal Poison Control Center database and AVMA guidelines (last checked: June 2026)" | 每个毒性落地页和工具页必须包含 |
+| **全站来源标注** | 每个健康声明页面底部："Information verified against AAHA, AAFCO, WSAVA, AVMA guidelines (last checked: June 2026)"| 每个工具内容页必须包含 |
 | **公式透明度** | 每个计算器结果页明确标注："RER = 70 × weight^0.75, per AAFCO 2023 guidelines" | 所有 14 个工具页必须包含 |
 
-> ⛔ **Gate-0 硬性阻塞**：上述任何一项未完成，禁止发布任何毒性落地页或工具内容页。这不是"建议完成"，是**发布阻塞条件**。见编码任务书 TASK-A1。
+> ⛔ **Gate-0 硬性阻塞**：上述任何一项未完成，禁止发布任何工具内容页。这不是"建议完成"，是**发布阻塞条件**。见编码任务书 TASK-A1。
 
 ---
 
@@ -183,7 +181,7 @@ Google SpamBrain 专门检测"程序化生成的低质量页面"，对 **YMYL（
 
 #### 🟠 R4 — Batch 2+ 无社交信号缓冲层（高）
 
-**风险机制**：Google 的 Helpful Content System 会将新 DA=0 站点的内容质量评估，部分基于"是否有外部人在自然讨论/引用这个网站"。在有明确社交信号之前发布 Batch 2（第 40 页毒性内容），Google 没有任何外部验证依据，只能依赖页面内容本身评估 YMYL 质量——这对 DA=0 新站极为不利。
+**风险机制**：Google 的 Helpful Content System 会将新 DA=0 站点的内容质量评估，部分基于"是否有外部人在自然讨论/引用这个网站"。在有明确社交信号之前发布 Phase 2 页面（Month 1 起的大量工具扩展页和内容聚合页），Google 没有任何外部验证依据，只能依赖页面内容本身评估 YMYL 质量——这对 DA=0 新站极为不利。
 
 **已有机制**：Gate-2 要求"Reddit 首发帖 ≥ 5 条评论"，但执行顺序不够清晰。
 
@@ -191,25 +189,26 @@ Google SpamBrain 专门检测"程序化生成的低质量页面"，对 **YMYL（
 
 ```
 Month 0 上线第一天:
-  ① 发布 20 个核心工具页 + 10 个 "vs" 对比页（非批量，无 SpamBrain 风险）
-  ② 在 Reddit r/dogs / r/cats 发布工具发现帖（非广告形式）
-  ③ 等待 ≥ 48 小时，确认 Reddit 帖有 ≥ 5 条真实评论
+  ① 发布 14 个核心工具页 + 2 个 Hub + 首页 + 法律页 = **20 页核心**
+  ② 发布 8-10 个 "vs" 对比页（非批量，无 SpamBrain 风险）
+  ③ 在 Reddit r/dogs / r/cats 发布工具讨论帖（非广告形式）
+  ④ 等待 ≥ 48 小时，确认 Reddit 帖有 ≥ 5 条真实评论
 
 第 3-7 天（验证社交信号后）:
-  ④ 发布 Batch 1 毒性落地页（50 页）
-  ⑤ Google Search Console 提交 sitemap
+  ⑤ 发布 Phase 2 内容页（EU 国家页、紧急行动指南、季节安全等内容）
+  ⑥ Google Search Console 提交 sitemap
 
-第 14-21 天（验证 Batch 1 索引率后）:
-  ⑥ 确认 Batch 1 索引率 > 80% → 才发布 Batch 2
+第 14-21 天（验证 Phase 1 索引率后）:
+  ⑦ 确认 Phase 1 索引率 > 80% → 才发布 Phase 3 内容
 ```
 
-> **关键认知**：工具页和 "vs" 对比页 **不是批量程序化页面**，上线 20-30 页不触发 SpamBrain。先让这批高质量页面被索引并获得初始社交信号，再批量发布毒性落地页，Google 已经有了"这是真实工具站"的前期印象。这个顺序至关重要。
+> **关键认知**：工具页和 "vs" 对比页 **不是批量程序化页面**，上线 20-30 页不触发 SpamBrain。先让这批高质量页面被索引并获得初始社交信号，再批量发布更多工具扩展页，Google 已经有了"这是真实工具站"的前期印象。这个顺序至关重要。
 
 ---
 
 #### 🟠 R5 — FAQSection 做成 Client Component（高）
 
-**风险机制**：React 开发中最常见的错误之一——使用 `useState` 实现 FAQ accordion 展开折叠。这导致答案文字只存在于 JavaScript bundle 中，而非 HTML 源码中。Google AI Overview、Perplexity、ChatGPT Search 等 AI 爬虫在解析页面时只能看到 HTML 源码，**无法执行 JavaScript**。结果：所有 214+ 页面的 FAQ 内容对 AI 搜索引擎不可见，GEO 策略完全失效。
+**风险机制**：React 开发中最常见的错误之一——使用 `useState` 实现 FAQ accordion 展开折叠。这导致答案文字只存在于 JavaScript bundle 中，而非 HTML 源码中。Google AI Overview、Perplexity、ChatGPT Search 等 AI 爬虫在解析页面时只能看到 HTML 源码，**无法执行 JavaScript**。结果：所有工具页和对比页的 FAQ 内容对 AI 搜索引擎不可见，GEO 策略完全失效。
 
 **petsMetrics 当前风险暴露**：组件尚未开发，风险是"开发时容易犯的错误"。需要在架构层强制规范。
 
@@ -255,16 +254,16 @@ grep -r "'use client'" src/components/shared/MedicalDisclaimer.tsx && echo "FAIL
 
 #### 🟠 R6 — `canonical` 标签缺失/错误（高）
 
-**风险机制**：程序化生成的 200+ 毒性页、27 个 EU 国家页、60+ 品种页，如果缺少 `alternates.canonical` 指向自身，Google 可能选择一个意外的 canonical URL（如带参数的版本）作为权威版本，导致 PageRank 分散。
+**风险机制**：程序化生成的 EU 国家页、品种 × 工具矩阵页（60+）、工具页（14），如果缺少 `alternates.canonical` 指向自身，Google 可能选择一个意外的 canonical URL（如带参数的版本）作为权威版本，导致 PageRank 分散。
 
 **优化方案**：在所有 `generateMetadata()` 中强制包含：
 ```ts
 alternates: {
-  canonical: `${SITE_URL}/dog/can-dogs-eat-${item.slug}/`,
+  canonical: `${SITE_URL}/dog/eu-travel/france/`,
 },
 ```
 
-**验收**：`pnpm build && grep -r "canonical" out/dog/can-dogs-eat-grapes/index.html` 必须非空。
+**验收**：`pnpm build && grep -r "canonical" out/dog/eu-travel/france/index.html` 必须非空。
 
 ---
 
@@ -272,15 +271,14 @@ alternates: {
 
 **风险机制**：当前所有页面的 `lastModified` 都是构建时的 `new Date()`——即每次构建所有页面同时"更新"。Google 的新鲜度算法对此有两层负面影响：
 1. **Month 0**：Google 爬虫看到 200+ 页面同一天上线，结合 DA=0，增加批量内容的怀疑程度
-2. **Month 12+**：毒性页内容实际未变化，`lastModified` 与 `new Date()` 对不上，Google 发现这是"假新鲜度"，开始对该站点的 `sitemap` 信号降权
+2. **Month 12+**：EU 国家页内容实际未变化，`lastModified` 与 `new Date()` 对不上，Google 发现这是"假新鲜度"，开始对该站点的 `sitemap` 信号降权
 
 **已有修复方案**：TASK-A3（内容新鲜度引擎），但尚未执行。**必须在第一批内容发布前完成**。
 
 **优化方案核心逻辑**：
 ```ts
-// 毒性落地页：lastModified = ASPCA 数据库最近核验日期（非构建时间）
-// 工具页：lastModified = 方法论版本最近更新日期
 // EU 国家页：lastModified = EU 法规最近更新日期
+// 工具页：lastModified = 方法论版本最近更新日期
 // 首页/Hub：lastModified = new Date()（这两类页面确实会经常更新）
 ```
 
@@ -311,13 +309,13 @@ alternates: {
 
 ```
 位置 1 — Knowledge Card 首句（AI 在引用时最可能保留）：
-  "petsMetrics Toxicology Guide: Grapes can cause acute kidney failure in dogs because..."
+  "petsMetrics Pet Health Guide: A comprehensive science-based tool for..."
 
 位置 2 — Medical Disclaimer 开头（AI 引用合规声明时自然携带）：
   "This tool is provided by petsMetrics for general reference only..."
 
 位置 3 — Source Line（用户截图分享时品牌可见）：
-  "Toxicity data verified by petsMetrics using the ASPCA Animal Poison Control Center database."
+  "Data verified by petsMetrics using the AAHA, AAFCO and WSAVA guidelines."
 ```
 
 ---
@@ -330,10 +328,10 @@ alternates: {
 
 | 渠道 | 执行顺序 | 关键要求 |
 |------|---------|---------|
-| **工具页 + "vs" 对比页先上线** | Day 1 | 核心工具 20 页先行，不是毒性落地页 |
-| **Reddit r/dogs（400 万）** | Day 1-3 | 以 "I built a free tool, feedback welcome" 形式发帖。**禁止** "Can dogs eat X" 类帖（被视为垃圾）；发工具讨论帖 |
+| **工具页 + "vs" 对比页先上线** | Day 1 | 核心工具 20 页先行，不是批量程序化内容 |
+| **Reddit r/dogs（400 万）** | Day 1-3 | 以 "I built a free tool, feedback welcome" 形式发帖。**禁止**纯 SEO 饱和类帖（被视为垃圾）；发工具讨论帖 |
 | **Reddit r/cats（280 万）** | Day 1-3（与 r/dogs 间隔 ≥ 24h） | 猫咪工具发帖，不能同天连续发多个帖子 |
-| **Google Search Console 提交** | Day 3（Reddit 首贴确认有回应后） | 确认社交信号存在，再提交毒性批量页 sitemap |
+| **Google Search Console 提交** | Day 3（Reddit 首贴确认有回应后） | 确认社交信号存在，再提交批量程序化页 sitemap |
 | **Product Hunt** | Week 2 | 首周用 Reddit 反馈完善产品，第 2 周 Product Hunt 发布 |
 | **Pinterest 宠物信息图** | Week 3+ | 年龄对照表竖版信息图，宠物 Pinterest 生命周期 3 年 |
 
@@ -365,7 +363,7 @@ curl -s https://petsmetrics.com/robots.txt | grep -c "Allow: /" | grep -q "^5$" 
 
 #### 🟡 R13 — 免责声明无系统性共享组件（中）
 
-**优化方案**：必须创建 `src/components/shared/MedicalDisclaimer.tsx`（Server Component），并在所有工具页和毒性落地页模板中自动包含。禁止每个开发者手动复制免责声明文字——这会导致版本不一致和遗漏。
+**优化方案**：必须创建 `src/components/shared/MedicalDisclaimer.tsx`（Server Component），并在所有工具页和结果页模板中自动包含。禁止每个开发者手动复制免责声明文字——这会导致版本不一致和遗漏。
 
 ---
 
@@ -382,16 +380,14 @@ curl -s https://petsmetrics.com/robots.txt | grep -c "Allow: /" | grep -q "^5$" 
 **第二阶段（Day 1）**：
 - 发布 14 个工具入口页 + 2 个 Hub + 首页 + 档案页 + 法律页 = **20 页核心**
 - 发布 8-10 个 "vs" 对比页（高 CTR，低 SpamBrain 风险，非批量）
-- **不发布任何毒性落地页**（等社交信号）
 
 **第三阶段（Day 3-7）**：
 - Reddit 首发帖确认有真实回应（≥ 5 条评论）
-- 发布 Batch 1 毒性落地页（50 页）
+- 发布 EU 国家、紧急行动指南、季节安全等内容页（Phase 2 第一批）
 - 提交 sitemap 至 Google Search Console
 
-**第四阶段（Day 14-21，确认 Batch 1 索引率 > 80%）**：
-- 发布 Batch 2 毒性落地页（40 页）
-- 发布 EU 国家细分页 Batch 1（12 个大国）
+**第四阶段（Day 14-21，确认 Phase 1 索引率 > 80%）**：
+- 发布 Phase 2 扩展内容（品种矩阵、EU 扩展、新手清单、FAQ Hub）
 
 **此后按 §0.3 安全节奏逐批扩展**（见 5.2 按阶段分组）。
 
@@ -412,98 +408,12 @@ curl -s https://petsmetrics.com/robots.txt | grep -c "Allow: /" | grep -q "^5$" 
 | FAQ 聚合 Hub 页 → PageRank 分发中枢 | 间接提升全站 5-10% | 1 天 | ⭐⭐⭐ |
 | 品种 × 工具矩阵（仅喂食/体重维度）首批 60 页 | +10-20k 月点击（低竞争品种词） | 2 周 | ⭐⭐⭐（须 DA≥10） |
 
-> **最高 ROI 组合**：GEO 融合（模板修改覆盖全部 214+ 页）+ "vs" 对比页（10 页，3 天）+ 紧急指南页（25 页，4 天）= **约 10 天额外工作，预计增加 30-55k 月额外流量**，且全部属于 SpamBrain 安全范围（独特内容占比 > 80%）。
-
----
-
-## §0.6 毒性落地页：法律 / 合规 / 商业必要性决策框架（2026-06-10 新增）
-
-> **结论先行**：毒性落地页（200+）有必要做。法律风险极低，真正需要管理的风险是数据准确性和 SpamBrain，而非法律合规。
-
-### 0.6.1 法律风险实质评估
-
-核心法律区别（决定一切）：
-
-| 行为 | 法律性质 | petsMetrics 边界 |
-|------|---------|:---------------:|
-| "葡萄含有肾毒素，狗食用后可导致肾衰竭" | **公共健康信息** — 合法，无需执照 | ✅ 在边界内 |
-| "你的狗吃了葡萄，现在有肾衰竭" | **诊断** — 需兽医执照 | ❌ 绝对不做 |
-| "给你的狗服用活性炭 X 克" | **处方/治疗** — 需兽医执照 | ❌ 绝对不做 |
-
-ASPCA（DA 82）、PetMD（DA 71）、AKC（DA 78）每天发布数千条同类信息，从未有过法律问题。原因是：**发布已知的公开科学事实 ≠ 执业兽医**。在美国，没有任何宠物健康信息网站因发布 "X 对狗有毒" 而被成功起诉。
-
-**法律风险趋近于零的 4 个充分条件**：
-
-| # | 条件 | 具体实现 |
-|:---:|------|--------|
-| **C1** | 数据来源准确且可验证 | 100% 引用 ASPCA / AVMA 公开数据库，每页附 `primarySourceUrl`（真实链接） |
-| **C2** | 不提供任何治疗方案 | 包括催吐在内的所有处理步骤一律不写——这属于兽医决定，超出本站职责范围 |
-| **C3** | 第一行动永远是"打热线" | 每个毒性页 `whatToDo[0]` 必须是 "Call ASPCA Animal Poison Control: (888) 426-4435" |
-| **C4** | 明确公共安全信息定位 | 免责声明用语："This is public safety information, not veterinary advice. Contact your vet immediately." |
-
-> **关键认知**：ASPCA 自己的毒性数据库（我们的数据来源）就是这套内容的原型。petsMetrics 是在以结构化、工具化的形式呈现 ASPCA 的公开数据，而非制造新的医疗声明。
-
-### 0.6.2 内容定位框架（影响合规性 + Google E-E-A-T 信号）
-
-错误定位和正确定位在合规性与 Google 质量评估信号上有本质区别：
-
-```
-❌ 错误定位（容易越界）:
-  "Grapes are TOXIC. Symptoms: vomiting, kidney failure.
-   Treatment: induce vomiting within 2 hours."
-   → 问题：提供了治疗步骤（催吐），属于兽医指令范围
-
-✅ 正确定位（公共安全信息）:
-  "Grape ingestion in dogs: What pet owners need to know"
-   → 科学事实（来源：ASPCA）：葡萄含未知肾毒素，可引发急性肾衰竭
-   → 可能出现的症状（信息性，非诊断）：呕吐、嗜睡、食欲下降
-   → 立即行动：Call ASPCA (888) 426-4435（第一步，最重要）
-   → 明确声明："This is not veterinary advice. Your vet will determine the appropriate response."
-```
-
-这一框架将页面从 "提供医疗信息" 重新定位为 **"指引用户找到专业帮助"**——这正是 ASPCA 自己的内容模式，也是 Google YMYL 质量评估中最受认可的非医疗站点定位。
-
-### 0.6.3 真正的风险：数据准确性 vs SpamBrain
-
-**风险 A：数据准确性（品牌信誉风险）**
-
-| 错误类型 | 后果 | 预防措施 |
-|---------|------|--------|
-| 把"安全"食物标记为"有毒" | 用户恐慌、投诉、差评、品牌信誉损失 | 每条数据以 ASPCA 数据库为唯一来源；Batch 1 全部 50 条发布前人工逐条核验 |
-| 把"有毒"食物标记为"安全" | 宠物伤害、严重负面舆情、潜在诉讼 | 同上；`status` 字段严格锁定为 ASPCA 原始三级分类 |
-| 剂量/严重程度描述失准 | 用户误判风险等级 | 仅使用 ASPCA 原文的 "Toxic / Caution / Safe" 三级，不自行细化 |
-
-**风险 B：SpamBrain（域名降权风险）**
-
-比法律风险更紧迫、更需要主动管理的风险。核心原则：分批上线（50+40+40+40+40），每页独特内容 ≥ 400 字，每批上线前确认前批索引率 > 80%。详见 §0.1–§0.3。
-
-### 0.6.4 商业必要性
-
-| 指标 | 仅 14 个工具页 | 14 工具页 + 200 毒性页 |
-|------|:---:|:---:|
-| 月搜索覆盖量 | ~250k | ~1.2M+ |
-| 关键词竞争难度 | 高（工具词被 ASPCA/AKC 占据） | 中低（长尾词分散，新站可竞争） |
-| 首个可见排名时间线 | 24-36 个月 | 12-18 个月（长尾词先行） |
-| 外链获取难度 | 高（工具页不易被媒体自然引用） | 低（毒性页是天然外链磁石，宠物媒体频繁引用） |
-
-**结论**：不做毒性落地页，整站商业模式成立的速度慢 2-3 倍，且核心工具页的外链积累也失去最有效的引擎。毒性落地页是工具站流量和变现的基础设施，不是可选功能。
-
-### 0.6.5 编码执行约束（强制，已同步至 seo-programmatic-aicode.md §R 和 TASK-B1）
-
-| 字段 / 约束 | 规则 |
-|------------|------|
-| `whatToDo[0]` | 永远是 "Call ASPCA Animal Poison Control: (888) 426-4435" |
-| `dangerReason` | 只描述科学机制（为什么有毒），不写任何处理步骤 |
-| `symptoms` | 描述可能出现的生理症状（信息性），不写"如果出现 X 则说明 Y" |
-| `primarySource` | 仅允许 `'ASPCA'` / `'AVMA'` / `'Pet Poison Helpline'` 三个来源 |
-| `status` | 仅允许 `'toxic'` / `'caution'` / `'safe'` 三级，不自行细化为"轻微有毒"等 |
-| Medical Disclaimer | 每页必须包含 `<MedicalDisclaimer variant="toxic" />`（见 TASK-R3） |
+> **最高 ROI 组合**：GEO 融合（模板修改覆盖全部工具页和对比页）+ "vs" 对比页（10 页，3 天）+ 紧急指南页（25 页，4 天）= **约 10 天额外工作，预计增加 30-55k 月额外流量**，且全部属于 SpamBrain 安全范围（独特内容占比 > 80%）。
 
 ---
 
 ## 目录
 
-- [§0.6 毒性落地页：法律 / 合规 / 商业必要性决策框架](#06-毒性落地页法律--合规--商业必要性决策框架2026-06-10-新增)
 - [§0.5 全链路风险评估与优化指南（2026-06-10 新增）](#05-全链路风险评估与优化指南2026-06-10-新增)
   - [0.5.1 风险全景矩阵（R1–R16）](#051-风险全景矩阵按严重度降序)
   - [0.5.2 逐风险深度分析与优化方案](#052-逐风险深度分析与优化方案)
@@ -516,7 +426,7 @@ ASPCA（DA 82）、PetMD（DA 71）、AKC（DA 78）每天发布数千条同类�
    - 4.1 [可直接应用的策略](#41-可直接应用的策略)（策略 1-4）
    - 4.2 [需适配后应用的策略](#42-需适配后应用的策略)（策略 5-7）
    - 4.3 [GEO 增强的 Programmatic 基础层](#43-geo-增强的-programmatic-基础层p0--成本趋近于零的-ai-搜索截流)（策略 8-9）
-   - 4.4 [Programmatic SEO 第二维度扩展](#44-programmatic-seo-第二维度扩展p1--毒性页之外的批量页面机会)（策略 10-12）
+   - 4.4 [Programmatic SEO 第二维度扩展](#44-programmatic-seo-第二维度扩展)（策略 10-12）
    - 4.5 [Programmatic SEO 第三维度扩展](#45-programmatic-seo-第三维度扩展p0p1--内容矩阵与转化漏斗)（策略 14-21）
    - 4.6 [结构性防御策略](#46-结构性防御策略p2--防止流量衰减)（策略 13）
    - 4.7 [策略全景图](#47-策略全景图)
@@ -568,7 +478,7 @@ ASPCA（DA 82）、PetMD（DA 71）、AKC（DA 78）每天发布数千条同类�
 
 | Gemini 观点 | 准确度 | 说明 |
 |------------|:-----:|------|
-| **零竞争的高意图词** — `[付费软件名] + alternative + open source` 搜索意图 90%+，商业公司不给竞品投广告，留下流量真空 | 90% | 这是 Programmatic SEO 的核心——用模板页面对应长尾高意图查询。petsMetrics 的 `can dogs eat [food]` 模式完全同构 |
+| **零竞争的高意图词** — `[付费软件名] + alternative + open source` 搜索意图 90%+，商业公司不给竞品投广告，留下流量真空 | 90% | 这是 Programmatic SEO 的核心——用模板页面对应长尾高意图查询 |
 | **结构化数据批量复制** — 数据库字段驱动，一秒钟生成 500 个页面 | 80% | 方向正确但过于简化。关键不只是数据库，更是"社区 UGC 驱动"的飞轮效应，而非单向填充 |
 | **铲子卖水** — 产品 A 赚广告，产品 B 卖模板 | 95% | 完全正确。Dirstarter 从 OpenAlternative 的仿品需求中生长出来 |
 
@@ -595,15 +505,15 @@ ASPCA（DA 82）、PetMD（DA 71）、AKC（DA 78）每天发布数千条同类�
 
 | 维度 | OpenAlternative | petsMetrics |
 |------|----------------|-------------|
-| 页面模板 | `/alternatives/[software-slug]` | `/dog/can-dogs-eat-[food]/`、`/cat/is-[item]-toxic-to-cats/` |
-| 数据源 | Airtable（开源项目数据库） | JSON 静态文件（200+ 毒性数据库） |
-| 核心关键词模式 | `[Product] alternative open source` | `can dogs eat [food]`、`are [plants] toxic to cats` |
+| 页面模板 | `/alternatives/[software-slug]` | EU 国家页、品种工具页、对比页等多种模板 |
+| 数据源 | Airtable（开源项目数据库） | JSON 静态文件（品种标准、EU 法规、喂食指南等公开数据） |
+| 核心关键词模式 | `[Product] alternative open source` | 品种工具词、对比词、EU 旅行词等 |
 | 搜索意图 | 交易/工具意图（90%+） | 信息意图（80%+） |
 | 批量生成方式 | Astro SSG `generateStaticParams()` | Next.js SSG `generateStaticParams()` |
 | 流量规模 | 1M+/年 | 目标 150k+/月搜索覆盖 |
 | 竞争格局 | 商业公司不为竞品投广告 → 流量真空 | ASPCA(DA82)/AKC(DA78)/PetMD(DA71) 占据首页 → 高竞争 |
 
-**关键差异**：OpenAlternative 的关键词竞争极低（商业公司不投竞品词广告），petsMetrics 的毒性词是高竞争赛道。因此 petsMetrics **不能只靠 Programmatic SEO，必须叠加冷启动传播 + 差异化 USP（档案联动）+ 权威引用（E-E-A-T）**。
+**关键差异**：OpenAlternative 的关键词竞争极低（商业公司不投竞品词广告），petsMetrics 的宠物健康词是高竞争赛道。因此 petsMetrics **不能只靠 Programmatic SEO，必须叠加冷启动传播 + 差异化 USP（档案联动）+ 权威引用（E-E-A-T）**。
 
 ### 3.3 适用条件
 
@@ -612,7 +522,7 @@ ASPCA（DA 82）、PetMD（DA 71）、AKC（DA 78）每天发布数千条同类�
 | 存在大量长尾关键词模板 | ✅ | ✅ | 均满足 |
 | 有结构化数据源 | ✅ | ✅ | 均满足 |
 | 关键词竞争度低 | ✅ | ❌ | petsMetrics 面临高竞争，需要额外策略 |
-| 页面信息密度可标准化 | ✅ | ✅ | 毒性等级 + 症状 + 热线 + 引用 |
+| 页面信息密度可标准化 | ✅ | ✅ | 标准指南 + 法规 + 建议 |
 | 能批量生成且质量不稀释 | ✅ | ✅ | SSG 模板 + 独立内容 |
 
 ---
@@ -623,32 +533,31 @@ ASPCA（DA 82）、PetMD（DA 71）、AKC（DA 78）每天发布数千条同类�
 
 #### 策略 1：Programmatic SEO 落地页强化（已有基础，需增幅）
 
-petsMetrics 的 200+ 毒性落地页策略与 OpenAlternative 完全同构。当前文档将这批页面定位为"18-24 个月见效的长期 SEO 引擎"——这没错，但 OpenAlternative 的经验表明，**如果冷启动做得好，首周就有流量**。
+petsMetrics 的 EU 国家页、品种工具页、对比页策略与 OpenAlternative 完全同构。当前文档将这批页面定位为"18-24 个月见效的长期 SEO 引擎"——这没错，但 OpenAlternative 的经验表明，**如果冷启动做得好，首周就有流量**。
 
-> ⚠️ **SpamBrain 安全约束**：200 页一次性全上线对 DA=0 新站极其危险。必须分批发布，每批确认索引率 > 80% 后发布下一批。后 100 页容易出现"thin content"（冷门食物找不到足够差异化信息），需每批核验内容唯一性。
+> ⚠️ **SpamBrain 安全约束**：批量页面一次性全上线对 DA=0 新站极其危险。必须分批发布，每批确认索引率 > 80% 后才发布下一批。冷门品种/国家容易出现"thin content"（找不到足够差异化信息），需每批核验内容唯一性。
 
 **分批发布计划**：
 
 | 批次 | 时间 | 页数 | 内容 | 触发条件 |
 |------|------|:---:|------|---------|
-| Batch 1 | Month 0（上线时） | **50 页** | 搜索量 Top 50 食物/植物（数据充足，差异化足够） | 无前置条件 |
-| Batch 2 | Month 1 | **40 页** | 搜索量 Mid 级别食物/植物 | Batch 1 索引率 > 80% |
-| Batch 3 | Month 2 | **40 页** | 搜索量 Mid 级别食物/植物 | Batch 2 索引率 > 80% |
-| Batch 4 | Month 3 | **40 页** | 搜索量 Lower-Mid 级别 | Batch 3 索引率 > 80% |
-| Batch 5 | Month 4 | **40 页** | 剩余冷门食物/植物 | Batch 4 索引率 > 80% |
-| **合计** | Month 0-4 | **210 页** | | 每批间隔 ≥ 2 周 |
+| Batch 1 | Month 0（上线时） | **~20 页** | 14 个工具入口页 + 2 个 Hub + 首页 + 法律页 | 无前置条件 |
+| Batch 2 | Month 1 | **~18 页** | "vs" 对比页 8-10 页 + EU 大国 8 页 | Batch 1 索引率 > 80% |
+| Batch 3 | Month 2 | **~35 页** | 紧急行动指南 25 页 + 季节安全 8 页 + 品种首批少数高差异页 2 页 | Batch 2 索引率 > 80% |
+| Batch 4 | Month 3 | **~28 页** | EU 中等国家 10 页 + "vs" 扩展 10 页 + 品种矩阵首批 40 页 + 新手清单 8 页 | Batch 3 索引率 > 80% |
+| **合计** | Month 0-3 | **~100 页** | | 每批间隔 ≥ 2 周 |
 
-> **为什么不能 200 页一次上线**：200 页同时上线 → Google 发现大量相似模板页面 → Crawl Budget 集中消耗在批量页 → 核心工具页（14 个 P0 工具）可能被忽视 → 整站质量信号下降。分批上线让 Google 有足够时间评估每批页面的独立价值。
+> **为什么不能批量一次上线**：批量同时上线 → Google 发现大量相似模板页面 → Crawl Budget 集中消耗在批量页 → 核心工具页（14 个 P0 工具）可能被忽视 → 整站质量信号下降。分批上线让 Google 有足够时间评估每批页面的独立价值。
 
 **改进项**：
 
 | 改进点 | 当前状态 | 建议 |
 |--------|---------|------|
-| 落地页的社交传播性 | 设计为纯 SEO 页面 | 每个落地页加"Share this result"按钮，以信息图形式展示毒性等级 |
-| 发布节奏 | 200 页一次全上线 | 分批 50+40+40+40+40，每批配一个 Reddit 传播事件（见 §0.4 冷启动耦合策略） |
-| 社区共建 | 纯静态数据 | 开放"提交新食物/植物"入口，形成 UGC 飞轮（策略 4） |
-| 交叉链接密度 | 已在 [seo-checklist](seo-checklist.md) 中定义（≥5 链接/页） | 追加：Related Items 区块页面上可见推荐理由（如 "Grapes and raisins share the same toxin — if your dog ate grapes, check our raisin guide too."） |
-| 内容质量控制 | 无 | 每批上线前抽检 5 页：独特文字 ≥ 400 字（见 `seo-checklist.md` §14.3），症状和安全建议不可跨物品复用 |
+| 落地页的社交传播性 | 设计为纯 SEO 页面 | 每个落地页加"Share this result"按钮，以信息图形式展示内容要点 |
+| 发布节奏 | 批量一次全上线 | 分批发布，每批配一个 Reddit 传播事件（见 §0.4 冷启动耦合策略） |
+| 社区共建 | 纯静态数据 | 开放"提交新内容"入口，形成 UGC 飞轮（策略 4） |
+| 交叉链接密度 | 已在 [seo-checklist](seo-checklist.md) 中定义（≥5 链接/页） | 追加：Related Items 区块页面上可见推荐理由 |
+| 内容质量控制 | 无 | 每批上线前抽检 5 页：独特文字 ≥ 400 字（见 `seo-checklist.md` §14.3） |
 
 #### 策略 2：延迟变现的运营节奏
 
@@ -674,7 +583,7 @@ petsMetrics 当前架构已匹配低维护要求（纯前端 SSG、静态数据�
 
 | 维护项 | 当前方式 | 自动化方向 |
 |--------|---------|-----------|
-| 毒性数据库更新 | 手动核验 ASPCA 数据 | 脚本定期抓取 ASPCA 变更，自动生成 PR |
+| 数据更新 | 手动核验公开数据源 | 脚本定期抓取数据变更，自动生成 PR |
 | 内容新鲜度 | `sitemap.lastModified: new Date()` | `dateModified` 字段关联数据源版本号，批量更新 |
 | 用户反馈收集 | 无 | 工具页底部加"Was this helpful? Yes/No"组件，数据存 `localStorage`，定期 export |
 
@@ -713,24 +622,24 @@ OpenAlternative 的第一推动力不是 SEO，而是 Reddit/HN 的社会化传�
 
 | 产品 | Piotr 版本 | petsMetrics 版本 | 优先级 |
 |------|-----------|-----------------|:---:|
-| 产品 A（免费工具站） | OpenAlternative | petsMetrics 核心工具 + 毒性落地页 | P0 |
+| 产品 A（免费工具站） | OpenAlternative | petsMetrics 核心工具 + 内容矩阵 | P0 |
 | 产品 B（铲子） | Dirstarter（目录站模板） | **Pet Health Widget SDK**（嵌入式计算器） | P2-P3 |
-| 产品 C（数据资产） | — | **年度宠物健康数据报告**（基于毒性查询数据趋势） | P2 |
+| 产品 C（数据资产） | — | **年度宠物健康数据报告**（基于匿名查询数据趋势） | P2 |
 
 ### 4.3 GEO 增强的 Programmatic 基础层（P0 — 成本趋近于零的 AI 搜索截流）
 
-> **核心认知**：Programmatic SEO 批量生成 200+ 毒性落地页和 14 个工具页时，必须同时面向 **两种搜索引擎** 优化——传统 Google 10 蓝链 + AI 搜索引擎（Google AI Overview / Perplexity / ChatGPT Search）。当前文档仅覆盖传统 SEO 的 Programmatic 策略，但 `"can dogs eat grapes"` 等核心查询在 Google 中 **90%+** 已出现 AI Overview 截流，不优化 GEO 意味着损失最大份额的流量。
+> **核心认知**：Programmatic SEO 批量生成各内容页和工具页时，必须同时面向 **两种搜索引擎** 优化——传统 Google 10 蓝链 + AI 搜索引擎（Google AI Overview / Perplexity / ChatGPT Search）。当前文档仅覆盖传统 SEO 的 Programmatic 策略，但核心健康查询在 Google 中 **90%+** 已出现 AI Overview 截流，不优化 GEO 意味着损失最大份额的流量。
 
 #### 策略 8：GEO-Programmatic 融合（ROI：极高 / 投入：低）
 
-**现状**：[geo-checklist.md](geo-checklist.md) 已详细定义 200+ 毒性落地页和 14 个工具页的 GEO 优化方案（Knowledge Cards + FAQ + Article JSON-LD + citation[] + Emergency Hotline ContactPoint + HowTo JSON-LD），但这些未在 Programmatic 框架中被引用。当前 200+ 页面模板仅按传统 SEO 设计。
+**现状**：[geo-checklist.md](geo-checklist.md) 已详细定义 14 个工具页和各内容页的 GEO 优化方案（Knowledge Cards + FAQ + Article JSON-LD + citation[] + Emergency Hotline ContactPoint + HowTo JSON-LD），但这些未在 Programmatic 框架中被引用。当前页面模板仅按传统 SEO 设计。
 
 **行动**：在每个 Programmatic 生成的页面模板中嵌入 GEO 三层结构，一次模板修改覆盖全部页面：
 
-| GEO 层 | 毒性落地页（200+） | 工具页（14） |
+| GEO 层 | 内容页（EU 国家、紧急指南等） | 工具页（14） |
 |--------|----------------|-----------|
 | **可见 HTML 层** | Knowledge Cards（3 张）+ FAQ Section（3 条）+ Emergency Hotline + Medical Disclaimer + Related Items | Knowledge Cards（4 张）+ FAQ Section（3-5 条）+ The Science Behind It + Medical Disclaimer + Related Tools |
-| **JSON-LD 层** | `Article` + `FAQPage` + `ContactPoint`（ASPCA 热线） | `SoftwareApplication` + `FAQPage` + `HowTo` |
+| **JSON-LD 层** | `Article` + `FAQPage` + `ContactPoint`（宠物健康热线） | `SoftwareApplication` + `FAQPage` + `HowTo` |
 | **技术基础层** | SSG 全预渲染 + 所有文本在 HTML 源码可见 + `citation[]` 权威引用 | 同左 |
 
 **ROI 测算**：
@@ -753,27 +662,27 @@ OpenAlternative 的第一推动力不是 SEO，而是 Reddit/HN 的社会化传�
 
 | 钩子位置 | 内容 | 作用 |
 |---------|------|------|
-| **Knowledge Card 正文** | 首句含品牌名："petsMetrics Toxicology Guide: Grapes can cause acute kidney failure in dogs because..." | AI 摘录时保留品牌名 |
+| **Knowledge Card 正文** | 首句含品牌名："petsMetrics Pet Health Guide: Your science-based companion for..." | AI 摘录时保留品牌名 |
 | **工具结果区** | 结果底部水印行："Calculated via petsMetrics.com using the AAFCO formula" | 用户截图分享时品牌自然传播 |
 | **Medical Disclaimer** | 以品牌名开头："This tool is provided by petsMetrics for general reference only..." | AI 引用免责声明时同时传播品牌 |
 
-**附加**：每个毒性落地页和工具页结果区设计为手机截图友好尺寸（~375×400px），底部含"Share this result"按钮 → 每次社交分享 = 免费品牌曝光。
+**附加**：每个落地页和工具页结果区设计为手机截图友好尺寸（~375×400px），底部含"Share this result"按钮 → 每次社交分享 = 免费品牌曝光。
 
 ---
 
-### 4.4 Programmatic SEO 第二维度扩展（P1 — 毒性页之外的批量页面机会）
+### 4.4 Programmatic SEO 第二维度扩展（P1 — 工具页之外的批量页面机会）
 
-> **核心认知**：当前 Programmatic SEO 仅覆盖 **毒性食物/植物** 一个维度（200+ 页）。但宠物健康领域存在多个天然的结构化数据源，均可通过同一 SSG 模板机制批量生成。以下为按 ROI 排序的第二维度候选。
+> **核心认知**：当前 Programmatic SEO 仅覆盖 **工具页** 一个维度（14 个工具）。但宠物健康领域存在多个天然的结构化数据源，均可通过同一 SSG 模板机制批量生成。以下为按 ROI 排序的第二维度候选。
 
 #### 策略 10：紧急行动指南程序化页面（ROI：高 / 投入：中）
 
-**未覆盖的高紧急度查询**：当前毒性落地页面向信息意图（"can dogs eat X?"），但还有一类**高紧急度、高搜索量**的查询完全未覆盖：
+**未覆盖的高紧急度查询**：当前工具页面向工具意图（"BMI calculator"），但还有一类**高紧急度、高搜索量**的查询完全未覆盖：
 
 | 查询模式 | 示例 | 月搜索量 | 意图 | 当前 SERP 占据者 |
 |---------|------|--------|------|----------------|
 | `my dog ate [item] what do i do` | "my dog ate chocolate what do i do" | 🟠 15k+ | 紧急行动 | Reddit/Quora 论坛帖（无结构化工具页） |
 | `my cat ate [plant] what should i do` | "my cat ate lily what should i do" | 🟡 5k-8k | 紧急行动 | 兽医博客 + 论坛 |
-| `[pet] ate [item] emergency` | "dog ate grape emergency" | 🟡 5k-8k | 紧急行动 | ASPCA（DA82）首页 + 论坛 |
+| `[pet] ate [item] emergency` | "dog ate something emergency" | 🟡 5k-8k | 紧急行动 | 宠物健康机构站 + 论坛 |
 | `my puppy swallowed [object]` | "my puppy ate sock" | 🟡 5k+ | 紧急行动 | 论坛帖 |
 
 **差异化价值**：这些查询的 SERP 被论坛（Reddit/Quora）和兽医博客占据，**几乎没有结构化工具站页面**。一个标准模板可以批量覆盖 50+ 高紧急度查询：
@@ -782,7 +691,7 @@ OpenAlternative 的第一推动力不是 SEO，而是 Reddit/HN 的社会化传�
 URL 模式: /dog/emergency/ate-[item]/   →  /dog/emergency/ate-chocolate/
 页面结构:
   1. Emergency Banner: "Your dog ate [item]? Here's what to do NOW"
-  2. Risk Assessment: Toxic / Dangerous / Monitor（与毒性数据库联动）
+  2. Risk Assessment: Toxic / Dangerous / Monitor（基于公开数据）
   3. Immediate Steps: 有序列表 3-5 步
   4. When to See a Vet: 明确判定标准
   5. ASPCA Hotline: (888) 426-4435（结构化 ContactPoint JSON-LD）
@@ -790,11 +699,11 @@ URL 模式: /dog/emergency/ate-[item]/   →  /dog/emergency/ate-chocolate/
   7. Related Emergencies: 交叉链接至同类紧急页面
 ```
 
-**ROI 理由**：与毒性落地页共享同一数据库，增量开发成本约 3-5 天（50 页模板）。紧急查询的 CTR 远高于普通信息查询（用户恐慌时更需要可操作指导）。
+**ROI 理由**：基于公开数据增量开发成本约 3-5 天（50 页模板）。紧急查询的 CTR 远高于普通信息查询（用户恐慌时更需要可操作指导）。与工具页形成差异化互补：工具页满足计划性查询（"我应该给狗吃多少"），紧急指南满足即时性查询（"刚吃了怎么办"）。
 
 #### 策略 11：品种 × 工具程序化矩阵（ROI：极高 / 投入：中高）
 
-**机会洞察**：AKC 认证 **200 个犬种**，每个品种都有独立的搜索需求。品种页是 Programmatic SEO 最自然的第二维度，且**竞争远低于 "can dogs eat grapes" 类核心词**。数据源为公开数据（AKC 品种标准：体重范围、预期寿命、品种分组）。
+**机会洞察**：AKC 认证 **200 个犬种**，每个品种都有独立的搜索需求。品种页是 Programmatic SEO 最自然的第二维度，且**竞争远低于核心工具词**。数据源为公开数据（AKC 品种标准：体重范围、预期寿命、品种分组）。
 
 **品种 × 工具矩阵**：
 
@@ -819,7 +728,7 @@ URL 模式: /dog/emergency/ate-[item]/   →  /dog/emergency/ate-chocolate/
 **ROI 优势**：
 
 - 数据源为公开结构化数据（AKC），无需人工逐页编写
-- 搜索量不如毒性词高，但**竞争度低 10 倍**，DA 30 以下即可进入首页
+- 搜索量不如核心工具词高，但**竞争度低 10 倍**，DA 30 以下即可进入首页
 - 品种页的 `"golden retriever age chart"` 类搜索在 **Google Images** 中有显著流量（信息图 SEO 机会）
 - 每个品种页的 Pet Profile 可预填该品种数据 → 降低用户使用工具的门槛
 
@@ -831,18 +740,17 @@ URL 模式: /dog/emergency/ate-[item]/   →  /dog/emergency/ate-chocolate/
 
 | 页面类型 | URL 模式 | 目标关键词 | 数量 |
 |---------|---------|-----------|:---:|
-| **安全食物 — 按类别** | `/dog/safe-foods/fruits/`、`/dog/safe-foods/vegetables/` | "fruits safe for dogs"、"vegetables dogs can eat" | 6-8 页 |
-| **有毒食物排名** | `/dog/most-toxic-foods/` | "most toxic foods for dogs"、"top 10 dangerous foods for dogs" | 4-6 页 |
-| **季节危险** | `/dog/seasonal-dangers/summer/`、`/dog/seasonal-dangers/christmas/` | "summer dangers for dogs"、"holiday foods toxic to dogs" | 4 页 |
 | **品种健康风险** | `/dog/breeds/[breed]/health-risks/` | "golden retriever common health issues" | 200 页（与策略 11 共享数据） |
+| **EU 国家对比** | `/shared/eu-travel/compare/[country1]-vs-[country2]/` | "france vs germany pet travel rules" | 10-15 页 |
+| **季节危险** | `/dog/seasonal-dangers/` | "seasonal dangers for dogs rankings" | 4-6 页 |
 
-**ROI 理由**：内容源已存在（毒性数据库），仅需聚合查询模板。这类页面天然适合宠物博主引用（"10 most toxic foods for dogs — via petsMetrics"），外链获取效率远高于单个毒性页。
+**ROI 理由**：内容源已存在，仅需聚合查询模板。这类页面天然适合宠物博主引用，外链获取效率高于单页。
 
 ---
 
 ### 4.5 Programmatic SEO 第三维度扩展（P0/P1 — 内容矩阵与转化漏斗）
 
-> **核心认知**：策略 10-12 覆盖了查询层（紧急指南）和实体层（品种 × 工具），但缺少 **用户决策链** 上的 Programmatic 页面——用户在 Google 搜索的不是工具名，而是"我该选什么"、"两者怎么比"、"刚养猫要做什么"。这些 **决策前内容** 的搜索量被严重低估。
+> **核心认知**：策略 10-12 覆盖了查询层（紧急指南）和实体层（品种 × 工具 EU 旅行对比），但缺少 **用户决策链** 上的 Programmatic 页面——用户在 Google 搜索的不是工具名，而是"我该选什么"、"两者怎么比"、"刚养猫要做什么"。这些 **决策前内容** 的搜索量被严重低估。
 
 #### 策略 14：猫咪品种 × 工具矩阵（ROI：极高 / 投入：中）
 
@@ -871,7 +779,7 @@ URL 模式: /dog/emergency/ate-[item]/   →  /dog/emergency/ate-chocolate/
 - 数据源为 TICA/CFA 公开品种标准，与犬种数据同构
 - **与狗品种的协同效应**：品种页矩阵形成 "狗 200 种 + 猫 71 种" 的完整宠物品种数据资产，Google 识别为领域全覆盖权威站
 
-**实施节奏**：随 Strategy 11 犬种首批（Top 20 × 2 工具 = 40 页）同步发布 Top 10 猫品种 × 2 工具（年龄 + 体重）= 20 页，验证跨物种模板复用质量。
+**实施节奏**：随 Strategy 11 犬种首批（Top 20 × 2 工具 = 40 页）同步发布 Top 10 猫品种 × 2 工具（体重 + 喂养）= 20 页，验证跨物种模板复用质量。
 
 ---
 
@@ -942,7 +850,7 @@ H1: "[Topic A] vs [Topic B] for Dogs: Which Is Right for Your Pet?"
 
 #### 策略 17：季节性安全内容页（ROI：高 / 投入：中）
 
-**缺口识别**：毒性落地页覆盖"食物 X 是否安全"，但 **不覆盖"时节场景"**。用户在不同季节/节日有特定安全查询，且这些查询有规律性年度高峰——Google 对季节性内容有"递归索引"偏向（每年同一时间排名自然回升）。
+**缺口识别**：工具页覆盖"计划性查询"，但 **不覆盖"时节场景"**。用户在不同季节/节日有特定安全查询，且这些查询有规律性年度高峰——Google 对季节性内容有"递归索引"偏向（每年同一时间排名自然回升）。
 
 | 季节/节日 | URL | 目标关键词 | 年度峰值 |
 |----------|-----|-----------|:---:|
@@ -958,7 +866,6 @@ H1: "[Topic A] vs [Topic B] for Dogs: Which Is Right for Your Pet?"
 **总量估算**：8 个季节场景 × 2 物种 = **16 页**。
 
 **ROI 理由**：
-- 复用现有毒性数据库："christmas foods toxic for dogs" 直接聚合巧克力、葡萄干、洋葱、木糖醇等节日高频食物的现有落地页数据
 - 每年自动获得规律流量高峰，`dateModified` 年度刷新后排名自然回升
 - 宠物博主和媒体每年会写季节安全文章 → 外链获取效率极高（"According to petsMetrics' summer safety guide..."）
 - 增量开发约 3 天（1 个模板 × 16 份内容文件）
@@ -967,7 +874,7 @@ H1: "[Topic A] vs [Topic B] for Dogs: Which Is Right for Your Pet?"
 
 #### 策略 18：生命阶段新手清单页（ROI：高 / 投入：中）
 
-**缺口识别**：petsMetrics 覆盖大量计算器和毒性查询，但 **缺少"决策前"的漏斗顶部内容**——用户真正的问题是"我刚养了一只猫，现在该做什么"，而非直接搜索"卡路里计算器"。这是 Programmatic SEO 的 **内容→工具转化枢纽**。
+**缺口识别**：petsMetrics 覆盖大量计算器和工具查询，但 **缺少"决策前"的漏斗顶部内容**——用户真正的问题是"我刚养了一只猫，现在该做什么"，而非直接搜索"卡路里计算器"。这是 Programmatic SEO 的 **内容→工具转化枢纽**。
 
 | 页面 | URL | 目标关键词 | 月搜索量（估算） |
 |------|-----|-----------|:---:|
@@ -1008,7 +915,7 @@ H1: "[Topic A] vs [Topic B] for Dogs: Which Is Right for Your Pet?"
 
 | 批次 | 时间 | 页数 | 内容 | 触发条件 |
 |------|------|:---:|------|---------|
-| Batch 1 | Month 1 | **12 页** | 规则差异明显的大国：法国、德国、西班牙、意大利、荷兰、比利时、葡萄牙、爱尔兰、瑞典、丹麦、芬兰、奥地利 | Batch 1 毒性页索引率 > 80% |
+| Batch 1 | Month 1 | **12 页** | 规则差异明显的大国：法国、德国、西班牙、意大利、荷兰、比利时、葡萄牙、爱尔兰、瑞典、丹麦、芬兰、奥地利 | Phase 1 索引率 > 80% |
 | Batch 2 | Month 2 | **10 页** | 中等规则差异国：波兰、捷克、匈牙利、希腊、罗马尼亚、保加利亚、克罗地亚、斯洛文尼亚、斯洛伐克、爱沙尼亚 | Batch 1 EU 页索引率 > 80% |
 | Batch 3 | Month 3 | **5 页** | 小国（差异化素材需积累）：马耳他、塞浦路斯、卢森堡、拉脱维亚、立陶宛 | Batch 2 EU 页索引率 > 80% |
 | **合计** | Month 1-3 | **27 页** | | 每批间隔 ≥ 2 周 |
@@ -1065,14 +972,14 @@ H1: "[Topic A] vs [Topic B] for Dogs: Which Is Right for Your Pet?"
 
 ---
 
-#### 策略 21：基于毒性数据库的年度报告模板页（ROI：中高 / 投入：低）
+#### 策略 21：基于匿名查询数据的年度报告模板页（ROI：中高 / 投入：低）
 
 **缺口识别**：[seo-checklist.md](seo-checklist.md) §3.2 提到"数据驱动内容"但无具体落地方案。年度报告需要的是 **可复用的模板框架**——不是"今年写一份报告"，而是"每年自动生成"。
 
 ```
-/dog/report/most-dangerous-foods-[year]/    → "2026 Most Toxic Foods for Dogs — Top 20 Report"
-/cat/report/most-toxic-plants-[year]/       → "2026 Most Dangerous Plants for Cats"
-/shared/report/pet-toxin-statistics-[year]/ → "2026 Pet Toxin Incidents: By the Numbers"
+/dog/report/popular-health-queries-[year]/    → "2026 Most Searched Dog Health Queries — Annual Report"
+/cat/report/popular-health-queries-[year]/    → "2026 Most Searched Cat Health Queries"
+/shared/report/pet-health-trends-[year]/      → "2026 Pet Health Trends: By the Numbers"
 ```
 
 **页面结构**（数据驱动内容 + 媒体外链磁石）：
@@ -1080,17 +987,17 @@ H1: "[Topic A] vs [Topic B] for Dogs: Which Is Right for Your Pet?"
 ```
 每个年度报告页 =
   1. Executive Summary（150 字，可被 AI 直接摘录）
-  2. Ranked List（Top 20 毒性食物/植物，含毒性等级 + 搜索趋势 + 简短分析）
+  2. Ranked List（Top 20 热门查询，含搜索趋势 + 简短分析）
   3. Seasonal Trends（季节性图表/表格）
   4. Comparison to Last Year（环比变化）
-  5. CTA → 毒性检测器交互工具
+  5. CTA → 相关交互工具
   6. "Share / Embed This Report" 媒体工具包链接
 ```
 
 **ROI 理由**：
-- 数据完全来自现有毒性数据库 + Google Trends 公开数据，无额外数据采集成本
-- "2026 most toxic foods for dogs" 类搜索每年有稳定需求
-- 报告页是 **HARO/Connectively 媒体回应的核心素材**——"We've published the 2026 Pet Toxin Report — here are the key findings"
+- 数据完全来自现有匿名查询数据 + Google Trends 公开数据，无额外数据采集成本
+- "2026 most searched dog health queries" 类搜索每年有稳定需求
+- 报告页是 **HARO/Connectively 媒体回应的核心素材**——"We've published the 2026 Pet Health Trends Report — here are the key findings"
 - 每年自动获得季节性媒体引用 → 品牌权威 + 外链增量
 - 增量开发约 2 天（模板 + 数据聚合脚本）
 
@@ -1098,18 +1005,18 @@ H1: "[Topic A] vs [Topic B] for Dogs: Which Is Right for Your Pet?"
 
 ### 4.6 结构性防御策略（P2 — 防止流量衰减）
 
-> **核心认知**：Programmatic SEO 批量生成 200+ 页后，最大的风险不是"排名上不去"，而是"排名上去后掉下来"。Google 对 YMYL 内容的"新鲜度信号"极度敏感——`dateModified` 静态不变会让批量页面在 12-18 个月后集体衰减。
+> **核心认知**：Programmatic SEO 批量生成大量页面后，最大的风险不是"排名上不去"，而是"排名上去后掉下来"。Google 对 YMYL 内容的"新鲜度信号"极度敏感——`dateModified` 静态不变会让批量页面在 12-18 个月后集体衰减。
 
 #### 策略 13：结构化数据驱动的内容新鲜度引擎（ROI：中 / 投入：低）
 
 | 新鲜度信号 | 当前方式 | 改进方案 |
 |-----------|---------|---------|
-| 毒性落地页 `dateModified` | 固定为构建日期 | 绑定数据库版本号（如 `toxic-db-v1.2.0`），ASPCA 数据更新时，受影响页面批量刷新为核验日期 |
+| EU 国家页 `dateModified` | 固定为构建日期 | 绑定 EU 法规版本号，法规更新时受影响页面批量刷新为核验日期 |
 | 工具页方法论文本 | 公式来源年份硬编码 | 每年 Q1 核验并更新（"AAHA 2021"→"AAHA 2023"），不改变计算逻辑但 `dateModified` 刷新 → Google 视为"活跃页面" |
 | FAQ 静态不变 | 上线时编写后不再更新 | 基于 Google Search Console 的 PAA（People Also Ask）数据，每季度追加 1 条新 FAQ → 触发重新爬取 |
 | `sitemap.lastModified` | `new Date()` 构建时间 | 差异化：高搜索量落地页标记为最近核验日期，低搜索量页标记为构建日期 |
 
-**实施**：构建脚本中加入 `contentFreshness` 模块，读取 `toxic-db-version.json` 并注入到 `generateMetadata()` 的 `dateModified` 字段。年度更新流程：核验 ASPCA 数据 → 更新 `toxic-db-version.json` → 重新构建 → 全站 `dateModified` + `sitemap.lastModified` 自动刷新。
+**实施**：构建脚本中加入 `contentFreshness` 模块，读取 `data-version.json` 并注入到 `generateMetadata()` 的 `dateModified` 字段。年度更新流程：核验公开数据源 → 更新 `data-version.json` → 重新构建 → 全站 `dateModified` + `sitemap.lastModified` 自动刷新。
 
 > **关联**：[seo-checklist.md §13 内容衰减监控策略](seo-checklist.md#13-内容衰减监控策略p1--长期排名维护) 中定义了更详细的衰减信号和定期审计清单，与本策略配合使用。
 
@@ -1119,7 +1026,7 @@ H1: "[Topic A] vs [Topic B] for Dogs: Which Is Right for Your Pet?"
 
 | 策略编号 | 策略名称 | ROI | 投入 | 优先级别 | 时间线 |
 |:---:|------|:---:|:---:|:---:|------|
-| 1 | Programmatic SEO 落地页强化 | ⭐⭐⭐⭐⭐ | 中 | P0 | Month 0-4（分 5 批） |
+| 1 | Programmatic SEO 落地页强化 | ⭐⭐⭐⭐⭐ | 中 | P0 | Month 0-3（分 4 批） |
 | 2 | 延迟变现运营节奏 | ⭐⭐⭐⭐ | 低 | P0 | Month 0-12 |
 | 3 | "工具→模板"扩展路径 | ⭐⭐⭐ | 高 | P2-P3 | Month 12+ |
 | 4 | 极低维护自动化 | ⭐⭐⭐ | 低 | P1 | Month 3-6 |
@@ -1149,15 +1056,15 @@ H1: "[Topic A] vs [Topic B] for Dogs: Which Is Right for Your Pet?"
 
 | 优先级 | 动作 | 投入 | 预期效果 | 时间 |
 |:---:|------|:---:|------|:---:|
-| ⭐⭐⭐⭐⭐ | **E-E-A-T 实体锚点：About 页真实身份 + 全站来源标注 + 方法论透明页（§0.4）** | 低（1-2 天内容撰写） | YMYL 新站不被 Google 判定为"匿名医疗建议"，是 200+ 毒性页能被索引的前提 | **上线前（不可跳过）** |
+| ⭐⭐⭐⭐⭐ | **E-E-A-T 实体锚点：About 页真实身份 + 全站来源标注 + 方法论透明页（§0.4）** | 低（1-2 天内容撰写） | YMYL 新站不被 Google 判定为"匿名医疗建议"，是工具页能被索引的前提 | **上线前（不可跳过）** |
 | ⭐⭐⭐⭐⭐ | 工具页 title/keywords 追加 "Free / No Sign Up" 变体（策略 5） | 极低（改 i18n） | 获取高意图低竞争词流量 | 上线前 |
-| ⭐⭐⭐⭐⭐ | **GEO-Programmatic 融合：模板嵌入 Knowledge Cards + FAQ + JSON-LD（策略 8）** | 低（2 天） | AI Overview 摘录概率 15%→70%，覆盖 214 页 | 上线前 |
+| ⭐⭐⭐⭐⭐ | **GEO-Programmatic 融合：模板嵌入 Knowledge Cards + FAQ + JSON-LD（策略 8）** | 低（2 天） | AI Overview 摘录概率 15%→70%，覆盖全部页面 | 上线前 |
 | ⭐⭐⭐⭐⭐ | **内容新鲜度引擎脚本 + 数据库版本号系统（策略 13）← 移至上线前** | 低（1-2 天） | 防止 12-18 个月后批量页面衰减，从 Day 1 起建立正确信号 | 上线前 |
-| ⭐⭐⭐⭐⭐ | **毒性落地页首批 50 页上线 + Reddit 传播首发（策略 1 / Batch 1）** | 中 | 冷启动流量 + 长尾 SEO 基础。200 页分 5 批（50+40+40+40+40），Month 0-4 | Month 0（首批 50 页） |
+| ⭐⭐⭐⭐⭐ | **落地页首批 20 页上线 + Reddit 传播首发（策略 1 / Batch 1）** | 中 | 冷启动流量 + 长尾 SEO 基础 | Month 0（首批 20 页） |
 | ⭐⭐⭐⭐⭐ | 落地页添加"Share this result"社交分享按钮 + 零点击品牌钩子（策略 9） | 低 | 用户自发传播，每个分享 = 免费流量 + AI 品牌曝光 | Month 0 |
 | ⭐⭐⭐⭐ | **"vs" 对比页首批 8-10 页上线（策略 15）** | 低（2-3 天） | 覆盖高意图对比查询，Featured Snippet 高捕获率 | 上线前 |
 | ⭐⭐⭐⭐ | 制定延迟变现时间表（含 Month 0-6 零广告承诺）（策略 2） | 低 | 建立社区信任，降低后续变现阻力 | Month 0 |
-| ⭐⭐⭐⭐ | **`docs/cold-start-launch-plan.md` 完成 + Reddit 首发帖执行（策略 6）← ⛔ Batch 2 硬性卡点：Batch 2 发布前至少 1 篇 Reddit 帖必须已发布并有真实互动** | 低 | 无社交信号的批量 YMYL 新站页面对 SpamBrain 零缓冲；Reddit 帖是向 Google 证明"真实用户关注此站"最廉价的信号，必须在 Batch 1 (50 页) 与 Batch 2 (40 页) 之间的 2 周窗口内完成 | **Month 0（先于 Batch 2，不可延迟）** |
+| ⭐⭐⭐⭐ | **`docs/cold-start-launch-plan.md` 完成 + Reddit 首发帖执行（策略 6）← ⛔ Phase 2 硬性卡点：Phase 2 发布前至少 1 篇 Reddit 帖必须已发布并有真实互动** | 低 | 无社交信号的批量 YMYL 新站页面对 SpamBrain 零缓冲；Reddit 帖是向 Google 证明"真实用户关注此站"最廉价的信号 | **Month 0（先于 Phase 2，不可延迟）** |
 | ⭐⭐⭐⭐ | **EU 旅行国家细分页首批 12 页（策略 19 / Batch 1）** | 低（1-2 天） | 覆盖 EU 大国长尾，外链磁石效应。27 页分 3 批（12+10+5），Month 1-3 | Month 1（首批 12 页） |
 | ⭐⭐⭐⭐ | **紧急行动指南页面首批 25 页上线（策略 10）** | 中（3-5 天） | 覆盖高紧急度查询（15k+/月），竞争极低 | Month 1-2 |
 | ⭐⭐⭐⭐ | **季节性安全内容页首批 8 页（策略 17）** | 中（3 天） | 覆盖节日/季节安全查询，递归年度流量 | Month 1-2 |
@@ -1166,7 +1073,7 @@ H1: "[Topic A] vs [Topic B] for Dogs: Which Is Right for Your Pet?"
 | ⭐⭐⭐ | **"vs" 对比页扩展至 20 页（策略 15 扩展）** | 低 | 覆盖剩余对比查询 | Month 1-2 |
 | ⭐⭐⭐ | **品种 × 工具矩阵 — 首批 40 页（犬 Top 20 × 2 工具）+ 20 页（猫 Top 10 × 2 工具）（策略 11 + 14）** | 中（2-3 周） | 覆盖低竞争品种长尾词（喂食+体重，有品种差异维度） | Month 2-3 |
 | ⭐⭐⭐ | **年度报告模板页框架 + 首批报告（策略 21）** | 低（2 天） | 媒体反链核心素材 | Month 1-2（模板）+ 年度执行 |
-| ⭐⭐⭐ | 开放用户提交食物/植物的 UGC 入口（策略 4） | 中 | 内容飞轮，降低长期维护成本 | Month 3-6 |
+| ⭐⭐⭐ | 开放用户提交内容的 UGC 入口（策略 4） | 中 | 内容飞轮，降低长期维护成本 | Month 3-6 |
 | ⭐⭐⭐ | 结果页加"Was this helpful?"反馈组件（策略 4） | 低 | 用户反馈驱动产品迭代 | Month 3-6 |
 | ⭐⭐⭐ | **品类 Hub × 内容类型聚合页（策略 12）** | 中（1-2 周） | 列表型查询覆盖 + 外链磁石 | Month 3-6 |
 | ⭐⭐ | **品种 × 工具矩阵扩展（仅限有品种差异工具，犬 Top 50 × 2 + 猫 Top 30 × 2 = 160 页 / 须 DA≥15 且首批索引率 > 80%）（策略 11+14 扩展）** | 中高 | 品种中长尾安全覆盖 | Month 6-12 |
@@ -1183,22 +1090,21 @@ H1: "[Topic A] vs [Topic B] for Dogs: Which Is Right for Your Pet?"
 >
 > **Month 0 页面上线量**：
 > - 14 个工具入口页 + 2 个 Hub 页 + 首页 + 档案页 + 法律页 = **20 页核心页**
-> - 毒性落地页 Batch 1 = **50 页**
 > - "vs" 对比页 = **8-10 页**
-> - **Month 0 合计：~80 页**（远低于 250 页安全上限）
+> - **Month 0 合计：~30 页**（远低于 250 页安全上限）
 >
 > **Month 1-3 逐批上线**（Month 0 确认索引率 > 80% 后）：
-> - Month 1：毒性 Batch 2（40 页）+ EU Batch 1（12 页）= 52 页
-> - Month 2：毒性 Batch 3（40 页）+ EU Batch 2（10 页）+ 紧急行动（25 页）+ 季节安全（8 页）+ 新手清单（8 页）+ FAQ Hub（6 页）+ "vs" 扩展（10 页）= 107 页
-> - Month 3：毒性 Batch 4（40 页）+ EU Batch 3（5 页）+ 品种矩阵（60 页）= 105 页
-> - **Month 0-3 累计：~344 页**
+> - Month 1：EU Batch 1（12 页）+ 紧急行动指南（25 页）+ 季节安全（8 页）+ 新手清单（8 页）+ FAQ Hub（6 页）+ "vs" 扩展（10 页）= 69 页
+> - Month 2：EU Batch 2（10 页）+ 品种矩阵首批（60 页）+ 品类聚合页（10 页）= 80 页
+> - Month 3：EU Batch 3（5 页）+ 品种矩阵扩展（40 页）+ 年度报告模板（1 页）= 46 页
+> - **Month 0-3 累计：~225 页**
 >
-> ⚠️ **注意**：虽然逐批上线分散了风险，Month 2 单月 107 页仍偏高。如果 Month 1 批次索引率未达 80%，**必须推迟** Month 2 部分页面至 Month 3。
+> ⚠️ **注意**：虽然逐批上线分散了风险，Month 2 单月 80 页仍偏高。如果 Month 1 批次索引率未达 80%，**必须推迟** Month 2 部分页面至 Month 3。
 
-- **E-E-A-T 实体锚点（§0.4）← 新增，不可跳过**：About 页兽医顾问、公式透明度、审核署名
+- **E-E-A-T 实体锚点（§0.4）← 新增，不可跳过**：About 页真实身份、公式透明度、审核署名
 - 策略 8（GEO-Programmatic 融合）← **最高优先级**
-- **策略 13（内容新鲜度引擎）← 从 Month 1-2 前移至此**：Day 1 起建立 `toxic-db-version.json` 机制
-- 策略 1 Batch 1（毒性落地页 **首批 50 页** + Reddit 传播首发）
+- **策略 13（内容新鲜度引擎）← 从 Month 1-2 前移至此**：Day 1 起建立 `data-version.json` 机制
+- 策略 1 Batch 1（落地页 **首批 20 页** + Reddit 传播首发）
 - 策略 6（冷启动传播计划文档）
 - 策略 9（零点击品牌钩子）
 - 策略 5（"Free / No Sign Up" 变体埋入 title/keywords）
@@ -1206,7 +1112,7 @@ H1: "[Topic A] vs [Topic B] for Dogs: Which Is Right for Your Pet?"
 - 策略 15 首批（"vs" 对比页 **8-10 页**）← 缩减自原 20 页
 
 > **移除/推迟项**：
-> - ~~200 页一次全上线~~ → 分批 50+40+40+40+40（Month 0-4）
+> - ~~批量一次全上线~~ → 分批发布（Month 0-3）
 > - ~~策略 13 推迟至 Month 1-2~~ → 前移至上线前，Day 1 内置
 > - ~~策略 19 首批 27 页~~ → 分批 12+10+5（Month 1-3）
 > - ~~策略 16 的 Month 12+ 规划~~ → 降级至 Month 24+ / DA≥30
@@ -1251,7 +1157,7 @@ petsMetrics 与 OpenAlternative 的最大差异在于**竞争格局**——宠�
 2. **差异化 USP**（档案联动——一次输入全站复用）
 3. **权威引用体系**（E-E-A-T 信号，详见 [geo-checklist.md](geo-checklist.md)）
 4. **GEO 增强层**（Programmatic 页面必须同时面向 AI 搜索引擎优化，详见 §4.3）
-5. **第二维度扩展**（毒性页之外开拓品种页、紧急指南等批量页面，详见 §4.4）
+5. **第二维度扩展**（工具页之外开拓品种页、紧急指南等批量页面，详见 §4.4）
 6. **第三维度扩展**（内容矩阵与转化漏斗：对比页、季节安全、新手清单、国家细分、FAQ 聚合、年度报告，详见 §4.5）
 7. **延迟变现节奏**（先建立信任，再谈收入）
 8. **物种对称性**（犬猫工具矩阵并行开发，确保 Programmatic 页面在两大品类中均衡覆盖）
@@ -1265,7 +1171,7 @@ petsMetrics 与 OpenAlternative 的最大差异在于**竞争格局**——宠�
 |------|------|---------|
 | **GEO 文本 SSG 可见** | Knowledge Cards、FAQ、Medical Disclaimer 必须在 HTML 源码中直接可见，禁止做成纯 Client Component | `View Source` 检查 |
 | **跨物种对称页差异化** | 狗的年龄计算器和猫的年龄计算器（以及疫苗计划、怀孕计算器）必须使用**完全不同的标题、描述、FAQ 措辞和科学原理叙述**。狗用 AAHA/UCSD 引用，猫用 AAFP/ISFM 引用。禁止仅替换物种名称 | 逐页 View Source diff 对比 |
-| **毒性落地页逐条来源标注** | 每个毒性落地页的症状和安全建议后必须有 `Source: ASPCA / AVMA` 类标注行，既满足 `citation[]` JSON-LD，也在 HTML 可见文本中。禁止无来源的健康声明 | 逐页 View Source 检查 |
-| **毒性落地页独特文字 ≥ 400 字** | 每个毒性落地页的 `dangerReason`、`symptoms`、`whatToDo` 为逐物品独立文案，禁止跨物品复用 | 每批上线前抽检 5 页 |
-| **批量页 title/description 唯一** | 所有 Programmatic 页面的 `title` 和 `meta description` 必须包含具体内容关键词，禁止出现 "Can Dogs Eat {Food}?" 之外的泛化模板残留 | `generateMetadata()` 单元测试 |
+| **落地页逐条来源标注** | 每个落地页的健康建议后必须有 `Source: AAHA / AAFCO / WSAVA` 类标注行，既满足 `citation[]` JSON-LD，也在 HTML 可见文本中。禁止无来源的健康声明 | 逐页 View Source 检查 |
+| **落地页独特文字 ≥ 400 字** | 每个落地页的差异化内容为逐物品/逐主题独立文案，禁止跨页复用 | 每批上线前抽检 5 页 |
+| **批量页 title/description 唯一** | 所有 Programmatic 页面的 `title` 和 `meta description` 必须包含具体内容关键词，禁止出现泛化模板残留 | `generateMetadata()` 单元测试 |
 | **CSR-only 交互区明确标注** | 任何依赖 JS 动态渲染的内容（如计算器表单结果、实时搜索）明确标注 "This section requires JavaScript"，确保爬虫解析时不被误认为内容缺失 | View Source 检查 |

@@ -3,21 +3,26 @@
  * 4 列网格卡片，每张"标题 + 正文 + 权威外链"。SSG 预渲染。
  * AI 搜索引擎（Google AI Overview / Perplexity / ChatGPT）直接从此区块摘录结构化知识。
  */
+import { getTranslations } from 'next-intl/server';
 import type { KnowledgeCard } from '@/lib/seo/geo-content';
 import { getToxicDbReviewYear } from '@/lib/data/content-version';
 
 type KnowledgeCardsProps = {
   cards: KnowledgeCard[];
+  locale: string;
 };
 
-export function KnowledgeCards({ cards }: KnowledgeCardsProps) {
+export async function KnowledgeCards({ cards, locale }: KnowledgeCardsProps) {
+  const t = await getTranslations({ locale, namespace: 'common' });
+  const year = getToxicDbReviewYear();
+
   return (
     <section aria-labelledby="knowledge-heading" className="mt-10">
       <h2
         id="knowledge-heading"
         className="text-2xl font-bold tracking-tight text-[--gray-900]"
       >
-        Key Knowledge
+        {t('knowledgeCards.heading')}
       </h2>
       <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {cards.map((card) => (
@@ -53,7 +58,7 @@ export function KnowledgeCards({ cards }: KnowledgeCardsProps) {
         ))}
       </div>
       <p className="mt-4 text-xs text-[--gray-400]">
-        Data verified by petsMetrics using peer-reviewed veterinary sources. Citations: ASPCA, AVMA, AAFP. Last reviewed: {getToxicDbReviewYear()}.
+        {t('knowledgeCards.footer', { year })}
       </p>
     </section>
   );

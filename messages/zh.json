@@ -5,13 +5,21 @@
       "calculate": "计算",
       "reset": "重置",
       "download": "下载",
-      "share": "分享"
+      "share": "分享",
+      "cancel": "取消"
     },
     "disclaimer": {
       "standard": "所有计算均基于已发布的兽医指南（AAHA、WSAVA、AAFCO、AAFP）。结果为预估值。",
       "tool": "本工具由 petsMetrics 提供，仅供一般参考，不构成兽医建议。如需健康决策，请务必咨询持证兽医。",
       "toxic": "本信息由 petsMetrics 提供，仅供一般参考。这不是兽医建议。如果您的宠物可能误食了有毒物质，请立即联系兽医或拨打 ASPCA 毒物控制热线 (888) 426-4435。",
-      "emergency": "紧急情况：请立即拨打 ASPCA 动物毒物控制热线 (888) 426-4435 或就近的急诊兽医。本信息由 petsMetrics 提供，仅供一般认知参考——请勿延误治疗。"
+      "emergency": "紧急情况：请立即拨打 ASPCA 动物毒物控制热线 (888) 426-4435 或就近的急诊兽医。本信息由 petsMetrics 提供，仅供一般认知参考——请勿延误治疗。",
+      "prefix": {
+        "tool": "工具",
+        "toxic": "有毒",
+        "emergency": "紧急"
+      },
+      "ariaLabel": "免责声明",
+      "body": "本工具仅供参考，不能替代专业兽医建议。"
     },
     "unit": {
       "kg": "公斤",
@@ -21,9 +29,8 @@
       "kcal": "千卡"
     },
     "error": {
-      "generic": "出了点问题，请重试。",
-      "boundaryTitle": "出了点问题",
-      "boundaryMessage": "发生了意外错误。请刷新页面或稍后重试。",
+      "boundaryTitle": "出错了",
+      "boundaryMessage": "发生了意外错误，请重试。",
       "dismiss": "关闭"
     },
     "share": {
@@ -31,6 +38,164 @@
       "copied": "链接已复制！",
       "shareOnTwitter": "分享至 Twitter",
       "shareOnFacebook": "分享至 Facebook"
+    },
+    "loading": "加载中...",
+    "required": "必填",
+    "optional": "可选",
+    "yes": "是",
+    "no": "否",
+    "male": "公",
+    "female": "母",
+    "puppy": "幼犬",
+    "adult": "成年",
+    "senior": "老年",
+    "small": "小型",
+    "medium": "中型",
+    "gross": "大型",
+    "giant": "巨型",
+    "neutered": "已绝育",
+    "intact": "未绝育",
+    "active": "活跃",
+    "sedentary": "久坐",
+    "slightly": "轻微",
+    "very": "非常",
+    "extremely": "极度",
+    "healthy": "健康",
+    "overweight": "超重",
+    "underweight": "体重不足",
+    "notFound": {
+      "title": "未找到页面",
+      "description": "您查找的页面不存在。",
+      "returnHome": "返回首页"
+    },
+    "knowledgeCards": {
+      "heading": "知识卡片",
+      "footer": "了解更多"
+    },
+    "sidebar": {
+      "quickFacts": "快速事实",
+      "dogTools": "狗狗工具",
+      "catTools": "猫咪工具",
+      "emergencyContacts": "紧急联系方式",
+      "quickVetTip": "兽医小贴士",
+      "barfRatios": "生食比例",
+      "safetyTips": "安全提示",
+      "averageMonthlyCosts": "平均每月费用",
+      "whatAffectsCost": "影响费用的因素",
+      "requiredDocuments": "所需文件",
+      "timeline": "时间线",
+      "aboutBcs": "关于体况评分",
+      "quickTips": "快速提示",
+      "dogVaccination": {
+        "core": "核心疫苗",
+        "puppySeries": "幼犬系列",
+        "dhppBooster": "DHPP 加强针",
+        "rabies": "狂犬病"
+      },
+      "dogGestation": {
+        "average": "平均",
+        "range": "范围",
+        "ultrasound": "超声波",
+        "xray": "X光"
+      },
+      "catVaccination": {
+        "core": "核心疫苗",
+        "kittenSeries": "幼猫系列",
+        "fvrcpBooster": "FVRCP 加强针",
+        "rabies": "狂犬病"
+      },
+      "catGestation": {
+        "average": "平均",
+        "range": "范围",
+        "ultrasound": "超声波",
+        "xray": "X光"
+      },
+      "catBcs": {
+        "ideal": "理想",
+        "underweight": "体重不足",
+        "overweight": "超重"
+      },
+      "catHydration": {
+        "dailyNeed": "每日需求",
+        "wetFood": "湿粮",
+        "dryFood": "干粮"
+      }
+    },
+    "toolCta": {
+      "checkToxic": {
+        "heading": "检查食物安全性",
+        "description": "检查 200+ 种食物和植物对您的宠物是否安全",
+        "button": "检查安全性"
+      },
+      "checkAnotherFood": {
+        "heading": "检查另一种食物",
+        "description": "继续检查其他食物的安全性",
+        "button": "检查另一种食物"
+      },
+      "checkFoodSafety": {
+        "heading": "检查食品安全",
+        "description": "检查食物对您的宠物是否安全",
+        "button": "检查安全"
+      },
+      "predictPuppySize": {
+        "heading": "预测幼犬成年体型",
+        "description": "根据父母体型预测幼犬的成年体重",
+        "button": "预测体型"
+      },
+      "calculateCalories": {
+        "heading": "计算每日卡路里",
+        "description": "根据体重和活动水平计算每日卡路里需求",
+        "button": "计算卡路里"
+      },
+      "checkCatHydration": {
+        "heading": "检查猫咪水分摄入",
+        "description": "计算猫咪的每日水分需求",
+        "button": "检查水分"
+      },
+      "checkCatWeight": {
+        "heading": "检查猫咪体重",
+        "description": "评估猫咪的体况评分",
+        "button": "检查体重"
+      },
+      "trackCatHealth": {
+        "heading": "追踪猫咪健康",
+        "description": "记录和追踪猫咪的健康指标",
+        "button": "追踪健康"
+      },
+      "planDogVaccination": {
+        "heading": "制定狗狗疫苗计划",
+        "description": "基于 WSAVA 指南创建个性化疫苗时间表",
+        "button": "制定计划"
+      },
+      "planCatVaccination": {
+        "heading": "制定猫咪疫苗计划",
+        "description": "基于 AAFP 指南创建个性化疫苗时间表",
+        "button": "制定计划"
+      },
+      "checkEuTravel": {
+        "heading": "检查欧盟旅行要求",
+        "description": "检查带宠物旅行的所有要求",
+        "button": "检查要求"
+      }
+    },
+    "breadcrumbAriaLabel": "面包屑导航",
+    "progressAriaLabel": "进度",
+    "toolCtaAriaLabel": "工具操作",
+    "breadcrumb": {
+      "home": "首页",
+      "dog": "狗狗",
+      "cat": "猫咪"
+    },
+    "cta": {
+      "tryAgeCalculator": "试用年龄计算器 →",
+      "calculateCalories": "计算卡路里 →",
+      "viewVaccineSchedule": "查看疫苗计划 →",
+      "checkDueDates": "检查预产期 →",
+      "open": "打开 →"
+    },
+    "privacy": {
+      "heading": "我们如何保护您的隐私",
+      "body": "所有宠物档案、计算器输入和结果都仅存储在您的浏览器本地存储中。数据绝不会上传到我们的服务器。我们不需要账户、不收集个人信息、不跟踪您的活动。每次计算都在您的设备上进行 — 您的宠物数据只属于您。"
     }
   },
   "nav": {
@@ -38,16 +203,34 @@
     "dog": "狗狗",
     "cat": "猫咪",
     "shared": "共享工具",
-    "profile": "档案"
+    "profile": "档案",
+    "toggleNav": "切换导航",
+    "switchLanguage": "切换语言"
   },
   "speciesToggle": {
     "label": "选择物种"
   },
   "affiliateBanner": {
-    "insurance": { "title": "宠物保险", "description": "为您宠物选择优质保险计划。", "cta": "对比方案" },
-    "food": { "title": "优质宠物食品", "description": "探索兽医推荐的营养品牌。", "cta": "立即选购" },
-    "amazon": { "title": "宠物用品", "description": "在 Amazon 上找到您宠物所需的一切。", "cta": "浏览商品" },
-    "pdf_upsell": { "title": "BARF 喂养指南 PDF", "description": "下载包含餐食计划的完整生食喂养指南。", "cta": "免费下载 PDF" }
+    "insurance": {
+      "title": "宠物保险",
+      "description": "为您宠物选择优质保险计划。",
+      "cta": "对比方案"
+    },
+    "food": {
+      "title": "优质宠物食品",
+      "description": "探索兽医推荐的营养品牌。",
+      "cta": "立即选购"
+    },
+    "amazon": {
+      "title": "宠物用品",
+      "description": "在 Amazon 上找到您宠物所需的一切。",
+      "cta": "浏览商品"
+    },
+    "pdf_upsell": {
+      "title": "BARF 喂养指南 PDF",
+      "description": "下载包含餐食计划的完整生食喂养指南。",
+      "cta": "免费下载 PDF"
+    }
   },
   "profile": {
     "noProfile": "尚未选择宠物档案。请在档案模块中创建一个以便自动填充工具表单。",
@@ -170,21 +353,66 @@
       "mostPopular": "最受欢迎",
       "comingSoon": "即将推出",
       "tools": {
-        "toxicChecker": { "name": "毒性检测器", "desc": "那种食物安全吗？即时查询 200+ 种物品。" },
-        "dogCalorie": { "name": "卡路里计算器", "desc": "每天该喂多少？基于 AAFCO MER 公式。" },
-        "dogAge": { "name": "年龄计算器", "desc": "您的狗狗相当于人类多少岁？AAHA 标准。" },
-        "puppyGrowth": { "name": "幼犬成长预测", "desc": "预测成年体型并追踪生长曲线。" },
-        "dogVaccination": { "name": "疫苗计划", "desc": "不错过任何一针疫苗。个性化时间表。" },
-        "dogGestation": { "name": "怀孕计算器", "desc": "预产期和逐阶段里程碑。" },
-        "catAge": { "name": "年龄计算器", "desc": "您的猫咪相当于人类多少岁？AAHA/AAFP 标准。" },
-        "catBcs": { "name": "体况评分与体重", "desc": "您的猫超重了吗？2 分钟视觉评估。" },
-        "catHydration": { "name": "饮水量计算器", "desc": "大多数猫咪长期缺水。看看您的猫需要多少水。" },
-        "catVaccination": { "name": "疫苗计划", "desc": "按年龄和地区安排的 FVRCP、狂犬病等疫苗。" },
-        "catGestation": { "name": "怀孕计算器", "desc": "预测小猫出生日期和关键兽医节点。" },
-        "dogBarf": { "name": "BARF 计算器", "desc": "按体重计算生食喂养份量。" },
-        "catBarf": { "name": "BARF 计算器", "desc": "猫咪生食比例计算。" },
-        "insurance": { "name": "保险估算器", "desc": "对比顶级提供商的方案。" },
-        "euTravel": { "name": "EU 宠物旅行", "desc": "检查欧盟旅行所需的护照和疫苗要求。" }
+        "toxicChecker": {
+          "name": "毒性检测器",
+          "desc": "那种食物安全吗？即时查询 200+ 种物品。"
+        },
+        "dogCalorie": {
+          "name": "卡路里计算器",
+          "desc": "每天该喂多少？基于 AAFCO MER 公式。"
+        },
+        "dogAge": {
+          "name": "年龄计算器",
+          "desc": "您的狗狗相当于人类多少岁？AAHA 标准。"
+        },
+        "puppyGrowth": {
+          "name": "幼犬成长预测",
+          "desc": "预测成年体型并追踪生长曲线。"
+        },
+        "dogVaccination": {
+          "name": "疫苗计划",
+          "desc": "不错过任何一针疫苗。个性化时间表。"
+        },
+        "dogGestation": {
+          "name": "怀孕计算器",
+          "desc": "预产期和逐阶段里程碑。"
+        },
+        "catAge": {
+          "name": "年龄计算器",
+          "desc": "您的猫咪相当于人类多少岁？AAHA/AAFP 标准。"
+        },
+        "catBcs": {
+          "name": "体况评分与体重",
+          "desc": "您的猫超重了吗？2 分钟视觉评估。"
+        },
+        "catHydration": {
+          "name": "饮水量计算器",
+          "desc": "大多数猫咪长期缺水。看看您的猫需要多少水。"
+        },
+        "catVaccination": {
+          "name": "疫苗计划",
+          "desc": "按年龄和地区安排的 FVRCP、狂犬病等疫苗。"
+        },
+        "catGestation": {
+          "name": "怀孕计算器",
+          "desc": "预测小猫出生日期和关键兽医节点。"
+        },
+        "dogBarf": {
+          "name": "BARF 计算器",
+          "desc": "按体重计算生食喂养份量。"
+        },
+        "catBarf": {
+          "name": "BARF 计算器",
+          "desc": "猫咪生食比例计算。"
+        },
+        "insurance": {
+          "name": "保险估算器",
+          "desc": "对比顶级提供商的方案。"
+        },
+        "euTravel": {
+          "name": "EU 宠物旅行",
+          "desc": "检查欧盟旅行所需的护照和疫苗要求。"
+        }
       }
     },
     "stats": {
@@ -201,121 +429,224 @@
       "searchPlaceholder": "搜索：\"葡萄\"、\"牛油果\"、\"百合\"…",
       "check": "查询",
       "recentSearches": "最近搜索：",
-      "openFull": "打开完整毒性检测器"
+      "openFull": "打开完整毒性检测器",
+      "previewToxic": "— 对狗和猫有毒",
+      "previewCaution": "— 注意",
+      "previewSafe": "— 安全"
     }
   },
   "dog": {
+    "guide": {
+      "title": "🐕 犬类生命阶段清单",
+      "description": "犬类每个生命阶段的分步清单。可交互、可打印，基于 AAHA/AVSAB 指南。",
+      "open": "查看清单",
+      "newPuppy": {
+        "desc": "幼犬前 16 周的 47 项基本检查。从用品到社会化，为幼犬提供良好开端所需的一切。",
+        "aria": "查看新手幼犬清单",
+        "meta": {
+          "title": "新手幼犬清单：第一天所需的一切 | petsMetrics",
+          "description": "完整的新手幼犬清单，包含 47 项检查项目。可交互、可打印 PDF、费用估算器、时间表和专业提示。"
+        }
+      },
+      "puppyDevelopment": {
+        "desc": "从出生到 12 个月的每周指南。新生儿期、社会化、恐惧期和青春期的详细说明。",
+        "aria": "查看幼犬发育阶段指南"
+      },
+      "rescueDog": {
+        "desc": "完整的 3-3-3 调整指南。从减压到建立感情，基于 ASPCA 行为科学。",
+        "aria": "查看救助犬领养指南"
+      },
+      "seniorDog": {
+        "desc": "老年犬的 32 项健康监测项目。半年兽医检查、关节炎管理和认知支持。",
+        "aria": "查看老年犬护理清单"
+      }
+    },
     "hero": {
       "title": "狗狗健康计算器",
-      "subtitle": "为狗狗主人打造的科学工具。从卡路里到疫苗——一站式服务。",
+      "subtitle": "基于科学的狗狗主人工具。从卡路里到疫苗，一应俱全。",
       "searchPlaceholder": "搜索狗狗工具…",
       "breadcrumb": "首页 > 狗狗"
     },
     "profileBar": {
-      "autofillActive": "以下所有工具将自动填充 {name} 的数据",
+      "autofillActive": "所有工具将自动填充 {name} 的数据",
       "noProfile": "创建狗狗档案以自动填充所有计算器",
       "createCta": "创建档案 — 30 秒"
     },
     "featuredTools": {
-      "title": "最常用的狗狗工具",
+      "title": "推荐工具",
       "heroCard": {
-        "title": "有毒食物与植物检测器",
-        "desc": "狗狗主人搜索最多的工具。即时检查食物和植物对狗狗的安全性——从葡萄到洋葱再到百合。",
-        "tagline": "200+ 种食物 · 严重程度分级 · 含兽医热线",
-        "cta": "检查一种食物",
-        "badge": "最受欢迎"
+        "title": "狗狗健康计算器",
+        "desc": "基于科学的狗狗主人工具。从卡路里到疫苗，一应俱全。",
+        "tagline": "AAFCO 营养标准 · WSAVA 疫苗指南",
+        "cta": "立即计算",
+        "badge": "免费"
       },
-      "calorie": { "title": "卡路里计算器", "desc": "使用 AAFCO MER 公式精确计算每日卡路里需求。", "cta": "开始计算" },
-      "vaccination": { "title": "疫苗计划", "desc": "不错过任何疫苗。获取您狗狗的个性化疫苗时间表。", "cta": "查看计划" }
+      "calorie": {
+        "title": "卡路里计算器",
+        "desc": "根据体重、年龄和活动水平计算每日卡路里需求",
+        "cta": "计算卡路里"
+      },
+      "vaccination": {
+        "title": "疫苗计划",
+        "desc": "基于 WSAVA 指南的个性化疫苗时间表",
+        "cta": "查看疫苗计划"
+      }
     },
     "toolGrid": {
-      "title": "所有狗狗工具",
-      "ageCalculator": { "desc": "您的狗狗相当于人类多少岁？" },
-      "puppyGrowth": { "desc": "预测成年体重并追踪生长曲线。" },
-      "gestation": { "desc": "繁育者的预产期和里程碑。" },
-      "barf": { "desc": "按体重计算生食喂养份量。" },
-      "insurance": { "desc": "对比顶级提供商的方案。" },
-      "rating": "P0",
-      "priority": "P1",
+      "title": "所有工具",
+      "ageCalculator": {
+        "desc": "将狗狗年龄换算为人类年龄"
+      },
+      "puppyGrowth": {
+        "desc": "追踪幼犬成长曲线"
+      },
+      "gestation": {
+        "desc": "预产期和怀孕里程碑"
+      },
+      "barf": {
+        "desc": "生食喂养比例指南"
+      },
+      "insurance": {
+        "desc": "宠物保险对比计算器"
+      },
+      "rating": "评分",
+      "priority": "优先级",
       "open": "打开"
     },
     "seoContent": {
-      "title": "关于这些狗狗健康计算器",
-      "intro": "我们的狗狗工具基于 AAHA、AAFCO 和 WSAVA 的同行评审兽医标准构建。以下是每个工具的功能——以及为什么它对您狗狗的健康很重要。",
-      "faq1": "最准确的狗狗年龄计算器是什么？",
-      "faq1Answer": "我们的狗狗年龄计算器使用 AAHA 2023 生命阶段指南，该指南考虑了品种体型差异。小型犬比大型犬衰老更慢——5 岁的吉娃娃大约相当于 36 人类岁，而 5 岁的大丹犬约 48 人类岁。",
-      "faq2": "如何计算狗狗的每日卡路里需求？",
-      "faq2Answer": "我们的卡路里计算器使用 AAFCO 维持能量需求（MER）公式：RER × 活动系数。RER = 70 × (体重 kg)^0.75。系数根据绝育状态、活动水平和生命阶段进行调整。",
-      "faq3": "我的狗狗需要哪些疫苗？",
-      "faq3Answer": "核心疫苗（所有狗均需接种）包括狂犬病、DHPP（犬瘟热、肝炎、细小病毒、副流感）。非核心疫苗如博德特氏菌和钩端螺旋体取决于您所在地区和生活方式。我们的时间表遵循 WSAVA 2024 指南。",
-      "faq4": "狗狗怀孕多长时间？",
-      "faq4Answer": "狗狗从排卵日起约怀孕 63 天（9 周）。我们的怀孕计算器显示预期预产期范围和从着床到分娩的关键发育里程碑。"
+      "title": "狗狗健康资源",
+      "intro": "探索我们基于科学的狗狗健康工具。从营养到疫苗，为狗狗主人提供准确、透明的信息。",
+      "faq1": "如何计算狗狗的每日卡路里需求？",
+      "faq1Answer": "我们的卡路里计算器使用 AAFCO 维持能量需求 (MER) 公式：RER × 活动系数。RER = 70 × (体重 kg)^0.75。系数根据绝育状态、活动水平和生命阶段调整。",
+      "faq2": "狗狗需要哪些疫苗？",
+      "faq2Answer": "核心疫苗（所有狗狗必需）包括狂犬病、DHPP（犬瘟热、肝炎、细小病毒、副流感）。非核心疫苗如博德特氏菌和钩端螺旋体病取决于您的地区和生活方式。我们的时间表遵循 WSAVA 2024 指南。",
+      "faq3": "狗狗怀孕多久？",
+      "faq3Answer": "狗狗的怀孕期约为 63 天（9 周）。我们的预产期计算器显示预产期范围和从着床到分娩的关键发育里程碑。",
+      "faq4": "如何评估狗狗的体况评分？",
+      "faq4Answer": "体况评分 (BCS) 是兽医开发的 1-9 分评分系统。您可以通过触摸肋骨和从上方观察腰部来在家评估。我们的 BCS 工具指导您完成评估并计算安全的体重目标。"
     },
     "breedContent": {
       "title": "按品种分类的工具",
       "popularBreeds": "热门品种",
       "viewAllBreeds": "查看全部 400+ 品种",
       "breeds": {
-        "labrador": { "name": "拉布拉多寻回犬", "calorie": "拉布拉多卡路里计算器", "age": "拉布拉多人类年龄", "growth": "拉布拉多幼犬生长曲线" },
-        "germanShepherd": { "name": "德国牧羊犬", "calorie": "德国牧羊犬每日卡路里", "age": "德国牧羊犬人类年龄" },
-        "frenchBulldog": { "name": "法国斗牛犬", "weight": "法国斗牛犬体重指南", "calorie": "法国斗牛犬卡路里计算器" },
-        "goldenRetriever": { "name": "金毛寻回犬", "age": "金毛寻回犬年龄计算器", "calorie": "金毛寻回犬卡路里需求" }
+        "labrador": {
+          "name": "拉布拉多猎犬",
+          "calorie": "拉布拉多卡路里计算器",
+          "age": "拉布拉多人类年龄",
+          "growth": "拉布拉多幼犬成长曲线"
+        },
+        "germanShepherd": {
+          "name": "德国牧羊犬",
+          "calorie": "德国牧羊犬每日卡路里",
+          "age": "德国牧羊犬人类年龄"
+        },
+        "frenchBulldog": {
+          "name": "法国斗牛犬",
+          "weight": "法国斗牛犬体重指南",
+          "calorie": "法国斗牛犬卡路里计算器"
+        },
+        "goldenRetriever": {
+          "name": "金毛猎犬",
+          "age": "金毛猎犬年龄计算器",
+          "calorie": "金毛猎犬卡路里需求"
+        }
       }
+    },
+    "gestation": {
+      "facts": "狗狗怀孕知识"
     }
   },
   "cat": {
+    "guide": {
+      "title": "🐱 猫类生命阶段清单",
+      "description": "猫类每个生命阶段的分步清单。可交互、可打印，基于 AAFP/ISFM 指南。",
+      "open": "查看清单",
+      "newKitten": {
+        "desc": "幼猫前 16 周的 40 项基本检查。从猫砂盆到疫苗接种，为幼猫提供健康开端所需的一切。",
+        "aria": "查看新手幼猫清单",
+        "meta": {
+          "title": "新手幼猫清单：第一天所需的一切 | petsMetrics",
+          "description": "完整的新手幼猫清单，包含 40 项检查项目。可交互、可打印 PDF、费用估算器、时间表和专业提示。"
+        }
+      },
+      "seniorCat": {
+        "desc": "老年猫的 30 项健康监测项目。半年兽医检查、CKD 筛查和疼痛管理。",
+        "aria": "查看老年猫护理清单"
+      }
+    },
     "hero": {
       "title": "猫咪健康计算器",
-      "subtitle": "为室内猫咪主人打造的精准工具。营养、健康、保健——尽在掌握。",
+      "subtitle": "为室内猫主人提供的精准工具。营养、健康、幸福 — 精确计算。",
       "searchPlaceholder": "搜索猫咪工具…",
       "breadcrumb": "首页 > 猫咪"
     },
     "profileBar": {
-      "autofillActive": "以下所有工具将自动填充 {name} 的数据",
+      "autofillActive": "所有工具将自动填充 {name} 的数据",
       "noProfile": "创建猫咪档案以自动填充所有计算器",
       "createCta": "创建档案 — 30 秒"
     },
     "featuredTools": {
-      "title": "必备猫咪健康工具",
+      "title": "推荐工具",
       "heroCard": {
-        "title": "体况评分与体重管理",
-        "desc": "60% 的室内猫超重。您的猫是其中之一吗？花 2 分钟进行视觉评估，获得科学减重计划——不会让猫挨饿。",
-        "tagline": "BCS 1-9 量表 · AAHA 指南 · 安全卡路里目标",
-        "cta": "检查我的猫的体重",
-        "badge": "猫咪主人首选"
+        "title": "猫咪健康计算器",
+        "desc": "为室内猫主人提供的精准工具。营养、健康、幸福 — 精确计算。",
+        "tagline": "AAFP 指南 · WSAVA 标准",
+        "cta": "立即计算",
+        "badge": "免费"
       },
-      "toxicChecker": { "title": "毒性食物检测器", "desc": "那种室内植物安全吗？百合对猫咪致命。", "cta": "立即查询" },
-      "hydration": { "title": "饮水量计算器", "desc": "大多数猫咪长期缺水。看看 Luna 需要多少水。", "cta": "开始计算" }
+      "toxicChecker": {
+        "title": "有毒物质检查器",
+        "desc": "检查 200+ 种食物和植物对猫咪的安全性",
+        "cta": "检查安全性"
+      },
+      "hydration": {
+        "title": "水分摄入计算器",
+        "desc": "计算猫咪的每日水分需求",
+        "cta": "计算水分需求"
+      }
     },
     "toolGrid": {
-      "title": "所有猫咪工具",
-      "ageCalculator": { "desc": "您的猫咪相当于人类多少岁？（AAHA/AAFP）" },
-      "vaccination": { "desc": "按年龄和地区安排 FVRCP、狂犬病等。" },
-      "gestation": { "desc": "预测小猫出生日期和关键兽医节点。" },
-      "barf": { "desc": "猫咪生食比例：不需要蔬菜！" },
-      "insurance": { "desc": "对比猫咪保险方案。" },
-      "rating": "P0",
-      "priority": "P1",
+      "title": "所有工具",
+      "ageCalculator": {
+        "desc": "将猫咪年龄换算为人类年龄"
+      },
+      "vaccination": {
+        "desc": "基于 AAFP 指南的个性化疫苗时间表"
+      },
+      "gestation": {
+        "desc": "预产期和怀孕里程碑"
+      },
+      "barf": {
+        "desc": "生食喂养比例指南"
+      },
+      "insurance": {
+        "desc": "宠物保险对比计算器"
+      },
+      "rating": "评分",
+      "priority": "优先级",
       "open": "打开"
     },
     "seoContent": {
-      "title": "关于这些猫咪健康计算器",
-      "intro": "基于 AAHA/AAFP 猫科生命阶段指南和 WSAVA 疫苗标准构建。每个公式都附有引用且透明公开。",
-      "faq1": "我的猫咪相当于人类多少岁？",
-      "faq1Answer": "猫咪的衰老方式与狗和人类都不同。1 岁的猫大约相当于 15 人类岁。5 岁的猫约 36 人类岁。我们的计算器使用 AAHA/AAFP 猫科生命阶段指南。",
-      "faq2": "我的猫超重吗？如何使用 BCS 量表？",
-      "faq2Answer": "体况评分（BCS）是兽医制定的 1-9 级量表。您可以在家通过触摸肋骨和从上方观察腰线来评估。60% 的室内猫评分在 5 分（理想）以上。我们的 BCS 工具引导您完成评估并计算安全体重目标。",
-      "faq3": "我的猫每天应该喝多少水？",
-      "faq3Answer": "猫咪每公斤体重每天大约需要 50-60 毫升水。吃干粮的猫需要更多额外饮水。我们的饮水量计算器同时考虑了干粮和湿粮的水分摄入。",
-      "faq4": "我的室内猫需要哪些疫苗？",
-      "faq4Answer": "所有猫咪的核心疫苗包括 FVRCP（猫病毒性鼻气管炎、杯状病毒、泛白细胞减少症）和狂犬病。即便是室内猫也需要这些——FVRCP 系列从 6-8 周龄开始，每 3 年加强一次。",
-      "faq5": "猫咪怀孕多长时间？",
-      "faq5Answer": "猫咪约怀孕 65 天（范围 61-72 天）。我们的怀孕计算器提供预期预产期范围和孕期关键兽医节点。"
+      "title": "猫咪健康资源",
+      "intro": "探索我们基于科学的猫咪健康工具。从营养到疫苗，为猫咪主人提供准确、透明的信息。",
+      "faq1": "如何计算猫咪的每日卡路里需求？",
+      "faq1Answer": "我们的卡路里计算器使用 AAFCO 维持能量需求 (MER) 公式：RER × 活动系数。RER = 70 × (体重 kg)^0.75。系数根据绝育状态、活动水平和生命阶段调整。",
+      "faq2": "猫咪需要哪些疫苗？",
+      "faq2Answer": "核心疫苗（所有猫咪必需）包括狂犬病、FVRCP（猫瘟、杯状病毒、疱疹病毒）。非核心疫苗取决于您的猫的生活方式和地区风险。我们的时间表遵循 AAFP/ISFM 指南。",
+      "faq3": "猫咪怀孕多久？",
+      "faq3Answer": "猫咪的怀孕期约为 63 天（9 周）。我们的预产期计算器显示预产期范围和关键发育里程碑。",
+      "faq4": "如何评估猫咪的体况评分？",
+      "faq4Answer": "体况评分 (BCS) 是兽医开发的 1-9 分评分系统。60% 的室内猫评分高于 5（理想）。我们的 BCS 工具指导您完成评估并计算安全的体重目标。",
+      "faq5": "猫咪每天需要多少水？",
+      "faq5Answer": "猫咪每天每公斤体重需要约 50-60 毫升水。湿粮含有约 80% 的水分，可以帮助满足需求。我们的水分计算器根据体重和饮食类型计算每日需求。"
+    },
+    "gestation": {
+      "facts": "猫咪怀孕知识"
     }
   },
-  "shared": {},
   "header": {
-    "logoAlt": "petsMetrics"
+    "logoAlt": "petsMetrics 标志"
   },
   "footer": {
     "copyright": "petsMetrics。保留所有权利。",
@@ -358,7 +689,7 @@
       "mature": "中年 — 开始变慢，注意体重",
       "senior": "老年 — 建议加强健康监测",
       "geriatric": "高龄 — 需要专门的老年护理",
-      "cardTitle": "{stage} — {stageName}",
+      "cardTitle": "生命阶段",
       "healthPriorities": "此生命阶段的健康重点：",
       "vetVisit": "年度兽医检查",
       "dental": "定期洁牙",
@@ -567,7 +898,8 @@
     "shareCta": {
       "title": "{name} 的预产期约在 {date}！",
       "sharePrompt": "刚刚计算出 {name} 的分娩日期！查看您狗狗的孕期时间线 → {url} #狗狗繁育 #petsMetrics"
-    }
+    },
+    "facts": "怀孕知识"
   },
   "vaccination": {
     "title": "疫苗计划 — 个性化时间表",
@@ -618,7 +950,7 @@
       "submit": "计算 BCS 与体重方案"
     },
     "result": {
-      "bcsScore": "BCS {score}/9",
+      "bcsScore": "体况评分",
       "bodyCondition": "体况：{condition}",
       "condition": {
         "underweight": "体重不足",
@@ -699,6 +1031,12 @@
     }
   },
   "toxicLanding": {
+    "dangerReasonTitle": "为什么{item}对{species}有害",
+    "cautionTitle": "关于给{species}喂食{item}需要了解的事项",
+    "safeTitle": "{item}对{species}安全吗？",
+    "whatToDoTitle": "如果您的{species}吃了{item}该怎么办",
+    "cautionStepsTitle": "如果您的{species}吃了太多{item}的处理步骤",
+    "feedingSafelyTitle": "安全地给{species}喂食{item}",
     "emergencyTitle": "紧急联系信息",
     "emergencyDescription": "如果您认为宠物误食了此物品，请立即联系毒物控制中心或急诊兽医。时间至关重要。",
     "aspcaPhone": "ASPCA 动物毒物控制中心",
@@ -716,6 +1054,11 @@
       "title": "未找到该物品",
       "description": "您查找的毒性条目不存在。请使用毒性检测器搜索所有物品。",
       "cta": "打开毒性检测器"
+    },
+    "cta": {
+      "heading": "检查另一种食物",
+      "description": "想知道其他食物或植物是否安全？搜索我们包含 200+ 物品的完整数据库，查看您的宠物是否可以安全食用。数据来自动物毒物控制中心。",
+      "button": "打开完整毒性检查器 →"
     }
   },
   "euTravel": {
@@ -783,13 +1126,4230 @@
     "notFoundCta": "打开 EU 宠物旅行检查器"
   },
   "barf": {
-    "form": { "speciesLabel": "宠物类型", "weightLabel": "目标体重（公斤）", "percentageLabel": "每日喂食比例", "percentageHint": "通常：每日体重的 2–3%", "submit": "计算份量" },
-    "result": { "muscleMeat": "肌肉肉", "bone": "带肉骨头", "liver": "肝脏", "organ": "分泌器官", "vegetables": "蔬菜/浆果", "total": "每日总份量", "shoppingNote": "以上为每日份量。乘以 7 即为每周采购清单。" },
-    "pdfExport": { "comingSoon": "PDF 导出 — 即将推出" },
+    "form": {
+      "speciesLabel": "宠物类型",
+      "weightLabel": "目标体重（公斤）",
+      "percentageLabel": "每日喂食比例",
+      "percentageHint": "通常：每日体重的 2–3%",
+      "submit": "计算份量"
+    },
+    "result": {
+      "muscleMeat": "肌肉肉",
+      "bone": "带肉骨头",
+      "liver": "肝脏",
+      "organ": "分泌器官",
+      "vegetables": "蔬菜/浆果",
+      "total": "每日总份量",
+      "shoppingNote": "以上为每日份量。乘以 7 即为每周采购清单。"
+    },
+    "pdfExport": {
+      "comingSoon": "PDF 导出 — 即将推出"
+    },
     "adviceNote": "BARF 饮食必须合理搭配维生素和矿物质补充剂。开始生食喂养前请咨询兽医营养师。"
   },
   "insurance": {
-    "form": { "breedLabel": "品种", "ageLabel": "年龄（岁）", "regionLabel": "州/地区", "submit": "对比方案" },
-    "result": { "estimatedRange": "预估月保费", "disclaimer": "估算基于公开价格数据，并非约束性报价。实际保费因保险公司核保而异。", "providersTitle": "对比提供商", "getQuote": "获取报价", "deductible": "免赔额", "reimburse": "报销比例" }
+    "form": {
+      "breedLabel": "品种",
+      "ageLabel": "年龄（岁）",
+      "regionLabel": "州/地区",
+      "submit": "对比方案"
+    },
+    "result": {
+      "estimatedRange": "预估月保费",
+      "disclaimer": "估算基于公开价格数据，并非约束性报价。实际保费因保险公司核保而异。",
+      "providersTitle": "对比提供商",
+      "getQuote": "获取报价",
+      "deductible": "免赔额",
+      "reimburse": "报销比例"
+    }
+  },
+  "emergency": {
+    "shared": {
+      "severity": {
+        "monitor": {
+          "label": "观察"
+        },
+        "mildlyToxic": {
+          "label": "轻度有毒"
+        },
+        "dangerous": {
+          "label": "危险"
+        },
+        "toxic": {
+          "label": "有毒"
+        },
+        "extremelyToxic": {
+          "label": "剧毒"
+        }
+      },
+      "riskLevel": {
+        "high": "高",
+        "critical": "危急",
+        "moderate": "中等",
+        "low": "低"
+      },
+      "action": {
+        "seekEmergency": "🚨 立即寻求急诊兽医护理",
+        "callNow": "🚨 立即前往急诊兽医",
+        "callImmediately": "📞 立即致电兽医或毒物控制中心",
+        "callToday": "📞 今天致电兽医",
+        "monitorSymptoms": "👀 观察症状，如有疑虑致电兽医",
+        "callVet": "📞 立即致电兽医"
+      },
+      "labels": {
+        "petWeightDog": "狗的体重",
+        "petWeightCat": "猫的体重",
+        "amountEaten": "误食量",
+        "riskLevel": "风险等级",
+        "actionRequired": "所需行动",
+        "chocolateType": "巧克力类型",
+        "whatWasEaten": "误食物品",
+        "catSize": "猫的体型",
+        "dogSize": "狗的体型",
+        "anySize": "任何体型",
+        "anyAmount": "任何量"
+      },
+      "vetDecision": {
+        "title": "何时需要就医",
+        "emergencyTitle": "🚨 急诊 — 立即前往",
+        "urgentTitle": "⚡ 紧急 — 1-2 小时内",
+        "monitorTitle": "👀 观察 — 今天致电兽医"
+      },
+      "titles": {
+        "riskAssessment": "立即评估您宠物的风险",
+        "whatToDo": "现在该怎么做",
+        "theScience": "科学原理",
+        "toxicDose": "毒性剂量计算器",
+        "symptomTimeline": "症状时间线：预期症状",
+        "faq": "常见问题",
+        "relatedTools": "相关工具"
+      },
+      "aspcaHotline": "ASPCA 毒物控制热线：(888) 426-4435",
+      "aspcaLink": "ASPCA 动物毒物控制中心",
+      "stepTemplates": {
+        "removeAll": "第1步：立即清除所有 [物品]",
+        "removeItem": "第1步：将剩余的 [物品] 从宠物可及处移走。",
+        "determineAmount": "第2步：估计宠物吞食的量并记录误食时间。",
+        "doNotInduce": "步骤：除非兽医指示，否则不要催吐。",
+        "contactPoison": "步骤：致电 ASPCA 毒物控制中心 (888) 426-4435。",
+        "callVetUrgent": "第2步：致电毒物控制中心或兽医"
+      },
+      "tools": {
+        "toxicChecker": "有毒食品和植物检测器",
+        "dogCalorie": "狗狗卡路里计算器",
+        "catBcs": "猫咪体况评分与体重追踪器",
+        "dogAge": "狗狗年龄计算器",
+        "catAge": "猫咪年龄计算器"
+      },
+      "breadcrumb": {
+        "home": "首页",
+        "dogEmergency": "狗狗急诊",
+        "catEmergency": "猫咪急诊"
+      }
+    },
+    "ateAvocado": {
+      "breadcrumbLabel": "误食牛油果",
+      "meta": {
+        "title": "我的狗狗误食牛油果：现在该怎么做 | petsMetrics",
+        "description": "急诊指南：牛油果含有过敏性杀菌成分 persin（梨杀菌素），对狗狗有轻度毒性。更大的危险是果核可能导致肠梗阻。了解症状、风险以及何时联系兽医。",
+        "keywords": "我的狗吃了牛油果怎么办, 牛油果对狗有毒, 狗吃了牛油果核, persin 中毒, 牛油果对狗危险"
+      },
+      "banner": {
+        "severityLabel": "轻度有毒 — 主要危险是果核梗阻",
+        "title": "我的狗狗误食牛油果：现在该怎么做",
+        "subtitle": "牛油果果肉因 persin 对狗狗有轻度毒性，但<strong>果核才是真正的危险</strong>——它可能导致危及生命的肠梗阻。如果吞下了果核，请联系兽医。",
+        "cta": "查找附近的急诊兽医"
+      },
+      "article": {
+        "headline": "我的狗狗误食牛油果：现在该怎么做",
+        "description": "狗狗食入牛油果的急诊指南：persin 毒性、果核梗阻风险和预防。",
+        "ogTitle": "我的狗狗误食牛油果：现在该怎么做 | petsMetrics",
+        "ogDescription": "如果您的狗狗吃了牛油果该怎么办。"
+      },
+      "riskAssessment": {
+        "formHeader": "误食物品",
+        "rows": [
+          {
+            "form": "吞下整个果核",
+            "amount": "任何体型",
+            "risk": "HIGH",
+            "action": "🚨 立即前往急诊兽医——梗阻风险"
+          },
+          {
+            "form": "仅果肉（大量）",
+            "amount": "< 20 磅",
+            "risk": "Moderate",
+            "action": "📞 致电兽医——胰腺炎/persin 风险"
+          },
+          {
+            "form": "仅果肉（少量）",
+            "amount": "> 20 磅",
+            "risk": "Low",
+            "action": "👀 观察是否呕吐/腹泻"
+          }
+        ]
+      },
+      "steps": [
+        {
+          "title": "第1步：确定误食物品",
+          "content": "检查是否吞下了果核。仅果肉会引起轻度胃肠不适，但果核是危及生命的梗阻危险物。"
+        },
+        {
+          "title": "第2步：如果吞下果核，不要催吐",
+          "content": "⚠️ 如果狗狗吞下了果核，请勿催吐——果核可能在回流时卡在食道内，造成更严重的梗阻。"
+        },
+        {
+          "title": "第3步：留意牛油果酱（鳄梨酱）成分",
+          "content": "如果狗狗吃了鳄梨酱，请检查配料——洋葱、大蒜、柠檬和盐都是额外的毒素。请致电 ASPCA 毒物控制中心 (888) 426-4435。"
+        },
+        {
+          "title": "第4步：观察症状",
+          "content": "观察呕吐、腹泻、腹痛、排便困难（梗阻迹象）和嗜睡。症状通常在 2-12 小时内出现。"
+        }
+      ],
+      "science": {
+        "content": "牛油果（Persea americana）含有 persin（梨杀菌素），一种杀菌脂肪酸衍生物。与鸟类、兔子和马相比，狗对 persin 的抵抗力相对较强，这些动物可能出现致命的心脏损伤。在狗中，persin 引起轻度胃肠刺激——呕吐、腹泻和腹痛。更主要的临床问题是果核，其大小为 3-5 厘米，可能导致肠梗阻，尤其是 20 公斤以下的狗。果肉的高脂肪含量（15-20%）也增加了易感品种患胰腺炎的风险（ASPCA，2023）。"
+      },
+      "toxicityData": {
+        "minimum": "果肉毒性低——任何量都可能引起轻度胃肠不适",
+        "ld50": "LD50：persin 对狗的确切 LD50 未知；果核梗阻是主要的临床问题，而非全身性毒性",
+        "source": "来源：ASPCA 动物毒物控制中心；Buoro et al., 1994",
+        "example": "示例：一只 10 公斤的狗吃牛油果果肉通常会有轻度胃肠症状；吞下的 3-5 厘米果核可能阻塞小肠。"
+      },
+      "timeline": [
+        {
+          "time": "2-6 小时",
+          "color": "yellow",
+          "description": "食用果肉的轻度胃肠症状：呕吐、腹泻、腹痛"
+        },
+        {
+          "time": "6-24 小时",
+          "color": "orange",
+          "description": "果核引起的梗阻症状：呕吐、排便困难、腹痛、嗜睡"
+        },
+        {
+          "time": "24-48 小时",
+          "color": "orange",
+          "description": "风险窗口：未经治疗的梗阻可能进展为肠穿孔或坏死"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "牛油果对狗狗有毒吗？",
+          "answer": "牛油果含有 persin（梨杀菌素），一种对狗狗轻度有毒的杀菌毒素。果肉在大多数狗中仅引起轻度胃肠不适，但果核（种子）构成更大的危险，因为它可能导致危及生命的肠梗阻。果皮和果叶的 persin 浓度也高于果肉。"
+        },
+        {
+          "question": "如果我的狗狗吞下了牛油果核，我该怎么办？",
+          "answer": "如果您的狗吞下了牛油果核，请立即联系兽医。果核大到足以引起肠梗阻，尤其是中小型狗。请勿催吐——果核可能在回流时卡在食道内。您的兽医将进行 X 光检查以定位果核，并确定是否需要手术切除。"
+        },
+        {
+          "question": "多少牛油果对狗狗有危险？",
+          "answer": "果肉毒性低——大多数狗吃牛油果果肉只会出现轻度呕吐或腹泻。但是，无论食入多少，果核都是窒息和梗阻的危险。果皮和果叶含有较高浓度的 persin，应避免食用。大量食入会因高脂肪含量而增加胰腺炎风险。"
+        },
+        {
+          "question": "狗狗可以吃鳄梨酱吗？",
+          "answer": "不可以，鳄梨酱对狗狗特别危险，因为它通常含有洋葱、大蒜、柠檬汁和盐——所有这些对狗狗都有毒。洋葱和大蒜引起溶血性贫血，盐可能引起离子中毒，柠檬皮含有精油。如果您的狗吃了鳄梨酱，请立即致电兽医。"
+        }
+      ],
+      "vetDecision": {
+        "emergency": [
+          "吞下果核——无法呕吐排出",
+          "完全肠梗阻（无大便、持续呕吐）",
+          "腹部严重疼痛并腹胀",
+          "虚脱或无反应"
+        ],
+        "urgent": [
+          "小型狗（< 15 磅）吞下果核",
+          "大量食用果肉（胰腺炎风险）",
+          "持续呕吐或腹泻超过 12 小时",
+          "有鳄梨酱误食迹象（洋葱/大蒜）"
+        ],
+        "monitor": [
+          "少量食用果肉，无症状",
+          "轻度单次呕吐或腹泻",
+          "警觉，正常进食和饮水"
+        ]
+      },
+      "relatedTools": [
+        {
+          "name": "有毒食品和植物检测器",
+          "url": "/shared/toxic-checker/"
+        },
+        {
+          "name": "狗狗卡路里计算器",
+          "url": "/dog/calorie-calculator/"
+        }
+      ]
+    },
+    "ateCaffeine": {
+      "breadcrumbLabel": "误食咖啡因",
+      "meta": {
+        "title": "我的狗狗误食咖啡因药丸：急诊指南 | petsMetrics",
+        "description": "急诊指南：咖啡因对狗狗的毒性剂量为 140mg/kg。了解症状（多动、心律失常、癫痫发作）、风险评估和立即措施。ASPCA 毒物控制热线：(888) 426-4435。",
+        "keywords": "我的狗吃了咖啡因药丸, 咖啡因对狗有毒, 狗喝了能量饮料, 咖啡因中毒, 狗吃了咖啡因怎么办"
+      },
+      "banner": {
+        "severityLabel": "有毒 —— 需要快速行动",
+        "title": "我的狗狗误食咖啡因药丸：现在该怎么做",
+        "subtitle": "咖啡因是一种甲基黄嘌呤，对狗的毒性剂量为 140mg/kg。在小型狗中，甚至 1-2 粒药丸（每粒 200mg）就可能引起癫痫发作。请立即致电 ASPCA 毒物控制中心 <strong>(888) 426-4435</strong>。",
+        "cta": "查找附近的急诊兽医"
+      },
+      "article": {
+        "headline": "我的狗狗误食咖啡因药丸：急诊指南",
+        "description": "狗狗咖啡因中毒的急诊指南：症状、剂量风险和治疗。",
+        "ogTitle": "我的狗狗误食咖啡因药丸：急诊指南 | petsMetrics",
+        "ogDescription": "如果您的狗狗吃了咖啡因药丸该怎么办。"
+      },
+      "riskAssessment": {
+        "formHeader": "咖啡因来源",
+        "rows": [
+          {
+            "form": "药丸/片剂（200mg+）",
+            "amount": "任何量",
+            "risk": "HIGH",
+            "action": "🚨 小型狗立即前往急诊兽医"
+          },
+          {
+            "form": "能量饮料（500ml）",
+            "amount": "150-300mg 咖啡因",
+            "risk": "Moderate",
+            "action": "📞 立即致电兽医或毒物控制中心"
+          },
+          {
+            "form": "冲泡咖啡",
+            "amount": "1-2 杯",
+            "risk": "Low",
+            "action": "👀 观察是否多动"
+          }
+        ]
+      },
+      "steps": [
+        {
+          "title": "第1步：快速行动——咖啡因吸收迅速",
+          "content": "清除所有剩余的咖啡因来源。咖啡因在 30-60 分钟内被吸收——时间是解毒的关键。"
+        },
+        {
+          "title": "第2步：立即致电毒物控制中心或兽医",
+          "content": "📞 <strong>ASPCA 毒物控制中心：</strong>(888) 426-4435。准备好产品标签以报告毫克含量的咖啡因。"
+        },
+        {
+          "title": "第3步：如果有症状不要催吐",
+          "content": "⚠️ 如果您的狗表现出颤抖、多动或癫痫发作，催吐有误吞风险。只有在狗无症状且专业人士指示并在食入后 30 分钟内才可催吐。"
+        },
+        {
+          "title": "第4步：监测心跳和呼吸",
+          "content": "观察呼吸急促、不安和心率升高。咖啡因会引起心律失常——如果您的狗崩溃或呼吸困难，请立即前往急诊兽医。"
+        }
+      ],
+      "science": {
+        "content": "咖啡因（1,3,7-三甲基黄嘌呤）是腺苷受体拮抗剂和磷酸二酯酶抑制剂。在狗中，它引起中枢神经系统兴奋、心肌收缩和平滑肌松弛。狗代谢咖啡因的速度比人类慢得多——狗的半衰期为 4.5 小时，而人类为 3 小时。这延长了毒性作用。高剂量时，咖啡因引起过量的儿茶酚胺释放，导致心动过速、颤动，甚至可能死亡（ASPCA，2023）。"
+      },
+      "toxicityData": {
+        "minimum": "体重 20mg/kg 时出现轻度症状",
+        "ld50": "LD50：约 140mg/kg 体重",
+        "source": "来源：ASPCA 动物毒物控制中心",
+        "example": "示例：1-2 粒咖啡因药丸（每粒 200mg）可能导致 10 公斤以下小型狗的严重症状。"
+      },
+      "timeline": [
+        {
+          "time": "1-2 小时",
+          "color": "orange",
+          "description": "早期迹象：不安、多动、呕吐、心率升高"
+        },
+        {
+          "time": "2-6 小时",
+          "color": "orange",
+          "description": "严重症状：震颤、癫痫发作、心律失常、虚脱"
+        },
+        {
+          "time": "12-48 小时",
+          "color": "green",
+          "description": "治疗后消退：通常需要住院 24-48 小时；早期治疗预后良好"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "多少咖啡因对狗狗有毒？",
+          "answer": "体重 20mg/kg 时出现轻度症状。体重 60mg/kg 时出现严重毒性。致死剂量（LD50）约为 140mg/kg。对于一只 20 公斤的狗，这大约相当于 2,800 毫克咖啡因——约 28 杯咖啡。然而，即使是少量（1-2 粒 200mg 的咖啡因药丸）也可能在小狗中引起严重症状。"
+        },
+        {
+          "question": "狗狗咖啡因中毒的症状是什么？",
+          "answer": "症状在 1-2 小时内出现，包括：不安、多动、呕吐、心率升高、震颤、癫痫发作和虚脱。咖啡因被迅速吸收，影响中枢神经系统和心血管系统。严重病例会引起致命的心律失常。"
+        },
+        {
+          "question": "如果我的狗狗吃了咖啡因，我应该催吐吗？",
+          "answer": "如果食入发生在 30 分钟内且狗保持警觉，可能会建议催吐。然而，咖啡因被迅速吸收并可能引起癫痫发作——如果您的狗出现任何神经系统症状，切勿催吐。致电 ASPCA 毒物控制中心 (888) 426-4435 获取指导。"
+        },
+        {
+          "question": "狗狗咖啡因中毒的治疗方法是什么？",
+          "answer": "治疗包括：催吐（如果早期）、活性炭减少吸收、静脉输液促进排泄、抗心律失常药物治疗心脏问题、抗癫痫药物和体温调节。通常需要住院 24-48 小时。早期治疗预后良好。"
+        }
+      ],
+      "vetDecision": {
+        "emergency": [
+          "癫痫发作或抽搐",
+          "失去意识或虚脱",
+          "严重心律失常伴虚弱",
+          "无法站立且心率升高"
+        ],
+        "urgent": [
+          "持续震颤或过度活跃",
+          "多次呕吐发作",
+          "心率持续 > 160 bpm",
+          "烦躁伴呼吸急促"
+        ],
+        "monitor": [
+          "轻度烦躁但有反应",
+          "单次呕吐",
+          "少量摄入（< 20mg/kg）",
+          "2 小时后警觉且可走动"
+        ]
+      },
+      "relatedTools": [
+        {
+          "name": "有毒食品和植物检测器",
+          "url": "/shared/toxic-checker/"
+        },
+        {
+          "name": "狗狗卡路里计算器",
+          "url": "/dog/calorie-calculator/"
+        }
+      ]
+    },
+    "ateAlcohol": {
+      "breadcrumbLabel": "误食酒精",
+      "meta": {
+        "title": "我的狗狗喝了酒精：急诊指南 | petsMetrics",
+        "description": "急诊指南：酒精对狗狗剧毒。了解症状（共济失调、抑郁、代谢性酸中毒）、按饮料分类的风险和立即措施。ASPCA 毒物控制热线：(888) 426-4435。",
+        "keywords": "我的狗喝了酒精, 酒精对狗有毒, 狗喝了啤酒, 狗喝了葡萄酒, 狗乙醇中毒, 酒精对狗危险"
+      },
+      "banner": {
+        "severityLabel": "有毒 — 中枢神经系统抑制剂",
+        "title": "我的狗狗喝了酒精：急诊指南",
+        "subtitle": "酒精（乙醇）是一种强效中枢神经系统抑制剂。即使少量也会引起共济失调、抑郁和代谢性酸中毒。请立即致电 ASPCA 毒物控制中心 <strong>(888) 426-4435</strong>。",
+        "cta": "查找附近的急诊兽医"
+      },
+      "article": {
+        "headline": "我的狗狗喝了酒精：急诊指南",
+        "description": "狗狗酒精中毒的急诊指南：症状、风险评估和治疗。",
+        "ogTitle": "我的狗狗喝了酒精：急诊指南 | petsMetrics",
+        "ogDescription": "如果您的狗狗喝了酒精该怎么办。"
+      },
+      "riskAssessment": {
+        "formHeader": "饮料类型",
+        "rows": [
+          {
+            "form": "烈酒（40%+）",
+            "amount": "> 1 盎司",
+            "risk": "CRITICAL",
+            "action": "🚨 立即前往急诊兽医"
+          },
+          {
+            "form": "葡萄酒/啤酒（5-15%）",
+            "amount": "> 4 盎司",
+            "risk": "High",
+            "action": "📞 立即致电兽医"
+          },
+          {
+            "form": "任何酒精",
+            "amount": "< 0.5 盎司",
+            "risk": "Moderate",
+            "action": "👀 监控，致电兽医咨询"
+          }
+        ]
+      },
+      "steps": [
+        {
+          "title": "第1步：立即清除所有酒精",
+          "content": "拿走任何剩余的含酒精饮料、含酒精食物或生面包面团。清理任何洒出的液体——狗可能会舔地板。"
+        },
+        {
+          "title": "第2步：评估您的狗的神经状态",
+          "content": "检查：您的狗能正常行走吗？它们是警觉还是抑郁？呕吐吗？如果您的狗无法站立或失去意识——请立即前往急诊兽医。"
+        },
+        {
+          "title": "第3步：致电毒物控制中心",
+          "content": "📞 <strong>ASPCA 毒物控制中心：</strong>(888) 426-4435。计算大致摄入的酒精量（克）：容量（mL）× 酒精含量% × 0.789 = 乙醇克数。"
+        },
+        {
+          "title": "第4步：确保您的狗安全",
+          "content": "防止共济失调导致的跌倒。让您的狗保暖——酒精会导致血管舒张和体温过低。请勿无人看管。每 15 分钟监测呼吸和意识。"
+        }
+      ],
+      "science": {
+        "content": "乙醇（C2H5OH）被胃肠道迅速吸收，并在几分钟内穿过血脑屏障。狗缺乏高效的乙醇脱氢酶，使其比人类敏感 3-5 倍。乙醇抑制 NMDA 受体并增强 GABA 活性，引起中枢神经系统抑制、呼吸抑制和代谢性酸中毒。狗中纯乙醇的致死剂量为 5.5 mL/kg。生面包面团具有双重危险——酵母发酵在温暖的胃中继续进行，产生更多酒精并膨胀面团（ASPCA，2023）。"
+      },
+      "toxicityData": {
+        "minimum": "低至 1.5 mL/kg 纯乙醇即可引起明显中毒",
+        "ld50": "LD50：约 5.5 mL/kg 纯乙醇",
+        "source": "来源：Merck 兽医手册；ASPCA 动物毒物控制中心",
+        "example": "示例：一罐 12 盎司啤酒（5% 酒精度 = 17g 乙醇）可能导致 10 公斤以下小型狗的严重中毒。"
+      },
+      "timeline": [
+        {
+          "time": "30-90 分钟",
+          "color": "orange",
+          "description": "早期迹象：定向力障碍、共济失调（步态不稳）、呕吐、抑郁"
+        },
+        {
+          "time": "2-6 小时",
+          "color": "orange",
+          "description": "严重症状：呼吸减慢、代谢性酸中毒、体温过低、低血糖（尤其是小型狗/幼犬）"
+        },
+        {
+          "time": "4-24 小时",
+          "color": "green",
+          "description": "支持性治疗后消退：静脉输液、葡萄糖、血液 pH 监测；未经监测的病例有昏迷或死亡风险"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "酒精对狗狗有毒吗？",
+          "answer": "是的，酒精（乙醇）对狗狗剧毒。纯乙醇的致死剂量为 5.5 mL/kg。狗比人类敏感得多，因为它们缺乏高效的乙醇脱氢酶。即使少量也会引起共济失调、抑郁和代谢性酸中毒。啤酒、葡萄酒、烈酒和生面包面团都存在严重风险。"
+        },
+        {
+          "question": "狗狗酒精中毒的症状是什么？",
+          "answer": "症状在 30-90 分钟内出现：定向力障碍、协调能力丧失（共济失调）、呕吐、抑郁、呼吸减慢、代谢性酸中毒，严重者可昏迷和死亡。低血糖（低血糖症）是危险的并发症，尤其是小型狗和幼犬。"
+        },
+        {
+          "question": "啤酒能杀死狗吗？",
+          "answer": "是的，啤酒能杀死狗。一罐 12 盎司啤酒（5% 酒精 = 17g 乙醇）可能导致小型狗（10 公斤以下）严重中毒。狗代谢酒精比人类慢得多，因此效应还会累积。碳酸化也会加速吸收。切勿故意给狗喝酒精。"
+        },
+        {
+          "question": "如果我的狗狗不小心喝了酒精，我该怎么办？",
+          "answer": "致电 ASPCA 毒物控制中心 (888) 426-4435 或您的兽医。如果您的狗出现神经系统症状（抑郁、共济失调），请勿催吐。清除剩余的酒精。让您的狗保暖并防止跌倒。您的兽医可能需要输注静脉输液、葡萄糖并监测血液 pH 值。"
+        }
+      ],
+      "vetDecision": {
+        "emergency": [
+          "昏迷或无法唤醒",
+          "严重共济失调无法站立",
+          "呼吸减慢或不规律",
+          "体温过低（低体温）"
+        ],
+        "urgent": [
+          "持续定向障碍和抑郁",
+          "反复呕吐伴嗜睡",
+          "已知摄入生面包面团",
+          "低血糖症状（虚弱、震颤、癫痫发作）"
+        ],
+        "monitor": [
+          "仅有轻度不稳",
+          "摄入量极少（< 0.5 盎司）",
+          "1 小时后警觉且行走正常",
+          "无呕吐或抑郁"
+        ]
+      },
+      "relatedTools": [
+        {
+          "name": "有毒食品和植物检测器",
+          "url": "/shared/toxic-checker/"
+        },
+        {
+          "name": "狗狗卡路里计算器",
+          "url": "/dog/calorie-calculator/"
+        }
+      ]
+    },
+    "ateMacadamiaNuts": {
+      "breadcrumbLabel": "误食夏威夷果",
+      "meta": {
+        "title": "我的狗狗误食夏威夷果：现在该怎么做 | petsMetrics",
+        "description": "急诊指南：夏威夷果对狗狗有毒。了解症状（虚弱、呕吐、震颤）、按体重评估风险，以及立即采取措施。ASPCA 毒物控制热线：(888) 426-4435。",
+        "keywords": "我的狗吃了夏威夷果, 夏威夷果对狗中毒, 狗被夏威夷果毒害, 狗吃了夏威夷果怎么办"
+      },
+      "banner": {
+        "severityLabel": "危险 — 通常需要兽医治疗",
+        "title": "我的狗狗误食夏威夷果：现在该怎么做",
+        "subtitle": "夏威夷果对狗狗有独特毒性 — 毒素未知，但会导致后腿无力、震颤和高烧。请致电 ASPCA 毒物控制中心 (888) 426-4435 获取即时指导。",
+        "cta": "查找附近的急诊兽医"
+      },
+      "article": {
+        "headline": "我的狗狗误食夏威夷果：现在该怎么做",
+        "description": "狗狗夏威夷果中毒的急诊指南：症状、治疗和预防。",
+        "ogTitle": "我的狗狗误食夏威夷果：急诊指南 | petsMetrics",
+        "ogDescription": "如果您的狗狗吃了夏威夷果该怎么办。"
+      },
+      "riskAssessment": {
+        "rows": [
+          {
+            "weight": "< 10 磅 (4.5 公斤)",
+            "amount": "任何量",
+            "risk": "高",
+            "action": "🚨 立即寻求急诊兽医护理"
+          },
+          {
+            "weight": "10-25 磅 (4.5-11 公斤)",
+            "amount": "> 4-5 颗",
+            "risk": "中等",
+            "action": "📞 立即致电兽医或毒物控制中心"
+          },
+          {
+            "weight": "> 25 磅 (11 公斤)",
+            "amount": "< 10 颗",
+            "risk": "低",
+            "action": "👀 观察症状，如有疑虑致电兽医"
+          }
+        ]
+      },
+      "steps": [
+        {
+          "title": "第1步：不要慌张，但要迅速行动",
+          "content": "将剩余的夏威夷果从狗狗可及处移走。保持冷静 — 您的狗狗会感受到您的压力。"
+        },
+        {
+          "title": "第2步：除非兽医指示，否则不要催吐",
+          "content": "⚠️ 催吐可能导致吸入性肺炎。只有在兽医或毒物控制中心明确指示下才能催吐。"
+        },
+        {
+          "title": "第3步：收集关键信息",
+          "items": [
+            "估计吞食量（数包装袋、测量剩余坚果）",
+            "记录误食时间（如可能，查看监控录像）",
+            "拍摄产品包装照片（成分表）",
+            "称量宠物体重（使用体重秤：先称自己，再抱着宠物称重）"
+          ]
+        },
+        {
+          "title": "第4步：联系专业帮助",
+          "items": [
+            "📞 ASPCA 毒物控制中心：(888) 426-4435（可能收取 95 美元咨询费）",
+            "📞 您的常规兽医：在工作时间致电咨询",
+            "🏥 急诊兽医诊所：如症状严重请立即前往"
+          ]
+        }
+      ],
+      "science": {
+        "content": "夏威夷果含有一种未识别的毒素，独特地影响狗狗的神经肌肉系统。该化合物导致后肢可逆性无力和共济失调，可能通过破坏运动神经元信号传导实现。与许多毒素不同，尽管经过数十年的临床观察，确切的机制仍未知。Morton (2002) 的研究确定了 LD50 为 2.4 g/kg。该毒素具有热稳定性，存在于所有形式中：生的、烤的、盐渍的和烘焙食品中。症状与剂量相关，通常在 12-48 小时的支持性护理下消退（ASPCA, 2023）。"
+      },
+      "toxicityData": {
+        "minimum": "最小毒性剂量：0.5 g/kg 体重（轻度症状）",
+        "ld50": "LD50：2.4 g/kg 体重（严重症状）",
+        "source": "来源：Morton, 2002 — 兽医诊断研究杂志",
+        "example": "示例：一只 15 公斤（33 磅）的狗吃了 15 克夏威夷果（约 12-15 颗）将达到最小毒性阈值。一颗典型坚果重约 1.2-1.5 克。"
+      },
+      "timeline": [
+        {
+          "time": "3-6 小时",
+          "color": "orange",
+          "description": "早期迹象：后腿无力、共济失调（步态蹒跚）、呕吐"
+        },
+        {
+          "time": "6-12 小时",
+          "color": "orange",
+          "description": "进展：震颤、不愿站立、腹痛、体温升高（高达 104°F/40°C）"
+        },
+        {
+          "time": "12-48 小时",
+          "color": "green",
+          "description": "消退：症状通常在支持性护理下消退；预计完全康复"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "夏威夷果对狗狗有毒吗？",
+          "answer": "是的，夏威夷果对狗狗有独特毒性。确切的毒素未知，但即使少量也会导致后腿无力、呕吐、震颤和体温过高。最小毒性剂量约为 2.4 g/kg 体重。大多数狗狗在 48 小时的支持性兽医护理后康复。"
+        },
+        {
+          "question": "多少夏威夷果对狗狗有危险？",
+          "answer": "对于一只 20 公斤（44 磅）的狗，少至 10-12 颗坚果就可能引起症状。较小的狗可能仅 2-3 颗就会出现反应。轻度症状的毒性阈值约为 0.5 g 坚果/公斤体重，严重症状出现在 2.4 g/kg。"
+        },
+        {
+          "question": "狗狗吃了夏威夷果后多久会出现症状？",
+          "answer": "症状通常在误食后 3-12 小时内出现。最早的迹象通常是后腿无力或瘫痪，随后是呕吐、震颤、腹痛和体温升高（高达 104°F/40°C）。"
+        },
+        {
+          "question": "狗狗吃了夏威夷果会死吗？",
+          "answer": "夏威夷果中毒的致死率极低。LD50 为 2.4 g/kg，意味着一只 20 公斤的狗需要吃大约 48 克坚果（约 40-50 颗）才能达到危险水平。然而，即使是亚致死剂量也会引起明显不适，需要兽医监测。"
+        },
+        {
+          "question": "如果我的狗狗吃了夏威夷果，我应该催吐吗？",
+          "answer": "除非兽医指示，否则不要催吐。催吐仅在误食后 30 分钟内有效，并可能导致吸入性肺炎。致电 ASPCA 毒物控制中心 (888) 426-4435，根据吞食量和经过的时间获取具体指导。"
+        }
+      ],
+      "vetDecision": {
+        "emergency": [
+          "完全无法站立或行走",
+          "严重震颤或癫痫发作",
+          "体温 > 104°F (40°C)",
+          "持续呕吐伴虚弱"
+        ],
+        "urgent": [
+          "后腿无力向前腿发展",
+          "多次呕吐发作",
+          "不愿移动或站立",
+          "出现轻微震颤"
+        ],
+        "monitor": [
+          "单次呕吐",
+          "后腿轻微摇晃",
+          "轻度嗜睡但反应灵敏",
+          "吞食少量 (< 0.5g/kg)"
+        ]
+      },
+      "relatedTools": [
+        {
+          "name": "有毒食品和植物检测器",
+          "url": "/shared/toxic-checker/"
+        },
+        {
+          "name": "狗狗卡路里计算器",
+          "url": "/dog/calorie-calculator/"
+        }
+      ]
+    },
+    "ateMushrooms": {
+      "breadcrumbLabel": "误食蘑菇",
+      "meta": {
+        "title": "我的狗狗在院子里吃了蘑菇：紧急指南 | petsMetrics",
+        "description": "紧急指南：野生蘑菇对狗狗可能致命。了解鹅膏菌中毒（肝衰竭）、症状时间线以及为何每次蘑菇误食都是紧急情况。ASPCA 毒物控制中心：(888) 426-4435。",
+        "keywords": "狗吃蘑菇, 狗狗蘑菇中毒, 鹅膏菌蘑菇狗狗, 野生蘑菇对狗有毒, 狗吃蘑菇症状"
+      },
+      "article": {
+        "headline": "我的狗狗在院子里吃了蘑菇：紧急指南",
+        "description": "狗狗野生蘑菇中毒紧急指南：鹅膏菌中毒、肝衰竭风险和紧急治疗。",
+        "ogTitle": "我的狗狗吃了蘑菇：紧急指南 | petsMetrics",
+        "ogDescription": "紧急指南：野生蘑菇可导致狗狗致命性肝衰竭。请立即行动。"
+      },
+      "banner": {
+        "severityLabel": "剧毒 — 致命风险，症状延迟出现",
+        "title": "我的狗狗在院子里吃了蘑菇：现在该怎么做",
+        "subtitle": "野生蘑菇可引起致命性肝衰竭 — 症状延迟 6-24 小时才显现。<strong>不要等待症状出现。</strong>立即致电 ASPCA 毒物控制中心 <strong>(888) 426-4435</strong>。"
+      },
+      "riskAssessment": {
+        "rows": [
+          {
+            "weight": "未知野生蘑菇",
+            "amount": "任何量",
+            "risk": "CRITICAL",
+            "action": "🚨 立即送急诊 — 不要等待"
+          },
+          {
+            "weight": "院子发现的带帽柄蘑菇",
+            "amount": "可能含鹅膏毒素",
+            "risk": "High",
+            "action": "🚨 1 小时内送医 — 诱导呕吐"
+          },
+          {
+            "weight": "商店购买的蘑菇",
+            "amount": "无毒素",
+            "risk": "Low",
+            "action": "👀 观察肠胃不适"
+          }
+        ]
+      },
+      "steps": [
+        {
+          "title": "这是真正的紧急情况",
+          "content": "不要等待症状出现。鹅膏毒素中毒有欺骗性延迟 — 狗狗在 6-24 小时内看起来正常，而毒素正在破坏肝脏。立即致电 ASPCA 毒物控制中心 (888) 426-4435。"
+        },
+        {
+          "title": "采集蘑菇样本",
+          "content": "如果安全，收集剩余的蘑菇碎片（包括基部/球茎）。放入纸袋（不是塑料袋）。这有助于真菌学家识别物种并确定毒性风险。"
+        },
+        {
+          "title": "前往急诊兽医处进行排毒",
+          "content": "兽医将诱导呕吐（如果误食后 2 小时内）、给予活性炭并静脉输液。他们将监测肝酶 48-72 小时。早期治疗是唯一有效的防御措施。"
+        },
+        {
+          "title": "做好住院准备",
+          "content": "如果确诊鹅膏毒素中毒，治疗包括：青霉素 G、水飞蓟素（乳蓟）、N-乙酰半胱氨酸、静脉输液、可能血浆输血。住院通常持续 3-7 天。"
+        }
+      ],
+      "science": {
+        "content": "鹅膏毒素（α-鹅膏蕈碱、β-鹅膏蕈碱）是存在于鹅膏属、盔孢伞属和环柄菇属中的二环八肽。它们抑制 RNA 聚合酶 II，停止肝细胞中的蛋白质合成。肝脏是主要靶器官，因为鹅膏毒素经历肝肠循环。误食后有 6-12 小时的潜伏期，随后是胃肠炎阶段，短暂恢复（12-24 小时），然后暴发性肝功能衰竭伴凝血功能障碍、脑病和死亡。12 小时内治疗存活率为 90%；24 小时后存活率降至 30%（ASPCA, 2023）。"
+      },
+      "toxicityData": {
+        "minimum": "0.1 毫克/千克鹅膏毒素（一个死亡帽 = 10-15 毫克）",
+        "ld50": "尚无明确数据；0.1 毫克/千克鹅膏毒素可能致命",
+        "source": "ASPCA 动物毒物控制中心, 2023",
+        "example": "一个毒鹅膏菌帽含有足以毒杀 10-20 公斤狗狗的鹅膏毒素。即使部分误食也危及生命。"
+      },
+      "timeline": [
+        {
+          "time": "0-6 小时",
+          "color": "green",
+          "description": "潜伏期：狗狗看似正常。毒素正在被吸收。"
+        },
+        {
+          "time": "6-24 小时",
+          "color": "orange",
+          "description": "胃肠炎阶段：剧烈呕吐和腹泻开始。这是最佳治疗窗口。"
+        },
+        {
+          "time": "24-48 小时",
+          "color": "green",
+          "description": "虚假恢复期：症状暂时改善。主人以为狗狗在康复 — 这是虚假的安全感。"
+        },
+        {
+          "time": "48-96 小时",
+          "color": "orange",
+          "description": "暴发性肝衰竭：黄疸、凝血功能障碍、肝性脑病、未经积极治疗会死亡。"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "野生蘑菇对狗狗有毒吗？",
+          "answer": "许多野生蘑菇对狗狗有剧毒。最危险的是毒鹅膏菌（死亡帽），含有导致不可逆肝衰竭的鹅膏毒素。其他有毒种类包括盔孢伞属、环柄菇属和丝膜菌属。即使是低毒物种也会引起严重的胃肠不适。任何蘑菇误食都应视为紧急情况，因为你无法在野外可靠识别物种。"
+        },
+        {
+          "question": "狗狗吃蘑菇后多久会出现症状？",
+          "answer": "含鹅膏毒素蘑菇（鹅膏菌属）的症状延迟 6-24 小时出现。狗狗最初看起来正常，然后剧烈呕吐和腹泻。短暂「恢复」12-24 小时后，肝衰竭开始。黄疸出现时，损害往往已不可逆。其他物种在 30 分钟到 6 小时内引起症状。"
+        },
+        {
+          "question": "如果狗狗吃了野生蘑菇我该怎么办？",
+          "answer": "将每次野生蘑菇误食都视为危及生命的紧急情况。立即致电 ASPCA 毒物控制中心 (888) 426-4435。如果在 2 小时内，兽医将诱导呕吐、给予活性炭，并观察 48-72 小时监测肝酶。不要等待症状出现——早期治疗是抵御鹅膏毒素中毒唯一有效的防线。"
+        },
+        {
+          "question": "狗狗吃蘑菇会死吗？",
+          "answer": "会。未经治疗，毒鹅膏菌对狗狗的致死率为 50-100%。鹅膏毒素通过抑制 RNA 聚合酶 II 破坏肝细胞。即使接受治疗，死亡率仍为 20-30%。致死剂量为 0.1 毫克/千克鹅膏毒素 — 一个死亡帽含有 10-15 毫克。早期积极治疗（12 小时内）显著提高存活率。"
+        },
+        {
+          "question": "狗狗可以吃商店购买的蘑菇吗？",
+          "answer": "商店购买的蘑菇（白蘑菇、褐菇、波多贝罗菇）少量对狗狗通常是安全的。但营养价值低，如果大量喂食或用黄油/油/大蒜烹饪可能引起肠胃不适。永远不要假设野外蘑菇是安全的——只食用从杂货店购买的蘑菇。"
+        }
+      ],
+      "vetDecision": {
+        "emergency": [
+          "误食后 > 6 小时剧烈呕吐",
+          "黄色牙龈或眼睛（黄疸）",
+          "呕吐物带血或黑色焦油状粪便",
+          "虚脱、癫痫发作或肝性脑病"
+        ],
+        "urgent": [
+          "已知误食鹅膏菌/盔孢伞/环柄菇",
+          "幼犬或小型犬误食任何野生蘑菇",
+          "12-24 小时后嗜睡 + 呕吐",
+          "触诊时腹部疼痛"
+        ],
+        "monitor": [
+          "商店购买的蘑菇误食",
+          "8 小时后无症状",
+          "少量误食，无确认的毒素风险",
+          "食欲和精力正常"
+        ]
+      },
+      "relatedTools": [
+        {
+          "name": "有毒食品和植物检测器",
+          "url": "/shared/toxic-checker/"
+        },
+        {
+          "name": "狗狗卡路里计算器",
+          "url": "/dog/calorie-calculator/"
+        }
+      ]
+    },
+    "ateCookedBones": {
+      "breadcrumbLabel": "误食熟骨头",
+      "meta": {
+        "title": "我的狗狗吃了熟骨头：紧急指南 | petsMetrics",
+        "description": "紧急指南：熟骨头会碎裂，可能导致肠穿孔或梗阻。学习症状（呕吐、血便、疼痛），何时致电兽医，及预防提示。",
+        "keywords": "狗吃了熟骨头, 熟骨头危险狗狗, 狗吃了鸡骨头, 碎裂骨头狗狗, 熟骨头对狗有害"
+      },
+      "article": {
+        "headline": "我的狗狗吃了熟骨头：紧急指南",
+        "description": "狗狗熟骨头误食紧急指南：碎裂风险、梗阻和治疗。",
+        "ogTitle": "我的狗狗吃了熟骨头：紧急指南 | petsMetrics",
+        "ogDescription": "紧急指南：熟骨头会碎裂并可能导致危及生命的肠道损害。"
+      },
+      "banner": {
+        "severityLabel": "危险 — 碎裂和梗阻风险",
+        "title": "我的狗狗吃了熟骨头：现在该怎么做",
+        "subtitle": "熟骨头会碎裂成尖锐碎片，可能刺穿肠壁或引起危及生命的梗阻。这是<strong>机械性紧急情况</strong>，不是中毒。请立即致电你的兽医。"
+      },
+      "riskAssessment": {
+        "rows": [
+          {
+            "weight": "大骨头（牛肉、火腿）",
+            "amount": "多块",
+            "risk": "High",
+            "action": "🚨 立即送急诊 — 碎裂风险"
+          },
+          {
+            "weight": "禽骨（鸡、火鸡）",
+            "amount": "任何量",
+            "risk": "High",
+            "action": "🚨 1 小时内送医 — 中空骨头会碎裂"
+          },
+          {
+            "weight": "小骨头（肋骨）",
+            "amount": "1-2 块",
+            "risk": "Moderate",
+            "action": "📞 致电兽医 X 光评估"
+          }
+        ]
+      },
+      "steps": [
+        {
+          "title": "不要诱导呕吐",
+          "content": "⚠️ 这很重要：呕吐可能导致尖锐骨头碎片卡在食道或刺穿反流时的组织。"
+        },
+        {
+          "title": "提供软食以缓冲碎片",
+          "content": "喂食面包、煮熟的米饭或南瓜泥，帮助包裹小骨头碎片并降低受伤风险。这不能替代兽医评估。"
+        },
+        {
+          "title": "致电兽医进行 X 光评估",
+          "content": "兽医将 X 光定位骨头碎片，评估梗阻风险，并确定是否需要内镜或手术切除。"
+        },
+        {
+          "title": "3 天内监控粪便",
+          "content": "注意：粪便中的骨头碎片（正常排出）、黑色焦油状粪便（胃肠道出血）、无法排便（梗阻）或血液。立即向兽医报告任何异常。"
+        }
+      ],
+      "science": {
+        "content": "烹饪使骨头中的胶原蛋白变性，使其变脆容易碎裂。生骨头含有柔韧的胶原蛋白，不易碎裂。当熟骨头碎裂时，尖锐碎片（骨片）可能穿透胃肠壁，引起腹膜炎 — 一种危及生命的感染。最常见的穿孔部位是食道（如果吞咽不当）、胃和回盲部（小肠变窄处）。禽骨特别危险，因为它们是中空的，会破碎成针状碎片（AAHA, 2023）。"
+      },
+      "toxicityData": {
+        "minimum": "不适用（机械性危害 — 任何大小的碎片都可能造成伤害）",
+        "ld50": "不适用 — 物理创伤，不是化学毒性",
+        "source": "AAHA 指南, 默克兽医手册",
+        "example": "一根鸡骨头可以碎裂成几十个针状碎片，在胃肠道中充当小刀。"
+      },
+      "timeline": [
+        {
+          "time": "0-2 小时",
+          "color": "green",
+          "description": "关键窗口：兽医可以诱导呕吐（如建议）或进行内镜检查。未经专业指导不要诱导。"
+        },
+        {
+          "time": "2-24 小时",
+          "color": "orange",
+          "description": "碎片可能引起食道或胃穿孔。症状：流涎、不愿进食、扒嘴、呕吐。"
+        },
+        {
+          "time": "24-72 小时",
+          "color": "orange",
+          "description": "肠梗阻或穿孔症状出现：呕吐、不排便、腹痛、黑色焦油状粪便。"
+        },
+        {
+          "time": "3-7 天",
+          "color": "green",
+          "description": "如果骨头无并发症排出，无需进一步治疗。如果已手术，则为恢复期。"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "为什么熟骨头对狗狗有危险？",
+          "answer": "熟骨头变脆并碎裂成尖锐碎片。这些碎片可以：(1) 刺穿食道、胃或肠壁，(2) 引起危及生命的腹膜炎，(3) 造成肠梗阻，或 (4) 卡在颌部或喉咙里。生骨头更安全因为它们更柔韧，但熟骨头永远不安全。"
+        },
+        {
+          "question": "如果狗狗吃了熟骨头症状是什么？",
+          "answer": "骨头相关损伤的症状包括：呕吐（可能带血）、腹泻（可能有血或黑色焦油状）、腹痛（驼背姿势、不愿移动）、排便困难、过度流涎、扒嘴和嗜睡。症状可能在几小时内出现，如果发生缓慢梗阻，则可能延迟 1-3 天。"
+        },
+        {
+          "question": "如果狗狗吃了熟骨头我应该催吐吗？",
+          "answer": "如果狗狗吃了熟骨头，不要催吐。呕出尖锐骨头碎片可能对食道造成额外伤害或卡在喉咙里。联系你的兽医或 ASPCA 毒物控制中心 (888) 426-4435 寻求即时指导。"
+        },
+        {
+          "question": "狗狗骨头误食的治疗方法是什么？",
+          "answer": "治疗取决于严重程度：(1) 如果骨头卡在喉咙/嘴里 — 在镇静下手动取出。(2) 如果骨头在胃里 — 内镜取出。(3) 如果梗阻或穿孔 — 紧急手术。(4) 如果小而软的碎片 — 用面包/粗粮监测以缓冲通过。X 光或超声决定方法。"
+        }
+      ],
+      "vetDecision": {
+        "emergency": [
+          "呕吐血液或咖啡渣样物质",
+          "黑色焦油状粪便（黑粪症）",
+          "无法排便且腹痛",
+          "驼背姿势，不负重"
+        ],
+        "urgent": [
+          "反复呕吐",
+          "过度流涎或扒嘴",
+          "不愿进食或饮水",
+          "轻度腹部不适"
+        ],
+        "monitor": [
+          "6 小时后无呕吐",
+          "食欲和精力正常",
+          "少量误食",
+          "腹部触诊无疼痛"
+        ]
+      },
+      "relatedTools": [
+        {
+          "name": "有毒食品和植物检测器",
+          "url": "/shared/toxic-checker/"
+        },
+        {
+          "name": "狗狗卡路里计算器",
+          "url": "/dog/calorie-calculator/"
+        }
+      ]
+    },
+    "atePlastic": {
+      "breadcrumbLabel": "误食塑料",
+      "meta": {
+        "title": "我的狗狗吃了塑料：现在该怎么做 | petsMetrics",
+        "description": "紧急指南：塑料可导致狗狗肠道梗阻。学习症状（呕吐、不排便）、基于大小的风险评估以及何时需要急诊手术。ASPCA 毒物控制中心：(888) 426-4435。",
+        "keywords": "狗吃了塑料玩具, 狗吃了塑料袋, 狗吃了塑料包装, 塑料梗阻狗狗, 狗肠梗阻塑料"
+      },
+      "article": {
+        "headline": "我的狗狗吃了塑料：现在该怎么做",
+        "description": "狗狗塑料误食紧急指南：梗阻风险、症状和治疗选项。",
+        "ogTitle": "我的狗狗吃了塑料：现在该怎么做 | petsMetrics",
+        "ogDescription": "紧急指南：塑料可导致狗狗危及生命的肠梗阻。"
+      },
+      "banner": {
+        "severityLabel": "观察 — 梗阻风险取决于大小",
+        "title": "我的狗狗吃了塑料：现在该怎么做",
+        "subtitle": "塑料无毒性但可能引起危险的肠梗阻。风险取决于物体的大小和形状。如果碎片大于 2 厘米，请致电兽医。"
+      },
+      "decisionGuide": {
+        "safe": "塑料碎片小于 2 厘米（如包装角）。监测粪便 48 小时。",
+        "call": "塑料碎片 2-3 厘米 OR 你的狗狗出现任何呕吐/嗜睡。可能需要 X 光。",
+        "emergency": "塑料大于 3 厘米、或持续呕吐、或 48 小时内不排便。可能需要手术。"
+      },
+      "riskAssessment": {
+        "rows": [
+          {
+            "weight": "> 3 厘米宽",
+            "amount": "任何形状",
+            "risk": "High",
+            "action": "🚨 立即送急诊 — 可能梗阻"
+          },
+          {
+            "weight": "2-3 厘米宽",
+            "amount": "不规则或尖刺",
+            "risk": "Moderate",
+            "action": "📞 致电兽医 X 光评估"
+          },
+          {
+            "weight": "< 2 厘米宽",
+            "amount": "光滑圆润",
+            "risk": "Low",
+            "action": "👀 监测粪便，观察症状"
+          }
+        ]
+      },
+      "steps": [
+        {
+          "title": "评估误食物体",
+          "content": "如果可能，找到剩余的碎片并测量。是包装、玩具碎片还是袋子？大小和形状决定风险。"
+        },
+        {
+          "title": "如果大或尖锐不要催吐",
+          "content": "⚠️ 大物体可能卡在食道；尖锐边缘可能在反流时造成损坏。只有在兽医指示下，对于误食后 30 分钟内的小而光滑的物体才催吐。"
+        },
+        {
+          "title": "喂粗粮食",
+          "content": "提供面包、南瓜泥或煮熟的米饭，帮助包裹塑料并促进安全排出。如果物体较大，这不能替代兽医护理。"
+        },
+        {
+          "title": "密切监测 48 小时",
+          "content": "检查：狗狗是否在吃东西？是否在呕吐？是否在排便？尽可能找到粪便中的塑料。24 小时以上不排便伴呕吐 = 紧急情况。"
+        }
+      ],
+      "science": {
+        "content": "塑料对狗狗化学惰性无毒 — 危险完全是机械性的。狗狗胃肠道在两个关键位置变窄：幽门（胃出口，小型犬直径约 1-2 厘米）和回盲部（小肠到大肠过渡）。宽于这些通道的物体会卡住，引起完全或部分梗阻。完全梗阻在 48-72 小时内导致液体积聚、电解质失衡和肠坏死。对于 24-48 小时内未排出或引起持续呕吐的物体需要手术干预（默克兽医手册, 2023）。"
+      },
+      "toxicityData": {
+        "minimum": "不适用（机械性危害 — 不是中毒）",
+        "ld50": "不适用 — 物理梗阻风险",
+        "source": "默克兽医手册, ASPCA",
+        "example": "一个 2 厘米的塑料玩具球无法通过中型犬的幽门。>2 厘米的物体需要兽医评估。"
+      },
+      "timeline": [
+        {
+          "time": "0-2 小时",
+          "color": "green",
+          "description": "评估物体。如果小（<2cm），观察。如果大或尖锐，立即致电兽医。"
+        },
+        {
+          "time": "2-24 小时",
+          "color": "orange",
+          "description": "小碎片可能通过胃。观察呕吐、嗜睡或腹痛。"
+        },
+        {
+          "time": "24-48 小时",
+          "color": "orange",
+          "description": "关键监测窗口。如果不排便 + 呕吐 = 可能的梗阻。寻求紧急护理。"
+        },
+        {
+          "time": "48-96 小时",
+          "color": "green",
+          "description": "如果仍不排便，需 X 光定位梗阻。如果物体卡住，可能需要手术。"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "塑料对狗狗有危险吗？",
+          "answer": "塑料无毒性但可引起危及生命的肠梗阻。危险取决于塑料物体相对于你狗狗的大小和形状。宽于 2 厘米的物品不太可能通过幽门（胃出口）或回盲部。尖锐塑料边缘也可引起胃肠穿孔。"
+        },
+        {
+          "question": "狗狗塑料梗阻的症状？",
+          "answer": "症状在 2-48 小时内出现：反复呕吐（尤其是进食后）、食欲不振、嗜睡、腹痛、不排便和脱水。完全梗阻在 24-72 小时内引起持续呕吐、脱水和休克。这是手术紧急情况。"
+        },
+        {
+          "question": "塑料通过狗狗体内需要多长时间？",
+          "answer": "小塑料碎片（<2 厘米）通常在 24-48 小时内通过胃肠道排出，出现在粪便中。大物体可能需要 3-5 天或卡住。如果塑料在 48 小时内未排出，或发生呕吐，需要兽医干预。"
+        },
+        {
+          "question": "如果狗狗吃了塑料我什么时候应该打电话？",
+          "answer": "如果以下情况立即致电兽医：(1) 塑料物体在任何维度大于 2 厘米，(2) 狗狗呕吐超过一次，(3) 48 小时内不排便，(4) 狗狗表现腹痛或嗜睡，或 (5) 塑料碎片坚硬/锐利。如果物体大，不要等待症状出现。"
+        }
+      ],
+      "vetDecision": {
+        "emergency": [
+          "持续呕吐不排便",
+          "腹部疼痛伴腹部膨胀",
+          "24 小时后嗜睡和脱水",
+          "吞下坚硬/锐利塑料且 > 2 厘米"
+        ],
+        "urgent": [
+          "单次呕吐",
+          "不愿进食",
+          "物体 2-3 厘米且 24 小时内未见粪便",
+          "轻度腹部不适"
+        ],
+        "monitor": [
+          "物体 < 2 厘米，光滑圆润",
+          "狗狗正常饮食饮水",
+          "正在排便",
+          "12 小时后无呕吐"
+        ]
+      },
+      "relatedTools": [
+        {
+          "name": "有毒食品和植物检测器",
+          "url": "/shared/toxic-checker/"
+        },
+        {
+          "name": "狗狗卡路里计算器",
+          "url": "/dog/calorie-calculator/"
+        }
+      ]
+    },
+    "ateMedication": {
+      "breadcrumbLabel": "误食药物",
+      "meta": {
+        "title": "我的狗狗吃了人类的药物：紧急指南 | petsMetrics",
+        "description": "紧急指南：人类药物对狗狗有毒。了解布洛芬（NSAID）、对乙酰氨基酚和抗抑郁药毒性风险、症状和紧急行动。ASPCA 毒物控制中心：(888) 426-4435。",
+        "keywords": "狗吃了人类药物, 狗吃了布洛芬, 狗吃了对乙酰氨基酚, 狗吃了药片, 人类药物对狗有毒"
+      },
+      "article": {
+        "headline": "我的狗狗吃了人类的药物：紧急指南",
+        "description": "狗狗人类药物误食紧急指南：NSAID 毒性、对乙酰氨基酚中毒和治疗。",
+        "ogTitle": "我的狗狗吃了人类的药物：紧急指南 | petsMetrics",
+        "ogDescription": "紧急指南：布洛芬等人类药物对狗狗有毒。请立即行动。"
+      },
+      "banner": {
+        "severityLabel": "有毒 — 人类药物对狗狗致命",
+        "title": "我的狗狗吃了人类的药物：现在该怎么做",
+        "subtitle": "人类药物是宠物中毒的主要原因。即使一片布洛芬或对乙酰氨基酚也能杀死一只狗。立即致电 ASPCA 毒物控制中心 <strong>(888) 426-4435</strong>。"
+      },
+      "riskAssessment": {
+        "rows": [
+          {
+            "weight": "NSAIDs（布洛芬、萘普生）",
+            "amount": "> 50 毫克/千克",
+            "risk": "High",
+            "action": "🚨 立即送急诊 — 胃肠溃疡、肾衰竭"
+          },
+          {
+            "weight": "对乙酰氨基酚（泰诺）",
+            "amount": "> 75 毫克/千克",
+            "risk": "High",
+            "action": "🚨 立即送急诊 — 肝衰竭"
+          },
+          {
+            "weight": "维生素 D / 钙补充剂",
+            "amount": "任何量",
+            "risk": "Moderate",
+            "action": "📞 立即致电兽医 — 高钙血症风险"
+          }
+        ]
+      },
+      "steps": [
+        {
+          "title": "收集所有药物信息",
+          "content": "带上药瓶：药物名称、规格（毫克）、缺失药片数量。计算总毫克摄入量：规格 × 药片数。这对毒性评估至关重要。"
+        },
+        {
+          "title": "立即致电毒物控制中心",
+          "content": "ASPCA 毒物控制中心：(888) 426-4435。不要等待症状出现 — 某些药物引起延迟性毒性。"
+        },
+        {
+          "title": "未经专业指导不要催吐",
+          "content": "某些药物被迅速吸收；其他药物呕吐可能引起癫痫发作。只有在 ASPCA 或兽医指示下才催吐。"
+        },
+        {
+          "title": "前往急诊兽医处进行排毒",
+          "content": "你的兽医将催吐（如果早期）、给予活性炭并开始静脉输液。血液检查将监测 24-72 小时肝/肾功能。"
+        }
+      ],
+      "science": {
+        "content": "狗狗代谢许多药物的方式与人类不同。非甾体抗炎药（布洛芬）抑制环氧化酶，减少胃肠道和肾脏中的保护性前列腺素，导致溃疡和肾衰竭。对乙酰氨基酚耗尽狗狗肝细胞中的谷胱甘肽并将血红蛋白转化为高铁血红蛋白，损害氧气运输。狗狗对许多 ADHD 药物（安非他命）特别敏感，因为它们影响儿茶酚胺释放。即使是维生素 D 这样的「无害」补充剂，大量摄入也会引起致命的高钙血症（ASPCA, 2023）。"
+      },
+      "toxicityData": {
+        "minimum": "因药物而异：布洛芬 50 毫克/千克、对乙酰氨基酚 75 毫克/千克、某些 ADHD 药物一片",
+        "ld50": "布洛芬：100 毫克/千克（致命）、对乙酰氨基酚：150 毫克/千克（来源：ASPCA）",
+        "source": "ASPCA 动物毒物控制中心, 2023",
+        "example": "一片 200 毫克布洛芬片可能导致 4 公斤狗狗肾衰竭。5 片 (1000 毫克) = 250 毫克/千克 = 可能致命的剂量。"
+      },
+      "timeline": [
+        {
+          "time": "0-30 分钟",
+          "color": "orange",
+          "description": "催吐最佳窗口。在致电毒物控制中心前先诱导。"
+        },
+        {
+          "time": "30 分钟 - 4 小时",
+          "color": "orange",
+          "description": "药物吸收阶段。速效药物（布洛芬）开始出现症状：呕吐、腹痛。"
+        },
+        {
+          "time": "4-12 小时",
+          "color": "orange",
+          "description": "胃肠溃疡阶段（非甾体抗炎药）。症状：呕吐带血、黑色焦油状粪便、肾脏应激开始。"
+        },
+        {
+          "time": "12-72 小时",
+          "color": "red",
+          "description": "器官损害阶段：肝衰竭（对乙酰氨基酚）、肾衰竭（非甾体抗炎药）、癫痫发作（抗抑郁药）。需要住院治疗。"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "哪些人类药物对狗狗最毒？",
+          "answer": "对狗狗最危险的人类药物包括：(1) 非甾体抗炎药（布洛芬、萘普生） — 50 毫克/千克引起胃肠溃疡和肾衰竭。(2) 对乙酰氨基酚（泰诺） — 75 毫克/千克引起肝损害和高铁血红蛋白血症。(3) 抗抑郁药（SSRI、SNRI） — 5-羟色胺综合征。(4) ADHD 药物（安非他命） — 严重刺激。(5) 苯二氮卓类药物 — 反常性激动。(6) 维生素 D 补充剂 — 致命高钙血症。"
+        },
+        {
+          "question": "布洛芬中毒的症状？",
+          "answer": "症状在 1-4 小时内出现：呕吐（可能带血）、食欲不振、腹痛和腹泻。中毒剂量（50 毫克/千克+）：肾衰竭（多饮多尿，然后尿量减少）、胃肠溃疡、肝损害和癫痫发作。长期暴露可能发生巨食道症。治疗包括活性炭、胃保护剂、静脉输液和血液监测。"
+        },
+        {
+          "question": "如果狗狗吃了药物我应该催吐吗？",
+          "answer": "如果误食后 30 分钟内且狗狗清醒，可能建议催吐。但是，以下情况不要催吐：腐蚀性物质，如果狗狗已经出现症状（癫痫、共济失调），或药物被迅速吸收。致电 ASPCA 毒物控制中心 (888) 426-4435 报告药物名称、规格和估计吞服药片数。"
+        },
+        {
+          "question": "狗狗药物中毒如何治疗？",
+          "answer": "治疗取决于药物：(1) 催吐 + 活性炭（如果早期），(2) 静脉输液促进排泄，(3) 胃保护剂（奥美拉唑、硫糖铝）用于非甾体抗炎药，(4) N-乙酰半胱氨酸用于对乙酰氨基酚，(5) 赛庚啶用于 5-羟色胺综合征，(6) 脂肪乳剂治疗用于脂溶性药物。住院 24-72 小时是典型的重大误食处理。"
+        }
+      ],
+      "vetDecision": {
+        "emergency": [
+          "任何量的：抗抑郁药过量、ADHD 药物、胰岛素、心脏药物",
+          "误食后呕吐、震颤或癫痫发作",
+          "狗狗虚脱或无法反应",
+          "超过任何药物毒性剂量 2-3 倍"
+        ],
+        "urgent": [
+          "小剂量（1-2 片）布洛芬或对乙酰氨基酚",
+          "任何剂量的维生素 D、钙或铁补充剂",
+          "狗狗清醒但吞下不明药片",
+          "误食药物后轻度呕吐"
+        ],
+        "monitor": [
+          "亚毒性剂量小药片",
+          "少量摄入 4 小时后无症状",
+          "舔食皮肤外用药物（少量）",
+          "确认无毒补充剂（少量 B 族维生素）"
+        ]
+      },
+      "relatedTools": [
+        {
+          "name": "有毒食品和植物检测器",
+          "url": "/shared/toxic-checker/"
+        },
+        {
+          "name": "狗狗卡路里计算器",
+          "url": "/dog/calorie-calculator/"
+        }
+      ]
+    },
+    "ateRodenticide": {
+      "breadcrumbLabel": "误食老鼠药",
+      "meta": {
+        "title": "我的狗狗误食老鼠药：急诊指南 | petsMetrics",
+        "description": "急诊指南：灭鼠剂（老鼠药）对狗狗有剧毒。了解抗凝血型与神经毒性型、症状，以及为何必须立即治疗。ASPCA 毒物控制热线：(888) 426-4435。",
+        "keywords": "我的狗吃了老鼠药, 灭鼠剂中毒狗狗, 狗吃了老鼠药饵, 抗凝血中毒狗狗, 狗吃了溴敌隆"
+      },
+      "article": {
+        "headline": "我的狗狗误食老鼠药：急诊指南",
+        "description": "狗狗灭鼠剂中毒急诊指南：抗凝血型与神经毒性型、症状及治疗。",
+        "ogTitle": "我的狗狗误食老鼠药：急诊指南 | petsMetrics",
+        "ogDescription": "急诊指南：灭鼠剂对狗狗致命有毒。即使少量也需立即治疗。"
+      },
+      "banner": {
+        "severityLabel": "剧毒 — 危及生命，立即行动",
+        "title": "我的狗狗误食老鼠药：现在该怎么做",
+        "subtitle": "灭鼠剂是最致命的狗狗毒素之一。<strong>不要等待症状出现</strong> — 抗凝血效果会延迟2-5天才显现。立即拨打 ASPCA 毒物控制热线 <strong>(888) 426-4435</strong> 并马上前往急诊兽医。"
+      },
+      "riskAssessment": {
+        "headers": {
+          "type": "灭鼠剂类型",
+          "activeIngredient": "活性成分",
+          "riskLevel": "风险等级",
+          "actionRequired": "所需行动"
+        },
+        "rows": [
+          {
+            "type": "抗凝血型（多次剂量）",
+            "activeIngredient": "溴敌隆、溴鼠隆",
+            "riskLevel": "危急",
+            "action": "🚨 立即前往急诊兽医 — 内出血延迟发生"
+          },
+          {
+            "type": "神经毒性型",
+            "activeIngredient": "溴毒鼠磷、士的宁",
+            "riskLevel": "危急",
+            "action": "🚨 立即前往急诊兽医 — 数小时内出现抽搐"
+          },
+          {
+            "type": "胆钙化醇",
+            "activeIngredient": "维生素 D3",
+            "riskLevel": "高危",
+            "action": "🚨 立即前往急诊兽医 — 肾衰竭"
+          }
+        ]
+      },
+      "steps": [
+        {
+          "title": "第1步：这是极度紧急情况",
+          "content": "不要等待症状。抗凝血灭鼠剂在出血开始前会有2-5天的延迟。当症状出现时，损害已经造成。立即拨打 ASPCA 毒物控制热线 (888) 426-4435。"
+        },
+        {
+          "title": "第2步：带上产品包装",
+          "content": "将鼠药包装或照片带到兽医处。活性成分决定治疗方式：抗凝血剂需要维生素K1；溴毒鼠磷需要控制脑肿胀；胆钙化醇需要降钙治疗。"
+        },
+        {
+          "title": "第3步：前往急诊兽医进行解毒",
+          "content": "兽医将进行催吐（如果在1-2小时内）、给予活性炭，并开始特定解毒剂治疗。抗凝血剂：维生素K1治疗4-6周，配合凝血功能检测。"
+        },
+        {
+          "title": "第4步：可能需要住院",
+          "content": "溴毒鼠磷中毒需要24-72小时监测并使用甘露醇控制脑肿胀。抗凝血剂病例如有活动性出血需要输血浆。早期治疗可显著提高存活率。"
+        }
+      ],
+      "science": {
+        "content": "抗凝血灭鼠剂抑制维生素K环氧化物还原酶（VKOR），阻止维生素K的回收。这导致活性凝血因子（II、VII、IX、X）耗竭，引起自发性出血。第二代抗凝血剂（溴敌隆、溴鼠隆）比华法林效力强100倍，并在肝脏中存留数周。溴毒鼠磷解除脑细胞中的氧化磷酸化偶联，导致脑水肿和颅内压升高。胆钙化醇（维生素D3）引起高钙血症，导致肾脏、心脏和血管的异位钙化（ASPCA，2023）。"
+      },
+      "faqs": [
+        {
+          "question": "老鼠药对狗狗致命吗？",
+          "answer": "是的，老鼠药（灭鼠剂）是对狗狗最致命的毒素之一。主要有两种类型：(1) 抗凝血灭鼠剂（华法林、溴鼠隆、溴敌隆）— 阻止凝血，导致致命内出血。单剂量型需要一次进食；多剂量型会累积。(2) 神经毒性灭鼠剂（溴毒鼠磷、士的宁、胆钙化醇）— 在数小时内引起脑肿胀、抽搐或高钙血症。未经治疗，死亡率50-90%。"
+        },
+        {
+          "question": "狗狗老鼠药中毒的症状是什么？",
+          "answer": "抗凝血型症状在食入后2-5天出现：虚弱、牙龈苍白、咳血、血性呕吐/腹泻、鼻出血和虚脱。神经毒性（溴毒鼠磷）症状在2-24小时内出现：严重肌肉震颤、抽搐、共济失调和瘫痪。胆钙化醇在12-36小时内引起肾衰竭，表现为口渴/排尿增加。"
+        },
+        {
+          "question": "我的狗狗能存活下来吗？",
+          "answer": "是的，经过及时治疗可以存活。抗凝血剂中毒可用维生素K1治疗4-6周；如症状出现前治疗，存活率80-90%。溴毒鼠磷无解毒剂 — 治疗为支持性护理（活性炭、甘露醇控制脑肿胀），早期治疗存活率50-70%。士的宁和胆钙化醇也需要立即兽医干预。"
+        },
+        {
+          "question": "如果我的狗狗吃了老鼠药该怎么办？",
+          "answer": "将此视为紧急情况：(1) 立即拨打 ASPCA 毒物控制热线 (888) 426-4435。(2) 立即前往最近的急诊兽医 — 不要等待症状。(3) 带上产品标签以识别活性成分。(4) 1-2小时内催吐可能有助于防止吸收。(5) 即使狗狗看起来没事，延迟症状也很常见，早期治疗能挽救生命。"
+        }
+      ],
+      "relatedTools": [
+        {
+          "name": "有毒食品和植物检测器",
+          "url": "/shared/toxic-checker/"
+        },
+        {
+          "name": "狗狗卡路里计算器",
+          "url": "/dog/calorie-calculator/"
+        }
+      ]
+    },
+    "ateTobacco": {
+      "breadcrumbLabel": "误食烟草",
+      "meta": {
+        "title": "我的狗狗误食烟草/香烟：急诊指南 | petsMetrics",
+        "description": "急诊指南：烟草、香烟和电子烟液中的尼古丁对狗狗剧毒。了解症状（呕吐、心动过速、抽搐）、毒性剂量和紧急措施。ASPCA 毒物控制热线：(888) 426-4435。",
+        "keywords": "我的狗吃了香烟, 狗吃了尼古丁, 狗吃了电子烟液, 烟草中毒狗狗, 狗吃了烟头"
+      },
+      "article": {
+        "headline": "我的狗狗误食烟草/香烟：急诊指南",
+        "description": "狗狗尼古丁中毒急诊指南：香烟、电子烟液、尼古丁口香糖和贴片。",
+        "ogTitle": "我的狗狗误食烟草：急诊指南 | petsMetrics",
+        "ogDescription": "急诊指南：尼古丁对狗狗有毒。评估风险、症状和治疗。"
+      },
+      "banner": {
+        "severityLabel": "有毒 — 尼古丁迅速被吸收",
+        "title": "我的狗狗误食烟草/香烟：现在该怎么做",
+        "subtitle": "尼古丁在20-100mg/kg剂量下对狗狗剧毒。电子烟液因高浓度尤其危险。立即拨打 ASPCA 毒物控制热线 <strong>(888) 426-4435</strong>。"
+      },
+      "riskAssessment": {
+        "headers": {
+          "source": "尼古丁来源",
+          "amount": "数量",
+          "riskLevel": "风险等级",
+          "actionRequired": "所需行动"
+        },
+        "rows": [
+          {
+            "source": "电子烟液（任何量）",
+            "amount": "甚至几滴",
+            "riskLevel": "危急",
+            "action": "🚨 立即前往急诊兽医 — 浓度极高"
+          },
+          {
+            "source": "尼古丁贴片",
+            "amount": "1+贴片",
+            "riskLevel": "高危",
+            "action": "🚨 立即前往急诊兽医 — 缓释型"
+          },
+          {
+            "source": "香烟（1-2支）",
+            "amount": "总计10-30mg",
+            "riskLevel": "中等",
+            "action": "📞 致电兽医或毒物控制中心"
+          }
+        ]
+      },
+      "steps": [
+        {
+          "title": "第1步：计算尼古丁总量",
+          "content": "数清消耗的香烟/包数。香烟：每支10-15mg。电子烟液：查看mg/mL浓度 × 消耗的毫升数。这决定了毒性风险。"
+        },
+        {
+          "title": "第2步：立即致电毒物控制中心",
+          "content": "📞 <strong>ASPCA 毒物控制中心：</strong>(888) 426-4435。尼古丁通过口腔黏膜迅速吸收 — 15分钟内可能开始出现症状。"
+        },
+        {
+          "title": "第3步：如有症状不要催吐",
+          "content": "⚠️ 如果狗狗出现震颤、抽搐或躁动，催吐有误吸风险。只有在专业人士指示且狗狗在15分钟内无症状时才催吐。"
+        },
+        {
+          "title": "第4步：前往急诊兽医进行监测",
+          "content": "兽医将给予活性炭、静脉输液，并监测心律和呼吸功能。症状可能迅速恶化。"
+        }
+      ],
+      "science": {
+        "content": "尼古丁是一种生物碱，与自主神经节、神经肌肉接头和中枢神经系统中的烟碱型乙酰胆碱受体（nAChR）结合。低剂量时刺激受体引起心动过速、高血压和 CNS 兴奋。高剂量时引起受体去极化阻滞，导致心动过缓、呼吸麻痹和昏迷。双相效应（先兴奋后抑制）是特征性表现。狗主要通过肝N-氧化代谢尼古丁，半衰期约1.5小时。电子烟液极其危险，因为1ML可含3-24mg尼古丁，通过口腔黏膜迅速吸收（ASPCA，2023）。"
+      },
+      "faqs": [
+        {
+          "question": "多少尼古丁对狗狗有毒？",
+          "answer": "狗的尼古丁毒性剂量为20-100mg/kg。对于20公斤的狗，相当于400-2000mg尼古丁。来源：1支香烟=10-15mg尼古丁，1个烟头=5-7mg，尼古丁贴片=8-21mg，尼古丁口香糖=2-4mg，电子烟液=3-24mg/mL（高浓度）。甚至一支香烟就能在小狗中引起症状。"
+        },
+        {
+          "question": "狗狗尼古丁中毒的症状是什么？",
+          "answer": "症状在15-60分钟内出现：流涎过多、呕吐、心动过速（心率加快）、肌肉震颤、躁动和高血压。随着毒性进展：心动过缓（心率减慢）、虚弱、虚脱、呼吸麻痹和抽搐。双相效应 — 先兴奋后抑制 — 是尼古丁中毒的特征。"
+        },
+        {
+          "question": "电子烟液对狗狗危险吗？",
+          "answer": "是的，电子烟液（烟油）因尼古丁浓度高而极其危险。仅10mL一瓶就含30-240mg尼古丁 — 足以毒死多只小狗。甜味香料也吸引狗狗。即使摄入少量也需要急诊兽医治疗。"
+        },
+        {
+          "question": "如果我的狗狗吃了烟草该怎么办？",
+          "answer": "立即拨打 ASPCA 毒物控制中心 (888) 426-4435。计算摄入的尼古丁总量：每件毫克数 × 件数。如果狗狗摄入以下情况，请前往急诊兽医：(1) 超过1支香烟，(2) 任何电子烟液，(3) 尼古丁贴片，或 (4) 如果狗狗出现症状的任何量。如果有抽搐或震颤，请勿催吐。"
+        }
+      ],
+      "relatedTools": [
+        {
+          "name": "有毒食品和植物检测器",
+          "url": "/shared/toxic-checker/"
+        },
+        {
+          "name": "狗狗卡路里计算器",
+          "url": "/dog/calorie-calculator/"
+        }
+      ]
+    },
+    "ateMarijuana": {
+      "breadcrumbLabel": "误食大麻",
+      "meta": {
+        "title": "我的狗狗误食大麻/食用品：急诊指南 | petsMetrics",
+        "description": "急诊指南：THC对狗狗有毒。大麻食用品（软糖、布朗尼）因高THC浓度和巧克力成分极其危险。了解症状和紧急措施。ASPCA 毒物控制热线：(888) 426-4435。",
+        "keywords": "我的狗吃了大麻食用品, 狗吃了THC, 狗吃了大麻, 大麻中毒狗狗, 狗吃了大麻软糖"
+      },
+      "article": {
+        "headline": "我的狗狗误食大麻/食用品：急诊指南",
+        "description": "狗狗THC中毒急诊指南：大麻食用品、症状和治疗。",
+        "ogTitle": "我的狗狗误食大麻：急诊指南 | petsMetrics",
+        "ogDescription": "急诊指南：大麻食用品对狗狗有毒。请立即行动。"
+      },
+      "banner": {
+        "severityLabel": "危险 — 大麻食用品剧毒",
+        "title": "我的狗狗误食大麻/食用品：现在该怎么做",
+        "subtitle": "狗对THC比人类更敏感。食用品（软糖、布朗尼）因高浓度尤其危险。请拨打 ASPCA 毒物控制热线 <strong>(888) 426-4435</strong>。"
+      },
+      "honestySection": {
+        "title": "📋 重要提示：请对兽医坦诚相告",
+        "content": "兽医<strong>必须治疗而非报告</strong>宠物中毒事件。提供大麻摄入的准确信息可确保狗狗得到适当护理，避免不必要的检测。您的坦诚受到保护，有助于挽救狗狗的生命。"
+      },
+      "riskAssessment": {
+        "headers": {
+          "productType": "产品类型",
+          "amountEaten": "摄入量",
+          "riskLevel": "风险等级",
+          "actionRequired": "所需行动"
+        },
+        "rows": [
+          {
+            "productType": "食用品（软糖、布朗尼）",
+            "amountEaten": "任何量",
+            "riskLevel": "高危",
+            "action": "🚨 立即前往急诊兽医 — 高THC + 巧克力"
+          },
+          {
+            "productType": "干燥大麻",
+            "amountEaten": "> 1克",
+            "riskLevel": "中等",
+            "action": "📞 致电兽医或毒物控制中心"
+          },
+          {
+            "productType": "CBD产品",
+            "amountEaten": "任何量（检查是否含木糖醇！）",
+            "riskLevel": "检查成分",
+            "action": "📞 可能也含木糖醇 — 致电兽医"
+          }
+        ]
+      },
+      "steps": [
+        {
+          "title": "第1步：清除所有剩余产品",
+          "content": "查看包装 — 记录每块THC含量（mg）和食用总数。这决定了毒性风险。"
+        },
+        {
+          "title": "第2步：检查CBD产品是否含木糖醇",
+          "content": "⚠️ 某些CBD油含有木糖醇，对狗狗剧毒。请立即检查成分表。"
+        },
+        {
+          "title": "第3步：致电毒物控制中心或兽医",
+          "content": "📞 <strong>ASPCA 毒物控制中心：</strong>(888) 426-4435。请坦诚告知 — 他们会不带偏见地提供指导。"
+        },
+        {
+          "title": "第4步：监测症状",
+          "content": "观察：步履蹒跚、瞳孔放大、小便失禁、流涎、心率减慢、体温过低。严重者可出现抽搐或昏迷。症状可持续12-72小时。"
+        }
+      ],
+      "science": {
+        "content": "Delta-9-四氢大麻酚（THC）与狗狗中枢神经系统中的CB1大麻素受体结合。狗的小脑（负责协调）和脑干中的CB1受体密度比人类高，解释了它们的高度敏感性。THC是亲脂性的，经历肝肠循环，延长了效应。食用品危险是因为胃肠道迅速吸收THC，肝脏将其转化为11-羟基-THC，后者精神活性强5倍。大多数病例为支持性治疗 — 没有特异性解毒剂，但静脉脂肪乳疗法可加速THC清除（ASPCA，2023）。"
+      },
+      "faqs": [
+        {
+          "question": "大麻对狗狗有毒吗？",
+          "answer": "是的，THC（四氢大麻酚）对狗狗有毒。狗的大脑中大麻素受体（CB1）比人类多，使其显著更敏感。食用品（软糖、布朗尼、饼干）因THC浓度高尤其危险 — 一粒软糖可含10-100mg THC，对大多数狗有毒。"
+        },
+        {
+          "question": "狗狗大麻中毒的症状是什么？",
+          "answer": "症状在30-90分钟内出现：恍惚状态、步态不稳/共济失调、小便失禁（滴尿）、流涎、瞳孔放大、呕吐、震颤、心动过缓（心率慢）、体温过低，严重者：抽搐或昏迷。请对兽医坦诚 — 大麻中毒很少致命，坦诚可确保正确治疗。"
+        },
+        {
+          "question": "大麻食用品比干燥大麻更危险吗？",
+          "answer": "是的，食用品显著更危险：(1) THC浓度高（每件10-100mg），(2) 通常含巧克力（双重毒性），(3) 胃肠道吸收更快，(4) 狗快速多吃多件。食用品占狗大麻中毒重症病例的大多数。"
+        },
+        {
+          "question": "狗狗吃大麻会死吗？",
+          "answer": "大麻本身在狗中很少致死 — LD50非常高（超过3g/kg THC）。但食用品构成额外风险：巧克力毒性、某些CBD产品中的木糖醇、多食过量。死亡更可能来自并发症（吸入性肺炎、体温过低）或合并毒素。始终寻求兽医护理。"
+        },
+        {
+          "question": "我应该告诉兽医我的狗吃了大麻吗？",
+          "answer": "是的，始终坦诚。兽医被要求治疗而非报告宠物中毒。知道您的狗吃大麻可确保提供适当护理：催吐（如果早期）、活性炭、静脉输液、体温调节和心率监测。没有此信息，您的狗可能接受不必要检查或不当治疗。"
+        }
+      ],
+      "relatedTools": [
+        {
+          "name": "有毒食品和植物检测器",
+          "url": "/shared/toxic-checker/"
+        },
+        {
+          "name": "狗狗卡路里计算器",
+          "url": "/dog/calorie-calculator/"
+        }
+      ]
+    },
+    "ateXylitolGum": {
+      "breadcrumbLabel": "误食木糖醇口香糖",
+      "meta": {
+        "title": "我的狗狗误食木糖醇口香糖：急诊指南 | petsMetrics",
+        "description": "急诊指南：木糖醇（桦树糖）对狗狗剧毒。甚至一片口香糖就可引起危及生命的低血糖和肝衰竭。了解症状和紧急措施。ASPCA 毒物控制热线：(888) 426-4435。",
+        "keywords": "我的狗吃了木糖醇口香糖, 木糖醇中毒狗狗, 狗吃了无糖口香糖, 木糖醇对狗有毒, 狗吃了桦树糖"
+      },
+      "article": {
+        "headline": "我的狗狗误食木糖醇口香糖：急诊指南",
+        "description": "狗狗木糖醇中毒急诊指南：低血糖、肝衰竭和挽救生命的治疗。",
+        "ogTitle": "我的狗狗误食木糖醇口香糖：急诊指南 | petsMetrics",
+        "ogDescription": "急诊指南：木糖醇引起狗狗致命性低血糖和肝衰竭。请立即行动。"
+      },
+      "banner": {
+        "severityLabel": "剧毒 — 危及生命，一片即可致命",
+        "title": "我的狗狗误食木糖醇口香糖：现在该怎么做",
+        "subtitle": "木糖醇引发大量胰岛素释放，导致危及生命的低血糖和肝衰竭。<strong>一片口香糖就能杀死一只小狗。</strong>立即前往急诊兽医。"
+      },
+      "riskAssessment": {
+        "headers": {
+          "amountEaten": "摄入量",
+          "xylitolContent": "木糖醇含量",
+          "riskLevel": "风险等级",
+          "actionRequired": "所需行动"
+        },
+        "rows": [
+          {
+            "amountEaten": "> 0.1g/kg",
+            "xylitolContent": "1+片",
+            "riskLevel": "危急",
+            "action": "🚨 立即前往急诊兽医 — 致命低血糖"
+          },
+          {
+            "amountEaten": "> 0.5g/kg",
+            "xylitolContent": "2+片",
+            "riskLevel": "危急",
+            "action": "🚨 立即前往急诊兽医 — 肝衰竭"
+          },
+          {
+            "amountEaten": "任何量",
+            "xylitolContent": "可见口香糖/包装",
+            "riskLevel": "致电兽医",
+            "action": "📞 立即致电 — 不要等待"
+          }
+        ]
+      },
+      "steps": [
+        {
+          "title": "第1步：计算摄入的木糖醇总量",
+          "content": "找到包装。木糖醇含量以克/片标注。计算：克/片 × 食用片数。这决定了是否跨越低血糖风险（0.1g/kg）或肝衰竭风险（0.5g/kg）阈值。"
+        },
+        {
+          "title": "第2步：致电毒物控制中心并前往急诊兽医",
+          "content": "📞 <strong>ASPCA 毒物控制中心：</strong>(888) 426-4435。不要等待症状 — 低血糖可在数小时内致死。木糖醇被迅速吸收。"
+        },
+        {
+          "title": "第3步：未经兽医批准不要催吐",
+          "content": "⚠️ 如果被指示在家催吐，使用过氧化氢（每5磅1茶匙）。但尽快去兽医处 — 木糖醇可能需要静脉注射葡萄糖预防低血糖。"
+        },
+        {
+          "title": "第4步：做好住院准备",
+          "content": "兽医将：催吐（如果早期）、给予活性炭、开始静脉注射葡萄糖、监测血糖24小时。肝酶将检查72小时。早期治疗存活率80%以上。"
+        }
+      ],
+      "science": {
+        "content": "木糖醇是一种糖醇（多元醇），引发犬胰β细胞快速、过度的胰岛素释放 — 比葡萄糖释放量多6-7倍。这是因为狗通过相同途径代谢木糖醇和葡萄糖，但动力学不同。由此导致的低血糖（血糖<60mg/dL）引起神经功能障碍、抽搐和死亡。高剂量（>0.5g/kg）时，木糖醇通过ATP耗竭和氧化应激引起急性肝坏死。该机制是剂量依赖性的，狗特有 — 猫似乎较不易感（ASPCA，2023）。"
+      },
+      "faqs": [
+        {
+          "question": "多少木糖醇对狗狗有毒？",
+          "answer": "木糖醇在低至0.1g/kg剂量时对狗引起低血糖，0.5g/kg时引起肝衰竭。一片无糖口香糖可含0.3-1.0g木糖醇 — 意味着一片就能在中型犬中引起严重低血糖。即使极少量也需要急诊治疗。"
+        },
+        {
+          "question": "狗狗木糖醇中毒的症状是什么？",
+          "answer": "症状在10-60分钟内出现（有时延迟12小时）：呕吐、嗜睡、虚弱、虚脱、震颤、抽搐和昏迷 — 这些由低血糖（低血糖症）引起。肝衰竭症状（黄疸、凝血障碍）可能延迟12-72小时。即使少量也会导致危险的低血糖。"
+        },
+        {
+          "question": "为什么木糖醇对狗有毒但对人无毒？",
+          "answer": "在狗中，木糖醇被迅速吸收并引发胰腺大量胰岛素释放 — 比葡萄糖多6-7倍。这导致严重低血糖。人类没有这种胰岛素反应。此外，木糖醇通过狗特有的机制引起剂量依赖性肝细胞坏死。"
+        },
+        {
+          "question": "哪些产品含木糖醇？",
+          "answer": "木糖醇存在于：无糖口香糖、薄荷糖、花生酱（某些品牌）、牙膏、漱口水、鼻腔喷雾、咀嚼维生素、烘焙食品、冰淇淋和作为甜味剂出售的\"桦树糖\"。某些品牌：Trident、Orbit、Ice Breakers、Eclipse。给狗吃人类食物前务必检查成分表。"
+        },
+        {
+          "question": "狗狗木糖醇中毒能存活吗？",
+          "answer": "是的，经及时治疗可存活。如果30分钟内发现，催吐可防止吸收。如果低血糖已开始，静脉注射葡萄糖纠正血糖。即使有肝损伤，积极住院护理（静脉输液、肝保护剂、血浆输注）在治疗8小时内开始时存活率70-80%。延迟治疗预后较差。"
+        }
+      ],
+      "relatedTools": [
+        {
+          "name": "有毒食品和植物检测器",
+          "url": "/shared/toxic-checker/"
+        },
+        {
+          "name": "狗狗卡路里计算器",
+          "url": "/dog/calorie-calculator/"
+        }
+      ]
+    },
+    "ateChocolate": {
+      "breadcrumbLabel": "误食巧克力",
+      "meta": {
+        "title": "我的狗狗误食巧克力：现在该怎么做 | petsMetrics",
+        "description": "急诊指南：狗狗误食巧克力怎么办。了解毒性水平、症状时间线以及何时联系兽医。ASPCA 毒物控制热线：(888) 426-4435。",
+        "keywords": "我的狗吃了巧克力怎么办, 巧克力对狗有毒, 狗狗巧克力中毒, 狗吃了巧克力急诊, 狗狗巧克力毒性"
+      },
+      "article": {
+        "headline": "我的狗狗误食巧克力：现在该怎么做",
+        "description": "狗狗巧克力中毒急诊指南：症状、治疗和预防。",
+        "ogTitle": "我的狗狗误食巧克力：现在该怎么做 | petsMetrics",
+        "ogDescription": "如果您的狗狗误食巧克力该怎么办。毒性水平、症状时间线以及何时联系兽医。"
+      },
+      "banner": {
+        "severityLabel": "有毒 — 需要立即兽医护理",
+        "title": "我的狗狗误食巧克力：现在该怎么做",
+        "subtitle": "巧克力含有可可碱，狗狗无法有效代谢。立即行动至关重要 — 请立即致电兽医或 ASPCA 毒物控制中心 <strong>(888) 426-4435</strong>。"
+      },
+      "riskAssessment": {
+        "headers": {
+          "theobromine": "可可碱含量"
+        },
+        "rows": [
+          {
+            "type": "白巧克力",
+            "level": "极低（0.25 毫克/盎司）",
+            "risk": "低（但脂肪高）"
+          },
+          {
+            "type": "牛奶巧克力",
+            "level": "44-60 毫克/盎司",
+            "risk": "中等"
+          },
+          {
+            "type": "黑巧克力",
+            "level": "130-450 毫克/盎司",
+            "risk": "高"
+          },
+          {
+            "type": "烘焙巧克力",
+            "level": "390-450 毫克/盎司",
+            "risk": "严重"
+          }
+        ]
+      },
+      "steps": [
+        {
+          "title": "立即寻求帮助",
+          "content": "致电 ASPCA 动物毒物控制中心 <strong>(888) 426-4435</strong> 或前往最近的急诊兽医。时间至关重要 — 不要等待症状出现。"
+        },
+        {
+          "title": "收集信息",
+          "content": "记录巧克力类型（牛奶巧克力、黑巧克力、烘焙巧克力）、估计食入量和狗狗的体重。这有助于兽医评估毒性风险。"
+        },
+        {
+          "title": "未经兽医批准请勿催吐",
+          "content": "催吐可能导致吸入性肺炎或使情况恶化。仅在兽医明确指示下进行。"
+        },
+        {
+          "title": "密切观察症状",
+          "content": "观察呕吐、腹泻、躁动、口渴加剧、呼吸急促和癫痫发作。症状可能在 2-4 小时内出现。"
+        }
+      ],
+      "science": {
+        "content": "巧克力含有可可碱和咖啡因，这两种甲基黄嘌呤类物质在狗狗体内的代谢速度比人类慢得多。人类用 2-3 小时即可清除可可碱，而狗狗需要 17.5 小时以上。这导致有毒物质在其体内积累。可可碱影响中枢神经系统、心血管系统和平滑肌。高剂量时会引起癫痫发作、心律失常，甚至死亡（ASPCA，2023）。"
+      },
+      "faqs": [
+        {
+          "question": "多少巧克力对狗狗有毒？",
+          "answer": "毒性取决于巧克力类型和狗狗体重。牛奶巧克力约在每磅体重 0.5 盎司时达到有毒水平。黑巧克力毒性强 2-3 倍。烘焙巧克力最危险 — 仅需每磅体重 0.1 盎司即可致命。请使用我们的毒性计算器评估狗狗的具体风险。"
+        },
+        {
+          "question": "狗狗吃了巧克力后多久会出现症状？",
+          "answer": "症状通常在 2-4 小时内出现，但也可能延迟长达 12 小时。早期症状包括呕吐、腹泻和躁动。严重症状（癫痫发作、心跳不规则）可能在食入后 6-12 小时出现。可可碱被缓慢吸收，因此症状可能随时间恶化。"
+        },
+        {
+          "question": "狗狗会死于巧克力中毒吗？",
+          "answer": "是的，巧克力可能对狗狗致命。可可碱的致死剂量约为每公斤体重 100-500 毫克。对于 20 公斤（44 磅）的狗，大约相当于 200 克牛奶巧克力或 100 克黑巧克力。立即接受兽医治疗可显著提高存活率。"
+        }
+      ],
+      "relatedTools": [
+        {
+          "name": "有毒食品和植物检测器",
+          "url": "/shared/toxic-checker/"
+        },
+        {
+          "name": "狗狗卡路里计算器",
+          "url": "/dog/calorie-calculator/"
+        }
+      ]
+    },
+    "ateGrapes": {
+      "breadcrumbLabel": "误食葡萄",
+      "meta": {
+        "title": "我的狗狗误食葡萄：现在该怎么办？ | petsMetrics",
+        "description": "急诊指南：狗狗误食葡萄或葡萄干怎么办。了解急性肾损伤风险、症状时间线和紧急处理步骤。",
+        "keywords": "我的狗吃了葡萄怎么办, 葡萄对狗有毒, 狗吃了葡萄急诊, 葡萄干对狗有毒, 狗葡萄中毒"
+      },
+      "article": {
+        "headline": "我的狗狗误食葡萄：现在该怎么办？",
+        "description": "狗狗葡萄和葡萄干中毒急诊指南：症状、治疗和预防。",
+        "ogTitle": "我的狗狗误食葡萄：现在该怎么办？ | petsMetrics",
+        "ogDescription": "如果您的狗狗吃了葡萄或葡萄干该怎么办。肾损伤风险和紧急处理步骤。"
+      },
+      "banner": {
+        "severityLabel": "有毒 — 需要立即兽医护理",
+        "title": "我的狗狗误食葡萄：现在该怎么办？",
+        "subtitle": "葡萄和葡萄干可导致狗狗急性肾衰竭。即使少量也很危险 — 请立即致电兽医或 ASPCA 毒物控制中心 <strong>(888) 426-4435</strong>。"
+      },
+      "steps": [
+        {
+          "title": "立即致电兽医",
+          "content": "立即联系您的兽医或 ASPCA 毒物控制中心 <strong>(888) 426-4435</strong>。不要等待症状出现。"
+        },
+        {
+          "title": "记录食入量",
+          "content": "记录狗狗吃了多少颗葡萄或葡萄干以及它的体重。这有助于确定毒性风险。"
+        },
+        {
+          "title": "兽医可能会催吐",
+          "content": "如果食入时间较短（2 小时内），兽医可能会催吐或给予活性炭以阻止吸收。"
+        },
+        {
+          "title": "监测 72 小时",
+          "content": "肾损伤可能不会立即出现症状。观察呕吐、嗜睡、尿量减少和食欲不振。"
+        }
+      ],
+      "science": {
+        "content": "葡萄和葡萄干中确切的毒性成分仍未确定，但酒石酸是主要嫌疑物。该化合物会导致肾小管急性坏死，引发快速肾衰竭。毒剂量不可预测 — 有些狗仅吃几颗葡萄就出现肾衰竭，而另一些狗耐受更多。这种不可预测性使任何食入都成为医疗急症（ASPCA，2023）。"
+      },
+      "faqs": [
+        {
+          "question": "多少葡萄对狗狗有毒？",
+          "answer": "确切的毒剂量尚未确定，但仅 1-2 颗葡萄就可能导致某些狗狗肾衰竭。葡萄干浓度更高，因此更危险。目前没有已知的安全剂量 — 任何食入都应作为急症处理。"
+        },
+        {
+          "question": "狗狗吃了葡萄后多久出现症状？",
+          "answer": "呕吐和腹泻通常在 6-12 小时内开始。肾衰竭迹象（尿量减少、嗜睡、食欲不振）可能直到食入后 24-72 小时才出现。尽早接受兽医治疗至关重要。"
+        },
+        {
+          "question": "为什么葡萄对狗狗有毒？",
+          "answer": "确切的毒性机制仍未知。酒石酸是疑似毒素，其浓度因葡萄品种而异。这种不可预测性使任何葡萄食入都潜在危险。"
+        }
+      ],
+      "relatedTools": [
+        {
+          "name": "有毒食品和植物检测器",
+          "url": "/shared/toxic-checker/"
+        },
+        {
+          "name": "狗狗卡路里计算器",
+          "url": "/dog/calorie-calculator/"
+        }
+      ]
+    },
+    "ateXylitol": {
+      "breadcrumbLabel": "误食木糖醇",
+      "meta": {
+        "title": "狗狗误食木糖醇：立即该怎么做 | petsMetrics",
+        "description": "急诊指南：木糖醇（桦树糖）对狗狗的毒性。了解快速低血糖、肝衰竭风险和挽救生命的治疗步骤。",
+        "keywords": "狗吃了木糖醇怎么办, 木糖醇中毒狗狗, 木糖醇对狗的毒性, 狗吃了口香糖急诊, 桦树糖对狗有毒"
+      },
+      "article": {
+        "headline": "狗狗误食木糖醇：立即该怎么做",
+        "description": "狗狗木糖醇中毒急诊指南：症状、治疗和预防。",
+        "ogTitle": "狗狗误食木糖醇：立即该怎么做 | petsMetrics",
+        "ogDescription": "如果您的狗狗吃了木糖醇该怎么办。快速低血糖和肝衰竭风险。"
+      },
+      "banner": {
+        "severityLabel": "剧毒 — 需要立即兽医护理",
+        "title": "狗狗误食木糖醇：立即该怎么做",
+        "subtitle": "木糖醇引起快速低血糖并可能导致肝衰竭。即使微量也可危及生命 — 请立即致电兽医或 ASPCA 毒物控制中心 <strong>(888) 426-4435</strong>。"
+      },
+      "steps": [
+        {
+          "title": "立即致电兽医",
+          "content": "木糖醇作用迅速。立即联系您的兽医或 ASPCA 毒物控制中心 <strong>(888) 426-4435</strong> — 不要等待症状。"
+        },
+        {
+          "title": "检查产品标签",
+          "content": "找到木糖醇含量（以克计）并计算狗狗的接触量。注意：可能标注为「桦树糖」。"
+        },
+        {
+          "title": "立即前往兽医处",
+          "content": "兽医可能会催吐（如果食入在 1 小时内）、开始静脉注射葡萄糖，并监测肝酶 72 小时。"
+        },
+        {
+          "title": "不要等待症状",
+          "content": "等到症状出现（呕吐、嗜睡、癫痫发作）时，治疗效果可能较差。早期干预可挽救生命。"
+        }
+      ],
+      "science": {
+        "content": "木糖醇是一种糖醇，会触发狗狗胰腺快速、大量地释放胰岛素。这导致血糖在 10-30 分钟内急剧下降。高剂量时，木糖醇会通过尚未完全明确的机制引起急性肝坏死。与人体不同，狗会迅速吸收木糖醇，身体误将其视为真正的糖分，从而触发这种危险的胰岛素反应（ASPCA，2023）。"
+      },
+      "faqs": [
+        {
+          "question": "多少木糖醇对狗狗有毒？",
+          "answer": "仅需每公斤体重 0.1 克木糖醇即可引起低血糖（血糖过低）。剂量超过每公斤 0.5 克可导致急性肝衰竭。一片无糖口香糖可含 0.3-1 克木糖醇 — 对小狗可能致命。"
+        },
+        {
+          "question": "木糖醇影响狗狗的速度有多快？",
+          "answer": "低血糖可在食入后 10-30 分钟内发生。肝损伤可能在 8-12 小时后显现。快速治疗至关重要 — 不要等待症状。"
+        },
+        {
+          "question": "木糖醇存在于哪些产品中？",
+          "answer": "木糖醇存在于无糖口香糖、糖果、烘焙食品、花生酱、牙膏、漱口水和某些药物中。请始终检查标签 — 可能标注为「桦树糖」或「木糖醇」。"
+        }
+      ],
+      "relatedTools": [
+        {
+          "name": "有毒食品和植物检测器",
+          "url": "/shared/toxic-checker/"
+        },
+        {
+          "name": "狗狗卡路里计算器",
+          "url": "/dog/calorie-calculator/"
+        }
+      ]
+    },
+    "ateOnion": {
+      "breadcrumbLabel": "误食洋葱",
+      "meta": {
+        "title": "狗狗误食洋葱：现在该怎么做 | petsMetrics",
+        "description": "急诊指南：狗狗误食洋葱怎么办。了解溶血性贫血风险、症状时间线和治疗步骤。所有形态的洋葱均有毒。",
+        "keywords": "狗吃了洋葱怎么办, 洋葱中毒狗狗, 洋葱对狗有毒, 狗吃了洋葱急诊, 洋葱对狗有毒吗"
+      },
+      "article": {
+        "headline": "狗狗误食洋葱：现在该怎么做",
+        "description": "狗狗洋葱中毒急诊指南：症状、治疗和预防。",
+        "ogTitle": "狗狗误食洋葱：现在该怎么做 | petsMetrics",
+        "ogDescription": "如果您的狗狗吃了洋葱该怎么办。溶血性贫血风险和治疗步骤。"
+      },
+      "banner": {
+        "severityLabel": "有毒 — 需要兽医护理",
+        "title": "狗狗误食洋葱：现在该怎么做",
+        "subtitle": "洋葱通过破坏红细胞导致狗狗溶血性贫血。所有形态均有毒 — 请致电兽医或 ASPCA 毒物控制中心 <strong>(888) 426-4435</strong>。"
+      },
+      "steps": [
+        {
+          "title": "致电兽医",
+          "content": "联系您的兽医或 ASPCA 毒物控制中心 <strong>(888) 426-4435</strong>。记录食入的洋葱量和类型。"
+        },
+        {
+          "title": "兽医可能会催吐",
+          "content": "如果食入时间较短（2 小时内），兽医可能会催吐以阻止硫代硫酸盐化合物的进一步吸收。"
+        },
+        {
+          "title": "观察贫血症状",
+          "content": "在接下来 1-3 天内观察是否虚弱、牙龈苍白、呼吸急促和红褐色尿液。"
+        },
+        {
+          "title": "可能需要进行血液检查",
+          "content": "兽医可能会建议进行 CBC 血液检查以检测海因茨小体贫血，这可以确诊洋葱中毒。"
+        }
+      ],
+      "science": {
+        "content": "洋葱含有硫代硫酸盐化合物（N-丙基二硫化物），狗狗无法代谢。这些化合物对红细胞造成氧化损伤，形成海因茨小体 — 变性的血红蛋白在细胞内沉淀。然后脾脏破坏这些受损细胞，导致溶血性贫血。此过程需要 1-3 天，因此症状会延迟出现（ASPCA，2023）。"
+      },
+      "faqs": [
+        {
+          "question": "多少洋葱对狗狗有毒？",
+          "answer": "洋葱毒性约在狗狗体重的 0.5% 时发生。对于 20 公斤（44 磅）的狗，约等于 100 克（3.5 盎司）洋葱。所有形态都有毒：生的、熟的、粉末和脱水形态。洋葱粉浓度特别高且危险。"
+        },
+        {
+          "question": "狗狗吃了洋葱后多久出现症状？",
+          "answer": "症状通常在食入后 1-3 天内发展，此时红细胞逐渐被破坏。早期症状包括虚弱、牙龈苍白和红尿。严重病例可能导致虚脱并需要输血。"
+        },
+        {
+          "question": "所有洋葱种类对狗狗都有毒吗？",
+          "answer": "是的 — 所有葱属植物都有毒：洋葱、大蒜、韭菜、细香葱和青蒜。大蒜每克毒性较低，但大量仍很危险。烹饪不能降低毒性。洋葱粉是最浓缩的形态。"
+        }
+      ],
+      "relatedTools": [
+        {
+          "name": "有毒食品和植物检测器",
+          "url": "/shared/toxic-checker/"
+        },
+        {
+          "name": "狗狗卡路里计算器",
+          "url": "/dog/calorie-calculator/"
+        }
+      ]
+    },
+    "ateSock": {
+      "breadcrumbLabel": "误食袜子",
+      "meta": {
+        "title": "我的狗狗误食袜子：现在该怎么做 | petsMetrics",
+        "description": "急诊指南：狗狗吞食袜子怎么办。了解肠梗阻风险、症状以及何时需要手术。抓紧行动 — 时间很重要。",
+        "keywords": "我的小狗吃了袜子, 狗吃了袜子急诊, 狗肠梗阻, 狗吃了异物, 狗吞袜子"
+      },
+      "article": {
+        "headline": "我的狗狗误食袜子：现在该怎么做",
+        "description": "狗狗异物吞食急诊指南：症状、治疗和预防。",
+        "ogTitle": "我的狗狗误食袜子：现在该怎么做 | petsMetrics",
+        "ogDescription": "如果您的狗狗吃了袜子该怎么办。肠梗阻风险以及何时需要手术。"
+      },
+      "banner": {
+        "severityLabel": "异物 — 需要兽医护理",
+        "title": "我的小狗误食袜子：现在该怎么做",
+        "subtitle": "袜子可能导致狗狗危及生命的肠梗阻。不要等待 — 请立即联系兽医进行评估和可能的干预。"
+      },
+      "steps": [
+        {
+          "title": "立即联系兽医",
+          "content": "马上联系您的兽医。记录袜子被吃下的时间和狗狗的体型 — 这决定了紧急程度。"
+        },
+        {
+          "title": "不要催吐",
+          "content": "与毒物不同，异物吐回时可能造成更大伤害。只有在兽医明确指示下才可催吐。"
+        },
+        {
+          "title": "兽医可能通过内窥镜取出",
+          "content": "如果袜子仍在胃中（12-24 小时内），兽医可能通过内窥镜取出 — 这是一种使用摄像头和抓钳的非手术方式。"
+        },
+        {
+          "title": "观察梗阻迹象",
+          "content": "观察进食后是否呕吐、食欲不振、腹痛、嗜睡和排便困难。这些情况需要紧急手术。"
+        }
+      ],
+      "science": {
+        "content": "织物异物特别危险，因为它们可能卡在幽门括约肌（胃出口）或小肠中。一旦卡住，它们会导致完全梗阻 — 任何东西都无法通过，肠壁可能因压力而坏死（死亡）。这会导致穿孔、腹膜炎，不进行手术则会致死。幼犬和小型犬由于肠管直径最窄而风险最高（AVMA，2023）。"
+      },
+      "faqs": [
+        {
+          "question": "狗狗会自然排出袜子吗？",
+          "answer": "小袜子可能在 24-48 小时内通过消化道自然排出，但这并不保证。较大或卡住的袜子可能导致危及生命的肠梗阻。永远不要等待看它是否排出 — 请立即咨询兽医。"
+        },
+        {
+          "question": "狗狗吃了袜子后多久出现症状？",
+          "answer": "肠梗阻症状通常在 2-24 小时内出现。观察（尤其是进食后）呕吐、食欲不振、腹痛、嗜睡和排便困难。这些都是紧急信号。"
+        },
+        {
+          "question": "吞食袜子的治疗方法是什么？",
+          "answer": "治疗取决于位置和大小。您的兽医可能会催吐（如果食入在 2 小时内）、进行内窥镜检查以取出物品，或如果袜子造成梗阻则进行腹部手术。X 光和超声有助于确定最佳方案。"
+        }
+      ],
+      "relatedTools": [
+        {
+          "name": "有毒食品和植物检测器",
+          "url": "/shared/toxic-checker/"
+        },
+        {
+          "name": "狗狗卡路里计算器",
+          "url": "/dog/calorie-calculator/"
+        }
+      ]
+    },
+    "ateAntifreeze": {
+      "breadcrumbLabel": "误食防冻液",
+      "meta": {
+        "title": "狗狗误食防冻液：立即该怎么做 | petsMetrics",
+        "description": "急诊指南：狗狗饮用防冻液怎么办。了解乙二醇中毒、快速肾衰竭和狭窄的治疗窗口。立即行动。",
+        "keywords": "狗吃了防冻液怎么办, 防冻液中毒狗狗, 乙二醇毒性狗狗, 狗防冻液急诊, 防冻液狗狗治疗"
+      },
+      "article": {
+        "headline": "狗狗误食防冻液：立即该怎么做",
+        "description": "狗狗防冻液（乙二醇）中毒急诊指南：症状、治疗和预防。",
+        "ogTitle": "狗狗误食防冻液：立即该怎么做 | petsMetrics",
+        "ogDescription": "如果您的狗狗饮用了防冻液该怎么办。快速肾衰竭和狭窄的治疗窗口。"
+      },
+      "banner": {
+        "severityLabel": "剧毒 — 立即前往急诊兽医",
+        "title": "狗狗误食防冻液：立即该怎么做",
+        "subtitle": "防冻液（乙二醇）导致快速肾衰竭和死亡。仅 1 茶匙即可致命 — 请立即致电兽医或 ASPCA 毒物控制中心 <strong>(888) 426-4435</strong>。"
+      },
+      "steps": [
+        {
+          "title": "立即前往急诊兽医",
+          "content": "立即前往最近的急诊兽医。致电 ASPCA 毒物控制中心 <strong>(888) 426-4435</strong>。每分钟都至关重要。"
+        },
+        {
+          "title": "不要等待症状",
+          "content": "等到症状出现时，肾损伤可能已不可逆转。解毒剂必须在食入后 8-12 小时内给药才有效。"
+        },
+        {
+          "title": "带上容器",
+          "content": "将防冻液容器带到兽医处。这可以确认活性成分（乙二醇）和浓度。"
+        },
+        {
+          "title": "治疗窗口至关重要",
+          "content": "兽医将给予甲吡唑（4-MP）或乙醇静脉注射以阻断代谢。12 小时后，治疗效果大打折扣。"
+        }
+      ],
+      "science": {
+        "content": "乙二醇本身没有毒性 — 是肝脏产生的代谢物造成损害。醇脱氢酶将乙二醇转化为乙醇醛，然后是乙醇酸，再是草酸。草酸与钙结合形成草酸钙结晶，破坏肾组织。此过程在 12-36 小时内引起代谢性酸中毒和急性肾衰竭。解毒剂通过阻断醇脱氢酶起作用，阻止有毒代谢物形成（ASPCA，2023）。"
+      },
+      "faqs": [
+        {
+          "question": "多少防冻液对狗狗致命？",
+          "answer": "仅 1 茶匙（5ml）防冻液即可杀死一只 10 磅（4.5kg）的狗。乙二醇的致死剂量约为每公斤体重 4.4ml。这使防冻液成为对宠物最危险的家用毒物之一。"
+        },
+        {
+          "question": "防冻液杀死狗狗的速度有多快？",
+          "answer": "不治疗的话，防冻液在 12-36 小时内致命。解毒剂（甲吡唑或乙醇）必须在食入后 8-12 小时内给药才有效。一旦开始肾衰竭，存活率急剧下降。"
+        },
+        {
+          "question": "防冻液中毒的症状是什么？",
+          "answer": "第1阶段（30分钟-12小时）：醉酒行为、呕吐、癫痫发作。第2阶段（12-24小时）：表面好转（具有欺骗性）。第3阶段（24-72小时）：肾衰竭、严重嗜睡、口腔溃疡、昏迷。早期治疗至关重要。"
+        }
+      ],
+      "relatedTools": [
+        {
+          "name": "有毒食品和植物检测器",
+          "url": "/shared/toxic-checker/"
+        },
+        {
+          "name": "狗狗卡路里计算器",
+          "url": "/dog/calorie-calculator/"
+        }
+      ]
+    }
+  },
+  "catEmergency": {
+    "shared": {
+      "titles": {
+        "riskAssessment": "立即评估您的猫咪风险",
+        "whatToDo": "现在该怎么做",
+        "theScience": "科学原理",
+        "faq": "常见问题",
+        "relatedTools": "相关工具",
+        "criticalWarning": "⚠️ 紧急警告"
+      },
+      "breadcrumb": {
+        "home": "首页",
+        "catEmergency": "猫咪急诊"
+      },
+      "labels": {
+        "chocolateType": "巧克力类型",
+        "amountEaten": "食用量",
+        "riskLevel": "风险等级",
+        "actionRequired": "所需行动",
+        "onionForm": "洋葱形态",
+        "garlicForm": "大蒜形态",
+        "oilType": "精油类型",
+        "exposureRoute": "接触途径",
+        "exposureType": "暴露类型",
+        "symptomsPresent": "是否出现症状？"
+      },
+      "tools": {
+        "toxicChecker": "有毒食品和植物检测器",
+        "catBcs": "猫咪体况评分与体重追踪器",
+        "catHydration": "猫咪水分计算器"
+      }
+    },
+    "ateChocolate": {
+      "breadcrumbLabel": "误食巧克力",
+      "meta": {
+        "title": "猫咪误食巧克力：紧急指南 | petsMetrics",
+        "description": "紧急指南：巧克力对猫咪有毒（可可碱中毒）。猫咪比狗狗更敏感。了解症状、按巧克力类型划分的风险等级以及紧急处理措施。ASPCA 毒物控制热线：(888) 426-4435。",
+        "keywords": "猫咪误食巧克力怎么办, 巧克力中毒猫咪, 猫咪可可碱中毒, 猫和巧克力, 猫吃了巧克力怎么办"
+      },
+      "banner": {
+        "severityLabel": "有毒 — 猫咪比狗狗更敏感",
+        "title": "猫咪误食巧克力：现在该怎么做",
+        "subtitle": "由于猫咪代谢可可碱的速度更慢且体重更轻，巧克力对猫咪的<strong>毒性比对狗狗更强</strong>。请立即致电 ASPCA 毒物控制热线 <strong>(888) 426-4435</strong>。"
+      },
+      "article": {
+        "headline": "猫咪误食巧克力：紧急指南",
+        "description": "猫咪巧克力中毒紧急指南：可可碱中毒、症状及治疗。",
+        "ogTitle": "猫咪误食巧克力：紧急指南 | petsMetrics",
+        "ogDescription": "猫咪吃了巧克力该怎么办。"
+      },
+      "riskAssessment": {
+        "headers": [
+          "巧克力类型",
+          "食用量",
+          "风险等级",
+          "所需行动"
+        ],
+        "rows": [
+          {
+            "form": "烘焙巧克力",
+            "amount": "> 5克",
+            "risk": "危急",
+            "action": "🚨 立即送急诊兽医"
+          },
+          {
+            "form": "黑巧克力",
+            "amount": "> 10克",
+            "risk": "高",
+            "action": "🚨 立即送急诊兽医"
+          },
+          {
+            "form": "牛奶巧克力",
+            "amount": "> 20克",
+            "risk": "中等",
+            "action": "📞 立即致电兽医"
+          }
+        ]
+      },
+      "steps": [
+        {
+          "title": "第1步：立即清除所有巧克力",
+          "content": "猫咪天生好奇，但也对毒素更敏感。清除环境中残留的所有巧克力。"
+        },
+        {
+          "title": "第2步：致电毒物控制中心或兽医",
+          "content": "📞 <strong>ASPCA 毒物控制中心：</strong>(888) 426-4435。猫咪对可可碱比狗狗更敏感——少量就令人担忧。"
+        },
+        {
+          "title": "第3步：未经兽医批准请勿催吐",
+          "content": "⚠️ 猫咪可能隐藏症状直到严重。催吐有吸入风险。仅在兽医指导下进行。"
+        },
+        {
+          "title": "第4步：去兽医处进行心脏监测",
+          "content": "您的兽医可能建议催吐（如果早期）、活性炭和心电图监测以观察心律失常。"
+        }
+      ],
+      "science": {
+        "content": "巧克力含有可可碱和咖啡因——猫咪无法有效代谢的甲基黄�呤。与狗狗相比，猫肝脏中细胞色素P450酶活性降低，导致可可碱半衰期延长。这会导致中枢神经系统（癫痫发作）、心血管系统（心律失常）和平滑肌的累积效应。猫咪也是专性肉食动物，处理植物源生物碱的能力较差。体重更轻、代谢更慢、敏感性更高的组合使巧克力对猫咪的危害更大（ASPCA，2023）。"
+      },
+      "faqs": [
+        {
+          "question": "巧克力对猫咪有毒吗？",
+          "answer": "是的，巧克力对猫咪有毒——相对于体重而言，通常比狗狗更敏感。猫咪对可可碱更敏感，因为它们代谢可可碱的速度更慢。同样的毒性原理适用：可可碱和咖啡因引起中枢神经系统刺激、心律失常，并可能导致癫痫发作。"
+        },
+        {
+          "question": "为什么猫咪比狗狗更敏感？",
+          "answer": "猫咪代谢可可碱的细胞色素P450酶活性较低。狗狗需要17小时以上才能清除可可碱，而猫咪可能需要更长时间。此外，猫咪通常体重较轻（平均4-6公斤），因此相同剂量巧克力的每公斤体重比例更高。"
+        },
+        {
+          "question": "多少巧克力对猫咪有毒？",
+          "answer": "牛奶巧克力在每磅体重约0.5盎司时达到有毒水平。黑巧克力和烘焙巧克力的毒性强2-5倍。对于5公斤（11磅）的猫，仅20克牛奶巧克力（约半块标准棒）即可引起症状。烘焙巧克力在5-10克时对普通猫致命。"
+        },
+        {
+          "question": "如果猫咪吃了巧克力我该怎么办？",
+          "answer": "立即致电ASPCA毒物控制中心(888) 426-4435或您的兽医。猫咪比狗狗更敏感——即使少量也令人担忧。带上巧克力包装以识别可可碱含量。不要等待症状，因为心律失常可能突然致命。"
+        }
+      ],
+      "relatedTools": [
+        {
+          "name": "有毒食品和植物检测器",
+          "url": "/shared/toxic-checker/"
+        },
+        {
+          "name": "猫咪体况评分与体重追踪器",
+          "url": "/cat/bcs-weight-tracker/"
+        }
+      ]
+    },
+    "ateOnion": {
+      "breadcrumbLabel": "误食洋葱",
+      "meta": {
+        "title": "猫咪误食洋葱：症状和紧急指南 | petsMetrics",
+        "description": "紧急指南：洋葱会导致猫咪溶血性贫血。了解症状（牙龈苍白、无力、海因茨小体贫血）、有毒剂量以及为什么即使少量也很危险。ASPCA 毒物控制热线：(888) 426-4435。",
+        "keywords": "猫咪误食洋葱, 洋葱中毒猫咪, 洋葱对猫咪有毒, 猫吃了洋葱症状, 洋葱对猫有毒"
+      },
+      "banner": {
+        "severityLabel": "危险 — 导致溶血性贫血",
+        "title": "猫咪误食洋葱：症状和应对措施",
+        "subtitle": "洋葱对猫咪的<strong>毒性比对狗狗更强</strong>。即使少量也会导致海因茨小体溶血性贫血。请立即致电 ASPCA 毒物控制热线 <strong>(888) 426-4435</strong>。"
+      },
+      "article": {
+        "headline": "猫咪误食洋葱：症状和紧急指南",
+        "description": "猫咪洋葱中毒紧急指南：海因茨小体贫血、症状及治疗。",
+        "ogTitle": "猫咪误食洋葱：症状和紧急指南 | petsMetrics",
+        "ogDescription": "猫咪吃了洋葱该怎么办。"
+      },
+      "riskAssessment": {
+        "headers": [
+          "洋葱形态",
+          "食用量",
+          "风险等级",
+          "所需行动"
+        ],
+        "rows": [
+          {
+            "form": "洋葱粉",
+            "amount": "> 0.5克",
+            "risk": "高",
+            "action": "🚨 立即送医——浓缩形态"
+          },
+          {
+            "form": "生/熟洋葱",
+            "amount": "> 5克/千克",
+            "risk": "中等",
+            "action": "📞 今天致电兽医——症状延迟"
+          },
+          {
+            "form": "微量",
+            "amount": "< 1克",
+            "risk": "低",
+            "action": "👀 监测3-5天"
+          }
+        ]
+      },
+      "steps": [
+        {
+          "title": "第1步：记录类型和数量",
+          "content": "是生洋葱、熟洋葱、洋葱粉还是含洋葱的产品？粉末最浓缩。计算大约数量。"
+        },
+        {
+          "title": "第2步：致电兽医或毒物控制中心",
+          "content": "📞 <strong>ASPCA 毒物控制中心：</strong>(888) 426-4435。即使少量也可能导致延迟性贫血——可能需要早期血液检查。"
+        },
+        {
+          "title": "第3步：除非有指示否则不要催吐",
+          "content": "⚠️ 症状延迟1-5天出现。吸收后催吐无效。如果摄入时间很短，您的兽医可能会催吐。"
+        },
+        {
+          "title": "第4步：安排血液检查",
+          "content": "您的兽医将检查海因茨小体并监测3-5天的红细胞计数。早期发现贫血可在需要时输血。"
+        }
+      ],
+      "science": {
+        "content": "洋葱（Allium cepa）含有N-丙基二硫醚和S-甲基半胱氨酸亚砜。这些化合物引起血红蛋白氧化损伤，形成海因茨小体（变性血红蛋白沉淀物）。脾脏清除受损细胞，导致溶血性贫血。猫咪特别容易受到影响，因为猫血红蛋白比其他物种含有更多的巯基，使其更容易被氧化。此外，猫咪的葡萄糖-6-磷酸脱氢酶（G6PD）活性较低，降低了保护红细胞免受氧化损伤的能力。贫血通常在摄入后3-5天达到高峰（Merck Veterinary Manual，2023）。"
+      },
+      "faqs": [
+        {
+          "question": "洋葱对猫咪有毒吗？",
+          "answer": "是的，洋葱对猫咪有剧毒——相对于体重而言，比狗狗更甚。洋葱含有N-丙基二硫醚和硫代硫酸盐，会对红细胞造成氧化损伤，导致海因茨小体溶血性贫血。猫咪特别容易受到影响，因为它们的血红蛋白更容易被氧化，而且更容易产生高铁血红蛋白。"
+        },
+        {
+          "question": "多少洋葱对猫咪有毒？",
+          "answer": "即使少量也很危险。毒性效应可在5克/千克体重时发生（约4公斤猫1汤匙）。定期食用较少量（甚至婴儿食品或肉汤中的微量）也会造成累积性损害。生、熟、粉末和脱水洋葱都有毒。"
+        },
+        {
+          "question": "猫咪洋葱中毒的症状是什么？",
+          "answer": "症状在摄入后1-5天出现：牙龈苍白或黄色（贫血/黄疸）、无力、呼吸急促、红棕色尿液（血红蛋白尿）、呕吐和嗜睡。海因茨小体贫血通过血涂片确认受损红细胞。严重病例需要输血。"
+        },
+        {
+          "question": "洋葱粉能伤害猫咪吗？",
+          "answer": "是的，洋葱粉是浓缩形态，特别危险。肉汤、肉汁、婴儿食品或零食中的少量洋葱粉都可能引起中毒。许多商业产品含有隐藏的大蒜粉或洋葱粉。与猫咪分享人类食品前务必检查成分标签。"
+        }
+      ],
+      "relatedTools": [
+        {
+          "name": "有毒食品和植物检测器",
+          "url": "/shared/toxic-checker/"
+        },
+        {
+          "name": "猫咪体况评分与体重追踪器",
+          "url": "/cat/bcs-weight-tracker/"
+        }
+      ]
+    },
+    "ateGarlic": {
+      "breadcrumbLabel": "误食大蒜",
+      "meta": {
+        "title": "猫咪误食大蒜：现在该怎么做 | petsMetrics",
+        "description": "紧急指南：大蒜对猫咪有毒——毒性是洋葱的5倍。了解海因茨小体贫血、症状、有毒剂量以及为什么即使少量也很危险。ASPCA 毒物控制热线：(888) 426-4435。",
+        "keywords": "猫咪误食大蒜怎么办, 大蒜中毒猫咪, 大蒜对猫咪有毒, 猫吃了大蒜症状, 大蒜贫血猫咪"
+      },
+      "banner": {
+        "severityLabel": "危险 — 毒性是洋葱的5倍",
+        "title": "猫咪误食大蒜：现在该怎么做",
+        "subtitle": "大蒜对猫咪的<strong>毒性是洋葱的5倍</strong>。一瓣大蒜就能引起溶血性贫血。请立即致电 ASPCA 毒物控制热线 <strong>(888) 426-4435</strong>。"
+      },
+      "article": {
+        "headline": "猫咪误食大蒜：现在该怎么做",
+        "description": "猫咪大蒜中毒紧急指南：毒性是洋葱的5倍、海因茨小体贫血及治疗。",
+        "ogTitle": "猫咪误食大蒜：现在该怎么做 | petsMetrics",
+        "ogDescription": "猫咪吃了大蒜该怎么办。"
+      },
+      "riskAssessment": {
+        "headers": [
+          "大蒜形态",
+          "食用量",
+          "风险等级",
+          "所需行动"
+        ],
+        "rows": [
+          {
+            "form": "新鲜大蒜",
+            "amount": "> 1瓣 (5克)",
+            "risk": "高",
+            "action": "🚨 立即送医——剧毒"
+          },
+          {
+            "form": "大蒜粉",
+            "amount": "> 1/4茶匙",
+            "risk": "高",
+            "action": "🚨 急诊兽医——浓缩形态"
+          },
+          {
+            "form": "大蒜油/提取物",
+            "amount": "任何量",
+            "risk": "中等",
+            "action": "📞 致电兽医评估"
+          }
+        ]
+      },
+      "steps": [
+        {
+          "title": "第1步：立即清除所有大蒜",
+          "content": "清除猫咪可接触范围内的任何残留大蒜、含大蒜食品或补充剂。"
+        },
+        {
+          "title": "第2步：致电毒物控制中心",
+          "content": "📞 <strong>ASPCA 毒物控制中心：</strong>(888) 426-4435。大蒜比洋葱毒性更强——少量需要专业指导。"
+        },
+        {
+          "title": "第3步：安排第3-5天的血液检查",
+          "content": "贫血在摄入后3-5天达到高峰。即使您的猫咪看起来没事，延迟的海因茨小体贫血也可能危及生命。"
+        }
+      ],
+      "science": {
+        "content": "大蒜（Allium sativum）含有蒜氨酸，压碎或咀嚼后会转化为大蒜素。大蒜素及其衍生物（烯丙基丙基二硫醚、阿焦烯）引起猫红细胞的氧化变性。猫血红蛋白分子有8-10个巯基（狗狗为2-4个），使其对氧化损伤敏感度高2-3倍。由此产生的海因茨小体被脾脏巨噬细胞吞噬，引起血管外溶血。与洋葱不同，大蒜的硫代硫酸盐在猫咪体内生物利用度更高，这是由于肝脏代谢的差异（Merck Veterinary Manual，2023）。"
+      },
+      "faqs": [
+        {
+          "question": "大蒜对猫咪有毒吗？",
+          "answer": "是的，大蒜对猫咪有剧毒——每克毒性约为洋葱的5倍。大蒜（Allium sativum）含有大蒜素、蒜氨酸和烯丙基丙基二硫醚，会对猫红细胞造成严重氧化损伤。猫咪因其血红蛋白分子结构而特别易感。"
+        },
+        {
+          "question": "多少大蒜对猫咪有毒？",
+          "answer": "低至每公斤体重5克大蒜即可引起中毒。对于4公斤的猫，仅等于1小瓣（约5克）。慢性低剂量接触也可能产生毒性效应——即使是食品或补充剂中的微量，数周累积也可引起贫血。"
+        },
+        {
+          "question": "大蒜盐/粉对猫咪有危险吗？",
+          "answer": "是的，大蒜粉和盐是浓缩形态。仅1/8茶匙大蒜粉对小猫即可有毒。干大蒜粉、大蒜补充剂、大蒜味零食和大蒜浸泡油都有风险。许多人类食品含有隐藏的大蒜——务必检查标签。"
+        },
+        {
+          "question": "猫咪大蒜中毒的症状是什么？",
+          "answer": "症状在摄入后1-5天发展：牙龈苍白（贫血）、嗜睡、无力、呼吸急促、心率升高、黄疸（牙龈/眼睛发黄）、红棕色尿液、呕吐和虚脱。海因茨小体贫血通过血涂片确认。严重病例需要输血。"
+        }
+      ],
+      "relatedTools": [
+        {
+          "name": "有毒食品和植物检测器",
+          "url": "/shared/toxic-checker/"
+        },
+        {
+          "name": "猫咪体况评分与体重追踪器",
+          "url": "/cat/bcs-weight-tracker/"
+        }
+      ]
+    },
+    "ateEssentialOils": {
+      "breadcrumbLabel": "误食精油",
+      "meta": {
+        "title": "猫咪误食精油：紧急指南 | petsMetrics",
+        "description": "紧急指南：精油（茶树油、桉树油、柑橘油、薄荷油）对猫咪有剧毒，因为猫咪缺乏葡萄糖醛酸化酶。了解症状和紧急处理措施。ASPCA 毒物控制热线：(888) 426-4435。",
+        "keywords": "猫咪误食精油, 茶树油猫咪, 精油对猫咪有毒, 猫吃了桉树油, 精油中毒猫咪"
+      },
+      "banner": {
+        "severityLabel": "有毒 — 猫咪无法代谢精油",
+        "title": "猫咪误食精油：现在该怎么做",
+        "subtitle": "猫咪缺乏代谢萜烯和酚类的肝脏酶。<strong>茶树油、柑橘油和桉树油</strong>有剧毒——即使皮肤接触也很危险。请致电 ASPCA 毒物控制热线 <strong>(888) 426-4435</strong>。"
+      },
+      "article": {
+        "headline": "猫咪误食精油：紧急指南",
+        "description": "猫咪精油中毒紧急指南：茶树油、柑橘油及代谢脆弱性。",
+        "ogTitle": "猫咪误食精油：紧急指南 | petsMetrics",
+        "ogDescription": "猫咪接触精油该怎么办。"
+      },
+      "riskAssessment": {
+        "headers": [
+          "精油类型",
+          "接触途径",
+          "风险等级",
+          "所需行动"
+        ],
+        "rows": [
+          {
+            "form": "茶树油",
+            "amount": "任何途径",
+            "risk": "危急",
+            "action": "🚨 立即送急诊兽医——常致命"
+          },
+          {
+            "form": "柑橘油 (d-柠檬烯)",
+            "amount": "食入或皮肤",
+            "risk": "高",
+            "action": "🚨 急诊兽医——肝损伤"
+          },
+          {
+            "form": "香薰机吸入",
+            "amount": "呼吸道",
+            "risk": "中等",
+            "action": "📞 如有呼吸道症状送医"
+          }
+        ]
+      },
+      "steps": [
+        {
+          "title": "第1步：如果油在毛发/皮肤上请清洗猫咪",
+          "content": "使用洗洁精（去油）清洗任何皮肤接触。彻底冲洗。不要单独用水——油会排斥水。"
+        },
+        {
+          "title": "第2步：远离暴露源",
+          "content": "关闭香薰机，移走油瓶，通风。将猫咪移到新鲜空气中。"
+        },
+        {
+          "title": "第3步：致电毒物控制中心",
+          "content": "📞 <strong>ASPCA 毒物控制中心：</strong>(888) 426-4435。带上油瓶——告诉他们植物名称和酚/萜烯含量（如有列出）。"
+        },
+        {
+          "title": "第4步：不要催吐",
+          "content": "⚠️ 精油有很高的吸入性肺炎风险。呕吐可能导致油进入肺部。去兽医处进行安全去污。"
+        }
+      ],
+      "science": {
+        "content": "猫咪缺乏萜烯（d-柠檬烯、α-萜品醇）和酚类（丁香酚、百里香酚）的II相葡萄糖醛酸化所需的UDP-葡萄糖醛酸转移酶（UGT1A6和UGT1A9）。这些化合物在肝胆系统中积累，引起肝毒性和神经毒性。猫咪的血脑屏障P-糖蛋白外排转运蛋白也缺乏，增加了中枢神经系统的暴露。茶树油（互叶白千层）的单萜类引起剂量依赖性的中枢神经系统抑制、共济失调和低体温。即使皮肤涂抹10毫升也可能对猫咪致命（ASPCA，2023）。"
+      },
+      "faqs": [
+        {
+          "question": "为什么精油对猫咪有毒？",
+          "answer": "猫咪缺乏代谢精油中某些化合物（萜烯、酚类、酮类）所需的UDP-葡萄糖醛酸转移酶（UGT）酶。这使它们对茶树油、柑橘油、桉树油、薄荷油和松油的敏感度比狗狗高10倍。即使皮肤涂抹也可能引起中毒，如果猫咪舔掉的话。"
+        },
+        {
+          "question": "哪些精油对猫咪最危险？",
+          "answer": "最危险：茶树油（白千层）、冬青、薄荷、松树、桉树、柑橘（柠檬烯、芳樟醇）、肉桂、丁香、依兰和百里香。茶树油是最常见的报告——即使皮肤涂抹10-20毫升也可能致命。香薰机也很危险，因为猫咪吸入水滴并从毛发上舔掉。"
+        },
+        {
+          "question": "猫咪精油中毒的症状是什么？",
+          "answer": "症状因油的类型和途径而异：(1) 食入：流涎、呕吐、震颤、共济失调、无力、低体温。(2) 皮肤吸收：嗜睡、流涎过多、肝损伤。(3) 吸入：呼吸困难、吸入性肺炎。茶树油特别在2-8小时内引起严重低体温和共济失调。"
+        },
+        {
+          "question": "精油香薰机对猫咪有危险吗？",
+          "answer": "是的，香薰机带来三个风险：(1) 吸入的油滴落在毛发上被舔掉，引起食入。(2) 挥发的油刺激猫咪呼吸道（猫咪嗅觉灵敏但气道敏感）。(3) 香薰机水中浓缩的油可能被溢出和舔食。仅在猫咪无法进入的通风良好的房间使用香薰机。"
+        }
+      ],
+      "relatedTools": [
+        {
+          "name": "有毒食品和植物检测器",
+          "url": "/shared/toxic-checker/"
+        },
+        {
+          "name": "猫咪水分计算器",
+          "url": "/cat/hydration-calculator/"
+        }
+      ]
+    },
+    "ateFishingLine": {
+      "breadcrumbLabel": "误食鱼线",
+      "meta": {
+        "title": "猫咪误食鱼线：紧急指南 | petsMetrics",
+        "description": "紧急指南：鱼线（线）摄入对猫咪是致命的。了解线性异物梗阻、症状（舌头下方的线！）以及为什么通常需要立即手术。",
+        "keywords": "猫咪误食鱼线, 猫吃了线, 猫咪线性异物, 猫吞线, 鱼线猫咪急诊"
+      },
+      "banner": {
+        "severityLabel": "极度危险 — 通常需要手术",
+        "title": "猫咪误食鱼线：现在该怎么做",
+        "subtitle": "鱼线是一种<strong>致命的线性异物</strong>。它能锯穿肠壁引起致命腹膜炎。<strong>不要拉任何线。</strong>立即去急诊兽医。"
+      },
+      "article": {
+        "headline": "猫咪误食鱼线：紧急指南",
+        "description": "猫咪鱼线摄入紧急指南：线性异物梗阻、症状及手术治疗。",
+        "ogTitle": "猫咪误食鱼线：紧急指南 | petsMetrics",
+        "ogDescription": "猫咪吃了鱼线该怎么办。"
+      },
+      "criticalWarning": {
+        "title": "⚠️ 紧急警告",
+        "lines": [
+          "<strong>切勿拉猫咪口中或肛门突出的线。</strong> 线可能固定在内部——拉动会切穿肠道。",
+          "<strong>始终检查猫咪舌头下方。</strong> 鱼线经常固定在舌根。",
+          "<strong>这需要紧急手术——不要等待症状。</strong>"
+        ]
+      },
+      "riskAssessment": {
+        "headers": [
+          "暴露类型",
+          "是否出现症状？",
+          "风险等级",
+          "所需行动"
+        ],
+        "rows": [
+          {
+            "form": "舌头下方可见线",
+            "amount": "是",
+            "risk": "危急",
+            "action": "🚨 不要拉——立即送急诊兽医"
+          },
+          {
+            "form": "看到吞下线",
+            "amount": "尚无症状",
+            "risk": "危急",
+            "action": "🚨 立即送急诊兽医——可能需要手术"
+          },
+          {
+            "form": "肛门突出线",
+            "amount": "呕吐、不进食",
+            "risk": "危急",
+            "action": "🚨 不要拉——紧急手术"
+          }
+        ]
+      },
+      "steps": [
+        {
+          "title": "第1步：检查猫咪舌头下方",
+          "content": "轻轻张开嘴，看舌头下方和根部。鱼线经常固定在这里。如果看到线——不要拉。"
+        },
+        {
+          "title": "第2步：不要拉任何突出的线",
+          "content": "⚠️ 拉动可能导致线锯穿肠壁。不要动它，去急诊兽医。"
+        },
+        {
+          "title": "第3步：去急诊兽医做X光/手术",
+          "content": "线性异物通常需要手术移除。您的兽医将拍X光、开始静脉输液并进行肠切开术以移除线。"
+        },
+        {
+          "title": "第4步：准备住院",
+          "content": "手术后，您的猫咪需要住院2-5天进行静脉抗生素、疼痛管理和吻合口漏监测。"
+        }
+      ],
+      "science": {
+        "content": "线性异物（线、纱线、鱼线）是猫咪的外科急症。近端固定——通常在舌头下方、幽门或胃中。肠道蠕动拉紧远端，使肠道折叠（手风琴式）围绕线。绷紧的线对系膜边缘施加压力，引起缺血性坏死和穿孔。沿肠道的多个穿孔导致败血性腹膜炎。与狗狗相比，猫咪肠道直径较小，更容易发生线性异物并发症（AAHA，2023）。"
+      },
+      "faqs": [
+        {
+          "question": "为什么鱼线对猫咪如此危险？",
+          "answer": "鱼线是一种线性异物——吞下后，它一端固定（舌头下方、胃中或幽门），而其余部分延伸穿过肠道。肠道蠕动拉紧线，使肠道折叠围绕线。然后线锯穿肠壁，引起多处穿孔、腹膜炎，如果不手术移除则死亡。"
+        },
+        {
+          "question": "猫咪线性异物的症状是什么？",
+          "answer": "症状包括：舌头下方或肛门突出线、呕吐（尤其是进食后）、流涎、吞咽困难、食欲不振、腹痛、嗜睡和发烧。关键：始终检查舌头下方和舌根——线可能固定在那里。"
+        },
+        {
+          "question": "我应该把线从猫咪体内拉出来吗？",
+          "answer": "不！切勿拉猫咪口中或肛门突出的线。线可能固定在内部——拉动会锯穿肠壁引起穿孔。立即去急诊兽医在麻醉下正确移除。"
+        },
+        {
+          "question": "猫咪鱼线摄入的治疗方法是什么？",
+          "answer": "治疗需要紧急手术（肠切开术或胃切开术）移除线。可能需要沿肠道多处切口以释放折叠的段落。静脉抗生素治疗腹膜炎，液体纠正脱水。预后取决于穿孔次数——早期手术存活率80-90%；多处穿孔延迟治疗存活率50-60%。"
+        }
+      ],
+      "relatedTools": [
+        {
+          "name": "有毒食品和植物检测器",
+          "url": "/shared/toxic-checker/"
+        },
+        {
+          "name": "猫咪体况评分与体重追踪器",
+          "url": "/cat/bcs-weight-tracker/"
+        }
+      ]
+    },
+    "ateLily": {
+      "breadcrumbLabel": "误食百合",
+      "meta": {
+        "title": "猫咪误食百合：紧急指南 | petsMetrics",
+        "description": "紧急指南：猫咪误食百合的任何部位该怎么办。了解急性肾衰竭风险、症状及关键治疗时间窗。立即行动。",
+        "keywords": "猫咪误食百合怎么办, 百合中毒猫咪, 百合对猫咪有毒, 猫吃了百合急救, 百合花对猫有毒"
+      },
+      "banner": {
+        "severityLabel": "极度有毒 — 立即送急诊兽医",
+        "title": "猫咪误食百合：该怎么办",
+        "subtitle": "百合的所有部位对猫咪都是致命的——甚至花粉。误食会导致急性肾衰竭。立即致电 ASPCA 毒物控制热线 <strong>(888) 426-4435</strong>。"
+      },
+      "article": {
+        "headline": "猫咪误食百合：紧急指南",
+        "description": "猫咪百合中毒紧急指南：症状、治疗及预防。",
+        "ogTitle": "猫咪误食百合：紧急指南 | petsMetrics",
+        "ogDescription": "猫咪吃了百合该怎么办。急性肾衰竭风险及关键治疗时间窗。"
+      },
+      "steps": [
+        {
+          "title": "第1步：立即送急诊兽医",
+          "content": "立即前往最近的急诊兽医。途中致电 ASPCA 毒物控制热线 <strong>(888) 426-4435</strong>。时间紧迫。"
+        },
+        {
+          "title": "第2步：带上植物样本",
+          "content": "带上百合植物或照片去看兽医。这可以确认种类并帮助评估毒性风险。"
+        },
+        {
+          "title": "第3步：静脉输液至关重要",
+          "content": "您的兽医将开始积极的静脉输液治疗以保护肾脏。必须在摄入后18小时内开始以获得最佳效果。"
+        },
+        {
+          "title": "第4步：活性炭可能有用",
+          "content": "如果是不久前摄入的，您的兽医可能会施用活性炭以吸收胃肠道中残留的毒素。"
+        }
+      ],
+      "science": {
+        "content": "百合中的确切毒性化合物尚未查明，但它会导致猫咪肾小管急性坏死。猫咪特别敏感——狗和人类食用百合则无毒性。毒素是水溶性的，存在于所有植物部位：花瓣、叶子、茎、花粉，甚至花瓶中的水。肾脏损伤在几小时内开始，如不及时治疗，将在24-72小时内发展为完全性肾衰竭。早期静脉输液治疗（18小时内）可以预防永久性损伤（ASPCA，2023）。"
+      },
+      "faqs": [
+        {
+          "question": "哪些百合对猫咪有毒？",
+          "answer": "真百合（Lilium spp.）和萱草（百合科）剧毒：复活节百合、老虎百合、亚洲百合、东方百合、繁星百合。甚至花粉、叶子或花瓶中的水都可能引起肾衰竭。无毒的：和平百合、铃兰（不同毒素）、马蹄莲。"
+        },
+        {
+          "question": "多少百合对猫咪有毒？",
+          "answer": "仅摄入2-3片花瓣或叶子，或接触到花粉（猫从毛发上舔下花粉），就可能导致急性肾衰竭。没有安全剂量——任何接触都需要紧急兽医治疗。"
+        },
+        {
+          "question": "百合摄入后多久出现症状？",
+          "answer": "呕吐和嗜睡在1-6小时内出现。肾脏损伤可在12-24小时内检测到。如不及时治疗，肾衰竭在24-72小时内发展，往往致命。早期静脉输液治疗至关重要。"
+        }
+      ],
+      "relatedTools": [
+        {
+          "name": "有毒食品和植物检测器",
+          "url": "/shared/toxic-checker/"
+        },
+        {
+          "name": "猫咪体况评分与体重追踪器",
+          "url": "/cat/bcs-weight-tracker/"
+        }
+      ]
+    },
+    "ateString": {
+      "breadcrumbLabel": "误食线绳",
+      "meta": {
+        "title": "猫咪误食线绳：紧急指南 | petsMetrics",
+        "description": "紧急指南：猫咪误食线绳、纱线或线该怎么办。了解线性异物危险、肠道皱褶（手风琴效应）及何时需要手术。",
+        "keywords": "猫咪误食线绳, 猫吃了线, 猫咪线性异物, 猫吞线, 线绳猫咪急诊"
+      },
+      "banner": {
+        "severityLabel": "线性异物 — 请就医",
+        "title": "猫咪误食线绳：紧急指南",
+        "subtitle": "线绳、纱线和线都是线性异物，能割破猫咪的肠道。不要拉任何可见的线绳——立即致电兽医。"
+      },
+      "article": {
+        "headline": "猫咪误食线绳：紧急指南",
+        "description": "猫咪线性异物摄入紧急指南：症状、治疗及预防。",
+        "ogTitle": "猫咪误食线绳：紧急指南 | petsMetrics",
+        "ogDescription": "猫咪误食线绳怎么办。线性异物危险及肠道损伤风险。"
+      },
+      "steps": [
+        {
+          "title": "第1步：立即致电兽医",
+          "content": "立即联系您的兽医。记录猫咪吃下线绳的时间和大约数量。"
+        },
+        {
+          "title": "第2步：不要拉任何可见的线绳",
+          "content": "如果有线绳从嘴里或肛门垂下，不要拉它。这样会导致锚定端割破肠道组织。"
+        },
+        {
+          "title": "第3步：检查舌头下方",
+          "content": "如果安全的话，检查线绳是否在舌头根部缠绕。如果是，这就是急诊——立即去看兽医。"
+        },
+        {
+          "title": "第4步：观察症状",
+          "content": "观察呕吐、食欲不振、嗜睡、流涎及无法排便。这些需要紧急手术。"
+        }
+      ],
+      "science": {
+        "content": "线性异物（线绳、纱线、线、彩带）之所以危险，是因为它们会在一个点固定——通常在舌头下方或幽门括约肌处——而其余部分被正常的肠道蠕动拉过肠道。这导致肠道沿线绳皱褶（手风琴效应），绷紧的线绳能像铁丝一样割破肠壁。这会导致穿孔、腹膜炎、败血症，如不进行手术干预则会死亡。猫咪特别容易受害，因为它们有倒刺的舌头容易钩住线绳（AAFP，2023）。"
+      },
+      "faqs": [
+        {
+          "question": "为什么线绳对猫咪很危险？",
+          "answer": "线绳是一种「线性异物」——它固定在舌头根部或胃部，其余部分随着肠道收缩被拉过肠道。这导致肠道「皱褶」（堆成一团），线绳能像铁丝一样割破肠壁，导致穿孔、腹膜炎和死亡。"
+        },
+        {
+          "question": "误食线绳的症状有哪些？",
+          "answer": "呕吐、食欲不振、嗜睡、流涎、嘴里或肛门可见线绳垂下、腹痛及无法排便。如果看到线绳，不要拉——这样会造成更大伤害。"
+        },
+        {
+          "question": "误食线绳如何治疗？",
+          "content": "治疗取决于位置。如果线绳还在嘴里/舌头上，兽医可能会剪断。如果已经进入消化道，通常需要通过手术安全移除。X光和超声波有助于确定最佳方案。"
+        }
+      ],
+      "relatedTools": [
+        {
+          "name": "有毒食品和植物检测器",
+          "url": "/shared/toxic-checker/"
+        },
+        {
+          "name": "猫咪体况评分与体重追踪器",
+          "url": "/cat/bcs-weight-tracker/"
+        }
+      ]
+    }
+  },
+  "guide": {
+    "checklist": {
+      "reset": "重置全部",
+      "print": "打印清单",
+      "downloadPdf": "下载 PDF",
+      "progress": "进度",
+      "completed": "已完成",
+      "required": "必填",
+      "proTip": "专业提示",
+      "vetVisit": "兽医检查",
+      "estimatedCost": "预估费用",
+      "firstYear": "第一年",
+      "annual": "年度"
+    }
+  },
+  "seo": {
+    "title": "petsMetrics — 宠物健康计算器",
+    "description": "基于科学的宠物健康工具。卡路里计算器、疫苗计划、有毒物质检查器等。",
+    "toolsTitle": "宠物健康工具",
+    "toolsDescription": "探索我们基于科学的宠物健康计算器集合。"
+  },
+  "calculator": {
+    "title": "计算器",
+    "weight": "体重",
+    "age": "年龄",
+    "breed": "品种",
+    "breedSize": "品种体型",
+    "activityLevel": "活动水平",
+    "reproductiveStatus": "繁殖状态",
+    "bodyCondition": "体况",
+    "result": "结果",
+    "recommended": "推荐",
+    "dailyCalories": "每日卡路里",
+    "healthyWeight": "健康体重",
+    "waterNeeded": "所需水分",
+    "feedAmount": "喂食量"
+  },
+  "compare": {
+    "quickComparison": "快速对比",
+    "atAGlance": "一目了然",
+    "deepDive": "深入分析",
+    "considerations": "注意事项",
+    "significantConcerns": "重要关注点",
+    "risks": "风险",
+    "limitations": "限制",
+    "tradeOffs": "权衡",
+    "bestFor": "最适合",
+    "theVerdict": "结论",
+    "faq": "常见问题",
+    "references": "参考资料",
+    "lastUpdated": "最后更新",
+    "dimension": "维度",
+    "breedMatters": "品种很重要",
+    "rawWarning": "生食警告",
+    "breedWarning": "品种警告",
+    "dryVsWet": {
+      "title": "狗狗干粮 vs 湿粮：哪个更适合？",
+      "subtitle": "全面对比干粮和湿粮 — 涵盖营养、成本、牙齿健康和水分摄入。基于 AAFCO 和 WSAVA 营养指南。",
+      "topicAName": "干粮 (Kibble)",
+      "topicBName": "湿粮 (Canned)",
+      "topicA": {
+        "pros": [
+          {
+            "title": "Cost-Effective",
+            "body": "Kibble costs $0.30–$0.80 per day for a 30kg dog, vs $1.50–$4.00 for wet food. Savings come from lower water content (10% vs 75%) and more efficient manufacturing."
+          },
+          {
+            "title": "Dental Benefits",
+            "body": "The mechanical crunching action of hard kibble can help reduce tartar buildup. However, most dogs do not chew long enough for significant dental benefit — it is a bonus, not a substitute for brushing."
+          },
+          {
+            "title": "Shelf-Stable & Convenient",
+            "body": "Unopened bags last 12–18 months at room temperature. No refrigeration needed, easy to store and travel with. Portioning is straightforward with a measuring cup."
+          },
+          {
+            "title": "Energy-Dense",
+            "body": "With 350–450 kcal per 100g, kibble is ideal for large breeds or active dogs who need many calories without feeling full too quickly."
+          }
+        ],
+        "cons": [
+          "Low moisture content (~10%) means dogs must drink separately; lower thirst drive can lead to chronic mild dehydration in some dogs.",
+          "Palatability can be lower than wet food; picky eaters may turn their nose up.",
+          "Quality varies enormously — some kibble relies heavily on grain fillers and plant proteins rather than animal-based proteins."
+        ],
+        "bestFor": "Active 成年犬, 大型品种, 多狗家庭 on a budget, and owners who value convenience."
+      },
+      "topicB": {
+        "pros": [
+          {
+            "title": "High Moisture Content",
+            "body": "At 75–80% moisture, wet food provides significant hydration. This is especially beneficial for dogs with kidney issues, urinary crystals, or low thirst drive."
+          },
+          {
+            "title": "Superior Palatability",
+            "body": "The aroma, texture, and fat content make wet food irresistible to most dogs. Ideal for picky eaters, senior dogs losing appetite, or convalescing pets."
+          },
+          {
+            "title": "Lower Carbohydrates",
+            "body": "Quality wet foods often contain fewer grains and starches, with higher animal protein percentages. This more closely mimics a dog's ancestral diet."
+          },
+          {
+            "title": "Easier to Eat for Senior Dogs",
+            "body": "Dogs with dental issues, missing teeth, or small mouths (e.g., Chihuahuas, Yorkies) find wet food much easier to consume than hard kibble."
+          }
+        ],
+        "cons": [
+          "Cost: 3–5x more expensive per calorie than kibble for the same dog.",
+          "Shelf life: Once opened, canned food must be refrigerated and used within 3–5 days.",
+          "No dental crunch benefit — may contribute to faster tartar accumulation without other dental hygiene.",
+          "Bulky to store and heavier to transport."
+        ],
+        "bestFor": "老年狗, 小型品种, picky eaters, dogs with dental issues, kidney/urinary conditions, and dogs who don't drink enough water."
+      },
+      "rows": [
+        {
+          "dimension": "Moisture Content",
+          "topicA": "~10%",
+          "topicB": "75–80%"
+        },
+        {
+          "dimension": "Calorie Density",
+          "topicA": "350–450 kcal/100g",
+          "topicB": "80–120 kcal/100g"
+        },
+        {
+          "dimension": "Cost/day (30kg dog)",
+          "topicA": "$0.50–1.50",
+          "topicB": "$2.00–5.00"
+        },
+        {
+          "dimension": "Shelf Life (unopened)",
+          "topicA": "12–18 months",
+          "topicB": "2–5 years"
+        },
+        {
+          "dimension": "Dental Health",
+          "topicA": "Mild tartar reduction",
+          "topicB": "No mechanical benefit"
+        },
+        {
+          "dimension": "Palatability",
+          "topicA": "Moderate",
+          "topicB": "High"
+        },
+        {
+          "dimension": "Carb Content",
+          "topicA": "Often higher",
+          "topicB": "Often lower"
+        },
+        {
+          "dimension": "Storage",
+          "topicA": "Room temp",
+          "topicB": "Refrigerate after opening"
+        }
+      ],
+      "verdict": "<strong>Most dogs do well on a mixed feeding approach.</strong> A base of quality kibble for cost-efficiency and dental crunch, supplemented with a small amount of wet food for hydration and palatability. For dogs with kidney disease, urinary issues, or senior dogs with appetite loss, increase wet food proportion. For active large-breed adults on a budget, kibble as the primary diet is perfectly adequate. Consult your veterinarian if your dog has specific health conditions.",
+      "faq": [
+        {
+          "question": "Can I mix dry and wet dog food?",
+          "answer": "Yes, mixing is safe and often recommended. A common approach is 75% kibble + 25% wet food by calorie. Calculate your dog's total daily calorie needs first, then split between the two. Ensure the combined diet meets AAFCO nutrient profiles — most complete & balanced kibble is formulated to be fed alone, so treat wet food as a supplement."
+        },
+        {
+          "question": "Is wet food better for dogs with kidney disease?",
+          "answer": "Often yes. The high moisture content (75–80%) helps support kidney function by promoting hydration and flushing toxins. Dogs with chronic kidney disease (CKD) are frequently recommended higher-moisture diets by veterinary nutritionists. A prescription renal diet (wet or dry) may be needed in advanced cases."
+        },
+        {
+          "question": "How much wet food replaces one cup of kibble?",
+          "answer": "Approximately 1 cup of kibble (100g, ~350 kcal) equals about 300–400g of wet food (~350 kcal). Always check the calorie content on the can label and adjust based on your dog's specific caloric needs. Use our Dog Calorie Calculator to determine the exact amount."
+        },
+        {
+          "question": "Do dogs need wet food?",
+          "answer": "No, dogs do not need wet food if they are eating a complete and balanced dry diet and drinking adequate water. However, wet food provides meaningful benefits for hydration, palatability, and specific health conditions. It is a valuable tool in the dog owner's toolkit, not a necessity."
+        }
+      ]
+    },
+    "indoorVsOutdoor": {
+      "title": "室内猫 vs 室外猫：寿命、健康与安全对比",
+      "subtitle": "基于 AAFP 和 ISFM 指南，全面对比室内和室外饲养的寿命、健康和安全风险。",
+      "topicAName": "室内猫",
+      "topicBName": "室外猫",
+      "topicA": {
+        "pros": [
+          {
+            "title": "Longer Lifespan",
+            "body": "The average indoor-only cat lives 12–18 years, with many reaching 20+. This is 3–5x longer than the average outdoor cat, primarily due to reduced trauma and disease exposure."
+          },
+          {
+            "title": "Lower Disease Risk",
+            "body": "Indoor cats have minimal exposure to FeLV, FIV, FIP, and rabies from other cats. Parasite exposure is also significantly reduced."
+          },
+          {
+            "title": "No Trauma Risk",
+            "body": "No cars, no dog attacks, no fights with other cats, no predator encounters. The #1 cause of premature death in outdoor cats is vehicular trauma."
+          },
+          {
+            "title": "Better Weight Control",
+            "body": "Indoor cats are fed measured meals rather than hunting or scavenging. Combined with our BCS tracker, obesity is more easily managed."
+          }
+        ],
+        "cons": [
+          "Environmental enrichment is mandatory — without it, indoor cats develop stress-related behaviors (urine marking, over-grooming, aggression).",
+          "Obesity is the #1 health risk for indoor cats, affecting 40–60% of indoor-only cats.",
+          "Needs significant owner time and resource investment (scratching posts, window perches, interactive play)."
+        ],
+        "bestFor": "[需翻译] Most urban/suburban cat owners who can provide adequate environmental enrichment."
+      },
+      "topicB": {
+        "pros": [
+          {
+            "title": "Natural Behavior Expression",
+            "body": "Outdoor access allows climbing, hunting, territory patrolling, and sun-bathing — all core feline behaviors that are difficult to fully replicate indoors."
+          },
+          {
+            "title": "Mental Stimulation",
+            "body": "The outdoor environment provides endless sensory input. Outdoor cats rarely exhibit boredom-related behaviors seen in under-stimulated indoor cats."
+          },
+          {
+            "title": "Exercise & Weight Management",
+            "body": "Outdoor cats typically get more physical activity, making obesity less of a concern than with sedentary indoor cats."
+          },
+          {
+            "title": "Reduced Litter Box Issues",
+            "body": "Cats with outdoor access rarely urinate or defecate outside the litter box, as they have the option to go outside."
+          }
+        ],
+        "cons": [
+          "Dramatically shorter lifespan: average 2–5 years for free-roaming outdoor cats.",
+          "High risk of vehicular trauma, predation (coyotes, dogs), poisoning (rodenticides), and fighting injuries.",
+          "Exposure to infectious diseases: FeLV, FIV, FIP, rabies, and parasites.",
+          "Neighborhood conflict — digging in gardens, hunting wildlife (ecological impact), and conflicts with other cats or pets."
+        ],
+        "bestFor": "[需翻译] Rural properties with controlled outdoor access (catio, enclosed garden) and owners who accept the risks."
+      },
+      "rows": [
+        {
+          "dimension": "Average Lifespan",
+          "topicA": "12–18+ years",
+          "topicB": "2–5 years"
+        },
+        {
+          "dimension": "Trauma Risk (cars, predators)",
+          "topicA": "Minimal",
+          "topicB": "High"
+        },
+        {
+          "dimension": "FeLV/FIV Exposure",
+          "topicA": "Very Low",
+          "topicB": "High"
+        },
+        {
+          "dimension": "Obesity Risk",
+          "topicA": "High (40–60%)",
+          "topicB": "Low"
+        },
+        {
+          "dimension": "Behavioral Issues",
+          "topicA": "Without enrichment",
+          "topicB": "Rare"
+        },
+        {
+          "dimension": "Exercise",
+          "topicA": "Must be provided",
+          "topicB": "Natural"
+        },
+        {
+          "dimension": "Wildlife Impact",
+          "topicA": "None",
+          "topicB": "Significant"
+        },
+        {
+          "dimension": "Vet Costs / Year",
+          "topicA": "$300–600",
+          "topicB": "$500–2000+"
+        }
+      ],
+      "verdict": "<strong>The safest and most recommended approach is \"Indoor + Enrichment\" or \"Supervised Outdoor Access.\"</strong> An indoor-only cat with proper environmental enrichment (cat trees, window perches, puzzle feeders, daily interactive play) lives significantly longer and healthier than a free-roaming outdoor cat. If you want your cat to experience the outdoors, consider a catio (enclosed outdoor pen), a secure garden with cat-proof fencing, or leash walks with a harness. This provides outdoor stimulation while maintaining the safety and longevity benefits of indoor living.",
+      "faq": [
+        {
+          "question": "Is it cruel to keep a cat indoors?",
+          "answer": "No — with proper environmental enrichment, indoor cats live longer, healthier lives. Cats do not have the same drive for outdoor access as dogs. Key needs: vertical space (cat trees), scratching posts, puzzle feeders, window perches with a view, and 15–20 minutes of daily interactive play. This satisfies their core behavioral needs entirely."
+        },
+        {
+          "question": "How do I transition an outdoor cat to indoor?",
+          "answer": "Gradual transition over 2–4 weeks is most effective. Start by bringing them in during meal times, then gradually increase indoor hours simultaneously adding enrichment (cat trees, toys, window perches). Use Feliway diffusers to reduce stress. Interactive wand toy sessions (2x 15min/day) are crucial for exercise and mental stimulation."
+        },
+        {
+          "question": "Do indoor cats need vaccines?",
+          "answer": "Yes. Indoor cats still need core vaccines (FVRCP and rabies). While their disease risk is lower, these diseases can be transmitted via contaminated clothing, shoes, or through screens/windows. The AAFP classifies all cats as needing core vaccination regardless of lifestyle. Rabies vaccination is also legally required in most jurisdictions."
+        },
+        {
+          "question": "What is a catio and does it help?",
+          "answer": "A catio is an enclosed outdoor structure (attached to a window, deck, or freestanding) that allows cats to experience the outdoors safely. Catios provide fresh air, sunshine, bird-watching, and sensory enrichment without the risks of free roaming. They are the single best compromise for owners who want outdoor access for their cat."
+        }
+      ]
+    },
+    "rawVsKibble": {
+      "title": "生食 vs 干粮：哪个更适合您的宠物？",
+      "subtitle": "全面对比生食和干粮 — 涵盖营养、安全性、成本和实用性。基于 AAFCO 和 WSAVA 营养指南。",
+      "topicAName": "生食 (BARF)",
+      "topicBName": "干粮 (Kibble)",
+      "topicA": {
+        "pros": [
+          {
+            "title": "Whole, Unprocessed Ingredients",
+            "body": "BARF diets use raw muscle meat, organs, bones, and vegetables — avoiding the high-heat processing that can destroy some nutrients. Proponents report shinier coats, cleaner teeth, and higher energy levels."
+          },
+          {
+            "title": "Dental Benefits",
+            "body": "Chewing on raw meaty bones provides significant mechanical cleaning of teeth. Studies show reduced tartar in dogs on raw diets compared to kibble-fed dogs."
+          },
+          {
+            "title": "Bioavailable Nutrients",
+            "body": "Raw proteins and fats are theoretically more bioavailable, with no heat-induced denaturation of amino acids. Some vitamins (B-complex, C) are better preserved without cooking."
+          },
+          {
+            "title": "No Artificial Additives",
+            "body": "Quality raw diets avoid preservatives, colors, fillers, and artificial flavors often found in commercial pet food."
+          }
+        ],
+        "cons": [
+          "Bacterial contamination risk: 30% of commercial raw diets test positive for Salmonella; Campylobacter and E. coli are common. This poses risk to both the pet and the human family.",
+          "Nutritional imbalance: Home-prepared diets are frequently deficient in calcium, phosphorus, or trace minerals. Even commercial raw diets sometimes fail AAFCO feeding trials.",
+          "Cost: $3–8 per day for a 30kg dog — 3–5x more expensive than quality kibble.",
+          "Practical burdens: Requires freezer space, careful handling, travel difficulties, and preparation time."
+        ],
+        "bestFor": "[需翻译] Dedicated owners with veterinary nutritionist guidance, dogs with specific food intolerances not resolved by commercial diets, and those willing to invest significant time and resources."
+      },
+      "topicB": {
+        "pros": [
+          {
+            "title": "Nutritionally Complete & Balanced",
+            "body": "Quality kibble meeting AAFCO standards has been formulated through feeding trials to provide complete nutrition for specific life stages. Decades of research back their formulations."
+          },
+          {
+            "title": "Bacterial Safety",
+            "body": "The extrusion process (high heat/pressure) kills bacteria. Kibble is shelf-stable and safe to handle without contamination risk to humans."
+          },
+          {
+            "title": "Consistent Quality Control",
+            "body": "Reputable manufacturers conduct batch testing, feeding trials, and quality audits. Every bag meets the same nutrient profile — no guesswork for the owner."
+          },
+          {
+            "title": "Affordability & Convenience",
+            "body": "$0.50–$2.00 per day for most dogs. No prep, no refrigeration, easy to travel with, and available nearly everywhere."
+          }
+        ],
+        "cons": [
+          "High-heat processing can degrade some heat-sensitive nutrients (though these are typically supplemented back).",
+          "Lower palatability than raw food — some dogs refuse kibble, especially if accustomed to raw.",
+          "Higher carbohydrate content than raw diets (30–50% carbs in many kibble vs 0–10% in raw), though dogs do not have a strict carb requirement.",
+          "Quality varies enormously between brands; some use low-quality protein sources or excessive fillers."
+        ],
+        "bestFor": "[需翻译] The vast majority of dog owners — especially those without access to a board-certified veterinary nutritionist or the budget/time for raw feeding."
+      },
+      "rows": [
+        {
+          "dimension": "Nutritional Completeness",
+          "topicA": "Variable unless formulated by nutritionist",
+          "topicB": "AAFCO-tested for balance"
+        },
+        {
+          "dimension": "Bacterial Risk (Salmonella)",
+          "topicA": "Significant (30% of raw diets)",
+          "topicB": "Minimal (heat-processed)"
+        },
+        {
+          "dimension": "Daily Cost (30kg dog)",
+          "topicA": "$3–8",
+          "topicB": "$0.50–2.00"
+        },
+        {
+          "dimension": "Dental Benefit",
+          "topicA": "Significant (bone chewing)",
+          "topicB": "Minimal (minor crunch)"
+        },
+        {
+          "dimension": "Shelf Life",
+          "topicA": "Frozen: 6 months; Thawed: 2 days",
+          "topicB": "12–18 months"
+        },
+        {
+          "dimension": "Human Safety",
+          "topicA": "Requires careful handling",
+          "topicB": "No special handling"
+        },
+        {
+          "dimension": "Research Support",
+          "topicA": "Limited peer-reviewed",
+          "topicB": "Decades of feeding trials"
+        },
+        {
+          "dimension": "Practicality",
+          "topicA": "Requires freezer, prep, travel planning",
+          "topicB": "Very High"
+        }
+      ],
+      "verdict": "<strong>For most dog owners, a high-quality commercial kibble is the safest, most practical choice.</strong> If you are committed to raw feeding, work with a board-certified veterinary nutritionist (ACVN) to ensure nutritional completeness, follow strict hygiene protocols, and understand the 30% bacterial contamination risk. The dental benefits of raw bones can be achieved safely with professional dental cleaning and appropriate chew toys. A middle-ground approach — high-quality kibble supplemented with raw meaty bones as treats (not meals) — captures some benefits while minimizing risks.",
+      "faq": [
+        {
+          "question": "What is the 80-10-10 raw diet?",
+          "answer": "The 80-10-10 ratio refers to 80% muscle meat, 10% raw meaty bone, and 10% organ meat (half liver, half other organs like kidney or spleen). This is a popular BARF formulation, though it may need calcium and micronutrient supplementation to meet NRC standards. The specific ratio should be tailored to your dog's life stage (puppies need more bone calcium)."
+        },
+        {
+          "question": "Can puppies eat raw food?",
+          "answer": "Yes, but with extreme caution. Puppies have higher calcium/phosphorus requirements for proper bone development. An improperly balanced raw diet can cause developmental orthopedic disease. If feeding raw to puppies, work with a veterinary nutritionist to ensure proper Ca:P ratio (1.2:1 to 1.4:1) and adequate trace minerals."
+        },
+        {
+          "question": "Is raw food better than kibble?",
+          "answer": "\"Better\" depends on your priorities. Raw offers whole-food nutrition and dental benefits but carries bacterial risks and practical burdens. Kibble offers nutritional consistency and safety backed by decades of research. Neither is universally \"better.\" The best diet is one that is nutritionally complete, safe for your family, sustainable for your budget, and that your dog thrives on."
+        }
+      ]
+    },
+    "spayedVsUnspayed": {
+      "title": "绝育 vs 未绝育：癌症风险、行为变化和品种特定建议",
+      "subtitle": "全面对比绝育和未绝育 — 涵盖癌症风险、骨科问题、行为变化和品种特定时间建议。基于 AAHA 和 AVMA 兽医指南。",
+      "topicAName": "已绝育/已去势",
+      "topicBName": "未绝育 (完整)",
+      "topicA": {
+        "pros": [
+          {
+            "title": "Eliminates Pyometra Risk",
+            "body": "Pyometra is a life-threatening uterine infection affecting 25% of unspayed females by age 10. Spaying eliminates this risk entirely — emergency pyometra surgery costs $3,000–$8,000 and carries 4–20% mortality even with treatment."
+          },
+          {
+            "title": "Dramatically Reduces Mammary Cancer",
+            "body": "Spaying before the first heat cycle reduces mammary tumor risk by 99.5%; before the second heat by 92%. Mammary tumors are the most common cancer in unspayed females; ~50% are malignant."
+          },
+          {
+            "title": "Removes Reproductive Organ Cancer Risk",
+            "body": "Spaying eliminates ovarian and uterine cancer (rare but documented). Neutering eliminates testicular cancer (the most common tumor in intact males)."
+          },
+          {
+            "title": "Behavioral Benefits",
+            "body": "Reduces roaming (males seeking females in heat), reduces inter-male aggression by up to 60%, and eliminates heat-related behaviors (bleeding, male attention, mood changes in females)."
+          },
+          {
+            "title": "Population Control",
+            "body": "Prevents accidental breeding and the resulting puppies. A single unspayed female and her offspring can theoretically produce 67,000 dogs in 6 years."
+          }
+        ],
+        "cons": [
+          "Increased risk of certain cancers: spayed females have 2–4x higher hemangiosarcoma and osteosarcoma risks, especially in large breeds spayed early.",
+          "Increased risk of cruciate ligament tears and hip dysplasia in large breeds spayed before 12–18 months, due to loss of growth-inhibiting sex hormones on bone development.",
+          "Weight gain: spayed/neutered dogs have 20–30% lower metabolic rate. ~60% become overweight without diet adjustment.",
+          "Possible increased risk of urinary incontinence in spayed females (5–20% in large breeds)."
+        ],
+        "bestFor": "大多数狗, especially 小型品种, 混种, and any dog not intended for 负责任的繁殖计划."
+      },
+      "topicB": {
+        "pros": [
+          {
+            "title": "Hormonal Influence on Skeletal Development",
+            "body": "Sex hormones (estrogen, testosterone) signal proper closure of growth plates. Keeping large/giant breeds intact for 12–24 months allows normal bone development, potentially reducing cruciate tears and joint disorders."
+          },
+          {
+            "title": "Lower Risk of Certain Cancers",
+            "body": "Intact dogs have lower rates of hemangiosarcoma, osteosarcoma, and prostate cancer compared to neutered males. The protective effect of sex hormones against these cancers is well-documented."
+          },
+          {
+            "title": "No Metabolic Drop",
+            "body": "Intact dogs maintain baseline metabolic rate without the 20–30% reduction seen post-spay/neuter, making weight management easier."
+          },
+          {
+            "title": "No Surgical Risk",
+            "body": "Avoids anesthesia and surgical complications (infection, bleeding, adverse reactions)."
+          }
+        ],
+        "cons": [
+          "25% of unspayed females develop pyometra by age 10 — a life-threatening emergency.",
+          "~50% of unspayed females develop mammary tumors by age 10 (half malignant).",
+          "Intact males exhibit more roaming, marking, mounting, and inter-male aggression.",
+          "Unspayed females have heat cycles (bleeding for 2–3 weeks, 2x/year) and attract male dogs.",
+          "Accidental breeding if any outdoor access; adds to shelter overpopulation."
+        ],
+        "bestFor": "[需翻译] Large/giant breeds where delayed spay/neuter benefits joint health (discuss timing with vet), responsibly managed breeding programs, and dogs where cancer risk from spaying is a particular breed concern."
+      },
+      "rows": [
+        {
+          "dimension": "Pyometra Risk (females)",
+          "topicA": "Eliminated",
+          "topicB": "25% by age 10"
+        },
+        {
+          "dimension": "Mammary Tumor Risk (females)",
+          "topicA": "<1% (before 1st heat)",
+          "topicB": "~50% by age 10"
+        },
+        {
+          "dimension": "Testicular Cancer (males)",
+          "topicA": "Eliminated",
+          "topicB": "7% lifetime risk"
+        },
+        {
+          "dimension": "Hemangiosarcoma",
+          "topicA": "2-4x higher risk",
+          "topicB": "Baseline"
+        },
+        {
+          "dimension": "Cruciate Tear Risk",
+          "topicA": "Higher (early spay)",
+          "topicB": "Baseline"
+        },
+        {
+          "dimension": "Osteosarcoma Risk",
+          "topicA": "Higher (early spay)",
+          "topicB": "Baseline"
+        },
+        {
+          "dimension": "Weight Gain Tendency",
+          "topicA": "20-30% more likely",
+          "topicB": "Baseline"
+        },
+        {
+          "dimension": "Roaming/Aggression",
+          "topicA": "Reduced",
+          "topicB": "Higher"
+        },
+        {
+          "dimension": "Cost of Procedure",
+          "topicA": "$200-500",
+          "topicB": "$0"
+        }
+      ],
+      "verdict": "<strong>The benefits of spaying/neutering outweigh the risks for most dogs.</strong> For small breeds (<20kg), spay/neuter at 6–12 months is well-supported. For large breeds (25–45kg), consider delaying to 12–18 months to protect joint development. For giant breeds (>45kg), some veterinarians recommend 18–24 months. Discuss your specific breed's cancer and joint health risks with your veterinarian to determine the optimal timing. Never skip the conversation — the \"when\" matters as much as the \"whether.\"",
+      "faq": [
+        {
+          "question": "What is the best age to spay a large breed dog?",
+          "answer": "For large breeds (Golden Retriever, Labrador, German Shepherd), current evidence suggests 12–18 months to allow proper closure of growth plates and reduce orthopedic disease risk. Giant breeds (Great Dane, Mastiff) may benefit from 18–24 months. Always discuss with your veterinarian, as cancer risk and joint risk vary by breed and sex."
+        },
+        {
+          "question": "Will my dog gain weight after being spayed?",
+          "answer": "Likely yes. Spayed/neutered dogs require 20–30% fewer calories to maintain weight. Reduce food portions by 15–20% post-surgery and monitor body condition monthly using the BCS scale. Adjust as needed. Regular exercise is also crucial."
+        },
+        {
+          "question": "Can a spayed dog still get pregnant?",
+          "answer": "No. A complete ovariohysterectomy (removal of uterus and ovaries) permanently eliminates the ability to conceive. A partial spay (ovaries only) is rarely performed and would still allow pregnancy in extremely rare cases where uterine tissue remains. Always confirm with your vet what procedure was performed."
+        }
+      ]
+    },
+    "dogYearsVsCatYears": {
+      "title": "狗年 vs 猫年：哪个老化得更快？",
+      "subtitle": "基于 AAHA 和 AAFP 指南，全面对比狗和猫的老化速度。",
+      "topicAName": "狗年",
+      "topicBName": "猫年",
+      "topicA": {
+        "pros": [
+          {
+            "title": "Predictable Life Stages",
+            "body": "Dogs have well-defined life stages by breed size: puppy, junior, adult, mature, senior, geriatric. AAHA guidelines provide clear health recommendations for each stage, making preventive care more systematic."
+          },
+          {
+            "title": "Size-Based Aging Models",
+            "body": "Dog aging is strongly correlated with breed size. Small dogs (<10kg) live 12-16 years; giant breeds (>45kg) live 7-10 years. This predictability helps owners plan for long-term care needs."
+          },
+          {
+            "title": "Extensive Research",
+            "body": "Decades of canine aging research (including the UCSD epigenetic clock study) provide data-driven insights into breed-specific health risks and longevity optimization."
+          }
+        ],
+        "cons": [
+          "Large breeds age significantly faster and have shorter lifespans — a Great Dane is 'senior' at 5-6 years while a Chihuahua reaches senior status at 8-10.",
+          "Breed-specific health risks complicate aging — hip dysplasia, bloat, and heart disease vary enormously by breed.",
+          "The outdated '7× rule' persists in public understanding, leading to confusion about true life stage."
+        ],
+        "bestFor": "[需翻译] Owners who want clear, size-adjusted life stage guidance and breed-specific health planning."
+      },
+      "topicB": {
+        "pros": [
+          {
+            "title": "Longer Average Lifespan",
+            "body": "Cats live 12-18 years on average, with many reaching 20+. Indoor cats consistently outlive dogs of comparable size due to lower metabolic stress and fewer breed-specific genetic disorders."
+          },
+          {
+            "title": "Uniform Aging Pattern",
+            "body": "Cats age more uniformly than dogs — no extreme size-based variation. AAFP feline life stage guidelines apply across all breeds, simplifying health planning."
+          },
+          {
+            "title": "Lower Genetic Disease Burden",
+            "body": "Cats have fewer breed-specific genetic disorders than dogs. Hypertrophic cardiomyopathy (HCM) and chronic kidney disease (CKD) are the main age-related concerns, affecting all breeds similarly."
+          }
+        ],
+        "cons": [
+          "Cats mask illness effectively — signs of aging-related disease often appear late, making early detection more difficult.",
+          "Feline aging research is less extensive than canine — fewer breed-specific longevity studies exist.",
+          "Dental disease affects 70-80% of cats by age 3, often progressing silently without obvious symptoms."
+        ],
+        "bestFor": "[需翻译] Owners who prefer a more uniform aging model and are proactive about regular veterinary screening."
+      },
+      "rows": [
+        {
+          "dimension": "Average Lifespan",
+          "topicA": "10-13 years (varies by size)",
+          "topicB": "12-18+ years"
+        },
+        {
+          "dimension": "Senior Age",
+          "topicA": "5-10 years (size-dependent)",
+          "topicB": "10-11 years"
+        },
+        {
+          "dimension": "Geriatric Age",
+          "topicA": "7-12 years (size-dependent)",
+          "topicB": "15+ years"
+        },
+        {
+          "dimension": "Life Stage Model",
+          "topicA": "6 stages (size-adjusted)",
+          "topicB": "6 stages (uniform)"
+        },
+        {
+          "dimension": "Aging Research",
+          "topicA": "Extensive (UCSD, AAHA)",
+          "topicB": "Moderate (AAFP)"
+        },
+        {
+          "dimension": "Genetic Disease Risk",
+          "topicA": "High (breed-specific)",
+          "topicB": "Lower (more uniform)"
+        },
+        {
+          "dimension": "Illness Detection",
+          "topicA": "More obvious symptoms",
+          "topicB": "Masks illness well"
+        },
+        {
+          "dimension": "Dental Disease",
+          "topicA": "Common (40-60%)",
+          "topicB": "Very common (70-80%)"
+        }
+      ],
+      "verdict": "<strong>Dogs and cats age fundamentally differently — neither is 'better'.</strong> Dogs have size-dependent aging with more predictable life stages but shorter average lifespans for large breeds. Cats age more uniformly and live longer but hide illness better, requiring more proactive screening. The key to maximizing either pet's lifespan is regular veterinary checkups, appropriate nutrition for life stage, and early detection of age-related disease. Use our Dog Age Calculator and Cat Age Calculator to determine your pet's current life stage and health priorities.",
+      "faq": [
+        {
+          "question": "Do cats age faster than dogs?",
+          "answer": "No — cats generally live longer than dogs. The average cat lives 12-18 years, while the average dog lives 10-13 years. However, large dog breeds age faster in their early years, reaching 'senior' status as early as 5-6 years old. Cats age more uniformly and reach senior status at 10-11 years."
+        },
+        {
+          "question": "Why do small dogs live longer than large dogs?",
+          "answer": "Large dogs age faster due to higher metabolic rates, faster growth, and increased oxidative stress. The rapid growth required to reach 40-70kg in 12-18 months causes more cellular damage over time. Additionally, large breeds are prone to age-related diseases like cancer and heart disease at younger ages."
+        },
+        {
+          "question": "How often should senior pets see the vet?",
+          "answer": "Both dogs and cats over 7 years (or 5 for giant breeds) should have veterinary checkups every 6 months. Senior screening bloodwork (CBC, chemistry, thyroid) is recommended annually to detect kidney disease, diabetes, and other age-related conditions early."
+        }
+      ]
+    },
+    "petInsuranceVsSavings": {
+      "title": "宠物保险 vs 自付：哪个更划算？",
+      "subtitle": "全面对比宠物保险和自付费用 — 涵盖成本、覆盖范围、免赔额和长期财务规划。基于 NAPHIA 数据。",
+      "topicAName": "宠物保险",
+      "topicBName": "自付费用",
+      "topicA": {
+        "pros": [
+          {
+            "title": "Predictable Monthly Cost",
+            "body": "Pet insurance costs $20-70/month for dogs and $15-50/month for cats. This predictable expense helps budget for veterinary care without surprise bills."
+          },
+          {
+            "title": "Covers Catastrophic Costs",
+            "body": "Insurance covers major emergencies: surgery ($3,000-8,000), cancer treatment ($5,000-15,000), and chronic conditions ($1,000-3,000/year). These costs would be devastating without coverage."
+          },
+          {
+            "title": "Peace of Mind",
+            "body": "With insurance, you can make treatment decisions based on what's best for your pet rather than what you can afford. This removes financial barriers to optimal care."
+          }
+        ],
+        "cons": [
+          "Premiums increase with age and breed risk — a senior dog may pay $100-200/month.",
+          "Pre-existing conditions are excluded, and many policies have waiting periods, annual limits, and breed-specific exclusions.",
+          "You still pay out-of-pocket for deductibles (100-1000) and co-pays (10-30%).",
+          "Lifetime costs may exceed savings if your pet stays healthy — insurance is a bet against misfortune."
+        ],
+        "bestFor": "[需翻译] Owners who want predictable costs, protection against catastrophic bills, and peace of mind."
+      },
+      "topicB": {
+        "pros": [
+          {
+            "title": "Full Control of Funds",
+            "body": "Your money stays in your account, earning interest. If your pet stays healthy, you keep every dollar — no premiums wasted."
+          },
+          {
+            "title": "No Exclusions or Limitations",
+            "body": "Self-insurance covers everything — pre-existing conditions, breed-specific issues, alternative therapies. No claim denials or policy fine print."
+          },
+          {
+            "title": "Flexible Use",
+            "body": "Funds can be used for any purpose: emergencies, routine care, medications, or even end-of-life care. No restrictions on treatment choices."
+          }
+        ],
+        "cons": [
+          "Requires discipline — most people struggle to save consistently for a hypothetical future expense.",
+          "A single major emergency ($5,000-15,000) can deplete savings before you've built adequate reserves.",
+          "Early-years costs are high — puppies and kittens need spay/neuter, vaccines, and may have accidents.",
+          "Inflation and rising veterinary costs mean you need to save more each year to maintain adequate coverage."
+        ],
+        "bestFor": "[需翻译] Disciplined savers with stable income, low-risk breeds, and the ability to absorb unexpected costs."
+      },
+      "rows": [
+        {
+          "dimension": "Monthly Cost",
+          "topicA": "$20-200 (age/breed dependent)",
+          "topicB": "Variable (self-directed)"
+        },
+        {
+          "dimension": "Catastrophic Coverage",
+          "topicA": "Yes (after deductible)",
+          "topicB": "Only if adequately funded"
+        },
+        {
+          "dimension": "Pre-existing Conditions",
+          "topicA": "Excluded",
+          "topicB": "Covered"
+        },
+        {
+          "dimension": "Peace of Mind",
+          "topicA": "High",
+          "topicB": "Variable"
+        },
+        {
+          "dimension": "Fund Accessibility",
+          "topicA": "Reimbursement model",
+          "topicB": "Immediate access"
+        },
+        {
+          "dimension": "Long-term Cost",
+          "topicA": "Higher if pet stays healthy",
+          "topicB": "Lower if pet stays healthy"
+        },
+        {
+          "dimension": "Best For",
+          "topicA": "Risk-averse owners",
+          "topicB": "Disciplined savers"
+        },
+        {
+          "dimension": "Worst Case",
+          "topicA": "Premium increases",
+          "topicB": "Insufficient funds"
+        }
+      ],
+      "verdict": "<strong>For most pet owners, a hybrid approach works best.</strong> Get accident-only insurance ($10-20/month) to cover catastrophic emergencies, and build a dedicated pet savings account for routine care and smaller expenses. This gives you the best of both worlds: protection against bankruptcy-level bills while maintaining control of your money. Start saving $50-100/month from day one — by year 5, you'll have $3,000-6,000 set aside. Use our Pet Insurance Estimator to compare real costs for your pet's breed and age.",
+      "faq": [
+        {
+          "question": "Is pet insurance worth it?",
+          "answer": "It depends on your risk tolerance and financial situation. If a $5,000 emergency bill would cause financial hardship, insurance is worth considering. If you can comfortably save $100/month and absorb unexpected costs, self-insurance may be more cost-effective over your pet's lifetime."
+        },
+        {
+          "question": "How much should I save for pet emergencies?",
+          "answer": "Veterinarians recommend having $3,000-5,000 available for emergencies. Start by saving $50-100/month from the day you get your pet. By year 3, you'll have a meaningful emergency fund. Consider a dedicated high-yield savings account."
+        },
+        {
+          "question": "What does pet insurance not cover?",
+          "answer": "Most policies exclude pre-existing conditions, routine/preventive care (unless you add wellness coverage), breeding-related costs, and cosmetic procedures. Some breeds have exclusions for hereditary conditions. Always read the policy carefully before enrolling."
+        }
+      ]
+    },
+    "microchipVsTattoo": {
+      "title": "微芯片 vs 纹身：哪个更适合宠物识别？",
+      "subtitle": "全面对比微芯片和纹身识别 — 涵盖可靠性、永久性、国际旅行兼容性和成本。基于 ISO 11784/11785 标准。",
+      "topicAName": "微芯片",
+      "topicBName": "纹身",
+      "topicA": {
+        "pros": [
+          {
+            "title": "Permanent & Tamper-Proof",
+            "body": "Microchips are implanted under the skin and cannot be removed or altered. ISO-standard chips (15-digit) are globally unique and linked to permanent registration databases."
+          },
+          {
+            "title": "Universal Scanner Compatibility",
+            "body": "ISO 11784/11785 microchips can be read by universal scanners worldwide. Most shelters and vet clinics have scanners that read all major chip frequencies."
+          },
+          {
+            "title": "Quick & Painless",
+            "body": "Implantation takes seconds — similar to a vaccination. No anesthesia required. The chip lasts the pet's lifetime without maintenance."
+          },
+          {
+            "title": "Required for EU Travel",
+            "body": "ISO microchips are mandatory for EU pet travel under Regulation 576/2013. No other identification method is accepted for pet passports."
+          }
+        ],
+        "cons": [
+          "Requires a scanner to read — a found pet must go to a vet or shelter to be scanned.",
+          "Registration must be kept current — if you move or change phone numbers, the chip is useless unless updated.",
+          "Rare migration — chips can move from the implantation site, though this is uncommon with modern implantation techniques.",
+          "Cost: $25-50 for implantation plus annual registration fees ($0-20)."
+        ],
+        "bestFor": "[需翻译] All dogs — especially those who travel, live in urban areas, or are at risk of theft."
+      },
+      "topicB": {
+        "pros": [
+          {
+            "title": "Visible Identification",
+            "body": "Tattoos can be seen without a scanner — anyone can visually identify a tattooed pet. Ear tattoos or inner thigh tattoos are common placements."
+          },
+          {
+            "title": "No Technology Required",
+            "body": "No scanner, database, or electricity needed. A tattoo is immediately readable by anyone who finds your pet."
+          },
+          {
+            "title": "Breed Registration Marker",
+            "body": "Many breeders tattoo registration numbers as proof of pedigree. This is standard practice in some breed clubs."
+          }
+        ],
+        "cons": [
+          "Fades over time — tattoos become less legible as the pet ages, gains weight, or the fur grows.",
+          "Can be altered or forged — unlike microchips, tattoos are not tamper-proof.",
+          "Not accepted for EU travel — tattoos alone do not meet EU pet travel requirements.",
+          "Requires shaving the area to read — fur obscures the tattoo in most placements.",
+          "Painful application — requires sedation or anesthesia for the tattooing process."
+        ],
+        "bestFor": "[需翻译] Breeders who want visible pedigree markers, and as a supplementary ID method alongside microchipping."
+      },
+      "rows": [
+        {
+          "dimension": "Permanence",
+          "topicA": "Lifetime",
+          "topicB": "Fades over years"
+        },
+        {
+          "dimension": "Scanner Required",
+          "topicA": "Yes",
+          "topicB": "No"
+        },
+        {
+          "dimension": "EU Travel Accepted",
+          "topicA": "Yes (mandatory)",
+          "topicB": "No"
+        },
+        {
+          "dimension": "Tamper-Proof",
+          "topicA": "Yes",
+          "topicB": "No"
+        },
+        {
+          "dimension": "Cost",
+          "topicA": "$25-50 + registration",
+          "topicB": "$20-100"
+        },
+        {
+          "dimension": "Pain Level",
+          "topicA": "Minimal (injection)",
+          "topicB": "Moderate (requires sedation)"
+        },
+        {
+          "dimension": "Maintenance",
+          "topicA": "Update registration",
+          "topicB": "None (but fades)"
+        },
+        {
+          "dimension": "Global Standard",
+          "topicA": "ISO 11784/11785",
+          "topicB": "No standard"
+        }
+      ],
+      "verdict": "<strong>Microchipping is the clear winner for all dogs.</strong> It is permanent, tamper-proof, globally standardized, and required for international travel. Tattoos can serve as a visible supplementary ID but should never replace microchipping. The best approach: get your dog microchipped (ISO standard) and keep your registration current. Consider a visible ID collar tag as a third layer of protection. Use our EU Pet Travel Checker to verify microchip requirements for your destination.",
+      "faq": [
+        {
+          "question": "Does microchipping hurt my dog?",
+          "answer": "Microchip implantation is quick and causes minimal discomfort — similar to a vaccination injection. The needle is slightly larger than a vaccine needle, but most dogs show no sign of pain. No anesthesia is required. The procedure takes less than 10 seconds."
+        },
+        {
+          "question": "Can a microchip get lost or stop working?",
+          "answer": "Microchips rarely 'get lost' but can migrate from the implantation site (between the shoulder blades) to nearby tissue. Modern chips are encased in biocompatible glass to prevent rejection. They have no battery and last the pet's lifetime. Scanner compatibility is the main issue — ensure you get an ISO-standard chip."
+        },
+        {
+          "question": "Do I still need a collar tag if my dog is microchipped?",
+          "answer": "Yes. A collar tag with your phone number is the fastest way for someone who finds your dog to contact you. A microchip requires a scanner and database lookup, which takes longer. Use both for maximum protection."
+        }
+      ]
+    },
+    "adoptVsBuy": {
+      "title": "领养 vs 购买：哪个更适合您？",
+      "subtitle": "全面对比领养和购买宠物 — 涵盖成本、健康、行为、伦理和长期责任。基于 ASPCA 和 HSUS 数据。",
+      "topicAName": "领养",
+      "topicBName": "购买",
+      "topicA": {
+        "pros": [
+          {
+            "title": "Lower Cost",
+            "body": "Adoption fees range $50-300 and typically include spay/neuter, vaccinations, and microchipping. This saves $500-1,000 compared to buying from a breeder plus initial vet costs."
+          },
+          {
+            "title": "Saves a Life",
+            "body": "Approximately 920,000 shelter dogs are euthanized annually in the US. Adoption directly reduces this number and makes room for another animal in need."
+          },
+          {
+            "title": "Known Personality",
+            "body": "Adult shelter dogs have established personalities — you can assess temperament, energy level, and compatibility before committing. Many are already house-trained."
+          },
+          {
+            "title": "Health Screening",
+            "body": "Reputable shelters conduct behavioral assessments and basic health screenings. Many provide a health guarantee and post-adoption support."
+          }
+        ],
+        "cons": [
+          "Unknown health history — genetic conditions and early-life health may not be documented.",
+          "Behavioral issues possible — some shelter dogs have trauma, anxiety, or incomplete socialization.",
+          "Limited breed selection — specific breeds or puppies may not be available.",
+          "Adjustment period — shelter dogs need time to decompress and bond with their new family."
+        ],
+        "bestFor": "Owners who want to save money, save a life, and are open to 成年犬 or 混种."
+      },
+      "topicB": {
+        "pros": [
+          {
+            "title": "Predictable Traits",
+            "body": "Purebred dogs from responsible breeders have predictable size, temperament, coat type, and energy level based on breed standards and parent traits."
+          },
+          {
+            "title": "Health Testing",
+            "body": "Responsible breeders conduct genetic health testing (OFA, PennHIP) for breed-specific conditions like hip dysplasia, heart disease, and eye disorders."
+          },
+          {
+            "title": "Known History",
+            "body": "You know the dog's complete health history, vaccination record, and socialization from birth. This transparency helps with long-term health planning."
+          },
+          {
+            "title": "Puppy Experience",
+            "body": "Buying a puppy allows you to shape behavior from the earliest stages and bond during the critical socialization period (3-14 weeks)."
+          }
+        ],
+        "cons": [
+          "High cost — purebred puppies cost $1,000-3,000+ from responsible breeders, plus $500-1,000 in initial vet costs.",
+          "Ethical concerns — demand for purebreds supports an industry that contributes to overpopulation when irresponsible breeders prioritize profit.",
+          "Long wait times — reputable breeders often have waiting lists of 6-18 months.",
+          "No guarantee — even with health testing, genetic conditions can still develop."
+        ],
+        "bestFor": "[需翻译] Owners who need predictability (allergies, size, temperament) or want to participate in specific breed activities."
+      },
+      "rows": [
+        {
+          "dimension": "Initial Cost",
+          "topicA": "$50-300",
+          "topicB": "$1,000-3,500+"
+        },
+        {
+          "dimension": "Includes Spay/Neuter",
+          "topicA": "Usually",
+          "topicB": "Rarely"
+        },
+        {
+          "dimension": "Includes Vaccines",
+          "topicA": "Usually",
+          "topicB": "Sometimes"
+        },
+        {
+          "dimension": "Health History",
+          "topicA": "Unknown/partial",
+          "topicB": "Complete"
+        },
+        {
+          "dimension": "Breed Predictability",
+          "topicA": "Variable",
+          "topicB": "High"
+        },
+        {
+          "dimension": "Ethical Impact",
+          "topicA": "Saves a life",
+          "topicB": "Supports breeding"
+        },
+        {
+          "dimension": "Puppy Availability",
+          "topicA": "Rare",
+          "topicB": "Yes"
+        },
+        {
+          "dimension": "Personality Known",
+          "topicA": "Adult dogs",
+          "topicB": "Developing"
+        }
+      ],
+      "verdict": "<strong>Adoption is the right choice for most families.</strong> It saves money, saves a life, and provides a loving home to a dog in need. If you need predictability (allergies, specific size, working dog traits), seek a responsible breeder who health-tests their breeding stock. Never buy from puppy mills or pet stores — these sources prioritize profit over animal welfare. Consider adopting an adult dog: you skip the destructive puppy phase and get a dog whose personality is already established. Use our Dog Calorie Calculator and Age Calculator to plan care for your new companion.",
+      "faq": [
+        {
+          "question": "Is it better to adopt or buy a dog?",
+          "answer": "For most families, adoption is the better choice — it saves money, saves a life, and provides a loving home. However, if you need a specific breed for allergies, working purposes, or size predictability, a responsible breeder may be appropriate. Always research breeders thoroughly and avoid puppy mills."
+        },
+        {
+          "question": "What are the hidden costs of adopting a dog?",
+          "answer": "While adoption fees are low, budget for: food ($30-60/month), routine vet care ($200-400/year), unexpected illness or injury ($500-5,000+), training classes ($100-300), supplies ($200-500 initial), and pet insurance or emergency savings ($20-70/month)."
+        },
+        {
+          "question": "How do I identify a responsible breeder?",
+          "answer": "Responsible breeders: health-test breeding stock (OFA, PennHIP), allow you to visit and meet the parents, provide a health guarantee, ask you questions about your home, take back any dog if you can't keep it, and limit breeding to 1-2 litters per year. Avoid breeders who won't show you the facility or have multiple breeds available immediately."
+        }
+      ]
+    },
+    "grainFreeVsGrainInclusive": {
+      "title": "无谷 vs 含谷狗粮：哪个更健康？",
+      "subtitle": "全面对比无谷和含谷狗粮 — 涵盖营养、DCM 风险、过敏和成本。基于 FDA 调查和 AAFCO 营养指南。",
+      "topicAName": "无谷 (Grain-Free)",
+      "topicBName": "含谷 (Grain-Inclusive)",
+      "topicA": {
+        "pros": [
+          {
+            "title": "Lower Carbohydrate Content",
+            "body": "Grain-free diets typically replace grains with legumes (peas, lentils) or potatoes, resulting in lower carbohydrate content. This may benefit dogs with grain allergies (rare but real)."
+          },
+          {
+            "title": "Higher Protein Percentage",
+            "body": "Many grain-free foods have higher protein percentages (28-35%) compared to grain-inclusive foods (22-28%), which can benefit active or working dogs."
+          },
+          {
+            "title": "Marketing Appeal",
+            "body": "Grain-free is heavily marketed as 'ancestral' or 'biologically appropriate,' appealing to owners who want to feed a 'natural' diet."
+          }
+        ],
+        "cons": [
+          "FDA investigation link to DCM: Grain-free diets have been associated with dilated cardiomyopathy (DCM) in breeds not genetically predisposed. The link appears related to legume-heavy formulations.",
+          "Higher cost: Grain-free foods cost 20-40% more than comparable grain-inclusive options.",
+          "Unnecessary for most dogs: True grain allergies affect less than 1% of dogs. Most dogs digest grains perfectly well.",
+          "Nutritional imbalance risk: Some grain-free foods are deficient in taurine or other amino acids critical for heart health."
+        ],
+        "bestFor": "[需翻译] Dogs with confirmed grain allergies (rare) and owners who understand the DCM risk and choose taurine-supplemented formulas."
+      },
+      "topicB": {
+        "pros": [
+          {
+            "title": "Lower DCM Risk",
+            "body": "Grain-inclusive diets have not been associated with the DCM spike observed with grain-free diets. Whole grains provide taurine and other heart-healthy nutrients."
+          },
+          {
+            "title": "More Affordable",
+            "body": "Grain-inclusive foods are generally 20-40% less expensive than grain-free equivalents, making quality nutrition accessible to more owners."
+          },
+          {
+            "title": "Better Digestibility",
+            "body": "Cooked grains (rice, oats, barley) are highly digestible for dogs (85-90% digestibility). They provide steady energy and fiber for gut health."
+          },
+          {
+            "title": "AAFCO Compliance",
+            "body": "Most grain-incomplete foods meet AAFCO nutrient profiles through feeding trials, ensuring nutritional completeness for specific life stages."
+          }
+        ],
+        "cons": [
+          "Higher carbohydrate content (30-50%) may not suit all dogs, especially those with diabetes or insulin resistance.",
+          "Some dogs have true grain allergies (wheat, corn) — though this affects less than 1% of dogs.",
+          "Quality varies enormously — some grain-inclusive foods use low-quality grain fillers rather than whole grains.",
+          "May be less palatable for some dogs compared to high-protein grain-free formulas."
+        ],
+        "bestFor": "[需翻译] The vast majority of dogs — especially those without grain allergies and owners concerned about DCM risk."
+      },
+      "rows": [
+        {
+          "dimension": "DCM Risk",
+          "topicA": "Investigated by FDA",
+          "topicB": "No association"
+        },
+        {
+          "dimension": "Carb Content",
+          "topicA": "Lower (20-35%)",
+          "topicB": "Higher (30-50%)"
+        },
+        {
+          "dimension": "Protein %",
+          "topicA": "Often higher (28-35%)",
+          "topicB": "Moderate (22-28%)"
+        },
+        {
+          "dimension": "Cost",
+          "topicA": "20-40% more expensive",
+          "topicB": "More affordable"
+        },
+        {
+          "dimension": "Grain Allergy Risk",
+          "topicA": "Avoids grains",
+          "topicB": "May contain allergens"
+        },
+        {
+          "dimension": "Taurine Content",
+          "topicA": "Variable (may be low)",
+          "topicB": "Usually adequate"
+        },
+        {
+          "dimension": "Digestibility",
+          "topicA": "Variable",
+          "topicB": "High (cooked grains)"
+        },
+        {
+          "dimension": "AAFCO Feeding Trials",
+          "topicA": "Some brands",
+          "topicB": "Most major brands"
+        }
+      ],
+      "verdict": "<strong>For most dogs, grain-inclusive food from a reputable brand is the safer, more cost-effective choice.</strong> The FDA investigation into grain-free diets and DCM is ongoing, but the association is concerning enough that veterinary nutritionists recommend caution. If your dog has a confirmed grain allergy (rare), choose a grain-free formula that is taurine-supplemented and has undergone AAFCO feeding trials. For all other dogs, a quality grain-inclusive diet provides complete nutrition at lower cost with no DCM association. Consult your veterinarian before making dietary changes.",
+      "faq": [
+        {
+          "question": "Is grain-free dog food bad for dogs?",
+          "answer": "The FDA is investigating a potential link between grain-free diets and DCM (dilated cardiomyopathy) in dogs. While not conclusive, the association is strong enough that veterinary nutritionists recommend caution. Grain-free diets heavy in legumes (peas, lentils) may interfere with taurine absorption, potentially leading to heart disease."
+        },
+        {
+          "question": "Do dogs need grains in their diet?",
+          "answer": "No, dogs do not require grains — but they digest cooked grains well and benefit from the nutrients grains provide (fiber, B vitamins, taurine). Grains are not 'fillers' in quality dog food; they are nutritious ingredients. Only dogs with confirmed grain allergies (less than 1% of dogs) need grain-free diets."
+        },
+        {
+          "question": "What should I look for in dog food?",
+          "body": "Choose a food that: meets AAFCO nutrient profiles for your dog's life stage, has undergone feeding trials (not just formulation), lists a named animal protein as the first ingredient, and comes from a reputable manufacturer with veterinary nutritionist involvement. Use our Dog Calorie Calculator to determine proper feeding amounts."
+        }
+      ]
+    },
+    "cannedVsFrozen": {
+      "title": "罐头 vs 冷冻食品：哪个更适合您的宠物？",
+      "subtitle": "全面对比罐头和冷冻宠物食品 — 涵盖营养保留、便利性、成本和储存。基于 AAFCO 营养指南。",
+      "topicAName": "罐头食品",
+      "topicBName": "冷冻食品",
+      "topicA": {
+        "pros": [
+          {
+            "title": "Long Shelf Life",
+            "body": "Unopened canned food lasts 2-5 years at room temperature. No refrigeration needed until opened, making it ideal for storage and travel."
+          },
+          {
+            "title": "High Moisture Content",
+            "body": "At 75-80% moisture, canned food provides significant hydration. This benefits dogs with kidney issues, urinary crystals, or low thirst drive."
+          },
+          {
+            "title": "Wide Availability",
+            "body": "Canned food is available at virtually every pet store, grocery store, and online retailer. Hundreds of brands and formulas to choose from."
+          },
+          {
+            "title": "Easy to Serve",
+            "body": "Straight from the can — no thawing, no preparation. Ideal for busy owners or those who need to travel with their dog."
+          }
+        ],
+        "cons": [
+          "Lower calorie density (80-120 kcal/100g) means dogs need to eat more volume to meet energy needs.",
+          "Contains preservatives (even 'natural' ones) to maintain shelf stability.",
+          "Can contribute to faster tartar buildup without dental hygiene.",
+          "Once opened, must be refrigerated and used within 3-5 days."
+        ],
+        "bestFor": "老年狗, 小型品种, picky eaters, dogs with dental issues, and owners who value convenience."
+      },
+      "topicB": {
+        "pros": [
+          {
+            "title": "Minimal Processing",
+            "body": "Frozen food is flash-frozen rather than heat-processed, preserving more heat-sensitive nutrients (B vitamins, vitamin C, enzymes) that can be destroyed by canning."
+          },
+          {
+            "title": "Whole Food Ingredients",
+            "body": "Frozen diets often contain visible whole ingredients — chunks of meat, vegetables, and organs — with fewer additives and preservatives than canned food."
+          },
+          {
+            "title": "Higher Palatability",
+            "body": "The fresh-like texture and aroma make frozen food highly palatable. Ideal for picky eaters or dogs transitioning from raw diets."
+          },
+          {
+            "title": "No Preservatives Needed",
+            "body": "Freezing preserves food naturally without chemical preservatives. This appeals to owners seeking 'clean label' products."
+          }
+        ],
+        "cons": [
+          "Requires freezer space — bulky to store and impossible to travel with easily.",
+          "Must be thawed before serving (12-24 hours in refrigerator) — no spontaneous feeding.",
+          "Shorter shelf life once thawed (2-3 days refrigerated).",
+          "Higher cost than canned food — typically $3-8/day for a 30kg dog.",
+          "Limited availability — fewer brands and formulas than canned food."
+        ],
+        "bestFor": "[需翻译] Owners who want minimally processed nutrition, have adequate freezer space, and are willing to plan meals ahead."
+      },
+      "rows": [
+        {
+          "dimension": "Shelf Life (unopened)",
+          "topicA": "2-5 years",
+          "topicB": "6-12 months (frozen)"
+        },
+        {
+          "dimension": "Moisture Content",
+          "topicA": "75-80%",
+          "topicB": "65-75%"
+        },
+        {
+          "dimension": "Calorie Density",
+          "topicA": "80-120 kcal/100g",
+          "topicB": "120-180 kcal/100g"
+        },
+        {
+          "dimension": "Processing",
+          "topicA": "Heat-processed",
+          "topicB": "Flash-frozen"
+        },
+        {
+          "dimension": "Preservatives",
+          "topicA": "Usually present",
+          "topicB": "None needed"
+        },
+        {
+          "dimension": "Cost/day (30kg dog)",
+          "topicA": "$2-5",
+          "topicB": "$3-8"
+        },
+        {
+          "dimension": "Storage",
+          "topicA": "Room temp",
+          "topicB": "Freezer required"
+        },
+        {
+          "dimension": "Prep Required",
+          "topicA": "None",
+          "topicB": "Thawing (12-24 hrs)"
+        }
+      ],
+      "verdict": "<strong>Canned food wins on convenience and cost; frozen food wins on ingredient quality.</strong> For most owners, canned food is the practical choice — it's affordable, shelf-stable, and widely available. If you prioritize minimal processing and whole-food ingredients, frozen food is worth the extra cost and planning. A mixed approach works well: canned food as the daily base, with frozen food as a weekly 'fresh' meal. Always ensure any diet meets AAFCO nutrient profiles for your dog's life stage.",
+      "faq": [
+        {
+          "question": "Is frozen dog food better than canned?",
+          "answer": "Frozen food retains more heat-sensitive nutrients and contains fewer preservatives, but 'better' depends on your priorities. Frozen food is more expensive and requires freezer space and thawing time. Canned food is more convenient and affordable. Both can be nutritionally complete if they meet AAFCO standards."
+        },
+        {
+          "question": "How do I transition my dog to frozen food?",
+          "answer": "Transition gradually over 7-10 days: start with 25% frozen + 75% current food, then 50/50, then 75/25, then 100% frozen. Thaw frozen food in the refrigerator for 12-24 hours before serving. Never microwave frozen dog food — it creates hot spots and destroys nutrients."
+        },
+        {
+          "question": "Can I mix canned and frozen dog food?",
+          "answer": "Yes, mixing is safe and can provide the benefits of both. Calculate your dog's total daily calorie needs first, then split between the two. Ensure the combined diet meets AAFCO nutrient profiles — most complete & balanced foods are formulated to be fed alone, so treat supplements as additions to a complete base."
+        }
+      ]
+    },
+    "catWetVsDry": {
+      "title": "猫咪湿粮 vs 干粮：哪个更适合？",
+      "subtitle": "全面对比猫咪湿粮和干粮 — 涵盖水分摄入、牙齿健康、成本和泌尿道健康。基于 AAFP 和 ISFM 指南。",
+      "topicAName": "湿粮",
+      "topicBName": "干粮",
+      "topicA": {
+        "pros": [
+          {
+            "title": "High Moisture Content",
+            "body": "At 75-80% moisture, wet food provides significant hydration. Cats have a low thirst drive (desert ancestors) and often don't drink enough water. Wet food helps prevent chronic dehydration, a major contributor to urinary and kidney disease."
+          },
+          {
+            "title": "Lower Carbohydrates",
+            "body": "Quality wet foods contain fewer carbohydrates (0-10%) than dry food (30-50%). Cats are obligate carnivores with no nutritional requirement for carbs — lower carb diets more closely mimic their natural prey diet."
+          },
+          {
+            "title": "Better for Urinary Health",
+            "body": "The high moisture content dilutes urine, reducing the risk of urinary crystals, stones, and feline lower urinary tract disease (FLUTD). This is especially important for male cats, who are more prone to urinary blockages."
+          },
+          {
+            "title": "Higher Protein",
+            "body": "Wet food typically has higher animal protein percentages (40-50% on dry matter basis) compared to dry food (30-40%), supporting lean muscle mass in aging cats."
+          }
+        ],
+        "cons": [
+          "Cost: 2-4x more expensive per calorie than dry food for the same cat.",
+          "Shelf life: Once opened, wet food must be refrigerated and used within 2-3 days.",
+          "No dental benefit: Wet food provides no mechanical cleaning action for teeth.",
+          "Inconvenient for free-feeding: Wet food spoils if left out for more than 30 minutes."
+        ],
+        "bestFor": "[需翻译] All cats — especially males, seniors, cats with urinary issues, and those on dry-food-only diets."
+      },
+      "topicB": {
+        "pros": [
+          {
+            "title": "Cost-Effective",
+            "body": "Dry food costs $0.30-0.80/day for an average cat, vs $1.00-3.00 for wet food. This makes quality nutrition accessible to more owners."
+          },
+          {
+            "title": "Convenient",
+            "body": "Dry food can be free-fed (left out for grazing) without spoiling. Ideal for busy owners or cats that prefer to eat small meals throughout the day."
+          },
+          {
+            "title": "Dental Benefits",
+            "body": "Some dental-specific kibbles are designed to reduce tartar buildup through mechanical crunching. However, most cats don't chew kibble long enough for significant benefit."
+          },
+          {
+            "title": "Energy-Dense",
+            "body": "With 350-450 kcal per 100g, dry food is ideal for underweight cats or those needing to gain weight without feeling overly full."
+          }
+        ],
+        "cons": [
+          "Low moisture content (10%) contributes to chronic dehydration — a major risk factor for kidney disease and urinary crystals.",
+          "High carbohydrate content (30-50%) is unnatural for obligate carnivores and can contribute to obesity and diabetes.",
+          "Palatability can be lower than wet food — some cats refuse dry food, especially as seniors.",
+          "Free-feeding often leads to overeating — 40-60% of indoor cats are overweight."
+        ],
+        "bestFor": "[需翻译] Healthy adult cats with adequate water intake, owners on a budget, and cats that self-regulate food intake."
+      },
+      "rows": [
+        {
+          "dimension": "Moisture Content",
+          "topicA": "75-80%",
+          "topicB": "~10%"
+        },
+        {
+          "dimension": "Carb Content",
+          "topicA": "0-10%",
+          "topicB": "30-50%"
+        },
+        {
+          "dimension": "Protein (dry matter)",
+          "topicA": "40-50%",
+          "topicB": "30-40%"
+        },
+        {
+          "dimension": "Cost/day (avg cat)",
+          "topicA": "$1.00-3.00",
+          "topicB": "$0.30-0.80"
+        },
+        {
+          "dimension": "Urinary Health",
+          "topicA": "Excellent",
+          "topicB": "Poor (without extra water)"
+        },
+        {
+          "dimension": "Dental Health",
+          "topicA": "No benefit",
+          "topicB": "Mild (dental kibbles)"
+        },
+        {
+          "dimension": "Free-Feeding",
+          "topicA": "Not recommended",
+          "topicB": "Yes"
+        },
+        {
+          "dimension": "Shelf Life (opened)",
+          "topicA": "2-3 days (refrigerated)",
+          "topicB": "Room temp OK"
+        }
+      ],
+      "verdict": "<strong>Wet food is the healthier choice for most cats.</strong> The high moisture content supports urinary and kidney health — the two most common health issues in aging cats. If budget allows, feed wet food exclusively or as the primary diet (75% wet + 25% dry). If you must feed dry food, ensure your cat drinks adequate water (use a water fountain) and monitor urinary health with regular vet checks. Use our Cat Hydration Calculator to determine your cat's daily water needs.",
+      "faq": [
+        {
+          "question": "Should cats eat wet or dry food?",
+          "answer": "Wet food is generally healthier for cats due to its high moisture content, which supports urinary and kidney health. Cats evolved as desert animals with low thirst drives — they get most of their water from prey in the wild. Wet food mimics this natural hydration. However, dry food is more convenient and affordable. A mixed approach (75% wet + 25% dry) offers the best of both worlds."
+        },
+        {
+          "question": "How much wet food should I feed my cat?",
+          "answer": "An average adult cat (4-5kg) needs approximately 200-250 kcal/day. Most wet food cans (85g) provide 70-100 kcal, so 2-3 cans per day is typical. Use our Cat Hydration Calculator to determine exact needs based on your cat's weight, age, and activity level."
+        },
+        {
+          "question": "Is dry food bad for cats?",
+          "answer": "Dry food is not inherently 'bad' but it contributes to chronic dehydration because cats don't compensate by drinking enough water. This increases the risk of urinary crystals, kidney disease, and FLUTD. If feeding dry food, ensure fresh water is always available (cats prefer running water — consider a fountain) and monitor urine output and concentration."
+        }
+      ]
+    },
+    "declawingVsScratchingPost": {
+      "title": "去爪 vs 猫抓板：哪个更人道？",
+      "subtitle": "全面对比去爪手术和猫抓板 — 涵盖动物福利、行为、法律和替代方案。基于 AAFP 和 ISFM 指南。",
+      "topicAName": "去爪手术",
+      "topicBName": "猫抓板/行为训练",
+      "topicA": {
+        "pros": [
+          {
+            "title": "Eliminates Scratching Damage",
+            "body": "Declawing permanently removes the claws, eliminating furniture damage and scratch injuries to humans or other pets."
+          },
+          {
+            "title": "One-Time Procedure",
+            "body": "The surgery is performed once (usually at 3-6 months) and requires no ongoing maintenance or training."
+          }
+        ],
+        "cons": [
+          "Illegal or restricted in many jurisdictions: declawing is banned in the UK, EU, Australia, and several US states (New York, Maryland) due to animal welfare concerns.",
+          "Surgical complications: pain, infection, nerve damage, bone spurs, and incomplete claw regrowth occur in 10-50% of cases.",
+          "Behavioral consequences: declawed cats are more likely to bite (losing their primary defense) and may develop litter box aversion due to pain when scratching in the litter.",
+          "Chronic pain: the procedure amputates the last toe bone — equivalent to cutting off human fingers at the last joint.",
+          "Ethical concerns: AAFP, ISFM, and AVMA all oppose declawing as unnecessary and harmful."
+        ],
+        "bestFor": "[需翻译] Not recommended for any cat. Humane alternatives exist for all scratching concerns."
+      },
+      "topicB": {
+        "pros": [
+          {
+            "title": "Natural Behavior Preservation",
+            "body": "Scratching is a natural feline behavior for marking territory, stretching muscles, and maintaining claw health. Scratching posts allow this behavior without damage."
+          },
+          {
+            "title": "No Pain or Health Risks",
+            "body": "Proper scratching post training involves no surgery, pain, or medical complications. It is entirely humane and preserves the cat's physical integrity."
+          },
+          {
+            "title": "Strengthens Bond",
+            "body": "Interactive play with scratching posts and positive reinforcement strengthens the human-cat bond. Training sessions provide mental stimulation and exercise."
+          },
+          {
+            "title": "Legal Everywhere",
+            "body": "Scratching post training is legal in all jurisdictions and endorsed by all major veterinary organizations."
+          }
+        ],
+        "cons": [
+          "Requires patience and consistency — training takes 2-8 weeks for most cats.",
+          "Multiple posts needed — cats prefer different textures (sisal, cardboard, carpet) and locations (vertical, horizontal).",
+          "Does not eliminate scratching — redirects it. Some cats may still scratch furniture if posts are not appealing or well-placed.",
+          "Nail trimming still needed — even with scratching posts, cats benefit from regular nail trims every 2-4 weeks."
+        ],
+        "bestFor": "[需翻译] All cats and owners — this is the only humane and recommended approach."
+      },
+      "rows": [
+        {
+          "dimension": "Pain Level",
+          "topicA": "Significant (surgery)",
+          "topicB": "None"
+        },
+        {
+          "dimension": "Legal Status",
+          "topicA": "Banned in many regions",
+          "topicB": "Legal everywhere"
+        },
+        {
+          "dimension": "Effectiveness",
+          "topicA": "100% (removes claws)",
+          "topicB": "80-95% (redirects behavior)"
+        },
+        {
+          "dimension": "Health Risks",
+          "topicA": "Infection, nerve damage, chronic pain",
+          "topicB": "None"
+        },
+        {
+          "dimension": "Behavioral Impact",
+          "topicA": "Increased biting, litter box aversion",
+          "topicB": "Positive (natural behavior preserved)"
+        },
+        {
+          "dimension": "Cost",
+          "topicA": "$200-800 (surgery)",
+          "topicB": "$20-100 (posts + training)"
+        },
+        {
+          "dimension": "Veterinary Stance",
+          "topicA": "Opposed by AAFP/ISFM/AVMA",
+          "topicB": "Endorsed by all organizations"
+        },
+        {
+          "dimension": "Long-term Outcome",
+          "topicA": "Permanent physical alteration",
+          "topicB": "Sustainable behavior management"
+        }
+      ],
+      "verdict": "<strong>Scratching post training is the only humane and recommended approach.</strong> Declawing is opposed by all major veterinary organizations and is illegal in many jurisdictions. It causes unnecessary pain, can lead to behavioral problems, and permanently alters the cat's physical integrity. Scratching post training, combined with regular nail trims and soft nail caps (Soft Paws), effectively manages scratching without harm. If your cat is scratching furniture, consult your veterinarian or a feline behaviorist for a personalized training plan.",
+      "faq": [
+        {
+          "question": "Is declawing cruel?",
+          "answer": "Yes — declawing (onychectomy) is the surgical amputation of the last bone of each toe, equivalent to cutting off human fingers at the last joint. It causes significant pain, can lead to chronic pain and behavioral problems, and is opposed by AAFP, ISFM, and AVMA. It is banned in the UK, EU, Australia, and several US states."
+        },
+        {
+          "question": "How do I train my cat to use a scratching post?",
+          "answer": "Place posts near where your cat already scratches (favorite furniture, sleeping areas). Use sisal, cardboard, or carpet textures. Encourage use with catnip, treats, and interactive play. Reward with praise when they use the post. Be patient — training takes 2-8 weeks. Never punish or force your cat's paws on the post."
+        },
+        {
+          "question": "What are soft nail caps?",
+          "answer": "Soft nail caps (like Soft Paws) are small vinyl caps glued over the cat's claws. They blunt the claws temporarily (4-6 weeks) without surgery. They are humane, painless, and effective for preventing furniture damage. Applied by your vet or at home with practice."
+        }
+      ]
+    },
+    "hub": {
+      "guidesHeading": "对比指南",
+      "guidesDescription": "探索我们基于科学的宠物护理对比指南。",
+      "compareCardAria": "查看对比"
+    },
+    "relatedCompare": {
+      "heading": "相关对比",
+      "readComparison": "阅读对比",
+      "ariaLabel": "查看相关对比"
+    },
+    "footer": {
+      "dogGuides": "狗狗指南",
+      "catGuides": "猫咪指南",
+      "viewAll": "查看全部"
+    }
+  },
+  "privacy": {
+    "title": "隐私政策",
+    "lastUpdated": "最后更新",
+    "intro": "隐私政策",
+    "sections": [
+      {
+        "title": "Informationen, die wir sammeln",
+        "content": "Wir sammeln Informationen, die Sie uns direkt zur Verfügung stellen, sowie automatische Daten durch die Nutzung unserer Dienste."
+      },
+      {
+        "title": "Wie wir Ihre Informationen verwenden",
+        "content": "Wir verwenden gesammelte Informationen zur Bereitstellung und Verbesserung unserer Dienste."
+      }
+    ],
+    "philosophy": "我们的隐私理念",
+    "philosophyP1": "我们相信您的数据属于您自己。我们的工具在您的设备上本地运行，不会将您的信息发送到我们的服务器。",
+    "notCollect": "我们不收集的信息",
+    "notCollectP1": "我们不会收集您的姓名、电子邮件地址或任何其他个人身份信息。",
+    "notCollectP2": "我们不会跟踪您的浏览历史。",
+    "notCollectP3": "我们不会出售或与第三方共享您的数据。",
+    "notCollectP4": "我们不会在您的设备上存储任何个人数据。",
+    "storedOnDevice": "存储在您的设备上的信息",
+    "storedOnDeviceP1": "如果您选择创建宠物档案，该数据存储在您的浏览器本地存储中。",
+    "storedOnDeviceP2": "此数据不会离开您的设备。",
+    "storedOnDeviceP3": "您可以随时通过您的浏览器设置删除此数据。",
+    "storedOnDeviceP4": "清除浏览器缓存将删除所有本地存储的数据。",
+    "storedOnDeviceP5": "我们不会访问或传输此数据。",
+    "storedOnDeviceP6": "此数据仅用于改善您的体验（例如，自动填充表单）。",
+    "analytics": "分析",
+    "analyticsP1": "我们使用匿名分析来了解我们工具的使用方式。此数据不包含个人身份信息。",
+    "thirdParty": "第三方服务",
+    "thirdPartyP1": "我们可能使用第三方服务（如广告网络），这些服务可能收集自己的数据。",
+    "thirdPartyP2": "这些服务有自己的隐私政策，我们建议您阅读。",
+    "children": "儿童隐私",
+    "childrenP1": "我们的服务不针对 13 岁以下的儿童。我们不会故意收集儿童的个人信息。",
+    "gdpr": "GDPR 合规",
+    "gdprP1": "对于欧盟用户，我们遵守 GDPR 法规。由于我们不收集个人数据，大多数 GDPR 权利（如访问权、删除权）不适用。",
+    "gdprP2": "如果您有任何 GDPR 相关的问题，请联系我们。",
+    "changes": "政策变更",
+    "changesP1": "我们可能会不时更新本隐私政策。重大变更将在我们的网站上通知。"
+  },
+  "about": {
+    "title": "关于 petsMetrics",
+    "intro": "petsMetrics 由一位宠物主人和开发者创建。petsMetrics 自 2020 年以来一直提供基于科学的宠物健康工具。",
+    "methodology": "方法论",
+    "methodologyP1": "我们的所有计算都基于已发表的兽医指南 (AAHA, WSAVA, AAFCO, AAFP)。每个公式都有引用且透明。",
+    "methodologyP2": "我们定期审查和更新我们的工具，以反映最新的兽医研究。",
+    "dataSources": "数据来源",
+    "dataSourcesP1": "我们的数据来自权威兽医组织、同行评审的兽医期刊和官方政府数据库。",
+    "dataSourcesP2": "每个工具页面都包含完整的来源引用。",
+    "privacy": "隐私",
+    "privacyP1": "我们不会收集您的个人数据。所有计算都在您的设备上本地进行。",
+    "medical": "医疗免责声明",
+    "medicalP1": "我们的工具仅供参考，不能替代专业兽医建议。如有健康问题，请咨询您的兽医。",
+    "contact": "联系我们",
+    "contactP1": "如有问题或建议，请通过我们的联系页面与我们联系。"
+  },
+  "terms": {
+    "title": "服务条款",
+    "lastUpdated": "最后更新",
+    "acceptance": "接受条款",
+    "acceptanceP1": "使用我们的服务即表示您同意这些条款。",
+    "medicalDisclaimer": "医疗免责声明",
+    "medicalDisclaimerP1": "我们的工具仅供参考，不能替代专业兽医诊断或治疗。",
+    "medicalDisclaimerP2": "在做出任何宠物健康决定之前，请咨询合格的兽医。",
+    "noVetRelationship": "无兽医关系",
+    "noVetRelationshipP1": "使用我们的服务不会建立兽医-客户关系。",
+    "accuracy": "准确性",
+    "accuracyP1": "我们努力确保信息的准确性，但不保证错误为零。",
+    "liability": "责任限制",
+    "liabilityP1": "petsMetrics 对因使用我们的工具而造成的任何损害不承担责任。",
+    "intellectual": "知识产权",
+    "intellectualP1": "所有内容均为 petsMetrics 的财产，受版权法保护。",
+    "thirdParty": "第三方链接",
+    "thirdPartyP1": "我们的服务可能包含指向第三方网站的链接。我们不对这些网站的内容负责。",
+    "changes": "条款变更",
+    "changesP1": "我们保留随时修改这些条款的权利。",
+    "contact": "联系信息",
+    "contactP1": "如有关于这些条款的问题，请联系我们。"
   }
 }

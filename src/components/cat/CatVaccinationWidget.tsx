@@ -33,7 +33,7 @@ export function CatVaccinationWidget() {
   } = useVaccinationSchedule('cat');
   const pageUrl = usePageUrlBuilder();
 
-  const petName = profile?.name ?? 'Luna';
+  const petName = profile?.name ?? '—';
   const shareUrl = SITE_URL + pageUrl('cat/vaccination-schedule').slice(0, -1);
   const today = new Date().toISOString().slice(0, 10);
 

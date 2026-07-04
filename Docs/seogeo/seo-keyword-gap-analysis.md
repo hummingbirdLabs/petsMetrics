@@ -1,7 +1,7 @@
 # SEO 关键词缺口分析 — 猫狗健康工具矩阵
 
 > **版本**: v1.2 | **日期**: 2026-06-09 | **适用域名**: `petsmetrics.com`  
-> **范围**: 全部 14 个工具 + 200+ 毒性落地页 + 2 个 Hub 页  
+> **范围**: 全部 14 个工具 + 2 个 Hub 页  
 > **方法**: 基于各工具设计文档的 target keywords 字段，结合 Ahrefs/Semrush 级搜索量估算
 
 ---
@@ -9,9 +9,14 @@
 ## 目录
 
 1. [逐工具关键词覆盖矩阵](#1-逐工具关键词覆盖矩阵)
-2. [英文缺口词分析](#2-英文缺口词分析)
-3. [竞争格局与排名现实](#3-竞争格局与排名现实)
-4. [优先级排序与埋词路线图](#4-优先级排序与埋词路线图)
+2. [竞争格局与排名现实](#2-竞争格局与排名现实)
+3. [优先级排序与埋词路线图](#3-优先级排序与埋词路线图)
+4. [投产比总结](#4-投产比总结)
+5. [语义关键词聚类与内容枢纽](#4-语义关键词聚类与内容枢纽)
+6. [PAA（People Also Ask）挖掘策略](#5-people-also-ask挖掘策略)
+7. [Featured Snippet 优化目标](#6-featured-snippet-优化目标)
+8. [竞品关键词监控与反制策略](#7-竞品关键词监控与反制策略p1--长期排名攻防)
+9. [多语言关键词预研](#8-多语言关键词预研i18n-v2-准备)
 
 ---
 
@@ -37,32 +42,17 @@
 | dog toxic food checker | 🟡 Mid | ✅ 已覆盖 |
 | cat toxic plant checker | 🟡 Mid | ✅ 已覆盖 |
 | is it safe for dogs | 🟡 Mid | ✅ 已覆盖 |
-| can dogs eat grapes | 🔴 High (50k+) | ✅ 已覆盖（落地页） |
-| can dogs eat chocolate | 🔴 High (50k+) | ✅ 已覆盖（落地页） |
-| are lilies toxic to cats | 🔴 High (30k+) | ✅ 已覆盖（落地页） |
-| can dogs eat avocado | 🟠 Mid-High (15k+) | ✅ 已覆盖（落地页） |
-| can dogs eat onions | 🟠 Mid-High (12k+) | ✅ 已覆盖（落地页） |
-| can dogs eat bananas | 🟠 Mid-High (10k+) | ✅ 已覆盖（落地页） |
-| can cats eat tuna | 🟠 Mid-High (10k+) | ✅ 已覆盖（落地页） |
+| what foods are toxic to dogs | 🔴 High (20k+) | ✅ 已覆盖 |
+| plants toxic to cats | 🟠 Mid-High (15k+) | ✅ 已覆盖 |
 
 **缺口词**:
 
 | 缺口词 | 搜索量 | 类型 | 状态 |
 |--------|--------|------|------|
-| can dogs eat strawberries | 🟠 Mid-High (10k+) | 问答意图 | ⏳ 需落地页 |
-| can dogs eat watermelon | 🟠 Mid-High (10k+) | 问答意图 | ⏳ 需落地页 |
-| can dogs eat apples | 🟠 Mid-High (10k+) | 问答意图 | ⏳ 需落地页 |
-| can dogs eat popcorn | 🟡 Mid (5k-10k) | 问答意图 | ⏳ 需落地页 |
-| can dogs eat peanuts | 🟡 Mid (5k-10k) | 问答意图 | ⏳ 需落地页 |
-| what foods are toxic to dogs | 🔴 High (20k+) | 列表意图 | ✅ 毒性检测器主页可覆盖 |
 | foods dogs can't eat list | 🟠 Mid-High (15k+) | 列表意图 | ✅ 毒性检测器主页可覆盖 |
 | human foods safe for dogs | 🟠 Mid-High (10k+) | 列表意图 | ⏳ 可新增 Guide 页 |
-| plants toxic to cats | 🟠 Mid-High (15k+) | 列表意图 | ✅ 毒性检测器主页可覆盖 |
-| is mint safe for dogs | 🟡 Mid (3k-5k) | 问答意图 | ⏳ 需落地页 |
-| can dogs eat cinnamon | 🟡 Mid (3k-5k) | 问答意图 | ⏳ 需落地页 |
-| is aloe vera toxic to cats | 🟡 Mid (3k-5k) | 问答意图 | ⏳ 需落地页 |
 
-> **小结**: 毒性检测器是绝对流量核心。每个 "can dogs eat X" 变体都是一个独立 SEO 落地页。初期上线 200 个页面，优先覆盖搜索量最高的 50 种食物/植物。缺口词按搜索量分批扩充落地页即可。
+> **小结**: 毒性检测器是流量核心工具之一，通过主页覆盖列表意图关键词。缺口词可通过新增 Guide 页或优化主页内容逐步覆盖。
 
 ---
 
@@ -329,37 +319,16 @@
 
 ---
 
-## 2. 英文缺口词分析（按严重度排序）
-
-### 2.1 缺口严重度总排名
-
-| 工具 | P0 缺口词数 | 预估月搜索总量 | 严重度 |
-|------|-----------|-------------|--------|
-| **毒性检测器 + 落地页** | 10+ | 150k+ | 🔴 **极高** — 核心 SEO 引擎尚未完全就绪 |
-| **狗狗年龄计算器** | 3 | 35k+ | 🟡 中等 |
-| **狗狗卡路里计算器** | 4 | 30k+ | 🟡 中等 |
-| **猫咪年龄计算器** | 2 | 15k+ | 🟡 中等 |
-| **狗狗疫苗计划** | 3 | 25k+ | 🟡 中等 |
-| **幼犬生长预测** | 2 | 12k+ | 🟢 低 |
-| **EU 旅行检查器** | 2 | 8k+ | 🟢 低 |
-| **猫咪疫苗计划** | 2 | 8k+ | 🟢 低 |
-| **狗狗怀孕计算器** | 2 | 10k+ | 🟢 低 |
-| **猫咪水分计算器** | 2 | 8k+ | 🟢 低 |
-| **猫咪怀孕计算器** | 2 | 10k+ | 🟢 低 |
-| **BARF 计算器** | 2 | 8k+ | 🟢 低 |
-| **猫咪 BCS** | 2 | 8k+ | 🟢 低 |
-| **保险估算器** | 2 | 15k+ | 🟡 中等 |
-
-### 2.2 与竞争的关系
+## 2. 竞争格局与排名现实
 
 宠物健康工具类关键词属于**高竞争**赛道（宠物医疗/健康信息，YMYL 垂类）：
 
-- **极高竞争词**（ASPCA DA 82 / AKC DA 78 占据首页）：`can dogs eat grapes`、`dog age calculator`、`puppy vaccine schedule`
+- **极高竞争词**（AKC DA 78 占据首页）：`dog age calculator`、`puppy vaccine schedule`
 - **高竞争词**（PetMD DA 71 / Chewy DA 69 在前 3）：`how much to feed my dog`、`dog calorie calculator`、`cat age calculator`
-- **中竞争词**（小型宠物站可进入前 10）：`cat BCS calculator`、`dog gestation calculator`、`puppy growth chart`
+- **中竞争词**（小型宠物站可进入前 10）：`cat BCS calculator`、`dog gestation calculator`、`puppy growth chart`、`dog toxic food checker`
 - **低竞争词**（niche 品类空缺）：`EU pet travel checker`、`BARF calculator`、`cat hydration calculator`
 
-**核心策略**: 利用 "pet profile auto-fill" USP 在 meta description 和 title 中切入中低竞争词，同时用 200+ 毒性落地页大量覆盖长尾。
+**核心策略**: 利用 "pet profile auto-fill" USP 在 meta description 和 title 中切入中低竞争词，同时以各工具页覆盖对应长尾关键词。
 
 ---
 
@@ -371,13 +340,12 @@
 
 - **搜索量**: High=5 / Mid-High=4 / Mid=3 / Low=1
 - **竞争难度**: Low=3 / Mid=2 / High=1（倒数，低竞争更易排上）
-- **实现工作量**: 改 keywords=3 / 改 FAQ=2 / 需新建落地页=1
+- **实现工作量**: 改 keywords=3 / 改 FAQ=2 / 新增 Guide 页=1
 
 ### 3.1 P0 — 上线即必须覆盖（改 title/keywords/description 即可）
 
 | 优先级 | 工具 | 关键词 | 搜索量 | 实现方式 | 状态 |
 |--------|------|--------|--------|---------|------|
-| ⭐⭐⭐⭐⭐ | 毒性检测器 | 200 toxic food landing pages | 🔴 总量 1M+/月 | 新建落地页 | ⏳ 待上线 |
 | ⭐⭐⭐⭐⭐ | 狗狗年龄 | dog age chart | 🟠 15k+ | 在 keywords + FAQ 追加 | ⏳ 待实施 |
 | ⭐⭐⭐⭐⭐ | 狗狗卡路里 | how many calories does my dog need | 🟠 15k+ | 在 keywords + FAQ 追加 | ⏳ 待实施 |
 | ⭐⭐⭐⭐ | 狗狗疫苗 | puppy vaccination chart | 🟠 10k+ | 在 title 中追加 | ⏳ 待实施 |
@@ -396,18 +364,6 @@
 | ⭐⭐⭐ | 狗狗疫苗 | dog deworming schedule | 🟡 5k-10k | keywords + FAQ | ⏳ 待实施 |
 | ⭐⭐⭐ | BARF | raw feeding guide for dogs | 🟡 3k-5k | 新增 Guide 页 | ⏳ 待实施 |
 
-### 3.3 P2 — 第 2-3 个月扩充（长尾词 + 新增落地页）
-
-| 优先级 | 关键词 | 搜索量 | 实现方式 | 状态 |
-|--------|--------|--------|---------|------|
-| ⭐⭐⭐ | can dogs eat strawberries | 🟠 10k+ | 新增毒性落地页 | ⏳ |
-| ⭐⭐⭐ | can dogs eat watermelon | 🟠 10k+ | 新增毒性落地页 | ⏳ |
-| ⭐⭐⭐ | can dogs eat apples | 🟠 10k+ | 新增毒性落地页 | ⏳ |
-| ⭐⭐ | is mint safe for dogs | 🟡 3k-5k | 新增毒性落地页 | ⏳ |
-| ⭐⭐ | can dogs eat cinnamon | 🟡 3k-5k | 新增毒性落地页 | ⏳ |
-| ⭐⭐ | is aloe vera toxic to cats | 🟡 3k-5k | 新增毒性落地页 | ⏳ |
-| ⭐ | 50+ 低搜索量食物/植物 | 🟢 < 3k | 批量新增落地页 | ⏳ |
-
 ---
 
 ## 4. 投产比总结
@@ -416,31 +372,29 @@
 
 | 排名 | 动作 | 预估覆盖率 | 工作量 | ROI |
 |------|------|----------|--------|-----|
-| 1 | 上线 200+ 毒性落地页 | 150k+ 月搜索量 | 中（批量生成） | ⭐⭐⭐⭐⭐ |
-| 2 | 优化工具页 keywords + FAQ | 80k+ 月搜索量 | 低（改 i18n） | ⭐⭐⭐⭐⭐ |
-| 3 | Hub 页 title 追加 "Free" | 6k-10k 月搜索量 | 极低 | ⭐⭐⭐⭐ |
-| 4 | EU 旅行检查器媒体 PR | 反链价值 > 直接搜索量 | 中 | ⭐⭐⭐⭐ |
-| 5 | 新增 Guide 页（2-3 篇） | 15k+ 月搜索量 | 中 | ⭐⭐⭐ |
-| 6 | P2 毒性落地页扩充 | 30k+ 月搜索量 | 低（模板化） | ⭐⭐⭐ |
+| 1 | 优化工具页 keywords + FAQ | 80k+ 月搜索量 | 低（改 i18n） | ⭐⭐⭐⭐⭐ |
+| 2 | Hub 页 title 追加 "Free" | 6k-10k 月搜索量 | 极低 | ⭐⭐⭐⭐⭐ |
+| 3 | EU 旅行检查器媒体 PR | 反链价值 > 直接搜索量 | 中 | ⭐⭐⭐⭐ |
+| 4 | 新增 Guide 页（2-3 篇） | 15k+ 月搜索量 | 中 | ⭐⭐⭐ |
 
 ### 4.2 SEO 里程碑预测
 
 | 里程碑 | 预期时间 | 指标 |
 |--------|---------|------|
 | Google 开始索引 | Month 1 | 核心工具页进入索引 |
-| 毒性落地页全量索引 | Month 2-3 | 200+ 页面被收录 |
+| 工具页全量索引 | Month 2-3 | 全部页面被收录 |
 | 首个长尾词进入 Top 10 | Month 4-6 | "cat BCS calculator" 类中低竞争词 |
-| 毒性落地页开始有点击 | Month 6-9 | "can dogs eat X" 长尾初见流量 |
+| 长尾词开始有点击 | Month 6-9 | 工具页长尾初见流量 |
 | 首个 Mid 竞争词进入 Top 3 | Month 12-18 | 需持续外链建设 |
 | 核心词进入第一页 | Month 18-36 | "dog age calculator" 类高竞争词 |
 
 ---
 
-## 5. 语义关键词聚类与内容枢纽
+## 4. 语义关键词聚类与内容枢纽
 
 > 孤立的关键词优化已过时。Google 2024+ 算法依赖 **语义主题建模**——判断一个页面是否真正"覆盖"某个主题，而非仅匹配单个关键词。需要建立语义聚类策略，将相关关键词组织为 "内容枢纽"（Content Hub）。
 
-### 5.1 语义聚类方法
+### 4.1 语义聚类方法
 
 每个工具页不是围绕 1 个目标词优化，而是覆盖一个 **语义簇**（Semantic Cluster）：
 
@@ -448,11 +402,11 @@
 |--------|------------------------|--------------------------------------|
 | 狗狗卡路里计算器 | dog calorie calculator | MER formula, RER calculation, dog daily energy requirement, AAFCO feeding guidelines, dog weight management, how much to feed my dog by weight, canine nutrition calculator, dog food portion |
 | 狗狗年龄计算器 | dog age calculator | dog years to human years chart, canine aging by breed, UCSD epigenetic clock, dog life stages, when is a dog considered senior, small breed vs large breed aging, how old is my 5 year old dog |
-| 毒性：葡萄落地页 | can dogs eat grapes | grape toxicity dogs, raisin poisoning dogs, dog kidney failure grapes, how many grapes toxic to dog, symptoms grape poisoning dogs, ASPCA grape toxic, my dog ate grape what to do |
+| 毒性检测器 | dog toxic food checker | foods toxic to dogs, plants toxic to cats, dog poisoning symptoms, cat poisoning symptoms, what to do if dog eats toxic food, ASPCA animal poison control |
 | 猫咪 BCS | cat body condition score | is my cat overweight, feline obesity chart, cat weight categories, how to tell if cat is fat, 9 point BCS scale, indoor cat weight gain, healthy cat weight range by breed |
 | EU 旅行检查器 | pet travel to Europe | EU pet passport requirements, bringing dog to EU from US, microchip ISO 11784, rabies titer test for travel, EU animal health certificate, non-commercial pet movement EU, taking cat to France |
 
-### 5.2 实现模式
+### 4.2 实现模式
 
 ```tsx
 // ✅ 在页面正文中自然融入语义簇词
@@ -470,7 +424,7 @@
 // canine nutrition, dog weight management 等语义簇词
 ```
 
-### 5.3 内容枢纽架构
+### 4.3 内容枢纽架构
 
 ```
 petsMetrics.com/
@@ -485,32 +439,31 @@ petsMetrics.com/
 ├── [Cat Health Hub]
 │   ├── BCS 体重追踪 → 链接至 卡路里计算器、水分计算器
 │   └── 水分计算器 → 链接至 BCS 体重追踪
-├── [Toxic Food Knowledge Base]
-│   └── 200+ 落地页 → 交叉链接至相关食物 + 毒性检测器主页
+├── [Toxic Safety Hub]
+│   └── 毒性检测器 → 链接至 疫苗计划、保险估算器
 ├── [Travel & Legal Hub]
 │   └── EU 旅行检查器 → 链接至 疫苗计划、保险估算器
 └── [Raw Feeding Hub]
     └── BARF 计算器 → 链接至 卡路里计算器
 ```
 
-### 5.4 内部链接密度要求
+### 4.4 内部链接密度要求
 
 每个工具页的 Related Tools 区块最低交叉链接数：
 
 | 页面类型 | 最低交叉链接数 | 链接目标要求 |
 |---------|----------|-----------|
 | 工具页 | 3 | 至少 1 个同物种 + 至少 1 个跨品类共享工具 |
-| 毒性落地页 | 5 | 至少 3 个 Related Items（相关食物）+ 毒性检测器主页 + 同物种疫苗接种 |
 | Hub 页 | 全部子工具 | 每个子工具有独立卡片链入 |
 | 首页 | 4 | Dog Hub + Cat Hub + Toxic Checker + Profile |
 
 ---
 
-## 6. PAA（People Also Ask）挖掘策略
+## 5. PAA（People Also Ask）挖掘策略
 
 > PAA 是 Google SERP 中增长最快的 Feature。在宠物健康类查询中，PAA 出现率超过 80%。每个 PAA 问题都是一个独立的 SEO 机会——如果页面在已有排名，可以同时出现在 PAA 框中。
 
-### 6.1 PAA 挖掘流程
+### 5.1 PAA 挖掘流程
 
 | 步骤 | 工具 | 动作 |
 |------|------|------|
@@ -519,7 +472,7 @@ petsMetrics.com/
 | 3 | Ahrefs / Semrush | 筛选 PAA 问题中"同时是独立搜索查询"的问题（搜索量 > 100） |
 | 4 | 映射 | 将 PAA 问题映射到具体页面，作为 FAQ 或正文补充 |
 
-### 6.2 已识别的高价值 PAA 目标（按工具页）
+### 5.2 已识别的高价值 PAA 目标（按工具页）
 
 | 核心查询 | 高价值 PAA 问题 | 现有覆盖 |
 |---------|---------------|---------|
@@ -530,11 +483,11 @@ petsMetrics.com/
 | dog calorie calculator | "Why is my dog always hungry?" | ⏳ FAQ 需追加 |
 | puppy vaccine schedule | "Can I vaccinate my own puppy?" | ⏳ FAQ 需追加 |
 | puppy vaccine schedule | "What happens if I miss a puppy vaccination?" | ⏳ FAQ 需追加 |
-| can dogs eat chocolate | "How long after eating chocolate will a dog show symptoms?" | ⏳ 落地页正文需覆盖 |
+| dog toxic food checker | "What should I do if my dog eats something toxic?" | ⏳ FAQ 需追加 |
 | is my cat overweight | "Should I free feed my cat?" | ⏳ FAQ 需追加 |
 | BARF diet calculator | "Is raw food better than kibble?" | ⏳ FAQ 需追加 |
 
-### 6.3 PAA 优化实现
+### 5.3 PAA 优化实现
 
 PAA 问题复用 FAQ Section 的 `<details>` + FAQPage JSON-LD：
 
@@ -556,24 +509,23 @@ const faqItems = [
 
 ---
 
-## 7. Featured Snippet 优化目标
+## 6. Featured Snippet 优化目标
 
 > Featured Snippet（精选摘要）是 Google 搜索结果顶部的直接答案框，截流效果极强。宠物健康类查询的 Featured Snippet 出现率约 35%，捕获一个 Featured Snippet 可带来远超排名 #1 的 CTR。
 
-### 7.1 可 Snippet 化查询识别
+### 6.1 可 Snippet 化查询识别
 
 | 工具 | 可 Snippet 化查询 | Snippet 类型 | 现状 |
 |------|-----------------|-------------|------|
 | 狗狗年龄计算器 | "how many human years is a dog year" | Paragraph | ⏳ 页面正文已含，需优化格式 |
 | 狗狗怀孕计算器 | "how long are dogs pregnant" | Paragraph | ⏳ 页面正文已含 |
 | 猫咪怀孕计算器 | "how long are cats pregnant" | Paragraph | ⏳ 页面正文已含 |
-| 毒性：葡萄 | "can dogs eat grapes" | Paragraph | ⏳ 落地页正文已含 |
-| 毒性：百合花 | "are lilies toxic to cats" | Paragraph | ⏳ 落地页正文已含 |
+| 毒性检测器 | "what foods are toxic to dogs" | Paragraph | ⏳ 页面正文已含 |
 | 疫苗计划 | "DHPP vaccine schedule" | List | ✅ 页面以表格/list 形式输出 |
 | BCS 体重 | "cat body condition score chart" | List | ⏳ 需优化 BCS 描述为结构化列表 |
 | EU 旅行 | "pet passport requirements EU" | List | ⏳ 需将要求格式化为列表 |
 
-### 7.2 Featured Snippet 优化规范
+### 6.2 Featured Snippet 优化规范
 
 **Paragraph Snippet（"What is X" / "How long is Y"）**：
 
@@ -617,13 +569,13 @@ const faqItems = [
 </table>
 ```
 
-### 7.3 Featured Snippet 优先级
+### 6.3 Featured Snippet 优先级
 
 | 优先级 | 查询 | 原因 |
 |--------|------|------|
 | 🥇 P0 | "how long are dogs pregnant" | Paragraph snippet，竞争中等，AAHA 引用可信度高 |
 | 🥇 P0 | "how long are cats pregnant" | 同上，猫怀孕 Snippet 竞争更低 |
-| 🥈 P1 | "can dogs eat grapes" | Paragraph snippet，但 ASPCA 占据 Snippet，需更优质内容 |
+| 🥈 P1 | "what foods are toxic to dogs" | Paragraph snippet，中等竞争 |
 | 🥈 P1 | "DHPP vaccine schedule" | List snippet，已有表格数据 |
 | 🥉 P2 | "cat body condition score chart" | List snippet，需先丰富 BCS 描述文本 |
 | 🥉 P2 | "pet passport requirements EU" | List snippet，低竞争但搜索量中等 |
@@ -633,11 +585,11 @@ const faqItems = [
 
 ---
 
-## 8. 竞品关键词监控与反制策略（P1 — 长期排名攻防）
+## 7. 竞品关键词监控与反制策略（P1 — 长期排名攻防）
 
 > **为什么重要**：宠物健康工具类的 SERP 不固定——竞争对手不断更新内容、新站进入、Google 算法调整都会导致排名变动。需要建立"竞品关键词雷达"，在竞品覆盖我们的缺口词之前提前行动，在竞品狙击我们的核心词时快速反应。
 
-### 8.1 竞品监控对象分级
+### 7.1 竞品监控对象分级
 
 | 级别 | 竞品 | 监控原因 | 监控频率 |
 |------|------|---------|---------|
@@ -645,17 +597,17 @@ const faqItems = [
 | **Tier 2 — 品类相邻** | IAMS（DA 65）、Chewy（DA 69）、Purina（DA 68） | 部分工具功能重合，联盟流量竞争 | 每两周 |
 | **Tier 3 — 新入者** | 新兴宠物工具站（DA < 30） | 可能是与我们同时期上线的新站 | 每月发现 |
 
-### 8.2 竞品关键词变更监控矩阵
+### 7.2 竞品关键词变更监控矩阵
 
 | 监控维度 | 工具 | 触发阈值 | 反制动作 |
 |---------|------|---------|---------|
 | **竞品新增工具** | Ahrefs: 竞品域名 → "New Pages" 报告 | 竞品上线与 petsMetrics 工具重合的页面 | 对比竞品工具功能 → 决定是否强化我方对应工具页内容 |
 | **竞品关键词排名上升** | Semrush: 竞品域名 → "Position Changes" | 竞品在共享关键词上升 ≥ 5 位 | 复查我方页面 E-E-A-T 信号 + 内容深度 |
-| **竞品新内容上线** | Google Alerts: `site:petmd.com {keyword}` | 竞品发布与 petsMetrics 重合的新落地页 | 检查竞品落地页结构、字数、引用 → 优化我方对应页面 |
+| **竞品新内容上线** | Google Alerts: `site:petmd.com {keyword}` | 竞品发布与 petsMetrics 重合的新页面 | 检查竞品页面结构、字数、引用 → 优化我方对应页面 |
 | **竞品反链增长** | Ahrefs: 竞品域名 → "Backlinks → New" | 竞品获得 3+ 高质量反链/周 | 分析反链来源 → 如果我方可获得同类反链，立即执行 |
-| **SERP Feature 变化** | 手动在 Google 检视目标关键词 SERP | 新出现 Featured Snippet / PAA / AI Overview 且我方不在其中 | 按 Featured Snippet 优化格式（见 §7） |
+| **SERP Feature 变化** | 手动在 Google 检视目标关键词 SERP | 新出现 Featured Snippet / PAA / AI Overview 且我方不在其中 | 按 Featured Snippet 优化格式（见 §6） |
 
-### 8.3 竞品内容差异分析模板
+### 7.3 竞品内容差异分析模板
 
 每当竞品在目标关键词上排名超过 petsMetrics 时，执行以下对比分析：
 
@@ -683,7 +635,7 @@ const faqItems = [
 - [ ] [具体动作] — 负责人 — 截止日期
 ```
 
-### 8.4 防御性关键词保护
+### 7.4 防御性关键词保护
 
 对于已经获得排名的核心词，需要"防御性埋词"防止被反超：
 
@@ -697,11 +649,11 @@ const faqItems = [
 
 ---
 
-## 9. 多语言关键词预研（i18n v2 准备）
+## 8. 多语言关键词预研（i18n v2 准备）
 
 > 当前阶段仅发布英语版。但欧洲市场（德国、法国、荷兰）的宠物工具搜索量显著，且竞争远低于英语。规划 i18n 关键词可以指导未来的翻译优先级。
 
-### 9.1 高价值非英语市场
+### 8.1 高价值非英语市场
 
 | 语言 | 市场 | 代表关键词 | 月搜索量 | 英语竞争 DA | 本地竞争 DA |
 |------|------|---------|--------|-----------|-----------|
@@ -710,7 +662,7 @@ const faqItems = [
 | **荷兰语** | NL/BE | "honden leeftijd berekenen" | 🟡 2k-4k | 无直接竞争 | DA 15-25 |
 | **西班牙语** | ES/MX | "calculadora edad perro" | 🟡 3k-5k | 无直接竞争 | DA 25-35 |
 
-### 9.2 i18n 优先级建议
+### 8.2 i18n 优先级建议
 
 | 阶段 | 语言 | 说明 |
 |------|------|------|
@@ -720,6 +672,6 @@ const faqItems = [
 
 > **架构准备**：URL 结构已为 `/[lang]/` 前缀预留（见 ArkCon.md §3.4），`pageUrl()` 工具函数是唯一迁移点。当前所有 target keywords 和 content 文本在 `messages/en.json` 中集中管理，翻译时直接替换到 `messages/de.json` 即可。
 
-### 9.3 文档版本信息
+### 8.3 文档版本信息
 
 > **版本**: v1.2 | **最后更新**: 2026-06-09 | **变更**: 新增 §8 竞品关键词监控与反制策略

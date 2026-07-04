@@ -1,8 +1,7 @@
 import { MetadataRoute } from 'next';
 import { SITE_URL } from '@/constants';
-import { getAllToolRoutes, getAllStaticPaths, getAllEUTravelRoutes, getAllToxicSlugs } from '@/lib/data/routes';
+import { getAllToolRoutes, getAllStaticPaths, getAllEUTravelRoutes } from '@/lib/data/routes';
 import {
-  getToxicDbUpdatedDate,
   getToolMethodologyUpdatedDate,
   getEUTravelRulesUpdatedDate,
 } from '@/lib/data/content-version';
@@ -100,7 +99,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const entries: MetadataRoute.Sitemap = [];
 
   const toolDate = getToolMethodologyUpdatedDate();
-  const toxicDate = getToxicDbUpdatedDate();
   const euDate = getEUTravelRulesUpdatedDate();
   const now = new Date();
 
@@ -170,19 +168,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.7,
       });
     }
-
-    // 毒性落地页
-    const toxicSlugs = getAllToxicSlugs();
-    for (const entry of toxicSlugs) {
-      const pathPrefix = entry.species === 'dog' ? 'dog/can-dogs-eat' : 'cat/are-toxic-to-cats';
-      entries.push({
-        url: `${SITE_URL}${prefix}/${pathPrefix}/${entry.slug}/`,
-        lastModified: toxicDate,
-        changeFrequency: 'monthly' as const,
-        priority: 0.8,
-      });
-    }
   }
 
   return entries;
 }
+

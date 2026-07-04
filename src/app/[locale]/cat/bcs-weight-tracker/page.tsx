@@ -26,29 +26,32 @@ import { KnowledgeCards } from '@/components/shared/KnowledgeCards';
 import { ScienceBehindIt } from '@/components/shared/ScienceBehindIt';
 import { CatBCSWidget } from '@/components/cat/CatBCSWidget';
 
-export const metadata: Metadata = {
-  title: 'Cat Body Condition Score — Is My Cat Overweight? | petsMetrics',
-  description:
-    'Use our visual BCS assessment to check if your cat is at a healthy weight. Get a safe calorie-reduction plan based on the AAHA 9-point BCS scale.',
-  keywords: 'cat body condition score, is my cat overweight, cat weight calculator, how to tell if cat is overweight, cat obesity chart, healthy cat weight by breed, indoor cat weight gain',
-  alternates: {
-    canonical: `${SITE_URL}/cat/bcs-weight-tracker/`,
-  },
-  openGraph: {
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  return {
     title: 'Cat Body Condition Score — Is My Cat Overweight? | petsMetrics',
     description:
-      'Assess your cat\'s body condition using the 9-point BCS scale. Get a safe weight management plan with calorie targets.',
-    url: `${SITE_URL}/cat/bcs-weight-tracker/`,
-    type: 'website',
-    images: [{ url: `${SITE_URL}/og/cat-bcs-weight-tracker.webp`, width: 1200, height: 630, alt: 'Cat Body Condition Score — BCS Weight Tracker' }],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Cat Body Condition Score — Is My Cat Overweight? | petsMetrics',
-    description: 'Assess your cat\'s body condition using the 9-point BCS scale. Get a safe weight management plan.',
-    images: [`${SITE_URL}/og/cat-bcs-weight-tracker.webp`],
-  },
-};
+      'Use our visual BCS assessment to check if your cat is at a healthy weight. Get a safe calorie-reduction plan based on the AAHA 9-point BCS scale.',
+    keywords: 'cat body condition score, is my cat overweight, cat weight calculator, how to tell if cat is overweight, cat obesity chart, healthy cat weight by breed, indoor cat weight gain',
+    alternates: {
+      canonical: `${SITE_URL}/${locale}/cat/bcs-weight-tracker/`,
+    },
+    openGraph: {
+      title: 'Cat Body Condition Score — Is My Cat Overweight? | petsMetrics',
+      description:
+        'Assess your cat\'s body condition using the 9-point BCS scale. Get a safe weight management plan with calorie targets.',
+      url: `${SITE_URL}/${locale}/cat/bcs-weight-tracker/`,
+      type: 'website',
+      images: [{ url: `${SITE_URL}/og/cat-bcs-weight-tracker.webp`, width: 1200, height: 630, alt: 'Cat Body Condition Score — BCS Weight Tracker' }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: 'Cat Body Condition Score — Is My Cat Overweight? | petsMetrics',
+      description: 'Assess your cat\'s body condition using the 9-point BCS scale. Get a safe weight management plan.',
+      images: [`${SITE_URL}/og/cat-bcs-weight-tracker.webp`],
+    },
+  };
+}
 
 const faqSchema = generateFaqPageJsonLd(CAT_BCS_FAQ);
 
@@ -99,13 +102,13 @@ export default async function CatBCSPage({ params }: { params: { locale: string 
               </p>
             </div>
             <CatBCSWidget />
-            <KnowledgeCards cards={CAT_BCS_KNOWLEDGE} />
+            <KnowledgeCards cards={CAT_BCS_KNOWLEDGE} locale={locale} />
             <ScienceBehindIt content={CAT_BCS_SCIENCE} />
             <ToolCtaSection
-              heading="Check Your Cat's Hydration"
-              description="Weight management and hydration go together. Use our Hydration Calculator to ensure your cat gets enough water — a critical factor in healthy weight loss."
-              href="/cat/hydration-calculator/"
-              buttonLabel="Check Hydration Status →"
+              heading={t('toolCta.checkCatWeight.heading')}
+              description={t('toolCta.checkCatWeight.description')}
+              href={pageUrl('cat/hydration-calculator')}
+              buttonLabel={t('toolCta.checkCatWeight.button')}
             />
             <DisclaimerSection text={t('disclaimer.tool')} variant="tool" />
           </div>
@@ -113,7 +116,7 @@ export default async function CatBCSPage({ params }: { params: { locale: string 
         sidebar={
           <div className="flex flex-col gap-4">
             <Card padding="md">
-              <p className="text-sm font-semibold text-[--gray-900]">About BCS</p>
+              <p className="text-sm font-semibold text-[--gray-900]">{t('sidebar.aboutBcs')}</p>
               <ul className="mt-2 flex flex-col gap-2 text-sm text-[--gray-600]">
                 <li>Based on the WSAVA 9-point Body Condition Score scale</li>
                 <li>Safe calorie targets prevent hepatic lipidosis</li>
@@ -121,7 +124,7 @@ export default async function CatBCSPage({ params }: { params: { locale: string 
               </ul>
             </Card>
             <Card padding="md">
-              <p className="text-sm font-semibold text-[--gray-900]">Quick Tips</p>
+              <p className="text-sm font-semibold text-[--gray-900]">{t('sidebar.quickTips')}</p>
               <ul className="mt-2 flex flex-col gap-2 text-sm text-[--gray-600]">
                 <li>Feel ribs with a slight fat cover = ideal</li>
                 <li>Visible waist from above = healthy weight</li>

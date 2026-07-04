@@ -24,6 +24,7 @@
   --brand-navy: #1B2D4F;
   --brand-teal: #0D9488;
   --brand-teal-light: #CCFBF1;
+  --brand-teal-dark: #065F56;
   --white: #FFFFFF;
   --gray-50: #F8FAFC;
   --gray-100: #F1F5F9;
@@ -48,13 +49,21 @@
 
   /* 语义状态色 */
   --status-safe: #10B981;
-  --status-safe-bg: #D1FAE5;
+  --status-safe-dark: #065F46;
+  --status-safe-bg: #A7F3D0;
+  --status-safe-light: #D1FAE5;
   --status-caution: #F59E0B;
-  --status-caution-bg: #FEF3C7;
+  --status-caution-dark: #92400E;
+  --status-caution-bg: #FDE68A;
+  --status-caution-light: #FEF3C7;
   --status-toxic: #EF4444;
+  --status-toxic-dark: #991B1B;
   --status-toxic-bg: #FEE2E2;
+  --status-toxic-light: #FEE2E2;
   --status-info: #3B82F6;
+  --status-info-dark: #1E40AF;
   --status-info-bg: #DBEAFE;
+  --status-info-light: #DBEAFE;
 }
 
 /* 深色模式覆盖 */
@@ -70,12 +79,16 @@
     --brand-navy: #E2E8F0;
     --brand-teal-light: #0F766E;
     --dog-primary-light: #451A03;
-    --dog-surface: #1C0E00;
+    --dog-surface: #5A2F00;
     --cat-primary-light: #2E1065;
-    --cat-surface: #13072B;
+    --cat-surface: #4A2580;
     --status-safe-bg: #064E3B;
+    --status-safe-light: #10B981;
     --status-caution-bg: #451A03;
+    --status-caution-light: #F59E0B;
     --status-toxic-bg: #450A0A;
+    --status-toxic-light: #EF4444;
     --status-info-bg: #1E3A5F;
+    --status-info-light: #3B82F6;
   }
 }

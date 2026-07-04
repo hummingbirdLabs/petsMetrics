@@ -1,24 +1,28 @@
 import type { Metadata } from 'next';
 import { SITE_URL, SITE_NAME } from '@/constants';
 import { JsonLdScript } from '@/components/shared/JsonLdScript';
+import { graphJsonLd } from '@/lib/seo/geo-meta';
 import { createPageUrl } from '@/lib/utils/url';
 
-export const metadata: Metadata = {
-  title: 'Free Shared Pet Tools — Toxic Checker, EU Travel & More',
-  description:
-    'Cross-species pet tools: toxic food checker, EU pet travel rules, BARF calculator, and pet insurance estimator. Free, no login.',
-  alternates: {
-    canonical: `${SITE_URL}/shared/`,
-  },
-  openGraph: {
-    title: 'Free Shared Pet Tools — Toxic Checker, EU Travel & More | petsMetrics',
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  return {
+    title: 'Free Shared Pet Tools — Toxic Checker, EU Travel & More',
     description:
       'Cross-species pet tools: toxic food checker, EU pet travel rules, BARF calculator, and pet insurance estimator. Free, no login.',
-    url: `${SITE_URL}/shared/`,
-    type: 'website',
-    images: [{ url: `${SITE_URL}/og/toxic-checker.webp`, width: 1200, height: 630, alt: 'Shared Pet Tools' }],
-  },
-};
+    alternates: {
+      canonical: `${SITE_URL}/${locale}/shared/`,
+    },
+    openGraph: {
+      title: 'Free Shared Pet Tools — Toxic Checker, EU Travel & More | petsMetrics',
+      description:
+        'Cross-species pet tools: toxic food checker, EU pet travel rules, BARF calculator, and pet insurance estimator. Free, no login.',
+      url: `${SITE_URL}/${locale}/shared/`,
+      type: 'website',
+      images: [{ url: `${SITE_URL}/og/toxic-checker.webp`, width: 1200, height: 630, alt: 'Shared Pet Tools' }],
+    },
+  };
+}
 
 const collectionSchema = {
   '@context': 'https://schema.org',
@@ -26,7 +30,7 @@ const collectionSchema = {
   name: 'Shared Pet Health Tools',
   description:
     'Cross-species pet tools: toxic food checker, EU pet travel rules, BARF calculator, and pet insurance estimator.',
-  url: `${SITE_URL}/shared/`,
+  url: `${SITE_URL}/${locale}/shared/`,
   isPartOf: { '@type': 'WebSite', name: SITE_NAME, url: SITE_URL },
 };
 
@@ -72,12 +76,11 @@ export default async function SharedHubPage({ params }: { params: { locale: stri
 
   return (
     <>
-      <JsonLdScript data={collectionSchema} />
-      <JsonLdScript data={breadcrumbSchema} />
+      <JsonLdScript data={graphJsonLd(collectionSchema, breadcrumbSchema)} />
 
       <section
         className="flex min-h-[280px] items-center px-4 py-12 sm:px-6 lg:px-8"
-        style={{ background: 'linear-gradient(135deg, #0D9488 0%, #14B8A6 60%, #2DD4BF 100%)' }}
+        style={{ background: 'linear-gradient(135deg, var(--brand-teal) 0%, #14B8A6 60%, #2DD4BF 100%)' }}
       >
         <div className="mx-auto w-full max-w-7xl">
           <h1 className="font-display text-4xl font-bold text-white sm:text-5xl">

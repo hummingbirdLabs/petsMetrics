@@ -35,7 +35,7 @@ export function DogGestationWidget() {
   } = useGestation('dog');
   const pageUrl = usePageUrlBuilder();
 
-  const petName = profile?.name ?? 'Buddy';
+  const petName = profile?.name ?? '—';
   const shareUrl = SITE_URL + pageUrl('dog/gestation-calculator').slice(0, -1);
 
   const today = new Date().toISOString().slice(0, 10);
@@ -125,7 +125,7 @@ export function DogGestationWidget() {
 
           {/* Species-specific health facts banner */}
           <div className="rounded-lg border-l-4 border-l-[--dog-primary] bg-[--dog-primary-light] p-4">
-            <p className="text-sm font-semibold text-[--gray-800]">Dog Gestation Facts</p>
+            <p className="text-sm font-semibold text-[--gray-800]">{t('facts')}</p>
             <p className="mt-1 text-sm text-[--gray-600]">{DOG_GESTATION_FACTS.healthTip}</p>
             <p className="mt-2 text-xs text-[--gray-400]">{DOG_GESTATION_FACTS.sourceNote}</p>
           </div>

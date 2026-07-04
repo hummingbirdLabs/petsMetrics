@@ -64,7 +64,7 @@ export function DogAgeWidget() {
   const pageUrl = usePageUrlBuilder();
 
   const shareUrl = SITE_URL + pageUrl('dog/age-calculator').slice(0, -1);
-  const petName = profile?.name ?? 'Buddy';
+  const petName = profile?.name ?? '—';
   const stageName = result ? t(LIFESTAGE_I18N_MAP[result.lifeStage]) : '';
 
   return (

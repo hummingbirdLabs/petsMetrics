@@ -1,3 +1,6 @@
+'use client';
+import { useTranslations } from 'next-intl';
+
 type StepperProps = {
   steps: { label: string; description?: string }[];
   current: number;
@@ -5,8 +8,9 @@ type StepperProps = {
 };
 
 export function Stepper({ steps, current, className = '' }: StepperProps) {
+  const t = useTranslations('common');
   return (
-    <nav aria-label="Progress" className={className}>
+    <nav aria-label={t('progressAriaLabel')} className={className}>
       <ol className="flex items-center">
         {steps.map((step, i) => {
           const isCompleted = i < current;

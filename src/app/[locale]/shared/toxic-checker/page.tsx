@@ -25,19 +25,21 @@ import { KnowledgeCards } from '@/components/shared/KnowledgeCards';
 import { ScienceBehindIt } from '@/components/shared/ScienceBehindIt';
 import { ToxicCheckerWidget } from '@/components/shared/ToxicCheckerWidget';
 
-export const metadata: Metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  return {
   title: 'Toxic Food & Plant Checker for Dogs & Cats | petsMetrics',
   description:
     'Instantly check if any food or plant is safe for your dog or cat. 200+ items in our database. Severity ratings, symptoms, and vet hotline included.',
   keywords: 'dog toxic food checker, cat toxic plant checker, is it safe for dogs, can dogs eat, what foods are toxic to dogs, foods dogs can\'t eat list, plants toxic to cats, human foods safe for dogs',
   alternates: {
-    canonical: `${SITE_URL}/shared/toxic-checker/`,
+    canonical: `${SITE_URL}/${locale}/shared/toxic-checker/`,
   },
   openGraph: {
     title: 'Toxic Food & Plant Checker for Dogs & Cats | petsMetrics',
     description:
       'Check food and plant safety for your pet — 200+ items. Get toxicity levels, symptoms, and emergency numbers.',
-    url: `${SITE_URL}/shared/toxic-checker/`,
+    url: `${SITE_URL}/${locale}/shared/toxic-checker/`,
     type: 'website',
     images: [{ url: `${SITE_URL}/og/toxic-checker.webp`, width: 1200, height: 630, alt: 'Toxic Food & Plant Checker for Dogs & Cats' }],
   },
@@ -48,6 +50,7 @@ export const metadata: Metadata = {
     images: [`${SITE_URL}/og/toxic-checker.webp`],
   },
 };
+}
 
 const faqSchema = generateFaqPageJsonLd(TOXIC_CHECKER_FAQ);
 
@@ -96,13 +99,13 @@ export default async function ToxicCheckerPage({ params }: { params: { locale: s
               </p>
             </div>
             <ToxicCheckerWidget />
-            <KnowledgeCards cards={TOXIC_CHECKER_KNOWLEDGE} />
+            <KnowledgeCards cards={TOXIC_CHECKER_KNOWLEDGE} locale={locale} />
             <ScienceBehindIt content={TOXIC_CHECKER_SCIENCE} />
             <ToolCtaSection
-              heading="Check If a Specific Food Is Safe"
-              description="Wondering about a particular food? Browse our 200+ detailed guides covering grapes, chocolate, lilies, and more. Each page shows safety status, symptoms, and emergency steps."
-              href="/dog/can-dogs-eat-grapes/"
-              buttonLabel="Browse All Food Guides →"
+              heading={t('toolCta.checkAnotherFood.heading')}
+              description={t('toolCta.checkAnotherFood.description')}
+              href={pageUrl('dog/can-dogs-eat-grapes')}
+              buttonLabel={t('toolCta.checkAnotherFood.button')}
             />
             <DisclaimerSection text={t('disclaimer.tool')} variant="tool" />
           </div>
@@ -110,7 +113,7 @@ export default async function ToxicCheckerPage({ params }: { params: { locale: s
         sidebar={
           <div className="flex flex-col gap-4">
             <Card padding="md">
-              <p className="text-sm font-semibold text-[--gray-900]">Emergency Contacts</p>
+              <p className="text-sm font-semibold text-[--gray-900]">{t('sidebar.emergencyContacts')}</p>
               <ul className="mt-2 flex flex-col gap-2 text-sm text-[--gray-600]">
                 <li>ASPCA Poison Control: (888) 426-4435</li>
                 <li>Pet Poison Helpline: (855) 764-7661</li>
@@ -118,7 +121,7 @@ export default async function ToxicCheckerPage({ params }: { params: { locale: s
               </ul>
             </Card>
             <Card padding="md">
-              <p className="text-sm font-semibold text-[--gray-900]">Quick Vet Tip</p>
+              <p className="text-sm font-semibold text-[--gray-900]">{t('sidebar.quickVetTip')}</p>
               <p className="mt-2 text-sm text-[--gray-600]">
                 If your pet ate something suspicious, save a sample and call your vet or poison control immediately. Do not induce vomiting without professional guidance.
               </p>

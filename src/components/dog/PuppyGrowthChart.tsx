@@ -57,7 +57,7 @@ export default function PuppyGrowthChart({
           p.ageWeeks === currentAgeWeeks ? 6 : 2,
         ),
         pointBackgroundColor: data.map((p) =>
-          p.ageWeeks === currentAgeWeeks ? '#92400E' : primaryColor,
+          p.ageWeeks === currentAgeWeeks ? 'var(--dog-primary-dark)' : primaryColor,
         ),
       },
     ],

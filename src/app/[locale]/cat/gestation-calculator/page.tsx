@@ -26,29 +26,32 @@ import { ScienceBehindIt } from '@/components/shared/ScienceBehindIt';
 import { getTranslations } from 'next-intl/server';
 import { CatGestationWidget } from '@/components/cat/CatGestationWidget';
 
-export const metadata: Metadata = {
-  title: 'Cat Gestation Calculator — Kitten Due Date & Milestones | petsMetrics',
-  description:
-    'Calculate your cat\'s due date from the mating date. View key pregnancy milestones, ultrasound windows, and queening preparation timeline. Based on average 65-day feline gestation.',
-  keywords: 'cat pregnancy calculator, how long are cats pregnant, cat due date calculator, cat gestation period, signs of cat pregnancy, cat pregnancy stages',
-  alternates: {
-    canonical: `${SITE_URL}/cat/gestation-calculator/`,
-  },
-  openGraph: {
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  return {
     title: 'Cat Gestation Calculator — Kitten Due Date & Milestones | petsMetrics',
     description:
-      'Calculate your cat\'s due date. Track key developmental milestones from implantation to queening.',
-    url: `${SITE_URL}/cat/gestation-calculator/`,
-    type: 'website',
-    images: [{ url: `${SITE_URL}/og/gestation-calculator.webp`, width: 1200, height: 630, alt: 'Cat Gestation Calculator — Due Date & Milestones' }],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Cat Gestation Calculator — Kitten Due Date | petsMetrics',
-    description: 'Calculate your cat\'s due date. Track key developmental milestones from implantation to queening.',
-    images: [`${SITE_URL}/og/gestation-calculator.webp`],
-  },
-};
+      'Calculate your cat\'s due date from the mating date. View key pregnancy milestones, ultrasound windows, and queening preparation timeline. Based on average 65-day feline gestation.',
+    keywords: 'cat pregnancy calculator, how long are cats pregnant, cat due date calculator, cat gestation period, signs of cat pregnancy, cat pregnancy stages',
+    alternates: {
+      canonical: `${SITE_URL}/${locale}/cat/gestation-calculator/`,
+    },
+    openGraph: {
+      title: 'Cat Gestation Calculator — Kitten Due Date & Milestones | petsMetrics',
+      description:
+        'Calculate your cat\'s due date. Track key developmental milestones from implantation to queening.',
+      url: `${SITE_URL}/${locale}/cat/gestation-calculator/`,
+      type: 'website',
+      images: [{ url: `${SITE_URL}/og/gestation-calculator.webp`, width: 1200, height: 630, alt: 'Cat Gestation Calculator — Due Date & Milestones' }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: 'Cat Gestation Calculator — Kitten Due Date | petsMetrics',
+      description: 'Calculate your cat\'s due date. Track key developmental milestones from implantation to queening.',
+      images: [`${SITE_URL}/og/gestation-calculator.webp`],
+    },
+  };
+}
 
 const faqSchema = generateFaqPageJsonLd(CAT_GESTATION_FAQ);
 
@@ -99,13 +102,13 @@ export default async function CatGestationPage({ params }: { params: { locale: s
               </p>
             </div>
             <CatGestationWidget />
-            <KnowledgeCards cards={CAT_GESTATION_KNOWLEDGE} />
+            <KnowledgeCards cards={CAT_GESTATION_KNOWLEDGE} locale={locale} />
             <ScienceBehindIt content={CAT_GESTATION_SCIENCE} />
             <ToolCtaSection
-              heading="Check Your Cat's Vaccination Schedule"
-              description="Kittens on the way? Plan their vaccination schedule now. Our calculator generates a personalized immunization timeline from kittenhood through adulthood."
-              href="/cat/vaccination-schedule/"
-              buttonLabel="See Vaccine Schedule →"
+              heading={t('toolCta.planCatVaccination.heading')}
+              description={t('toolCta.planCatVaccination.description')}
+              href={pageUrl('cat/vaccination-schedule')}
+              buttonLabel={t('toolCta.planCatVaccination.button')}
             />
             <DisclaimerSection text={t('disclaimer.tool')} variant="tool" />
           </div>
@@ -113,17 +116,17 @@ export default async function CatGestationPage({ params }: { params: { locale: s
         sidebar={
           <div className="flex flex-col gap-4">
             <Card padding="md">
-              <p className="text-sm font-semibold text-[--gray-900]">Quick Facts</p>
+              <p className="text-sm font-semibold text-[--gray-900]">{t('sidebar.quickFacts')}</p>
               <ul className="mt-2 flex flex-col gap-2 text-sm text-[--gray-600]">
-                <li>Average: 65 days</li>
-                <li>Range: 61–67 days</li>
-                <li>Ultrasound: Day 21–28</li>
-                <li>X-ray: Day 45+</li>
+                <li>{t('sidebar.catGestation.average')}</li>
+                <li>{t('sidebar.catGestation.range')}</li>
+                <li>{t('sidebar.catGestation.ultrasound')}</li>
+                <li>{t('sidebar.catGestation.xray')}</li>
               </ul>
             </Card>
             <AffiliateBanner variant="insurance" />
             <Card padding="md">
-              <p className="text-sm font-semibold text-[--gray-900]">Cat Tools</p>
+              <p className="text-sm font-semibold text-[--gray-900]">{t('sidebar.catTools')}</p>
               <ul className="mt-2 flex flex-col gap-2 text-sm text-[--gray-600]">
                 <li><a href={pageUrl('cat/age-calculator')} className="text-[--cat-primary] hover:underline font-medium">Age Calculator</a></li>
                 <li><a href={pageUrl('cat/vaccination-schedule')} className="hover:text-[--cat-primary] transition-colors">Vaccination Schedule</a></li>

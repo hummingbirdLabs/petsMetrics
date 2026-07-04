@@ -26,29 +26,32 @@ import { ScienceBehindIt } from '@/components/shared/ScienceBehindIt';
 import { getTranslations } from 'next-intl/server';
 import { DogVaccinationWidget } from '@/components/dog/DogVaccinationWidget';
 
-export const metadata: Metadata = {
-  title: 'Dog Vaccination Schedule — Free Personalized Timeline | petsMetrics',
-  description:
-    'Generate a complete vaccination schedule for your dog by age and region. DHPP, Rabies, Bordetella and more. Free printable. WSAVA guidelines.',
-  keywords: 'dog vaccination schedule, puppy shot schedule, dog vaccine schedule by age, puppy vaccination chart, when do puppies need shots, dog deworming schedule',
-  alternates: {
-    canonical: `${SITE_URL}/dog/vaccination-schedule/`,
-  },
-  openGraph: {
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  return {
     title: 'Dog Vaccination Schedule — Free Personalized Timeline | petsMetrics',
     description:
-      'Never miss a vaccine. Personalized to your dog\'s age and region. WSAVA core vaccine guidelines.',
-    url: `${SITE_URL}/dog/vaccination-schedule/`,
-    type: 'website',
-    images: [{ url: `${SITE_URL}/og/vaccination-schedule.webp`, width: 1200, height: 630, alt: 'Dog Vaccination Schedule — Free Personalized Timeline' }],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Dog Vaccination Schedule — Free Personalized Timeline | petsMetrics',
-    description: 'Never miss a vaccine. Personalized to your dog\'s age and region. WSAVA core vaccine guidelines.',
-    images: [`${SITE_URL}/og/vaccination-schedule.webp`],
-  },
-};
+      'Generate a complete vaccination schedule for your dog by age and region. DHPP, Rabies, Bordetella and more. Free printable. WSAVA guidelines.',
+    keywords: 'dog vaccination schedule, puppy shot schedule, dog vaccine schedule by age, puppy vaccination chart, when do puppies need shots, dog deworming schedule',
+    alternates: {
+      canonical: `${SITE_URL}/${locale}/dog/vaccination-schedule/`,
+    },
+    openGraph: {
+      title: 'Dog Vaccination Schedule — Free Personalized Timeline | petsMetrics',
+      description:
+        'Never miss a vaccine. Personalized to your dog\'s age and region. WSAVA core vaccine guidelines.',
+      url: `${SITE_URL}/${locale}/dog/vaccination-schedule/`,
+      type: 'website',
+      images: [{ url: `${SITE_URL}/og/vaccination-schedule.webp`, width: 1200, height: 630, alt: 'Dog Vaccination Schedule — Free Personalized Timeline' }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: 'Dog Vaccination Schedule — Free Personalized Timeline | petsMetrics',
+      description: 'Never miss a vaccine. Personalized to your dog\'s age and region. WSAVA core vaccine guidelines.',
+      images: [`${SITE_URL}/og/vaccination-schedule.webp`],
+    },
+  };
+}
 
 const faqSchema = generateFaqPageJsonLd(DOG_VACCINE_FAQ);
 
@@ -99,13 +102,13 @@ export default async function DogVaccinationPage({ params }: { params: { locale:
               </p>
             </div>
             <DogVaccinationWidget />
-            <KnowledgeCards cards={DOG_VACCINE_KNOWLEDGE} />
+            <KnowledgeCards cards={DOG_VACCINE_KNOWLEDGE} locale={locale} />
             <ScienceBehindIt content={DOG_VACCINE_SCIENCE} />
             <ToolCtaSection
-              heading="Check If Your Dog Eats Something Toxic"
-              description="Vaccination is one part of prevention. Know what foods are dangerous too. Use our Toxic Checker to instantly identify 200+ household dangers for dogs."
-              href="/shared/toxic-checker/"
-              buttonLabel="Check Food Safety →"
+              heading={t('toolCta.checkToxic.heading')}
+              description={t('toolCta.checkToxic.description')}
+              href={pageUrl('shared/toxic-checker')}
+              buttonLabel={t('toolCta.checkToxic.button')}
             />
             <DisclaimerSection text={t('disclaimer.tool')} variant="tool" />
           </div>
@@ -113,17 +116,17 @@ export default async function DogVaccinationPage({ params }: { params: { locale:
         sidebar={
           <div className="flex flex-col gap-4">
             <Card padding="md">
-              <p className="text-sm font-semibold text-[--gray-900]">Quick Facts</p>
+              <p className="text-sm font-semibold text-[--gray-900]">{t('sidebar.quickFacts')}</p>
               <ul className="mt-2 flex flex-col gap-2 text-sm text-[--gray-600]">
-                <li>Core: DHPP + Rabies</li>
-                <li>Puppy series: 6–16 weeks</li>
-                <li>DHPP booster: every 3 years</li>
-                <li>Rabies: every 1–3 years</li>
+                <li>{t('sidebar.dogVaccination.core')}</li>
+                <li>{t('sidebar.dogVaccination.puppySeries')}</li>
+                <li>{t('sidebar.dogVaccination.dhppBooster')}</li>
+                <li>{t('sidebar.dogVaccination.rabies')}</li>
               </ul>
             </Card>
             <AffiliateBanner variant="insurance" />
             <Card padding="md">
-              <p className="text-sm font-semibold text-[--gray-900]">Dog Tools</p>
+              <p className="text-sm font-semibold text-[--gray-900]">{t('sidebar.dogTools')}</p>
               <ul className="mt-2 flex flex-col gap-2 text-sm text-[--gray-600]">
                 <li><a href={pageUrl('dog/age-calculator')} className="hover:text-[--dog-primary] transition-colors">Age Calculator</a></li>
                 <li><a href={pageUrl('dog/calorie-calculator')} className="hover:text-[--dog-primary] transition-colors">Calorie Calculator</a></li>

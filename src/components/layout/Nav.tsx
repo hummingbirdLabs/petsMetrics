@@ -34,9 +34,20 @@ export function Nav({ scrolled = false }: NavProps) {
   const langLabels: Record<string, string> = {
     en: 'EN',
     zh: '中文',
+    fr: 'FR',
+    de: 'DE',
+    ja: '日本語',
+    ko: '한국어',
+    es: 'ES',
+    pt: 'PT',
+    nl: 'NL',
+    ar: 'العربية',
+    ru: 'RU',
+    hi: 'हिन्दी',
   };
 
-  const nextLocale = locale === 'en' ? 'zh' : 'en';
+  const otherLocales = routing.locales.filter((loc) => loc !== locale);
+  const nextLocale = otherLocales[0] || 'en';
 
   /** Build URL for the same page in the other locale */
   function switchLocaleUrl() {
@@ -57,7 +68,7 @@ export function Nav({ scrolled = false }: NavProps) {
         className={`rounded-md p-2 transition-colors lg:hidden ${textColor} hover:bg-white/10`}
         onClick={() => setOpen(!open)}
         aria-expanded={open}
-        aria-label="Toggle navigation"
+        aria-label={t('toggleNav')}
       >
         <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
           {open ? (
@@ -97,7 +108,7 @@ export function Nav({ scrolled = false }: NavProps) {
             onClick={() => setLangOpen(!langOpen)}
             aria-haspopup="listbox"
             aria-expanded={langOpen}
-            aria-label="Switch language"
+            aria-label={t('switchLanguage')}
           >
             <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />

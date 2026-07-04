@@ -26,29 +26,32 @@ import { ScienceBehindIt } from '@/components/shared/ScienceBehindIt';
 import { getTranslations } from 'next-intl/server';
 import { PuppyGrowthWidget } from '@/components/dog/PuppyGrowthWidget';
 
-export const metadata: Metadata = {
-  title: 'Puppy Weight Predictor — How Big Will My Puppy Get | petsMetrics',
-  description:
-    'Predict your puppy\'s adult weight using breed size and growth curves. Track weight milestones with an interactive chart. Science-based estimation.',
-  keywords: 'puppy growth calculator, how big will my puppy get, puppy weight estimator, puppy growth chart by breed, when do puppies stop growing',
-  alternates: {
-    canonical: `${SITE_URL}/dog/puppy-growth-predictor/`,
-  },
-  openGraph: {
-    title: 'Puppy Adult Weight Predictor — Growth Chart | petsMetrics',
-    description:
-      'Predict how big your puppy will get. Interactive growth chart with breed-specific curves.',
-    url: `${SITE_URL}/dog/puppy-growth-predictor/`,
-    type: 'website',
-    images: [{ url: `${SITE_URL}/og/puppy-growth-predictor.webp`, width: 1200, height: 630, alt: 'Puppy Growth Predictor — How Big Will My Puppy Get' }],
-  },
-  twitter: {
-    card: 'summary_large_image',
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  return {
     title: 'Puppy Weight Predictor — How Big Will My Puppy Get | petsMetrics',
-    description: 'Predict how big your puppy will get. Interactive growth chart with breed-specific curves.',
-    images: [`${SITE_URL}/og/puppy-growth-predictor.webp`],
-  },
-};
+    description:
+      'Predict your puppy\'s adult weight using breed size and growth curves. Track weight milestones with an interactive chart. Science-based estimation.',
+    keywords: 'puppy growth calculator, how big will my puppy get, puppy weight estimator, puppy growth chart by breed, when do puppies stop growing',
+    alternates: {
+      canonical: `${SITE_URL}/${locale}/dog/puppy-growth-predictor/`,
+    },
+    openGraph: {
+      title: 'Puppy Adult Weight Predictor — Growth Chart | petsMetrics',
+      description:
+        'Predict how big your puppy will get. Interactive growth chart with breed-specific curves.',
+      url: `${SITE_URL}/${locale}/dog/puppy-growth-predictor/`,
+      type: 'website',
+      images: [{ url: `${SITE_URL}/og/puppy-growth-predictor.webp`, width: 1200, height: 630, alt: 'Puppy Growth Predictor — How Big Will My Puppy Get' }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: 'Puppy Weight Predictor — How Big Will My Puppy Get | petsMetrics',
+      description: 'Predict how big your puppy will get. Interactive growth chart with breed-specific curves.',
+      images: [`${SITE_URL}/og/puppy-growth-predictor.webp`],
+    },
+  };
+}
 
 const faqSchema = generateFaqPageJsonLd(PUPPY_GROWTH_FAQ);
 
@@ -99,13 +102,13 @@ export default async function PuppyGrowthPage({ params }: { params: { locale: st
               </p>
             </div>
             <PuppyGrowthWidget />
-            <KnowledgeCards cards={PUPPY_GROWTH_KNOWLEDGE} />
+            <KnowledgeCards cards={PUPPY_GROWTH_KNOWLEDGE} locale={locale} />
             <ScienceBehindIt content={PUPPY_GROWTH_SCIENCE} />
             <ToolCtaSection
-              heading="Calculate Your Dog's Daily Calories"
-              description="Now that you know how big your puppy will get, calculate their exact daily calorie needs using the AAFCO MER formula. Portion control starts here."
-              href="/dog/calorie-calculator/"
-              buttonLabel="Calculate Daily Calories →"
+              heading={t('toolCta.calculateCalories.heading')}
+              description={t('toolCta.calculateCalories.description')}
+              href={pageUrl('dog/calorie-calculator')}
+              buttonLabel={t('toolCta.calculateCalories.button')}
             />
             <DisclaimerSection text={t('disclaimer.tool')} variant="tool" />
           </div>
@@ -113,7 +116,7 @@ export default async function PuppyGrowthPage({ params }: { params: { locale: st
         sidebar={
           <div className="flex flex-col gap-4">
             <Card padding="md">
-              <p className="text-sm font-semibold text-[--gray-900]">Dog Health Tools</p>
+              <p className="text-sm font-semibold text-[--gray-900]">{t('sidebar.dogTools')}</p>
               <ul className="mt-2 flex flex-col gap-2 text-sm text-[--gray-600]">
                 <li><a href={pageUrl('dog/age-calculator')} className="hover:text-[--dog-primary] transition-colors">Age Calculator</a></li>
                 <li><a href={pageUrl('dog/calorie-calculator')} className="hover:text-[--dog-primary] transition-colors">Calorie Calculator</a></li>

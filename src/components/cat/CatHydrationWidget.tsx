@@ -27,7 +27,7 @@ export function CatHydrationWidget() {
   } = useCatHydration();
   const pageUrl = usePageUrlBuilder();
 
-  const petName = profile?.name ?? 'Luna';
+  const petName = profile?.name ?? '—';
   const shareUrl = SITE_URL + pageUrl('cat/hydration-calculator').slice(0, -1);
 
   const STATUS_I18N_MAP: Record<string, string> = {

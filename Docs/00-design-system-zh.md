@@ -34,6 +34,7 @@
 |---|---|---|
 | `--brand-navy` | `#1B2D4F` | 主要文本、导航背景、页脚 |
 | `--brand-teal` | `#0D9488` | CTA 按钮、激活状态、链接 |
+| `--brand-teal-dark` | `#065F56` | 文本链接、深色模式下的品牌色 |
 | `--brand-teal-light` | `#CCFBF1` | 悬停背景、已选标签 |
 | `--white` | `#FFFFFF` | 页面背景、卡片表面 |
 | `--gray-50` | `#F8FAFC` | 交替区块背景 |
@@ -72,13 +73,19 @@
 | Token | Hex | 含义 | 用途 |
 |---|---|---|---|
 | `--status-safe` | `#10B981` | 🟢 安全 | 有毒物质检测的安全结果 |
-| `--status-safe-bg` | `#D1FAE5` | 安全背景 | 结果卡片填充 |
+| `--status-safe-dark` | `#065F46` | 安全深色 | 安全状态文本（深色背景） |
+| `--status-safe-bg` | `#A7F3D0` | 安全背景 | 结果卡片填充 |
+| `--status-safe-light` | `#D1FAE5` | 安全浅色 | 结果卡片填充（浅色） |
 | `--status-caution` | `#F59E0B` | 🟡 注意 | 中等风险 |
-| `--status-caution-bg` | `#FEF3C7` | 注意背景 | |
+| `--status-caution-dark` | `#92400E` | 注意深色 | 注意状态文本（深色背景） |
+| `--status-caution-bg` | `#FDE68A` | 注意背景 | 结果卡片填充 |
+| `--status-caution-light` | `#FEF3C7` | 注意浅色 | 结果卡片填充（浅色） |
 | `--status-toxic` | `#EF4444` | 🔴 有毒 | 危险结果 |
-| `--status-toxic-bg` | `#FEE2E2` | 有毒背景 | |
+| `--status-toxic-dark` | `#991B1B` | 有毒深色 | 有毒状态文本（深色背景） |
+| `--status-toxic-bg` | `#FEE2E2` | 有毒背景 | 结果卡片填充 |
 | `--status-info` | `#3B82F6` | ℹ️ 信息 | 提示、中性标注 |
-| `--status-info-bg` | `#DBEAFE` | 信息背景 | |
+| `--status-info-dark` | `#1E40AF` | 信息深色 | 信息状态文本（深色背景） |
+| `--status-info-bg` | `#DBEAFE` | 信息背景 | 结果卡片填充 |
 
 ### 2.5 深色模式 Token 覆盖
 
@@ -109,17 +116,23 @@
 
   /* 狗狗板块 — amber 保持不变，表面调暗 */
   --dog-primary-light: #451A03;  /* 深色模式下的卡片背景 */
-  --dog-surface:       #1C0E00;
+  --dog-surface:       #5A2F00;
 
   /* 猫咪板块 — violet 保持不变，表面调暗 */
   --cat-primary-light: #2E1065;
-  --cat-surface:       #13072B;
+  --cat-surface:       #4A2580;
 
   /* 状态背景 — 为深色模式可读性调暗 */
   --status-safe-bg:    #064E3B;
   --status-caution-bg: #451A03;
   --status-toxic-bg:   #450A0A;
   --status-info-bg:    #1E3A5F;
+
+  /* 状态浅色文本（在深色背景上使用） */
+  --status-safe-light:    #10B981;
+  --status-caution-light: #F59E0B;
+  --status-toxic-light:   #EF4444;
+  --status-info-light:    #3B82F6;
 }
 ```
 

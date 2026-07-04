@@ -21,12 +21,12 @@ const DEFAULT_STATE: DogAgeState = {
 };
 
 const LIFE_STAGE_COLORS: Record<DogLifeStage, string> = {
-  puppy: '#F59E0B',
-  junior: '#0D9488',
-  adult: '#10B981',
-  mature: '#3B82F6',
-  senior: '#8B5CF6',
-  geriatric: '#6366F1',
+  puppy: 'var(--dog-accent)',
+  junior: 'var(--brand-teal)',
+  adult: 'var(--status-safe)',
+  mature: 'var(--status-info)',
+  senior: 'var(--cat-primary)',
+  geriatric: 'var(--cat-primary-dark)',
 };
 
 export function useDogAge() {

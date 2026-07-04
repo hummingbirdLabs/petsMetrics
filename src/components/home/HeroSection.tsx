@@ -10,7 +10,7 @@ export function HeroSection() {
     <section
       className="relative flex min-h-[85vh] items-center overflow-hidden"
       style={{
-        background: 'linear-gradient(135deg, #1B2D4F 0%, #0D3349 50%, #1B2D4F 100%)',
+        background: 'linear-gradient(135deg, var(--brand-navy) 0%, #0D3349 50%, var(--brand-navy) 100%)',
       }}
     >
       {/* 噪点纹理覆盖层 */}
@@ -94,7 +94,7 @@ export function HeroSection() {
             </div>
             <hr className="mt-4 border-white/10" />
             <div className="mt-4 text-center">
-              <span className="text-sm font-medium text-[--brand-teal]">{t('cardOpenProfile')}</span>
+              <span className="text-sm font-medium text-[--dog-accent]">{t('cardOpenProfile')}</span>
             </div>
           </div>
         </div>

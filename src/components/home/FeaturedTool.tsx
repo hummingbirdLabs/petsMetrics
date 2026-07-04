@@ -22,7 +22,7 @@ export function FeaturedTool() {
   return (
     <section
       className="py-24"
-      style={{ background: 'linear-gradient(180deg, #FFF7ED 0%, #FFFBEB 100%)' }}
+      style={{ background: 'linear-gradient(180deg, #FFF7ED 0%, var(--dog-surface) 100%)' }}
     >
       {/* 紧急警报横幅 */}
       <div className="bg-[--status-toxic] py-3">
@@ -72,7 +72,7 @@ export function FeaturedTool() {
               key={item}
               type="button"
               onClick={() => setQuery(item)}
-              className="mx-1 text-sm font-medium text-[--brand-teal] underline decoration-dotted underline-offset-2 hover:text-[--brand-teal]/80"
+              className="mx-1 text-sm font-medium text-[--brand-teal-dark] underline decoration-dotted underline-offset-2 hover:text-[--brand-teal-dark]/80"
             >
               {item}
             </button>
@@ -84,24 +84,24 @@ export function FeaturedTool() {
           <div className="flex items-center gap-3 rounded-lg bg-white/60 p-3 shadow-sm">
             <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[--status-toxic-bg] text-sm">🔴</span>
             <span className="text-sm font-medium text-[--gray-700]">Grapes</span>
-            <span className="text-sm text-[--status-toxic]">— Toxic to dogs &amp; cats</span>
+            <span className="text-sm text-[--status-toxic]">{t('previewToxic')}</span>
           </div>
           <div className="flex items-center gap-3 rounded-lg bg-white/60 p-3 shadow-sm">
             <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[--status-caution-bg] text-sm">🟡</span>
             <span className="text-sm font-medium text-[--gray-700]">Tuna (canned)</span>
-            <span className="text-sm text-[--status-caution]">— Safe in small amounts</span>
+            <span className="text-sm text-[--status-caution]">{t('previewCaution')}</span>
           </div>
           <div className="flex items-center gap-3 rounded-lg bg-white/60 p-3 shadow-sm">
             <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[--status-safe-bg] text-sm">🟢</span>
             <span className="text-sm font-medium text-[--gray-700]">Blueberries</span>
-            <span className="text-sm text-[--status-safe]">— Safe for dogs</span>
+            <span className="text-sm text-[--status-safe]">{t('previewSafe')}</span>
           </div>
         </div>
 
         <div className="mt-8 text-center">
           <a
             href={pageUrl('shared/toxic-checker')}
-            className="inline-flex items-center gap-2 text-sm font-semibold text-[--brand-teal] transition-colors hover:text-[--brand-teal]/80"
+            className="inline-flex items-center gap-2 text-sm font-semibold text-[--brand-teal-dark] transition-colors hover:text-[--brand-teal-dark]/80"
           >
             {t('openFull')} →
           </a>

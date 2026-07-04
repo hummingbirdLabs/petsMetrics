@@ -15,7 +15,7 @@ export function ProfileBar({ species }: ProfileBarProps) {
   const hasProfile = false;
 
   if (hasProfile) {
-    const petName = 'Buddy';
+    const petName = '—';
     return (
       <div
         className="border-b"

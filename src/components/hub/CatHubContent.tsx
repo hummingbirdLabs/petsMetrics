@@ -34,10 +34,23 @@ type ToolCard = {
   priority: 'P0' | 'P1';
 };
 
+/** Comparison Guides — 对比页入口数据（猫） */
+const catCompareGuides = [
+  { icon: '🏠', titleKey: 'indoorVsOutdoor.title', descKey: 'indoorVsOutdoor.subtitle', path: 'cat/compare/indoor-vs-outdoor', sources: 'AAFP, ISFM' },
+];
+
+/** Life Stage Checklist Guides — 生命阶段新手清单入口数据（猫） */
+const catChecklistGuides = [
+  { icon: '🐱', titleKey: 'cat.guide.newKitten', descKey: 'cat.guide.newKitten.desc', path: 'cat/guide/new-kitten-checklist', sources: 'AAFP, ISFM' },
+  { icon: '🐈', titleKey: 'cat.guide.seniorCat', descKey: 'cat.guide.seniorCat.desc', path: 'cat/guide/senior-cat-care', sources: 'AAFP Senior' },
+];
+
 export function CatHubContent() {
   const t = useTranslations('cat');
   const tg = useTranslations('cat.toolGrid');
   const tseo = useTranslations('cat.seoContent');
+  const tc = useTranslations('compare');
+  const tGuide = useTranslations('cat.guide');
   const pageUrl = usePageUrlBuilder();
 
   const tools: ToolCard[] = [
@@ -71,7 +84,7 @@ export function CatHubContent() {
       {/* Hero */}
       <section
         className="flex min-h-[280px] items-center px-4 py-12 sm:px-6 lg:px-8"
-        style={{ background: 'linear-gradient(135deg, #4C1D95 0%, #7C3AED 60%, #A78BFA 100%)' }}
+        style={{ background: 'linear-gradient(135deg, var(--cat-primary-dark) 0%, var(--cat-primary) 60%, var(--cat-accent) 100%)' }}
       >
         <div className="mx-auto w-full max-w-7xl text-center">
           <h1 className="font-display text-3xl font-extrabold text-white sm:text-4xl lg:text-[40px]">
@@ -79,9 +92,9 @@ export function CatHubContent() {
           </h1>
           <p className="mt-3 text-lg text-white/80">{t('hero.subtitle')}</p>
           <div className="mt-2 text-sm text-white/70">
-            <a href={pageUrl('')} className="hover:text-white">Home</a>
+            <a href={pageUrl('')} className="hover:text-white">{t('breadcrumb.home')}</a>
             <span className="mx-1">›</span>
-            <span>Cat</span>
+            <span>{t('breadcrumb.cat')}</span>
           </div>
           <HubSearch placeholder={t('hero.searchPlaceholder')} />
         </div>
@@ -187,6 +200,94 @@ export function CatHubContent() {
         </div>
       </section>
 
+      {/* Comparison Guides — 猫对比指南入口 */}
+      <section className="bg-[--white] py-16 sm:py-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <h2 className="font-display text-2xl font-bold text-[--gray-900] sm:text-3xl">
+            {tc('hub.guidesHeading')}
+          </h2>
+          <p className="mt-2 text-base text-[--gray-500]">
+            {tc('hub.guidesDescription')}
+          </p>
+          <hr className="mt-3 border-[--gray-200]" />
+
+          <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {catCompareGuides.map((guide) => (
+              <a
+                key={guide.path}
+                href={pageUrl(guide.path)}
+                className="group rounded-xl bg-white p-5 shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md border border-transparent hover:border-[--cat-accent]"
+                aria-label={tc('hub.compareCardAria', { title: tc(guide.titleKey) })}
+              >
+                <div className="flex items-start gap-3">
+                  <span className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-[--cat-primary-light] text-lg text-[--cat-primary]">
+                    {guide.icon}
+                  </span>
+                  <div className="min-w-0 flex-1">
+                    <h3 className="font-display text-sm font-semibold leading-snug text-[--gray-900]">
+                      {tc(guide.titleKey)}
+                    </h3>
+                    <span className="mt-1 inline-block rounded-full bg-[--cat-primary-light] px-2 py-0.5 text-[10px] font-semibold text-[--cat-primary]">
+                      {guide.sources}
+                    </span>
+                  </div>
+                </div>
+                <p className="mt-3 text-sm leading-relaxed text-[--gray-500] line-clamp-3">
+                  {tc(guide.descKey)}
+                </p>
+                <span className="mt-3 inline-block text-sm font-medium text-[--brand-teal] opacity-0 transition-opacity group-hover:opacity-100">
+                  Read comparison →
+                </span>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Life Stage Checklist Guides — 生命阶段新手清单入口（猫） */}
+      <section className="bg-[--gray-50] py-16 sm:py-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <h2 className="font-display text-2xl font-bold text-[--gray-900] sm:text-3xl">
+            {tGuide('title')}
+          </h2>
+          <p className="mt-2 text-base text-[--gray-500]">
+            {tGuide('description')}
+          </p>
+          <hr className="mt-3 border-[--gray-200]" />
+
+          <div className="mt-8 grid gap-4 sm:grid-cols-2">
+            {catChecklistGuides.map((guide) => (
+              <a
+                key={guide.path}
+                href={pageUrl(guide.path)}
+                className="group rounded-xl bg-white p-5 shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md border border-transparent hover:border-[--cat-accent]"
+                aria-label={tGuide(`${guide.titleKey}.aria`)}
+              >
+                <div className="flex items-start gap-3">
+                  <span className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-[--cat-primary-light] text-lg text-[--cat-primary]">
+                    {guide.icon}
+                  </span>
+                  <div className="min-w-0 flex-1">
+                    <h3 className="font-display text-sm font-semibold leading-snug text-[--gray-900]">
+                      {tGuide(guide.titleKey)}
+                    </h3>
+                    <span className="mt-1 inline-block rounded-full bg-[--cat-primary-light] px-2 py-0.5 text-[10px] font-semibold text-[--cat-primary]">
+                      {guide.sources}
+                    </span>
+                  </div>
+                </div>
+                <p className="mt-3 text-sm leading-relaxed text-[--gray-500] line-clamp-3">
+                  {tGuide(guide.descKey)}
+                </p>
+                <span className="mt-3 inline-block text-sm font-medium text-[--brand-teal] opacity-0 transition-opacity group-hover:opacity-100">
+                  {tGuide('open')} →
+                </span>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* SEO 内容区块 */}
       <section className="bg-[--white] py-16 sm:py-20">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
@@ -204,7 +305,7 @@ export function CatHubContent() {
                 </summary>
                 <p className="mt-3 text-sm leading-relaxed text-[--gray-500]">
                   {tseo(`${faqKey}Answer`)}{' '}
-                  {faqLinks[faqKey] && <a href={pageUrl(faqLinks[faqKey])} className="text-[--brand-teal] underline">Open →</a>}
+                  {faqLinks[faqKey] && <a href={pageUrl(faqLinks[faqKey])} className="text-[--brand-teal] underline">{t('cta.open')}</a>}
                 </p>
               </details>
             ))}
@@ -212,12 +313,9 @@ export function CatHubContent() {
 
           {/* GEO Privacy Statement — SSG paragraph for AI search engine trust signals */}
           <div className="mt-10 rounded-lg border border-[--gray-200] bg-[--gray-50] p-5">
-            <h3 className="text-sm font-semibold text-[--gray-700]">How We Protect Your Privacy</h3>
+            <h3 className="text-sm font-semibold text-[--gray-700]">{t('privacy.heading')}</h3>
             <p className="mt-2 text-sm leading-relaxed text-[--gray-500]">
-              All pet profiles, calculator inputs, and results are stored exclusively in your browser&apos;s
-              local storage. No data is ever uploaded to our servers. We do not require accounts, collect
-              personal information, or track your activity across sessions. Every calculation runs
-              entirely on your device — your pet&apos;s data stays with you.
+              {t('privacy.body')}
             </p>
           </div>
         </div>

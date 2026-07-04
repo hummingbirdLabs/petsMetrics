@@ -1,8 +1,7 @@
-// Phase 3 — T3.5 + Phase 7d: 路由数据
-// 供 sitemap.ts 和 generateStaticParams 使用
+// Phase 3 — T3.5: 路由数据
+// 供 sitemap.ts 使用
 
 import { EU_COUNTRY_CODES } from '@/lib/data/eu-travel-rules';
-import { TOXIC_ITEMS } from '@/lib/data/toxic-items';
 
 /** 高频非 EU 出发地 */
 const NON_EU_ORIGINS = ['US', 'CA', 'AU'] as const;
@@ -24,6 +23,53 @@ export function getAllToolRoutes(): string[] {
     'shared/barf-calculator',
     'shared/pet-insurance-estimator',
     'profile',
+    // Phase 2: Life Stage Checklists
+    'dog/guide/new-puppy-checklist',
+    'dog/guide/senior-dog-care',
+    'dog/guide/adopting-rescue-dog',
+    'dog/guide/puppy-development-stages',
+    'cat/guide/new-kitten-checklist',
+    'cat/guide/senior-cat-care',
+    // Comparison pages (P0)
+    'dog/compare/dry-food-vs-wet-food',
+    'cat/compare/indoor-vs-outdoor',
+    'dog/compare/raw-diet-vs-kibble',
+    'dog/compare/spayed-vs-unspayed',
+    'shared/compare/dog-years-vs-cat-years',
+    'shared/compare/pet-insurance-vs-savings',
+    'shared/compare/microchip-vs-tattoo',
+    'shared/compare/adopt-vs-buy',
+    'dog/compare/grain-free-vs-grain-inclusive',
+    'dog/compare/canned-vs-frozen-food',
+    'cat/compare/wet-food-vs-dry-food',
+    'cat/compare/declawing-vs-scratching-post',
+    // Emergency pages - Dog (18 items)
+    'dog/emergency/ate-chocolate',
+    'dog/emergency/ate-grapes',
+    'dog/emergency/ate-xylitol',
+    'dog/emergency/ate-xylitol-gum',
+    'dog/emergency/ate-onion',
+    'dog/emergency/ate-sock',
+    'dog/emergency/ate-antifreeze',
+    'dog/emergency/ate-marijuana',
+    'dog/emergency/ate-rodenticide',
+    'dog/emergency/ate-alcohol',
+    'dog/emergency/ate-avocado',
+    'dog/emergency/ate-caffeine',
+    'dog/emergency/ate-macadamia-nuts',
+    'dog/emergency/ate-medication',
+    'dog/emergency/ate-plastic',
+    'dog/emergency/ate-cooked-bones',
+    'dog/emergency/ate-mushrooms',
+    'dog/emergency/ate-tobacco',
+    // Emergency pages - Cat (7 items)
+    'cat/emergency/ate-lily',
+    'cat/emergency/ate-string',
+    'cat/emergency/ate-fishing-line',
+    'cat/emergency/ate-essential-oils',
+    'cat/emergency/ate-garlic',
+    'cat/emergency/ate-onion',
+    'cat/emergency/ate-chocolate',
   ];
 }
 
@@ -100,19 +146,4 @@ export function getAllEUTravelRoutes(): { origin: string; destination: string }[
   }
 
   return pairs;
-}
-
-/**
- * Phase 7d — 返回所有毒性落地页 slug（犬类 + 猫类各一组）
- * 用于 sitemap.ts 收录和 generateStaticParams 交叉验证
- */
-export function getAllToxicSlugs(): { species: 'dog' | 'cat'; slug: string }[] {
-  const result: { species: 'dog' | 'cat'; slug: string }[] = [];
-  for (const item of TOXIC_ITEMS) {
-    if (item.species === 'dog' || item.species === 'both')
-      result.push({ species: 'dog', slug: item.slug });
-    if (item.species === 'cat' || item.species === 'both')
-      result.push({ species: 'cat', slug: item.slug });
-  }
-  return result;
 }

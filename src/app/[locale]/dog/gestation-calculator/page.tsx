@@ -20,35 +20,39 @@ import { JsonLdScript } from '@/components/shared/JsonLdScript';
 import { Card } from '@/components/ui/Card';
 import { AffiliateBanner } from '@/components/shared/AffiliateBanner';
 import { ToolCtaSection } from '@/components/shared/ToolCtaSection';
+import { RelatedComparison } from '@/components/shared/RelatedComparison';
 import { getTranslations } from 'next-intl/server';
 import { DisclaimerSection } from '@/components/shared/DisclaimerSection';
 import { KnowledgeCards } from '@/components/shared/KnowledgeCards';
 import { ScienceBehindIt } from '@/components/shared/ScienceBehindIt';
 import { DogGestationWidget } from '@/components/dog/DogGestationWidget';
 
-export const metadata: Metadata = {
-  title: 'Dog Gestation Calculator — Whelping Due Date & Milestones | petsMetrics',
-  description:
-    'Calculate your dog\'s due date from the mating date. View key pregnancy milestones, vet check windows, and whelping preparation timeline. Based on average 63-day gestation.',
-  keywords: 'dog pregnancy calculator, dog due date calculator, how long are dogs pregnant, dog gestation period, dog pregnancy week by week, dog pregnancy stages timeline, when to ultrasound pregnant dog',
-  alternates: {
-    canonical: `${SITE_URL}/dog/gestation-calculator/`,
-  },
-  openGraph: {
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  return {
     title: 'Dog Gestation Calculator — Whelping Due Date & Milestones | petsMetrics',
     description:
-      'Calculate your dog\'s due date. Track key developmental milestones from implantation to whelping.',
-    url: `${SITE_URL}/dog/gestation-calculator/`,
-    type: 'website',
-    images: [{ url: `${SITE_URL}/og/gestation-calculator.webp`, width: 1200, height: 630, alt: 'Dog Gestation Calculator — Due Date & Milestones' }],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Dog Gestation Calculator — Whelping Due Date | petsMetrics',
-    description: 'Calculate your dog\'s due date. Track key developmental milestones from implantation to whelping.',
-    images: [`${SITE_URL}/og/gestation-calculator.webp`],
-  },
-};
+      'Calculate your dog\'s due date from the mating date. View key pregnancy milestones, vet check windows, and whelping preparation timeline. Based on average 63-day gestation.',
+    keywords: 'dog pregnancy calculator, dog due date calculator, how long are dogs pregnant, dog gestation period, dog pregnancy week by week, dog pregnancy stages timeline, when to ultrasound pregnant dog',
+    alternates: {
+      canonical: `${SITE_URL}/${locale}/dog/gestation-calculator/`,
+    },
+    openGraph: {
+      title: 'Dog Gestation Calculator — Whelping Due Date & Milestones | petsMetrics',
+      description:
+        'Calculate your dog\'s due date. Track key developmental milestones from implantation to whelping.',
+      url: `${SITE_URL}/${locale}/dog/gestation-calculator/`,
+      type: 'website',
+      images: [{ url: `${SITE_URL}/og/gestation-calculator.webp`, width: 1200, height: 630, alt: 'Dog Gestation Calculator — Due Date & Milestones' }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: 'Dog Gestation Calculator — Whelping Due Date | petsMetrics',
+      description: 'Calculate your dog\'s due date. Track key developmental milestones from implantation to whelping.',
+      images: [`${SITE_URL}/og/gestation-calculator.webp`],
+    },
+  };
+}
 
 const faqSchema = generateFaqPageJsonLd(DOG_GESTATION_FAQ);
 
@@ -71,6 +75,7 @@ export default async function DogGestationPage({ params }: { params: { locale: s
   const { locale } = params;
   setRequestLocale(locale);
   const t = await getTranslations('common');
+  const tc = await getTranslations('compare');
   const pageUrl = createPageUrl(locale);
   return (
     <>
@@ -99,13 +104,24 @@ export default async function DogGestationPage({ params }: { params: { locale: s
               </p>
             </div>
             <DogGestationWidget />
-            <KnowledgeCards cards={DOG_GESTATION_KNOWLEDGE} />
+            <KnowledgeCards cards={DOG_GESTATION_KNOWLEDGE} locale={locale} />
             <ScienceBehindIt content={DOG_GESTATION_SCIENCE} />
             <ToolCtaSection
-              heading="Plan Your Dog's Vaccination Schedule"
-              description="Puppies on the way? Make sure you know the vaccine timeline. Use our vaccination schedule to generate a personalized immunization plan based on age and region."
-              href="/dog/vaccination-schedule/"
-              buttonLabel="See Vaccine Schedule →"
+              heading={t('toolCta.planDogVaccination.heading')}
+              description={t('toolCta.planDogVaccination.description')}
+              href={pageUrl('dog/vaccination-schedule')}
+              buttonLabel={t('toolCta.planDogVaccination.button')}
+            />
+            <RelatedComparison
+              title={tc('spayedVsUnspayed.title')}
+              description={tc('spayedVsUnspayed.subtitle')}
+              href={pageUrl('dog/compare/spayed-vs-unspayed')}
+              sourcesText="AAHA, AVMA"
+              section="dog"
+              t={{
+                heading: tc('relatedCompare.heading'),
+                readComparison: tc('relatedCompare.readComparison'),
+              }}
             />
             <DisclaimerSection text={t('disclaimer.tool')} variant="tool" />
           </div>
@@ -113,17 +129,17 @@ export default async function DogGestationPage({ params }: { params: { locale: s
         sidebar={
           <div className="flex flex-col gap-4">
             <Card padding="md">
-              <p className="text-sm font-semibold text-[--gray-900]">Quick Facts</p>
+              <p className="text-sm font-semibold text-[--gray-900]">{t('sidebar.quickFacts')}</p>
               <ul className="mt-2 flex flex-col gap-2 text-sm text-[--gray-600]">
-                <li>Average: 63 days</li>
-                <li>Range: 58–68 days</li>
-                <li>Ultrasound: Day 25–35</li>
-                <li>X-ray: Day 45+</li>
+                <li>{t('sidebar.dogGestation.average')}</li>
+                <li>{t('sidebar.dogGestation.range')}</li>
+                <li>{t('sidebar.dogGestation.ultrasound')}</li>
+                <li>{t('sidebar.dogGestation.xray')}</li>
               </ul>
             </Card>
             <AffiliateBanner variant="insurance" />
             <Card padding="md">
-              <p className="text-sm font-semibold text-[--gray-900]">Dog Tools</p>
+              <p className="text-sm font-semibold text-[--gray-900]">{t('sidebar.dogTools')}</p>
               <ul className="mt-2 flex flex-col gap-2 text-sm text-[--gray-600]">
                 <li><a href={pageUrl('dog/age-calculator')} className="hover:text-[--dog-primary] transition-colors">Age Calculator</a></li>
                 <li><a href={pageUrl('dog/calorie-calculator')} className="hover:text-[--dog-primary] transition-colors">Calorie Calculator</a></li>

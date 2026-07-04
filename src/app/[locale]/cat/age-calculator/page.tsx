@@ -26,29 +26,32 @@ import { ScienceBehindIt } from '@/components/shared/ScienceBehindIt';
 import { getTranslations } from 'next-intl/server';
 import { CatAgeWidget } from '@/components/cat/CatAgeWidget';
 
-export const metadata: Metadata = {
-  title: 'Cat Age Calculator — Cat Years to Human Years | petsMetrics',
-  description:
-    'How old is your cat in human years? Based on official AAHA/AAFP 2021 Feline Life Stage Guidelines. Learn your cat\'s life stage and health needs.',
-  keywords: 'cat age calculator, cat years to human years, how old is my cat in human years, cat life stages, how long do cats live, cat age chart',
-  alternates: {
-    canonical: `${SITE_URL}/cat/age-calculator/`,
-  },
-  openGraph: {
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  return {
     title: 'Cat Age Calculator — Cat Years to Human Years | petsMetrics',
     description:
-      'Convert cat years to human years using AAHA/AAFP Feline Life Stage Guidelines. Learn your cat\'s life stage and recommended checkup frequency.',
-    url: `${SITE_URL}/cat/age-calculator/`,
-    type: 'website',
-    images: [{ url: `${SITE_URL}/og/cat-age-calculator.webp`, width: 1200, height: 630, alt: 'Cat Age Calculator — Cat Years to Human Years' }],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Cat Age Calculator — Cat Years to Human Years | petsMetrics',
-    description: 'Convert cat years to human years using AAHA/AAFP Feline Life Stage Guidelines.',
-    images: [`${SITE_URL}/og/cat-age-calculator.webp`],
-  },
-};
+      'How old is your cat in human years? Based on official AAHA/AAFP 2021 Feline Life Stage Guidelines. Learn your cat\'s life stage and health needs.',
+    keywords: 'cat age calculator, cat years to human years, how old is my cat in human years, cat life stages, how long do cats live, cat age chart',
+    alternates: {
+      canonical: `${SITE_URL}/${locale}/cat/age-calculator/`,
+    },
+    openGraph: {
+      title: 'Cat Age Calculator — Cat Years to Human Years | petsMetrics',
+      description:
+        'Convert cat years to human years using AAHA/AAFP Feline Life Stage Guidelines. Learn your cat\'s life stage and recommended checkup frequency.',
+      url: `${SITE_URL}/${locale}/cat/age-calculator/`,
+      type: 'website',
+      images: [{ url: `${SITE_URL}/og/cat-age-calculator.webp`, width: 1200, height: 630, alt: 'Cat Age Calculator — Cat Years to Human Years' }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: 'Cat Age Calculator — Cat Years to Human Years | petsMetrics',
+      description: 'Convert cat years to human years using AAHA/AAFP Feline Life Stage Guidelines.',
+      images: [`${SITE_URL}/og/cat-age-calculator.webp`],
+    },
+  };
+}
 
 const faqSchema = generateFaqPageJsonLd(CAT_AGE_FAQ);
 
@@ -99,13 +102,13 @@ export default async function CatAgePage({ params }: { params: { locale: string 
               </p>
             </div>
             <CatAgeWidget />
-            <KnowledgeCards cards={CAT_AGE_KNOWLEDGE} />
+            <KnowledgeCards cards={CAT_AGE_KNOWLEDGE} locale={locale} />
             <ScienceBehindIt content={CAT_AGE_SCIENCE} />
             <ToolCtaSection
-              heading="Track Your Cat's Health Over Time"
-              description="Now that you know your cat's life stage, use our BCS Weight Tracker to monitor their body condition and ensure they stay at a healthy weight at every age."
-              href="/cat/bcs-weight-tracker/"
-              buttonLabel="Check Body Condition →"
+              heading={t('toolCta.trackCatHealth.heading')}
+              description={t('toolCta.trackCatHealth.description')}
+              href={pageUrl('cat/bcs-weight-tracker')}
+              buttonLabel={t('toolCta.trackCatHealth.button')}
             />
             <DisclaimerSection text={t('disclaimer.tool')} variant="tool" />
           </div>
@@ -125,7 +128,7 @@ export default async function CatAgePage({ params }: { params: { locale: string 
             </Card>
             <AffiliateBanner variant="insurance" />
             <Card padding="md">
-              <p className="text-sm font-semibold text-[--gray-900]">Cat Tools</p>
+              <p className="text-sm font-semibold text-[--gray-900]">{t('sidebar.catTools')}</p>
               <ul className="mt-2 flex flex-col gap-2 text-sm text-[--gray-600]">
                 <li><a href={pageUrl('cat/age-calculator')} className="text-[--cat-primary] hover:underline font-medium">Age Calculator</a></li>
                 <li><a href={pageUrl('cat/gestation-calculator')} className="hover:text-[--cat-primary] transition-colors">Gestation Calculator</a></li>

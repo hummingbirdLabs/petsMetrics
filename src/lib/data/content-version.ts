@@ -23,7 +23,7 @@ export function getContentVersion(): ContentVersion {
   return cv as ContentVersion;
 }
 
-/** 毒性数据库最近核验日期 — 用于毒性落地页 sitemap lastModified */
+/** 毒性数据库最近核验日期 — 保留给毒性检测工具页使用 */
 export function getToxicDbUpdatedDate(): Date {
   return new Date(cv.toxicDb.updatedAt);
 }

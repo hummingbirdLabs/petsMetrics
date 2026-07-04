@@ -20,22 +20,25 @@ import { JsonLdScript } from '@/components/shared/JsonLdScript';
 import { Card } from '@/components/ui/Card';
 import { AffiliateBanner } from '@/components/shared/AffiliateBanner';
 import { ToolCtaSection } from '@/components/shared/ToolCtaSection';
+import { RelatedComparison } from '@/components/shared/RelatedComparison';
 import { getTranslations } from 'next-intl/server';
 import { DisclaimerSection } from '@/components/shared/DisclaimerSection';
 import { KnowledgeCards } from '@/components/shared/KnowledgeCards';
 import { ScienceBehindIt } from '@/components/shared/ScienceBehindIt';
 import { BARFWidget } from '@/components/shared/BARFWidget';
 
-export const metadata: Metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  return {
   title: 'BARF Raw Feeding Calculator — Free Daily Portion Guide | petsMetrics',
   description:
     'Calculate daily BARF raw feeding portions for dogs and cats. Muscle meat, bone, liver, organ, and vegetable ratios based on NRC guidelines.',
   keywords: 'BARF calculator, raw dog food calculator, raw feeding calculator, how much raw food to feed dog, 80 10 10 raw diet calculator, BARF diet for beginners, raw feeding guide for dogs',
-  alternates: { canonical: `${SITE_URL}/shared/barf-calculator/` },
+  alternates: { canonical: `${SITE_URL}/${locale}/shared/barf-calculator/` },
   openGraph: {
     title: 'BARF Raw Feeding Calculator — Free Daily Portion Guide | petsMetrics',
     description: 'Calculate precise daily raw feeding portions using the 80-10-10 BARF model. Dog and cat calculators.',
-    url: `${SITE_URL}/shared/barf-calculator/`,
+    url: `${SITE_URL}/${locale}/shared/barf-calculator/`,
     type: 'website',
   },
   twitter: {
@@ -44,6 +47,7 @@ export const metadata: Metadata = {
     description: 'Calculate precise daily raw feeding portions using the 80-10-10 BARF model. Dog and cat calculators.',
   },
 };
+}
 
 const faqSchema = generateFaqPageJsonLd(BARF_FAQ);
 
@@ -65,6 +69,7 @@ export default async function BARFCalculatorPage({ params }: { params: { locale:
   const { locale } = params;
   setRequestLocale(locale);
   const t = await getTranslations('common');
+  const tc = await getTranslations('compare');
   const pageUrl = createPageUrl(locale);
   return (
     <>
@@ -87,13 +92,24 @@ export default async function BARFCalculatorPage({ params }: { params: { locale:
               </p>
             </div>
             <BARFWidget disclaimerText={t('disclaimer.standard')} />
-            <KnowledgeCards cards={BARF_KNOWLEDGE} />
+            <KnowledgeCards cards={BARF_KNOWLEDGE} locale={locale} />
             <ScienceBehindIt content={BARF_SCIENCE} />
             <ToolCtaSection
-              heading="Calculate Your Dog's Daily Calories"
-              description="Prefer commercial food? Use our Dog Calorie Calculator to find the exact daily portion using the AAFCO MER formula. Compare with your raw feeding plan."
-              href="/dog/calorie-calculator/"
-              buttonLabel="Calculate Daily Calories →"
+              heading={t('toolCta.calculateCalories.heading')}
+              description={t('toolCta.calculateCalories.description')}
+              href={pageUrl('dog/calorie-calculator')}
+              buttonLabel={t('toolCta.calculateCalories.button')}
+            />
+            <RelatedComparison
+              title={tc('rawVsKibble.title')}
+              description={tc('rawVsKibble.subtitle')}
+              href={pageUrl('dog/compare/raw-diet-vs-kibble')}
+              sourcesText="NRC, AVMA"
+              section="dog"
+              t={{
+                heading: tc('relatedCompare.heading'),
+                readComparison: tc('relatedCompare.readComparison'),
+              }}
             />
             <DisclaimerSection text={t('disclaimer.tool')} variant="tool" />
           </div>
@@ -101,7 +117,7 @@ export default async function BARFCalculatorPage({ params }: { params: { locale:
         sidebar={
           <div className="flex flex-col gap-4">
             <Card padding="md">
-              <p className="text-sm font-semibold text-[--gray-900]">BARF Ratios</p>
+              <p className="text-sm font-semibold text-[--gray-900]">{t('sidebar.barfRatios')}</p>
               <ul className="mt-2 flex flex-col gap-2 text-sm text-[--gray-600]">
                 <li>Muscle meat: 80% (dog) / 75% (cat)</li>
                 <li>Raw meaty bone: 10% / 10%</li>
@@ -111,7 +127,7 @@ export default async function BARFCalculatorPage({ params }: { params: { locale:
               </ul>
             </Card>
             <Card padding="md">
-              <p className="text-sm font-semibold text-[--gray-900]">Safety Tips</p>
+              <p className="text-sm font-semibold text-[--gray-900]">{t('sidebar.safetyTips')}</p>
               <ul className="mt-2 flex flex-col gap-2 text-sm text-[--gray-600]">
                 <li>Freeze meat 2-3 weeks before feeding</li>
                 <li>Use human-grade meat sources</li>

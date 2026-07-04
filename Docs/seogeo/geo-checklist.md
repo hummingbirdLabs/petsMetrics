@@ -18,11 +18,10 @@ GEO 是**全工程统一策略**，覆盖 `petsmetrics.com` 下所有面向用�
 | **工具页 — 狗狗** | `/dog/calorie-calculator/`、`/dog/age-calculator/`、`/dog/gestation-calculator/`、`/dog/vaccination-schedule/`、`/dog/puppy-growth-predictor/` | 5 | P0 |
 | **工具页 — 猫咪** | `/cat/age-calculator/`、`/cat/gestation-calculator/`、`/cat/vaccination-schedule/`、`/cat/bcs-weight-tracker/`、`/cat/hydration-calculator/` | 5 | P0 |
 | **工具页 — 共享** | `/shared/toxic-checker/`、`/shared/eu-pet-travel-checker/`、`/shared/barf-calculator/`、`/shared/pet-insurance-estimator/` | 4 | P0/P1 |
-| **毒性落地页** | `/dog/can-dogs-eat-[food]/`、`/cat/is-[item]-toxic-to-cats/` | 200+ | P0 |
 | **档案页** | `/profile/` | 1 | P0 |
 | **法律页** | `/privacy/`、`/terms/` | 2 | P0 |
 
-> **总计**：14 个工具入口 + 2 个 Hub + 200+ 毒性落地页 + 3 个辅助页，所有页面对 AI 爬虫 SSG 预渲染可见。
+> **总计**：14 个工具入口 + 2 个 Hub + 3 个辅助页，所有页面对 AI 爬虫 SSG 预渲染可见。
 
 ### 0.2 范围原则
 
@@ -106,9 +105,8 @@ AI 搜索引擎与传统搜索引擎的关键差异：
 ├─────────────────────────────────────────────────┤
 │ JSON-LD 结构化数据层（AI 搜索引擎理解页面语义）     │
 │  ├─ SoftwareApplication + citation[]（工具页）    │
-│  ├─ FAQPage（每个工具页 + 毒性落地页）            │
+│  ├─ FAQPage（每个工具页）                         │
 │  ├─ HowTo（工具操作步骤）                         │
-│  ├─ Article + citation[]（毒性落地页，E-E-A-T）   │
 │  └─ Organization + WebSite（品牌信任信号）         │
 ├─────────────────────────────────────────────────┤
 │ 技术基础层（确保 AI 爬虫能完整抓取）               │
@@ -123,20 +121,18 @@ AI 搜索引擎与传统搜索引擎的关键差异：
 
 不同页面类型在 GEO 三层结构中的优化权重不同。下表定义每种页面类型**必须执行**（●）和**推荐执行**（○）的 GEO 元素：
 
-| GEO 元素 | 工具页 | 毒性落地页 | Hub 页 | 首页 | 档案页 | 法律页 |
-|---------|:-----:|:---------:|:-----:|:---:|:-----:|:-----:|
-| **Knowledge Section**（4 卡片 + 权威外链） | ● P0 | ● P0 | — | — | — | — |
-| **FAQ Section**（3-5 问答，与 JSON-LD 一致） | ● P0 | ● P0 | ○ | ○ | — | — |
-| **The Science Behind It**（公式引用段落） | ● P0 | ● P0 | — | — | — | — |
-| **HowTo JSON-LD**（≥ 3 步） | ● P0 | — | — | — | ● | — |
-| **SoftwareApplication JSON-LD**（含 citation[]） | ● P0 | — | — | — | ● | — |
-| **FAQPage JSON-LD** | ● P0 | ● P0 | ○ | ○ | — | — |
-| **Article JSON-LD**（含 citation[]） | — | ● P0 | — | — | — | — |
-| **Medical Disclaimer**（SSG 段落，合规信号） | ● P0 | ● P0 | — | — | — | — |
-| **Emergency Hotline**（结构化联系电话） | — | ● P0 | — | — | — | — |
-| **Related Tools / Items**（交叉链接卡片） | ● P1 | ● P1 | — | — | — | — |
-| **内容新鲜度信号**（sitemap + 方法论文本版本） | ● | ● | ● | ● | ● | ● |
-| **Organization JSON-LD** | — | — | — | ● | — | — |
+| GEO 元素 | 工具页 | Hub 页 | 首页 | 档案页 | 法律页 |
+|---------|:-----:|:-----:|:---:|:-----:|:-----:|
+| **Knowledge Section**（4 卡片 + 权威外链） | ● P0 | — | — | — | — |
+| **FAQ Section**（3-5 问答，与 JSON-LD 一致） | ● P0 | ○ | ○ | — | — |
+| **The Science Behind It**（公式引用段落） | ● P0 | — | — | — | — |
+| **HowTo JSON-LD**（≥ 3 步） | ● P0 | — | — | ● | — |
+| **SoftwareApplication JSON-LD**（含 citation[]） | ● P0 | — | — | ● | — |
+| **FAQPage JSON-LD** | ● P0 | ○ | ○ | — | — |
+| **Medical Disclaimer**（SSG 段落，合规信号） | ● P0 | — | — | — | — |
+| **Related Tools / Items**（交叉链接卡片） | ● P1 | — | — | — | — |
+| **内容新鲜度信号**（sitemap + 方法论文本版本） | ● | ● | ● | ● | ● |
+| **Organization JSON-LD** | — | — | ● | — | — |
 
 > **优先级定义**：P0 = AI 摘录的直接数据源，缺失则大量丢失 AI 搜索流量；P1 = AI 信任信号与交叉引用，提升摘录概率与引用质量。
 
@@ -169,20 +165,6 @@ AI 搜索引擎与传统搜索引擎的关键差异：
 | BARF 计算器 | What Is BARF Diet? | 80-10-10 Ratio Explained | Raw Feeding Safety Guidelines | Bone-to-Meat Ratio |
 | 保险估算器 | Pet Insurance Types | What Does Insurance Cover? | Annual vs Lifetime Policies | Pre-existing Conditions |
 
-#### 毒性落地页（200+ 页面）
-
-这是 GEO 的**高流量长尾阵地**——"can dogs eat grapes" 类问题几乎完全在 AI 搜索引擎中被直接回答，用户不需要点击链接。
-
-| 策略 | 说明 |
-|------|------|
-| Knowledge Section | 3 张卡片：Why It's Toxic / Safe Amount / Related Toxins |
-| FAQ Section | 3 条问答（"What happens if..."、"How much is too much"、"What should I do next"） |
-| Article JSON-LD | 含 `citation[]`（ASPCA / AVMA / Pet Poison Helpline） |
-| FAQPage JSON-LD | 3 条问答，与可见 FAQ 区块文字一致 |
-| Emergency Hotline | ASPCA Poison Control: (888) 426-4435，`ContactPoint` JSON-LD |
-| Medical Disclaimer | "This is not veterinary advice. Contact your vet or ASPCA immediately." |
-| Related Items | 3-5 个相关食物交叉链接 |
-
 #### Hub 页（`/dog/`、`/cat/`）
 
 Hub 是**品类导航意图的 GEO 入口**。AI 搜索 "dog health tools" 或 "cat calculator" 时摘录 Hub 页。
@@ -208,7 +190,7 @@ Hub 是**品类导航意图的 GEO 入口**。AI 搜索 "dog health tools" 或 "
 
 ## 1. Knowledge Section（P0 — GEO 核心内容源）
 
-每个工具页和毒性落地页 **必须** 包含一个 Knowledge Section。这是 AI 搜索引擎摘录的最直接数据源。
+每个工具页 **必须** 包含一个 Knowledge Section。这是 AI 搜索引擎摘录的最直接数据源。
 
 ### 1.1 卡片规范
 
@@ -239,13 +221,13 @@ GEO `citation[]` 和 Knowledge Card 外链优先从以下机构选用：
 
 ## 2. FAQ Section（P0 — AI 问答摘录源）
 
-每个工具页和毒性落地页必须包含 FAQ Section，与 `FAQPage` JSON-LD 一一对应。
+每个工具页必须包含 FAQ Section，与 `FAQPage` JSON-LD 一一对应。
 
 ### 2.1 FAQ 规范
 
 | 要求 | 说明 |
 |------|------|
-| 数量 | 工具页 3-5 条，毒性落地页 3 条 |
+| 数量 | 工具页 3-5 条 |
 | 问题措辞 | **自然语言疑问句**，尽可能匹配用户实际搜索方式（如 "Can dogs eat grapes?"、"How many calories should my dog eat?"） |
 | 答案文本 | 150-300 字，**必须包含工具名称或关键词**，提供具体可验证的信息 |
 | 渲染方式 | SSG 预渲染的 `<details>` / accordion，**不能依赖 JS 动态注入文本** |
@@ -382,7 +364,7 @@ const jsonLd = {
 
 ## 5. Medical Disclaimer（P0 — 合规 + AI 信任信号）
 
-每个工具页和毒性落地页 **必须** 包含标准医疗免责声明。这是 Google 对 YMYL 内容的硬性要求，也是 AI 搜索引擎判断内容可信度的信号。
+每个工具页 **必须** 包含标准医疗免责声明。这是 Google 对 YMYL 内容的硬性要求，也是 AI 搜索引擎判断内容可信度的信号。
 
 ### 5.1 免责声明标准文本
 
@@ -397,89 +379,17 @@ const jsonLd = {
 </section>
 ```
 
-### 5.2 毒性落地页紧急声明
-
-在免责声明基础上追加紧急联系方式：
-
-```html
-<p>
-  If your pet has ingested a potentially toxic substance, contact your 
-  veterinarian immediately or call the 
-  <strong>ASPCA Animal Poison Control Center at (888) 426-4435</strong> 
-  or the <strong>Pet Poison Helpline at (855) 764-7661</strong>.
-  A consultation fee may apply.
-</p>
-```
-
-### 5.3 合规边界声明
+### 5.2 合规边界声明
 
 > **始终传达但不要暗示诊断能力**。AI 搜索引擎会读取这个文本，出现在 AI Overview 中时为品牌提供法律保护。
 
 ---
 
-## 6. Article JSON-LD（P0 — 毒性落地页必须）
-
-每个毒性落地页必须具备 `Article` JSON-LD，强化 E-E-A-T 信号。
-
-```tsx
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "Can Dogs Eat Grapes? Toxic Risk & What to Do",
-  "description": "Grapes and raisins can cause acute kidney failure in dogs. Learn the symptoms, toxic dose, and emergency steps.",
-  "datePublished": "2026-06-01",
-  "dateModified": "2026-06-01",
-  "publisher": {
-    "@type": "Organization",
-    "name": "petsMetrics",
-    "url": "https://www.petsmetrics.com/",
-  },
-  "citation": [
-    {
-      "@type": "CreativeWork",
-      "name": "ASPCA Animal Poison Control — Grape & Raisin Toxicity",
-      "url": "https://www.aspca.org/pet-care/animal-poison-control",
-    },
-  ],
-};
-```
-
----
-
-## 7. Emergency Hotline — ContactPoint JSON-LD（毒性落地页必须）
-
-```tsx
-const emergencyContactJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "petsMetrics Emergency Resources",
-  "contactPoint": [
-    {
-      "@type": "ContactPoint",
-      "contactType": "animal poison emergency",
-      "telephone": "+1-888-426-4435",
-      "description": "ASPCA Animal Poison Control Center",
-      "areaServed": "US",
-    },
-    {
-      "@type": "ContactPoint",
-      "contactType": "animal poison emergency",
-      "telephone": "+1-855-764-7661",
-      "description": "Pet Poison Helpline",
-      "areaServed": "US",
-    },
-  ],
-};
-```
-
----
-
-## 8. 内容新鲜度信号（全站 P1）
+## 6. 内容新鲜度信号（全站 P1）
 
 | 信号 | 实现 | 作用 |
 |------|------|------|
 | `sitemap.lastModified` | `new Date()` 构建时动态值 | Google 爬虫新鲜度判断 |
-| 毒性落地页 `dateModified` | 每年核验 ASPCA 数据后批量更新 | Article JSON-LD 新鲜度 |
 | 工具页方法论文本 | 标注公式来源年份（如 "AAHA 2021 Canine Life Stage Guidelines"） | AI 摘录时显示年份增加可信度 |
 | 年度数据内容 | "2026 Most Common Pet Toxins Report" 类年度内容 | 媒体反链 + 内容新鲜度 |
 
@@ -487,11 +397,11 @@ const emergencyContactJsonLd = {
 
 ---
 
-## 10. 实体优化（P0 — Knowledge Graph 对接）
+## 7. 实体优化（P0 — Knowledge Graph 对接）
 
 > AI 搜索引擎在合成答案时，不仅读取页面内容，还会解析页面中的 **实体**（Entities）及其关系。Google Knowledge Graph、Perplexity 的实体提取层都在解析页面的实体信号。在宠物健康垂类中，正确的实体标记意味着 AI 引擎可以将 petsMetrics 与 ASPCA、AAHA 等权威实体关联。
 
-### 10.1 核心实体定义
+### 7.1 核心实体定义
 
 petsMetrics 必须在全站一致地标记以下实体层次：
 
@@ -500,11 +410,10 @@ petsMetrics 必须在全站一致地标记以下实体层次：
 | 组织 | `petsMetrics` | `Organization` | 首页、About（未来） |
 | 软件应用 — 工具 | `Dog Calorie Calculator` 等 | `SoftwareApplication` | 每个工具页 |
 | 物种 | `Dog`、`Cat` | `DefinedTerm`（可选） | Hub 页 |
-| 健康主题 | 各工具涵盖的医学主题 | `MedicalScholarlyArticle`（不适用）→ 改用 `Article` + `citation[]` | 工具页 + 毒性落地页 |
+| 健康主题 | 各工具涵盖的医学主题 | `MedicalScholarlyArticle`（不适用）→ 改用 `Article` + `citation[]` | 工具页 |
 | 权威来源 | ASPCA、AAHA、WSAVA、AAFP | `citation[].CreativeWork` | 所有页面 |
-| 紧急服务 | ASPCA Poison Control | `ContactPoint` | 毒性落地页 |
 
-### 10.2 `sameAs` 关联策略
+### 7.2 `sameAs` 关联策略
 
 `Organization` JSON-LD 中必须添加 `sameAs` 属性，将品牌与外部权威 Profile 关联，增强 Knowledge Graph 实体置信度：
 
@@ -526,7 +435,7 @@ const organizationJsonLd = {
 
 > **GEO 原理**：Perplexity 和 Google AI Overview 在实体解析时，`sameAs` 列表中的 URL 被视为"同一实体"的独立证明，有助于提升品牌在 AI 答案中的可信度和出现频率。
 
-### 10.3 品种实体关联（未来增强）
+### 7.3 品种实体关联（未来增强）
 
 未来可以利用 `DefinedTerm` 或 Wikidata 实体 ID 标记狗的品种：
 
@@ -544,11 +453,11 @@ const organizationJsonLd = {
 
 ---
 
-## 11. 零点击内容策略（P1 — AI 搜索时代的流量逻辑）
+## 8. 零点击内容策略（P1 — AI 搜索时代的流量逻辑）
 
 > AI 搜索引擎的核心矛盾：**它引用你的内容，但用户不点击你的链接**。在 Google AI Overview 和 Perplexity 中，60-80% 的查询是"零点击"——用户直接在 AI 摘要中获得答案后离开。传统 SEO 视此为威胁，GEO 视此为 **品牌权威建设机会**。
 
-### 11.1 零点击 vs 点击型查询分类
+### 8.1 零点击 vs 点击型查询分类
 
 petsMetrics 必须区分两类查询，采取不同策略：
 
@@ -558,7 +467,7 @@ petsMetrics 必须区分两类查询，采取不同策略：
 | **工具意图查询** | 用户需要输入数据、获得个性化结果 | 优化摘要作为"诱饵"，**必须在摘要末尾包含 CTA** 引导点击 | "dog calorie calculator"、"puppy growth predictor" |
 | **导航查询** | 用户搜索品牌/品类 | 优化品牌实体信息，确保 AI 返回正确的品牌描述和链接 | "petsMetrics"、"free dog health tools" |
 
-### 11.2 零点击场景的品牌建设
+### 8.2 零点击场景的品牌建设
 
 即使零点击，品牌在 AI 摘要中被引用也是胜利——这是免费的高权威品牌曝光。最大化零点击场景的品牌价值：
 
@@ -566,7 +475,7 @@ petsMetrics 必须区分两类查询，采取不同策略：
 2. **每个工具的计算结果页必须输出公式来源文字**：`"[PetName]'s daily MER: 584 kcal (calculated using the AAFCO formula via petsMetrics.com)"`——当用户截图分享结果时，品牌水印自然传播。
 3. **Medical Disclaimer 必须包含品牌名**：`"This tool is provided by petsMetrics for general reference only..."`——AI 引用免责声明时同时传播品牌。
 
-### 11.3 从零点击到点击的转化钩子
+### 8.3 从零点击到点击的转化钩子
 
 每个纯信息查询的页面底部必须有一个"下一步"钩子：
 
@@ -588,11 +497,11 @@ petsMetrics 必须区分两类查询，采取不同策略：
 
 ---
 
-## 12. AI Overview 专属优化战术（P1 — Google AI Overview 截流）
+## 9. AI Overview 专属优化战术（P1 — Google AI Overview 截流）
 
 > Google AI Overview（AIO）是全球最大的 AI 搜索引擎前线。它在搜索结果顶部合成答案，优先从页面上的 **Knowledge Cards**、**FAQ**、**有序/无序列表** 中提取内容。以下战术专门针对 AIO 摘录优化。
 
-### 12.1 AI Overview 内容偏好
+### 9.1 AI Overview 内容偏好
 
 | AIO 偏好 | 如何利用 |
 |---------|---------|
@@ -602,19 +511,18 @@ petsMetrics 必须区分两类查询，采取不同策略：
 | **可验证数字** | 所有公式结果附带具体数字（如 "63 days" 而非 "about two months"） |
 | **权威引用** | 每个核心结论后直接跟括号引用来源（如 "(AAHA, 2021)"），与 JSON-LD citation 对应 |
 
-### 12.2 AIO 优先级页面
+### 9.2 AIO 优先级页面
 
 以下页面的查询在 AIO 中出现率极高，必须最先完成 AIO 优化：
 
 | 页面 | AIO 出现率 | AIO 覆盖查询 | 优化动作 |
 |------|----------|-----------|---------|
-| 毒性落地页（高搜索量品种） | 🔴 90%+ | "can dogs eat grapes"、"are lilies toxic to cats" | Knowledge Card + FAQ + Article JSON-LD |
 | 怀孕计算器 | 🟠 70%+ | "how long are dogs pregnant" | 短定义句 + 有序列表（阶段时间线） |
 | 年龄计算器 | 🟠 60%+ | "how old is my dog in human years" | 表格（品种 × 年龄对照） + 短定义 |
 | 疫苗计划 | 🟡 40%+ | "puppy vaccine schedule" | 有序列表（时间线） + 表格 |
 | BCS 体重追踪 | 🟡 30%+ | "is my cat overweight" | 有序列表（评估步骤） + 表格（评分标准） |
 
-### 12.3 反 AIO "幻觉" 设计
+### 9.3 反 AIO "幻觉" 设计
 
 AI Overview 有时会错误合成答案。减少幻觉的页面设计：
 
@@ -624,11 +532,11 @@ AI Overview 有时会错误合成答案。减少幻觉的页面设计：
 
 ---
 
-## 13. GEO 内容模板（P1 — 可复用的 AI 优化内容组件）
+## 10. GEO 内容模板（P1 — 可复用的 AI 优化内容组件）
 
 > 以下是为每个页面类型预先设计的 GEO 优化内容模板。开发时直接套用，确保全站 AI 搜索引擎摘录策略一致。
 
-### 13.1 工具页 GEO 模板
+### 10.1 工具页 GEO 模板
 
 ```html
 <!-- Knowledge Card 模板（重复 4 次） -->
@@ -672,48 +580,7 @@ AI Overview 有时会错误合成答案。减少幻觉的页面设计：
 </section>
 ```
 
-### 13.2 毒性落地页 GEO 模板
-
-```html
-<!-- 紧急摘要（AI 摘录的首要目标） -->
-<section aria-label="safety-summary">
-  <p class="text-lg font-semibold">
-    <strong>[食品/植物名] is <span class="text-red-600">TOXIC</span> 
-    to [物种].</strong> [40-60 字核心危险性说明].
-    If your pet has ingested it, call 
-    <strong>ASPCA Poison Control at (888) 426-4435</strong> immediately.
-  </p>
-</section>
-
-<!-- Why It's Toxic (≥ 100 独特字) -->
-<section aria-labelledby="why-toxic">
-  <h2 id="why-toxic">Why Is [Item] Dangerous to [Species]?</h2>
-  <p>[100+ 字逐物品手写解释，含具体毒素名称和致毒机制]</p>
-</section>
-
-<!-- Symptoms (≥ 80 独特字) -->
-<section aria-labelledby="symptoms">
-  <h2 id="symptoms">Symptoms of [Item] Poisoning in [Species]</h2>
-  <ul>
-    <li>[症状 1 — 具体描述]</li>
-    <li>[症状 2 — 具体描述]</li>
-    <!-- ... -->
-  </ul>
-</section>
-
-<!-- What To Do (≥ 60 独特字) -->
-<section aria-labelledby="what-to-do">
-  <h2 id="what-to-do">What To Do If Your [Species] Eats [Item]</h2>
-  <ol>
-    <li><strong>Do not induce vomiting</strong> unless instructed by a vet</li>
-    <li>Call <strong>ASPCA Poison Control at (888) 426-4435</strong></li>
-    <li>Note the amount eaten and time of ingestion</li>
-    <li>Bring your pet to the nearest emergency vet</li>
-  </ol>
-</section>
-```
-
-### 13.3 Hub 页 GEO 模板
+### 10.2 Hub 页 GEO 模板
 
 ```html
 <h1>Free Dog Health Calculators & Tools</h1>
@@ -737,11 +604,11 @@ AI Overview 有时会错误合成答案。减少幻觉的页面设计：
 
 ---
 
-## 14. 引用多样性管理（P1 — 防止 AI 信任疲劳）
+## 11. 引用多样性管理（P1 — 防止 AI 信任疲劳）
 
 > AI 搜索引擎在多次看到同一权威来源后，对该来源的"独特性溢价"递减。如果所有 14 个工具页都只引用 ASPCA 和 AAHA，AI 引擎会将其视为模板化内容降权。必须管理引用多样性。
 
-### 14.1 权威来源分配矩阵
+### 11.1 权威来源分配矩阵
 
 每个工具页的 `citation[]` 来源应尽可能避免重复：
 
@@ -754,7 +621,6 @@ AI Overview 有时会错误合成答案。减少幻觉的页面设计：
 | 猫咪怀孕计算器 | AAFP — 猫科繁殖 | ISFM — 猫科繁殖指南 | Verstegen — 猫营养与繁殖 |
 | 疫苗计划（狗） | WSAVA — 全球疫苗指南 | AAHA — 犬类疫苗 | AVMA — 疫苗原则 |
 | 疫苗计划（猫） | WSAVA — 全球疫苗指南 | AAFP — 猫科疫苗 | ABCD — 猫科疾病指南 |
-| 毒性落地页 | ASPCA — 毒物控制 | Pet Poison Helpline | AVMA — 紧急毒理学 |
 | 幼犬生长预测 | UCSD — 生长曲线 | AKC — 品种标准 | Hawthorne — 幼犬生长 |
 | BCS 体重追踪 | WSAVA — BCS 指南 | AAFP — 猫科营养 | Laflamme — BCS 验证 |
 | 水分计算器 | NRC — 营养需求 | AAFP — 猫科水分 | Anderson — 猫饮水行为 |
@@ -762,7 +628,7 @@ AI Overview 有时会错误合成答案。减少幻觉的页面设计：
 | BARF 计算器 | NRC — 营养需求 | FEDIAF — 营养指南 | Freeman — 生食风险 |
 | 保险估算器 | NAPHIA — 行业数据 | AVMA — 宠物保险统计 | Consumer Reports — 保险对比 |
 
-### 14.2 引用新鲜度管理
+### 11.2 引用新鲜度管理
 
 | 规则 | 说明 |
 |------|------|
@@ -770,18 +636,18 @@ AI Overview 有时会错误合成答案。减少幻觉的页面设计：
 | 优先最新版 | AAHA 2021 > 2019 版，WSAVA 2024 > 2022 版——`citation[]` 中明确标注年份 |
 | 引用轮换 | 当同一主题有多个等权威来源时，在不同相关工具页中交替使用（避免所有工具都指向同一 URL） |
 
-### 14.3 过度优化的风险
+### 11.3 过度优化的风险
 
 > ⚠️ **不要在单个页面中堆砌超过 4 条权威引用**。Google AI Overview 的摘要模型会检测 `citation[]` 的异常密度，并可能将整个页面的权威信号降权。2-3 条精选引用优于 8 条低质量引用。
 
 
 ---
 
-## 15. 多 LLM 测试协议（P0 — 上线前必须验证）
+## 12. 多 LLM 测试协议（P0 — 上线前必须验证）
 
 > **为什么重要**：GEO 不是"一次优化适用所有 AI 引擎"。Google AI Overview、Perplexity、ChatGPT Search、Bing Copilot 的内容提取模型各有偏好。同一个页面可能被 Perplexity 完美摘录但被 ChatGPT 完全忽略。必须在不同 AI 引擎上逐一验证。
 
-### 15.1 LLM 平台摘录特性差异
+### 12.1 LLM 平台摘录特性差异
 
 | AI 引擎 | 摘录偏好 | 摘录长度 | 引用风格 | 独特敏感性 |
 |---------|---------|---------|---------|-----------|
@@ -791,7 +657,7 @@ AI Overview 有时会错误合成答案。减少幻觉的页面设计：
 | **Bing Copilot** | 偏好结构化卡片 + 列表 + 图片 alt | 100-200 字摘要 | 侧边栏链接卡片 | 偏好 `BreadcrumbList` + 清晰的层级结构 |
 | **Claude Web** | 偏好完整文章段落 + 学术引用 | 300-600 字详细答案 | 文末参考文献 | 偏好含方法论段落（"The Science Behind It"）和专业署名 |
 
-### 15.2 逐平台测试清单
+### 12.2 逐平台测试清单
 
 | 测试项 | 方法 | 通过标准 | 频率 |
 |--------|------|---------|------|
@@ -801,7 +667,7 @@ AI Overview 有时会错误合成答案。减少幻觉的页面设计：
 | **Bing Copilot 结构化摘录** | 在 Bing Chat 中输入目标查询 | 结果中包含 petsMetrics 的 Knowledge Card 文字或列表 | 工具页上线后 |
 | **交叉引用一致性** | 同一页面在 Perplexity、ChatGPT Search、Bing 中搜索同一查询 | 至少 2/3 平台正确引用 petsMetrics，无幻觉 | 每个工具页上线后 |
 
-### 15.3 GEO 测试提示词模板
+### 12.3 GEO 测试提示词模板
 
 ```
 // 在 Perplexity 中测试——无痕模式下输入：
@@ -817,7 +683,7 @@ Show me the exact formula and source."
 // 观察是否有 AI Overview 出现 + 是否使用了 petsMetrics 作为来源
 ```
 
-### 15.4 幻觉检测与修复
+### 12.4 幻觉检测与修复
 
 AI 引擎有时会错误归因——将竞品的内容标注为 petsMetrics 的来源。需要主动发现和修复：
 
@@ -830,11 +696,11 @@ AI 引擎有时会错误归因——将竞品的内容标注为 petsMetrics 的�
 
 ---
 
-## 16. GEO 成功指标与 KPI 框架（P1 — 衡量 AI 搜索流量 ROI）
+## 13. GEO 成功指标与 KPI 框架（P1 — 衡量 AI 搜索流量 ROI）
 
 > **为什么重要**：传统 SEO 有成熟的 Google Analytics / GSC 指标，但 GEO 的流量路径不同——零点击摘要、品牌提及、AI 引用都不产生传统"访问量"。需要独立的 GEO KPI 衡量 ROI。
 
-### 16.1 GEO 专属 KPI 矩阵
+### 13.1 GEO 专属 KPI 矩阵
 
 | KPI | 定义 | 测量工具 | 目标（上线后 6 个月） |
 |-----|------|---------|-------------------|
@@ -846,7 +712,7 @@ AI 引擎有时会错误归因——将竞品的内容标注为 petsMetrics 的�
 | **Embed 嵌入数** | 宠物博主嵌入 petsMetrics 工具的外部页面数 | 手动追踪 + 反链工具 | 50+ 嵌入（Month 6） |
 | **Knowledge Panel 出现** | 搜索 "petsMetrics" 时 Google 是否展示 Knowledge Panel | 手动检视 | Month 3 前出现 |
 
-### 16.2 GEO 流量归因模型
+### 13.2 GEO 流量归因模型
 
 传统 GA 无法区分"用户在 AI 中看到答案 → 直接搜索品牌名 → 进入网站"和"用户自然想起品牌名 → 搜索进入"，但可通过以下组合信号间接推断：
 
@@ -855,11 +721,10 @@ AI 引擎有时会错误归因——将竞品的内容标注为 petsMetrics 的�
 | 品牌搜索量 ↑ + 工具页直接访问 CTR ↓ | AI 截流零点击 → 用户通过品牌搜索回流（GEO 正在起作用） |
 | 品牌搜索量 ↑ + 新用户占比 ↑ | 品牌在 AI 搜索引擎中被新用户发现 |
 | "petsMetrics review" 搜索量 ↑ | 用户从 AI 摘要中了解品牌后进入评估阶段 |
-| 毒性落地页 CTR ↓ but 品牌搜索 ↑ | AI Overview 截流毒性查询 → 品牌曝光提升 |
 
 > **重要**：GEO ROI 不能仅用传统流量数字衡量。一个零点击 AI 摘要中的品牌曝光，其价值约等于传统 SERP 排名 #1 的 30-50%（用户未点击但产生了品牌记忆）。这是 GEO 区别于 SEO 的核心认知。
 
-### 16.3 月度 GEO 报告模板
+### 13.3 月度 GEO 报告模板
 
 ```markdown
 # GEO 月报 — [月份] [年份]
@@ -887,11 +752,11 @@ AI 引擎有时会错误归因——将竞品的内容标注为 petsMetrics 的�
 
 ---
 
-## 17. 内容格式 A/B 实验策略（P1 — 持续优化 AI 摘录质量）
+## 14. 内容格式 A/B 实验策略（P1 — 持续优化 AI 摘录质量）
 
 > **为什么重要**：GEO 不是一次性配置。AI 搜索引擎的摘录模型持续更新（Google AI Overview 每季度调整摘录算法），需要持续实验哪种内容格式在不同平台上摘录率最高。
 
-### 17.1 可实验的内容变量
+### 14.1 可实验的内容变量
 
 | 变量 | 实验方案 | 测量指标 |
 |------|---------|---------|
@@ -902,7 +767,7 @@ AI 引擎有时会错误归因——将竞品的内容标注为 petsMetrics 的�
 | **引用标注风格** | 实验组：`"(AAHA, 2021)"` 括号式 vs 对照组：完整句子 `"According to the AAHA 2021 guidelines..."` | 被 AI 摘录后保留来源标注的完整度 |
 | **CTA 钩子位置** | 实验组：答案段末尾 vs 对照组：页面底部独立区块 | 从 AI 答案到点击的转化率 |
 
-### 17.2 实验执行框架
+### 14.2 实验执行框架
 
 ```
 // 选择一个低流量工具页（如 /cat/hydration-calculator/）作为实验页
@@ -918,7 +783,7 @@ Week 4: 决策 — 推广至全站 or 回滚
 | GEO-001  | cat/hydration | FAQ 措辞 | 2026-07-01 | 20% | 60% | ✅ 推广 |
 ```
 
-### 17.3 实验安全规则
+### 14.3 实验安全规则
 
 - **禁止同时实验多个变量** — 无法归因效果
 - **禁止在首页、Dog Hub、Toxic Checker 上进行实验** — 这些是核心流量入口
@@ -928,7 +793,7 @@ Week 4: 决策 — 推广至全站 or 回滚
 
 ---
 
-## 18. GEO 文档版本信息与边界说明
+## 15. GEO 文档版本信息与边界说明
 
 | 文档 | 职责 |
 |------|------|
@@ -936,4 +801,4 @@ Week 4: 决策 — 推广至全站 or 回滚
 | [seo-checklist.md](seo-checklist.md) | 传统搜索引擎优化策略（sitemap、hreflang、canonical、Core Web Vitals、Image SEO、内容衰减、SpamBrain 防护、品牌查询优化、上线审计） |
 | [seo-keyword-gap-analysis.md](seo-keyword-gap-analysis.md) | 关键词缺口分析与埋词路线图（含语义聚类、PAA 挖掘、Featured Snippet、多语言预研） |
 
-> **GEO 文档版本**: v1.2 | **最后更新**: 2026-06-09 | **变更**: 新增 §15 多 LLM 测试协议、§16 GEO KPI 框架、§17 内容格式 A/B 实验策略
+> **GEO 文档版本**: v1.3 | **最后更新**: 2026-07-03 | **变更**: 移除毒性落地页相关内容，章节重新编号

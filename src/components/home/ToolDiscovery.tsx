@@ -34,6 +34,7 @@ const tools: ToolItem[] = [
 
 export function ToolDiscovery() {
   const t = useTranslations('home.toolDiscovery');
+  const tc = useTranslations('common');
   const pageUrl = usePageUrlBuilder();
   const [activeTab, setActiveTab] = useState<Tab>('dog');
 
@@ -145,7 +146,7 @@ export function ToolDiscovery() {
                   </div>
                 </div>
                 <div className="mt-3 flex items-center gap-1 text-sm font-medium text-[--brand-teal] opacity-0 transition-opacity group-hover:opacity-100">
-                  Open →
+                  {tc('cta.open')}
                 </div>
               </a>
             );

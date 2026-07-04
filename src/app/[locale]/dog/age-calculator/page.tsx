@@ -26,29 +26,32 @@ import { KnowledgeCards } from '@/components/shared/KnowledgeCards';
 import { ScienceBehindIt } from '@/components/shared/ScienceBehindIt';
 import { DogAgeWidget } from '@/components/dog/DogAgeWidget';
 
-export const metadata: Metadata = {
-  title: 'Dog Age Calculator — Dog to Human Years | petsMetrics',
-  description:
-    'How old is your dog in human years? Our science-based calculator uses breed size and UCSD methylation research — not the outdated 7× rule. Free and instant.',
-  keywords: 'dog age calculator, dog years to human years, how old is my dog in human years, dog age chart, how long do dogs live, dog life stages, dog years calculator by breed',
-  alternates: {
-    canonical: `${SITE_URL}/dog/age-calculator/`,
-  },
-  openGraph: {
-    title: 'Dog Age Calculator — Convert Dog Years to Human Years | petsMetrics',
-    description:
-      'How old is your dog in human years? Science-based, size-adjusted AAHA guidelines. Not the 7× rule.',
-    url: `${SITE_URL}/dog/age-calculator/`,
-    type: 'website',
-    images: [{ url: `${SITE_URL}/og/dog-age-calculator.webp`, width: 1200, height: 630, alt: 'Dog Age Calculator — Convert Dog Years to Human Years' }],
-  },
-  twitter: {
-    card: 'summary_large_image',
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  return {
     title: 'Dog Age Calculator — Dog to Human Years | petsMetrics',
-    description: 'How old is your dog in human years? Science-based, size-adjusted AAHA guidelines. Not the 7× rule.',
-    images: [`${SITE_URL}/og/dog-age-calculator.webp`],
-  },
-};
+    description:
+      'How old is your dog in human years? Our science-based calculator uses breed size and UCSD methylation research — not the outdated 7× rule. Free and instant.',
+    keywords: 'dog age calculator, dog years to human years, how old is my dog in human years, dog age chart, how long do dogs live, dog life stages, dog years calculator by breed',
+    alternates: {
+      canonical: `${SITE_URL}/${locale}/dog/age-calculator/`,
+    },
+    openGraph: {
+      title: 'Dog Age Calculator — Convert Dog Years to Human Years | petsMetrics',
+      description:
+        'How old is your dog in human years? Science-based, size-adjusted AAHA guidelines. Not the 7× rule.',
+      url: `${SITE_URL}/${locale}/dog/age-calculator/`,
+      type: 'website',
+      images: [{ url: `${SITE_URL}/og/dog-age-calculator.webp`, width: 1200, height: 630, alt: 'Dog Age Calculator — Convert Dog Years to Human Years' }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: 'Dog Age Calculator — Dog to Human Years | petsMetrics',
+      description: 'How old is your dog in human years? Science-based, size-adjusted AAHA guidelines. Not the 7× rule.',
+      images: [`${SITE_URL}/og/dog-age-calculator.webp`],
+    },
+  };
+}
 
 const faqSchema = generateFaqPageJsonLd(DOG_AGE_FAQ);
 
@@ -99,13 +102,13 @@ export default async function DogAgePage({ params }: { params: { locale: string 
               </p>
             </div>
             <DogAgeWidget />
-            <KnowledgeCards cards={DOG_AGE_KNOWLEDGE} />
+            <KnowledgeCards cards={DOG_AGE_KNOWLEDGE} locale={locale} />
             <ScienceBehindIt content={DOG_AGE_SCIENCE} />
             <ToolCtaSection
-              heading="Predict Your Puppy's Adult Size"
-              description="Curious how big your puppy will get? Use our Puppy Growth Predictor with your dog's current age and weight to estimate their adult size using breed-specific growth curves."
-              href="/dog/puppy-growth-predictor/"
-              buttonLabel="Predict Adult Size →"
+              heading={t('toolCta.predictPuppySize.heading')}
+              description={t('toolCta.predictPuppySize.description')}
+              href={pageUrl('dog/puppy-growth-predictor')}
+              buttonLabel={t('toolCta.predictPuppySize.button')}
             />
             <DisclaimerSection text={t('disclaimer.tool')} variant="tool" />
           </div>
@@ -113,7 +116,7 @@ export default async function DogAgePage({ params }: { params: { locale: string 
         sidebar={
           <div className="flex flex-col gap-4">
             <Card padding="md">
-              <p className="text-sm font-semibold text-[--gray-900]">Dog Health Tools</p>
+              <p className="text-sm font-semibold text-[--gray-900]">{t('sidebar.dogTools')}</p>
               <ul className="mt-2 flex flex-col gap-2 text-sm text-[--gray-600]">
                 <li><a href={pageUrl('dog/age-calculator')} className="text-[--dog-primary] hover:underline font-medium">Age Calculator</a></li>
                 <li><a href={pageUrl('dog/calorie-calculator')} className="hover:text-[--dog-primary] transition-colors">Calorie Calculator</a></li>

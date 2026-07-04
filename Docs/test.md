@@ -128,11 +128,9 @@
 
 | 路由模式 | 数量 | 描述 |
 |----------|------|------|
-| `/dog/can-dogs-eat/[slug]/` | 200+ | 狗狗毒性查询落地页 |
-| `/cat/are-toxic-to-cats/[slug]/` | 200+ | 猫咪毒性查询落地页 |
 | `/shared/eu-pet-travel/[route]/` | ~100 | EU旅行配对路由 |
 
-> **总计**：16 个核心功能页面 + 500+ 个 SEO 动态页面。
+> **总计**：16 个核心功能页面 + ~100 个 SEO 动态页面。
 
 ---
 
@@ -456,13 +454,11 @@
 |----|----------|------|----------|--------|
 | SEO-101 | sitemap.xml 可达且有效 | 访问 `/sitemap.xml` | 返回 XML，包含所有预期路由 | P0 |
 | SEO-102 | robots.txt 允许爬虫 | 访问 `/robots.txt` | 内容为 `Allow: /` + sitemap 链接 | P1 |
-| SEO-103 | 动态 SEO 页面在 sitemap 中 | 检查 sitemap.xml | 包含 `dog/can-dogs-eat/*` 和 `cat/are-toxic-to-cats/*` 条目 | P1 |
 
 ### 6.3 动态落地页 SEO
 
 | ID | 测试用例 | 步骤 | 预期结果 | 优先级 |
 |----|----------|------|----------|--------|
-| SEO-201 | 毒性落地页 Title 含食物名 | 访问 `/dog/can-dogs-eat/grapes/` | Title 包含 "grapes" 和 "[TOXIC]" | P1 |
 | SEO-202 | EU 旅行落地页 meta 正确 | 访问 `/shared/eu-pet-travel/US-to-DE/` | Title 包含 "US" 和 "Germany/DE" | P1 |
 
 ---

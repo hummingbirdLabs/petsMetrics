@@ -34,7 +34,7 @@ export function CatAgeWidget() {
   const pageUrl = usePageUrlBuilder();
 
   const shareUrl = SITE_URL + pageUrl('cat/age-calculator').slice(0, -1);
-  const petName = profile?.name ?? 'Luna';
+  const petName = profile?.name ?? '—';
   const stageName = result ? t(LIFESTAGE_I18N_MAP[result.lifeStage]) : '';
 
   return (

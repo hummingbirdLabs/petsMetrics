@@ -1,8 +1,16 @@
-import { getTranslations } from 'next-intl/server';
+import { getTranslations, getLocale } from 'next-intl/server';
+import { usePageUrlBuilder } from '@/hooks/usePageUrl';
 
 export async function Footer() {
   const t = await getTranslations('footer');
+  const locale = await getLocale();
   const currentYear = new Date().getFullYear();
+
+  // Build locale-scoped URLs
+  const pageUrl = (path: string) => {
+    if (path === '') return `/${locale}/`;
+    return `/${locale}/${path}/`;
+  };
 
   return (
     <footer className="bg-[--brand-navy] text-white/70">
@@ -12,10 +20,10 @@ export async function Footer() {
             &copy; {currentYear} {t('copyright')}
           </p>
           <div className="flex gap-6 text-sm">
-            <a href="/privacy/" className="transition-colors hover:text-white">
+            <a href={pageUrl('privacy')} className="transition-colors hover:text-white">
               {t('privacy')}
             </a>
-            <a href="/disclaimer/" className="transition-colors hover:text-white">
+            <a href={pageUrl('terms')} className="transition-colors hover:text-white">
               {t('disclaimer')}
             </a>
             <a href="mailto:hello@petsmetrics.com" className="transition-colors hover:text-white">

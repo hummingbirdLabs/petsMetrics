@@ -20,35 +20,39 @@ import { JsonLdScript } from '@/components/shared/JsonLdScript';
 import { Card } from '@/components/ui/Card';
 import { AffiliateBanner } from '@/components/shared/AffiliateBanner';
 import { ToolCtaSection } from '@/components/shared/ToolCtaSection';
+import { RelatedComparison } from '@/components/shared/RelatedComparison';
 import { getTranslations } from 'next-intl/server';
 import { DisclaimerSection } from '@/components/shared/DisclaimerSection';
 import { KnowledgeCards } from '@/components/shared/KnowledgeCards';
 import { ScienceBehindIt } from '@/components/shared/ScienceBehindIt';
 import { CatHydrationWidget } from '@/components/cat/CatHydrationWidget';
 
-export const metadata: Metadata = {
-  title: 'Cat Hydration Calculator — How Much Water Your Cat Needs | petsMetrics',
-  description:
-    'Calculate how much water your cat needs daily. Accounts for moisture from dry and wet food. Most cats are chronically dehydrated — find out if yours is getting enough.',
-  keywords: 'cat hydration calculator, how much water should my cat drink, cat water intake per day, cat not drinking enough water, dehydrated cat symptoms, cat water needs',
-  alternates: {
-    canonical: `${SITE_URL}/cat/hydration-calculator/`,
-  },
-  openGraph: {
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  return {
     title: 'Cat Hydration Calculator — How Much Water Your Cat Needs | petsMetrics',
     description:
-      'Calculate your cat\'s daily water needs. Accounts for food moisture content and weight-based formula.',
-    url: `${SITE_URL}/cat/hydration-calculator/`,
-    type: 'website',
-    images: [{ url: `${SITE_URL}/og/cat-hydration-calculator.webp`, width: 1200, height: 630, alt: 'Cat Hydration Calculator — Daily Water Needs' }],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Cat Hydration Calculator — How Much Water Your Cat Needs | petsMetrics',
-    description: 'Calculate your cat\'s daily water needs. Accounts for food moisture content and weight-based formula.',
-    images: [`${SITE_URL}/og/cat-hydration-calculator.webp`],
-  },
-};
+      'Calculate how much water your cat needs daily. Accounts for moisture from dry and wet food. Most cats are chronically dehydrated — find out if yours is getting enough.',
+    keywords: 'cat hydration calculator, how much water should my cat drink, cat water intake per day, cat not drinking enough water, dehydrated cat symptoms, cat water needs',
+    alternates: {
+      canonical: `${SITE_URL}/${locale}/cat/hydration-calculator/`,
+    },
+    openGraph: {
+      title: 'Cat Hydration Calculator — How Much Water Your Cat Needs | petsMetrics',
+      description:
+        'Calculate your cat\'s daily water needs. Accounts for food moisture content and weight-based formula.',
+      url: `${SITE_URL}/${locale}/cat/hydration-calculator/`,
+      type: 'website',
+      images: [{ url: `${SITE_URL}/og/cat-hydration-calculator.webp`, width: 1200, height: 630, alt: 'Cat Hydration Calculator — Daily Water Needs' }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: 'Cat Hydration Calculator — How Much Water Your Cat Needs | petsMetrics',
+      description: 'Calculate your cat\'s daily water needs. Accounts for food moisture content and weight-based formula.',
+      images: [`${SITE_URL}/og/cat-hydration-calculator.webp`],
+    },
+  };
+}
 
 const faqSchema = generateFaqPageJsonLd(CAT_HYDRATION_FAQ);
 
@@ -71,6 +75,7 @@ export default async function CatHydrationPage({ params }: { params: { locale: s
   const { locale } = params;
   setRequestLocale(locale);
   const t = await getTranslations('common');
+  const tc = await getTranslations('compare');
   const pageUrl = createPageUrl(locale);
   return (
     <>
@@ -99,13 +104,24 @@ export default async function CatHydrationPage({ params }: { params: { locale: s
               </p>
             </div>
             <CatHydrationWidget />
-            <KnowledgeCards cards={CAT_HYDRATION_KNOWLEDGE} />
+            <KnowledgeCards cards={CAT_HYDRATION_KNOWLEDGE} locale={locale} />
             <ScienceBehindIt content={CAT_HYDRATION_SCIENCE} />
             <ToolCtaSection
-              heading="Check Your Cat's Healthy Weight"
-              description="Hydration is key to health — but is your cat at their ideal weight too? Use our BCS Weight Tracker to get a body condition score and personalized weight goals."
-              href="/cat/bcs-weight-tracker/"
-              buttonLabel="Check Body Condition →"
+              heading={t('toolCta.checkCatWeight.heading')}
+              description={t('toolCta.checkCatWeight.description')}
+              href={pageUrl('cat/bcs-weight-tracker')}
+              buttonLabel={t('toolCta.checkCatWeight.button')}
+            />
+            <RelatedComparison
+              title={tc('indoorVsOutdoor.title')}
+              description={tc('indoorVsOutdoor.subtitle')}
+              href={pageUrl('cat/compare/indoor-vs-outdoor')}
+              sourcesText="AAFP, ISFM"
+              section="cat"
+              t={{
+                heading: tc('relatedCompare.heading'),
+                readComparison: tc('relatedCompare.readComparison'),
+              }}
             />
             <DisclaimerSection text={t('disclaimer.tool')} variant="tool" />
           </div>
@@ -113,17 +129,16 @@ export default async function CatHydrationPage({ params }: { params: { locale: s
         sidebar={
           <div className="flex flex-col gap-4">
             <Card padding="md">
-              <p className="text-sm font-semibold text-[--gray-900]">Quick Facts</p>
+              <p className="text-sm font-semibold text-[--gray-900]">{t('sidebar.quickFacts')}</p>
               <ul className="mt-2 flex flex-col gap-2 text-sm text-[--gray-600]">
-                <li>50 ml/kg daily</li>
-                <li>Wet food: ~80% water</li>
-                <li>Dry food: ~10% water</li>
-                <li>Dehydration risk: dry-only diets</li>
+                <li>{t('sidebar.catHydration.dailyNeed')}</li>
+                <li>{t('sidebar.catHydration.wetFood')}</li>
+                <li>{t('sidebar.catHydration.dryFood')}</li>
               </ul>
             </Card>
             <AffiliateBanner variant="food" />
             <Card padding="md">
-              <p className="text-sm font-semibold text-[--gray-900]">Cat Tools</p>
+              <p className="text-sm font-semibold text-[--gray-900]">{t('sidebar.catTools')}</p>
               <ul className="mt-2 flex flex-col gap-2 text-sm text-[--gray-600]">
                 <li><a href={pageUrl('cat/age-calculator')} className="text-[--cat-primary] hover:underline font-medium">Age Calculator</a></li>
                 <li><a href={pageUrl('cat/gestation-calculator')} className="hover:text-[--cat-primary] transition-colors">Gestation Calculator</a></li>

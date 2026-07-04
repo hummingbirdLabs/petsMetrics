@@ -4,22 +4,23 @@
 
 ## 🚀 项目当前进展
 
-> 快速定位：查看 **[AITasks.md](./AITasks.md)** 了解详细编程任务和阶段进展。
+> 快速定位：查看 **[AITasks.md](./AITasks.md)** 了解详细编程任务和阶段进展。  
+> 站点地图：查看 **[Docs/webmap.md](./Docs/webmap.md)** 了解当前页面清单（共 67 个物理页面文件，支持 12 种语言）。
 
 | 阶段 | 名称 | 状态 |
 |------|------|------|
 | Phase 0 | 工程脚手架（Next.js、设计系统、类型基础）| ✅ 已完成 |
-| Phase 1 | 基础 UI 组件库（原子组件、全局布局）| ⬜ 未开始 |
-| Phase 2 | 宠物档案系统（存储层、档案 CRUD、档案页面）| ⬜ 未开始 |
-| Phase 3 | 静态数据层（毒性库 200+、疫苗、EU 规则）| ⬜ 未开始 |
-| Phase 4 | 计算器逻辑层（10 个纯函数 + 单元测试）| ⬜ 未开始 |
-| Phase 5 | 首页与 Hub 页面（首页、/dog/、/cat/）| ⬜ 未开始 |
-| Phase 6 | P0 工具页（10 个工具完整 UI）| ⬜ 未开始 |
-| Phase 7 | SEO 动态落地页（200+ 毒性 slug 页）| ⬜ 未开始 |
-| Phase 8 | P1 工具（BARF 计算器、保险估算器）| ⬜ 未开始 |
+| Phase 1 | 基础 UI 组件库（原子组件、全局布局）| ✅ 已完成 |
+| Phase 2 | 宠物档案系统（存储层、档案 CRUD、档案页面）| ✅ 已完成 |
+| Phase 3 | 静态数据层（毒性库 200+、疫苗、EU 规则）| ✅ 已完成 |
+| Phase 4 | 计算器逻辑层（10 个纯函数 + 单元测试）| ✅ 已完成 |
+| Phase 5 | 首页与 Hub 页面（首页、/dog/、/cat/）| ✅ 已完成 |
+| Phase 6 | P0 工具页（14 个工具完整 UI）| ✅ 已完成 |
+| Phase 7 | 内容页面（Guide/Emergency/Compare 共 45 页）| ✅ 已完成 |
+| Phase 8 | EU 旅行动态落地页（41 条路由/locale）| ⚠️ sitemap 已注册，缺少物理路由文件 |
 | Phase 9 | QA 与发布收尾（测试、无障碍、性能）| ⬜ 未开始 |
 
-> **状态图例**：⬜ 未开始 · 🔄 进行中 · ✅ 已完成  
+> **状态图例**：⬜ 未开始 · 🔄 进行中 · ✅ 已完成 · ⚠️ 部分完成  
 > **编程规则**：开始任何编码前，必须按顺序阅读 `README.MD` → `ArkCon.md` → `.github/copilot-instructions.md` → 对应 `Docs/` 文档。
 
 ---
@@ -88,25 +89,6 @@
 
 **所有工具的结果页必须添加标准免责声明**：
 > *"This tool provides general reference information only and does not constitute veterinary advice. Always consult a licensed veterinarian for health decisions."*
-
-### 2.3 内容合规说明
-
-**毒性落地页（200+ 页）的合规定性**：
-
-"Can dogs eat grapes?" 类页面属于**公共安全教育信息**，与 ASPCA（DA 82）、PetMD（DA 71）每天发布的内容性质完全相同。在美国，发布已知的公开科学事实不属于兽医执业范围，无需任何执照。满足以下 4 条，法律风险趋近于零：
-
-| # | 合规条件 | 具体要求 |
-|:---:|---------|--------|
-| 1 | **数据来源准确** | 仅引用 ASPCA / AVMA 公开数据库，不添加任何自行判断的内容 |
-| 2 | **不提供治疗方案** | 包括"催吐"在内的任何处理步骤均不写——这是兽医的决定 |
-| 3 | **第一步永远是打热线** | 每个毒性页第一条行动指南必须是"Call ASPCA (888) 426-4435" |
-| 4 | **明确公共安全信息定位** | 免责声明："This is public safety information, not veterinary advice." |
-
-**真正的风险不是法律，而是**：
-1. **数据错误** — 把"安全"标记为"有毒"或反之，导致用户恐慌或掉以轻心 → 每条数据必须以 ASPCA 公开数据库为唯一来源
-2. **SpamBrain** — 200 页批量上线的 SEO 惩罚风险 → 严格遵守分批计划（50+40+40+40+40）
-
-详细合规与 SEO 决策框架见 [Docs/seo-programmatic.md §0.6](Docs/seo-programmatic.md)。
 
 ---
 

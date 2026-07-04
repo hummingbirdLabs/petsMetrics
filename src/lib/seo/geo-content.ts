@@ -540,15 +540,15 @@ export const BARF_SCIENCE: ScienceContent = {
   ],
 };
 
-// ── 毒性落地页 — 动态 Knowledge Cards ─────────────────
+// ── 毒性检测器 — 动态 Knowledge Cards ─────────────────
 import type { ToxicItem } from '@/lib/data/toxic-items';
 
 /**
- * 为毒性落地页生成 3 张 GEO Knowledge Cards，基于 ToxicItem 数据动态生成。
+ * 为毒性检测器工具页生成 3 张 GEO Knowledge Cards，基于 ToxicItem 数据动态生成。
  * Card 1: Why It's Toxic — 毒性机制
  * Card 2: How Much Is Too Much — 安全剂量
  * Card 3: What To Do — 紧急步骤
- * 按 geo-checklist §1 毒性落地页卡片设计指南。
+ * 按 geo-checklist §1 卡片设计指南。
  */
 export function getToxicItemKnowledgeCards(
   item: ToxicItem,
@@ -619,7 +619,7 @@ export function getToxicItemKnowledgeCards(
   return cards;
 }
 
-/** 毒性落地页 Science Behind It — SSG 预渲染方法论段落 */
+/** 毒性检测器 Science Behind It — SSG 预渲染方法论段落 */
 export const TOXIC_LANDING_SCIENCE: ScienceContent = {
   heading: 'The Science Behind Our Pet Safety Database',
   body: 'Our toxicity database is compiled from ASPCA Animal Poison Control Center data, AVMA toxicology resources, and peer-reviewed veterinary toxicology literature. Each food and plant entry is classified into three levels: Toxic (known to cause organ damage or death), Caution (safe in small amounts but risky when overfed), and Safe (no known toxic effects within reasonable serving sizes). Symptom lists and emergency instructions follow ASPCA and Pet Poison Helpline clinical protocols. The database of 200+ items is verified annually against updated ASPCA toxicology reports and AVMA emergency toxicology guidelines.',

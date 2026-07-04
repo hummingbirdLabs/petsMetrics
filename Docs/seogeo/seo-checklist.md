@@ -15,7 +15,7 @@ petsMetrics 的猫狗健康工具矩阵采用**内容驱动 + 长尾关键词 + 
 | 意图层 | 策略 | 落地点 |
 |--------|------|--------|
 | **交易意图** ("calculator", "how much to feed my dog") | 工具页 keywords + 精准 meta description | 所有 12 个工具页 |
-| **信息意图** ("can dogs eat grapes", "how long are dogs pregnant") | 毒性落地页 200+ + 页内 FAQ | 毒性检测器 + 工具页 FAQ |
+| **信息意图** ("how long are dogs pregnant", "how many calories does my dog need") | 页内 FAQ + 知识卡片 | 工具页 FAQ |
 | **导航意图** ("dog health calculator", "cat age calculator") | Hub 页 title + CollectionPage JSON-LD | /dog/、/cat/ Hub 页 |
 | **即时意图** ("my dog ate chocolate", "is this plant toxic to cats") | 毒性检测器实时搜索 + 宠物毒物热线 | 毒性检测器 /shared/toxic-checker/ |
 
@@ -26,43 +26,23 @@ petsMetrics 的猫狗健康工具矩阵采用**内容驱动 + 长尾关键词 + 
 - **单一语言起步**：英语为主，架构预留 i18n 扩展能力（`/[lang]/` 可选前缀）。
 - **动态 sitemap**：`lastModified` 为构建时间，Google 爬虫新鲜度信号。
 
-#### 3. 毒性落地页策略（长尾关键词阵地 — 核心 SEO 引擎）
-
-**覆盖完整**：200+ 种食物和植物各配一个独立静态落地页。
-
-| 物种 | URL 模式 | 示例 | 目标搜索意图 |
-|------|---------|------|-----------|
-| 狗狗 | `/dog/can-dogs-eat-[food]/` | `/dog/can-dogs-eat-grapes/` | "can dogs eat grapes" |
-| 猫咪 | `/cat/is-[plant]-toxic-to-cats/` | `/cat/are-lilies-toxic-to-cats/` | "are lilies toxic to cats" |
-| 共享 | `/shared/is-[item]-safe-for-pets/` | `/shared/is-chocolate-safe-for-pets/` | "is chocolate safe for pets" |
-
-**落地页结构标准**：
-- H1 包含目标关键词（如 "Can Dogs Eat Grapes?"）
-- 毒性等级徽章（Toxic / Caution / Safe）+ 症状列表
-- ASPCA 毒物热线电话（结构化数据）
-- "Check Another Food" 搜索 CTA（内链回流毒性检测器主页）
-- FAQPage JSON-LD（3 条问答）
-- Related Items 交叉链接（如葡萄 → 葡萄干 → 葡萄酒）
-
-#### 4. 内部链接策略
+#### 3. 内部链接策略
 
 | 链接类型 | SEO 价值 | 实现 |
 |---------|---------|------|
 | **工具页 Related Tools 卡片** | PageRank 流动、场景 cross-sell | 每个工具页侧边栏列出互补工具 |
-| **毒性落地页 → 毒性检测器主页** | 长尾落地 → 转化工具 | 每个落地页 "Check Another Food" CTA |
 | **Hub 页 → 子工具页** | Hub 权威 → 子页权重传递 | Dog/Cat Hub 的工具卡片网格 |
 | **档案页 → 全站工具** | 核心差异化内链枢纽 | Profile 页 "Open with [PetName]'s data" 链接 |
 | **面包屑导航** | 层级信号 + 站内导航 | 首页 > 物种 > 工具 |
 
-#### 5. 内容新鲜度信号
+#### 4. 内容新鲜度信号
 
 | 信号 | 实现 | 作用 |
 |------|------|------|
 | `sitemap.lastModified` | `new Date()` 动态值（构建时） | Google 爬虫新鲜度判断 |
-| 年度数据更新 | 毒性数据库每年核验 ASPCA 最新数据 | 页面活跃度 |
 | 工具页公式引用 | 标注公式来源年份（如 "AAHA 2021 指南"） | 可信度 + 新鲜度 |
 
-#### 6. E-E-A-T 信号（宠物健康垂类强制）
+#### 5. E-E-A-T 信号（宠物健康垂类强制）
 
 宠物健康属于 YMYL（Your Money or Your Life）垂类，Google 对 E-E-A-T（Experience, Expertise, Authoritativeness, Trustworthiness）要求远高于普通工具站。
 
@@ -73,7 +53,7 @@ petsMetrics 的猫狗健康工具矩阵采用**内容驱动 + 长尾关键词 + 
 | **Authoritativeness（权威）** | 引用权威机构外链（ASPCA、AVMA、WSAVA）；About 页展示兽医顾问 |
 | **Trust（信任）** | 标准免责声明；隐私声明（localStorage，无数据上传）；联系方式透明 |
 
-#### 7. 竞争格局与流量爬坡预期
+#### 6. 竞争格局与流量爬坡预期
 
 > ⚠️ 核心词（"can dogs eat grapes"）被 ASPCA（DA 82）、AKC（DA 78）、PetMD（DA 71）占据。新站不可能短期跻身首页。
 
@@ -96,7 +76,7 @@ petsMetrics 的猫狗健康工具矩阵采用**内容驱动 + 长尾关键词 + 
 
 | 项目 | 文件 | 要求 |
 |------|------|------|
-| Sitemap | `src/app/sitemap.ts` | 覆盖所有 12 工具页 + 200+ 毒性落地页 + Hub + 档案页；`lastModified` 设为构建/上线日期 |
+| Sitemap | `src/app/sitemap.ts` | 覆盖所有 12 工具页 + Hub + 档案页；`lastModified` 设为构建/上线日期 |
 | Robots | `src/app/robots.ts` | `Allow: /`；`Disallow: /_next/ /api/`；指向正确的 sitemap URL |
 
 **Sitemap 优先级约定**：
@@ -106,7 +86,6 @@ petsMetrics 的猫狗健康工具矩阵采用**内容驱动 + 长尾关键词 + 
 | 首页 | `1.0` |
 | Dog Hub / Cat Hub | `0.9` |
 | 工具页（P0） | `0.9` |
-| 毒性落地页 | `0.8` |
 | 档案页 | `0.8` |
 | P1 工具页 | `0.7` |
 | 法律页（privacy / terms） | `0.3` |
@@ -141,13 +120,6 @@ petsMetrics 的猫狗健康工具矩阵采用**内容驱动 + 长尾关键词 + 
 - [ ] `alternates.canonical`：指向正确路径
 - [ ] Schema：`WebApplication` + `FAQPage`
 
-### 2.4 毒性落地页（P0：200+ 静态页面）
-
-- [ ] `<title>` 包含目标搜索关键词（格式：`Can Dogs Eat {Food}? [{Status}] | petsMetrics`）
-- [ ] `<meta description>` ≤ 160 字符，直接回答安全问题
-- [ ] `alternates.canonical`：每个落地页独立 canonical
-- [ ] Schema：`FAQPage` + `Article`
-
 ---
 
 ## 3. 页面内容结构（P1 — 文本索引密度）
@@ -160,9 +132,6 @@ H1 不能仅为品牌名或通用工具名，必须包含目标搜索关键词�
 // 工具页示例
 <h1>Dog Age Calculator: Convert Dog Years to Human Years</h1>
 <h1>Is It Safe? Toxic Food & Plant Checker for Dogs & Cats</h1>
-
-// 毒性落地页示例  
-<h1>Can Dogs Eat Grapes? 🚫 Toxic</h1>
 ```
 
 ### 3.2 工具页正文结构
@@ -189,7 +158,7 @@ Hub 页工具列表下方必须有一段 SSG 预渲染的纯文本段落：
 | `Organization` + `WebSite` | 首页 | `name`, `url`, `potentialAction.SearchAction` |
 | `CollectionPage` + `BreadcrumbList` | Hub 页 | `name`, `description`, `itemListElement` |
 | `WebApplication` + `offers.price: "0"` | 工具页 | `name`, `applicationCategory: "HealthApplication"`, `operatingSystem: "Any"` |
-| `FAQPage` | 工具页 + 毒性落地页 | `mainEntity[].Question.name` + `acceptedAnswer.text` |
+| `FAQPage` | 工具页 | `mainEntity[].Question.name` + `acceptedAnswer.text` |
 | `BreadcrumbList` | 所有深层页面 | `itemListElement[].position` + `name` + `item` |
 
 > **注**：`SoftwareApplication`、`HowTo`、`Article.citation[]` 等面向 AI 搜索引擎摘录的 JSON-LD 类型，归属 GEO 策略，详见 [geo-checklist.md](geo-checklist.md)。
@@ -200,8 +169,6 @@ Hub 页工具列表下方必须有一段 SSG 预渲染的纯文本段落：
 
 - [ ] 工具页侧边栏有"Related Tools"内链区块（链向同类或互补工具）
 - [ ] Hub 页有工具卡片直链各工具子路由
-- [ ] 毒性落地页有"Check Another Food"搜索 CTA 链接
-- [ ] 毒性落地页有 Related Items 交叉链接（相关食物）
 - [ ] 所有跨物种链接使用原生 `<a href>` 或 Next.js `<Link>`
 - [ ] 面包屑导航覆盖所有深层页面
 
@@ -209,7 +176,7 @@ Hub 页工具列表下方必须有一段 SSG 预渲染的纯文本段落：
 
 | 源页面 | 目标页面 | 交叉链接策略 |
 |--------|---------|-----------|
-| 毒性检测器主页 | 毒性落地页 (200+) | 搜索结果 + "热门搜索" + Related Items |
+| 毒性检测器主页 | 卡路里计算器 | "After checking, manage daily calories" |
 | 卡路里计算器 | BCS 体重追踪器 | "Managing your pet's weight?" |
 | 疫苗计划 | 年龄计算器 | "How old is your pet in human years?" |
 | 怀孕计算器 | 疫苗计划 | "Plan vaccinations for the new litter" |
@@ -220,44 +187,12 @@ Hub 页工具列表下方必须有一段 SSG 预渲染的纯文本段落：
 
 ---
 
-## 6. 毒性落地页 / 内容页（P1 — 长尾关键词）
-
-> 这是整站最大的自然流量入口。200+ 页面覆盖 "can dogs eat X" 类长尾搜索词。
-
-- [ ] `generateStaticParams()` 覆盖全部 200+ 物品 × 2 物种（狗狗 + 猫咪）
-- [ ] 每页独立 `generateMetadata()`（title 含 `[{Status}]` 后缀）
-- [ ] 每页独立 `alternates.canonical`
-- [ ] 每页含 FAQPage JSON-LD（3 条问答）
-- [ ] 每页含 ASPCA 毒物热线号码（结构化标记）
-- [ ] 每页底部有 Related Items 交叉链接（3-5 个相关食物）
-- [ ] sitemap 优先级：`0.8`
-
-### 落地页标准结构
-
-```
-┌──────────────────────────────────────────────────┐
-│  H1: Can Dogs Eat [Food]? [Status Badge]         │
-│  ─────────────────────────────────────────────    │
-│  [1] Status: Toxic / Caution / Safe              │
-│  [2] Why It's Dangerous (or Safe)                │
-│  [3] Symptoms (if toxic)                         │
-│  [4] What To Do (ASPCA Hotline)                  │
-│  [5] Sources: ASPCA, AVMA                        │
-│  [6] FAQ (3 questions)                           │
-│  [7] Related Items                               │
-│  [8] "Check Another Food" CTA                    │
-└──────────────────────────────────────────────────┘
-```
-
----
-
-## 7. URL 架构规范
+## 6. URL 架构规范
 
 - 对外 URL 永远是 `petsmetrics.com/[species]/[tool]`
   - 狗狗工具：`/dog/[tool-slug]/`
   - 猫咪工具：`/cat/[tool-slug]/`
   - 共享工具：`/shared/[tool-slug]/`
-  - 毒性落地页：`/dog/can-dogs-eat-[food]/`、`/cat/is-[item]-toxic-to-cats/`
 - 禁止子域名作为 Canonical URL
 - 所有 URL 使用 kebab-case
 - 静态资源路径通过 Next.js 内置优化引用
@@ -284,19 +219,17 @@ Hub 页工具列表下方必须有一段 SSG 预渲染的纯文本段落：
 | `/shared/barf-calculator/` | BARF 生食计算器 | P1 |
 | `/shared/pet-insurance-estimator/` | 宠物保险估算器 | P1 |
 | `/profile/` | 宠物档案 | P0 |
-| `/dog/can-dogs-eat-[food]/` | 毒性落地页 (200+) | P0 |
-| `/cat/is-[item]-toxic-to-cats/` | 毒性落地页 | P0 |
 
 ---
 
-## 8. Core Web Vitals 与性能（影响排名）
+## 7. Core Web Vitals 与性能（影响排名）
 
 - [ ] SSG 全预渲染（`output: 'export'`），首字节时间最小化
 - [ ] 图片使用 Next.js `<Image>` 或优先 WebP 格式
 - [ ] 第三方脚本异步加载（`async` / `defer`）
 - [ ] 字体使用 `font-display: swap` 防止 FOIT
 - [ ] 客户端模糊搜索（Fuse.js）体积控制在合理范围（< 50KB gzipped）
-- [ ] 毒性数据库 JSON 按需加载（搜索页面主文件 + 落地页按 slug 单独预渲染）
+- [ ] 毒性数据库 JSON 按需加载（搜索页面主文件）
 
 ---
 
@@ -326,9 +259,7 @@ Hub 页工具列表下方必须有一段 SSG 预渲染的纯文本段落：
 
 ---
 
----
-
-## 12. Image SEO（P1 — 图片搜索流量入口）
+## 11. Image SEO（P1 — 图片搜索流量入口）
 
 宠物垂类是 Google Images 的高频搜索场景。"golden retriever age chart"、"dog body condition score chart"、"cat weight chart" 等词在图片搜索中有显著流量。SSG 站点在图片 SEO 上有天然优势——所有图片路径在构建时即确定。
 
@@ -352,7 +283,6 @@ Hub 页工具列表下方必须有一段 SSG 预渲染的纯文本段落：
 | 疫苗计划 | 幼犬/幼猫疫苗时间线（信息图） | "puppy vaccination chart"、"kitten shot schedule chart" |
 | 怀孕计算器 | 犬/猫孕期发育阶段（信息图） | "dog pregnancy timeline"、"cat pregnancy stages chart" |
 | 卡路里计算器 | 喂食量对照表（体重 → 克数） | "dog feeding chart by weight" |
-| 毒性检测器 | 常见有毒食物/植物图鉴（信息图） | "toxic foods for dogs chart"、"plants toxic to cats infographic" |
 
 ### 12.3 Image SEO 代码规范
 
@@ -401,24 +331,10 @@ import Image from 'next/image';
 | 审计项目 | 频率 | 工具 |
 |---------|------|------|
 | 核心工具页排名追踪 | 每周 | Google Search Console + Ahrefs |
-| 毒性落地页索引覆盖 | 每月 | GSC Coverage Report |
 | 结构化数据错误 | 每月 | GSC Enhancements Report |
 | 死链检测 | 每月 | Screaming Frog / Sitebulb |
 | 竞品内容对比（Top 3 对手每个工具页） | 每季度 | 手动对比 + Diffchecker |
 | 公式/数据时效性核验 | 每年 | ASPCA / AAHA / WSAVA 官网比对 |
-
-### 13.3 毒性落地页批量更新策略
-
-200+ 毒性落地页不适合逐页手动更新。需要模板化更新机制：
-
-| 更新类型 | 触发条件 | 更新方式 |
-|---------|---------|---------|
-| ASPCA 数据核验 | 每年 Q1 | 批量 diff 毒性数据库 → 重新构建所有落地页 |
-| FAQ 补充 | 发现新 PAA 问题时 | 追加到落地页模板的 FAQ 数组 |
-| 日期刷新 | 每年核验后 | 批量更新 `dateModified` 字段 → 全站 rebuild |
-| 新增食物/植物 | 数据库新增条目时 | `generateStaticParams()` 自动生成新页面 |
-
-> **关键**：`dateModified` 的批量更新必须配合 `sitemap.xml` 中 `lastModified` 的同步更新——两者不一致会导致 Google 信任度下降。
 
 ---
 
@@ -431,7 +347,6 @@ import Image from 'next/image';
 | 重复类型 | 风险页面 | 风险等级 |
 |---------|---------|---------|
 | 跨物种对称页 | `/dog/age-calculator/` ↔ `/cat/age-calculator/` | 🟡 中（工具逻辑相似但数据不同） |
-| 毒性落地页模板 | 200+ 页面共享相同结构 | 🔴 高（必须确保每个页面有独特内容） |
 | 疫苗计划对称页 | `/dog/vaccination-schedule/` ↔ `/cat/vaccination-schedule/` | 🟡 中 |
 | 怀孕计算器对称页 | `/dog/gestation-calculator/` ↔ `/cat/gestation-calculator/` | 🟡 中 |
 
@@ -442,22 +357,8 @@ import Image from 'next/image';
 | **独特正文** | 每个工具有独立的 "The Science Behind It" 文字（dog 引用 AAHA / UCSD，cat 引用 AAFP / ISFM） |
 | **FAQ 差异化** | 跨物种页面 FAQ 问题文字不同（"How old is my **dog**..." vs "How old is my **cat**..."） |
 | **数据表差异化** | 跨物种页面展示不同的数据（狗品种 vs 猫品种寿命表、不同的疫苗时间表） |
-| **毒性落地页必须独特** | 每个落地页的 `dangerReason`、`symptoms`、`whatToDo` 必须是逐物品手写/手审文案，**禁止**生成式批量填充 |
 | **Canonical 正确** | 每个页面声明独立 canonical URL，绝不跨物种相互指向 |
 | **noindex 低价值页** | 搜索过滤页（空查询结果）、分页参数 URL 等低价值页面加 `noindex` |
-
-### 14.3 毒性落地页最低独特内容量
-
-每个毒性落地页 **必须** 包含至少以下独特内容（非模板化）：
-
-| 内容块 | 最小独特字数 | 要求 |
-|--------|----------|------|
-| Why It's Toxic / Safe | ≥ 100 字 | 逐物品手写，含具体毒素名（如葡萄 → 未知毒素致肾衰竭） |
-| Symptoms | ≥ 80 字 | 逐物品差异化症状列表 |
-| What To Do | ≥ 60 字 | 逐物品紧急处理建议 |
-| FAQ × 3 | ≥ 150 字/条 | 3 条问答中至少 2 条为该物品特有问题 |
-
-> **底线**：每个毒性落地页独特文字 ≥ 400 字。低于此标准的页面在 Google 眼中属 "thin content"，不会被索引或排名极低。
 
 ---
 
@@ -530,7 +431,7 @@ Google 爬虫越来越依赖语义化 HTML 元素理解页面内容结构。错�
 ### 16.1 索引能力（P0 — 阻塞上线）
 
 - [ ] `robots.txt` 可公开访问，`Allow: /`，Disallow 仅 `/_next/` `/api/`
-- [ ] `sitemap.xml` 可公开访问，列出所有页面（包括 200+ 毒性落地页）
+- [ ] `sitemap.xml` 可公开访问，列出所有页面
 - [ ] 所有 `canonical` URL 正确且自引用（非交叉引用）
 - [ ] 生产环境 HTML 源码包含所有 SSG 预渲染文本（右键 View Source 验证）
 - [ ] Google Search Console 已注册并验证域名
@@ -549,7 +450,6 @@ Google 爬虫越来越依赖语义化 HTML 元素理解页面内容结构。错�
 - [ ] 首页：`Organization` + `WebSite` JSON-LD 通过 [Rich Results Test](https://search.google.com/test/rich-results)
 - [ ] Hub 页：`CollectionPage` + `BreadcrumbList` JSON-LD 有效
 - [ ] 工具页：`SoftwareApplication` + `FAQPage` + `HowTo` JSON-LD 有效
-- [ ] 毒性落地页：`Article` + `FAQPage` + `ContactPoint` JSON-LD 有效
 - [ ] 所有 JSON-LD 无语法错误（逗号缺失、引号不匹配等）
 - [ ] `@graph` 合并语法正确（多类型页面）
 
@@ -568,8 +468,7 @@ Google 爬虫越来越依赖语义化 HTML 元素理解页面内容结构。错�
 - [ ] Heading 层级无跳级（h1 → h2 → h3）
 - [ ] 所有图片有语义化 alt 文本
 - [ ] 所有外链使用 `rel="noopener noreferrer"`
-- [ ] 毒性落地页独特文字 ≥ 400 字
-- [ ] Medical Disclaimer 存在于所有工具页和毒性落地页
+- [ ] Medical Disclaimer 存在于所有工具页
 
 ### 16.6 分析（P1 — 警告但不阻塞）
 
@@ -588,40 +487,25 @@ Google 爬虫越来越依赖语义化 HTML 元素理解页面内容结构。错�
 
 | 触发器 | 风险说明 | petsMetrics 对策 |
 |--------|---------|----------------|
-| **Thin Content（薄内容）** | 页面独特文字 < 300 字 → 直接不入索引 | 毒性落地页 ≥ 400 独特字；工具页 ≥ 500 独特字（含 Knowledge + FAQ + Science Behind It） |
+| **Thin Content（薄内容）** | 页面独特文字 < 300 字 → 直接不入索引 | 工具页 ≥ 500 独特字（含 Knowledge + FAQ + Science Behind It） |
 | **Boilerplate Ratio（模板比例）** | 模板内容（header/footer/disclaimer）占全文 > 60% → 降权 | 每个页面独立正文部分必须超过模板区域总字数；Medical Disclaimer 放在 `<footer>` 而非 `<main>` |
-| **Rapid Page Generation（批量发布）** | 一次性发布 200+ 页面 → 触发"程序化内容"标记 | **分批提交 sitemap**：先提交核心 14 工具页，1 周后再提交毒性落地页（每批 50 页） |
-| **Identical Structure（相同结构）** | 200+ 页面共享完全相同 DOM 结构 → "门页"判定 | 毒性落地页按食物类别（水果/蔬菜/坚果/植物）随机轮换 3 套结构模板 |
+| **Rapid Page Generation（批量发布）** | 一次性发布大量页面 → 触发"程序化内容"标记 | **分批提交 sitemap**：先提交核心工具页，后续分批提交其他页面 |
 | **Affiliate-Only Pages（纯联盟页）** | 页面仅有联盟链接无实质内容 → 降权 | 联盟链接仅出现在结果区后，# 不超过 2 条/页 |
 | **Keyword Stuffing（关键词堆砌）** | `<meta keywords>` 或正文中堆积关键词 → 惩罚 | `keywords` 限定 5 个以内；正文关键词密度 ≤ 2.5% |
 | **Hidden Text（隐藏文本）** | CSS `display:none` / `visibility:hidden` 的正文 → 重罚 | 所有 FAQ 使用 `<details>` 而非隐藏 div；任何折叠内容在 HTML 源码中可见 |
 
 ### 17.2 分批索引策略
 
-> **关键**：Google 对全新域名的页面索引有"沙盒节奏"。一次性提交 200+ sitemap URL 不会加速索引，反而可能触发垃圾检测。
+> **关键**：Google 对全新域名的页面索引有"沙盒节奏"。一次性提交大量 sitemap URL 不会加速索引，反而可能触发垃圾检测。
 
 | 阶段 | 时间 | 提交页面 | URL 数量 |
 |------|------|---------|---------|
 | **T0 上线日** | Day 1 | 首页 + 2 Hub + 档案页 + legal 页 | 6 |
 | **T0+3 天** | Day 4 | 全部 P0 工具页（10 个） | 10 |
-| **T0+7 天** | Day 8 | 毒性检测器主页 + 高搜索量落地页（Top 50） | 51 |
-| **T0+14 天** | Day 15 | 中等搜索量落地页（50-100） | 50 |
-| **T0+21 天** | Day 22 | 低搜索量落地页（100-200） | 100 |
+| **T0+7 天** | Day 8 | 毒性检测器主页 + 其他工具页 | 11 |
 | **T0+30 天** | Day 30 | P1 工具页（BARF、保险估算器） | 2 |
 
 > **执行**：每批通过 Google Search Console 手动提交该批 URL 到 sitemap，不一次性提交全部。同时通过 `sitemap.xml` 的 `lastModified` 差异化标记每批上线日期。
-
-### 17.3 毒性落地页模板轮换
-
-为防止 200+ 毒性落地页因结构完全相同被判定为"门页（Doorway Pages）"，必须使用 3 套结构模板按食物类别轮换：
-
-| 模板 | 适用类别 | DOM 结构差异 |
-|------|---------|------------|
-| **模板 A** | 水果类（葡萄、苹果、香蕉…） | FAQ 前置（H2 顺序：FAQ → Why Toxic → Symptoms → What To Do） |
-| **模板 B** | 蔬菜/坚果类（洋葱、大蒜、坚果…） | Symptoms 前置（H2 顺序：Symptoms → Why Toxic → FAQ → What To Do） |
-| **模板 C** | 植物/花卉类（百合、郁金香、芦荟…） | What To Do 前置（H2 顺序：What To Do → Why Toxic → Symptoms → FAQ） |
-
-> **原理**：Google SpamBrain 通过 DOM 结构哈希检测批量相似页面。3 套模板 + 每套中不同的 H2 顺序 = 6-9 种结构变体，足以绕过检测。
 
 ---
 
@@ -636,13 +520,13 @@ Google 爬虫越来越依赖语义化 HTML 元素理解页面内容结构。错�
 | **Reddit 社区证言** | 在 r/dogs、r/cats、r/puppy101 发布工具后，收集用户反馈截图。在 `/about/` 或首页展示真实用户评价。 | 上线后 1-3 个月 | E-E-A-T "Experience" 维度 |
 | **Google Business Profile** | 创建 petsMetrics 的 Google 商家资料（即使无实体店面），收集 Google Reviews | 上线后立即 | 品牌 SERP 右侧 Knowledge Panel 出现 |
 | **Trustpilot / G2 评价** | 在 Trustpilot 注册品牌档案，邀请早期用户留下评价 | 上线后 3-6 个月 | 第三方平台反链 + 品牌搜索结果的评分星标 |
-| **兽医顾问署名** | 落地页使用具名兽医顾问（"Reviewed by Dr. [Name], DVM"），提供 LinkedIn 可查证身份 | 上线前 | 直接提升 E-E-A-T "Expertise" — 竞品（PetMD、AKC）都这样做 |
+| **兽医顾问署名** | 工具页使用具名兽医顾问（"Reviewed by Dr. [Name], DVM"），提供 LinkedIn 可查证身份 | 上线前 | 直接提升 E-E-A-T "Expertise" — 竞品（PetMD、AKC）都这样做 |
 | **工具 Embed 计数** | 在首页展示 "Used by X pet blogs" 社交证据（X 为实际嵌入数） | 随嵌入增长动态更新 | 社交证明 → 品牌信任 → 外链转化率提升 |
 
 ### 18.2 兽医署名实现
 
 ```tsx
-// 每个工具页和毒性落地页底部的署名区块
+// 每个工具页底部的署名区块
 <section aria-label="reviewer-info" class="border-t border-gray-200 mt-8 pt-4">
   <div class="flex items-center gap-3">
     <img 
@@ -748,14 +632,12 @@ Google 爬虫越来越依赖语义化 HTML 元素理解页面内容结构。错�
 - [ ] **Day 3：提交第 2 批 sitemap URL** — 10 个 P0 工具页
 - [ ] **Day 5：Trustpilot 注册** — 创建品牌档案，邀请 Product Hunt 用户评价
 - [ ] **Day 7：Google Business Profile 创建**
-- [ ] **Day 7：GSC sitemap（第 3 批）** — 50 个高搜索量毒性落地页
+- [ ] **Day 7：GSC sitemap（第 3 批）** — 其他工具页
 - [ ] **Day 7：首周数据分析** — GA：跳出率、平均停留时间、Top 5 着陆页；GSC：索引覆盖率、首批关键词排名
 
 ### 20.4 上线后第 1 个月（Month 1）
 
-- [ ] **Week 2：提交第 4 批 sitemap URL** — 50 个中等搜索量毒性落地页
 - [ ] **Week 2：联系 20 个宠物博主** — 提供 Embed 代码
-- [ ] **Week 3：提交第 5 批 sitemap URL** — 100 个低搜索量毒性落地页
 - [ ] **Week 3：HARO / Connectively 注册** — 开始定期回应宠物健康类媒体采访请求
 - [ ] **Week 4：P1 工具页上线** — BARF 计算器 + 保险估算器（如属于 P1）
 - [ ] **Week 4：月度 SEO 复盘** — GSC 全量数据、排名追踪、索引覆盖率 > 90%

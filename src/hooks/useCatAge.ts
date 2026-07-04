@@ -21,7 +21,7 @@ const LIFE_STAGE_COLORS: Record<CatLifeStage, string> = {
   prime: 'var(--status-safe)',
   mature: 'var(--status-info)',
   senior: 'var(--cat-accent)',
-  geriatric: '#6366F1',
+  geriatric: 'var(--cat-primary-dark)',
 };
 
 const AGE_BREAKPOINTS = [

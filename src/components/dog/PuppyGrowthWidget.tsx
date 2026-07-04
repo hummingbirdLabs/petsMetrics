@@ -23,10 +23,10 @@ const SIZE_OPTIONS: { value: SizeClass; key: string; descKey: string }[] = [
 ];
 
 const DOG_CHART_COLORS = {
-  primary: '#D97706',
+  primary: 'var(--dog-primary)',
   primaryAlpha: 'rgba(217, 119, 6, 0.15)',
-  grid: '#CBD5E1',
-  tick: '#64748B',
+  grid: 'var(--gray-300)',
+  tick: 'var(--gray-500)',
 };
 
 export function PuppyGrowthWidget() {
@@ -44,7 +44,7 @@ export function PuppyGrowthWidget() {
     calculate,
   } = usePuppyGrowth();
 
-  const petName = profile?.name ?? 'Buddy';
+  const petName = profile?.name ?? '—';
 
   return (
     <div className="flex flex-col gap-6">

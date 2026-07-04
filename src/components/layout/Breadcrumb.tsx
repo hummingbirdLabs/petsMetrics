@@ -1,4 +1,5 @@
 'use client';
+import { useTranslations } from 'next-intl';
 import { usePageUrlBuilder } from '@/hooks/usePageUrl';
 
 type BreadcrumbItem = {
@@ -12,6 +13,7 @@ type BreadcrumbProps = {
 };
 
 export function Breadcrumb({ items, className = '' }: BreadcrumbProps) {
+  const t = useTranslations('common');
   const pageUrl = usePageUrlBuilder();
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -30,7 +32,7 @@ export function Breadcrumb({ items, className = '' }: BreadcrumbProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <nav aria-label="Breadcrumb" className={className}>
+      <nav aria-label={t('breadcrumbAriaLabel')} className={className}>
         <ol className="flex flex-wrap items-center gap-1 text-sm">
           {items.map((item, i) => {
             const isLast = i === items.length - 1;

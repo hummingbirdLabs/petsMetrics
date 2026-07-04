@@ -20,8 +20,8 @@
 | **Phase 6b** | 共享Hook + 猫入口 | ✅ 已完成 | 妊娠期、疫苗表共享Hook；猫年龄换算器 |
 | **Phase 6c** | 猫类计算器 | ✅ 已完成 | 猫妊娠、猫疫苗、猫饮水量 |
 | **Phase 6d** | 复杂/共享工具 | ✅ 已完成 | 猫BCS、毒性检测器、EU旅行检查器 |
-| **Phase 7a** | 毒性落地页：犬类 | ✅ 已完成 | 犬类 200+ 静态 slug 页 + 模板基础设施 |
-| **Phase 7b** | 毒性落地页：猫类 | ✅ 已完成 | 猫类毒性静态 slug 页（复用 7a 模板） |
+| **Phase 7a** | 毒性落地页：犬类 | ❌ 已取消 | Doorway Page SEO 风险 + 法律合规风险，已移除规划 |
+| **Phase 7b** | 毒性落地页：猫类 | ❌ 已取消 | 同上 |
 | **Phase 7c** | EU 旅行落地页 | ✅ 已完成 | EU 国家配对静态页 ≥ 40 个 |
 | **Phase 7d** | Sitemap 集成与 SEO 终验 | ✅ 已完成 | 全站 URL 收录 + 交叉验证 |
 | **Phase 8** | P1 工具（2个） | ✅ 已完成 | BARF 计算器、保险估算器 |
@@ -1171,7 +1171,7 @@ metadata + CollectionPage Schema.org JSON-LD
 ## T5.4 — Sitemap 与 Robots
 
 **文件目标**：
-- `src/app/sitemap.ts`（见 `ArkCon.md §6.1`，从 `lib/data/routes.ts` 生成，包含所有工具页 + 毒性落地页 + EU 旅行落地页）
+- `src/app/sitemap.ts`（见 `ArkCon.md §6.1`，从 `lib/data/routes.ts` 生成，包含所有工具页 + EU 旅行落地页）
 - `src/app/robots.ts`（已在 T0.8 创建，此处确认与 sitemap 联动正确）
 
 ---
@@ -1526,138 +1526,6 @@ metadata + CollectionPage Schema.org JSON-LD
 
 ---
 
-# Phase 7a — 毒性落地页基础设施 + 犬类
-
-> **目标**：建立可复用的毒性落地页 Server Component 模板（metadata 生成器、JSON-LD 工厂、内容渲染骨架），并完成犬类 200+ 静态 slug 页。这是后续 7b 猫类落地页的"锚点"，建立毒性落地页的技术模式。  
-> **完成标志**：`pnpm build` 输出 200+ 个犬类毒性落地页静态 HTML，每页 metadata 唯一且正确。
-
-### 依赖关系
-依赖 Phase 3（toxic-items 数据 + routes.ts）和 Phase 4（toxic.calc.ts）。Phase 6d 的 `ToxicCheckerWidget` 提供了毒性等级视觉规范参考。
-
----
-
-## T7a.1 — 毒性落地页共享组件（基础设施）
-
-**文件目标**：
-
-| 文件 | 类型 | 说明 |
-|------|------|------|
-| `src/components/shared/ToxicLandingPage.tsx` | Server Component | 毒性落地页核心渲染组件，接受 `item: ToxicItem` + `species: 'dog' | 'cat'` prop |
-| `src/lib/seo/toxic-meta.ts` | 纯函数模块 | `generateToxicMetadata()`, `generateToxicFaqJsonLd()`, `generateToxicArticleJsonLd()` |
-
-`ToxicLandingPage.tsx` 渲染逻辑：
-- H1：根据 `species` 和 `item.dogLevel`/`item.catLevel` 动态组装（参数化模板，不硬编码犬/猫措辞）
-- 毒性等级徽章（大号，色彩鲜明，使用 `--status-*` token）
-- TOXIC 等级 → 症状列表 + ASPCA 紧急电话 `888-426-4435` + `item.emergencyNote`
-- CAUTION 等级 → `item.safeAmount` 安全参考量
-- SAFE 等级 → 绿色确认 + 零风险说明
-- 相关条目推荐（同 `item.category` 的其他条目，最多 6 个）
-- 面包屑：接受 `breadcrumbItems` prop
-
-`src/lib/seo/toxic-meta.ts` 接口：
-```ts
-export function generateToxicMetadata(item: ToxicItem, species: 'dog' | 'cat'): Metadata
-export function generateToxicFaqJsonLd(item: ToxicItem, species: 'dog' | 'cat'): object
-export function generateToxicArticleJsonLd(item: ToxicItem, species: 'dog' | 'cat'): object
-```
-
-**约束**：
-- `ArkCon.md §4.2`：页面组件为 Server Component，无 `'use client'`
-- `copilot-instructions.md §6`：所有用户可见文字通过 `t()` 从 messages/en.json 读取
-- JSON-LD 中 `name`、`text` 等字段必须根据 `species` 参数动态生成（犬用 "Can dogs eat X?" 句式，猫用 "Is X toxic to cats?" 句式）
-
----
-
-## T7a.2 — 犬类毒性落地页路由
-
-**文件目标**：`src/app/dog/can-dogs-eat/[slug]/page.tsx`（Server Component）
-
-```ts
-import { TOXIC_ITEMS, type ToxicItem } from '@/lib/data/toxic-items';
-
-// 强制预渲染所有犬类相关 slug（ArkCon.md §3.2）
-export async function generateStaticParams() {
-  return TOXIC_ITEMS
-    .filter(item => item.species === 'dog' || item.species === 'both')
-    .map(item => ({ slug: item.slug }));
-}
-
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
-  const { slug } = await params;
-  const item = TOXIC_ITEMS.find(i => i.slug === slug);
-  if (!item) return { title: 'Not Found' };
-  return generateToxicMetadata(item, 'dog');
-}
-```
-
-**页面内容**：调用 `ToxicLandingPage` 组件，传入 `species: 'dog'` + 查找到的 `ToxicItem`。
-
-**关键细节**：
-- H1 模式：`Can Dogs Eat [Food Name]? — [Safe/Toxic/Caution]`
-- canonical URL：`/dog/can-dogs-eat/[slug]/`
-- 面包屑：首页 > Dogs > Can Dogs Eat > [Item Name]
-- 相关条目推荐：只展示与当前条目相同 `species`（dog/both）的条目
-
----
-
-## ✅ Phase 7a 完成确认检查
-
-- [ ] `pnpm build` 生成 200+ 个犬类毒性落地页静态 HTML
-- [ ] 每页有独立 canonical URL，格式正确
-- [ ] 每页有 FAQPage + Article JSON-LD，`name` 字段使用犬类措辞
-- [ ] TOXIC 级别页面展示 ASPCA 紧急电话 `888-426-4435`
-- [ ] `generateStaticParams` 从 `TOXIC_ITEMS` 数据过滤生成（无硬编码 slug 数组）
-- [ ] 相关条目推荐链接可点击，限于同物种范围
-- [ ] `ToxicLandingPage` 组件通过 `species` prop 正确参数化（不硬编码犬/猫文案）
-- [ ] `generateToxicMetadata` / `generateToxicFaqJsonLd` / `generateToxicArticleJsonLd` 接口设计支持 `species` 参数，7b 可直接复用
-- [ ] 无任何 `console.log` 遗留
-
-> **🛑 停止点**：Phase 7a 完成后，通知用户确认后再进入 Phase 7b。
-
----
-
----
-
-# Phase 7b — 毒性落地页：猫类
-
-> **目标**：复用 Phase 7a 建立的 `ToxicLandingPage` 组件和 `lib/seo/toxic-meta.ts` 模块，完成猫类毒性落地页路由。本阶段仅需 1 个路由文件，极致轻量。  
-> **完成标志**：`pnpm build` 输出所有猫类毒性落地页静态 HTML，模板复用无误，无犬猫内容交叉污染。
-
-### 依赖关系
-依赖 Phase 7a（`ToxicLandingPage`、`lib/seo/toxic-meta.ts` 基础设施）
-
----
-
-## T7b.1 — 猫类毒性落地页路由
-
-**文件目标**：`src/app/cat/are-toxic-to-cats/[slug]/page.tsx`（Server Component）
-
-与 T7a.2 同结构，差异点：
-- `generateStaticParams` 过滤条件为 `item.species === 'cat' || item.species === 'both'`
-- `generateMetadata` 调用 `generateToxicMetadata(item, 'cat')`
-- H1 模式：`Is [Plant/Food] Toxic to Cats? — [Level]`
-- 面包屑：首页 > Cats > Is It Toxic to Cats? > [Item Name]
-- 相关条目推荐：只展示与当前条目相同 `species`（cat/both）的条目
-
-**约束**：
-- 不得修改 Phase 7a 的 `ToxicLandingPage.tsx`。若发现组件不足以支持猫类差异，首先确认是否遗漏 `species` prop 的使用分支，而非直接改组件。
-
----
-
-## ✅ Phase 7b 完成确认检查
-
-- [x] `pnpm build` 生成所有猫类毒性落地页静态 HTML
-- [x] 每页 canonical URL 格式 `/cat/are-toxic-to-cats/[slug]/`
-- [x] 每页 FAQPage + Article JSON-LD 使用猫类措辞（"Is X toxic to cats?"）
-- [x] TOXIC 级别页面展示 ASPCA 紧急电话
-- [x] 相关条目推荐限于猫类（无犬类条目混入）
-- [x] `ToxicLandingPage` 组件无需修改即满足猫类需求
-- [x] 无任何 `console.log` 遗留
-
-> **🛑 停止点**：Phase 7b 完成后，通知用户确认后再进入 Phase 7c。
-
----
-
 ---
 
 # Phase 7c — EU 宠物旅行落地页
@@ -1761,27 +1629,11 @@ export async function generateMetadata({ params }: { params: Promise<{ route: st
 
 | 文件 | 变更 |
 |------|------|
-| `src/lib/data/routes.ts` | 确认 `getAllToxicSlugs()` 函数存在并正确导出（若 Phase 3 未实现则在此实现） |
-| `src/app/sitemap.ts` | 纳入全部毒性落地页 + EU 旅行落地页 URL |
+| `src/lib/data/routes.ts` | 确认 `getAllEUTravelRoutes()` 函数存在并正确导出 |
+| `src/app/sitemap.ts` | 纳入 EU 旅行落地页 URL |
 
 sitemap 规则：
-- 毒性落地页：`priority: 0.8`, `changefreq: 'monthly'`
 - EU 旅行落地页：`priority: 0.7`, `changefreq: 'monthly'`
-
-**注意**：若 `src/lib/data/routes.ts` 中尚无 `getAllToxicSlugs()` 函数，实现如下：
-
-```ts
-export function getAllToxicSlugs(): { species: 'dog' | 'cat'; slug: string }[] {
-  const result: { species: 'dog' | 'cat'; slug: string }[] = [];
-  for (const item of TOXIC_ITEMS) {
-    if (item.species === 'dog' || item.species === 'both')
-      result.push({ species: 'dog', slug: item.slug });
-    if (item.species === 'cat' || item.species === 'both')
-      result.push({ species: 'cat', slug: item.slug });
-  }
-  return result;
-}
-```
 
 ---
 
@@ -1789,7 +1641,7 @@ export function getAllToxicSlugs(): { species: 'dog' | 'cat'; slug: string }[] {
 
 **手动验证清单**（不需要编码，由执行者逐项确认）：
 
-1. **Canonical URL 验证**：抽查 5 个犬类毒性页、5 个猫类毒性页、5 个 EU 旅行页，确认 `<link rel="canonical">` 正确且自引用
+1. **Canonical URL 验证**：抽查 5 个 EU 旅行页，确认 `<link rel="canonical">` 正确且自引用
 2. **JSON-LD 格式验证**：使用 Google Rich Results Test 或结构化数据验证工具抽查 JSON-LD 输出
 3. **H1 唯一性验证**：确认每个落地页 H1 包含对应的食物/国家名称，无模板残留（如未替换的占位符）
 4. **Breadcrumb 完整性**：确认面包屑各级链接可点击且指向正确页面
@@ -1801,8 +1653,7 @@ export function getAllToxicSlugs(): { species: 'dog' | 'cat'; slug: string }[] {
 
 ## ✅ Phase 7d 完成确认检查
 
-- [x] `pnpm build` 全量通过，无错误无警告（495 页）
-- [x] `sitemap.xml` 包含全部毒性落地页 URL（犬类 205 页 + 猫类 205 页）
+- [x] `pnpm build` 全量通过，无错误无警告
 - [x] `sitemap.xml` 包含全部 EU 旅行落地页 URL（64 个）
 - [x] Canonical URL 抽查全部正确且自引用
 - [x] JSON-LD 格式有效（无 `undefined` 或空值字段）

@@ -19,6 +19,7 @@ import { ErrorBoundaryWrapper } from '@/components/shared/ErrorBoundaryWrapper';
 import { JsonLdScript } from '@/components/shared/JsonLdScript';
 import { Card } from '@/components/ui/Card';
 import { AffiliateBanner } from '@/components/shared/AffiliateBanner';
+import { RelatedComparison } from '@/components/shared/RelatedComparison';
 import { ToolCtaSection } from '@/components/shared/ToolCtaSection';
 import { getTranslations } from 'next-intl/server';
 import { DisclaimerSection } from '@/components/shared/DisclaimerSection';
@@ -26,29 +27,32 @@ import { KnowledgeCards } from '@/components/shared/KnowledgeCards';
 import { ScienceBehindIt } from '@/components/shared/ScienceBehindIt';
 import { DogCalorieWidget } from '@/components/dog/DogCalorieWidget';
 
-export const metadata: Metadata = {
-  title: 'Dog Calorie Calculator — How Much to Feed Your Dog | petsMetrics',
-  description:
-    'Calculate your dog\'s exact daily calorie needs using the AAFCO MER formula. Get feeding amounts for any dog food brand. Based on weight and activity level.',
-  keywords: 'dog calorie calculator, how much to feed my dog, dog daily food amount, how many calories does my dog need, dog MER calculator, dog weight loss calorie calculator, dog feeding guide by weight',
-  alternates: {
-    canonical: `${SITE_URL}/dog/calorie-calculator/`,
-  },
-  openGraph: {
-    title: 'Dog Calorie Calculator — Exact Daily Feeding Guide | petsMetrics',
-    description:
-      'Calculate your dog\'s exact daily calorie needs. AAFCO MER formula. Weight + activity based.',
-    url: `${SITE_URL}/dog/calorie-calculator/`,
-    type: 'website',
-    images: [{ url: `${SITE_URL}/og/dog-calorie-calculator.webp`, width: 1200, height: 630, alt: 'Dog Calorie Calculator — Daily Feeding Guide' }],
-  },
-  twitter: {
-    card: 'summary_large_image',
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  return {
     title: 'Dog Calorie Calculator — How Much to Feed Your Dog | petsMetrics',
-    description: 'Calculate your dog\'s exact daily calorie needs. AAFCO MER formula. Weight + activity based.',
-    images: [`${SITE_URL}/og/dog-calorie-calculator.webp`],
-  },
-};
+    description:
+      'Calculate your dog\'s exact daily calorie needs using the AAFCO MER formula. Get feeding amounts for any dog food brand. Based on weight and activity level.',
+    keywords: 'dog calorie calculator, how much to feed my dog, dog daily food amount, how many calories does my dog need, dog MER calculator, dog weight loss calorie calculator, dog feeding guide by weight',
+    alternates: {
+      canonical: `${SITE_URL}/${locale}/dog/calorie-calculator/`,
+    },
+    openGraph: {
+      title: 'Dog Calorie Calculator — Exact Daily Feeding Guide | petsMetrics',
+      description:
+        'Calculate your dog\'s exact daily calorie needs. AAFCO MER formula. Weight + activity based.',
+      url: `${SITE_URL}/${locale}/dog/calorie-calculator/`,
+      type: 'website',
+      images: [{ url: `${SITE_URL}/og/dog-calorie-calculator.webp`, width: 1200, height: 630, alt: 'Dog Calorie Calculator — Daily Feeding Guide' }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: 'Dog Calorie Calculator — How Much to Feed Your Dog | petsMetrics',
+      description: 'Calculate your dog\'s exact daily calorie needs. AAFCO MER formula. Weight + activity based.',
+      images: [`${SITE_URL}/og/dog-calorie-calculator.webp`],
+    },
+  };
+}
 
 const faqSchema = generateFaqPageJsonLd(DOG_CALORIE_FAQ);
 
@@ -71,6 +75,7 @@ export default async function DogCaloriePage({ params }: { params: { locale: str
   const { locale } = params;
   setRequestLocale(locale);
   const t = await getTranslations('common');
+  const tc = await getTranslations('compare');
   const pageUrl = createPageUrl(locale);
   return (
     <>
@@ -99,13 +104,24 @@ export default async function DogCaloriePage({ params }: { params: { locale: str
               </p>
             </div>
             <DogCalorieWidget />
-            <KnowledgeCards cards={CALORIE_KNOWLEDGE} />
+            <KnowledgeCards cards={CALORIE_KNOWLEDGE} locale={locale} />
             <ScienceBehindIt content={CALORIE_SCIENCE} />
             <ToolCtaSection
-              heading="Predict Your Puppy's Adult Size"
-              description="Knowing your dog's calorie needs is great — but how big will they get? Use our Puppy Growth Predictor to estimate adult size and adjust feeding accordingly."
-              href="/dog/puppy-growth-predictor/"
-              buttonLabel="Predict Adult Size →"
+              heading={t('toolCta.calculateCalories.heading')}
+              description={t('toolCta.calculateCalories.description')}
+              href={pageUrl('dog/puppy-growth-predictor')}
+              buttonLabel={t('toolCta.calculateCalories.button')}
+            />
+            <RelatedComparison
+              title={tc('dryVsWet.title')}
+              description={tc('dryVsWet.subtitle')}
+              href={pageUrl('dog/compare/dry-food-vs-wet-food')}
+              sourcesText="AAFCO, WSAVA"
+              section="dog"
+              t={{
+                heading: tc('relatedCompare.heading'),
+                readComparison: tc('relatedCompare.readComparison'),
+              }}
             />
             <DisclaimerSection text={t('disclaimer.tool')} variant="tool" />
           </div>
@@ -113,7 +129,7 @@ export default async function DogCaloriePage({ params }: { params: { locale: str
         sidebar={
           <div className="flex flex-col gap-4">
             <Card padding="md">
-              <p className="text-sm font-semibold text-[--gray-900]">Dog Health Tools</p>
+              <p className="text-sm font-semibold text-[--gray-900]">{t('sidebar.dogTools')}</p>
               <ul className="mt-2 flex flex-col gap-2 text-sm text-[--gray-600]">
                 <li><a href={pageUrl('dog/age-calculator')} className="hover:text-[--dog-primary] transition-colors">Age Calculator</a></li>
                 <li><a href={pageUrl('dog/calorie-calculator')} className="text-[--dog-primary] hover:underline font-medium">Calorie Calculator</a></li>

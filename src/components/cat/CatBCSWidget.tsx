@@ -25,7 +25,7 @@ export function CatBCSWidget() {
   } = useCatBCS();
   const pageUrl = usePageUrlBuilder();
 
-  const petName = profile?.name ?? 'Luna';
+  const petName = profile?.name ?? '—';
   const shareUrl = SITE_URL + pageUrl('cat/bcs-weight-tracker').slice(0, -1);
 
   return (

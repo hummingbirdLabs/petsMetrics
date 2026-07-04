@@ -10,6 +10,7 @@
  * to an interactive tool.
  */
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 type ToolCtaSectionProps = {
   /** Main CTA heading — should contain a benefit-oriented verb */
@@ -24,9 +25,10 @@ type ToolCtaSectionProps = {
 };
 
 export function ToolCtaSection({ heading, description, href, buttonLabel, className = '' }: ToolCtaSectionProps) {
+  const t = useTranslations('common');
   return (
     <section
-      aria-label="tool-cta"
+      aria-label={t('toolCtaAriaLabel')}
       className={`rounded-xl border-2 border-dashed border-[--dog-primary] bg-gradient-to-br from-[--dog-primary-light] to-white p-6 sm:p-8 ${className}`}
     >
       <h2 className="text-xl font-bold tracking-tight text-[--gray-900]">

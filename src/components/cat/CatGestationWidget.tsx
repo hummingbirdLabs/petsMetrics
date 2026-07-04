@@ -35,7 +35,7 @@ export function CatGestationWidget() {
   } = useGestation('cat');
   const pageUrl = usePageUrlBuilder();
 
-  const petName = profile?.name ?? 'Luna';
+  const petName = profile?.name ?? '—';
   const shareUrl = SITE_URL + pageUrl('cat/gestation-calculator').slice(0, -1);
 
   const today = new Date().toISOString().slice(0, 10);
@@ -125,7 +125,7 @@ export function CatGestationWidget() {
 
           {/* Species-specific health facts banner */}
           <div className="rounded-lg border-l-4 border-l-[--cat-primary] bg-[--cat-primary-light] p-4">
-            <p className="text-sm font-semibold text-[--gray-800]">Cat Gestation Facts</p>
+            <p className="text-sm font-semibold text-[--gray-800]">{t('facts')}</p>
             <p className="mt-1 text-sm text-[--gray-600]">{CAT_GESTATION_FACTS.healthTip}</p>
             <p className="mt-2 text-xs text-[--gray-400]">{CAT_GESTATION_FACTS.sourceNote}</p>
           </div>

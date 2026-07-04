@@ -26,16 +26,18 @@ import { KnowledgeCards } from '@/components/shared/KnowledgeCards';
 import { ScienceBehindIt } from '@/components/shared/ScienceBehindIt';
 import { InsuranceWidget } from '@/components/shared/InsuranceWidget';
 
-export const metadata: Metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  return {
   title: 'Pet Insurance Cost Estimator — Compare Plans Instantly | petsMetrics',
   description:
     'Compare pet insurance rates from Lemonade, Pumpkin, Trupanion, and Petplan. Get monthly estimates based on breed, age, and location.',
   keywords: 'pet insurance calculator, pet insurance cost estimator, how much is pet insurance, is pet insurance worth it, best pet insurance for dogs, dog insurance comparison',
-  alternates: { canonical: `${SITE_URL}/shared/pet-insurance-estimator/` },
+  alternates: { canonical: `${SITE_URL}/${locale}/shared/pet-insurance-estimator/` },
   openGraph: {
     title: 'Pet Insurance Cost Estimator — Compare Plans Instantly | petsMetrics',
     description: 'Compare monthly pet insurance premiums based on breed, age, and location. NAPHIA industry data.',
-    url: `${SITE_URL}/shared/pet-insurance-estimator/`,
+    url: `${SITE_URL}/${locale}/shared/pet-insurance-estimator/`,
     type: 'website',
   },
   twitter: {
@@ -44,6 +46,7 @@ export const metadata: Metadata = {
     description: 'Compare monthly pet insurance premiums based on breed, age, and location. NAPHIA industry data.',
   },
 };
+}
 
 const faqSchema = generateFaqPageJsonLd(INSURANCE_FAQ);
 
@@ -87,13 +90,13 @@ export default async function PetInsuranceEstimatorPage({ params }: { params: { 
               </p>
             </div>
             <InsuranceWidget disclaimerText={t('disclaimer.standard')} />
-            <KnowledgeCards cards={INSURANCE_KNOWLEDGE} />
+            <KnowledgeCards cards={INSURANCE_KNOWLEDGE} locale={locale} />
             <ScienceBehindIt content={INSURANCE_SCIENCE} />
             <ToolCtaSection
-              heading="Calculate Your Dog's Daily Calorie Needs"
-              description="Now that you've estimated insurance costs, calculate your dog's daily calorie needs to keep them at a healthy weight — reducing future vet bills."
-              href="/dog/calorie-calculator/"
-              buttonLabel="Calculate Daily Calories →"
+              heading={t('toolCta.calculateCalories.heading')}
+              description={t('toolCta.calculateCalories.description')}
+              href={pageUrl('dog/calorie-calculator')}
+              buttonLabel={t('toolCta.calculateCalories.button')}
             />
             <DisclaimerSection text={t('disclaimer.tool')} variant="tool" />
           </div>
@@ -101,7 +104,7 @@ export default async function PetInsuranceEstimatorPage({ params }: { params: { 
         sidebar={
           <div className="flex flex-col gap-4">
             <Card padding="md">
-              <p className="text-sm font-semibold text-[--gray-900]">Average Monthly Costs</p>
+              <p className="text-sm font-semibold text-[--gray-900]">{t('sidebar.averageMonthlyCosts')}</p>
               <ul className="mt-2 flex flex-col gap-2 text-sm text-[--gray-600]">
                 <li>Dog (accident & illness): ~$53/mo</li>
                 <li>Cat (accident & illness): ~$32/mo</li>
@@ -110,7 +113,7 @@ export default async function PetInsuranceEstimatorPage({ params }: { params: { 
               </ul>
             </Card>
             <Card padding="md">
-              <p className="text-sm font-semibold text-[--gray-900]">What Affects Cost</p>
+              <p className="text-sm font-semibold text-[--gray-900]">{t('sidebar.whatAffectsCost')}</p>
               <ul className="mt-2 flex flex-col gap-2 text-sm text-[--gray-600]">
                 <li>Species: dogs cost more than cats</li>
                 <li>Breed: large & brachycephalic = higher</li>

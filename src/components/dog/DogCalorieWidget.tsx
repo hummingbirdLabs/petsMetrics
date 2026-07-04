@@ -34,7 +34,7 @@ export function DogCalorieWidget() {
     calculate,
   } = useDogCalorie();
 
-  const petName = profile?.name ?? 'Buddy';
+  const petName = profile?.name ?? '—';
 
   return (
     <div className="flex flex-col gap-6">

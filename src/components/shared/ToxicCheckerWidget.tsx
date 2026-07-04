@@ -145,7 +145,7 @@ export function ToxicCheckerWidget() {
             <div className="flex flex-col gap-3">
               <span
                 className="inline-block w-fit rounded-md px-3 py-1 text-xs font-bold uppercase tracking-wider"
-                style={{ backgroundColor: levelCfg.text, color: '#fff' }}
+                style={{ backgroundColor: levelCfg.text, color: 'var(--white)' }}
                 data-testid="toxic-result-badge"
               >
                 {levelCfg.label}

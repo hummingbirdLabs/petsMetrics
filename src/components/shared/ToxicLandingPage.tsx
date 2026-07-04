@@ -1,4 +1,4 @@
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import { SITE_URL } from '@/constants';
 import { usePageUrlBuilder } from '@/hooks/usePageUrl';
 import { graphJsonLd } from '@/lib/seo/geo-meta';
@@ -103,22 +103,23 @@ const toxicH1Styles: Record<string, { gradient: string; badgeBg: string; badgeTe
   toxic: {
     gradient: 'from-red-50 to-red-100',
     badgeBg: 'var(--status-toxic)',
-    badgeText: '#FFFFFF',
+    badgeText: 'var(--white)',
   },
   caution: {
     gradient: 'from-amber-50 to-amber-100',
     badgeBg: 'var(--status-caution)',
-    badgeText: '#FFFFFF',
+    badgeText: 'var(--white)',
   },
   safe: {
     gradient: 'from-emerald-50 to-emerald-100',
     badgeBg: 'var(--status-safe)',
-    badgeText: '#FFFFFF',
+    badgeText: 'var(--white)',
   },
 };
 
 export function ToxicLandingPage({ item, species, breadcrumbItems, disclaimerText }: ToxicLandingPageProps) {
   const t = useTranslations('toxicLanding');
+  const locale = useLocale();
   const pageUrl = usePageUrlBuilder();
   const tNav = useTranslations('nav');
   const tToxic = useTranslations('toxicChecker.result');
@@ -278,10 +279,10 @@ export function ToxicLandingPage({ item, species, breadcrumbItems, disclaimerTex
             <Card padding="lg">
               <h2 className="text-xl font-bold text-[--gray-900]">
                 {level === 'toxic'
-                  ? `Why ${item.name} Is Dangerous to ${species === 'dog' ? 'Dogs' : 'Cats'}`
+                  ? t('dangerReasonTitle', { item: item.name, species: species === 'dog' ? tNav('dog') : tNav('cat') })
                   : level === 'caution'
-                    ? `What to Know About Feeding ${item.name} to ${species === 'dog' ? 'Dogs' : 'Cats'}`
-                    : `Is ${item.name} Safe for ${species === 'dog' ? 'Dogs' : 'Cats'}?`}
+                    ? t('cautionTitle', { item: item.name, species: species === 'dog' ? tNav('dog') : tNav('cat') })
+                    : t('safeTitle', { item: item.name, species: species === 'dog' ? tNav('dog') : tNav('cat') })}
               </h2>
               <p className="mt-3 text-base leading-relaxed text-[--gray-600]">{dangerReason}</p>
               <p className="mt-3 text-xs text-[--gray-400]">
@@ -293,10 +294,10 @@ export function ToxicLandingPage({ item, species, breadcrumbItems, disclaimerTex
             <Card padding="lg">
               <h2 className="text-xl font-bold text-[--gray-900]">
                 {level === 'toxic'
-                  ? `What to Do If Your ${species === 'dog' ? 'Dog' : 'Cat'} Eats ${item.name}`
+                  ? t('whatToDoTitle', { species: species === 'dog' ? tNav('dog') : tNav('cat'), item: item.name })
                   : level === 'caution'
-                    ? `Steps If Your ${species === 'dog' ? 'Dog' : 'Cat'} Eats Too Much ${item.name}`
-                    : `Feeding ${item.name} to Your ${species === 'dog' ? 'Dog' : 'Cat'} Safely`}
+                    ? t('cautionStepsTitle', { species: species === 'dog' ? tNav('dog') : tNav('cat'), item: item.name })
+                    : t('feedingSafelyTitle', { item: item.name, species: species === 'dog' ? tNav('dog') : tNav('cat') })}
               </h2>
               <p className="mt-3 text-base leading-relaxed text-[--gray-600]">{whatToDo}</p>
             </Card>
@@ -317,7 +318,7 @@ export function ToxicLandingPage({ item, species, breadcrumbItems, disclaimerTex
             ) : null}
 
             {/* GEO Knowledge Cards — AI search engine excerpt source */}
-            <KnowledgeCards cards={getToxicItemKnowledgeCards(item, species)} />
+            <KnowledgeCards cards={getToxicItemKnowledgeCards(item, species)} locale={locale} />
 
             {/* FAQ Section (3 items — must match JSON-LD per geo-checklist §2.1) */}
             <section aria-labelledby="toxic-faq-heading" className="mt-10">
@@ -363,10 +364,10 @@ export function ToxicLandingPage({ item, species, breadcrumbItems, disclaimerTex
 
             {/* GEO Zero-Click CTA Hook — converts information-only visitors to tool users */}
             <ToolCtaSection
-              heading="Check Another Food"
-              description={`Wondering about another food or plant? Search our complete database of 200+ items to see if it's safe for your ${species === 'dog' ? 'dog' : 'cat'}. Backed by ASPCA Animal Poison Control Center data.`}
-              href="/shared/toxic-checker/"
-              buttonLabel={`Open Full Toxic Checker →`}
+              heading={t('cta.heading')}
+              description={t('cta.description')}
+              href={pageUrl('shared/toxic-checker')}
+              buttonLabel={t('cta.button')}
             />
 
             {/* Related Items */}
