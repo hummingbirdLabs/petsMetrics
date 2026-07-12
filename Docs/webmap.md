@@ -1,6 +1,6 @@
 # 站点地图 (Webmap)
 
-> 自动生成于: 2026-07-04
+> 自动生成于: 2026-07-05
 > 构建工具: Next.js SSG + next-intl
 
 ---
@@ -9,15 +9,15 @@
 
 | 指标 | 数值 | 说明 |
 |------|------|------|
-| 物理页面文件数 | 67 | `src/app/[locale]/**/page.tsx` 中实际存在的文件（含根 page.tsx） |
+| 物理页面文件数 | 85 | `src/app/[locale]/**/page.tsx` 中实际存在的文件（含根 page.tsx） |
 | Hub 枢纽页数 | 4 | dog, cat, shared, profile |
-| 工具/指南/紧急/对比页面数 | 58 | `getAllToolRoutes()` 注册的路由 |
+| 工具/指南/紧急/对比/FAQ/季节性页面数 | 76 | `getAllToolRoutes()` 注册的路由 |
 | 信任/legal 页数 | 3 | about, privacy, terms |
 | 支持语种数 | 12 | en, zh, fr, de, ja, ko, es, pt, nl, ar, ru, hi |
 | EU 旅行落地页数（每语种） | 41 | `getAllEUTravelRoutes()` 动态生成 |
-| 每 locale sitemap 条目数 | 90 | 1首页 + 4 hub + 3 trust + 58工具 + 41 EU |
-| **全站点 sitemap 总条目数** | **1,080** | 90 × 12 种语言 |
-| routes.ts 已注册工具路由 | 58 | 含 guide/emergency/compare（不含 EU 配对） |
+| 每 locale sitemap 条目数 | 108 | 1首页 + 4 hub + 3 trust + 76工具 + 41 EU |
+| **全站点 sitemap 总条目数** | **1,296** | 108 × 12 种语言 |
+| routes.ts 已注册工具路由 | 76 | 含 guide/emergency/compare/faq/seasonal（不含 EU 配对） |
 | EU 旅行路由（动态） | 41 | 已通过 `[...slug]/page.tsx` 创建物理路由 |
 
 ## 2. 语言覆盖矩阵
@@ -144,7 +144,23 @@
 | `/[locale]/cat/emergency/ate-onion/` | `src/app/[locale]/cat/emergency/ate-onion/page.tsx` | 全部 | ✅ |
 | `/[locale]/cat/emergency/ate-chocolate/` | `src/app/[locale]/cat/emergency/ate-chocolate/page.tsx` | 全部 | ✅ |
 
-### 3.11 Dog 对比页面 (Compare)
+### 3.11 Dog FAQ Hub 页面
+
+| 路由模式 | 文件路径 | 语言 | 状态 |
+|---------|---------|------|------|
+| `/[locale]/dog/faq/nutrition/` | `src/app/[locale]/dog/faq/nutrition/page.tsx` | 全部 | ✅ |
+| `/[locale]/dog/faq/health/` | `src/app/[locale]/dog/faq/health/page.tsx` | 全部 | ✅ |
+| `/[locale]/dog/faq/aging/` | `src/app/[locale]/dog/faq/aging/page.tsx` | 全部 | ✅ |
+
+### 3.12 Cat FAQ Hub 页面
+
+| 路由模式 | 文件路径 | 语言 | 状态 |
+|---------|---------|------|------|
+| `/[locale]/cat/faq/nutrition/` | `src/app/[locale]/cat/faq/nutrition/page.tsx` | 全部 | ✅ |
+| `/[locale]/cat/faq/health/` | `src/app/[locale]/cat/faq/health/page.tsx` | 全部 | ✅ |
+| `/[locale]/cat/faq/aging/` | `src/app/[locale]/cat/faq/aging/page.tsx` | 全部 | ✅ |
+
+### 3.13 Dog 对比页面 (Compare)
 
 | 路由模式 | 文件路径 | 语言 | 状态 |
 |---------|---------|------|------|
@@ -154,7 +170,7 @@
 | `/[locale]/dog/compare/grain-free-vs-grain-inclusive/` | `src/app/[locale]/dog/compare/grain-free-vs-grain-inclusive/page.tsx` | 全部 | ✅ |
 | `/[locale]/dog/compare/canned-vs-frozen-food/` | `src/app/[locale]/dog/compare/canned-vs-frozen-food/page.tsx` | 全部 | ✅ |
 
-### 3.12 Cat 对比页面 (Compare)
+### 3.14 Cat 对比页面 (Compare)
 
 | 路由模式 | 文件路径 | 语言 | 状态 |
 |---------|---------|------|------|
@@ -162,7 +178,7 @@
 | `/[locale]/cat/compare/wet-food-vs-dry-food/` | `src/app/[locale]/cat/compare/wet-food-vs-dry-food/page.tsx` | 全部 | ✅ |
 | `/[locale]/cat/compare/declawing-vs-scratching-post/` | `src/app/[locale]/cat/compare/declawing-vs-scratching-post/page.tsx` | 全部 | ✅ |
 
-### 3.13 Shared 对比页面 (Compare)
+### 3.15 Shared 对比页面 (Compare)
 
 | 路由模式 | 文件路径 | 语言 | 状态 |
 |---------|---------|------|------|
@@ -171,7 +187,29 @@
 | `/[locale]/shared/compare/microchip-vs-tattoo/` | `src/app/[locale]/shared/compare/microchip-vs-tattoo/page.tsx` | 全部 | ✅ |
 | `/[locale]/shared/compare/adopt-vs-buy/` | `src/app/[locale]/shared/compare/adopt-vs-buy/page.tsx` | 全部 | ✅ |
 
-### 3.14 动态生成页面 — EU 旅行落地页
+### 3.16 对比页扩展 (Compare EXT — Batch C)
+
+| 路由模式 | 文件路径 | 语言 | 状态 |
+|---------|---------|------|------|
+| `/[locale]/dog/compare/harness-vs-collar/` | `src/app/[locale]/dog/compare/harness-vs-collar/page.tsx` | 全部 | ✅ |
+| `/[locale]/shared/compare/pet-insurance-vs-emergency-fund/` | `src/app/[locale]/shared/compare/pet-insurance-vs-emergency-fund/page.tsx` | 全部 | ✅ |
+| `/[locale]/dog/compare/grain-free-vs-whole-grain/` | `src/app/[locale]/dog/compare/grain-free-vs-whole-grain/page.tsx` | 全部 | ✅ |
+| `/[locale]/cat/compare/scratching-post-vs-cat-tree/` | `src/app/[locale]/cat/compare/scratching-post-vs-cat-tree/page.tsx` | 全部 | ✅ |
+
+### 3.17 Dog 季节性安全专题 (Seasonal Dangers)
+
+| 路由模式 | 文件路径 | 语言 | 状态 |
+|---------|---------|------|------|
+| `/[locale]/dog/seasonal-dangers/summer-heat/` | `src/app/[locale]/dog/seasonal-dangers/summer-heat/page.tsx` | 全部 | ✅ |
+| `/[locale]/dog/seasonal-dangers/winter-paw-care/` | `src/app/[locale]/dog/seasonal-dangers/winter-paw-care/page.tsx` | 全部 | ✅ |
+| `/[locale]/dog/seasonal-dangers/christmas-foods/` | `src/app/[locale]/dog/seasonal-dangers/christmas-foods/page.tsx` | 全部 | ✅ |
+| `/[locale]/dog/seasonal-dangers/halloween-candy/` | `src/app/[locale]/dog/seasonal-dangers/halloween-candy/page.tsx` | 全部 | ✅ |
+| `/[locale]/dog/seasonal-dangers/fireworks-anxiety/` | `src/app/[locale]/dog/seasonal-dangers/fireworks-anxiety/page.tsx` | 全部 | ✅ |
+| `/[locale]/dog/seasonal-dangers/spring-allergies/` | `src/app/[locale]/dog/seasonal-dangers/spring-allergies/page.tsx` | 全部 | ✅ |
+| `/[locale]/dog/seasonal-dangers/thanksgiving/` | `src/app/[locale]/dog/seasonal-dangers/thanksgiving/page.tsx` | 全部 | ✅ |
+| `/[locale]/dog/seasonal-dangers/easter-chocolate/` | `src/app/[locale]/dog/seasonal-dangers/easter-chocolate/page.tsx` | 全部 | ✅ |
+
+### 3.18 动态生成页面 — EU 旅行落地页
 
 | 数据源 | 函数 | 每语种数量 | 语言 |
 |-------|------|----------|------|
@@ -195,7 +233,7 @@
 
 ## 4. 文件索引
 
-### 4.1 页面文件完整列表 (67 个)
+### 4.1 页面文件完整列表 (85 个)
 
 #### 根页面
 | 文件路径 | 路由 |
@@ -291,6 +329,20 @@
 | `src/app/[locale]/cat/emergency/ate-onion/page.tsx` | `/[locale]/cat/emergency/ate-onion/` |
 | `src/app/[locale]/cat/emergency/ate-chocolate/page.tsx` | `/[locale]/cat/emergency/ate-chocolate/` |
 
+#### Dog FAQ Hub 页面
+| 文件路径 | 路由 |
+|---------|------|
+| `src/app/[locale]/dog/faq/nutrition/page.tsx` | `/[locale]/dog/faq/nutrition/` |
+| `src/app/[locale]/dog/faq/health/page.tsx` | `/[locale]/dog/faq/health/` |
+| `src/app/[locale]/dog/faq/aging/page.tsx` | `/[locale]/dog/faq/aging/` |
+
+#### Cat FAQ Hub 页面
+| 文件路径 | 路由 |
+|---------|------|
+| `src/app/[locale]/cat/faq/nutrition/page.tsx` | `/[locale]/cat/faq/nutrition/` |
+| `src/app/[locale]/cat/faq/health/page.tsx` | `/[locale]/cat/faq/health/` |
+| `src/app/[locale]/cat/faq/aging/page.tsx` | `/[locale]/cat/faq/aging/` |
+
 #### Dog 对比页面
 | 文件路径 | 路由 |
 |---------|------|
@@ -299,6 +351,8 @@
 | `src/app/[locale]/dog/compare/spayed-vs-unspayed/page.tsx` | `/[locale]/dog/compare/spayed-vs-unspayed/` |
 | `src/app/[locale]/dog/compare/grain-free-vs-grain-inclusive/page.tsx` | `/[locale]/dog/compare/grain-free-vs-grain-inclusive/` |
 | `src/app/[locale]/dog/compare/canned-vs-frozen-food/page.tsx` | `/[locale]/dog/compare/canned-vs-frozen-food/` |
+| `src/app/[locale]/dog/compare/harness-vs-collar/page.tsx` | `/[locale]/dog/compare/harness-vs-collar/` |
+| `src/app/[locale]/dog/compare/grain-free-vs-whole-grain/page.tsx` | `/[locale]/dog/compare/grain-free-vs-whole-grain/` |
 
 #### Cat 对比页面
 | 文件路径 | 路由 |
@@ -306,6 +360,7 @@
 | `src/app/[locale]/cat/compare/indoor-vs-outdoor/page.tsx` | `/[locale]/cat/compare/indoor-vs-outdoor/` |
 | `src/app/[locale]/cat/compare/wet-food-vs-dry-food/page.tsx` | `/[locale]/cat/compare/wet-food-vs-dry-food/` |
 | `src/app/[locale]/cat/compare/declawing-vs-scratching-post/page.tsx` | `/[locale]/cat/compare/declawing-vs-scratching-post/` |
+| `src/app/[locale]/cat/compare/scratching-post-vs-cat-tree/page.tsx` | `/[locale]/cat/compare/scratching-post-vs-cat-tree/` |
 
 #### Shared 对比页面
 | 文件路径 | 路由 |
@@ -314,6 +369,7 @@
 | `src/app/[locale]/shared/compare/pet-insurance-vs-savings/page.tsx` | `/[locale]/shared/compare/pet-insurance-vs-savings/` |
 | `src/app/[locale]/shared/compare/microchip-vs-tattoo/page.tsx` | `/[locale]/shared/compare/microchip-vs-tattoo/` |
 | `src/app/[locale]/shared/compare/adopt-vs-buy/page.tsx` | `/[locale]/shared/compare/adopt-vs-buy/` |
+| `src/app/[locale]/shared/compare/pet-insurance-vs-emergency-fund/page.tsx` | `/[locale]/shared/compare/pet-insurance-vs-emergency-fund/` |
 
 ### 4.2 Widget 组件 (工具核心组件)
 
@@ -349,6 +405,8 @@
 | `src/components/shared/ChecklistRelatedTools.tsx` | 关联工具 |
 | `src/components/shared/ChecklistDisclaimer.tsx` | 清单页免责声明 |
 | `src/components/shared/ComparePage.tsx` | 对比页通用组件 |
+| `src/components/shared/FaqHubPage.tsx` | FAQ Hub 通用组件 |
+| `src/components/shared/SeasonalDangerPage.tsx` | 季节性安全专题通用组件 |
 | `src/components/shared/DisclaimerSection.tsx` | 免责声明区块 |
 
 ### 4.4 Hub 与页面组件
@@ -424,6 +482,7 @@
 | `src/lib/seo/disclaimer.ts` | 免责声明内容 |
 | `src/lib/seo/eu-travel-meta.ts` | EU 旅行 SEO |
 | `src/lib/seo/compare-data.ts` | 对比页数据 |
+| `src/lib/seo/faq-hub-data.ts` | FAQ Hub 聚合数据 |
 | `src/lib/seo/checklist-faq.ts` | 清单页 FAQ 数据 |
 | `src/lib/seo/checklist-content.ts` | 清单页知识卡片数据 |
 
@@ -452,7 +511,7 @@ sitemap.ts 为每个 locale 生成的条目：
 | 首页 | 1 | 固定 |
 | Hub 页 | 4 | dog, cat, shared, profile (getAllStaticPaths) |
 | 信任页 | 3 | about, privacy, terms |
-| 工具/指南/紧急/对比页 | 58 | getAllToolRoutes() |
+| 工具/指南/紧急/对比/FAQ页 | 64 | getAllToolRoutes() |
 | EU 旅行落地页 | 41 | getAllEUTravelRoutes() |
 | **每 locale 合计** | **90** | 1 + 4 + 3 + 58 + 41 |
 
@@ -493,6 +552,9 @@ sitemap.ts 为每个 locale 生成的条目：
 
 | 日期 | 变更内容 |
 |------|---------|
+| 2026-07-05 (Batch C) | 新增 4 个对比页（harness-vs-collar, pet-insurance-vs-emergency-fund, grain-free-vs-whole-grain, scratching-post-vs-cat-tree）。扩展 CompareKey 类型，新增 4 个数据页面。每个对比页含 Quick Comparison Table + Deep Dive 分析 + Verdict + FAQ + 关联工具 CTA。物理页面从 81 增至 85，sitemap 从 1,248 增至 1,296 条目 |
+| 2026-07-05 (Batch B) | 新增 8 个季节性安全专题页（summer-heat, winter-paw-care, christmas-foods, halloween-candy, fireworks-anxiety, spring-allergies, thanksgiving, easter-chocolate）。物理页面从 73 增至 81。新增 `SeasonalDangerPage` 组件和 `seasonal-data.ts` 数据层。新增 `seasonal` i18n 命名空间。更新 sitemap 统计数据（96→104/PerPage，1,152→1,248 总计） |
+| 2026-07-05 (Batch A) | 新增 6 个 FAQ Hub 聚合页（dog/cat × nutrition/health/aging）。物理页面从 67 增至 73。新增 `FaqHubPage` 组件和 `faq-hub-data.ts` 数据层。新增 `faqHub` i18n 命名空间。更新 sitemap 统计数据（90→96/PerPage，1,080→1,152 总计） |
 | 2026-07-04 (2) | 修复 3 个不一致项：(1) 创建 EU 旅行动态路由 `[...slug]/page.tsx` (2) 补充 17 个缺失的紧急页面路由到 routes.ts (3) 更新 sitemap 统计数据（63→90/PerPage，756→1,080 总计） |
 | 2026-07-04 | 全面更新：新增 45 个内容页面（Guide 6 + Emergency 26 + Compare 13）。物理页面从 22 增至 67。新增内容组件索引、SEO 文件索引。添加代码与文档一致性状态表。 |
 | 2026-07-03 | 移除毒性落地页规划（410 条动态路由）。原因：Doorway Page SEO 风险、法律合规风险、缺少物理路由文件、内容雷同。全站点从 5,688 条缩减为 756 条。 |

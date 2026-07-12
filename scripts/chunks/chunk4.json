@@ -1,0 +1,1202 @@
+[
+  {
+    "key": "emergency.ateMedication.riskAssessment.rows.1.risk",
+    "value": "High"
+  },
+  {
+    "key": "emergency.ateMedication.riskAssessment.rows.1.action",
+    "value": "🚨 Emergency vet NOW — liver failure"
+  },
+  {
+    "key": "emergency.ateMedication.riskAssessment.rows.2.weight",
+    "value": "Vitamin D / Calcium supplements"
+  },
+  {
+    "key": "emergency.ateMedication.riskAssessment.rows.2.amount",
+    "value": "Any amount"
+  },
+  {
+    "key": "emergency.ateMedication.riskAssessment.rows.2.risk",
+    "value": "Moderate"
+  },
+  {
+    "key": "emergency.ateMedication.riskAssessment.rows.2.action",
+    "value": "📞 Call vet immediately — hypercalcemia risk"
+  },
+  {
+    "key": "emergency.ateMedication.steps.0.title",
+    "value": "Gather All Medication Information"
+  },
+  {
+    "key": "emergency.ateMedication.steps.0.content",
+    "value": "Bring the pill bottle: drug name, strength (mg), number of pills missing. Calculate total mg consumed: strength × pills. This is critical for toxicity assessment."
+  },
+  {
+    "key": "emergency.ateMedication.steps.1.title",
+    "value": "Call Poison Control IMMEDIATELY"
+  },
+  {
+    "key": "emergency.ateMedication.steps.1.content",
+    "value": "ASPCA Poison Control: (888) 426-4435. Do NOT wait for symptoms — some medications cause delayed toxicity."
+  },
+  {
+    "key": "emergency.ateMedication.steps.2.title",
+    "value": "Do NOT Induce Vomiting Without Professional Guidance"
+  },
+  {
+    "key": "emergency.ateMedication.steps.2.content",
+    "value": "Some medications are rapidly absorbed; others can cause seizures if vomited. Only induce if ASPCA or your vet instructs you to."
+  },
+  {
+    "key": "emergency.ateMedication.steps.3.title",
+    "value": "Go to Emergency Vet for Decontamination"
+  },
+  {
+    "key": "emergency.ateMedication.steps.3.content",
+    "value": "Your vet will induce vomiting (if early), administer activated charcoal, and begin IV fluids. Blood work will monitor liver/kidney function for 24-72 hours."
+  },
+  {
+    "key": "emergency.ateMedication.science.content",
+    "value": "Dogs metabolize many drugs differently than humans. NSAIDs (ibuprofen) inhibit cyclooxygenase enzymes, reducing protective prostaglandins in the GI tract and kidneys, leading to ulceration and renal failure. Acetaminophen depletes glutathione in canine hepatocytes and converts hemoglobin to methemoglobin, impairing oxygen transport. Dogs are particularly sensitive to many ADHD medications (amphetamines) due to their effect on catecholamine release. Even \"harmless\" supplements like vitamin D can cause fatal hypercalcemia when ingested in large amounts (ASPCA, 2023)."
+  },
+  {
+    "key": "emergency.ateMedication.toxicityData.minimum",
+    "value": "Drug-dependent: Ibuprofen 50mg/kg, Acetaminophen 75mg/kg, single pill of some ADHD meds"
+  },
+  {
+    "key": "emergency.ateMedication.toxicityData.ld50",
+    "value": "Ibuprofen: 100mg/kg (fatal), Acetaminophen: 150mg/kg (Source: ASPCA)"
+  },
+  {
+    "key": "emergency.ateMedication.toxicityData.source",
+    "value": "ASPCA Animal Poison Control Center, 2023"
+  },
+  {
+    "key": "emergency.ateMedication.toxicityData.example",
+    "value": "A single 200mg ibuprofen tablet can cause kidney failure in a 4kg dog. Five tablets (1000mg) = 250mg/kg = potentially fatal dose."
+  },
+  {
+    "key": "emergency.ateMedication.timeline.0.time",
+    "value": "0-30 min"
+  },
+  {
+    "key": "emergency.ateMedication.timeline.0.color",
+    "value": "orange"
+  },
+  {
+    "key": "emergency.ateMedication.timeline.0.description",
+    "value": "Best window for induced vomiting. Call poison control before inducing."
+  },
+  {
+    "key": "emergency.ateMedication.timeline.1.time",
+    "value": "30 min - 4 hr"
+  },
+  {
+    "key": "emergency.ateMedication.timeline.1.color",
+    "value": "orange"
+  },
+  {
+    "key": "emergency.ateMedication.timeline.1.description",
+    "value": "Drug absorption phase. Symptoms begin for fast-acting drugs (ibuprofen): vomiting, abdominal pain."
+  },
+  {
+    "key": "emergency.ateMedication.timeline.2.time",
+    "value": "4-12 hours"
+  },
+  {
+    "key": "emergency.ateMedication.timeline.2.color",
+    "value": "orange"
+  },
+  {
+    "key": "emergency.ateMedication.timeline.2.description",
+    "value": "GI ulceration phase (NSAIDs). Symptoms: bloody vomiting, black tarry stool, kidney stress begins."
+  },
+  {
+    "key": "emergency.ateMedication.timeline.3.time",
+    "value": "12-72 hours"
+  },
+  {
+    "key": "emergency.ateMedication.timeline.3.color",
+    "value": "red"
+  },
+  {
+    "key": "emergency.ateMedication.timeline.3.description",
+    "value": "Organ damage phase: liver failure (acetaminophen), kidney failure (NSAIDs), seizures (antidepressants). Hospitalization required."
+  },
+  {
+    "key": "emergency.ateMedication.faqs.0.question",
+    "value": "Which human medications are most toxic to dogs?"
+  },
+  {
+    "key": "emergency.ateMedication.faqs.0.answer",
+    "value": "The most dangerous human medications for dogs include: (1) NSAIDs (ibuprofen, naproxen) — GI ulcers and kidney failure at 50mg/kg. (2) Acetaminophen (Tylenol) — liver damage and methemoglobinemia at 75mg/kg. (3) Antidepressants (SSRIs, SNRIs) — serotonin syndrome. (4) ADHD medications (amphetamines) — severe stimulation. (5) Benzodiazepines — paradoxical agitation. (6) Vitamin D supplements — fatal hypercalcemia."
+  },
+  {
+    "key": "emergency.ateMedication.faqs.1.question",
+    "value": "What are the symptoms of ibuprofen poisoning in dogs?"
+  },
+  {
+    "key": "emergency.ateMedication.faqs.1.answer",
+    "value": "Symptoms appear within 1-4 hours: vomiting (possibly with blood), loss of appetite, abdominal pain, and diarrhea. At toxic doses (50mg/kg+): kidney failure (increased thirst/urination, then decreased urine), GI ulceration, liver damage, and seizures. Megaesophagus (enlarged esophagus) can occur with chronic exposure. Treatment includes activated charcoal, gastroprotectants, IV fluids, and blood monitoring."
+  },
+  {
+    "key": "emergency.ateMedication.faqs.2.question",
+    "value": "Should I induce vomiting if my dog ate medication?"
+  },
+  {
+    "key": "emergency.ateMedication.faqs.2.answer",
+    "value": "Inducing vomiting may be recommended if ingestion occurred within 30 minutes and your dog is alert. However, do NOT induce vomiting for: caustic substances, if your dog is already symptomatic (seizures, ataxia), or if the medication is rapidly absorbed. Call ASPCA Poison Control at (888) 426-4435 with the drug name, strength, and estimated number of pills consumed."
+  },
+  {
+    "key": "emergency.ateMedication.faqs.3.question",
+    "value": "How is medication toxicity treated in dogs?"
+  },
+  {
+    "key": "emergency.ateMedication.faqs.3.answer",
+    "value": "Treatment depends on the drug: (1) Induced vomiting + activated charcoal (if early), (2) IV fluids for elimination, (3) Gastroprotectants (omeprazole, sucralfate) for NSAIDs, (4) N-acetylcysteine for acetaminophen, (5) Cyproheptadine for serotonin syndrome, (6) Lipid emulsion therapy for fat-soluble drugs. Hospitalization for 24-72 hours is typical for significant ingestions."
+  },
+  {
+    "key": "emergency.ateMedication.vetDecision.emergency.0",
+    "value": "Any amount of: antidepressant overdose, ADHD medication, insulin, or heart medications"
+  },
+  {
+    "key": "emergency.ateMedication.vetDecision.emergency.1",
+    "value": "Vomiting, tremors, or seizures after ingestion"
+  },
+  {
+    "key": "emergency.ateMedication.vetDecision.emergency.2",
+    "value": "Dog collapsed or unresponsive"
+  },
+  {
+    "key": "emergency.ateMedication.vetDecision.emergency.3",
+    "value": "More than 2-3x the toxic dose of any medication"
+  },
+  {
+    "key": "emergency.ateMedication.vetDecision.urgent.0",
+    "value": "Small dose (1-2 pills) of ibuprofen or acetaminophen"
+  },
+  {
+    "key": "emergency.ateMedication.vetDecision.urgent.1",
+    "value": "Any dose of vitamin D, calcium, or iron supplements"
+  },
+  {
+    "key": "emergency.ateMedication.vetDecision.urgent.2",
+    "value": "Dog alert but consumed unknown pills"
+  },
+  {
+    "key": "emergency.ateMedication.vetDecision.urgent.3",
+    "value": "Mild vomiting after medication ingestion"
+  },
+  {
+    "key": "emergency.ateMedication.vetDecision.monitor.0",
+    "value": "Single small pill at sub-toxic dose"
+  },
+  {
+    "key": "emergency.ateMedication.vetDecision.monitor.1",
+    "value": "No symptoms within 4 hours of small ingestion"
+  },
+  {
+    "key": "emergency.ateMedication.vetDecision.monitor.2",
+    "value": "Topical medication licked off skin (small amount)"
+  },
+  {
+    "key": "emergency.ateMedication.vetDecision.monitor.3",
+    "value": "Confirmed non-toxic supplement (B vitamins in small amounts)"
+  },
+  {
+    "key": "emergency.ateMedication.relatedTools.0.name",
+    "value": "Toxic Food & Plant Checker"
+  },
+  {
+    "key": "emergency.ateMedication.relatedTools.0.url",
+    "value": "/shared/toxic-checker/"
+  },
+  {
+    "key": "emergency.ateMedication.relatedTools.1.name",
+    "value": "Dog Calorie Calculator"
+  },
+  {
+    "key": "emergency.ateMedication.relatedTools.1.url",
+    "value": "/dog/calorie-calculator/"
+  },
+  {
+    "key": "emergency.ateRodenticide.breadcrumbLabel",
+    "value": "Ate Rodenticide"
+  },
+  {
+    "key": "emergency.ateRodenticide.meta.title",
+    "value": "My Dog Ate Rat Poison: Emergency Guide | petsMetrics"
+  },
+  {
+    "key": "emergency.ateRodenticide.meta.description",
+    "value": "Emergency guide: Rodenticide (rat poison) is extremely toxic to dogs. Learn about anticoagulant vs neurotoxic types, symptoms, and why immediate treatment is critical. ASPCA Poison Control: (888) 426-4435."
+  },
+  {
+    "key": "emergency.ateRodenticide.meta.keywords",
+    "value": "my dog ate rat poison, rodenticide poisoning dogs, dog ate rat bait, anticoagulant poisoning dogs, dog ate bromethalin"
+  },
+  {
+    "key": "emergency.ateRodenticide.article.headline",
+    "value": "My Dog Ate Rat Poison: Emergency Guide"
+  },
+  {
+    "key": "emergency.ateRodenticide.article.description",
+    "value": "Emergency guide for rodenticide poisoning in dogs: anticoagulant and neurotoxic types, symptoms, and treatment."
+  },
+  {
+    "key": "emergency.ateRodenticide.article.ogTitle",
+    "value": "My Dog Ate Rat Poison: Emergency Guide | petsMetrics"
+  },
+  {
+    "key": "emergency.ateRodenticide.article.ogDescription",
+    "value": "Emergency guide: Rodenticide is deadly toxic to dogs. Even small amounts require immediate treatment."
+  },
+  {
+    "key": "emergency.ateRodenticide.banner.severityLabel",
+    "value": "EXTREMELY TOXIC — Life-Threatening, Act Now"
+  },
+  {
+    "key": "emergency.ateRodenticide.banner.title",
+    "value": "My Dog Ate Rat Poison: What to Do Now"
+  },
+  {
+    "key": "emergency.ateRodenticide.banner.subtitle",
+    "value": "Rodenticide is one of the deadliest dog toxins. <strong>Do not wait for symptoms</strong> — anticoagulant effects are delayed 2-5 days. Call ASPCA Poison Control at <strong>(888) 426-4435</strong> and go to emergency vet NOW."
+  },
+  {
+    "key": "emergency.ateRodenticide.riskAssessment.headers.type",
+    "value": "Rodenticide Type"
+  },
+  {
+    "key": "emergency.ateRodenticide.riskAssessment.headers.activeIngredient",
+    "value": "Active Ingredient"
+  },
+  {
+    "key": "emergency.ateRodenticide.riskAssessment.headers.riskLevel",
+    "value": "Risk Level"
+  },
+  {
+    "key": "emergency.ateRodenticide.riskAssessment.headers.actionRequired",
+    "value": "Action Required"
+  },
+  {
+    "key": "emergency.ateRodenticide.riskAssessment.rows.0.type",
+    "value": "Anticoagulant (multi-dose)"
+  },
+  {
+    "key": "emergency.ateRodenticide.riskAssessment.rows.0.activeIngredient",
+    "value": "Brodifacoum, Bromadiolone"
+  },
+  {
+    "key": "emergency.ateRodenticide.riskAssessment.rows.0.riskLevel",
+    "value": "CRITICAL"
+  },
+  {
+    "key": "emergency.ateRodenticide.riskAssessment.rows.0.action",
+    "value": "🚨 Emergency vet NOW — internal bleeding delayed"
+  },
+  {
+    "key": "emergency.ateRodenticide.riskAssessment.rows.1.type",
+    "value": "Neurotoxic"
+  },
+  {
+    "key": "emergency.ateRodenticide.riskAssessment.rows.1.activeIngredient",
+    "value": "Bromethalin, Strychnine"
+  },
+  {
+    "key": "emergency.ateRodenticide.riskAssessment.rows.1.riskLevel",
+    "value": "CRITICAL"
+  },
+  {
+    "key": "emergency.ateRodenticide.riskAssessment.rows.1.action",
+    "value": "🚨 Emergency vet NOW — seizures within hours"
+  },
+  {
+    "key": "emergency.ateRodenticide.riskAssessment.rows.2.type",
+    "value": "Cholecalciferol"
+  },
+  {
+    "key": "emergency.ateRodenticide.riskAssessment.rows.2.activeIngredient",
+    "value": "Vitamin D3"
+  },
+  {
+    "key": "emergency.ateRodenticide.riskAssessment.rows.2.riskLevel",
+    "value": "HIGH"
+  },
+  {
+    "key": "emergency.ateRodenticide.riskAssessment.rows.2.action",
+    "value": "🚨 Emergency vet NOW — kidney failure"
+  },
+  {
+    "key": "emergency.ateRodenticide.steps.0.title",
+    "value": "Step 1: This Is a Dire Emergency"
+  },
+  {
+    "key": "emergency.ateRodenticide.steps.0.content",
+    "value": "Do NOT wait for symptoms. Anticoagulant rodenticides have a 2-5 day delay before bleeding begins. By the time symptoms appear, the damage is done. Call ASPCA Poison Control at (888) 426-4435 NOW."
+  },
+  {
+    "key": "emergency.ateRodenticide.steps.1.title",
+    "value": "Step 2: Bring the Product Package"
+  },
+  {
+    "key": "emergency.ateRodenticide.steps.1.content",
+    "value": "Take the bait package or a photo to the vet. The active ingredient determines treatment: anticoagulants need Vitamin K1; bromethalin needs brain swelling management; cholecalciferol needs calcium-lowering therapy."
+  },
+  {
+    "key": "emergency.ateRodenticide.steps.2.title",
+    "value": "Step 3: Go to Emergency Vet for Decontamination"
+  },
+  {
+    "key": "emergency.ateRodenticide.steps.2.content",
+    "value": "Your vet will induce vomiting (if within 1-2 hours), administer activated charcoal, and start specific antidotes. For anticoagulants: Vitamin K1 for 4-6 weeks with blood clotting tests."
+  },
+  {
+    "key": "emergency.ateRodenticide.steps.3.title",
+    "value": "Step 4: Hospitalization May Be Required"
+  },
+  {
+    "key": "emergency.ateRodenticide.steps.3.content",
+    "value": "Bromethalin poisoning requires 24-72 hour monitoring with mannitol for brain swelling. Anticoagulant cases need plasma transfusions if bleeding is active. Early treatment dramatically improves survival."
+  },
+  {
+    "key": "emergency.ateRodenticide.science.content",
+    "value": "Anticoagulant rodenticides inhibit vitamin K epoxide reductase (VKOR), preventing recycling of vitamin K. This depletes active clotting factors (II, VII, IX, X), causing spontaneous hemorrhage. Second-generation anticoagulants (brodifacoum, bromadiolone) are 100x more potent than warfarin and persist in the liver for weeks. Bromethalin uncouples oxidative phosphorylation in brain cells, causing cerebral edema and increased intracranial pressure. Cholecalciferol (vitamin D3) causes hypercalcemia, leading to metastatic calcification of kidneys, heart, and blood vessels (ASPCA, 2023)."
+  },
+  {
+    "key": "emergency.ateRodenticide.faqs.0.question",
+    "value": "Is rat poison deadly to dogs?"
+  },
+  {
+    "key": "emergency.ateRodenticide.faqs.0.answer",
+    "value": "Yes, rat poison (rodenticide) is one of the most deadly toxins for dogs. There are two main types: (1) Anticoagulant rodenticides (warfarin, bromadiolone, brodifacoum) — prevent blood clotting, causing fatal internal bleeding. Single-dose types require one feeding; multiple-dose types are cumulative. (2) Neurotoxic rodenticides (bromethalin, strychnine, cholecalciferol) — cause brain swelling, seizures, or hypercalcium within hours. Without treatment, mortality rates are 50-90%."
+  },
+  {
+    "key": "emergency.ateRodenticide.faqs.1.question",
+    "value": "What are the symptoms of rat poison in dogs?"
+  },
+  {
+    "key": "emergency.ateRodenticide.faqs.1.answer",
+    "value": "Anticoagulant symptoms appear 2-5 days after ingestion: weakness, pale gums, coughing blood, bloody vomit/diarrhea, nosebleeds, and collapse. Neurotoxic (bromethalin) symptoms appear within 2-24 hours: severe muscle tremors, seizures, ataxia, and paralysis. Cholecalciferol causes kidney failure with increased thirst/urination within 12-36 hours."
+  },
+  {
+    "key": "emergency.ateRodenticide.faqs.2.question",
+    "value": "Can my dog survive rat poison?"
+  },
+  {
+    "key": "emergency.ateRodenticide.faqs.2.answer",
+    "value": "Yes, with immediate treatment. Anticoagulant poisoning is treatable with Vitamin K1 for 4-6 weeks; survival rate is 80-90% if treated before symptoms appear. Bromethalin has no antidote — treatment is supportive care (activated charcoal, mannitol for brain swelling) with 50-70% survival if treated early. Strychnine and cholecalciferol also require immediate veterinary intervention."
+  },
+  {
+    "key": "emergency.ateRodenticide.faqs.3.question",
+    "value": "What should I do if my dog ate rat poison?"
+  },
+  {
+    "key": "emergency.ateRodenticide.faqs.3.answer",
+    "value": "Treat this as a dire emergency: (1) Call ASPCA Poison Control at (888) 426-4435 immediately. (2) Go to the nearest emergency vet NOW — do not wait for symptoms. (3) Bring the product label to identify the active ingredient. (4) Induced vomiting within 1-2 hours may help prevent absorption. (5) Even if your dog seems fine, delayed symptoms are common and early treatment is life-saving."
+  },
+  {
+    "key": "emergency.ateRodenticide.relatedTools.0.name",
+    "value": "Toxic Food & Plant Checker"
+  },
+  {
+    "key": "emergency.ateRodenticide.relatedTools.0.url",
+    "value": "/shared/toxic-checker/"
+  },
+  {
+    "key": "emergency.ateRodenticide.relatedTools.1.name",
+    "value": "Dog Calorie Calculator"
+  },
+  {
+    "key": "emergency.ateRodenticide.relatedTools.1.url",
+    "value": "/dog/calorie-calculator/"
+  },
+  {
+    "key": "emergency.ateTobacco.breadcrumbLabel",
+    "value": "Ate Tobacco"
+  },
+  {
+    "key": "emergency.ateTobacco.meta.title",
+    "value": "My Dog Ate Tobacco/Cigarettes: Emergency Guide | petsMetrics"
+  },
+  {
+    "key": "emergency.ateTobacco.meta.description",
+    "value": "Emergency guide: Nicotine in tobacco, cigarettes, and e-liquid is highly toxic to dogs. Learn symptoms (vomiting, tachycardia, seizures), toxic doses, and immediate actions. ASPCA Poison Control: (888) 426-4435."
+  },
+  {
+    "key": "emergency.ateTobacco.meta.keywords",
+    "value": "my dog ate cigarettes, dog ate nicotine, dog ate vape liquid, tobacco poisoning dogs, dog ate cigarette butt"
+  },
+  {
+    "key": "emergency.ateTobacco.article.headline",
+    "value": "My Dog Ate Tobacco/Cigarettes: Emergency Guide"
+  },
+  {
+    "key": "emergency.ateTobacco.article.description",
+    "value": "Emergency guide for nicotine toxicity in dogs: cigarettes, e-liquid, nicotine gum, and patches."
+  },
+  {
+    "key": "emergency.ateTobacco.article.ogTitle",
+    "value": "My Dog Ate Tobacco: Emergency Guide | petsMetrics"
+  },
+  {
+    "key": "emergency.ateTobacco.article.ogDescription",
+    "value": "Emergency guide: Nicotine is toxic to dogs. Assess risk, symptoms, and treatment."
+  },
+  {
+    "key": "emergency.ateTobacco.banner.severityLabel",
+    "value": "TOXIC — Nicotine Is Rapidly Absorbed"
+  },
+  {
+    "key": "emergency.ateTobacco.banner.title",
+    "value": "My Dog Ate Tobacco/Cigarettes: What to Do Now"
+  },
+  {
+    "key": "emergency.ateTobacco.banner.subtitle",
+    "value": "Nicotine is highly toxic to dogs at 20-100mg/kg. E-liquid (vape juice) is especially dangerous due to high concentration. Call ASPCA Poison Control at <strong>(888) 426-4435</strong> immediately."
+  },
+  {
+    "key": "emergency.ateTobacco.riskAssessment.headers.source",
+    "value": "Nicotine Source"
+  },
+  {
+    "key": "emergency.ateTobacco.riskAssessment.headers.amount",
+    "value": "Amount"
+  },
+  {
+    "key": "emergency.ateTobacco.riskAssessment.headers.riskLevel",
+    "value": "Risk Level"
+  },
+  {
+    "key": "emergency.ateTobacco.riskAssessment.headers.actionRequired",
+    "value": "Action Required"
+  },
+  {
+    "key": "emergency.ateTobacco.riskAssessment.rows.0.source",
+    "value": "E-liquid (any amount)"
+  },
+  {
+    "key": "emergency.ateTobacco.riskAssessment.rows.0.amount",
+    "value": "Even a few drops"
+  },
+  {
+    "key": "emergency.ateTobacco.riskAssessment.rows.0.riskLevel",
+    "value": "CRITICAL"
+  },
+  {
+    "key": "emergency.ateTobacco.riskAssessment.rows.0.action",
+    "value": "🚨 Emergency vet NOW — highly concentrated"
+  },
+  {
+    "key": "emergency.ateTobacco.riskAssessment.rows.1.source",
+    "value": "Nicotine patch"
+  },
+  {
+    "key": "emergency.ateTobacco.riskAssessment.rows.1.amount",
+    "value": "1+ patch"
+  },
+  {
+    "key": "emergency.ateTobacco.riskAssessment.rows.1.riskLevel",
+    "value": "HIGH"
+  },
+  {
+    "key": "emergency.ateTobacco.riskAssessment.rows.1.action",
+    "value": "🚨 Emergency vet NOW — sustained release"
+  },
+  {
+    "key": "emergency.ateTobacco.riskAssessment.rows.2.source",
+    "value": "Cigarettes (1-2)"
+  },
+  {
+    "key": "emergency.ateTobacco.riskAssessment.rows.2.amount",
+    "value": "10-30mg total"
+  },
+  {
+    "key": "emergency.ateTobacco.riskAssessment.rows.2.riskLevel",
+    "value": "Moderate"
+  },
+  {
+    "key": "emergency.ateTobacco.riskAssessment.rows.2.action",
+    "value": "📞 Call vet or poison control"
+  },
+  {
+    "key": "emergency.ateTobacco.steps.0.title",
+    "value": "Step 1: Calculate Total Nicotine"
+  },
+  {
+    "key": "emergency.ateTobacco.steps.0.content",
+    "value": "Count cigarettes/packages consumed. Cigarette: 10-15mg each. E-liquid: check mg/mL concentration × mL consumed. This determines toxicity risk."
+  },
+  {
+    "key": "emergency.ateTobacco.steps.1.title",
+    "value": "Step 2: Call Poison Control IMMEDIATELY"
+  },
+  {
+    "key": "emergency.ateTobacco.steps.1.content",
+    "value": "📞 <strong>ASPCA Poison Control:</strong> (888) 426-4435. Nicotine is absorbed rapidly through oral mucosa — effects can begin within 15 minutes."
+  },
+  {
+    "key": "emergency.ateTobacco.steps.2.title",
+    "value": "Step 3: Do NOT Induce Vomiting If Symptomatic"
+  },
+  {
+    "key": "emergency.ateTobacco.steps.2.content",
+    "value": "⚠️ If your dog shows tremors, seizures, or agitation, inducing vomiting risks aspiration. Only induce if instructed by a professional AND your dog is asymptomatic within 15 minutes."
+  },
+  {
+    "key": "emergency.ateTobacco.steps.3.title",
+    "value": "Step 4: Go to Emergency Vet for Monitoring"
+  },
+  {
+    "key": "emergency.ateTobacco.steps.3.content",
+    "value": "Your vet will administer activated charcoal, provide IV fluids, and monitor heart rhythm and respiratory function. Symptoms can progress rapidly."
+  },
+  {
+    "key": "emergency.ateTobacco.science.content",
+    "value": "Nicotine is an alkaloid that binds to nicotinic acetylcholine receptors (nAChRs) in the autonomic ganglia, neuromuscular junctions, and CNS. At low doses, it stimulates receptors causing tachycardia, hypertension, and CNS excitation. At high doses, it causes receptor depolarization blockade, leading to bradycardia, respiratory paralysis, and coma. The biphasic effect (stimulation then depression) is pathognomonic. Dogs metabolize nicotine primarily via hepatic N-oxidation, with a half-life of approximately 1.5 hours. E-liquid poses extreme danger because 1mL can contain 3-24mg of nicotine absorbed rapidly through oral mucosa (ASPCA, 2023)."
+  },
+  {
+    "key": "emergency.ateTobacco.faqs.0.question",
+    "value": "How much nicotine is toxic to dogs?"
+  },
+  {
+    "key": "emergency.ateTobacco.faqs.0.answer",
+    "value": "The toxic dose of nicotine in dogs is 20-100mg/kg. For a 20kg dog, this equals 400-2000mg of nicotine. Sources: 1 cigarette = 10-15mg nicotine, 1 cigarette butt = 5-7mg, nicotine patch = 8-21mg, nicotine gum = 2-4mg, e-liquid = 3-24mg/mL (highly concentrated). Even ONE cigarette can cause symptoms in a small dog."
+  },
+  {
+    "key": "emergency.ateTobacco.faqs.1.question",
+    "value": "What are the symptoms of nicotine poisoning in dogs?"
+  },
+  {
+    "key": "emergency.ateTobacco.faqs.1.answer",
+    "value": "Symptoms appear within 15-60 minutes: hypersalivation, vomiting, tachycardia (rapid heart rate), muscle tremors, agitation, and hypertension. As toxicity progresses: bradycardia (slow heart rate), weakness, collapse, respiratory paralysis, and seizures. The biphasic effect — first excitation then depression — is characteristic of nicotine poisoning."
+  },
+  {
+    "key": "emergency.ateTobacco.faqs.2.question",
+    "value": "Is vape liquid dangerous for dogs?"
+  },
+  {
+    "key": "emergency.ateTobacco.faqs.2.answer",
+    "value": "Yes, e-liquid (vape juice) is EXTREMELY dangerous due to high nicotine concentration. A single 10mL bottle can contain 30-240mg of nicotine — enough to kill multiple small dogs. The sweet flavorings also attract dogs. Ingestion of even small amounts requires emergency veterinary treatment."
+  },
+  {
+    "key": "emergency.ateTobacco.faqs.3.question",
+    "value": "What should I do if my dog ate tobacco?"
+  },
+  {
+    "key": "emergency.ateTobacco.faqs.3.answer",
+    "value": "Call ASPCA Poison Control at (888) 426-4435 immediately. Calculate total nicotine consumed: mg per item × number of items. Go to emergency vet if your dog ingested: (1) more than 1 cigarette, (2) any e-liquid, (3) a nicotine patch, or (4) any amount if your dog shows symptoms. Do NOT induce vomiting if seizures or tremors are present."
+  },
+  {
+    "key": "emergency.ateTobacco.relatedTools.0.name",
+    "value": "Toxic Food & Plant Checker"
+  },
+  {
+    "key": "emergency.ateTobacco.relatedTools.0.url",
+    "value": "/shared/toxic-checker/"
+  },
+  {
+    "key": "emergency.ateTobacco.relatedTools.1.name",
+    "value": "Dog Calorie Calculator"
+  },
+  {
+    "key": "emergency.ateTobacco.relatedTools.1.url",
+    "value": "/dog/calorie-calculator/"
+  },
+  {
+    "key": "emergency.ateMarijuana.breadcrumbLabel",
+    "value": "Ate Marijuana"
+  },
+  {
+    "key": "emergency.ateMarijuana.meta.title",
+    "value": "My Dog Ate Marijuana/Edibles: Emergency Guide | petsMetrics"
+  },
+  {
+    "key": "emergency.ateMarijuana.meta.description",
+    "value": "Emergency guide: THC is toxic to dogs. Marijuana edibles (gummies, brownies) are extremely dangerous due to high THC concentration and chocolate. Learn symptoms and immediate actions. ASPCA Poison Control: (888) 426-4435."
+  },
+  {
+    "key": "emergency.ateMarijuana.meta.keywords",
+    "value": "my dog ate marijuana edibles, dog ate THC, dog ate weed, marijuana poisoning dogs, dog ate cannabis gummies"
+  },
+  {
+    "key": "emergency.ateMarijuana.article.headline",
+    "value": "My Dog Ate Marijuana/Edibles: Emergency Guide"
+  },
+  {
+    "key": "emergency.ateMarijuana.article.description",
+    "value": "Emergency guide for THC toxicity in dogs: marijuana edibles, symptoms, and treatment."
+  },
+  {
+    "key": "emergency.ateMarijuana.article.ogTitle",
+    "value": "My Dog Ate Marijuana: Emergency Guide | petsMetrics"
+  },
+  {
+    "key": "emergency.ateMarijuana.article.ogDescription",
+    "value": "Emergency guide: Marijuana edibles are toxic to dogs. Act immediately."
+  },
+  {
+    "key": "emergency.ateMarijuana.banner.severityLabel",
+    "value": "DANGEROUS — Cannabis Edibles Are Highly Toxic"
+  },
+  {
+    "key": "emergency.ateMarijuana.banner.title",
+    "value": "My Dog Ate Marijuana/Edibles: What to Do Now"
+  },
+  {
+    "key": "emergency.ateMarijuana.banner.subtitle",
+    "value": "Dogs are more sensitive to THC than humans. Edibles (gummies, brownies) are especially dangerous due to high concentration. Call ASPCA Poison Control at <strong>(888) 426-4435</strong>."
+  },
+  {
+    "key": "emergency.ateMarijuana.honestySection.title",
+    "value": "📋 Important: Be Honest With Your Vet"
+  },
+  {
+    "key": "emergency.ateMarijuana.honestySection.content",
+    "value": "Veterinarians are <strong>required to treat, not report</strong>, pet poisonings. Accurate information about marijuana ingestion ensures your dog receives proper care without unnecessary testing. Your honesty is protected and helps save your dog's life."
+  },
+  {
+    "key": "emergency.ateMarijuana.riskAssessment.headers.productType",
+    "value": "Product Type"
+  },
+  {
+    "key": "emergency.ateMarijuana.riskAssessment.headers.amountEaten",
+    "value": "Amount Eaten"
+  },
+  {
+    "key": "emergency.ateMarijuana.riskAssessment.headers.riskLevel",
+    "value": "Risk Level"
+  },
+  {
+    "key": "emergency.ateMarijuana.riskAssessment.headers.actionRequired",
+    "value": "Action Required"
+  },
+  {
+    "key": "emergency.ateMarijuana.riskAssessment.rows.0.productType",
+    "value": "Edibles (gummies, brownies)"
+  },
+  {
+    "key": "emergency.ateMarijuana.riskAssessment.rows.0.amountEaten",
+    "value": "Any amount"
+  },
+  {
+    "key": "emergency.ateMarijuana.riskAssessment.rows.0.riskLevel",
+    "value": "HIGH"
+  },
+  {
+    "key": "emergency.ateMarijuana.riskAssessment.rows.0.action",
+    "value": "🚨 Emergency vet NOW — high THC + chocolate"
+  },
+  {
+    "key": "emergency.ateMarijuana.riskAssessment.rows.1.productType",
+    "value": "Dried cannabis"
+  },
+  {
+    "key": "emergency.ateMarijuana.riskAssessment.rows.1.amountEaten",
+    "value": "> 1 gram"
+  },
+  {
+    "key": "emergency.ateMarijuana.riskAssessment.rows.1.riskLevel",
+    "value": "Moderate"
+  },
+  {
+    "key": "emergency.ateMarijuana.riskAssessment.rows.1.action",
+    "value": "📞 Call vet or poison control"
+  },
+  {
+    "key": "emergency.ateMarijuana.riskAssessment.rows.2.productType",
+    "value": "CBD products"
+  },
+  {
+    "key": "emergency.ateMarijuana.riskAssessment.rows.2.amountEaten",
+    "value": "Any amount (check for xylitol!)"
+  },
+  {
+    "key": "emergency.ateMarijuana.riskAssessment.rows.2.riskLevel",
+    "value": "Check ingredients"
+  },
+  {
+    "key": "emergency.ateMarijuana.riskAssessment.rows.2.action",
+    "value": "📞 May also contain xylitol — call vet"
+  },
+  {
+    "key": "emergency.ateMarijuana.steps.0.title",
+    "value": "Step 1: Remove All Remaining Product"
+  },
+  {
+    "key": "emergency.ateMarijuana.steps.0.content",
+    "value": "Check for packaging — note THC content in mg per piece and total pieces eaten. This determines toxicity risk."
+  },
+  {
+    "key": "emergency.ateMarijuana.steps.1.title",
+    "value": "Step 2: Check for Xylitol (CBD Products)"
+  },
+  {
+    "key": "emergency.ateMarijuana.steps.1.content",
+    "value": "⚠️ Some CBD oils contain xylitol, which is extremely toxic to dogs. Check the ingredient list immediately."
+  },
+  {
+    "key": "emergency.ateMarijuana.steps.2.title",
+    "value": "Step 3: Call Poison Control or Vet"
+  },
+  {
+    "key": "emergency.ateMarijuana.steps.2.content",
+    "value": "📞 <strong>ASPCA Poison Control:</strong> (888) 426-4435. Be honest — they will provide guidance without judgment."
+  },
+  {
+    "key": "emergency.ateMarijuana.steps.3.title",
+    "value": "Step 4: Monitor Symptoms"
+  },
+  {
+    "key": "emergency.ateMarijuana.steps.3.content",
+    "value": "Watch for: stumbling, dilated pupils, urinary incontinence, drooling, slow heart rate, hypothermia. Severe cases: seizures or coma. Symptoms can last 12-72 hours."
+  },
+  {
+    "key": "emergency.ateMarijuana.science.content",
+    "value": "Delta-9-tetrahydrocannabinol (THC) binds to CB1 cannabinoid receptors in the canine central nervous system. Dogs have a higher density of CB1 receptors in the cerebellum (responsible for coordination) and brainstem than humans, explaining their heightened sensitivity. THC is lipophilic and undergoes enterohepatic recirculation, prolonging effects. Edibles are dangerous because the GI tract absorbs THC rapidly, and the liver converts 11-hydroxy-THC, which is 5x more psychoactive. Most cases are supportive — there is no specific antidote, but IV lipid emulsion therapy can accelerate THC clearance (ASPCA, 2023)."
+  },
+  {
+    "key": "emergency.ateMarijuana.faqs.0.question",
+    "value": "Is marijuana toxic to dogs?"
+  },
+  {
+    "key": "emergency.ateMarijuana.faqs.0.answer",
+    "value": "Yes, THC (tetrahydrocannabinol) is toxic to dogs. Dogs have more cannabinoid receptors (CB1) in the brain than humans, making them significantly more sensitive. Edibles (gummies, brownies, cookies) are especially dangerous due to high THC concentration — one gummy can contain 10-100mg THC, which is toxic to most dogs."
+  },
+  {
+    "key": "emergency.ateMarijuana.faqs.1.question",
+    "value": "What are the symptoms of marijuana poisoning in dogs?"
+  },
+  {
+    "key": "emergency.ateMarijuana.faqs.1.answer",
+    "value": "Symptoms appear within 30-90 minutes: dazed appearance, stumbling/ataxia, urinary incontinence (dripping urine), drooling, dilated pupils, vomiting, tremors, bradycardia (slow heart rate), hypothermia, and in severe cases: seizures or coma. Be honest with your vet — marijuana toxicosis is rarely fatal, and honesty ensures proper treatment."
+  },
+  {
+    "key": "emergency.ateMarijuana.faqs.2.question",
+    "value": "Are marijuana edibles more dangerous than dried cannabis?"
+  },
+  {
+    "key": "emergency.ateMarijuana.faqs.2.answer",
+    "value": "Yes, edibles are significantly more dangerous: (1) High THC concentration (10-100mg per piece), (2) Often contain chocolate (double toxicity), (3) Faster absorption from GI tract, (4) Dogs eat multiple pieces quickly. Edibles account for the majority of severe cannabis toxicosis cases in dogs."
+  },
+  {
+    "key": "emergency.ateMarijuana.faqs.3.question",
+    "value": "Can a dog die from eating marijuana?"
+  },
+  {
+    "key": "emergency.ateMarijuana.faqs.3.answer",
+    "value": "Fatalities from marijuana alone are rare in dogs — the LD50 is very high (over 3g/kg of THC). However, edibles pose additional risks: chocolate toxicity, xylitol in some CBD products, and overdose from multiple ingestion. Death is more likely from complications (aspiration pneumonia, hypothermia) or combined toxins. Always seek veterinary care."
+  },
+  {
+    "key": "emergency.ateMarijuana.faqs.4.question",
+    "value": "Should I tell my vet my dog ate marijuana?"
+  },
+  {
+    "key": "emergency.ateMarijuana.faqs.4.answer",
+    "value": "Yes, always be honest. Veterinarians are required to treat, not report, pet poisonings. Knowing your dog ate marijuana ensures they provide appropriate care: inducing vomiting (if early), activated charcoal, IV fluids, thermoregulation, and monitoring heart rate. Without this information, your dog may undergo unnecessary tests or receive inappropriate treatment."
+  },
+  {
+    "key": "emergency.ateMarijuana.relatedTools.0.name",
+    "value": "Toxic Food & Plant Checker"
+  },
+  {
+    "key": "emergency.ateMarijuana.relatedTools.0.url",
+    "value": "/shared/toxic-checker/"
+  },
+  {
+    "key": "emergency.ateMarijuana.relatedTools.1.name",
+    "value": "Dog Calorie Calculator"
+  },
+  {
+    "key": "emergency.ateMarijuana.relatedTools.1.url",
+    "value": "/dog/calorie-calculator/"
+  },
+  {
+    "key": "emergency.ateXylitolGum.breadcrumbLabel",
+    "value": "Ate Xylitol Gum"
+  },
+  {
+    "key": "emergency.ateXylitolGum.meta.title",
+    "value": "My Dog Ate Xylitol Gum: Emergency Guide | petsMetrics"
+  },
+  {
+    "key": "emergency.ateXylitolGum.meta.description",
+    "value": "Emergency guide: Xylitol (birch sugar) is extremely toxic to dogs. Even one piece of gum causes life-threatening hypoglycemia and liver failure. Learn symptoms and immediate actions. ASPCA Poison Control: (888) 426-4435."
+  },
+  {
+    "key": "emergency.ateXylitolGum.meta.keywords",
+    "value": "my dog ate xylitol gum, xylitol poisoning dogs, dog ate sugar free gum, xylitol toxic to dogs, dog ate birch sugar"
+  },
+  {
+    "key": "emergency.ateXylitolGum.article.headline",
+    "value": "My Dog Ate Xylitol Gum: Emergency Guide"
+  },
+  {
+    "key": "emergency.ateXylitolGum.article.description",
+    "value": "Emergency guide for xylitol toxicity in dogs: hypoglycemia, liver failure, and life-saving treatment."
+  },
+  {
+    "key": "emergency.ateXylitolGum.article.ogTitle",
+    "value": "My Dog Ate Xylitol Gum: Emergency Guide | petsMetrics"
+  },
+  {
+    "key": "emergency.ateXylitolGum.article.ogDescription",
+    "value": "Emergency guide: Xylitol causes fatal hypoglycemia and liver failure in dogs. Act immediately."
+  },
+  {
+    "key": "emergency.ateXylitolGum.banner.severityLabel",
+    "value": "EXTREMELY TOXIC — Life-Threatening, One Piece Can Kill"
+  },
+  {
+    "key": "emergency.ateXylitolGum.banner.title",
+    "value": "My Dog Ate Xylitol Gum: What to Do Now"
+  },
+  {
+    "key": "emergency.ateXylitolGum.banner.subtitle",
+    "value": "Xylitol triggers a massive insulin release causing life-threatening hypoglycemia and liver failure. <strong>One piece of gum can kill a small dog.</strong> Go to emergency vet NOW."
+  },
+  {
+    "key": "emergency.ateXylitolGum.riskAssessment.headers.amountEaten",
+    "value": "Amount Eaten"
+  },
+  {
+    "key": "emergency.ateXylitolGum.riskAssessment.headers.xylitolContent",
+    "value": "Xylitol Content"
+  },
+  {
+    "key": "emergency.ateXylitolGum.riskAssessment.headers.riskLevel",
+    "value": "Risk Level"
+  },
+  {
+    "key": "emergency.ateXylitolGum.riskAssessment.headers.actionRequired",
+    "value": "Action Required"
+  },
+  {
+    "key": "emergency.ateXylitolGum.riskAssessment.rows.0.amountEaten",
+    "value": "> 0.1g/kg"
+  },
+  {
+    "key": "emergency.ateXylitolGum.riskAssessment.rows.0.xylitolContent",
+    "value": "1+ pieces"
+  },
+  {
+    "key": "emergency.ateXylitolGum.riskAssessment.rows.0.riskLevel",
+    "value": "CRITICAL"
+  },
+  {
+    "key": "emergency.ateXylitolGum.riskAssessment.rows.0.action",
+    "value": "🚨 Emergency vet NOW — fatal hypoglycemia"
+  },
+  {
+    "key": "emergency.ateXylitolGum.riskAssessment.rows.1.amountEaten",
+    "value": "> 0.5g/kg"
+  },
+  {
+    "key": "emergency.ateXylitolGum.riskAssessment.rows.1.xylitolContent",
+    "value": "2+ pieces"
+  },
+  {
+    "key": "emergency.ateXylitolGum.riskAssessment.rows.1.riskLevel",
+    "value": "CRITICAL"
+  },
+  {
+    "key": "emergency.ateXylitolGum.riskAssessment.rows.1.action",
+    "value": "🚨 Emergency vet NOW — liver failure too"
+  },
+  {
+    "key": "emergency.ateXylitolGum.riskAssessment.rows.2.amountEaten",
+    "value": "Any amount"
+  },
+  {
+    "key": "emergency.ateXylitolGum.riskAssessment.rows.2.xylitolContent",
+    "value": "Gum/packaging visible"
+  },
+  {
+    "key": "emergency.ateXylitolGum.riskAssessment.rows.2.riskLevel",
+    "value": "CALL VET"
+  },
+  {
+    "key": "emergency.ateXylitolGum.riskAssessment.rows.2.action",
+    "value": "📞 Call immediately — don't wait"
+  },
+  {
+    "key": "emergency.ateXylitolGum.steps.0.title",
+    "value": "Step 1: Calculate Total Xylitol Consumed"
+  },
+  {
+    "key": "emergency.ateXylitolGum.steps.0.content",
+    "value": "Find the packaging. Xylitol content is listed in grams per piece. Calculate: grams per piece × pieces eaten. This determines whether hypoglycemia risk (0.1g/kg) or liver failure risk (0.5g/kg) threshold is crossed."
+  },
+  {
+    "key": "emergency.ateXylitolGum.steps.1.title",
+    "value": "Step 2: Call Poison Control and Go to Emergency Vet"
+  },
+  {
+    "key": "emergency.ateXylitolGum.steps.1.content",
+    "value": "📞 <strong>ASPCA Poison Control:</strong> (888) 426-4435. Do NOT wait for symptoms — hypoglycemia can cause death within hours. Xylitol is absorbed rapidly."
+  },
+  {
+    "key": "emergency.ateXylitolGum.steps.2.title",
+    "value": "Step 3: Do NOT Induce Vomiting Without Vet Approval"
+  },
+  {
+    "key": "emergency.ateXylitolGum.steps.2.content",
+    "value": "⚠️ If instructed to induce at home, use hydrogen peroxide (1 tsp per 5lbs). But go to vet ASAP — xylitol may need IV dextrose to prevent hypoglycemia."
+  },
+  {
+    "key": "emergency.ateXylitolGum.steps.3.title",
+    "value": "Step 4: Prepare for Hospitalization"
+  },
+  {
+    "key": "emergency.ateXylitolGum.steps.3.content",
+    "value": "Your vet will: induce vomiting (if early), give activated charcoal, start IV dextrose, and monitor blood glucose for 24 hours. Liver enzymes will be checked for 72 hours. Early treatment has 80%+ survival."
+  },
+  {
+    "key": "emergency.ateXylitolGum.science.content",
+    "value": "Xylitol is a sugar alcohol (polyol) that triggers a rapid, exaggerated insulin release from canine beta cells — up to 6-7x the amount released by glucose. This is because dogs metabolize xylitol via the same pathway as glucose but with different kinetics. The resulting hypoglycemia (blood glucose <60mg/dL) causes neurological dysfunction, seizures, and death. At higher doses (>0.5g/kg), xylitol causes acute hepatic necrosis through ATP depletion and oxidative stress. The mechanism is dose-dependent and unique to dogs — cats appear to be less susceptible (ASPCA, 2023)."
+  },
+  {
+    "key": "emergency.ateXylitolGum.faqs.0.question",
+    "value": "How much xylitol is toxic to dogs?"
+  },
+  {
+    "key": "emergency.ateXylitolGum.faqs.0.answer",
+    "value": "Xylitol is toxic to dogs at doses as low as 0.1g/kg for hypoglycemia and 0.5g/kg for liver failure. A single piece of sugar-free gum can contain 0.3-1.0g of xylitol — meaning ONE piece can cause severe hypoglycemia in a small-to-medium dog. Emergency treatment is needed even for tiny amounts."
+  },
+  {
+    "key": "emergency.ateXylitolGum.faqs.1.question",
+    "value": "What are the symptoms of xylitol poisoning in dogs?"
+  },
+  {
+    "key": "emergency.ateXylitolGum.faqs.1.answer",
+    "value": "Symptoms appear within 10-60 minutes (sometimes delayed 12 hours): vomiting, lethargy, weakness, collapse, tremors, seizures, and coma — these result from hypoglycemia (low blood sugar). Liver failure symptoms (jaundice, coagulopathy) may be delayed 12-72 hours. Even small amounts cause dangerously low blood sugar."
+  },
+  {
+    "key": "emergency.ateXylitolGum.faqs.2.question",
+    "value": "Why is xylitol toxic to dogs but not humans?"
+  },
+  {
+    "key": "emergency.ateXylitolGum.faqs.2.answer",
+    "value": "In dogs, xylitol is rapidly absorbed and triggers a massive insulin release from the pancreas — 6-7x more than glucose would. This causes profound hypoglycemia. Humans do not have this insulin response. Additionally, xylitol causes dose-dependent hepatocellular necrosis in dogs through mechanisms not seen in humans."
+  },
+  {
+    "key": "emergency.ateXylitolGum.faqs.3.question",
+    "value": "What products contain xylitol?"
+  },
+  {
+    "key": "emergency.ateXylitolGum.faqs.3.answer",
+    "value": "Xylitol is found in: sugar-free gum, mints, peanut butter (some brands), toothpaste, mouthwash, nasal sprays, chewable vitamins, baked goods, ice cream, and \"birch sugar\" sold as a sweetener. Some brands: Trident, Orbit, Ice Breakers, Eclipse. Always check ingredient lists before giving human food to dogs."
+  },
+  {
+    "key": "emergency.ateXylitolGum.faqs.4.question",
+    "value": "Can a dog survive xylitol poisoning?"
+  },
+  {
+    "key": "emergency.ateXylitolGum.faqs.4.answer",
+    "value": "Yes, with immediate treatment. If caught within 30 minutes, induced vomiting prevents absorption. If hypoglycemia has begun, IV dextrose corrects blood sugar. Even with liver damage, aggressive hospital care (IV fluids, liver protectants, plasma transfusions) has 70-80% survival if treatment begins within 8 hours. Delayed treatment has worse prognosis."
+  },
+  {
+    "key": "emergency.ateXylitolGum.relatedTools.0.name",
+    "value": "Toxic Food & Plant Checker"
+  },
+  {
+    "key": "emergency.ateXylitolGum.relatedTools.0.url",
+    "value": "/shared/toxic-checker/"
+  },
+  {
+    "key": "emergency.ateXylitolGum.relatedTools.1.name",
+    "value": "Dog Calorie Calculator"
+  },
+  {
+    "key": "emergency.ateXylitolGum.relatedTools.1.url",
+    "value": "/dog/calorie-calculator/"
+  },
+  {
+    "key": "emergency.ateChocolate.breadcrumbLabel",
+    "value": "Ate Chocolate"
+  },
+  {
+    "key": "emergency.ateChocolate.meta.title",
+    "value": "My Dog Ate Chocolate: What to Do Now | petsMetrics"
+  },
+  {
+    "key": "emergency.ateChocolate.meta.description",
+    "value": "Emergency guide: What to do if your dog eats chocolate. Learn toxicity levels, symptoms timeline, and when to call the vet. ASPCA Poison Control: (888) 426-4435."
+  },
+  {
+    "key": "emergency.ateChocolate.meta.keywords",
+    "value": "my dog ate chocolate what do i do, dog chocolate toxicity, chocolate poisoning in dogs, dog ate chocolate emergency, what to do if dog eats chocolate"
+  },
+  {
+    "key": "emergency.ateChocolate.article.headline",
+    "value": "My Dog Ate Chocolate: What to Do Now"
+  },
+  {
+    "key": "emergency.ateChocolate.article.description",
+    "value": "Emergency guide for dog chocolate toxicity: symptoms, treatment, and prevention."
+  },
+  {
+    "key": "emergency.ateChocolate.article.ogTitle",
+    "value": "My Dog Ate Chocolate: What to Do Now | petsMetrics"
+  },
+  {
+    "key": "emergency.ateChocolate.article.ogDescription",
+    "value": "Emergency guide: What to do if your dog eats chocolate. Toxicity levels, symptoms timeline, and when to call the vet."
+  },
+  {
+    "key": "emergency.ateChocolate.banner.severityLabel",
+    "value": "TOXIC — Seek Immediate Veterinary Care"
+  },
+  {
+    "key": "emergency.ateChocolate.banner.title",
+    "value": "My Dog Ate Chocolate: What to Do Now"
+  },
+  {
+    "key": "emergency.ateChocolate.banner.subtitle",
+    "value": "Chocolate contains theobromine, which dogs cannot metabolize effectively. Immediate action is critical — call your vet or ASPCA Poison Control at <strong>(888) 426-4435</strong> right away."
+  },
+  {
+    "key": "emergency.ateChocolate.riskAssessment.headers.theobromine",
+    "value": "Theobromine Level"
+  },
+  {
+    "key": "emergency.ateChocolate.riskAssessment.rows.0.type",
+    "value": "White Chocolate"
+  },
+  {
+    "key": "emergency.ateChocolate.riskAssessment.rows.0.level",
+    "value": "Minimal (0.25 mg/oz)"
+  },
+  {
+    "key": "emergency.ateChocolate.riskAssessment.rows.0.risk",
+    "value": "Low (but high fat)"
+  },
+  {
+    "key": "emergency.ateChocolate.riskAssessment.rows.1.type",
+    "value": "Milk Chocolate"
+  },
+  {
+    "key": "emergency.ateChocolate.riskAssessment.rows.1.level",
+    "value": "44-60 mg/oz"
+  },
+  {
+    "key": "emergency.ateChocolate.riskAssessment.rows.1.risk",
+    "value": "Moderate"
+  },
+  {
+    "key": "emergency.ateChocolate.riskAssessment.rows.2.type",
+    "value": "Dark Chocolate"
+  },
+  {
+    "key": "emergency.ateChocolate.riskAssessment.rows.2.level",
+    "value": "130-450 mg/oz"
+  },
+  {
+    "key": "emergency.ateChocolate.riskAssessment.rows.2.risk",
+    "value": "High"
+  },
+  {
+    "key": "emergency.ateChocolate.riskAssessment.rows.3.type",
+    "value": "Baking Chocolate"
+  },
+  {
+    "key": "emergency.ateChocolate.riskAssessment.rows.3.level",
+    "value": "390-450 mg/oz"
+  },
+  {
+    "key": "emergency.ateChocolate.riskAssessment.rows.3.risk",
+    "value": "Severe"
+  },
+  {
+    "key": "emergency.ateChocolate.steps.0.title",
+    "value": "Call for Help Immediately"
+  },
+  {
+    "key": "emergency.ateChocolate.steps.0.content",
+    "value": "Contact ASPCA Animal Poison Control at <strong>(888) 426-4435</strong> or your nearest emergency vet. Time is critical — do not wait for symptoms to appear."
+  },
+  {
+    "key": "emergency.ateChocolate.steps.1.title",
+    "value": "Gather Information"
+  },
+  {
+    "key": "emergency.ateChocolate.steps.1.content",
+    "value": "Note the type of chocolate (milk, dark, baking), estimated amount consumed, and your dog's weight. This helps the vet assess toxicity risk."
+  },
+  {
+    "key": "emergency.ateChocolate.steps.2.title",
+    "value": "Do NOT Induce Vomiting Without Vet Approval"
+  },
+  {
+    "key": "emergency.ateChocolate.steps.2.content",
+    "value": "Inducing vomiting can cause aspiration pneumonia or worsen the situation. Only do so if explicitly instructed by a veterinarian."
+  },
+  {
+    "key": "emergency.ateChocolate.steps.3.title",
+    "value": "Monitor Symptoms Closely"
+  },
+  {
+    "key": "emergency.ateChocolate.steps.3.content",
+    "value": "Watch for vomiting, diarrhea, restlessness, increased thirst, rapid breathing, and seizures. Symptoms may appear within 2-4 hours."
+  },
+  {
+    "key": "emergency.ateChocolate.science.content",
+    "value": "Chocolate contains theobromine and caffeine, both methylxanthines that dogs metabolize much more slowly than humans. While humans eliminate theobromine in 2-3 hours, dogs take 17.5 hours or more. This allows toxic levels to build up in their system. Theobromine affects the central nervous system, cardiovascular system, and smooth muscles. At high doses, it causes seizures, cardiac arrhythmias, and potentially death (ASPCA, 2023)."
+  },
+  {
+    "key": "emergency.ateChocolate.faqs.0.question",
+    "value": "How much chocolate is toxic to dogs?"
+  },
+  {
+    "key": "emergency.ateChocolate.faqs.0.answer",
+    "value": "Toxicity depends on the type of chocolate and your dog's weight. Milk chocolate becomes toxic at approximately 0.5 oz per pound of body weight. Dark chocolate is 2-3x more toxic. Baking chocolate is the most dangerous — as little as 0.1 oz per pound can be lethal. Use our toxicity calculator to assess your dog's specific risk."
+  },
+  {
+    "key": "emergency.ateChocolate.faqs.1.question",
+    "value": "How long after eating chocolate will a dog show symptoms?"
+  },
+  {
+    "key": "emergency.ateChocolate.faqs.1.answer",
+    "value": "Symptoms typically appear within 2-4 hours but can be delayed up to 12 hours. Early signs include vomiting, diarrhea, and restlessness. Severe symptoms (seizures, irregular heartbeat) may appear 6-12 hours after ingestion. Theobromine is absorbed slowly, so symptoms can worsen over time."
+  },
+  {
+    "key": "emergency.ateChocolate.faqs.2.question",
+    "value": "Can a dog die from eating chocolate?"
+  },
+  {
+    "key": "emergency.ateChocolate.faqs.2.answer",
+    "value": "Yes, chocolate can be fatal to dogs. The lethal dose of theobromine is approximately 100-500 mg per kg of body weight. For a 20kg (44lb) dog, this equals roughly 200g of milk chocolate or 100g of dark chocolate. Immediate veterinary treatment significantly improves survival rates."
+  },
+  {
+    "key": "emergency.ateChocolate.relatedTools.0.name",
+    "value": "Toxic Food & Plant Checker"
+  },
+  {
+    "key": "emergency.ateChocolate.relatedTools.0.url",
+    "value": "/shared/toxic-checker/"
+  },
+  {
+    "key": "emergency.ateChocolate.relatedTools.1.name",
+    "value": "Dog Calorie Calculator"
+  },
+  {
+    "key": "emergency.ateChocolate.relatedTools.1.url",
+    "value": "/dog/calorie-calculator/"
+  },
+  {
+    "key": "emergency.ateGrapes.breadcrumbLabel",
+    "value": "Ate Grapes"
+  },
+  {
+    "key": "emergency.ateGrapes.meta.title",
+    "value": "My Dog Ate Grapes: What Should I Do? | petsMetrics"
+  },
+  {
+    "key": "emergency.ateGrapes.meta.description",
+    "value": "Emergency guide: What to do if your dog eats grapes or raisins. Learn about acute kidney injury risk, symptoms timeline, and immediate treatment steps."
+  },
+  {
+    "key": "emergency.ateGrapes.meta.keywords",
+    "value": "my dog ate grapes what should i do, dog ate grapes emergency, grape toxicity in dogs, raisins toxic to dogs, dog grape poisoning"
+  }
+]

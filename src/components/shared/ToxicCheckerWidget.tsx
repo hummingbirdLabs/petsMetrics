@@ -8,21 +8,18 @@ import { ShareButtons } from '@/components/shared/ShareButtons';
 import { SITE_URL } from '@/constants';
 import { usePageUrlBuilder } from '@/hooks/usePageUrl';
 
-const LEVEL_CONFIG: Record<string, { label: string; bg: string; text: string; border: string }> = {
+const LEVEL_CONFIG: Record<string, { bg: string; text: string; border: string }> = {
   toxic: {
-    label: 'TOXIC',
     bg: 'var(--status-toxic-bg)',
     text: 'var(--status-toxic)',
     border: 'var(--status-toxic)',
   },
   caution: {
-    label: 'CAUTION',
     bg: 'var(--status-caution-bg)',
     text: 'var(--status-caution)',
     border: 'var(--status-caution)',
   },
   safe: {
-    label: 'SAFE',
     bg: 'var(--status-safe-bg)',
     text: 'var(--status-safe)',
     border: 'var(--status-safe)',
@@ -148,11 +145,11 @@ export function ToxicCheckerWidget() {
                 style={{ backgroundColor: levelCfg.text, color: 'var(--white)' }}
                 data-testid="toxic-result-badge"
               >
-                {levelCfg.label}
+                {t(`levelLabels.${primaryLevel}`)}
               </span>
               <h2 className="text-2xl font-bold text-[--gray-900]">{primaryItem.name}</h2>
               <p className="text-sm text-[--gray-500]">
-                {t('affectedSpecies')}: {primaryItem.species === 'both' ? '🐕 Dogs & 🐱 Cats' : primaryItem.species === 'dog' ? '🐕 Dogs' : '🐱 Cats'}
+                {t('affectedSpecies')}: {t(`speciesLabels.${primaryItem.species}`)}
               </p>
             </div>
           </div>
@@ -225,7 +222,7 @@ export function ToxicCheckerWidget() {
             <div className="border-t border-[--gray-200] pt-4">
               <ShareButtons
                 url={shareUrl}
-                title={t('shareCta.title', { item: primaryItem.name, level: levelCfg.label })}
+                title={t('shareCta.title', { item: primaryItem.name, level: t(`levelLabels.${primaryLevel}`) })}
               />
             </div>
           </div>
@@ -252,7 +249,7 @@ export function ToxicCheckerWidget() {
                     className="rounded px-2 py-0.5 text-[10px] font-bold uppercase text-white"
                     style={{ backgroundColor: cfg.text }}
                   >
-                    {cfg.label}
+                    {t(`levelLabels.${lvl}`)}
                   </span>
                 </button>
               );

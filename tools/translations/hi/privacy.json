@@ -1,0 +1,18 @@
+{
+  "notCollectP2": "<strong>Tool inputs and results</strong> — all calculator inputs (weight, activity level, food items, etc.) and their results are processed entirely in your browser using JavaScript. No calculation data leaves your device.",
+  "notCollectP3": "<strong>Personal identifiers</strong> — we do not collect names, email addresses, IP addresses, or any other personally identifiable information.",
+  "notCollectP4": "<strong>Cookies for tracking</strong> — we do not use tracking cookies, advertising cookies, or any third-party cookies.",
+  "storedOnDeviceP1": "The following data is stored in your browser's localStorage and never leaves your device:",
+  "storedOnDeviceP2": "Pet profiles (name, breed, species, birth date, weight, sex, neuter status, photo)",
+  "storedOnDeviceP3": "Active profile selection",
+  "storedOnDeviceP4": "Weight unit preference (kg or lb)",
+  "storedOnDeviceP5": "UI preferences",
+  "storedOnDeviceP6": "You can delete this data at any time by clearing your browser's localStorage for petsmetrics.com, or by using the \"Delete Profile\" function in the Profile dashboard. You can also export your data as a JSON file for backup.",
+  "analyticsP1": "We may use a privacy-respecting analytics service (such as Plausible or a self-hosted alternative) to understand aggregate usage patterns — e.g., which tools are most popular, which pages receive the most visits. These analytics do not use cookies, do not track individual users across sessions, and do not collect any personally identifiable information. No individual user behavior is recorded or stored.",
+  "thirdPartyP1": "petsMetrics does not embed third-party trackers, social media pixels, or advertising networks that collect user data. We may display affiliate links to pet products or services — clicking these links takes you to the third-party site, whose privacy policies govern any data collected there.",
+  "thirdPartyP2": "The site is hosted on Vercel, which may collect standard server logs (including IP addresses) for operational purposes. Vercel's privacy policy governs that data processing.",
+  "childrenP1": "petsMetrics is a general-audience website. We do not knowingly collect any personal information from children under 13.",
+  "gdprP1": "Since we do not collect, process, or store any personal data on our servers, GDPR compliance is inherently satisfied for data processing. All user data (pet profiles) resides on the user's device and is never transmitted to us. There is no \"data controller\" relationship for pet profile data because we never receive or access it.",
+  "gdprP2": "If you have questions about this privacy policy, contact us at <link>hello@petsmetrics.com</link>.",
+  "changesP1": "We may update this privacy policy from time to time. Changes will be posted on this page with an updated \"Last updated\" date. Continued use of the site after changes constitutes acceptance of the updated policy."
+}

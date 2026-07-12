@@ -1,0 +1,5 @@
+{
+  "result.generatedOn": "Generated on: {date} · Based on birth date: {birthDate} · Region: {region} · WSAVA Core Vaccine Guidelines",
+  "result.nonCoreTitle": "About Non-Core Vaccine Recommendations",
+  "result.nonCoreBody": "Vaccines marked as non-core depend heavily on your specific region and your dog's daily routine. The recommendations above are a starting point. Consult your veterinarian for a personalized assessment."
+}

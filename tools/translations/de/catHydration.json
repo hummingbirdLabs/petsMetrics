@@ -1,0 +1,21 @@
+{
+  "title": "Katzen-Hydratationsrechner",
+  "subtitle": "Berechnen Sie, wie viel Wasser Ihre Katze täglich benötigt. Berücksichtigt die Feuchtigkeit aus Trocken- und Nassfutter.",
+  "breadcrumbHome": "Startseite",
+  "breadcrumbCurrent": "Hydratationsrechner",
+  "form.weightLabel": "Gewicht der Katze",
+  "form.dryFoodLabel": "Trockenfutter pro Tag",
+  "form.wetFoodLabel": "Nassfutter pro Tag",
+  "form.submit": "Hydratation berechnen",
+  "result.totalMl": "{name} benötigt etwa {ml} ml Wasser pro Tag.",
+  "result.fromFood": "Wasser aus der Nahrung",
+  "result.extraNeeded": "Zusätzlich benötigtes Wasser",
+  "result.moistureNote": "Trockenfutter ~10 % Feuchtigkeit · Nassfutter ~80 % Feuchtigkeit",
+  "result.statusAdequate": "Ausreichende Aufnahme durch die Nahrung",
+  "result.statusSlightlyLow": "Leicht niedrig — etwas mehr Wasser hinzufügen",
+  "result.statusLow": "Niedrig — benötigt zusätzliches Wasser",
+  "result.scienceTitle": "Warum Hydratation für Katzen wichtig ist",
+  "result.scienceBody": "Katzen haben sich als Wüstentiere entwickelt und haben einen geringen Dursttrieb. In freier Wildbahn beziehen sie den Großteil ihres Wassers aus Beutetieren (~70–80 % Feuchtigkeit). Katzen mit reiner Trockenfutter-Ernährung haben das höchste Risiko für chronische Dehydrierung, die zu Harnwegserkrankungen und Nierenproblemen beitragen kann. Täglich frisches Wasser bereitzustellen und Nassfutter einzusetzen, sind die beiden wirksamsten Strategien.",
+  "shareCta.title": "{name} benötigt {ml} ml Wasser täglich!",
+  "shareCta.sharePrompt": "Die meisten Katzen sind chronisch dehydriert — finden Sie heraus, wie viel Wasser Ihre Katze benötigt → {url} #Katzengesundheit #petsMetrics"
+}

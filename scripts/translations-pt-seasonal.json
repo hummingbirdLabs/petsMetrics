@@ -1,0 +1,172 @@
+{
+  "seasonal": {
+    "summer-heat": {
+      "slug": "summer-heat",
+      "keywords": "como manter cachorro fresco no verão, prevenção de insolação em cães, sintomas de insolação em cães, segurança do cachorro em clima quente, cães podem superaquecer",
+      "severity": "ALTO RISCO",
+      "season": "Verão (Junho–Agosto)",
+      "relatedEmergency": "/dog/emergency/",
+      "citations": [
+        {
+          "title": "Insolação em Cães - ASPCA",
+          "url": "https://www.aspca.org/news/heatstroke-dogs"
+        },
+        {
+          "title": "Segurança de Pets no Verão - AVMA",
+          "url": "https://www.avma.org/resources/pet-owners/pet-summer"
+        },
+        {
+          "title": "Golpe de Calor em Cães - VCA Hospitals",
+          "url": "https://vcahospitals.com/know-your-pet/heat-stroke-in-dogs"
+        }
+      ]
+    },
+    "winter-paw-care": {
+      "slug": "winter-paw-care",
+      "keywords": "proteção das patas do cachorro no inverno, tratamento de congelamento das patas, sal de estrada nas patas, cuidados com patas no inverno, botas para cachorro no inverno",
+      "severity": "RISCO MODERADO",
+      "season": "Inverno (Dezembro–Fevereiro)",
+      "relatedEmergency": "/dog/emergency/",
+      "citations": [
+        {
+          "title": "Cuidados com Patas no Inverno - ASPCA",
+          "url": "https://www.aspca.org/news/winter-paw-care-tips"
+        },
+        {
+          "title": "Segurança de Pets no Clima Frio - AKC",
+          "url": "https://www.akc.org/expert-advice/health/cold-weather-pet-safety/"
+        },
+        {
+          "title": "Proteção das Patas no Inverno - VCA Hospitals",
+          "url": "https://vcahospitals.com/know-your-pet/first-aid-for-cold-weather"
+        }
+      ]
+    },
+    "christmas-foods": {
+      "slug": "christmas-foods",
+      "keywords": "alimentos de natal tóxicos para cães, cão comeu chocolate de natal, cão comeu presunto de natal, xylitol em biscoitos de natal, segurança alimentar nas festas",
+      "severity": "ALTO RISCO",
+      "season": "Temporada de Natal (Dezembro)",
+      "relatedEmergency": "/dog/emergency/ate-chocolate/",
+      "citations": [
+        {
+          "title": "Alimentos que Cães Devem Evitar no Natal - ASPCA",
+          "url": "https://www.aspca.org/news/holiday-foods-your-pets-should-avoid"
+        },
+        {
+          "title": "Perigos de Veneno de Natal para Pets - VCA Hospitals",
+          "url": "https://vcahospitals.com/know-your-pet/christmas-pet-poison-hazards"
+        },
+        {
+          "title": "Segurança de Pets nas Festas - AKC",
+          "url": "https://www.akc.org/expert-advice/health/holiday-pet-safety/"
+        }
+      ]
+    },
+    "halloween-candy": {
+      "slug": "halloween-candy",
+      "keywords": "cão comeu doces de halloween, doces de halloween tóxicos para cães, cão comeu chocolate de halloween, xylitol em doces de halloween, emergência de pet de halloween",
+      "severity": "RISCO CRÍTICO",
+      "season": "Halloween (Outubro)",
+      "relatedEmergency": "/dog/emergency/ate-xylitol/",
+      "citations": [
+        {
+          "title": "Segurança de Pets no Halloween - ASPCA",
+          "url": "https://www.aspca.org/news/halloween-pet-safety-tips"
+        },
+        {
+          "title": "Perigos de Doces para Cães - VCA Hospitals",
+          "url": "https://vcahospitals.com/know-your-pet/candy-hazards-for-dogs"
+        },
+        {
+          "title": "Perigos de Halloween para Pets - AKC",
+          "url": "https://www.akc.org/expert-advice/health/halloween-dangers-for-pets/"
+        }
+      ]
+    },
+    "fireworks-anxiety": {
+      "slug": "fireworks-anxiety",
+      "keywords": "como acalmar o cachorro durante fogos de artifício, tratamento da ansiedade de fogos em cães, cachorro assustado por fogos, fobia de trovão e fogos, segurança do cachorro na noite de fogos",
+      "severity": "RISCO MODERADO A ALTO",
+      "season": "Celebrações de Ano Novo e Feriados (Dez/Jan, 4 de Julho)",
+      "relatedEmergency": "/emergency",
+      "citations": [
+        {
+          "title": "Fogos de Artifício e Cães - ASPCA",
+          "url": "https://www.aspca.org/news/fireworks-and-dogs"
+        },
+        {
+          "title": "Fobias de Ruído em Cães - VCA Hospitals",
+          "url": "https://vcahospitals.com/know-your-pet/noise-phobias-in-dogs"
+        },
+        {
+          "title": "Segurança de Pets no 4 de Julho - AKC",
+          "url": "https://www.akc.org/expert-advice/health/fourth-of-july-pet-safety/"
+        }
+      ]
+    },
+    "spring-allergies": {
+      "slug": "spring-allergies",
+      "keywords": "sintomas de alergias de primavera em cães, tratamento de alergia ao pólen em cães, alergias sazonais de primavera em cães, dermatite atópica canina, alergias de pele em cães",
+      "severity": "RISCO CRÔNICO",
+      "season": "Primavera (Março–Maio)",
+      "relatedEmergency": "/dog/emergency/",
+      "citations": [
+        {
+          "title": "Alergias Sazonais em Cães - ASPCA",
+          "url": "https://www.aspca.org/news/seasonal-allergies-dogs"
+        },
+        {
+          "title": "Dermatite Atópica em Cães - VCA Hospitals",
+          "url": "https://vcahospitals.com/know-your-pet/atopic-dermatitis-in-dogs"
+        },
+        {
+          "title": "Alergias de Primavera em Cães - AKC",
+          "url": "https://www.akc.org/expert-advice/health/spring-allergies-in-dogs/"
+        }
+      ]
+    },
+    "thanksgiving": {
+      "slug": "thanksgiving",
+      "keywords": "alimentos de thanksgiving que cães podem comer, cão comeu peru de thanksgiving, alimentos seguros para cães no thanksgiving, cão comeu recheio de thanksgiving, o peru de thanksgiving é seguro para cães",
+      "severity": "ALTO RISCO",
+      "season": "Thanksgiving (Novembro)",
+      "relatedEmergency": "/dog/emergency/ate-grapes/",
+      "citations": [
+        {
+          "title": "Alimentos que Cães Devem Evitar no Thanksgiving - ASPCA",
+          "url": "https://www.aspca.org/news/thanksgiving-foods-your-pets-should-avoid"
+        },
+        {
+          "title": "Segurança de Pets no Thanksgiving - VCA Hospitals",
+          "url": "https://vcahospitals.com/know-your-pet/thanksgiving-pet-safety"
+        },
+        {
+          "title": "Segurança Alimentar de Feriados para Cães - AKC",
+          "url": "https://www.akc.org/expert-advice/health/holiday-food-safety-dogs/"
+        }
+      ]
+    },
+    "easter-chocolate": {
+      "slug": "easter-chocolate",
+      "keywords": "chocolate de páscoa para cães, cão comeu chocolate de páscoa, caça aos ovos de páscoa segurança do cão, toxicidade do lírio de páscoa para cães, envenenamento por chocolate em cães na páscoa",
+      "severity": "RISCO CRÍTICO",
+      "season": "Páscoa (Março/Abril)",
+      "relatedEmergency": "/dog/emergency/ate-chocolate/",
+      "citations": [
+        {
+          "title": "Segurança de Pets na Páscoa - ASPCA",
+          "url": "https://www.aspca.org/news/easter-pet-safety-tips"
+        },
+        {
+          "title": "Toxicidade de Chocolate em Cães - VCA Hospitals",
+          "url": "https://vcahospitals.com/know-your-pet/chocolate-toxicity-in-dogs"
+        },
+        {
+          "title": "Perigos de Veneno de Feriados para Pets - AKC",
+          "url": "https://www.akc.org/expert-advice/health/holiday-pet-poison-hazards/"
+        }
+      ]
+    }
+  }
+}

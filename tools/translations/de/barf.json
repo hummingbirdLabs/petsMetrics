@@ -1,0 +1,16 @@
+{
+  "form.speciesLabel": "Haustierart",
+  "form.weightLabel": "Zielgewicht (kg)",
+  "form.percentageLabel": "Tägliche Fütterung %",
+  "form.percentageHint": "Typisch: 2–3 % des Körpergewichts täglich",
+  "form.submit": "Portionen berechnen",
+  "result.muscleMeat": "Muskelfleisch",
+  "result.bone": "Fleischige Knochen",
+  "result.liver": "Leber",
+  "result.organ": "Innereien",
+  "result.vegetables": "Gemüse / Beeren",
+  "result.total": "Tägliche Gesamtportion",
+  "result.shoppingNote": "Dies sind tägliche Mengen. Für eine wöchentliche Einkaufsliste mit 7 multiplizieren.",
+  "pdfExport.comingSoon": "PDF-Export — Demnächst verfügbar",
+  "adviceNote": "Die BARF-Diät muss mit Vitamin- und Mineralstoffzusätzen richtig ausgewogen sein. Konsultieren Sie einen Tierernährungsberater, bevor Sie mit der Rohfütterung beginnen."
+}

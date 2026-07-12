@@ -1,0 +1,148 @@
+{
+  "seasonal": {
+    "summer-heat": {
+      "slug": "summer-heat",
+      "relatedEmergency": "/dog/emergency/",
+      "citations": [
+        {
+          "title": "Hitteberoerte bij Honden - ASPCA",
+          "url": "https://www.aspca.org/news/heatstroke-dogs"
+        },
+        {
+          "title": "Zomer Veiligheid voor Huisdieren - AVMA",
+          "url": "https://www.avma.org/resources/pet-owners/pet-summer"
+        },
+        {
+          "title": "Hitteberoerte bij Honden - VCA Hospitals",
+          "url": "https://vcahospitals.com/know-your-pet/heat-stroke-in-dogs"
+        }
+      ]
+    },
+    "winter-paw-care": {
+      "slug": "winter-paw-care",
+      "relatedEmergency": "/dog/emergency/",
+      "citations": [
+        {
+          "title": "Winterenpootzorg - ASPCA",
+          "url": "https://www.aspca.org/news/winter-paw-care-tips"
+        },
+        {
+          "title": "Koud Weer Veiligheid voor Huisdieren - AKC",
+          "url": "https://www.akc.org/expert-advice/health/cold-weather-pet-safety/"
+        },
+        {
+          "title": "Winterenpootbescherming - VCA Hospitals",
+          "url": "https://vcahospitals.com/know-your-pet/first-aid-for-cold-weather"
+        }
+      ]
+    },
+    "christmas-foods": {
+      "slug": "christmas-foods",
+      "relatedEmergency": "/dog/emergency/ate-chocolate/",
+      "citations": [
+        {
+          "title": "Veestdagen die Honden Moeten Vermijden - ASPCA",
+          "url": "https://www.aspca.org/news/holiday-foods-your-pets-should-avoid"
+        },
+        {
+          "title": "Kerstdag Gifgevaar voor Huisdieren - VCA Hospitals",
+          "url": "https://vcahospitals.com/know-your-pet/christmas-pet-poison-hazards"
+        },
+        {
+          "title": "Feestdagen Veiligheid voor Huisdieren - AKC",
+          "url": "https://www.akc.org/expert-advice/health/holiday-pet-safety/"
+        }
+      ]
+    },
+    "halloween-candy": {
+      "slug": "halloween-candy",
+      "relatedEmergency": "/dog/emergency/ate-xylitol/",
+      "citations": [
+        {
+          "title": "Halloween Veiligheid voor Huisdieren - ASPCA",
+          "url": "https://www.aspca.org/news/halloween-pet-safety-tips"
+        },
+        {
+          "title": "Snoep Gevaar voor Honden - VCA Hospitals",
+          "url": "https://vcahospitals.com/know-your-pet/candy-hazards-for-dogs"
+        },
+        {
+          "title": "Halloween Gevaren voor Huisdieren - AKC",
+          "url": "https://www.akc.org/expert-advice/health/halloween-dangers-for-pets/"
+        }
+      ]
+    },
+    "fireworks-anxiety": {
+      "slug": "fireworks-anxiety",
+      "relatedEmergency": "/emergency",
+      "citations": [
+        {
+          "title": "Vuurwerk en Honden - ASPCA",
+          "url": "https://www.aspca.org/news/fireworks-and-dogs"
+        },
+        {
+          "title": "Luidheid Fobieën bij Honden - VCA Hospitals",
+          "url": "https://vcahospitals.com/know-your-pet/noise-phobias-in-dogs"
+        },
+        {
+          "title": "4 Juli Veiligheid voor Huisdieren - AKC",
+          "url": "https://www.akc.org/expert-advice/health/fourth-of-july-pet-safety/"
+        }
+      ]
+    },
+    "spring-allergies": {
+      "slug": "spring-allergies",
+      "relatedEmergency": "/dog/emergency/",
+      "citations": [
+        {
+          "title": "Seizoensgebonden Allergieën bij Honden - ASPCA",
+          "url": "https://www.aspca.org/news/seasonal-allergies-dogs"
+        },
+        {
+          "title": "Atopische Dermatitis bij Honden - VCA Hospitals",
+          "url": "https://vcahospitals.com/know-your-pet/atopic-dermatitis-in-dogs"
+        },
+        {
+          "title": "Lente Allergieën bij Honden - AKC",
+          "url": "https://www.akc.org/expert-advice/health/spring-allergies-in-dogs/"
+        }
+      ]
+    },
+    "thanksgiving": {
+      "slug": "thanksgiving",
+      "relatedEmergency": "/dog/emergency/ate-grapes/",
+      "citations": [
+        {
+          "title": "Nuttigingsdag Voeding die Honden Moeten Vermijden - ASPCA",
+          "url": "https://www.aspca.org/news/thanksgiving-foods-your-pets-should-avoid"
+        },
+        {
+          "title": "Nuttigingsdag Veiligheid voor Huisdieren - VCA Hospitals",
+          "url": "https://vcahospitals.com/know-your-pet/thanksgiving-pet-safety"
+        },
+        {
+          "title": "Feestdagen Voedselveiligheid voor Honden - AKC",
+          "url": "https://www.akc.org/expert-advice/health/holiday-food-safety-dogs/"
+        }
+      ]
+    },
+    "easter-chocolate": {
+      "slug": "easter-chocolate",
+      "relatedEmergency": "/dog/emergency/ate-chocolate/",
+      "citations": [
+        {
+          "title": "Pasen Veiligheid voor Huisdieren - ASPCA",
+          "url": "https://www.aspca.org/news/easter-pet-safety-tips"
+        },
+        {
+          "title": "Chocolade Toxiciteit bij Honden - VCA Hospitals",
+          "url": "https://vcahospitals.com/know-your-pet/chocolate-toxicity-in-dogs"
+        },
+        {
+          "title": "Feestdagen Gifgevaar voor Huisdieren - AKC",
+          "url": "https://www.akc.org/expert-advice/health/holiday-pet-poison-hazards/"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,1202 @@
+[
+  {
+    "key": "dogAge.lifeStage.junior",
+    "value": "Junior — still maturing emotionally and physically"
+  },
+  {
+    "key": "dogAge.lifeStage.adult",
+    "value": "Adult — in prime physical condition"
+  },
+  {
+    "key": "dogAge.lifeStage.cardTitle",
+    "value": "{stage} — {stageName}"
+  },
+  {
+    "key": "dogAge.lifeStage.healthPriorities",
+    "value": "Health priorities for this life stage:"
+  },
+  {
+    "key": "dogAge.lifeStage.vetVisit",
+    "value": "Annual vet check-ups"
+  },
+  {
+    "key": "dogAge.lifeStage.dental",
+    "value": "Regular dental cleaning"
+  },
+  {
+    "key": "dogAge.lifeStage.weight",
+    "value": "Maintain healthy weight (prevents early joint wear)"
+  },
+  {
+    "key": "dogAge.lifeStage.parasite",
+    "value": "Continue monthly parasite prevention"
+  },
+  {
+    "key": "dogAge.comparisonTable.title",
+    "value": "Dog Age to Human Age Conversion Table"
+  },
+  {
+    "key": "dogAge.comparisonTable.dogAge",
+    "value": "Dog Age"
+  },
+  {
+    "key": "dogAge.comparisonTable.small",
+    "value": "Small <10kg"
+  },
+  {
+    "key": "dogAge.comparisonTable.medium",
+    "value": "Medium 10-25"
+  },
+  {
+    "key": "dogAge.comparisonTable.large",
+    "value": "Large 25-45"
+  },
+  {
+    "key": "dogAge.comparisonTable.giant",
+    "value": "Giant >45kg"
+  },
+  {
+    "key": "dogAge.comparisonTable.row1",
+    "value": "1 year"
+  },
+  {
+    "key": "dogAge.comparisonTable.row2",
+    "value": "2 years"
+  },
+  {
+    "key": "dogAge.comparisonTable.row3",
+    "value": "3 years"
+  },
+  {
+    "key": "dogAge.comparisonTable.row4",
+    "value": "4 years"
+  },
+  {
+    "key": "dogAge.comparisonTable.row5",
+    "value": "5 years"
+  },
+  {
+    "key": "dogAge.comparisonTable.row7",
+    "value": "7 years"
+  },
+  {
+    "key": "dogAge.comparisonTable.row10",
+    "value": "10 years"
+  },
+  {
+    "key": "dogAge.comparisonTable.row15",
+    "value": "15 years"
+  },
+  {
+    "key": "dogAge.comparisonTable.footnote",
+    "value": "Based on AAHA Canine Life Stage Guidelines. Giant breeds have shorter average lifespans, so ratios compress faster."
+  },
+  {
+    "key": "dogAge.scienceSection.title",
+    "value": "Why we don't use the \"7× rule\""
+  },
+  {
+    "key": "dogAge.scienceSection.body",
+    "value": "The popular \"multiply by 7\" formula has no scientific basis. Dogs mature rapidly in the first 2 years (reaching sexual maturity and full size), then age more slowly thereafter. Our calculator uses size-adjusted life stage guidelines from: the American Animal Hospital Association (AAHA) and the 2020 UCSD epigenetics methylation study (Labrador reference). Larger breeds age faster due to higher metabolic rates and faster cell division — not because of size itself."
+  },
+  {
+    "key": "dogAge.scienceSection.aaGuidelines",
+    "value": "AAHA Life Stage Guidelines"
+  },
+  {
+    "key": "dogAge.shareCta.title",
+    "value": "{name} is {age} in human years!"
+  },
+  {
+    "key": "dogAge.shareCta.sharePrompt",
+    "value": "Just found out my dog {name} is {age} in human years! Check your dog's human age → {url} #DogLife #petsMetrics"
+  },
+  {
+    "key": "dogAge.shareCta.twitter",
+    "value": "Share on Twitter"
+  },
+  {
+    "key": "dogAge.shareCta.facebook",
+    "value": "Share on Facebook"
+  },
+  {
+    "key": "dogAge.shareCta.copyLink",
+    "value": "Copy Link"
+  },
+  {
+    "key": "catAge.title",
+    "value": "Cat Age Calculator: Cat Years to Human Years"
+  },
+  {
+    "key": "catAge.subtitle",
+    "value": "How old is your cat in human years? Based on official AAHA/AAFP 2021 Feline Life Stage Guidelines."
+  },
+  {
+    "key": "catAge.breadcrumbHome",
+    "value": "Home"
+  },
+  {
+    "key": "catAge.breadcrumbCat",
+    "value": "Cat"
+  },
+  {
+    "key": "catAge.breadcrumbCurrent",
+    "value": "Age Calculator"
+  },
+  {
+    "key": "catAge.form.ageMonthsLabel",
+    "value": "My cat's age in months"
+  },
+  {
+    "key": "catAge.form.months",
+    "value": "months"
+  },
+  {
+    "key": "catAge.form.monthsHint",
+    "value": "1 year = 12 months, 5 years = 60 months"
+  },
+  {
+    "key": "catAge.form.submit",
+    "value": "Calculate Age"
+  },
+  {
+    "key": "catAge.result.humanAge",
+    "value": "~{years} human years"
+  },
+  {
+    "key": "catAge.result.equivalent",
+    "value": "In human terms, {name} is like a {age}-year-old person."
+  },
+  {
+    "key": "catAge.result.source",
+    "value": "Source: AAHA/AAFP 2021 Feline Life Stage Guidelines"
+  },
+  {
+    "key": "catAge.result.lifeStage",
+    "value": "Life Stage"
+  },
+  {
+    "key": "catAge.result.checkupFrequency",
+    "value": "Recommended checkup frequency"
+  },
+  {
+    "key": "catAge.lifeStage.kitten",
+    "value": "Kitten — rapid growth and development; critical socialization period"
+  },
+  {
+    "key": "catAge.lifeStage.junior",
+    "value": "Junior — still maturing physically and behaviorally"
+  },
+  {
+    "key": "catAge.lifeStage.prime",
+    "value": "Prime — fully matured, peak physical condition"
+  },
+  {
+    "key": "catAge.lifeStage.mature",
+    "value": "Mature — starting to slow down; biannual screening recommended"
+  },
+  {
+    "key": "catAge.lifeStage.senior",
+    "value": "Senior — requires regular health monitoring; increased disease risk"
+  },
+  {
+    "key": "catAge.lifeStage.geriatric",
+    "value": "Geriatric — requires specialized senior care and frequent checkups"
+  },
+  {
+    "key": "catAge.comparisonTable.title",
+    "value": "Cat Age to Human Age Conversion Table"
+  },
+  {
+    "key": "catAge.comparisonTable.catAge",
+    "value": "Cat Age"
+  },
+  {
+    "key": "catAge.comparisonTable.humanAge",
+    "value": "Human Age"
+  },
+  {
+    "key": "catAge.comparisonTable.lifeStage",
+    "value": "Life Stage"
+  },
+  {
+    "key": "catAge.comparisonTable.footnote",
+    "value": "Based on AAHA/AAFP 2021 Feline Life Stage Guidelines. Cats age rapidly in the first 2 years, then approximately 4 human years per cat year."
+  },
+  {
+    "key": "catAge.scienceSection.title",
+    "value": "The Science Behind Cat Aging"
+  },
+  {
+    "key": "catAge.scienceSection.body",
+    "value": "Cats age rapidly in their first 2 years of life — a 1-year-old cat is roughly equivalent to a 15-year-old human, and a 2-year-old cat is about 24 human years. After age 2, each cat year equals approximately 4 human years. This is based on the AAHA/AAFP Feline Life Stage Guidelines, which define six distinct life stages with different health and nutritional needs."
+  },
+  {
+    "key": "catAge.scienceSection.aafpGuidelines",
+    "value": "AAHA/AAFP Feline Life Stage Guidelines"
+  },
+  {
+    "key": "catAge.shareCta.title",
+    "value": "{name} is {age} in human years!"
+  },
+  {
+    "key": "catAge.shareCta.sharePrompt",
+    "value": "My cat {name} is {age} in human years! Find out your cat's human age → {url} #CatLife #petsMetrics"
+  },
+  {
+    "key": "dogCalorie.title",
+    "value": "Dog Calorie Calculator — How Much Should My Dog Eat"
+  },
+  {
+    "key": "dogCalorie.subtitle",
+    "value": "Calculate your dog's exact daily calorie needs using the AAFCO MER formula. Get feeding amounts for any dog food brand. Based on weight and activity level."
+  },
+  {
+    "key": "dogCalorie.breadcrumbHome",
+    "value": "Home"
+  },
+  {
+    "key": "dogCalorie.breadcrumbDog",
+    "value": "Dog"
+  },
+  {
+    "key": "dogCalorie.breadcrumbCurrent",
+    "value": "Calorie Calculator"
+  },
+  {
+    "key": "dogCalorie.form.step1Title",
+    "value": "Step 1/2 — About {name}"
+  },
+  {
+    "key": "dogCalorie.form.weightLabel",
+    "value": "Current weight"
+  },
+  {
+    "key": "dogCalorie.form.scenarioLabel",
+    "value": "Life stage / activity level"
+  },
+  {
+    "key": "dogCalorie.form.puppyUnder4m",
+    "value": "Puppy under 4 months"
+  },
+  {
+    "key": "dogCalorie.form.puppyOver4m",
+    "value": "Puppy 4 months to adult"
+  },
+  {
+    "key": "dogCalorie.form.neuteredAdult",
+    "value": "Adult, neutered (typical)"
+  },
+  {
+    "key": "dogCalorie.form.intactAdult",
+    "value": "Adult, intact"
+  },
+  {
+    "key": "dogCalorie.form.weightLoss",
+    "value": "Weight loss / obesity prone"
+  },
+  {
+    "key": "dogCalorie.form.senior",
+    "value": "Senior dog (7+ years)"
+  },
+  {
+    "key": "dogCalorie.form.workingDog",
+    "value": "Active / working dog"
+  },
+  {
+    "key": "dogCalorie.form.coefficient",
+    "value": "coeff."
+  },
+  {
+    "key": "dogCalorie.form.step2Title",
+    "value": "Step 2/2 — Your Dog Food (optional)"
+  },
+  {
+    "key": "dogCalorie.form.foodDensityLabel",
+    "value": "Dog food calorie density (if known):"
+  },
+  {
+    "key": "dogCalorie.form.foodDensityPlaceholder",
+    "value": "e.g. 3500 kcal/kg (check your bag)"
+  },
+  {
+    "key": "dogCalorie.form.foodDensityHint",
+    "value": "Leave blank to get calories/day only."
+  },
+  {
+    "key": "dogCalorie.form.submit",
+    "value": "Calculate"
+  },
+  {
+    "key": "dogCalorie.result.dailyCalories",
+    "value": "{name}'s Daily Calorie Needs"
+  },
+  {
+    "key": "dogCalorie.result.kcalPerDay",
+    "value": "{mer} kcal / day"
+  },
+  {
+    "key": "dogCalorie.result.howCalculated",
+    "value": "How we calculated it:"
+  },
+  {
+    "key": "dogCalorie.result.rerFormula",
+    "value": "RER = 70 × ({weight} kg)^0.75 = {rer} kcal/day"
+  },
+  {
+    "key": "dogCalorie.result.merFormula",
+    "value": "MER = {rer} × {factor} ({scenario}) = {mer} kcal/day"
+  },
+  {
+    "key": "dogCalorie.result.source",
+    "value": "Source: AAFCO / AAHA Canine Energy Requirements"
+  },
+  {
+    "key": "dogCalorie.result.foodSection",
+    "value": "If your food contains {density} kcal/kg:"
+  },
+  {
+    "key": "dogCalorie.result.gramsPerDay",
+    "value": "{grams} g / day"
+  },
+  {
+    "key": "dogCalorie.result.cupsEquivalent",
+    "value": "(≈ {cups} cups of typical kibble)"
+  },
+  {
+    "key": "dogCalorie.result.feedingBreakdown",
+    "value": "Daily breakdown (if feeding twice):"
+  },
+  {
+    "key": "dogCalorie.result.morning",
+    "value": "Morning: {grams} g ({cups} cup)"
+  },
+  {
+    "key": "dogCalorie.result.evening",
+    "value": "Evening: {grams} g ({cups} cup)"
+  },
+  {
+    "key": "puppyGrowth.title",
+    "value": "Puppy Adult Weight Predictor — Estimate Your Puppy's Final Size"
+  },
+  {
+    "key": "puppyGrowth.subtitle",
+    "value": "Predict how big your puppy will get using breed size and growth curves. Track weight milestones and see a chart of expected growth to adulthood."
+  },
+  {
+    "key": "puppyGrowth.breadcrumbHome",
+    "value": "Home"
+  },
+  {
+    "key": "puppyGrowth.breadcrumbDog",
+    "value": "Dog"
+  },
+  {
+    "key": "puppyGrowth.breadcrumbCurrent",
+    "value": "Puppy Growth Predictor"
+  },
+  {
+    "key": "puppyGrowth.form.ageWeeksLabel",
+    "value": "Puppy's current age (weeks)"
+  },
+  {
+    "key": "puppyGrowth.form.ageWeeksPlaceholder",
+    "value": "e.g. 12"
+  },
+  {
+    "key": "puppyGrowth.form.weightLabel",
+    "value": "Current weight"
+  },
+  {
+    "key": "puppyGrowth.form.sizeLabel",
+    "value": "Expected adult size"
+  },
+  {
+    "key": "puppyGrowth.form.sizeSmall",
+    "value": "Small"
+  },
+  {
+    "key": "puppyGrowth.form.sizeSmallDesc",
+    "value": "< 10 kg · Toy & small breeds"
+  },
+  {
+    "key": "puppyGrowth.form.sizeMedium",
+    "value": "Medium"
+  },
+  {
+    "key": "puppyGrowth.form.sizeMediumDesc",
+    "value": "10–25 kg · Mid-size breeds"
+  },
+  {
+    "key": "puppyGrowth.form.sizeLarge",
+    "value": "Large"
+  },
+  {
+    "key": "puppyGrowth.form.sizeLargeDesc",
+    "value": "25–45 kg · Large breeds"
+  },
+  {
+    "key": "puppyGrowth.form.sizeGiant",
+    "value": "Giant"
+  },
+  {
+    "key": "puppyGrowth.form.sizeGiantDesc",
+    "value": "> 45 kg · Giant breeds"
+  },
+  {
+    "key": "puppyGrowth.form.submit",
+    "value": "Predict Adult Weight"
+  },
+  {
+    "key": "puppyGrowth.result.predictedTitle",
+    "value": "Predicted Adult Weight for {name}"
+  },
+  {
+    "key": "puppyGrowth.result.predictedRange",
+    "value": "{min} – {max} kg"
+  },
+  {
+    "key": "puppyGrowth.result.varianceNote",
+    "value": "±15% prediction variance based on breed growth curves"
+  },
+  {
+    "key": "puppyGrowth.result.growthChartTitle",
+    "value": "Growth Curve — {name}"
+  },
+  {
+    "key": "puppyGrowth.result.chartXLabel",
+    "value": "Age (weeks)"
+  },
+  {
+    "key": "puppyGrowth.result.chartYLabel",
+    "value": "Weight (kg)"
+  },
+  {
+    "key": "puppyGrowth.result.currentMarker",
+    "value": "Current: {weight} kg at {age} weeks"
+  },
+  {
+    "key": "puppyGrowth.result.predictedLabel",
+    "value": "Predicted Adult: {min}–{max} kg"
+  },
+  {
+    "key": "gestation.title",
+    "value": "Gestation Calculator — Due Date & Milestones"
+  },
+  {
+    "key": "gestation.subtitle",
+    "value": "Calculate your pet's due date and track key developmental milestones."
+  },
+  {
+    "key": "gestation.breadcrumbHome",
+    "value": "Home"
+  },
+  {
+    "key": "gestation.breadcrumbCurrent",
+    "value": "Gestation Calculator"
+  },
+  {
+    "key": "gestation.form.matingDateLabel",
+    "value": "When did mating occur?"
+  },
+  {
+    "key": "gestation.form.firstMating",
+    "value": "First mating date"
+  },
+  {
+    "key": "gestation.form.secondMating",
+    "value": "Second mating date (optional)"
+  },
+  {
+    "key": "gestation.form.addDateButton",
+    "value": "Add another mating date"
+  },
+  {
+    "key": "gestation.form.multiDateHint",
+    "value": "If multiple matings occurred, we calculate a range showing earliest possible, most likely, and latest dates."
+  },
+  {
+    "key": "gestation.form.submit",
+    "value": "Calculate Due Date"
+  },
+  {
+    "key": "gestation.result.expectedDate",
+    "value": "Expected Whelping Date"
+  },
+  {
+    "key": "gestation.result.earliest",
+    "value": "Earliest: {date}"
+  },
+  {
+    "key": "gestation.result.likely",
+    "value": "Likely: {date}"
+  },
+  {
+    "key": "gestation.result.latest",
+    "value": "Latest: {date}"
+  },
+  {
+    "key": "gestation.result.possibleRange",
+    "value": "Possible range: {earliest} → {latest}"
+  },
+  {
+    "key": "gestation.result.daysRemaining",
+    "value": "({days} days from today)"
+  },
+  {
+    "key": "gestation.result.basedOn",
+    "value": "Based on: average gestation of 63 days. Mating date: {date}"
+  },
+  {
+    "key": "gestation.result.averageNote",
+    "value": "(range: 58–68 days)"
+  },
+  {
+    "key": "gestation.result.milestonesTitle",
+    "value": "Pregnancy Milestone Timeline"
+  },
+  {
+    "key": "gestation.result.milestoneDay25",
+    "value": "Day 25 — Ultrasound window opens"
+  },
+  {
+    "key": "gestation.result.milestoneDay25Desc",
+    "value": "Vet can confirm pregnancy via ultrasound starting around day 25."
+  },
+  {
+    "key": "gestation.result.milestoneDay45",
+    "value": "Day 45 — X-ray: fetal skeletons visible"
+  },
+  {
+    "key": "gestation.result.milestoneDay45Desc",
+    "value": "X-ray shows fetal skeletons clearly. Count puppies and verify positioning."
+  },
+  {
+    "key": "gestation.result.milestoneDay58",
+    "value": "Day 58 — Possible early labor; start temperature monitoring"
+  },
+  {
+    "key": "gestation.result.milestoneDay58Desc",
+    "value": "Begin daily temperature monitoring. A drop below 37.8°C (100°F) signals labor within 24 hours."
+  },
+  {
+    "key": "gestation.result.milestoneDay60",
+    "value": "Day 60 — Nesting behavior"
+  },
+  {
+    "key": "gestation.result.milestoneDay60Desc",
+    "value": "Nesting behavior intensifies. Ensure the whelping area is fully prepared."
+  },
+  {
+    "key": "gestation.result.milestoneDay63",
+    "value": "Day 63 — Most likely due date"
+  },
+  {
+    "key": "gestation.result.milestoneDay63Desc",
+    "value": "Expected whelping date. Most dogs deliver on or near day 63."
+  },
+  {
+    "key": "gestation.result.milestoneDay65",
+    "value": "Day 65 — Late term; contact vet if no labor"
+  },
+  {
+    "key": "gestation.result.milestoneDay65Desc",
+    "value": "If no signs of labor, consult your veterinarian for assessment."
+  },
+  {
+    "key": "gestation.result.milestoneDay68",
+    "value": "Day 68 — Latest boundary; contact vet"
+  },
+  {
+    "key": "gestation.result.milestoneDay68Desc",
+    "value": "Latest safe boundary. Contact your veterinarian immediately if labor has not started."
+  },
+  {
+    "key": "gestation.shareCta.title",
+    "value": "{name} is expecting puppies around {date}!"
+  },
+  {
+    "key": "gestation.shareCta.sharePrompt",
+    "value": "Just calculated {name}'s whelping date! Check your dog's gestation timeline → {url} #DogBreeding #petsMetrics"
+  },
+  {
+    "key": "vaccination.title",
+    "value": "Vaccination Schedule — Personalized Timeline"
+  },
+  {
+    "key": "vaccination.subtitle",
+    "value": "Get a personalized vaccination and deworming schedule based on age and region."
+  },
+  {
+    "key": "vaccination.breadcrumbHome",
+    "value": "Home"
+  },
+  {
+    "key": "vaccination.breadcrumbCurrent",
+    "value": "Vaccination Schedule"
+  },
+  {
+    "key": "vaccination.form.birthDateLabel",
+    "value": "Birth date (or current age)"
+  },
+  {
+    "key": "vaccination.form.regionLabel",
+    "value": "Your region"
+  },
+  {
+    "key": "vaccination.form.submit",
+    "value": "Generate Schedule"
+  },
+  {
+    "key": "vaccination.result.scheduleTitle",
+    "value": "{name}'s Vaccination Schedule"
+  },
+  {
+    "key": "vaccination.result.generatedOn",
+    "value": "Generated on: {date} · Based on birth date: {birthDate} · Region: {region} · WSAVA Core Vaccine Guidelines"
+  },
+  {
+    "key": "vaccination.result.nextDue",
+    "value": "Next due: {date}"
+  },
+  {
+    "key": "vaccination.result.tableVaccine",
+    "value": "Vaccine / Treatment"
+  },
+  {
+    "key": "vaccination.result.tableDueDate",
+    "value": "Due Date"
+  },
+  {
+    "key": "vaccination.result.tableStatus",
+    "value": "Status"
+  },
+  {
+    "key": "vaccination.result.nonCoreTitle",
+    "value": "About Non-Core Vaccine Recommendations"
+  },
+  {
+    "key": "vaccination.result.nonCoreBody",
+    "value": "Vaccines marked as non-core depend heavily on your specific region and your dog's daily routine. The recommendations above are a starting point. Consult your veterinarian for a personalized assessment."
+  },
+  {
+    "key": "vaccination.result.status.overdue",
+    "value": "Overdue"
+  },
+  {
+    "key": "vaccination.result.status.upcoming",
+    "value": "Due Soon"
+  },
+  {
+    "key": "vaccination.result.status.future",
+    "value": "Upcoming"
+  },
+  {
+    "key": "vaccination.shareCta.title",
+    "value": "{name}'s personalized vaccination schedule"
+  },
+  {
+    "key": "vaccination.shareCta.sharePrompt",
+    "value": "Just generated {name}'s vaccination schedule! Check yours → {url} #DogHealth #petsMetrics"
+  },
+  {
+    "key": "catBcs.bcsOptions.5",
+    "value": "Ideal"
+  },
+  {
+    "key": "catBcs.form.title",
+    "value": "Body Condition Score Assessment"
+  },
+  {
+    "key": "catBcs.form.description",
+    "value": "Compare your cat's body shape to the BCS 1-9 images below. Select the image that most closely matches your cat's current physique."
+  },
+  {
+    "key": "catBcs.form.weightLabel",
+    "value": "Current weight"
+  },
+  {
+    "key": "catBcs.form.submit",
+    "value": "Calculate BCS & Weight Plan"
+  },
+  {
+    "key": "catBcs.result.bcsScore",
+    "value": "BCS {score}/9"
+  },
+  {
+    "key": "catBcs.result.bodyCondition",
+    "value": "Body condition: {condition}"
+  },
+  {
+    "key": "catBcs.result.condition.underweight",
+    "value": "Underweight"
+  },
+  {
+    "key": "catBcs.result.condition.ideal",
+    "value": "Ideal Weight"
+  },
+  {
+    "key": "catBcs.result.condition.overweight",
+    "value": "Overweight"
+  },
+  {
+    "key": "catBcs.result.condition.obese",
+    "value": "Obese"
+  },
+  {
+    "key": "catBcs.result.idealWeight",
+    "value": "Estimated ideal weight range"
+  },
+  {
+    "key": "catBcs.result.dailyCalorieTarget",
+    "value": "Daily calorie target (weight loss)"
+  },
+  {
+    "key": "catBcs.result.weeksToIdeal",
+    "value": "Estimated {weeks} weeks to reach ideal weight (1% weekly loss)"
+  },
+  {
+    "key": "catBcs.result.maintainWeight",
+    "value": "Maintain current weight. Keep monitoring monthly."
+  },
+  {
+    "key": "catBcs.result.lipidosisWarning.title",
+    "value": "⚠️ Hepatic Lipidosis Warning"
+  },
+  {
+    "key": "catBcs.result.lipidosisWarning.body",
+    "value": "Do NOT restrict calories below this safe floor. Rapid weight loss in cats can cause hepatic lipidosis (fatty liver disease), a serious and potentially fatal condition. Always consult your veterinarian before starting any weight loss program."
+  },
+  {
+    "key": "catBcs.result.disclaimerTitle",
+    "value": "BCS Assessment Limitations"
+  },
+  {
+    "key": "catBcs.result.disclaimerBody",
+    "value": "BCS is a visual screening tool, not a medical diagnosis. Individual cats vary in bone structure and muscle mass. For accurate assessment, have your veterinarian perform a hands-on BCS evaluation and blood work before starting any calorie-restricted diet."
+  },
+  {
+    "key": "catBcs.shareCta.title",
+    "value": "{name}'s BCS assessment is complete!"
+  },
+  {
+    "key": "catBcs.shareCta.sharePrompt",
+    "value": "Assess your cat's body condition and get a science-based weight plan → {url} #CatHealth #petsMetrics"
+  },
+  {
+    "key": "catHydration.title",
+    "value": "Cat Hydration Calculator"
+  },
+  {
+    "key": "catHydration.subtitle",
+    "value": "Calculate how much water your cat needs daily. Accounts for moisture from dry and wet food."
+  },
+  {
+    "key": "catHydration.breadcrumbHome",
+    "value": "Home"
+  },
+  {
+    "key": "catHydration.breadcrumbCurrent",
+    "value": "Hydration Calculator"
+  },
+  {
+    "key": "catHydration.form.weightLabel",
+    "value": "Cat's weight"
+  },
+  {
+    "key": "catHydration.form.dryFoodLabel",
+    "value": "Dry food per day"
+  },
+  {
+    "key": "catHydration.form.wetFoodLabel",
+    "value": "Wet food per day"
+  },
+  {
+    "key": "catHydration.form.submit",
+    "value": "Calculate Hydration"
+  },
+  {
+    "key": "catHydration.result.totalMl",
+    "value": "{name} needs about {ml} ml of water per day."
+  },
+  {
+    "key": "catHydration.result.fromFood",
+    "value": "Water from food"
+  },
+  {
+    "key": "catHydration.result.extraNeeded",
+    "value": "Extra water needed"
+  },
+  {
+    "key": "catHydration.result.moistureNote",
+    "value": "Dry food ~10% moisture · Wet food ~80% moisture"
+  },
+  {
+    "key": "catHydration.result.statusAdequate",
+    "value": "Adequate intake from food"
+  },
+  {
+    "key": "catHydration.result.statusSlightlyLow",
+    "value": "Slightly low — add a little more water"
+  },
+  {
+    "key": "catHydration.result.statusLow",
+    "value": "Low — needs extra water"
+  },
+  {
+    "key": "catHydration.result.scienceTitle",
+    "value": "Why hydration matters for cats"
+  },
+  {
+    "key": "catHydration.result.scienceBody",
+    "value": "Cats evolved as desert animals and have a low thirst drive. In the wild, they get most of their water from prey (~70–80% moisture). Cats on dry-food-only diets are at highest risk of chronic dehydration, which can contribute to urinary tract disease and kidney problems. Providing fresh water daily and incorporating wet food are the two most effective strategies."
+  },
+  {
+    "key": "catHydration.shareCta.title",
+    "value": "{name} needs {ml} ml of water daily!"
+  },
+  {
+    "key": "catHydration.shareCta.sharePrompt",
+    "value": "Most cats are chronically dehydrated — find out how much water yours needs → {url} #CatHealth #petsMetrics"
+  },
+  {
+    "key": "toxicChecker.searching",
+    "value": "Searching..."
+  },
+  {
+    "key": "toxicChecker.emptyState",
+    "value": "Start typing a food or plant name above."
+  },
+  {
+    "key": "toxicChecker.popularSearches",
+    "value": "Popular searches:"
+  },
+  {
+    "key": "toxicChecker.noResults",
+    "value": "No matching items found. Try a different search term."
+  },
+  {
+    "key": "toxicChecker.affectedSpecies",
+    "value": "Affected species"
+  },
+  {
+    "key": "toxicChecker.form.speciesLabel",
+    "value": "Check for:"
+  },
+  {
+    "key": "toxicChecker.form.searchLabel",
+    "value": "Search food or plant"
+  },
+  {
+    "key": "toxicChecker.form.searchPlaceholder",
+    "value": "e.g. \"grapes\", \"chocolate\", \"lilies\"..."
+  },
+  {
+    "key": "toxicChecker.form.clear",
+    "value": "Clear search"
+  },
+  {
+    "key": "toxicChecker.result.toxicHeader",
+    "value": "This item is toxic to your pet. Seek veterinary attention immediately if ingestion occurred."
+  },
+  {
+    "key": "toxicChecker.result.cautionHeader",
+    "value": "This item requires caution. Limited or supervised exposure only."
+  },
+  {
+    "key": "toxicChecker.result.safeHeader",
+    "value": "This item is generally safe for your pet."
+  },
+  {
+    "key": "toxicChecker.result.symptoms",
+    "value": "Common symptoms:"
+  },
+  {
+    "key": "toxicChecker.result.safeAmount",
+    "value": "If fed, safe amount"
+  },
+  {
+    "key": "toxicChecker.result.safeAmountLabel",
+    "value": "Safe amount"
+  },
+  {
+    "key": "toxicChecker.result.emergencyTitle",
+    "value": "If your pet ingested this item, contact immediately:"
+  },
+  {
+    "key": "toxicChecker.result.emergencyNumbers",
+    "value": "ASPCA Poison Control: (888) 426-4435 · Pet Poison Helpline: (855) 764-7661"
+  },
+  {
+    "key": "toxicChecker.result.otherResults",
+    "value": "Other matches"
+  },
+  {
+    "key": "toxicChecker.shareCta.title",
+    "value": "{item} is {level} for pets — check the Toxic Checker!"
+  },
+  {
+    "key": "toxicChecker.shareCta.sharePrompt",
+    "value": "Is {item} safe for pets? Check 200+ items instantly → {url} #PetSafety #petsMetrics"
+  },
+  {
+    "key": "toxicLanding.emergencyTitle",
+    "value": "Emergency Contact Information"
+  },
+  {
+    "key": "toxicLanding.emergencyDescription",
+    "value": "If you believe your pet has ingested this item, contact a poison control center or emergency veterinarian immediately. Time is critical."
+  },
+  {
+    "key": "toxicLanding.aspcaPhone",
+    "value": "ASPCA Animal Poison Control"
+  },
+  {
+    "key": "toxicLanding.aspcaNumber",
+    "value": "(888) 426-4435"
+  },
+  {
+    "key": "toxicLanding.petPoisonNumber",
+    "value": "(855) 764-7661"
+  },
+  {
+    "key": "toxicLanding.emergencyDisclaimer",
+    "value": "These numbers are for the United States. If you are outside the US, contact your local emergency veterinarian or national animal poison control service."
+  },
+  {
+    "key": "toxicLanding.relatedTitle",
+    "value": "Related Items"
+  },
+  {
+    "key": "toxicLanding.sidebar.moreItems",
+    "value": "More Toxicity References"
+  },
+  {
+    "key": "toxicLanding.sidebar.totalItems",
+    "value": "{count} items in database"
+  },
+  {
+    "key": "toxicLanding.sidebar.openChecker",
+    "value": "Open Full Toxic Checker"
+  },
+  {
+    "key": "toxicLanding.notFound.title",
+    "value": "Item Not Found"
+  },
+  {
+    "key": "toxicLanding.notFound.description",
+    "value": "The toxicity entry you are looking for does not exist. Please use the Toxic Checker to search all items."
+  },
+  {
+    "key": "toxicLanding.notFound.cta",
+    "value": "Open Toxic Checker"
+  },
+  {
+    "key": "euTravel.errors.SELECT_COUNTRIES",
+    "value": "Please select both origin and destination countries."
+  },
+  {
+    "key": "euTravel.errors.INVALID_COUNTRY",
+    "value": "Invalid country code. Please select a valid EU country."
+  },
+  {
+    "key": "euTravel.form.title",
+    "value": "Your Travel Details"
+  },
+  {
+    "key": "euTravel.form.speciesLabel",
+    "value": "Pet type"
+  },
+  {
+    "key": "euTravel.form.originLabel",
+    "value": "Departing from"
+  },
+  {
+    "key": "euTravel.form.selectCountry",
+    "value": "Select a country..."
+  },
+  {
+    "key": "euTravel.form.documentsLabel",
+    "value": "What documents do you already have? (check all that apply)"
+  },
+  {
+    "key": "euTravel.form.submit",
+    "value": "Check Requirements"
+  },
+  {
+    "key": "euTravel.documents.rabies-vaccination",
+    "value": "Rabies Vaccination (current/valid)"
+  },
+  {
+    "key": "euTravel.documents.eu-pet-passport",
+    "value": "EU Pet Passport"
+  },
+  {
+    "key": "euTravel.documents.rabies-antibody-titer",
+    "value": "Rabies Antibody Titer Test"
+  },
+  {
+    "key": "euTravel.documents.tapeworm-treatment",
+    "value": "Tapeworm Treatment Certificate"
+  },
+  {
+    "key": "euTravel.documents.health-certificate-non-eu",
+    "value": "Animal Health Certificate (AHC)"
+  },
+  {
+    "key": "euTravel.documents.min-age-rabies",
+    "value": "Minimum Age Met (12+ weeks)"
+  },
+  {
+    "key": "euTravel.documents.max-pets-limit",
+    "value": "Within 5-Pet Limit (non-commercial)"
+  },
+  {
+    "key": "euTravel.documents.teip-entry-point",
+    "value": "Designated Entry Point (TEP) planned"
+  },
+  {
+    "key": "euTravel.documents.uk-specific-docs",
+    "value": "UK-specific AHC (post-Brexit)"
+  },
+  {
+    "key": "euTravel.documents.nordic-immunity-zone",
+    "value": "Nordic Echinococcus Treatment"
+  },
+  {
+    "key": "euTravel.result.readyToTravel",
+    "value": "All requirements met! Your pet is ready to travel."
+  },
+  {
+    "key": "euTravel.result.notReady",
+    "value": "Missing requirements detected. You may be denied entry."
+  },
+  {
+    "key": "euTravel.result.requirementsSummary",
+    "value": "{satisfied} satisfied, {missing} missing"
+  },
+  {
+    "key": "euTravel.result.leadTimeWarning",
+    "value": "You need at least {days} days to complete outstanding requirements before travel."
+  },
+  {
+    "key": "euTravel.result.leadTimeHint",
+    "value": "Plan ahead — some requirements have mandatory waiting periods that begin after vaccination or testing."
+  },
+  {
+    "key": "euTravel.result.satisfied",
+    "value": "Satisfied"
+  },
+  {
+    "key": "euTravel.result.missing",
+    "value": "Missing"
+  },
+  {
+    "key": "euTravel.result.leadTime",
+    "value": "Lead time: {days} days before travel"
+  },
+  {
+    "key": "euTravel.result.officialSource",
+    "value": "Official source"
+  },
+  {
+    "key": "euTravel.shareCta.title",
+    "value": "EU Pet Travel Requirements Checklist"
+  },
+  {
+    "key": "euTravel.shareCta.sharePrompt",
+    "value": "Everything your pet needs to travel to the EU — microchip, rabies, tapeworm, and more → {url} #PetTravel #petsMetrics"
+  },
+  {
+    "key": "euTravelLanding.h1Pattern",
+    "value": "Traveling to {destination} with Your Pet — Requirements Checklist"
+  },
+  {
+    "key": "euTravelLanding.subtitle",
+    "value": "Complete guide for traveling from {origin} to {destination} with your dog or cat. Microchip, rabies vaccine, pet passport, tapeworm treatment — all requirements in one place."
+  },
+  {
+    "key": "euTravelLanding.sectionChecklist",
+    "value": "Travel Requirements Checklist"
+  },
+  {
+    "key": "euTravelLanding.requirementRequired",
+    "value": "Required"
+  },
+  {
+    "key": "euTravelLanding.requirementNotRequired",
+    "value": "Not specifically required for this route"
+  },
+  {
+    "key": "euTravelLanding.leadTime",
+    "value": "{days} days before travel"
+  },
+  {
+    "key": "euTravelLanding.leadTimeNone",
+    "value": "No waiting period"
+  },
+  {
+    "key": "euTravelLanding.noLeadTime",
+    "value": "No specific lead time"
+  },
+  {
+    "key": "euTravelLanding.officialSource",
+    "value": "Official Source"
+  },
+  {
+    "key": "euTravelLanding.speciesAppliesTo",
+    "value": "Applies to"
+  },
+  {
+    "key": "euTravelLanding.speciesDog",
+    "value": "Dogs"
+  },
+  {
+    "key": "euTravelLanding.speciesCat",
+    "value": "Cats"
+  },
+  {
+    "key": "euTravelLanding.speciesBoth",
+    "value": "Dogs & Cats"
+  },
+  {
+    "key": "euTravelLanding.ctaTitle",
+    "value": "Ready to prepare?"
+  },
+  {
+    "key": "euTravelLanding.ctaDescription",
+    "value": "Use our interactive EU Pet Travel Checker to verify all requirements for your specific pet."
+  },
+  {
+    "key": "euTravelLanding.ctaButton",
+    "value": "Open EU Pet Travel Checker"
+  },
+  {
+    "key": "euTravelLanding.notFoundTitle",
+    "value": "Route Not Found"
+  },
+  {
+    "key": "euTravelLanding.notFoundDescription",
+    "value": "The EU travel route you are looking for does not exist. Please use the interactive checker to search all destinations."
+  },
+  {
+    "key": "euTravelLanding.notFoundCta",
+    "value": "Open EU Pet Travel Checker"
+  },
+  {
+    "key": "barf.form.speciesLabel",
+    "value": "Pet Type"
+  },
+  {
+    "key": "barf.form.weightLabel",
+    "value": "Target Weight (kg)"
+  },
+  {
+    "key": "barf.form.percentageLabel",
+    "value": "Daily Feeding %"
+  },
+  {
+    "key": "barf.form.percentageHint",
+    "value": "Typical: 2–3% of body weight daily"
+  }
+]

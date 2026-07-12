@@ -36,21 +36,18 @@ type ToxicLandingPageProps = {
   disclaimerText: string;
 };
 
-const LEVEL_CONFIG: Record<string, { label: string; bg: string; text: string; borderColor: string }> = {
+const LEVEL_CONFIG: Record<string, { bg: string; text: string; borderColor: string }> = {
   toxic: {
-    label: 'TOXIC',
     bg: 'var(--status-toxic-bg)',
     text: 'var(--status-toxic)',
     borderColor: 'var(--status-toxic)',
   },
   caution: {
-    label: 'CAUTION',
     bg: 'var(--status-caution-bg)',
     text: 'var(--status-caution)',
     borderColor: 'var(--status-caution)',
   },
   safe: {
-    label: 'SAFE',
     bg: 'var(--status-safe-bg)',
     text: 'var(--status-safe)',
     borderColor: 'var(--status-safe)',
@@ -82,19 +79,6 @@ function getRelatedItems(item: ToxicItem, species: 'dog' | 'cat', limit: number 
   return related;
 }
 
-function headingForSpeciesItem(item: ToxicItem, species: 'dog' | 'cat'): string {
-  const level = species === 'dog' ? item.dogLevel : item.catLevel;
-  const levelLabel = LEVEL_CONFIG[level]?.label ?? level.toUpperCase();
-  if (species === 'dog') return `Can Dogs Eat ${item.name}? — ${levelLabel}`;
-  return `Is ${item.name} Toxic to Cats? — ${levelLabel}`;
-}
-
-function shareTitleForSpeciesItem(item: ToxicItem, species: 'dog' | 'cat'): string {
-  const level = species === 'dog' ? item.dogLevel : item.catLevel;
-  const levelLabel = LEVEL_CONFIG[level]?.label ?? level.toUpperCase();
-  return `${item.name} is ${levelLabel} for pets — check the Toxic Checker!`;
-}
-
 function getSpeciesLevel(item: ToxicItem, species: 'dog' | 'cat'): string {
   return species === 'dog' ? item.dogLevel : item.catLevel;
 }
@@ -122,11 +106,14 @@ export function ToxicLandingPage({ item, species, breadcrumbItems, disclaimerTex
   const locale = useLocale();
   const pageUrl = usePageUrlBuilder();
   const tNav = useTranslations('nav');
-  const tToxic = useTranslations('toxicChecker.result');
+  const tToxic = useTranslations('toxicChecker');
 
   const level = getSpeciesLevel(item, species);
   const levelCfg = LEVEL_CONFIG[level];
-  const heading = headingForSpeciesItem(item, species);
+  const levelLabel = tToxic(`levelLabels.${level}`);
+  const heading = species === 'dog'
+    ? t('headingDog', { item: item.name, level: levelLabel })
+    : t('headingCat', { item: item.name, level: levelLabel });
   const h1Style = toxicH1Styles[level];
   const faqSchema = generateToxicFaqJsonLd(item, species);
   const articleSchema = generateToxicArticleJsonLd(item, species);
@@ -138,7 +125,7 @@ export function ToxicLandingPage({ item, species, breadcrumbItems, disclaimerTex
 
   const prefix = species === 'dog' ? 'dog/can-dogs-eat' : 'cat/are-toxic-to-cats';
   const shareUrl = SITE_URL + pageUrl(`${prefix}/${item.slug}`).slice(0, -1);
-  const shareTitle = shareTitleForSpeciesItem(item, species);
+  const shareTitle = tToxic('shareCta.title', { item: item.name, level: levelLabel });
 
   const petLabel = species === 'dog' ? tNav('dog') : tNav('cat');
   const speciesColor = species === 'dog' ? 'var(--dog-primary)' : 'var(--cat-primary)';
@@ -176,7 +163,7 @@ export function ToxicLandingPage({ item, species, breadcrumbItems, disclaimerTex
                     className="inline-block rounded-md px-3 py-1 text-xs font-bold uppercase tracking-wider"
                     style={{ backgroundColor: h1Style.badgeBg, color: h1Style.badgeText }}
                   >
-                    {levelCfg.label}
+                    {levelLabel}
                   </span>
                   <span
                     className="rounded-full px-3 py-1 text-xs font-medium"
@@ -200,7 +187,7 @@ export function ToxicLandingPage({ item, species, breadcrumbItems, disclaimerTex
                 <div className="flex flex-col gap-4">
                   <div className="rounded-lg border-2 border-[--status-toxic] bg-[--status-toxic-bg] p-5">
                     <p className="text-base font-bold text-[--status-toxic]">
-                      {tToxic('toxicHeader')}
+                      {tToxic('result.toxicHeader')}
                     </p>
                     {item.emergencyNote ? (
                       <p className="mt-2 text-sm text-[--gray-700]">{item.emergencyNote}</p>
@@ -208,7 +195,7 @@ export function ToxicLandingPage({ item, species, breadcrumbItems, disclaimerTex
                   </div>
                   {item.symptoms.length > 0 ? (
                     <div>
-                      <p className="text-sm font-semibold text-[--gray-800]">{tToxic('symptoms')}</p>
+                      <p className="text-sm font-semibold text-[--gray-800]">{tToxic('result.symptoms')}</p>
                       <ul className="mt-3 grid grid-cols-1 gap-2 sm:grid-cols-2">
                         {item.symptoms.map((s) => (
                           <li key={s} className="flex items-start gap-2">
@@ -226,7 +213,7 @@ export function ToxicLandingPage({ item, species, breadcrumbItems, disclaimerTex
                 <div className="flex flex-col gap-4">
                   <div className="rounded-lg border-2 border-[--status-caution] bg-[--status-caution-bg] p-5">
                     <p className="text-base font-bold text-[--status-caution]">
-                      {tToxic('cautionHeader')}
+                      {tToxic('result.cautionHeader')}
                     </p>
                     {item.emergencyNote ? (
                       <p className="mt-2 text-sm text-[--gray-700]">{item.emergencyNote}</p>
@@ -235,14 +222,14 @@ export function ToxicLandingPage({ item, species, breadcrumbItems, disclaimerTex
                   {item.safeAmount ? (
                     <div className="rounded-lg border border-[--gray-200] bg-[--gray-50] p-4">
                       <p className="text-sm">
-                        <span className="font-semibold text-[--gray-800]">{tToxic('safeAmountLabel')}:</span>{' '}
+                        <span className="font-semibold text-[--gray-800]">{tToxic('result.safeAmountLabel')}:</span>{' '}
                         <span className="text-[--gray-600]">{item.safeAmount}</span>
                       </p>
                     </div>
                   ) : null}
                   {item.symptoms.length > 0 ? (
                     <div>
-                      <p className="text-sm font-semibold text-[--gray-800]">{tToxic('symptoms')}</p>
+                      <p className="text-sm font-semibold text-[--gray-800]">{tToxic('result.symptoms')}</p>
                       <ul className="mt-3 grid grid-cols-1 gap-2 sm:grid-cols-2">
                         {item.symptoms.map((s) => (
                           <li key={s} className="flex items-start gap-2">
@@ -260,13 +247,13 @@ export function ToxicLandingPage({ item, species, breadcrumbItems, disclaimerTex
                 <div className="flex flex-col gap-4">
                   <div className="rounded-lg border-2 border-[--status-safe] bg-[--status-safe-bg] p-5">
                     <p className="text-base font-bold text-[--status-safe]">
-                      {tToxic('safeHeader')}
+                      {tToxic('result.safeHeader')}
                     </p>
                   </div>
                   {item.safeAmount ? (
                     <div className="rounded-lg border border-[--gray-200] bg-[--gray-50] p-4">
                       <p className="text-sm">
-                        <span className="font-semibold text-[--gray-800]">{tToxic('safeAmountLabel')}:</span>{' '}
+                        <span className="font-semibold text-[--gray-800]">{tToxic('result.safeAmountLabel')}:</span>{' '}
                         <span className="text-[--gray-600]">{item.safeAmount}</span>
                       </p>
                     </div>
@@ -286,7 +273,7 @@ export function ToxicLandingPage({ item, species, breadcrumbItems, disclaimerTex
               </h2>
               <p className="mt-3 text-base leading-relaxed text-[--gray-600]">{dangerReason}</p>
               <p className="mt-3 text-xs text-[--gray-400]">
-                Source: <span className="font-medium">{item.source}</span>. Verified by petsMetrics.
+                {t('sourceAttribution', { source: item.source })}
               </p>
             </Card>
 
@@ -323,7 +310,7 @@ export function ToxicLandingPage({ item, species, breadcrumbItems, disclaimerTex
             {/* FAQ Section (3 items — must match JSON-LD per geo-checklist §2.1) */}
             <section aria-labelledby="toxic-faq-heading" className="mt-10">
               <h2 id="toxic-faq-heading" className="text-2xl font-bold tracking-tight text-[--gray-900]">
-                Frequently Asked Questions
+                {t('faqHeading')}
               </h2>
               <div className="mt-6 flex flex-col gap-4">
                 {faqItems.map((faq, idx) => (
@@ -352,11 +339,11 @@ export function ToxicLandingPage({ item, species, breadcrumbItems, disclaimerTex
                   <path fillRule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z" clipRule="evenodd" />
                 </svg>
                 <p className="text-sm text-[--gray-500]">
-                  {tToxic('source')}:{' '}
+                  {tToxic('result.source')}:{' '}
                   <span className="font-medium text-[--gray-700]">{item.source}</span>
                   {' · '}
                   <span className="text-[--gray-400]">
-                    Primary data source and citations: ASPCA Animal Poison Control Center, AVMA, AAFP, AKC.
+                    {t('dataCitation')}
                   </span>
                 </p>
               </div>
@@ -390,7 +377,7 @@ export function ToxicLandingPage({ item, species, breadcrumbItems, disclaimerTex
                           className="rounded px-2.5 py-0.5 text-[10px] font-bold uppercase text-white"
                           style={{ backgroundColor: riCfg.text }}
                         >
-                          {riCfg.label}
+                          {tToxic(`levelLabels.${riLevel}`)}
                         </span>
                       </a>
                     );

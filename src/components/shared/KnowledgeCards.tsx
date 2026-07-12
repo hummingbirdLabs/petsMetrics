@@ -44,7 +44,7 @@ export async function KnowledgeCards({ cards, locale }: KnowledgeCardsProps) {
               )}
             </p>
             <cite className="mt-3 block text-xs text-[--gray-400]">
-              Source:{' '}
+              {t('sourceLabel')}{' '}
               <a
                 href={card.citeHref}
                 target="_blank"

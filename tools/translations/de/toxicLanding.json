@@ -1,0 +1,14 @@
+{
+  "emergencyTitle": "Notfall-Kontaktinformationen",
+  "emergencyDescription": "Wenn Sie glauben, dass Ihr Haustier diesen Gegenstand aufgenommen hat, kontaktieren Sie sofort eine Giftnotrufzentrale oder einen tierärztlichen Notdienst. Zeit ist entscheidend.",
+  "aspcaPhone": "ASPCA Tiergiftnotruf",
+  "petPoisonHelpline": "Haustier-Giftnotruf",
+  "emergencyDisclaimer": "Diese Nummern gelten für die Vereinigten Staaten. Wenn Sie sich außerhalb der USA befinden, kontaktieren Sie Ihren örtlichen tierärztlichen Notdienst oder den nationalen Tiergiftnotruf.",
+  "relatedTitle": "Verwandte Einträge",
+  "sidebar.moreItems": "Weitere Toxizitätsreferenzen",
+  "sidebar.totalItems": "{count} Einträge in der Datenbank",
+  "sidebar.openChecker": "Vollständigen Giftprüfer öffnen",
+  "notFound.title": "Eintrag nicht gefunden",
+  "notFound.description": "Der gesuchte Toxizitätseintrag existiert nicht. Bitte verwenden Sie den Giftprüfer, um alle Einträge zu durchsuchen.",
+  "notFound.cta": "Giftprüfer öffnen"
+}

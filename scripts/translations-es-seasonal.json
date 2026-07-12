@@ -1,0 +1,18 @@
+{
+  "seasonal": {
+    "breadcrumb": {
+      "home": "Inicio",
+      "dog": "Perro",
+      "cat": "Gato",
+      "seasonal": "Peligros Estacionales",
+      "summerHeat": "Seguridad en Verano",
+      "winterPawCare": "Cuidado de Patas en Invierno",
+      "christmasFoods": "Seguridad Alimentaria en Navidad",
+      "halloweenCandy": "Seguridad de Dulces de Halloween",
+      "fireworksAnxiety": "Ansiedad por Fuegos Artificiales",
+      "springAllergies": "Alergias de Primavera",
+      "thanksgiving": "Seguridad en Acción de Gracias",
+      "easterChocolate": "Seguridad del Chocolate de Pascua"
+    }
+  }
+}

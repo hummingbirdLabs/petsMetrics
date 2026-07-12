@@ -1,0 +1,16 @@
+{
+  "title": "Rechner",
+  "weight": "Gewicht",
+  "age": "Alter",
+  "breed": "Rasse",
+  "breedSize": "Breed Size",
+  "activityLevel": "Activity Level",
+  "reproductiveStatus": "Fortpflanzungsstatus",
+  "bodyCondition": "Body Condition",
+  "result": "Ergebnis",
+  "recommended": "Empfohlen",
+  "dailyCalories": "Daily Calories",
+  "healthyWeight": "Gesundes Gewicht",
+  "waterNeeded": "Water Needed",
+  "feedAmount": "Futtermenge"
+}

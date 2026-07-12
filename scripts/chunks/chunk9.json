@@ -1,0 +1,386 @@
+[
+  {
+    "key": "compare.declawingVsScratchingPost.rows.4.topicA",
+    "value": "Increased biting, litter box aversion"
+  },
+  {
+    "key": "compare.declawingVsScratchingPost.rows.4.topicB",
+    "value": "Positive (natural behavior preserved)"
+  },
+  {
+    "key": "compare.declawingVsScratchingPost.rows.5.dimension",
+    "value": "Cost"
+  },
+  {
+    "key": "compare.declawingVsScratchingPost.rows.5.topicA",
+    "value": "$200-800 (surgery)"
+  },
+  {
+    "key": "compare.declawingVsScratchingPost.rows.5.topicB",
+    "value": "$20-100 (posts + training)"
+  },
+  {
+    "key": "compare.declawingVsScratchingPost.rows.6.dimension",
+    "value": "Veterinary Stance"
+  },
+  {
+    "key": "compare.declawingVsScratchingPost.rows.6.topicA",
+    "value": "Opposed by AAFP/ISFM/AVMA"
+  },
+  {
+    "key": "compare.declawingVsScratchingPost.rows.6.topicB",
+    "value": "Endorsed by all organizations"
+  },
+  {
+    "key": "compare.declawingVsScratchingPost.rows.7.dimension",
+    "value": "Long-term Outcome"
+  },
+  {
+    "key": "compare.declawingVsScratchingPost.rows.7.topicA",
+    "value": "Permanent physical alteration"
+  },
+  {
+    "key": "compare.declawingVsScratchingPost.rows.7.topicB",
+    "value": "Sustainable behavior management"
+  },
+  {
+    "key": "compare.declawingVsScratchingPost.verdict",
+    "value": "<strong>Scratching post training is the only humane and recommended approach.</strong> Declawing is opposed by all major veterinary organizations and is illegal in many jurisdictions. It causes unnecessary pain, can lead to behavioral problems, and permanently alters the cat's physical integrity. Scratching post training, combined with regular nail trims and soft nail caps (Soft Paws), effectively manages scratching without harm. If your cat is scratching furniture, consult your veterinarian or a feline behaviorist for a personalized training plan."
+  },
+  {
+    "key": "compare.declawingVsScratchingPost.faq.0.question",
+    "value": "Is declawing cruel?"
+  },
+  {
+    "key": "compare.declawingVsScratchingPost.faq.0.answer",
+    "value": "Yes — declawing (onychectomy) is the surgical amputation of the last bone of each toe, equivalent to cutting off human fingers at the last joint. It causes significant pain, can lead to chronic pain and behavioral problems, and is opposed by AAFP, ISFM, and AVMA. It is banned in the UK, EU, Australia, and several US states."
+  },
+  {
+    "key": "compare.declawingVsScratchingPost.faq.1.question",
+    "value": "How do I train my cat to use a scratching post?"
+  },
+  {
+    "key": "compare.declawingVsScratchingPost.faq.1.answer",
+    "value": "Place posts near where your cat already scratches (favorite furniture, sleeping areas). Use sisal, cardboard, or carpet textures. Encourage use with catnip, treats, and interactive play. Reward with praise when they use the post. Be patient — training takes 2-8 weeks. Never punish or force your cat's paws on the post."
+  },
+  {
+    "key": "compare.declawingVsScratchingPost.faq.2.question",
+    "value": "What are soft nail caps?"
+  },
+  {
+    "key": "compare.declawingVsScratchingPost.faq.2.answer",
+    "value": "Soft nail caps (like Soft Paws) are small vinyl caps glued over the cat's claws. They blunt the claws temporarily (4-6 weeks) without surgery. They are humane, painless, and effective for preventing furniture damage. Applied by your vet or at home with practice."
+  },
+  {
+    "key": "compare.harnessVsCollar.rows.5.topicA",
+    "value": "$25-60"
+  },
+  {
+    "key": "compare.harnessVsCollar.rows.5.topicB",
+    "value": "$10-30"
+  },
+  {
+    "key": "compare.harnessVsCollar.rows.6.topicB",
+    "value": "Ideal"
+  },
+  {
+    "key": "compare.grainFreeVsWholeGrain.topicB.pros.2.topicA",
+    "value": "$1.00-2.00/lb vs $1.50-3.00/lb for comparable quality grain-free."
+  },
+  {
+    "key": "compare.scratchingPostVsCatTree.rows.0.topicA",
+    "value": "$5-40"
+  },
+  {
+    "key": "compare.scratchingPostVsCatTree.rows.0.topicB",
+    "value": "$50-300+"
+  },
+  {
+    "key": "compare.scratchingPostVsCatTree.rows.5.topicA",
+    "value": "Minimal"
+  },
+  {
+    "key": "compare.hub.guidesHeading",
+    "value": "Free Guides & Comparisons"
+  },
+  {
+    "key": "compare.hub.guidesDescription",
+    "value": "Science-backed articles to help you make informed decisions about your pet's health, nutrition, and care."
+  },
+  {
+    "key": "compare.hub.compareCardAria",
+    "value": "Read comparison: {title}"
+  },
+  {
+    "key": "compare.relatedCompare.heading",
+    "value": "Related Comparison"
+  },
+  {
+    "key": "compare.relatedCompare.readComparison",
+    "value": "Read the Full Comparison"
+  },
+  {
+    "key": "compare.relatedCompare.ariaLabel",
+    "value": "Related comparison article"
+  },
+  {
+    "key": "compare.footer.dogGuides",
+    "value": "Dog Guides"
+  },
+  {
+    "key": "compare.footer.catGuides",
+    "value": "Cat Guides"
+  },
+  {
+    "key": "compare.footer.viewAll",
+    "value": "View All Guides"
+  },
+  {
+    "key": "privacy.philosophy",
+    "value": "1. Our Privacy Philosophy"
+  },
+  {
+    "key": "privacy.philosophyP1",
+    "value": "petsMetrics is designed to be private by default. We do not require accounts, do not collect email addresses, and do not upload any of your pet data to our servers. Your pet profiles, tool inputs, and calculation results are stored exclusively in your browser's localStorage — on your device, under your control."
+  },
+  {
+    "key": "privacy.notCollect",
+    "value": "2. Data We Do Not Collect"
+  },
+  {
+    "key": "privacy.notCollectP1",
+    "value": "<strong>Pet profiles</strong> — breed, weight, age, name, photo, and health details are stored only in your device's localStorage. They are never transmitted to any server."
+  },
+  {
+    "key": "privacy.notCollectP2",
+    "value": "<strong>Tool inputs and results</strong> — all calculator inputs (weight, activity level, food items, etc.) and their results are processed entirely in your browser using JavaScript. No calculation data leaves your device."
+  },
+  {
+    "key": "privacy.notCollectP3",
+    "value": "<strong>Personal identifiers</strong> — we do not collect names, email addresses, IP addresses, or any other personally identifiable information."
+  },
+  {
+    "key": "privacy.notCollectP4",
+    "value": "<strong>Cookies for tracking</strong> — we do not use tracking cookies, advertising cookies, or any third-party cookies."
+  },
+  {
+    "key": "privacy.storedOnDevice",
+    "value": "3. Data Stored on Your Device"
+  },
+  {
+    "key": "privacy.storedOnDeviceP1",
+    "value": "The following data is stored in your browser's localStorage and never leaves your device:"
+  },
+  {
+    "key": "privacy.storedOnDeviceP2",
+    "value": "Pet profiles (name, breed, species, birth date, weight, sex, neuter status, photo)"
+  },
+  {
+    "key": "privacy.storedOnDeviceP3",
+    "value": "Active profile selection"
+  },
+  {
+    "key": "privacy.storedOnDeviceP4",
+    "value": "Weight unit preference (kg or lb)"
+  },
+  {
+    "key": "privacy.storedOnDeviceP5",
+    "value": "UI preferences"
+  },
+  {
+    "key": "privacy.storedOnDeviceP6",
+    "value": "You can delete this data at any time by clearing your browser's localStorage for petsmetrics.com, or by using the \"Delete Profile\" function in the Profile dashboard. You can also export your data as a JSON file for backup."
+  },
+  {
+    "key": "privacy.analytics",
+    "value": "4. Analytics"
+  },
+  {
+    "key": "privacy.analyticsP1",
+    "value": "We may use a privacy-respecting analytics service (such as Plausible or a self-hosted alternative) to understand aggregate usage patterns — e.g., which tools are most popular, which pages receive the most visits. These analytics do not use cookies, do not track individual users across sessions, and do not collect any personally identifiable information. No individual user behavior is recorded or stored."
+  },
+  {
+    "key": "privacy.thirdParty",
+    "value": "5. Third-Party Services"
+  },
+  {
+    "key": "privacy.thirdPartyP1",
+    "value": "petsMetrics does not embed third-party trackers, social media pixels, or advertising networks that collect user data. We may display affiliate links to pet products or services — clicking these links takes you to the third-party site, whose privacy policies govern any data collected there."
+  },
+  {
+    "key": "privacy.thirdPartyP2",
+    "value": "The site is hosted on Vercel, which may collect standard server logs (including IP addresses) for operational purposes. Vercel's privacy policy governs that data processing."
+  },
+  {
+    "key": "privacy.children",
+    "value": "6. Children's Privacy"
+  },
+  {
+    "key": "privacy.childrenP1",
+    "value": "petsMetrics is a general-audience website. We do not knowingly collect any personal information from children under 13."
+  },
+  {
+    "key": "privacy.gdpr",
+    "value": "7. GDPR Compliance"
+  },
+  {
+    "key": "privacy.gdprP1",
+    "value": "Since we do not collect, process, or store any personal data on our servers, GDPR compliance is inherently satisfied for data processing. All user data (pet profiles) resides on the user's device and is never transmitted to us. There is no \"data controller\" relationship for pet profile data because we never receive or access it."
+  },
+  {
+    "key": "privacy.gdprP2",
+    "value": "If you have questions about this privacy policy, contact us at <link>hello@petsmetrics.com</link>."
+  },
+  {
+    "key": "privacy.changes",
+    "value": "8. Changes to This Policy"
+  },
+  {
+    "key": "privacy.changesP1",
+    "value": "We may update this privacy policy from time to time. Changes will be posted on this page with an updated \"Last updated\" date. Continued use of the site after changes constitutes acceptance of the updated policy."
+  },
+  {
+    "key": "about.title",
+    "value": "About petsMetrics"
+  },
+  {
+    "key": "about.intro",
+    "value": "Built by petsMetrics Team, a pet owner and developer. petsMetrics has been providing science-based pet health tools since 2026. We believe pet owners deserve accurate, transparent calculators that don't require accounts, emails, or personal data."
+  },
+  {
+    "key": "about.methodology",
+    "value": "Our Methodology"
+  },
+  {
+    "key": "about.methodologyP1",
+    "value": "All calorie formulas are based on the AAFCO 2023 Nutrient Profiles. Dog age conversion uses the UCSD epigenetic methylation study (Wang et al., 2020). Cat age conversion follows AAHA/AAFP 2021 Feline Life Stage Guidelines. Vaccination schedules reference WSAVA 2024 Global Vaccination Guidelines. Toxicity data is verified against the ASPCA Animal Poison Control Center database and AVMA guidelines (last checked: June 2026)."
+  },
+  {
+    "key": "about.methodologyP2",
+    "value": "Every calculator result page cites its formula source. You can verify any of our formulas independently — search \"RER 70 × weight^0.75 AAFCO\" or \"UCSD dog aging epigenetic clock Wang 2020\" and confirm the science yourself. We don't invent formulas; we implement peer-reviewed veterinary research."
+  },
+  {
+    "key": "about.dataSources",
+    "value": "Data Sources"
+  },
+  {
+    "key": "about.dataSourcesP1",
+    "value": "Toxicity information verified against ASPCA Animal Poison Control Center database and AVMA guidelines (last checked: June 2026). Our toxic food and plant database contains 200+ items drawn from the ASPCA's publicly available toxic and non-toxic plant lists, Pet Poison Helpline data, and peer-reviewed veterinary literature. We update this database annually to reflect the latest ASPCA findings."
+  },
+  {
+    "key": "about.dataSourcesP2",
+    "value": "Breed data (weight standards, life expectancy, genetic health risks) is sourced from AKC (American Kennel Club) and TICA (The International Cat Association) breed standards. EU pet travel rules are based on EU Regulation 576/2013 and individual member state national agriculture ministry publications."
+  },
+  {
+    "key": "about.privacy",
+    "value": "Privacy & Data"
+  },
+  {
+    "key": "about.privacyP1",
+    "value": "All calculations run entirely in your browser. No pet data is uploaded to any server. Your pet profiles are stored only in your device's localStorage. We do not use cookies for tracking, do not collect email addresses, and do not require accounts. See our <link>Privacy Policy</link> for full details."
+  },
+  {
+    "key": "about.medical",
+    "value": "Medical Disclaimer"
+  },
+  {
+    "key": "about.medicalP1",
+    "value": "<strong>petsMetrics is not a substitute for professional veterinary advice, diagnosis, or treatment.</strong> All tools provide general reference information based on published veterinary guidelines (AAHA, WSAVA, AAFCO, AAFP, UCSD research). Always consult a licensed veterinarian for decisions regarding your pet's health. If your pet has ingested a potentially toxic substance, contact ASPCA Animal Poison Control at (888) 426-4435 or your nearest emergency veterinarian immediately."
+  },
+  {
+    "key": "about.contact",
+    "value": "Contact"
+  },
+  {
+    "key": "about.contactP1",
+    "value": "Have a question, suggestion, or found an error in our data? We'd love to hear from you. Reach us at <link>hello@petsmetrics.com</link>."
+  },
+  {
+    "key": "terms.title",
+    "value": "Terms of Use"
+  },
+  {
+    "key": "terms.lastUpdated",
+    "value": "Last updated: June 10, 2026"
+  },
+  {
+    "key": "terms.acceptance",
+    "value": "1. Acceptance of Terms"
+  },
+  {
+    "key": "terms.acceptanceP1",
+    "value": "By using petsMetrics.com (\"the Site\"), you agree to these Terms of Use. If you do not agree, please do not use the Site."
+  },
+  {
+    "key": "terms.medicalDisclaimer",
+    "value": "2. Medical Disclaimer — Please Read Carefully"
+  },
+  {
+    "key": "terms.medicalDisclaimerP1",
+    "value": "<strong>The tools and content on petsMetrics provide general reference information only and do not constitute veterinary advice, diagnosis, or treatment.</strong> Always consult a licensed veterinarian for decisions regarding your pet's health, diet, vaccinations, or medical conditions. Never disregard professional veterinary advice or delay seeking it because of something you read on this Site."
+  },
+  {
+    "key": "terms.medicalDisclaimerP2",
+    "value": "Our toxicity database is compiled from publicly available information published by the ASPCA Animal Poison Control Center, AVMA, and other authoritative sources. While we make every effort to keep this information accurate and up to date, we make no guarantees about its completeness or applicability to your specific situation. If your pet has ingested a potentially toxic substance, contact ASPCA Animal Poison Control at (888) 426-4435 or your emergency veterinarian immediately — do not rely solely on website information."
+  },
+  {
+    "key": "terms.noVetRelationship",
+    "value": "3. No Veterinary-Client Relationship"
+  },
+  {
+    "key": "terms.noVetRelationshipP1",
+    "value": "Use of this Site does not create a veterinarian-client relationship. No tool on this Site diagnoses, treats, or prescribes for any medical condition. The calculators provide mathematical estimates based on published formulas; they do not replace individualized professional assessment."
+  },
+  {
+    "key": "terms.accuracy",
+    "value": "4. Accuracy of Information"
+  },
+  {
+    "key": "terms.accuracyP1",
+    "value": "We strive to ensure all formulas, data, and content are accurate and based on current veterinary research. However, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, or suitability of the information. Formula sources are cited on each tool page for independent verification."
+  },
+  {
+    "key": "terms.liability",
+    "value": "5. Limitation of Liability"
+  },
+  {
+    "key": "terms.liabilityP1",
+    "value": "To the fullest extent permitted by law, petsMetrics and its operators shall not be liable for any direct, indirect, incidental, consequential, or special damages arising out of or in connection with your use of the Site or reliance on any information provided. This includes, without limitation, any decisions made or actions taken based on calculator results, toxicity information, or any other content on the Site."
+  },
+  {
+    "key": "terms.intellectual",
+    "value": "6. Intellectual Property"
+  },
+  {
+    "key": "terms.intellectualP1",
+    "value": "The Site's code, design, and original content are the property of petsMetrics. Calculator formulas are based on publicly available veterinary research and are not claimed as proprietary. Toxicity data is compiled from publicly available sources (ASPCA, AVMA) and is presented for educational purposes."
+  },
+  {
+    "key": "terms.thirdParty",
+    "value": "7. Third-Party Links and Affiliate Disclosure"
+  },
+  {
+    "key": "terms.thirdPartyP1",
+    "value": "The Site may contain links to third-party websites and affiliate links to products or services. We may earn a commission if you purchase through affiliate links, at no additional cost to you. We only link to products and services we believe are relevant to pet owners. Third-party sites have their own terms and privacy policies; we are not responsible for their content or practices."
+  },
+  {
+    "key": "terms.changes",
+    "value": "8. Changes to Terms"
+  },
+  {
+    "key": "terms.changesP1",
+    "value": "We reserve the right to modify these Terms at any time. Changes will be posted on this page with an updated date. Continued use of the Site after changes constitutes acceptance of the modified Terms."
+  },
+  {
+    "key": "terms.contact",
+    "value": "9. Contact"
+  },
+  {
+    "key": "terms.contactP1",
+    "value": "Questions about these Terms? Contact us at <link>hello@petsmetrics.com</link>."
+  },
+  {
+    "key": "faqHub.breadcrumb.faq",
+    "value": "FAQs"
+  }
+]

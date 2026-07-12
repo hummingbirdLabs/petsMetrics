@@ -1,0 +1,12 @@
+{
+  "form.breedLabel": "Rasse",
+  "form.ageLabel": "Alter (Jahre)",
+  "form.regionLabel": "Bundesland / Region",
+  "form.submit": "Pläne vergleichen",
+  "result.estimatedRange": "Geschätzte monatliche Prämie",
+  "result.disclaimer": "Schätzungen basieren auf öffentlichen Preisdaten und sind keine verbindlichen Angebote. Die tatsächlichen Prämien variieren je nach Risikoprüfung des Versicherers.",
+  "result.providersTitle": "Anbieter vergleichen",
+  "result.getQuote": "Angebot einholen",
+  "result.deductible": "Selbstbeteiligung",
+  "result.reimburse": "Erstattung"
+}

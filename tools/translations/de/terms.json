@@ -1,0 +1,23 @@
+{
+  "title": "Nutzungsbedingungen",
+  "lastUpdated": "Zuletzt aktualisiert: 10. Juni 2026",
+  "acceptance": "1. Annahme der Bedingungen",
+  "acceptanceP1": "Durch die Nutzung von petsMetrics.com („die Website\u201d) stimmen Sie diesen Nutzungsbedingungen zu. Wenn Sie nicht zustimmen, nutzen Sie die Website bitte nicht.",
+  "medicalDisclaimer": "2. Medizinischer Haftungsausschluss — Bitte sorgfältig lesen",
+  "medicalDisclaimerP1": "<strong>Die Tools und Inhalte auf petsMetrics bieten ausschließlich allgemeine Referenzinformationen und stellen keine tierärztliche Beratung, Diagnose oder Behandlung dar.</strong> Konsultieren Sie immer einen zugelassenen Tierarzt für Entscheidungen bezüglich der Gesundheit, Ernährung, Impfungen oder medizinischen Zustände Ihres Haustiers. Ignorieren Sie niemals professionelle tierärztliche Beratung oder verzögern Sie deren Einholung aufgrund von Informationen, die Sie auf dieser Website gelesen haben.",
+  "medicalDisclaimerP2": "Unsere Toxizitätsdatenbank basiert auf öffentlich zugänglichen Informationen des ASPCA Animal Poison Control Center, der AVMA und anderer maßgeblicher Quellen. Obwohl wir alle Anstrengungen unternehmen, diese Informationen genau und aktuell zu halten, übernehmen wir keine Gewähr für ihre Vollständigkeit oder Anwendbarkeit auf Ihre spezifische Situation. Wenn Ihr Haustier eine potenziell giftige Substanz aufgenommen hat, kontaktieren Sie sofort das ASPCA Animal Poison Control unter (888) 426-4435 oder Ihren tierärztlichen Notdienst — verlassen Sie sich nicht ausschließlich auf Website-Informationen.",
+  "noVetRelationship": "3. Kein Tierarzt-Klienten-Verhältnis",
+  "noVetRelationshipP1": "Die Nutzung dieser Website begründet kein Tierarzt-Klienten-Verhältnis. Kein Tool auf dieser Website diagnostiziert, behandelt oder verschreibt für irgendeinen medizinischen Zustand. Die Rechner liefern mathematische Schätzungen basierend auf veröffentlichten Formeln; sie ersetzen keine individuelle professionelle Beurteilung.",
+  "accuracy": "4. Genauigkeit der Informationen",
+  "accuracyP1": "Wir bemühen uns sicherzustellen, dass alle Formeln, Daten und Inhalte genau sind und auf aktueller veterinärmedizinischer Forschung basieren. Wir übernehmen jedoch keine ausdrücklichen oder stillschweigenden Zusicherungen oder Gewährleistungen hinsichtlich der Vollständigkeit, Genauigkeit, Zuverlässigkeit oder Eignung der Informationen. Formelquellen werden auf jeder Tool-Seite zur unabhängigen Überprüfung zitiert.",
+  "liability": "5. Haftungsbeschränkung",
+  "liabilityP1": "Im gesetzlich zulässigen Umfang haften petsMetrics und seine Betreiber nicht für direkte, indirekte, zufällige, Folge- oder besondere Schäden, die sich aus oder in Verbindung mit Ihrer Nutzung der Website oder dem Vertrauen auf bereitgestellte Informationen ergeben. Dies umfasst, ohne Einschränkung, alle Entscheidungen oder Handlungen, die auf Rechnerergebnissen, Toxizitätsinformationen oder anderen Inhalten der Website basieren.",
+  "intellectual": "6. Geistiges Eigentum",
+  "intellectualP1": "Der Code, das Design und die Originalinhalte der Website sind Eigentum von petsMetrics. Rechnerformeln basieren auf öffentlich zugänglicher veterinärmedizinischer Forschung und werden nicht als proprietär beansprucht. Toxizitätsdaten sind aus öffentlich zugänglichen Quellen (ASPCA, AVMA) zusammengestellt und werden zu Bildungszwecken präsentiert.",
+  "thirdParty": "7. Drittanbieter-Links und Affiliate-Offenlegung",
+  "thirdPartyP1": "Die Website kann Links zu Drittanbieter-Websites und Affiliate-Links zu Produkten oder Dienstleistungen enthalten. Wir erhalten möglicherweise eine Provision, wenn Sie über Affiliate-Links einkaufen, ohne zusätzliche Kosten für Sie. Wir verlinken nur auf Produkte und Dienstleistungen, von denen wir glauben, dass sie für Haustierbesitzer relevant sind. Drittanbieter-Websites haben ihre eigenen Bedingungen und Datenschutzrichtlinien; wir sind nicht für deren Inhalte oder Praktiken verantwortlich.",
+  "changes": "8. Änderungen der Bedingungen",
+  "changesP1": "Wir behalten uns das Recht vor, diese Bedingungen jederzeit zu ändern. Änderungen werden auf dieser Seite mit einem aktualisierten Datum veröffentlicht. Die fortgesetzte Nutzung der Website nach Änderungen gilt als Annahme der geänderten Bedingungen.",
+  "contact": "9. Kontakt",
+  "contactP1": "Fragen zu diesen Bedingungen? Kontaktieren Sie uns unter <link>hello@petsmetrics.com</link>."
+}

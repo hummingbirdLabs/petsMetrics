@@ -1,0 +1,12 @@
+{
+  "lifeStage.cardTitle": "{stage} — {stageName}",
+  "lifeStage.healthPriorities": "Health priorities for this life stage:",
+  "lifeStage.vetVisit": "Annual vet check-ups",
+  "lifeStage.dental": "Regular dental cleaning",
+  "lifeStage.weight": "Maintain healthy weight (prevents early joint wear)",
+  "lifeStage.parasite": "Continue monthly parasite prevention",
+  "scienceSection.aaGuidelines": "AAHA Life Stage Guidelines",
+  "shareCta.twitter": "Share on Twitter",
+  "shareCta.facebook": "Share on Facebook",
+  "shareCta.copyLink": "Copy Link"
+}

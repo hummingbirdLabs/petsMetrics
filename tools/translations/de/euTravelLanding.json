@@ -1,0 +1,21 @@
+{
+  "h1Pattern": "Reise nach {destination} mit Ihrem Haustier — Anforderungs-Checkliste",
+  "subtitle": "Vollständiger Leitfaden für die Reise von {origin} nach {destination} mit Ihrem Hund oder Ihrer Katze. Mikrochip, Tollwutimpfung, Heimtierausweis, Bandwurmbehandlung — alle Anforderungen an einem Ort.",
+  "sectionChecklist": "Reiseanforderungs-Checkliste",
+  "requirementRequired": "Erforderlich",
+  "requirementNotRequired": "Für diese Route nicht spezifisch erforderlich",
+  "leadTime": "{days} Tage vor der Reise",
+  "leadTimeNone": "Keine Wartezeit",
+  "noLeadTime": "Keine spezifische Vorlaufzeit",
+  "officialSource": "Offizielle Quelle",
+  "speciesAppliesTo": "Gilt für",
+  "speciesDog": "Hunde",
+  "speciesCat": "Katzen",
+  "speciesBoth": "Hunde & Katzen",
+  "ctaTitle": "Bereit zur Vorbereitung?",
+  "ctaDescription": "Verwenden Sie unseren interaktiven EU-Haustierreise-Prüfer, um alle Anforderungen für Ihr spezifisches Haustier zu überprüfen.",
+  "ctaButton": "EU-Haustierreise-Prüfer öffnen",
+  "notFoundTitle": "Route nicht gefunden",
+  "notFoundDescription": "Die gesuchte EU-Reiseroute existiert nicht. Bitte verwenden Sie den interaktiven Prüfer, um alle Ziele zu durchsuchen.",
+  "notFoundCta": "EU-Haustierreise-Prüfer öffnen"
+}

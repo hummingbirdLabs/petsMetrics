@@ -19,8 +19,8 @@ export default getRequestConfig(async ({ locale: requestLocaleParam }: { locale?
 
   const localeMessages = await loadMessages(locale);
 
-  // Compare namespace was added in P0 — only en and zh currently have it.
-  // Shallow-merge en compare keys for other locales so tc() calls fall back to English.
+  // Compare namespace — all 12 locales now have full translations.
+  // Shallow-merge en compare keys for any locale that may still be incomplete.
   const enMsgs = await loadMessages('en');
   const localeCompare = (localeMessages as any).compare;
   const compareMessages =

@@ -1,0 +1,1202 @@
+[
+  {
+    "key": "emergency.ateGrapes.article.headline",
+    "value": "My Dog Ate Grapes: What Should I Do?"
+  },
+  {
+    "key": "emergency.ateGrapes.article.description",
+    "value": "Emergency guide for grape and raisin toxicity in dogs: symptoms, treatment, and prevention."
+  },
+  {
+    "key": "emergency.ateGrapes.article.ogTitle",
+    "value": "My Dog Ate Grapes: What Should I Do? | petsMetrics"
+  },
+  {
+    "key": "emergency.ateGrapes.article.ogDescription",
+    "value": "Emergency guide: What to do if your dog eats grapes or raisins. Kidney injury risk and immediate treatment steps."
+  },
+  {
+    "key": "emergency.ateGrapes.banner.severityLabel",
+    "value": "TOXIC — Seek Immediate Veterinary Care"
+  },
+  {
+    "key": "emergency.ateGrapes.banner.title",
+    "value": "My Dog Ate Grapes: What Should I Do?"
+  },
+  {
+    "key": "emergency.ateGrapes.banner.subtitle",
+    "value": "Grapes and raisins can cause acute kidney failure in dogs. Even small amounts are dangerous — call your vet or ASPCA Poison Control at <strong>(888) 426-4435</strong> immediately."
+  },
+  {
+    "key": "emergency.ateGrapes.steps.0.title",
+    "value": "Call Your Vet Immediately"
+  },
+  {
+    "key": "emergency.ateGrapes.steps.0.content",
+    "value": "Contact your veterinarian or ASPCA Poison Control at <strong>(888) 426-4435</strong> right away. Do not wait for symptoms to appear."
+  },
+  {
+    "key": "emergency.ateGrapes.steps.1.title",
+    "value": "Note the Amount"
+  },
+  {
+    "key": "emergency.ateGrapes.steps.1.content",
+    "value": "Record how many grapes or raisins your dog ate and their weight. This helps determine toxicity risk."
+  },
+  {
+    "key": "emergency.ateGrapes.steps.2.title",
+    "value": "Vet May Induce Vomiting"
+  },
+  {
+    "key": "emergency.ateGrapes.steps.2.content",
+    "value": "If ingestion was recent (within 2 hours), your vet may induce vomiting or administer activated charcoal to prevent absorption."
+  },
+  {
+    "key": "emergency.ateGrapes.steps.3.title",
+    "value": "Monitor for 72 Hours"
+  },
+  {
+    "key": "emergency.ateGrapes.steps.3.content",
+    "value": "Kidney damage may not show symptoms immediately. Watch for vomiting, lethargy, decreased urination, and loss of appetite."
+  },
+  {
+    "key": "emergency.ateGrapes.science.content",
+    "value": "The exact toxic compound in grapes and raisins remains unidentified, but tartaric acid is the leading suspect. This compound causes acute tubular necrosis in the kidneys, leading to rapid kidney failure. The toxic dose is unpredictable — some dogs develop kidney failure from just a few grapes, while others tolerate more. This variability makes any ingestion a medical emergency (ASPCA, 2023)."
+  },
+  {
+    "key": "emergency.ateGrapes.faqs.0.question",
+    "value": "How many grapes are toxic to dogs?"
+  },
+  {
+    "key": "emergency.ateGrapes.faqs.0.answer",
+    "value": "The toxic dose is not established, but as few as 1-2 grapes can cause kidney failure in some dogs. Raisins are more concentrated and thus more dangerous. There is no known safe amount — any ingestion should be treated as an emergency."
+  },
+  {
+    "key": "emergency.ateGrapes.faqs.1.question",
+    "value": "How long after eating grapes do symptoms appear?"
+  },
+  {
+    "key": "emergency.ateGrapes.faqs.1.answer",
+    "value": "Vomiting and diarrhea typically begin within 6-12 hours. Signs of kidney failure (decreased urination, lethargy, loss of appetite) may not appear until 24-72 hours after ingestion. Early veterinary intervention is critical."
+  },
+  {
+    "key": "emergency.ateGrapes.faqs.2.question",
+    "value": "Why are grapes toxic to dogs?"
+  },
+  {
+    "key": "emergency.ateGrapes.faqs.2.answer",
+    "value": "The exact toxic mechanism is still unknown. Tartaric acid is the suspected toxin, with varying concentrations between grape varieties. This unpredictability makes any grape ingestion potentially dangerous."
+  },
+  {
+    "key": "emergency.ateGrapes.relatedTools.0.name",
+    "value": "Toxic Food & Plant Checker"
+  },
+  {
+    "key": "emergency.ateGrapes.relatedTools.0.url",
+    "value": "/shared/toxic-checker/"
+  },
+  {
+    "key": "emergency.ateGrapes.relatedTools.1.name",
+    "value": "Dog Calorie Calculator"
+  },
+  {
+    "key": "emergency.ateGrapes.relatedTools.1.url",
+    "value": "/dog/calorie-calculator/"
+  },
+  {
+    "key": "emergency.ateXylitol.breadcrumbLabel",
+    "value": "Ate Xylitol"
+  },
+  {
+    "key": "emergency.ateXylitol.meta.title",
+    "value": "Dog Ate Xylitol: What to Do Immediately | petsMetrics"
+  },
+  {
+    "key": "emergency.ateXylitol.meta.description",
+    "value": "Emergency guide: What to do if your dog eats xylitol (birch sugar). Learn about rapid hypoglycemia, liver failure risk, and life-saving treatment steps."
+  },
+  {
+    "key": "emergency.ateXylitol.meta.keywords",
+    "value": "dog ate xylitol what to do, xylitol poisoning dogs, xylitol toxicity dogs, dog ate gum emergency, birch sugar toxic dogs"
+  },
+  {
+    "key": "emergency.ateXylitol.article.headline",
+    "value": "Dog Ate Xylitol: What to Do Immediately"
+  },
+  {
+    "key": "emergency.ateXylitol.article.description",
+    "value": "Emergency guide for xylitol toxicity in dogs: symptoms, treatment, and prevention."
+  },
+  {
+    "key": "emergency.ateXylitol.article.ogTitle",
+    "value": "Dog Ate Xylitol: What to Do Immediately | petsMetrics"
+  },
+  {
+    "key": "emergency.ateXylitol.article.ogDescription",
+    "value": "Emergency guide: What to do if your dog eats xylitol. Rapid hypoglycemia and liver failure risk."
+  },
+  {
+    "key": "emergency.ateXylitol.banner.severityLabel",
+    "value": "HIGHLY TOXIC — Seek Immediate Veterinary Care"
+  },
+  {
+    "key": "emergency.ateXylitol.banner.title",
+    "value": "Dog Ate Xylitol: What to Do Immediately"
+  },
+  {
+    "key": "emergency.ateXylitol.banner.subtitle",
+    "value": "Xylitol causes rapid hypoglycemia and can lead to liver failure. Even small amounts are life-threatening — call your vet or ASPCA Poison Control at <strong>(888) 426-4435</strong> NOW."
+  },
+  {
+    "key": "emergency.ateXylitol.steps.0.title",
+    "value": "Call Your Vet NOW"
+  },
+  {
+    "key": "emergency.ateXylitol.steps.0.content",
+    "value": "Xylitol acts fast. Contact your vet or ASPCA Poison Control at <strong>(888) 426-4435</strong> immediately — do not wait for symptoms."
+  },
+  {
+    "key": "emergency.ateXylitol.steps.1.title",
+    "value": "Check the Product Label"
+  },
+  {
+    "key": "emergency.ateXylitol.steps.1.content",
+    "value": "Find the xylitol content (in grams) and calculate your dog's exposure. Note: it may be listed as 'birch sugar.'"
+  },
+  {
+    "key": "emergency.ateXylitol.steps.2.title",
+    "value": "Go to the Vet Immediately"
+  },
+  {
+    "key": "emergency.ateXylitol.steps.2.content",
+    "value": "Your vet will likely induce vomiting (if within 1 hour), start IV dextrose, and monitor liver enzymes for 72 hours."
+  },
+  {
+    "key": "emergency.ateXylitol.steps.3.title",
+    "value": "Do NOT Wait for Symptoms"
+  },
+  {
+    "key": "emergency.ateXylitol.steps.3.content",
+    "value": "By the time symptoms appear (vomiting, lethargy, seizures), treatment may be less effective. Early intervention saves lives."
+  },
+  {
+    "key": "emergency.ateXylitol.science.content",
+    "value": "Xylitol is a sugar alcohol that triggers a rapid, massive insulin release from the dog's pancreas. This causes blood sugar to plummet within 10-30 minutes. At higher doses, xylitol causes acute liver failure through mechanisms that are not fully understood. Unlike humans, dogs absorb xylitol rapidly and their bodies mistake it for real sugar, triggering this dangerous insulin response (ASPCA, 2023)."
+  },
+  {
+    "key": "emergency.ateXylitol.faqs.0.question",
+    "value": "How much xylitol is toxic to dogs?"
+  },
+  {
+    "key": "emergency.ateXylitol.faqs.0.answer",
+    "value": "As little as 0.1g of xylitol per kg of body weight can cause hypoglycemia (low blood sugar). Doses above 0.5g/kg can cause acute liver failure. A single piece of sugar-free gum can contain 0.3-1g of xylitol — potentially lethal for a small dog."
+  },
+  {
+    "key": "emergency.ateXylitol.faqs.1.question",
+    "value": "How fast does xylitol affect dogs?"
+  },
+  {
+    "key": "emergency.ateXylitol.faqs.1.answer",
+    "value": "Hypoglycemia can develop within 10-30 minutes of ingestion. Liver damage may take 8-12 hours to manifest. Rapid treatment is essential — do not wait for symptoms."
+  },
+  {
+    "key": "emergency.ateXylitol.faqs.2.question",
+    "value": "Where is xylitol found?"
+  },
+  {
+    "key": "emergency.ateXylitol.faqs.2.answer",
+    "value": "Xylitol is found in sugar-free gum, candy, baked goods, peanut butter, toothpaste, mouthwash, and some medications. Always check labels — it may be listed as 'birch sugar' or 'xylitol'."
+  },
+  {
+    "key": "emergency.ateXylitol.relatedTools.0.name",
+    "value": "Toxic Food & Plant Checker"
+  },
+  {
+    "key": "emergency.ateXylitol.relatedTools.0.url",
+    "value": "/shared/toxic-checker/"
+  },
+  {
+    "key": "emergency.ateXylitol.relatedTools.1.name",
+    "value": "Dog Calorie Calculator"
+  },
+  {
+    "key": "emergency.ateXylitol.relatedTools.1.url",
+    "value": "/dog/calorie-calculator/"
+  },
+  {
+    "key": "emergency.ateOnion.breadcrumbLabel",
+    "value": "Ate Onion"
+  },
+  {
+    "key": "emergency.ateOnion.meta.title",
+    "value": "Dog Ate Onion: What to Do Now | petsMetrics"
+  },
+  {
+    "key": "emergency.ateOnion.meta.description",
+    "value": "Emergency guide: What to do if your dog eats onions. Learn about hemolytic anemia risk, symptoms timeline, and treatment steps. All onion forms are toxic."
+  },
+  {
+    "key": "emergency.ateOnion.meta.keywords",
+    "value": "dog ate onion what to do, onion toxicity dogs, onion poisoning in dogs, dog ate onion emergency, are onions toxic to dogs"
+  },
+  {
+    "key": "emergency.ateOnion.article.headline",
+    "value": "Dog Ate Onion: What to Do Now"
+  },
+  {
+    "key": "emergency.ateOnion.article.description",
+    "value": "Emergency guide for onion toxicity in dogs: symptoms, treatment, and prevention."
+  },
+  {
+    "key": "emergency.ateOnion.article.ogTitle",
+    "value": "Dog Ate Onion: What to Do Now | petsMetrics"
+  },
+  {
+    "key": "emergency.ateOnion.article.ogDescription",
+    "value": "Emergency guide: What to do if your dog eats onions. Hemolytic anemia risk and treatment steps."
+  },
+  {
+    "key": "emergency.ateOnion.banner.severityLabel",
+    "value": "TOXIC — Seek Veterinary Care"
+  },
+  {
+    "key": "emergency.ateOnion.banner.title",
+    "value": "Dog Ate Onion: What to Do Now"
+  },
+  {
+    "key": "emergency.ateOnion.banner.subtitle",
+    "value": "Onions cause hemolytic anemia in dogs by destroying red blood cells. All forms are toxic — call your vet or ASPCA Poison Control at <strong>(888) 426-4435</strong>."
+  },
+  {
+    "key": "emergency.ateOnion.steps.0.title",
+    "value": "Call Your Vet"
+  },
+  {
+    "key": "emergency.ateOnion.steps.0.content",
+    "value": "Contact your veterinarian or ASPCA Poison Control at <strong>(888) 426-4435</strong>. Note the amount and type of onion consumed."
+  },
+  {
+    "key": "emergency.ateOnion.steps.1.title",
+    "value": "Vet May Induce Vomiting"
+  },
+  {
+    "key": "emergency.ateOnion.steps.1.content",
+    "value": "If ingestion was recent (within 2 hours), your vet may induce vomiting to prevent further absorption of thiosulfate compounds."
+  },
+  {
+    "key": "emergency.ateOnion.steps.2.title",
+    "value": "Monitor for Anemia Symptoms"
+  },
+  {
+    "key": "emergency.ateOnion.steps.2.content",
+    "value": "Watch for weakness, pale gums, rapid breathing, and reddish-brown urine over the next 1-3 days."
+  },
+  {
+    "key": "emergency.ateOnion.steps.3.title",
+    "value": "Blood Work May Be Needed"
+  },
+  {
+    "key": "emergency.ateOnion.steps.3.content",
+    "value": "Your vet may recommend a CBC blood test to check for Heinz body anemia, which confirms onion toxicity."
+  },
+  {
+    "key": "emergency.ateOnion.science.content",
+    "value": "Onions contain thiosulfate compounds (n-propyl disulfide) that dogs cannot metabolize. These compounds cause oxidative damage to red blood cells, forming Heinz bodies — damaged hemoglobin that precipitates inside the cell. The spleen then destroys these damaged cells, leading to hemolytic anemia. This process takes 1-3 days, which is why symptoms are delayed (ASPCA, 2023)."
+  },
+  {
+    "key": "emergency.ateOnion.faqs.0.question",
+    "value": "How much onion is toxic to dogs?"
+  },
+  {
+    "key": "emergency.ateOnion.faqs.0.answer",
+    "value": "Onion toxicity occurs at approximately 0.5% of the dog's body weight. For a 20kg (44lb) dog, this equals about 100g (3.5oz) of onion. All forms are toxic: raw, cooked, powdered, and dehydrated. Onion powder is especially concentrated and dangerous."
+  },
+  {
+    "key": "emergency.ateOnion.faqs.1.question",
+    "value": "How long after eating onion do symptoms appear?"
+  },
+  {
+    "key": "emergency.ateOnion.faqs.1.answer",
+    "value": "Symptoms typically develop 1-3 days after ingestion as red blood cells are progressively destroyed. Early signs include weakness, pale gums, and reddish urine. Severe cases can lead to collapse and require blood transfusion."
+  },
+  {
+    "key": "emergency.ateOnion.faqs.2.question",
+    "value": "Are all onion types toxic to dogs?"
+  },
+  {
+    "key": "emergency.ateOnion.faqs.2.answer",
+    "value": "Yes — all Allium species are toxic: onions, garlic, leeks, chives, and shallots. Garlic is less toxic per gram but still dangerous in quantity. Cooking does not reduce toxicity. Onion powder is the most concentrated form."
+  },
+  {
+    "key": "emergency.ateOnion.relatedTools.0.name",
+    "value": "Toxic Food & Plant Checker"
+  },
+  {
+    "key": "emergency.ateOnion.relatedTools.0.url",
+    "value": "/shared/toxic-checker/"
+  },
+  {
+    "key": "emergency.ateOnion.relatedTools.1.name",
+    "value": "Dog Calorie Calculator"
+  },
+  {
+    "key": "emergency.ateOnion.relatedTools.1.url",
+    "value": "/dog/calorie-calculator/"
+  },
+  {
+    "key": "emergency.ateSock.breadcrumbLabel",
+    "value": "Ate Sock"
+  },
+  {
+    "key": "emergency.ateSock.meta.title",
+    "value": "My Puppy Ate aSock: What to Do Now | petsMetrics"
+  },
+  {
+    "key": "emergency.ateSock.meta.description",
+    "value": "Emergency guide: What to do if your dog eats a sock. Learn about intestinal blockage risk, symptoms, and when surgery is needed. Act fast — time matters."
+  },
+  {
+    "key": "emergency.ateSock.meta.keywords",
+    "value": "my puppy ate a sock, dog ate sock emergency, dog intestinal blockage, dog ate foreign object, sock ingestion dog"
+  },
+  {
+    "key": "emergency.ateSock.article.headline",
+    "value": "My Puppy Ate aSock: What to Do Now"
+  },
+  {
+    "key": "emergency.ateSock.article.description",
+    "value": "Emergency guide for foreign body ingestion in dogs: symptoms, treatment, and prevention."
+  },
+  {
+    "key": "emergency.ateSock.article.ogTitle",
+    "value": "My Puppy Ate aSock: What to Do Now | petsMetrics"
+  },
+  {
+    "key": "emergency.ateSock.article.ogDescription",
+    "value": "Emergency guide: What to do if your dog eats a sock. Intestinal blockage risk and when surgery is needed."
+  },
+  {
+    "key": "emergency.ateSock.banner.severityLabel",
+    "value": "FOREIGN BODY — Seek Veterinary Care"
+  },
+  {
+    "key": "emergency.ateSock.banner.title",
+    "value": "My Puppy Ate aSock: What to Do Now"
+  },
+  {
+    "key": "emergency.ateSock.banner.subtitle",
+    "value": "Socks can cause life-threatening intestinal blockages in dogs. Do not wait — call your vet immediately for assessment and possible intervention."
+  },
+  {
+    "key": "emergency.ateSock.steps.0.title",
+    "value": "Call Your Vet Immediately"
+  },
+  {
+    "key": "emergency.ateSock.steps.0.content",
+    "value": "Contact your veterinarian right away. Note when the sock was eaten and your dog's size — this determines urgency."
+  },
+  {
+    "key": "emergency.ateSock.steps.1.title",
+    "value": "Do NOT Induce Vomiting"
+  },
+  {
+    "key": "emergency.ateSock.steps.1.content",
+    "value": "Unlike toxins, foreign objects can cause more damage coming back up. Only induce vomiting if your vet explicitly instructs you to."
+  },
+  {
+    "key": "emergency.ateSock.steps.2.title",
+    "value": "Vet May Retrieve Endoscopically"
+  },
+  {
+    "key": "emergency.ateSock.steps.2.content",
+    "value": "If the sock is still in the stomach (within 12-24 hours), your vet may remove it via endoscopy — a non-surgical procedure using a camera and grabber."
+  },
+  {
+    "key": "emergency.ateSock.steps.3.title",
+    "value": "Monitor for Blockage Signs"
+  },
+  {
+    "key": "emergency.ateSock.steps.3.content",
+    "value": "Watch for vomiting after eating, loss of appetite, abdominal pain, lethargy, and inability to defecate. These require emergency surgery."
+  },
+  {
+    "key": "emergency.ateSock.science.content",
+    "value": "Fabric foreign bodies are particularly dangerous because they can become lodged at the pyloric sphincter (stomach exit) or in the small intestine. Once stuck, they cause a complete blockage — nothing can pass, and the intestinal wall may become necrotic (die) from pressure. This leads to perforation, peritonitis, and death without surgical intervention. Puppies and small dogs are at highest risk due to their narrower intestinal diameter (AVMA, 2023)."
+  },
+  {
+    "key": "emergency.ateSock.faqs.0.question",
+    "value": "Will my dog pass a sock naturally?"
+  },
+  {
+    "key": "emergency.ateSock.faqs.0.answer",
+    "value": "Small socks may pass through the digestive tract within 24-48 hours, but this is not guaranteed. Larger socks or those that become lodged can cause life-threatening intestinal blockage. Never wait to see if it passes — consult your vet immediately."
+  },
+  {
+    "key": "emergency.ateSock.faqs.1.question",
+    "value": "How long after eating a sock will symptoms appear?"
+  },
+  {
+    "key": "emergency.ateSock.faqs.1.answer",
+    "value": "Symptoms of intestinal blockage typically appear within 2-24 hours. Watch for vomiting (especially after eating), loss of appetite, abdominal pain, lethargy, and inability to defecate. These are emergency signs."
+  },
+  {
+    "key": "emergency.ateSock.faqs.2.question",
+    "value": "What is the treatment for sock ingestion?"
+  },
+  {
+    "key": "emergency.ateSock.faqs.2.answer",
+    "value": "Treatment depends on location and size. Your vet may induce vomiting (if within 2 hours), perform endoscopy to retrieve the object, or conduct abdominal surgery if the sock has caused a blockage. X-rays and ultrasound help determine the best approach."
+  },
+  {
+    "key": "emergency.ateSock.relatedTools.0.name",
+    "value": "Toxic Food & Plant Checker"
+  },
+  {
+    "key": "emergency.ateSock.relatedTools.0.url",
+    "value": "/shared/toxic-checker/"
+  },
+  {
+    "key": "emergency.ateSock.relatedTools.1.name",
+    "value": "Dog Calorie Calculator"
+  },
+  {
+    "key": "emergency.ateSock.relatedTools.1.url",
+    "value": "/dog/calorie-calculator/"
+  },
+  {
+    "key": "emergency.ateAntifreeze.breadcrumbLabel",
+    "value": "Ate Antifreeze"
+  },
+  {
+    "key": "emergency.ateAntifreeze.meta.title",
+    "value": "Dog Ate Antifreeze: What to Do Immediately | petsMetrics"
+  },
+  {
+    "key": "emergency.ateAntifreeze.meta.description",
+    "value": "Emergency guide: What to do if your dog drinks antifreeze. Learn about ethylene glycol poisoning, rapid kidney failure, and the narrow treatment window. Act NOW."
+  },
+  {
+    "key": "emergency.ateAntifreeze.meta.keywords",
+    "value": "dog ate antifreeze what to do, antifreeze poisoning dogs, ethylene glycol toxicity dogs, dog antifreeze emergency, antifreeze dog treatment"
+  },
+  {
+    "key": "emergency.ateAntifreeze.article.headline",
+    "value": "Dog Ate Antifreeze: What to Do Immediately"
+  },
+  {
+    "key": "emergency.ateAntifreeze.article.description",
+    "value": "Emergency guide for antifreeze (ethylene glycol) poisoning in dogs: symptoms, treatment, and prevention."
+  },
+  {
+    "key": "emergency.ateAntifreeze.article.ogTitle",
+    "value": "Dog Ate Antifreeze: What to Do Immediately | petsMetrics"
+  },
+  {
+    "key": "emergency.ateAntifreeze.article.ogDescription",
+    "value": "Emergency guide: What to do if your dog drinks antifreeze. Rapid kidney failure and narrow treatment window."
+  },
+  {
+    "key": "emergency.ateAntifreeze.banner.severityLabel",
+    "value": "EXTREMELY TOXIC — EMERGENCY VET NOW"
+  },
+  {
+    "key": "emergency.ateAntifreeze.banner.title",
+    "value": "Dog Ate Antifreeze: What to Do Immediately"
+  },
+  {
+    "key": "emergency.ateAntifreeze.banner.subtitle",
+    "value": "Antifreeze (ethylene glycol) causes rapid kidney failure and death. As little as 1 teaspoon can kill — call your vet or ASPCA Poison Control at <strong>(888) 426-4435</strong> IMMEDIATELY."
+  },
+  {
+    "key": "emergency.ateAntifreeze.steps.0.title",
+    "value": "EMERGENCY VET NOW"
+  },
+  {
+    "key": "emergency.ateAntifreeze.steps.0.content",
+    "value": "Go to the nearest emergency vet immediately. Call ASPCA Poison Control at <strong>(888) 426-4435</strong> en route. Every minute counts."
+  },
+  {
+    "key": "emergency.ateAntifreeze.steps.1.title",
+    "value": "Do NOT Wait for Symptoms"
+  },
+  {
+    "key": "emergency.ateAntifreeze.steps.1.content",
+    "value": "By the time symptoms appear, kidney damage may be irreversible. The antidote must be given within 8-12 hours to be effective."
+  },
+  {
+    "key": "emergency.ateAntifreeze.steps.2.title",
+    "value": "Bring the Container"
+  },
+  {
+    "key": "emergency.ateAntifreeze.steps.2.content",
+    "value": "Take the antifreeze container to the vet. This confirms the active ingredient (ethylene glycol) and concentration."
+  },
+  {
+    "key": "emergency.ateAntifreeze.steps.3.title",
+    "value": "Treatment Window is Critical"
+  },
+  {
+    "key": "emergency.ateAntifreeze.steps.3.content",
+    "value": "Your vet will administer fomepizole (4-MP) or ethanol IV to block metabolism. After 12 hours, treatment is much less effective."
+  },
+  {
+    "key": "emergency.ateAntifreeze.science.content",
+    "value": "Ethylene glycol itself is not toxic — it is the metabolites produced by the liver that cause damage. Alcohol dehydrogenase converts ethylene glycol to glycoaldehyde, then glycolic acid, then oxalic acid. Oxalic acid binds with calcium to form calcium oxalate crystals that destroy kidney tissue. This process causes metabolic acidosis and acute kidney failure within 12-36 hours. The antidote works by blocking alcohol dehydrogenase, preventing toxic metabolite formation (ASPCA, 2023)."
+  },
+  {
+    "key": "emergency.ateAntifreeze.faqs.0.question",
+    "value": "How much antifreeze is lethal to dogs?"
+  },
+  {
+    "key": "emergency.ateAntifreeze.faqs.0.answer",
+    "value": "As little as 1 teaspoon (5ml) of antifreeze can kill a 10lb (4.5kg) dog. The lethal dose of ethylene glycol is approximately 4.4ml per kg of body weight. This makes antifreeze one of the most dangerous household toxins for pets."
+  },
+  {
+    "key": "emergency.ateAntifreeze.faqs.1.question",
+    "value": "How fast does antifreeze kill dogs?"
+  },
+  {
+    "key": "emergency.ateAntifreeze.faqs.1.answer",
+    "value": "Without treatment, antifreeze is fatal within 12-36 hours. The antidote (fomepizole or ethanol) must be administered within 8-12 hours of ingestion to be effective. After kidney failure begins, survival rates drop dramatically."
+  },
+  {
+    "key": "emergency.ateAntifreeze.faqs.2.question",
+    "value": "What are the symptoms of antifreeze poisoning?"
+  },
+  {
+    "key": "emergency.ateAntifreeze.faqs.2.answer",
+    "value": "Stage 1 (30 min-12 hrs): drunken behavior, vomiting, seizures. Stage 2 (12-24 hrs): apparent improvement (misleading). Stage 3 (24-72 hrs): kidney failure, severe lethargy, mouth ulcers, coma. Early treatment is critical."
+  },
+  {
+    "key": "emergency.ateAntifreeze.relatedTools.0.name",
+    "value": "Toxic Food & Plant Checker"
+  },
+  {
+    "key": "emergency.ateAntifreeze.relatedTools.0.url",
+    "value": "/shared/toxic-checker/"
+  },
+  {
+    "key": "emergency.ateAntifreeze.relatedTools.1.name",
+    "value": "Dog Calorie Calculator"
+  },
+  {
+    "key": "emergency.ateAntifreeze.relatedTools.1.url",
+    "value": "/dog/calorie-calculator/"
+  },
+  {
+    "key": "catEmergency.shared.titles.riskAssessment",
+    "value": "Assess Your Cat's Risk Right Now"
+  },
+  {
+    "key": "catEmergency.shared.titles.whatToDo",
+    "value": "What to Do Right Now"
+  },
+  {
+    "key": "catEmergency.shared.titles.theScience",
+    "value": "The Science Behind It"
+  },
+  {
+    "key": "catEmergency.shared.titles.faq",
+    "value": "Frequently Asked Questions"
+  },
+  {
+    "key": "catEmergency.shared.titles.relatedTools",
+    "value": "Related Tools"
+  },
+  {
+    "key": "catEmergency.shared.titles.criticalWarning",
+    "value": "⚠️ Critical Warning"
+  },
+  {
+    "key": "catEmergency.shared.breadcrumb.home",
+    "value": "Home"
+  },
+  {
+    "key": "catEmergency.shared.breadcrumb.catEmergency",
+    "value": "Cat Emergency"
+  },
+  {
+    "key": "catEmergency.shared.labels.chocolateType",
+    "value": "Chocolate Type"
+  },
+  {
+    "key": "catEmergency.shared.labels.amountEaten",
+    "value": "Amount Eaten"
+  },
+  {
+    "key": "catEmergency.shared.labels.riskLevel",
+    "value": "Risk Level"
+  },
+  {
+    "key": "catEmergency.shared.labels.actionRequired",
+    "value": "Action Required"
+  },
+  {
+    "key": "catEmergency.shared.labels.onionForm",
+    "value": "Onion Form"
+  },
+  {
+    "key": "catEmergency.shared.labels.garlicForm",
+    "value": "Garlic Form"
+  },
+  {
+    "key": "catEmergency.shared.labels.oilType",
+    "value": "Oil Type"
+  },
+  {
+    "key": "catEmergency.shared.labels.exposureRoute",
+    "value": "Exposure Route"
+  },
+  {
+    "key": "catEmergency.shared.labels.exposureType",
+    "value": "Exposure Type"
+  },
+  {
+    "key": "catEmergency.shared.labels.symptomsPresent",
+    "value": "Symptoms Present?"
+  },
+  {
+    "key": "catEmergency.shared.tools.toxicChecker",
+    "value": "Toxic Food & Plant Checker"
+  },
+  {
+    "key": "catEmergency.shared.tools.catBcs",
+    "value": "Cat BCS & Weight Tracker"
+  },
+  {
+    "key": "catEmergency.shared.tools.catHydration",
+    "value": "Cat Hydration Calculator"
+  },
+  {
+    "key": "catEmergency.ateChocolate.breadcrumbLabel",
+    "value": "Ate Chocolate"
+  },
+  {
+    "key": "catEmergency.ateChocolate.meta.title",
+    "value": "My Cat Ate Chocolate: Emergency Guide | petsMetrics"
+  },
+  {
+    "key": "catEmergency.ateChocolate.meta.description",
+    "value": "Emergency guide: Chocolate is toxic to cats (theobromine poisoning). Cats are more sensitive than dogs. Learn symptoms, risk levels by chocolate type, and immediate actions. ASPCA Poison Control: (888) 426-4435."
+  },
+  {
+    "key": "catEmergency.ateChocolate.meta.keywords",
+    "value": "my cat ate chocolate emergency, chocolate poisoning cats, cat theobromine toxicity, cats and chocolate, what to do if cat eats chocolate"
+  },
+  {
+    "key": "catEmergency.ateChocolate.banner.severityLabel",
+    "value": "TOXIC — Cats More Sensitive Than Dogs"
+  },
+  {
+    "key": "catEmergency.ateChocolate.banner.title",
+    "value": "My Cat Ate Chocolate: What to Do Now"
+  },
+  {
+    "key": "catEmergency.ateChocolate.banner.subtitle",
+    "value": "Chocolate is <strong>more toxic to cats than dogs</strong> due to slower theobromine metabolism and smaller body weight. Call ASPCA Poison Control at <strong>(888) 426-4435</strong> immediately."
+  },
+  {
+    "key": "catEmergency.ateChocolate.article.headline",
+    "value": "My Cat Ate Chocolate: Emergency Guide"
+  },
+  {
+    "key": "catEmergency.ateChocolate.article.description",
+    "value": "Emergency guide for chocolate toxicity in cats: theobromine poisoning, symptoms, and treatment."
+  },
+  {
+    "key": "catEmergency.ateChocolate.article.ogTitle",
+    "value": "My Cat Ate Chocolate: Emergency Guide | petsMetrics"
+  },
+  {
+    "key": "catEmergency.ateChocolate.article.ogDescription",
+    "value": "What to do if your cat eats chocolate."
+  },
+  {
+    "key": "catEmergency.ateChocolate.riskAssessment.headers.0",
+    "value": "Chocolate Type"
+  },
+  {
+    "key": "catEmergency.ateChocolate.riskAssessment.headers.1",
+    "value": "Amount Eaten"
+  },
+  {
+    "key": "catEmergency.ateChocolate.riskAssessment.headers.2",
+    "value": "Risk Level"
+  },
+  {
+    "key": "catEmergency.ateChocolate.riskAssessment.headers.3",
+    "value": "Action Required"
+  },
+  {
+    "key": "catEmergency.ateChocolate.riskAssessment.rows.0.form",
+    "value": "Baking chocolate"
+  },
+  {
+    "key": "catEmergency.ateChocolate.riskAssessment.rows.0.amount",
+    "value": "> 5g"
+  },
+  {
+    "key": "catEmergency.ateChocolate.riskAssessment.rows.0.risk",
+    "value": "CRITICAL"
+  },
+  {
+    "key": "catEmergency.ateChocolate.riskAssessment.rows.0.action",
+    "value": "🚨 Emergency vet NOW"
+  },
+  {
+    "key": "catEmergency.ateChocolate.riskAssessment.rows.1.form",
+    "value": "Dark chocolate"
+  },
+  {
+    "key": "catEmergency.ateChocolate.riskAssessment.rows.1.amount",
+    "value": "> 10g"
+  },
+  {
+    "key": "catEmergency.ateChocolate.riskAssessment.rows.1.risk",
+    "value": "HIGH"
+  },
+  {
+    "key": "catEmergency.ateChocolate.riskAssessment.rows.1.action",
+    "value": "🚨 Emergency vet NOW"
+  },
+  {
+    "key": "catEmergency.ateChocolate.riskAssessment.rows.2.form",
+    "value": "Milk chocolate"
+  },
+  {
+    "key": "catEmergency.ateChocolate.riskAssessment.rows.2.amount",
+    "value": "> 20g"
+  },
+  {
+    "key": "catEmergency.ateChocolate.riskAssessment.rows.2.risk",
+    "value": "Moderate"
+  },
+  {
+    "key": "catEmergency.ateChocolate.riskAssessment.rows.2.action",
+    "value": "📞 Call vet immediately"
+  },
+  {
+    "key": "catEmergency.ateChocolate.steps.0.title",
+    "value": "Step 1: Remove All Chocolate Immediately"
+  },
+  {
+    "key": "catEmergency.ateChocolate.steps.0.content",
+    "value": "Cats are naturally curious but also more sensitive to toxins. Remove any remaining chocolate from their environment."
+  },
+  {
+    "key": "catEmergency.ateChocolate.steps.1.title",
+    "value": "Step 2: Call Poison Control or Vet"
+  },
+  {
+    "key": "catEmergency.ateChocolate.steps.1.content",
+    "value": "📞 <strong>ASPCA Poison Control:</strong> (888) 426-4435. Cats are more sensitive to theobromine than dogs — small amounts are concerning."
+  },
+  {
+    "key": "catEmergency.ateChocolate.steps.2.title",
+    "value": "Step 3: Do NOT Induce Vomiting Without Vet Approval"
+  },
+  {
+    "key": "catEmergency.ateChocolate.steps.2.content",
+    "value": "⚠️ Cats may hide symptoms until severe. Inducing vomiting risks aspiration. Only do so if instructed by a veterinarian."
+  },
+  {
+    "key": "catEmergency.ateChocolate.steps.3.title",
+    "value": "Step 4: Go to Vet for Cardiac Monitoring"
+  },
+  {
+    "key": "catEmergency.ateChocolate.steps.3.content",
+    "value": "Your vet may recommend induced vomiting (if early), activated charcoal, and ECG monitoring to watch for arrhythmias."
+  },
+  {
+    "key": "catEmergency.ateChocolate.science.content",
+    "value": "Chocolate contains theobromine and caffeine — methylxanthines that cats cannot efficiently metabolize. Cytochrome P450 enzymes in feline liver have reduced activity compared to dogs, causing prolonged theobromine half-life. This leads to cumulative effects on the CNS (seizures), cardiovascular system (arrhythmias), and smooth muscles. Cats are also obligate carnivores with less capacity to process plant-derived alkaloids. The combination of smaller body weight, slower metabolism, and greater sensitivity makes chocolate proportionally more dangerous for cats (ASPCA, 2023)."
+  },
+  {
+    "key": "catEmergency.ateChocolate.faqs.0.question",
+    "value": "Is chocolate toxic to cats?"
+  },
+  {
+    "key": "catEmergency.ateChocolate.faqs.0.answer",
+    "value": "Yes, chocolate is toxic to cats — often more so than to dogs relative to body weight. Cats are more sensitive to theobromine because they metabolize it more slowly. The same toxic principle applies: theobromine and caffeine cause CNS stimulation, cardiac arrhythmias, and potentially seizures."
+  },
+  {
+    "key": "catEmergency.ateChocolate.faqs.1.question",
+    "value": "Why are cats more sensitive than dogs?"
+  },
+  {
+    "key": "catEmergency.ateChocolate.faqs.1.answer",
+    "value": "Cats have lower activity of cytochrome P450 enzymes responsible for metabolizing theobromine. While dogs take 17+ hours to clear theobromine, cats may take even longer. Additionally, cats typically weigh less (4-6kg average), so the dose-per-kg ratio from the same amount of chocolate is higher."
+  },
+  {
+    "key": "catEmergency.ateChocolate.faqs.2.question",
+    "value": "How much chocolate is toxic to cats?"
+  },
+  {
+    "key": "catEmergency.ateChocolate.faqs.2.answer",
+    "value": "Milk chocolate becomes toxic at approximately 0.5 oz per pound of body weight. Dark chocolate and baking chocolate are 2-5x more toxic. For a 5kg (11lb) cat, as little as 20g of milk chocolate (about half a standard bar) can cause symptoms. Baking chocolate is lethal at 5-10g for an average cat."
+  },
+  {
+    "key": "catEmergency.ateChocolate.faqs.3.question",
+    "value": "What should I do if my cat ate chocolate?"
+  },
+  {
+    "key": "catEmergency.ateChocolate.faqs.3.answer",
+    "value": "Call ASPCA Poison Control at (888) 426-4435 or your vet immediately. Cats are more sensitive than dogs — even small amounts are concerning. Bring the chocolate packaging to identify theobromine content. Do NOT wait for symptoms, as cardiac arrhythmias can be sudden and fatal."
+  },
+  {
+    "key": "catEmergency.ateChocolate.relatedTools.0.name",
+    "value": "Toxic Food & Plant Checker"
+  },
+  {
+    "key": "catEmergency.ateChocolate.relatedTools.0.url",
+    "value": "/shared/toxic-checker/"
+  },
+  {
+    "key": "catEmergency.ateChocolate.relatedTools.1.name",
+    "value": "Cat BCS & Weight Tracker"
+  },
+  {
+    "key": "catEmergency.ateChocolate.relatedTools.1.url",
+    "value": "/cat/bcs-weight-tracker/"
+  },
+  {
+    "key": "catEmergency.ateOnion.breadcrumbLabel",
+    "value": "Ate Onion"
+  },
+  {
+    "key": "catEmergency.ateOnion.meta.title",
+    "value": "My Cat Ate Onion: Symptoms and Emergency Guide | petsMetrics"
+  },
+  {
+    "key": "catEmergency.ateOnion.meta.description",
+    "value": "Emergency guide: Onions cause hemolytic anemia in cats. Learn symptoms (pale gums, weakness, Heinz body anemia), toxic dose, and why even small amounts are dangerous. ASPCA Poison Control: (888) 426-4435."
+  },
+  {
+    "key": "catEmergency.ateOnion.meta.keywords",
+    "value": "my cat ate onion, onion poisoning cats, onion toxicity cats, cat ate onion symptoms, onion toxic to cats"
+  },
+  {
+    "key": "catEmergency.ateOnion.banner.severityLabel",
+    "value": "DANGEROUS — Causes Hemolytic Anemia"
+  },
+  {
+    "key": "catEmergency.ateOnion.banner.title",
+    "value": "My Cat Ate Onion: Symptoms and What to Do"
+  },
+  {
+    "key": "catEmergency.ateOnion.banner.subtitle",
+    "value": "Onions are <strong>more toxic to cats than dogs</strong>. Even small amounts cause Heinz body hemolytic anemia. Call ASPCA Poison Control at <strong>(888) 426-4435</strong> immediately."
+  },
+  {
+    "key": "catEmergency.ateOnion.article.headline",
+    "value": "My Cat Ate Onion: Symptoms and Emergency Guide"
+  },
+  {
+    "key": "catEmergency.ateOnion.article.description",
+    "value": "Emergency guide for onion toxicity in cats: Heinz body anemia, symptoms, and treatment."
+  },
+  {
+    "key": "catEmergency.ateOnion.article.ogTitle",
+    "value": "My Cat Ate Onion: Symptoms and Emergency Guide | petsMetrics"
+  },
+  {
+    "key": "catEmergency.ateOnion.article.ogDescription",
+    "value": "What to do if your cat eats onion."
+  },
+  {
+    "key": "catEmergency.ateOnion.riskAssessment.headers.0",
+    "value": "Onion Form"
+  },
+  {
+    "key": "catEmergency.ateOnion.riskAssessment.headers.1",
+    "value": "Amount Eaten"
+  },
+  {
+    "key": "catEmergency.ateOnion.riskAssessment.headers.2",
+    "value": "Risk Level"
+  },
+  {
+    "key": "catEmergency.ateOnion.riskAssessment.headers.3",
+    "value": "Action Required"
+  },
+  {
+    "key": "catEmergency.ateOnion.riskAssessment.rows.0.form",
+    "value": "Onion powder"
+  },
+  {
+    "key": "catEmergency.ateOnion.riskAssessment.rows.0.amount",
+    "value": "> 0.5g"
+  },
+  {
+    "key": "catEmergency.ateOnion.riskAssessment.rows.0.risk",
+    "value": "HIGH"
+  },
+  {
+    "key": "catEmergency.ateOnion.riskAssessment.rows.0.action",
+    "value": "🚨 Vet NOW — concentrated form"
+  },
+  {
+    "key": "catEmergency.ateOnion.riskAssessment.rows.1.form",
+    "value": "Raw/cooked onion"
+  },
+  {
+    "key": "catEmergency.ateOnion.riskAssessment.rows.1.amount",
+    "value": "> 5g per kg"
+  },
+  {
+    "key": "catEmergency.ateOnion.riskAssessment.rows.1.risk",
+    "value": "Moderate"
+  },
+  {
+    "key": "catEmergency.ateOnion.riskAssessment.rows.1.action",
+    "value": "📞 Call vet today — delayed symptoms"
+  },
+  {
+    "key": "catEmergency.ateOnion.riskAssessment.rows.2.form",
+    "value": "Trace amounts"
+  },
+  {
+    "key": "catEmergency.ateOnion.riskAssessment.rows.2.amount",
+    "value": "< 1g"
+  },
+  {
+    "key": "catEmergency.ateOnion.riskAssessment.rows.2.risk",
+    "value": "Low"
+  },
+  {
+    "key": "catEmergency.ateOnion.riskAssessment.rows.2.action",
+    "value": "👀 Monitor for 3-5 days"
+  },
+  {
+    "key": "catEmergency.ateOnion.steps.0.title",
+    "value": "Step 1: Note the Type and Amount"
+  },
+  {
+    "key": "catEmergency.ateOnion.steps.0.content",
+    "value": "Was it raw onion, cooked onion, onion powder, or a product containing onion? Powder is most concentrated. Calculate approximate amount."
+  },
+  {
+    "key": "catEmergency.ateOnion.steps.1.title",
+    "value": "Step 2: Call Vet or Poison Control"
+  },
+  {
+    "key": "catEmergency.ateOnion.steps.1.content",
+    "value": "📞 <strong>ASPCA Poison Control:</strong> (888) 426-4435. Even small amounts can cause delayed anemia — early blood work may be needed."
+  },
+  {
+    "key": "catEmergency.ateOnion.steps.2.title",
+    "value": "Step 3: Do NOT Induce Vomiting Unless Instructed"
+  },
+  {
+    "key": "catEmergency.ateOnion.steps.2.content",
+    "value": "⚠️ Symptoms are delayed 1-5 days. Induction is not effective after absorption. Your vet may induce vomiting if ingestion was very recent."
+  },
+  {
+    "key": "catEmergency.ateOnion.steps.3.title",
+    "value": "Step 4: Schedule Blood Work"
+  },
+  {
+    "key": "catEmergency.ateOnion.steps.3.content",
+    "value": "Your vet will check for Heinz bodies and monitor red blood cell count for 3-5 days. Early detection of anemia allows transfusion if needed."
+  },
+  {
+    "key": "catEmergency.ateOnion.science.content",
+    "value": "Onions (Allium cepa) contain N-propyl disulfide and S-methylcysteine sulfoxide. These compounds cause oxidative damage to hemoglobin, forming Heinz bodies (denatured hemoglobin precipitates). The spleen removes damaged cells, causing hemolytic anemia. Cats are especially vulnerable because feline hemoglobin contains more sulfhydryl groups than other species, making it more susceptible to oxidation. Additionally, cats have lower glucose-6-phosphate dehydrogenase (G6PD) activity, reducing their ability to protect red blood cells from oxidative injury. Anemia typically peaks 3-5 days post-ingestion (Merck Veterinary Manual, 2023)."
+  },
+  {
+    "key": "catEmergency.ateOnion.faqs.0.question",
+    "value": "Are onions toxic to cats?"
+  },
+  {
+    "key": "catEmergency.ateOnion.faqs.0.answer",
+    "value": "Yes, onions are highly toxic to cats — more so than dogs relative to body weight. Onions contain N-propyl disulfide and thiosulfates that cause oxidative damage to red blood cells, leading to Heinz body hemolytic anemia. Cats are uniquely vulnerable because their hemoglobin is more susceptible to oxidation, and they produce methemoglobin more readily."
+  },
+  {
+    "key": "catEmergency.ateOnion.faqs.1.question",
+    "value": "How much onion is toxic to cats?"
+  },
+  {
+    "key": "catEmergency.ateOnion.faqs.1.answer",
+    "value": "Even small amounts are dangerous. Toxic effects can occur at 5g/kg body weight (about 1 tablespoon for a 4kg cat). Regular consumption of smaller amounts (even trace amounts in baby food or broth) can cause cumulative damage. Raw, cooked, powdered, and dehydrated onions are all toxic."
+  },
+  {
+    "key": "catEmergency.ateOnion.faqs.2.question",
+    "value": "What are the symptoms of onion poisoning in cats?"
+  },
+  {
+    "key": "catEmergency.ateOnion.faqs.2.answer",
+    "value": "Symptoms appear 1-5 days after ingestion: pale or yellow gums (anemia/jaundice), weakness, rapid breathing, reddish-brown urine (hemoglobinuria), vomiting, and lethargy. Heinz body anemia is confirmed by blood smear showing damaged red blood cells. Severe cases require blood transfusion."
+  },
+  {
+    "key": "catEmergency.ateOnion.faqs.3.question",
+    "value": "Can onion powder hurt cats?"
+  },
+  {
+    "key": "catEmergency.ateOnion.faqs.3.answer",
+    "value": "Yes, onion powder is concentrated and especially dangerous. Even small amounts in broth, gravy, baby food, or treats can cause toxicity. Many commercial products contain hidden onion or garlic powder. Always check ingredient labels before sharing human food with cats."
+  },
+  {
+    "key": "catEmergency.ateOnion.relatedTools.0.name",
+    "value": "Toxic Food & Plant Checker"
+  },
+  {
+    "key": "catEmergency.ateOnion.relatedTools.0.url",
+    "value": "/shared/toxic-checker/"
+  },
+  {
+    "key": "catEmergency.ateOnion.relatedTools.1.name",
+    "value": "Cat BCS & Weight Tracker"
+  },
+  {
+    "key": "catEmergency.ateOnion.relatedTools.1.url",
+    "value": "/cat/bcs-weight-tracker/"
+  },
+  {
+    "key": "catEmergency.ateGarlic.breadcrumbLabel",
+    "value": "Ate Garlic"
+  },
+  {
+    "key": "catEmergency.ateGarlic.meta.title",
+    "value": "My Cat Ate Garlic: What to Do Now | petsMetrics"
+  },
+  {
+    "key": "catEmergency.ateGarlic.meta.description",
+    "value": "Emergency guide: Garlic is toxic to cats — 5x more potent than onion. Learn about Heinz body anemia, symptoms, toxic dose, and why even small amounts are dangerous. ASPCA Poison Control: (888) 426-4435."
+  },
+  {
+    "key": "catEmergency.ateGarlic.meta.keywords",
+    "value": "my cat ate garlic what to do, garlic poisoning cats, garlic toxic to cats, cat ate garlic symptoms, garlic anemia cats"
+  },
+  {
+    "key": "catEmergency.ateGarlic.banner.severityLabel",
+    "value": "DANGEROUS — 5x More Toxic Than Onion"
+  },
+  {
+    "key": "catEmergency.ateGarlic.banner.title",
+    "value": "My Cat Ate Garlic: What to Do Now"
+  },
+  {
+    "key": "catEmergency.ateGarlic.banner.subtitle",
+    "value": "Garlic is <strong>5x more toxic than onion for cats</strong>. A single clove can cause hemolytic anemia. Call ASPCA Poison Control at <strong>(888) 426-4435</strong> immediately."
+  },
+  {
+    "key": "catEmergency.ateGarlic.article.headline",
+    "value": "My Cat Ate Garlic: What to Do Now"
+  },
+  {
+    "key": "catEmergency.ateGarlic.article.description",
+    "value": "Emergency guide for garlic toxicity in cats: 5x more potent than onion, Heinz body anemia, and treatment."
+  },
+  {
+    "key": "catEmergency.ateGarlic.article.ogTitle",
+    "value": "My Cat Ate Garlic: What to Do Now | petsMetrics"
+  },
+  {
+    "key": "catEmergency.ateGarlic.article.ogDescription",
+    "value": "What to do if your cat eats garlic."
+  },
+  {
+    "key": "catEmergency.ateGarlic.riskAssessment.headers.0",
+    "value": "Garlic Form"
+  },
+  {
+    "key": "catEmergency.ateGarlic.riskAssessment.headers.1",
+    "value": "Amount Eaten"
+  },
+  {
+    "key": "catEmergency.ateGarlic.riskAssessment.headers.2",
+    "value": "Risk Level"
+  },
+  {
+    "key": "catEmergency.ateGarlic.riskAssessment.headers.3",
+    "value": "Action Required"
+  },
+  {
+    "key": "catEmergency.ateGarlic.riskAssessment.rows.0.form",
+    "value": "Fresh garlic"
+  },
+  {
+    "key": "catEmergency.ateGarlic.riskAssessment.rows.0.amount",
+    "value": "> 1 clove (5g)"
+  },
+  {
+    "key": "catEmergency.ateGarlic.riskAssessment.rows.0.risk",
+    "value": "HIGH"
+  },
+  {
+    "key": "catEmergency.ateGarlic.riskAssessment.rows.0.action",
+    "value": "🚨 Vet NOW — highly toxic"
+  },
+  {
+    "key": "catEmergency.ateGarlic.riskAssessment.rows.1.form",
+    "value": "Garlic powder"
+  },
+  {
+    "key": "catEmergency.ateGarlic.riskAssessment.rows.1.amount",
+    "value": "> 1/4 teaspoon"
+  },
+  {
+    "key": "catEmergency.ateGarlic.riskAssessment.rows.1.risk",
+    "value": "HIGH"
+  },
+  {
+    "key": "catEmergency.ateGarlic.riskAssessment.rows.1.action",
+    "value": "🚨 Emergency vet — concentrated"
+  },
+  {
+    "key": "catEmergency.ateGarlic.riskAssessment.rows.2.form",
+    "value": "Garlic oil/extract"
+  },
+  {
+    "key": "catEmergency.ateGarlic.riskAssessment.rows.2.amount",
+    "value": "Any amount"
+  },
+  {
+    "key": "catEmergency.ateGarlic.riskAssessment.rows.2.risk",
+    "value": "Moderate"
+  },
+  {
+    "key": "catEmergency.ateGarlic.riskAssessment.rows.2.action",
+    "value": "📞 Call vet for assessment"
+  },
+  {
+    "key": "catEmergency.ateGarlic.steps.0.title",
+    "value": "Step 1: Remove All Garlic Immediately"
+  },
+  {
+    "key": "catEmergency.ateGarlic.steps.0.content",
+    "value": "Remove any remaining garlic, garlic-containing foods, or supplements from your cat's reach."
+  },
+  {
+    "key": "catEmergency.ateGarlic.steps.1.title",
+    "value": "Step 2: Call Poison Control"
+  },
+  {
+    "key": "catEmergency.ateGarlic.steps.1.content",
+    "value": "📞 <strong>ASPCA Poison Control:</strong> (888) 426-4435. Garlic is more toxic than onion — small amounts require professional guidance."
+  },
+  {
+    "key": "catEmergency.ateGarlic.steps.2.title",
+    "value": "Step 3: Schedule Blood Work for Days 3-5"
+  },
+  {
+    "key": "catEmergency.ateGarlic.steps.2.content",
+    "value": "Anemia peaks 3-5 days after ingestion. Even if your cat seems fine, delayed Heinz body anemia can be life-threatening."
+  },
+  {
+    "key": "catEmergency.ateGarlic.science.content",
+    "value": "Garlic (Allium sativum) contains alliin, which converts to allicin when crushed or chewed. Allicin and its derivatives (allyl propyl disulfide, ajoene) cause oxidative denaturation of hemoglobin in feline erythrocytes. The feline hemoglobin molecule has 8-10 sulfhydryl groups (vs 2-4 in dogs), making it 2-3x more susceptible to oxidative damage. The resulting Heinz bodies are phagocytosed by splenic macrophages, causing extravascular hemolysis. Unlike onions, garlic's thiosulfates are more bioavailable in cats due to differences in hepatic metabolism (Merck Veterinary Manual, 2023)."
+  },
+  {
+    "key": "catEmergency.ateGarlic.faqs.0.question",
+    "value": "Is garlic toxic to cats?"
+  },
+  {
+    "key": "catEmergency.ateGarlic.faqs.0.answer",
+    "value": "Yes, garlic is highly toxic to cats — approximately 5x more potent than onion per gram. Garlic (Allium sativum) contains allicin, alliin, and allyl propyl disulfide, which cause severe oxidative damage to feline red blood cells. Cats are uniquely susceptible due to the structure of their hemoglobin molecule."
+  },
+  {
+    "key": "catEmergency.ateGarlic.faqs.1.question",
+    "value": "How much garlic is toxic to cats?"
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "documents.health-certificate-non-eu": "Animal Health Certificate (AHC)",
+  "documents.min-age-rabies": "Minimum Age Met (12+ weeks)",
+  "documents.max-pets-limit": "Within 5-Pet Limit (non-commercial)",
+  "documents.teip-entry-point": "Designated Entry Point (TEP) planned",
+  "documents.uk-specific-docs": "UK-specific AHC (post-Brexit)",
+  "documents.nordic-immunity-zone": "Nordic Echinococcus Treatment",
+  "result.leadTimeHint": "Plan ahead — some requirements have mandatory waiting periods that begin after vaccination or testing."
+}

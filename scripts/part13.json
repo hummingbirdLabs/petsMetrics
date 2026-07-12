@@ -1,0 +1,22 @@
+{
+  "footer.copyright": "petsMetrics. All rights reserved.",
+  "guide.checklist.annual": "年次",
+  "guide.checklist.completed": "完了",
+  "guide.checklist.downloadPdf": "PDFをダウンロード",
+  "guide.checklist.estimatedCost": "推定費用",
+  "guide.checklist.firstYear": "1年目",
+  "guide.checklist.print": "チェックリストを印刷",
+  "guide.checklist.proTip": "プロのヒント",
+  "guide.checklist.progress": "進捗",
+  "guide.checklist.required": "必須",
+  "guide.checklist.reset": "すべてリセット",
+  "guide.checklist.vetVisit": "獣医師の診察",
+  "header.logoAlt": "petsMetrics",
+  "puppyGrowth.result.predictedRange": "{min} – {max} kg",
+  "seo.description": "犬と猫の飼い主のための無料オンラインツール。カロリー、年齢、水分摂取などを計算。AAHA、WSAVA、AAFCO基準に基づく。",
+  "seo.title": "犬＆猫ツール | 科学的根拠に基づく計算",
+  "seo.toolsDescription": "あなたのペットのための科学ベースのツール",
+  "seo.toolsTitle": "無料ツール",
+  "toxicLanding.aspcaNumber": "(888) 426-4435",
+  "toxicLanding.petPoisonNumber": "(855) 764-7661"
+}

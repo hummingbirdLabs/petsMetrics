@@ -1,0 +1,203 @@
+{
+  "common": {
+    "unit": {
+      "kg": "kg",
+      "lb": "lb",
+      "ml": "ml",
+      "oz": "oz",
+      "kcal": "kcal"
+    },
+    "senior": "Senior",
+    "intact": "Intact",
+    "notFound": {
+      "title": "404"
+    }
+  },
+  "home": {
+    "hero": {
+      "cardPetName": "Buddy"
+    }
+  },
+  "dog": {
+    "toolGrid": {
+      "rating": "P0",
+      "priority": "P1"
+    },
+    "breedContent": {
+      "breeds": {
+        "labrador": {
+          "name": "Labrador Retriever"
+        },
+        "goldenRetriever": {
+          "name": "Golden Retriever"
+        }
+      }
+    }
+  },
+  "cat": {
+    "toolGrid": {
+      "rating": "P0",
+      "priority": "P1"
+    }
+  },
+  "header": {
+    "logoAlt": "petsMetrics"
+  },
+  "footer": {
+    "contact": "Contact"
+  },
+  "dogAge": {
+    "lifeStage": {
+      "cardTitle": "{stage} — {stageName}"
+    }
+  },
+  "dogCalorie": {
+    "form": {
+      "coefficient": "coeff."
+    }
+  },
+  "puppyGrowth": {
+    "result": {
+      "predictedRange": "{min} – {max} kg"
+    }
+  },
+  "catBcs": {
+    "result": {
+      "bcsScore": "BCS {score}/9"
+    }
+  },
+  "toxicChecker": {
+    "result": {
+      "source": "Source"
+    }
+  },
+  "toxicLanding": {
+    "aspcaNumber": "(888) 426-4435",
+    "petPoisonNumber": "(855) 764-7661"
+  },
+  "euTravel": {
+    "form": {
+      "destinationLabel": "Destination"
+    }
+  },
+  "emergency": {
+    "shared": {
+      "aspcaLink": "https://www.aspca.org/pet-care/animal-poison-control"
+    },
+    "ateMarijuana": {
+      "riskAssessment": {
+        "headers": {
+          "amountEaten": "Quantité ingérée",
+          "riskLevel": "Niveau de risque",
+          "actionRequired": "Action requise"
+        }
+      },
+      "science": {
+        "content": "Le Delta-9-tétrahydrocannabinol (THC) se lie aux récepteurs cannabinoïdes CB1 dans le système nerveux central canin. Les chiens ont une densité plus élevée de récepteurs CB1 dans le cervelet (responsable de la coordination) et le tronc cérébral que les humains, ce qui explique leur sensibilité accrue. Le THC est lipophile et subit une recirculation entéropatique, prolongeant les effets. Les edibles sont dangereux car le tractus gastro-intestinal absorbe rapidement le THC, et le foie convertit le 11-hydroxy-THC, qui est 5 fois plus psychoactif. La plupart des cas sont traités de manière supportive — il n'y a pas d'antidote spécifique, mais la thérapie par émulsion lipidique IV peut accélérer l'élimination du THC (ASPCA, 2023)."
+      }
+    },
+    "ateXylitolGum": {
+      "meta": {
+        "description": "Guide d'urgence : Le xylitol (sucre de bouleau) est extrêmement toxique pour les chiens. Même un seul morceau de gomme provoque une hypoglycémie potentiellement mortelle et une insuffisance hépatique. Apprenez les symptômes et les actions immédiates. ASPCA Poison Control : (888) 426-4435.",
+        "keywords": "mon chien a mangé de la gomme au xylitol, empoisonnement au xylitol chiens, chien a mangé de la gomme sans sucre, xylitol toxique pour les chiens, chien a mangé du sucre de bouleau"
+      },
+      "article": {
+        "ogTitle": "Mon Chien a Mangé de la Gomme au Xylitol : Guide d'Urgence | petsMetrics",
+        "ogDescription": "Guide d'urgence : Le xylitol provoque une hypoglycémie mortelle et une insuffisance hépatique chez les chiens. Agissez immédiatement."
+      },
+      "banner": {
+        "subtitle": "Le xylitol déclenche une libération massive d'insuline provoquant une hypoglycémie mortelle et une insuffisance hépatique. <strong>Un seul morceau de gomme peut tuer un petit chien.</strong> Allez chez le vétérinaire d'urgence MAINTENANT."
+      },
+      "riskAssessment": {
+        "headers": {
+          "amountEaten": "Quantité ingérée",
+          "xylitolContent": "Teneur en xylitol",
+          "riskLevel": "Niveau de risque",
+          "actionRequired": "Action requise"
+        }
+      },
+      "science": {
+        "content": "Le xylitol est un alcool de sucre (polyol) qui déclenche une libération rapide et exagérée d'insuline par les cellules bêta canines — jusqu'à à 6-7 fois la quantité libérée par le glucose. Cela s'explique par le fait que les chiens métabolisent le xylitol via la même voie que le glucose mais avec une cinétique différente. L'hypoglycémie qui en résulte (glycémie <60mg/dL) provoque un dysfonctionnement neurologique, des convulsions et la mort. À des doses plus élevées (>0,5g/kg), le xylitol provoque une nécrose hépatique aiguë par épuisement de l'ATP et stress oxydatif. Le mécanisme est dépendant de la dose et unique aux chiens — les chats semblent moins sensibles (ASPCA, 2023)."
+      }
+    },
+    "ateChocolate": {
+      "meta": {
+        "description": "Guide d'urgence : Que faire si votre chien mange du chocolat. Apprenez les niveaux de toxicité, le calendrier des symptômes et quand appeler le vétérinaire. ASPCA Poison Control : (888) 426-4435.",
+        "keywords": "mon chien a mangé du chocolat que faire, toxicité chocolat chiens, empoisonnement au chocolat chez les chiens, chien a mangé du chocolat urgence, que faire si le chien mange du chocolat"
+      },
+      "article": {
+        "ogTitle": "Mon Chien a Mangé du Chocolat : Que Faire Maintenant | petsMetrics",
+        "ogDescription": "Guide d'urgence : Que faire si votre chien mange du chocolat. Niveaux de toxicité, calendrier des symptômes et quand appeler le vétérinaire."
+      },
+      "banner": {
+        "subtitle": "Le chocolat contient de la théobromine, que les chiens ne peuvent pas métaboliser efficacement. Une action immédiate est critique — appelez votre vétérinaire ou l'ASPCA Poison Control au <strong>(888) 426-4435</strong> immédiatement."
+      },
+      "riskAssessment": {
+        "headers": {
+          "theobromine": "Teneur en théobromine"
+        }
+      },
+      "science": {
+        "content": "Le chocolat contient de la théobromine et de la caféine, deux méthylxanthines que les chiens métabolisent beaucoup plus lentement que les humains. Alors que les humains éliminent la théobromine en 2-3 heures, les chiens prennent 17,5 heures ou plus. Cela permet aux niveaux toxiques de s'accumuler dans leur système. La théobromine affecte le système nerveux central, le système cardiovasculaire et les muscles lisses. À des doses élevées, elle provoque des convulsions, des arythmies cardiaques et potentiellement la mort (ASPCA, 2023)."
+      }
+    },
+    "ateGrapes": {
+      "meta": {
+        "description": "Guide d'urgence : Que faire si votre chien mange des raisins ou des raisins secs. Apprenez-en plus sur le risque d'insuffisance rénale aiguë, le calendrier des symptômes et les étapes de traitement immédiates.",
+        "keywords": "mon chien a mangé des raisins que dois-je faire, chien a mangé des raisins urgence, toxicité du raisin chez les chiens, raisins secs toxiques pour les chiens, empoisonnement au raisin chez le chien"
+      },
+      "article": {
+        "ogTitle": "Mon Chien a Mangé des Raisins : Que Dois-Je Faire? | petsMetrics",
+        "ogDescription": "Guide d'urgence : Que faire si votre chien mange des raisins ou des raisins secs. Risque d'insuffisance rénale et étapes de traitement immédiates."
+      },
+      "banner": {
+        "subtitle": "Les raisins et les raisins secs peuvent provoquer une insuffisance rénale aiguë chez les chiens. Même de petites quantités sont dangereuses — appelez votre vétérinaire ou l'ASPCA Poison Control au <strong>(888) 426-4435</strong> immédiatement."
+      },
+      "science": {
+        "content": "Le composé toxique exact dans les raisins et les raisins secs reste non identifié, mais l'acide tartrique est le principal suspect. Ce composé provoque une nécrose tubulaire aiguë dans les reins, entraînant une insuffisance rénale rapide. La dose toxique est imprévisible — certains chiens développent une insuffisance rénale à partir de quelques raisins seulement, tandis que d'autres en tolèrent davantage. Cette variabilité fait de toute ingestion une urgence médicale (ASPCA, 2023)."
+      }
+    },
+    "ateXylitol": {
+      "meta": {
+        "description": "Guide d'urgence : Que faire si votre chien mange du xylitol (sucre de bouleau). Apprenez-en plus sur l'hypoglycémie rapide, le risque d'insuffisance hépatique et les étapes de traitement salvatrices.",
+        "keywords": "chien a mangé du xylitol que faire, empoisonnement au xylitol chiens, toxicité du xylitol chez les chiens, chien a mangé de la gomme urgence, sucre de bouleau toxique pour les chiens"
+      },
+      "article": {
+        "ogTitle": "Chien a Mangé du Xylitol : Que Faire Immédiatement | petsMetrics",
+        "ogDescription": "Guide d'urgence : Que faire si votre chien mange du xylitol. Risque d'hypoglycémie rapide et d'insuffisance hépatique."
+      },
+      "banner": {
+        "subtitle": "Le xylitol provoque une hypoglycémie rapide et peut entraîner une insuffisance hépatique. Même de petites quantités sont potentiellement mortelles — appelez votre vétérinaire ou l'ASPCA Poison Control au <strong>(888) 426-4435</strong> MAINTENANT."
+      },
+      "science": {
+        "content": "Le xylitol est un alcool de sucre qui déclenche une libération d'insuline rapide et massive par le pancréas du chien. Cela fait chuter la glycémie en 10-30 minutes. À des doses plus élevées, le xylitol provoque une insuffisance hépatique aiguë par des mécanismes qui ne sont pas entièrement compris. Contrairement aux humains, les chiens absorbent rapidement le xylitol et leur corps le confond avec du vrai sucre, déclenchant cette réponse insulinique dangereuse (ASPCA, 2023)."
+      }
+    },
+    "ateOnion": {
+      "meta": {
+        "description": "Guide d'urgence : Que faire si votre chien mange des oignons. Apprenez-en plus sur le risque d'anémie hémolytique, le calendrier des symptômes et les étapes de traitement. Toutes les formes d'oignon sont toxiques.",
+        "keywords": "chien a mangé de l'oignon que faire, toxicité de l'oignon chiens, empoisonnement à l'oignon chez les chiens, chien a mangé de l'oignon urgence, les oignons sont-ils toxiques pour les chiens"
+      },
+      "article": {
+        "ogTitle": "Chien a Mangé de l'Oignon : Que Faire Maintenant | petsMetrics",
+        "ogDescription": "Guide d'urgence : Que faire si votre chien mange des oignons. Risque d'anémie hémolytique et étapes de traitement."
+      },
+      "banner": {
+        "subtitle": "Les oignons provoquent une anémie hémolytique chez les chiens en détruisant les globules rouges. Toutes les formes sont toxiques — appelez votre vétérinaire ou l'ASPCA Poison Control au <strong>(888) 426-4435</strong>."
+      },
+      "science": {
+        "content": "Les oignons contiennent des composés de thiosulfate (n-propyl disulfure) que les chiens ne peuvent pas métaboliser. Ces composés provoquent des dommages oxydatifs aux globules rouges, formant des corps de Heinz — de l'hémoglobine endommagée qui précipite à l'intérieur de la cellule. La rate détruit ensuite ces cellules endommagées, entraînant une anémie hémolytique. Ce processus prend 1-3 jours, c'est pourquoi les symptômes sont retardés (ASPCA, 2023)."
+      }
+    },
+    "ateSock": {
+      "meta": {
+        "description": "Guide d'urgence : Que faire si votre chien mange une chaussette. Apprenez-en plus sur le risque d'occlusion intestinale, les symptômes et quand la chirurgie est nécessaire. Agissez vite — le temps compte.",
+        "keywords": "mon chiot a mangé une chaussette, chien a mangé une chaussette urgence, occlusion intestinale chien, chien a mangé un objet étranger, ingestion de chaussette chien"
+      },
+      "article": {
+        "ogTitle": "Mon Chiot a Mangé une Chaussette : Que Faire Maintenant | petsMetrics",
+        "ogDescription": "Guide d'urgence : Que faire si votre chien mange une chaussette. Risque d'occlusion intestinale et quand la chirurgie est nécessaire."
+      }
+    }
+  }
+}

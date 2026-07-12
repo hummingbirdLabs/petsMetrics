@@ -1,0 +1,20 @@
+{
+  "form.multiDateHint": "If multiple matings occurred, we calculate a range showing earliest possible, most likely, and latest dates.",
+  "result.possibleRange": "Possible range: {earliest} → {latest}",
+  "result.basedOn": "Based on: average gestation of 63 days. Mating date: {date}",
+  "result.milestonesTitle": "Pregnancy Milestone Timeline",
+  "result.milestoneDay25": "Day 25 — Ultrasound window opens",
+  "result.milestoneDay25Desc": "Vet can confirm pregnancy via ultrasound starting around day 25.",
+  "result.milestoneDay45": "Day 45 — X-ray: fetal skeletons visible",
+  "result.milestoneDay45Desc": "X-ray shows fetal skeletons clearly. Count puppies and verify positioning.",
+  "result.milestoneDay58": "Day 58 — Possible early labor; start temperature monitoring",
+  "result.milestoneDay58Desc": "Begin daily temperature monitoring. A drop below 37.8°C (100°F) signals labor within 24 hours.",
+  "result.milestoneDay60": "Day 60 — Nesting behavior",
+  "result.milestoneDay60Desc": "Nesting behavior intensifies. Ensure the whelping area is fully prepared.",
+  "result.milestoneDay63": "Day 63 — Most likely due date",
+  "result.milestoneDay63Desc": "Expected whelping date. Most dogs deliver on or near day 63.",
+  "result.milestoneDay65": "Day 65 — Late term; contact vet if no labor",
+  "result.milestoneDay65Desc": "If no signs of labor, consult your veterinarian for assessment.",
+  "result.milestoneDay68": "Day 68 — Latest boundary; contact vet",
+  "result.milestoneDay68Desc": "Latest safe boundary. Contact your veterinarian immediately if labor has not started."
+}

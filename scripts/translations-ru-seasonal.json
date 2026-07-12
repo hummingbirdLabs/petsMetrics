@@ -1,0 +1,148 @@
+{
+  "seasonal": {
+    "summer-heat": {
+      "slug": "summer-heat",
+      "relatedEmergency": "/dog/emergency/",
+      "citations": [
+        {
+          "title": "Тепловой удар у собак - ASPCA",
+          "url": "https://www.aspca.org/news/heatstroke-dogs"
+        },
+        {
+          "title": "Безопасность домашних животных летом - AVMA",
+          "url": "https://www.avma.org/resources/pet-owners/pet-summer"
+        },
+        {
+          "title": "Тепловой удар у собак - VCA Hospitals",
+          "url": "https://vcahospitals.com/know-your-pet/heat-stroke-in-dogs"
+        }
+      ]
+    },
+    "winter-paw-care": {
+      "slug": "winter-paw-care",
+      "relatedEmergency": "/dog/emergency/",
+      "citations": [
+        {
+          "title": "Уход за лапами зимой - ASPCA",
+          "url": "https://www.aspca.org/news/winter-paw-care-tips"
+        },
+        {
+          "title": "Безопасность домашних животных в холодную погоду - AKC",
+          "url": "https://www.akc.org/expert-advice/health/cold-weather-pet-safety/"
+        },
+        {
+          "title": "Защита лап зимой - VCA Hospitals",
+          "url": "https://vcahospitals.com/know-your-pet/first-aid-for-cold-weather"
+        }
+      ]
+    },
+    "christmas-foods": {
+      "slug": "christmas-foods",
+      "relatedEmergency": "/dog/emergency/ate-chocolate/",
+      "citations": [
+        {
+          "title": "Продукты, которых собаки должны избегать на Рождество - ASPCA",
+          "url": "https://www.aspca.org/news/holiday-foods-your-pets-should-avoid"
+        },
+        {
+          "title": "Рождественские токсичные опасности для домашних животных - VCA Hospitals",
+          "url": "https://vcahospitals.com/know-your-pet/christmas-pet-poison-hazards"
+        },
+        {
+          "title": "Безопасность домашних животных в праздники - AKC",
+          "url": "https://www.akc.org/expert-advice/health/holiday-pet-safety/"
+        }
+      ]
+    },
+    "halloween-candy": {
+      "slug": "halloween-candy",
+      "relatedEmergency": "/dog/emergency/ate-xylitol/",
+      "citations": [
+        {
+          "title": "Безопасность домашних животных на Хэллоуин - ASPCA",
+          "url": "https://www.aspca.org/news/halloween-pet-safety-tips"
+        },
+        {
+          "title": "Опасности конфет для собак - VCA Hospitals",
+          "url": "https://vcahospitals.com/know-your-pet/candy-hazards-for-dogs"
+        },
+        {
+          "title": "Опасности Хэллоуина для домашних животных - AKC",
+          "url": "https://www.akc.org/expert-advice/health/halloween-dangers-for-pets/"
+        }
+      ]
+    },
+    "fireworks-anxiety": {
+      "slug": "fireworks-anxiety",
+      "relatedEmergency": "/emergency",
+      "citations": [
+        {
+          "title": "Фейерверки и собаки - ASPCA",
+          "url": "https://www.aspca.org/news/fireworks-and-dogs"
+        },
+        {
+          "title": "Фобии шума у собак - VCA Hospitals",
+          "url": "https://vcahospitals.com/know-your-pet/noise-phobias-in-dogs"
+        },
+        {
+          "title": "Безопасность домашних животных 4 июля - AKC",
+          "url": "https://www.akc.org/expert-advice/health/fourth-of-july-pet-safety/"
+        }
+      ]
+    },
+    "spring-allergies": {
+      "slug": "spring-allergies",
+      "relatedEmergency": "/dog/emergency/",
+      "citations": [
+        {
+          "title": "Сезонная аллергия у собак - ASPCA",
+          "url": "https://www.aspca.org/news/seasonal-allergies-dogs"
+        },
+        {
+          "title": "Атопический дерматит у собак - VCA Hospitals",
+          "url": "https://vcahospitals.com/know-your-pet/atopic-dermatitis-in-dogs"
+        },
+        {
+          "title": "Весенняя аллергия у собак - AKC",
+          "url": "https://www.akc.org/expert-advice/health/spring-allergies-in-dogs/"
+        }
+      ]
+    },
+    "thanksgiving": {
+      "slug": "thanksgiving",
+      "relatedEmergency": "/dog/emergency/ate-grapes/",
+      "citations": [
+        {
+          "title": "Продукты, которых собаки должны избегать в День Благодарения - ASPCA",
+          "url": "https://www.aspca.org/news/thanksgiving-foods-your-pets-should-avoid"
+        },
+        {
+          "title": "Безопасность домашних животных в День Благодарения - VCA Hospitals",
+          "url": "https://vcahospitals.com/know-your-pet/thanksgiving-pet-safety"
+        },
+        {
+          "title": "Безопасность продуктов в праздники для собак - AKC",
+          "url": "https://www.akc.org/expert-advice/health/holiday-food-safety-dogs/"
+        }
+      ]
+    },
+    "easter-chocolate": {
+      "slug": "easter-chocolate",
+      "relatedEmergency": "/dog/emergency/ate-chocolate/",
+      "citations": [
+        {
+          "title": "Безопасность домашних животных на Пасху - ASPCA",
+          "url": "https://www.aspca.org/news/easter-pet-safety-tips"
+        },
+        {
+          "title": "Токсичность шоколада у собак - VCA Hospitals",
+          "url": "https://vcahospitals.com/know-your-pet/chocolate-toxicity-in-dogs"
+        },
+        {
+          "title": "Праздничные токсичные опасности для домашних животных - AKC",
+          "url": "https://www.akc.org/expert-advice/health/holiday-pet-poison-hazards/"
+        }
+      ]
+    }
+  }
+}

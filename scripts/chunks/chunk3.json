@@ -1,0 +1,1202 @@
+[
+  {
+    "key": "emergency.ateMacadamiaNuts.riskAssessment.rows.0.action",
+    "value": "🚨 Seek emergency veterinary care NOW"
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.riskAssessment.rows.1.weight",
+    "value": "10-25 lbs (4.5-11 kg)"
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.riskAssessment.rows.1.amount",
+    "value": "> 4-5 nuts"
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.riskAssessment.rows.1.risk",
+    "value": "Moderate"
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.riskAssessment.rows.1.action",
+    "value": "📞 Call vet or poison control immediately"
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.riskAssessment.rows.2.weight",
+    "value": "> 25 lbs (11 kg)"
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.riskAssessment.rows.2.amount",
+    "value": "< 10 nuts"
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.riskAssessment.rows.2.risk",
+    "value": "Low"
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.riskAssessment.rows.2.action",
+    "value": "👀 Monitor for symptoms, call vet if concerned"
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.steps.0.title",
+    "value": "Step 1: Don't Panic, But Act Quickly"
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.steps.0.content",
+    "value": "Remove any remaining macadamia nuts from your dog's reach. Stay calm — your dog will pick up on your stress."
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.steps.1.title",
+    "value": "Step 2: Do NOT Induce Vomiting (Unless Instructed)"
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.steps.1.content",
+    "value": "⚠️ Inducing vomiting can cause aspiration pneumonia. Only induce vomiting if explicitly instructed by a veterinarian or poison control."
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.steps.2.title",
+    "value": "Step 3: Gather Critical Information"
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.steps.2.items.0",
+    "value": "Estimate the amount consumed (count wrappers, measure remaining nuts)"
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.steps.2.items.1",
+    "value": "Note the time of ingestion (check security camera footage if available)"
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.steps.2.items.2",
+    "value": "Take a photo of the product packaging (ingredients list)"
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.steps.2.items.3",
+    "value": "Weigh your pet (use bathroom scale: weigh yourself, then weigh yourself holding pet)"
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.steps.3.title",
+    "value": "Step 4: Contact Professional Help"
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.steps.3.items.0",
+    "value": "📞 ASPCA Poison Control: (888) 426-4435 ($95 consultation fee may apply)"
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.steps.3.items.1",
+    "value": "📞 Your regular vet: Call during business hours for advice"
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.steps.3.items.2",
+    "value": "🏥 Emergency vet clinic: Go immediately if symptoms are severe"
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.science.content",
+    "value": "Macadamia nuts contain an unidentified toxin that uniquely affects dogs' neuromuscular system. The compound causes reversible weakness and ataxia in hind limbs, likely through disruption of motor neuron signaling. Unlike many toxins, the exact mechanism remains unknown despite decades of clinical observation. Research by Morton (2002) established the LD50 at 2.4 g/kg. The toxin is heat-stable and present in all forms: raw, roasted, salted, and in baked goods. Symptoms are dose-dependent and typically resolve within 12-48 hours with supportive care (ASPCA, 2023)."
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.toxicityData.minimum",
+    "value": "Minimum toxic dose: 0.5 g/kg body weight (mild symptoms)"
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.toxicityData.ld50",
+    "value": "LD50: 2.4 g/kg body weight (severe symptoms)"
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.toxicityData.source",
+    "value": "Source: Morton, 2002 — Journal of Veterinary Diagnostic Investigation"
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.toxicityData.example",
+    "value": "Example: A 15kg (33lb) dog eating 15g of macadamia nuts (approximately 12-15 nuts) would reach the minimum toxic threshold. A typical nut weighs about 1.2-1.5g."
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.timeline.0.time",
+    "value": "3-6 hours"
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.timeline.0.color",
+    "value": "orange"
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.timeline.0.description",
+    "value": "Early signs: weakness in hind legs, ataxia (wobbly gait), vomiting"
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.timeline.1.time",
+    "value": "6-12 hours"
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.timeline.1.color",
+    "value": "orange"
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.timeline.1.description",
+    "value": "Progression: tremors, reluctance to stand, abdominal pain, elevated temperature (up to 104°F/40°C)"
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.timeline.2.time",
+    "value": "12-48 hours"
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.timeline.2.color",
+    "value": "green"
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.timeline.2.description",
+    "value": "Resolution: symptoms typically resolve with supportive care; full recovery expected"
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.faqs.0.question",
+    "value": "Are macadamia nuts toxic to dogs?"
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.faqs.0.answer",
+    "value": "Yes, macadamia nuts are uniquely toxic to dogs. The exact toxin is unknown, but even small amounts cause weakness in hind legs, vomiting, tremors, and hyperthermia. The minimum toxic dose is approximately 2.4 g/kg of body weight. Most dogs recover within 48 hours with supportive veterinary care."
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.faqs.1.question",
+    "value": "How many macadamia nuts are dangerous for a dog?"
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.faqs.1.answer",
+    "value": "For a 20kg (44lb) dog, as few as 10-12 nuts can cause symptoms. Smaller dogs may react to just 2-3 nuts. The toxic threshold is approximately 0.5g of nuts per kg of body weight for mild symptoms, with severe symptoms appearing at 2.4g/kg."
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.faqs.2.question",
+    "value": "How long after eating macadamia nuts will my dog show symptoms?"
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.faqs.2.answer",
+    "value": "Symptoms typically appear within 3-12 hours after ingestion. The earliest sign is usually weakness or paralysis of the hind legs, followed by vomiting, tremors, abdominal pain, and elevated body temperature (up to 104°F/40°C)."
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.faqs.3.question",
+    "value": "Can a dog die from eating macadamia nuts?"
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.faqs.3.answer",
+    "value": "Fatalities from macadamia nut poisoning are extremely rare. The LD50 is 2.4g/kg, meaning a 20kg dog would need to eat approximately 48g of nuts (about 40-50 nuts) to reach dangerous levels. However, even sub-lethal doses cause significant discomfort and require veterinary monitoring."
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.faqs.4.question",
+    "value": "Should I induce vomiting if my dog ate macadamia nuts?"
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.faqs.4.answer",
+    "value": "Do NOT induce vomiting unless instructed by a veterinarian. Induction is only effective within 30 minutes of ingestion and can cause aspiration pneumonia. Contact ASPCA Poison Control at (888) 426-4435 for specific guidance based on the amount consumed and time elapsed."
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.vetDecision.emergency.0",
+    "value": "Complete inability to stand or walk"
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.vetDecision.emergency.1",
+    "value": "Severe tremors or seizures"
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.vetDecision.emergency.2",
+    "value": "Body temperature > 104°F (40°C)"
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.vetDecision.emergency.3",
+    "value": "Persistent vomiting with weakness"
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.vetDecision.urgent.0",
+    "value": "Hind leg weakness progressing to front"
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.vetDecision.urgent.1",
+    "value": "Multiple episodes of vomiting"
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.vetDecision.urgent.2",
+    "value": "Reluctance to move or stand"
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.vetDecision.urgent.3",
+    "value": "Mild tremors developing"
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.vetDecision.monitor.0",
+    "value": "Single episode of vomiting"
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.vetDecision.monitor.1",
+    "value": "Slight wobbliness in hind legs"
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.vetDecision.monitor.2",
+    "value": "Mild lethargy but responsive"
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.vetDecision.monitor.3",
+    "value": "Small amount consumed (< 0.5g/kg)"
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.relatedTools.0.name",
+    "value": "Toxic Food & Plant Checker"
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.relatedTools.0.url",
+    "value": "/shared/toxic-checker/"
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.relatedTools.1.name",
+    "value": "Dog Calorie Calculator"
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.relatedTools.1.url",
+    "value": "/dog/calorie-calculator/"
+  },
+  {
+    "key": "emergency.ateMushrooms.breadcrumbLabel",
+    "value": "Ate Mushroom"
+  },
+  {
+    "key": "emergency.ateMushrooms.meta.title",
+    "value": "My Dog Ate a Mushroom in the Yard: Emergency Guide | petsMetrics"
+  },
+  {
+    "key": "emergency.ateMushrooms.meta.description",
+    "value": "Emergency guide: Wild mushrooms can be deadly toxic to dogs. Learn about Amanita poisoning (liver failure), symptom timeline, and why every mushroom ingestion is an emergency. ASPCA Poison Control: (888) 426-4435."
+  },
+  {
+    "key": "emergency.ateMushrooms.meta.keywords",
+    "value": "my dog ate mushroom in yard, mushroom poisoning dogs, amanita mushroom dogs, wild mushrooms toxic to dogs, dog ate mushroom symptoms"
+  },
+  {
+    "key": "emergency.ateMushrooms.article.headline",
+    "value": "My Dog Ate a Mushroom in the Yard: Emergency Guide"
+  },
+  {
+    "key": "emergency.ateMushrooms.article.description",
+    "value": "Emergency guide for wild mushroom toxicity in dogs: Amanita poisoning, liver failure risk, and immediate treatment."
+  },
+  {
+    "key": "emergency.ateMushrooms.article.ogTitle",
+    "value": "My Dog Ate a Mushroom: Emergency Guide | petsMetrics"
+  },
+  {
+    "key": "emergency.ateMushrooms.article.ogDescription",
+    "value": "Emergency guide: Wild mushrooms can cause fatal liver failure in dogs. Act immediately."
+  },
+  {
+    "key": "emergency.ateMushrooms.banner.severityLabel",
+    "value": "EXTREMELY TOXIC — Life-Threatening, Delayed Onset"
+  },
+  {
+    "key": "emergency.ateMushrooms.banner.title",
+    "value": "My Dog Ate a Mushroom in the Yard: What to Do Now"
+  },
+  {
+    "key": "emergency.ateMushrooms.banner.subtitle",
+    "value": "Wild mushrooms can cause fatal liver failure — symptoms are DELAYED 6-24 hours. <strong>Do not wait for symptoms.</strong> Call ASPCA Poison Control at <strong>(888) 426-4435</strong> IMMEDIATELY."
+  },
+  {
+    "key": "emergency.ateMushrooms.riskAssessment.rows.0.weight",
+    "value": "Unknown wild mushroom"
+  },
+  {
+    "key": "emergency.ateMushrooms.riskAssessment.rows.0.amount",
+    "value": "Any amount"
+  },
+  {
+    "key": "emergency.ateMushrooms.riskAssessment.rows.0.risk",
+    "value": "CRITICAL"
+  },
+  {
+    "key": "emergency.ateMushrooms.riskAssessment.rows.0.action",
+    "value": "🚨 Emergency vet NOW — do not wait"
+  },
+  {
+    "key": "emergency.ateMushrooms.riskAssessment.rows.1.weight",
+    "value": "Cap-and-stem found in yard"
+  },
+  {
+    "key": "emergency.ateMushrooms.riskAssessment.rows.1.amount",
+    "value": "Possible amatoxin"
+  },
+  {
+    "key": "emergency.ateMushrooms.riskAssessment.rows.1.risk",
+    "value": "High"
+  },
+  {
+    "key": "emergency.ateMushrooms.riskAssessment.rows.1.action",
+    "value": "🚨 Vet within 1 hour — induce vomiting"
+  },
+  {
+    "key": "emergency.ateMushrooms.riskAssessment.rows.2.weight",
+    "value": "Store-bought mushroom"
+  },
+  {
+    "key": "emergency.ateMushrooms.riskAssessment.rows.2.amount",
+    "value": "None"
+  },
+  {
+    "key": "emergency.ateMushrooms.riskAssessment.rows.2.risk",
+    "value": "Low"
+  },
+  {
+    "key": "emergency.ateMushrooms.riskAssessment.rows.2.action",
+    "value": "👀 Monitor for GI upset"
+  },
+  {
+    "key": "emergency.ateMushrooms.steps.0.title",
+    "value": "THIS IS A TRUE EMERGENCY"
+  },
+  {
+    "key": "emergency.ateMushrooms.steps.0.content",
+    "value": "Do NOT wait for symptoms. Amatoxin poisoning has a deceptive delay — your dog looks fine for 6-24 hours while the toxin destroys the liver. Call ASPCA Poison Control at (888) 426-4435 NOW."
+  },
+  {
+    "key": "emergency.ateMushrooms.steps.1.title",
+    "value": "Collect a Mushroom Sample"
+  },
+  {
+    "key": "emergency.ateMushrooms.steps.1.content",
+    "value": "If safe, collect remaining mushroom pieces (including base/bulb). Place in a paper bag (not plastic). This helps mycologists identify the species and determine toxicity risk."
+  },
+  {
+    "key": "emergency.ateMushrooms.steps.2.title",
+    "value": "Go to Emergency Vet for Decontamination"
+  },
+  {
+    "key": "emergency.ateMushrooms.steps.2.content",
+    "value": "Your vet will induce vomiting (if within 2 hours), administer activated charcoal, and start IV fluids. They will monitor liver enzymes for 48-72 hours. Early treatment is the ONLY effective defense."
+  },
+  {
+    "key": "emergency.ateMushrooms.steps.3.title",
+    "value": "Prepare for Hospitalization"
+  },
+  {
+    "key": "emergency.ateMushrooms.steps.3.content",
+    "value": "If amatoxin poisoning is confirmed, treatment includes: Penicillin G, Silymarin (milk thistle), N-acetylcysteine, IV fluids, and potentially plasma transfusions. Hospitalization typically lasts 3-7 days."
+  },
+  {
+    "key": "emergency.ateMushrooms.science.content",
+    "value": "Amatoxins (alpha-amanitin, beta-amanitin) are bicyclic octapeptides found in Amanita, Galerina, and Lepiota species. They inhibit RNA polymerase II, halting protein synthesis in hepatocytes. The liver is the primary target because amatoxins undergo enterohepatic recirculation. After ingestion, there is a 6-12 hour latent period, followed by a gastroenteritis phase, a brief false recovery (12-24 hours), then fulminant liver failure with coagulopathy, encephalopathy, and death. Treatment within 12 hours has a 90% survival rate; after 24 hours, survival drops to 30% (ASPCA, 2023)."
+  },
+  {
+    "key": "emergency.ateMushrooms.toxicityData.minimum",
+    "value": "0.1 mg/kg amatoxin (one Death Cap = 10-15mg)"
+  },
+  {
+    "key": "emergency.ateMushrooms.toxicityData.ld50",
+    "value": "Not well-established; 0.1mg/kg amatoxin potentially fatal"
+  },
+  {
+    "key": "emergency.ateMushrooms.toxicityData.source",
+    "value": "ASPCA Animal Poison Control Center, 2023"
+  },
+  {
+    "key": "emergency.ateMushrooms.toxicityData.example",
+    "value": "A single Amanita phalloides cap contains enough amatoxin to kill a 10-20kg dog. Partial ingestion is still life-threatening."
+  },
+  {
+    "key": "emergency.ateMushrooms.timeline.0.time",
+    "value": "0-6 hours"
+  },
+  {
+    "key": "emergency.ateMushrooms.timeline.0.color",
+    "value": "green"
+  },
+  {
+    "key": "emergency.ateMushrooms.timeline.0.description",
+    "value": "Latent phase: dog appears normal. Toxin is being absorbed."
+  },
+  {
+    "key": "emergency.ateMushrooms.timeline.1.time",
+    "value": "6-24 hours"
+  },
+  {
+    "key": "emergency.ateMushrooms.timeline.1.color",
+    "value": "orange"
+  },
+  {
+    "key": "emergency.ateMushrooms.timeline.1.description",
+    "value": "Gastroenteritis phase: explosive vomiting and diarrhea begin. This is the BEST treatment window."
+  },
+  {
+    "key": "emergency.ateMushrooms.timeline.2.time",
+    "value": "24-48 hours"
+  },
+  {
+    "key": "emergency.ateMushrooms.timeline.2.color",
+    "value": "green"
+  },
+  {
+    "key": "emergency.ateMushrooms.timeline.2.description",
+    "value": "False recovery: symptoms temporarily improve. Owners think dog is healing — FALSE sense of security."
+  },
+  {
+    "key": "emergency.ateMushrooms.timeline.3.time",
+    "value": "48-96 hours"
+  },
+  {
+    "key": "emergency.ateMushrooms.timeline.3.color",
+    "value": "orange"
+  },
+  {
+    "key": "emergency.ateMushrooms.timeline.3.description",
+    "value": "Fulminant liver failure: jaundice, bleeding disorders, hepatic encephalopathy, death without aggressive treatment."
+  },
+  {
+    "key": "emergency.ateMushrooms.faqs.0.question",
+    "value": "Are wild mushrooms toxic to dogs?"
+  },
+  {
+    "key": "emergency.ateMushrooms.faqs.0.answer",
+    "value": "Many wild mushroom species are extremely toxic to dogs. The most dangerous is Amanita phalloides (Death Cap), which contains amatoxins that cause irreversible liver failure. Other toxic genera include Galerina, Lepiota, and Cortinarius. Even non-lethal species can cause severe GI upset. ANY mushroom ingestion should be treated as an emergency because you cannot reliably identify species in the field."
+  },
+  {
+    "key": "emergency.ateMushrooms.faqs.1.question",
+    "value": "How long after eating a mushroom will my dog show symptoms?"
+  },
+  {
+    "key": "emergency.ateMushrooms.faqs.1.answer",
+    "value": "Symptoms from amatoxin-containing mushrooms (Amanita) are DELAYED 6-24 hours. A dog appears fine initially, then develops explosive vomiting and diarrhea. After a brief \"false recovery\" of 12-24 hours, liver failure begins. By the time jaundice appears, damage is often irreversible. Other species cause symptoms within 30 minutes to 6 hours."
+  },
+  {
+    "key": "emergency.ateMushrooms.faqs.2.question",
+    "value": "What should I do if my dog ate a wild mushroom?"
+  },
+  {
+    "key": "emergency.ateMushrooms.faqs.2.answer",
+    "value": "Treat EVERY wild mushroom ingestion as a life-threatening emergency. Call ASPCA Poison Control at (888) 426-4435 immediately. Your vet will induce vomiting (if within 2 hours), administer activated charcoal, and admit for 48-72 hour observation with liver enzyme monitoring. Do NOT wait for symptoms — early treatment is the only effective defense against amatoxin poisoning."
+  },
+  {
+    "key": "emergency.ateMushrooms.faqs.3.question",
+    "value": "Can a dog die from eating a mushroom?"
+  },
+  {
+    "key": "emergency.ateMushrooms.faqs.3.answer",
+    "value": "Yes. Amanita phalloides (Death Cap) has a 50-100% mortality rate in dogs without treatment. Amatoxins destroy liver cells by inhibiting RNA polymerase II. Even with treatment, mortality remains 20-30%. The lethal dose is 0.1mg/kg of amatoxin — a single Death Cap cap contains 10-15mg. Early aggressive treatment (within 12 hours) significantly improves survival."
+  },
+  {
+    "key": "emergency.ateMushrooms.faqs.4.question",
+    "value": "Can dogs eat store-bought mushrooms?"
+  },
+  {
+    "key": "emergency.ateMushrooms.faqs.4.answer",
+    "value": "Store-bought mushrooms (white button, cremini, portobello) are generally safe for dogs in small amounts. However, they offer little nutritional value and can cause GI upset if fed in large quantities or cooked with butter/oil/garlic. Never assume a field mushroom is safe — only eat mushrooms you purchased from a grocery store."
+  },
+  {
+    "key": "emergency.ateMushrooms.vetDecision.emergency.0",
+    "value": "Explosive vomiting > 6 hours after ingestion"
+  },
+  {
+    "key": "emergency.ateMushrooms.vetDecision.emergency.1",
+    "value": "Yellow gums or eyes (jaundice)"
+  },
+  {
+    "key": "emergency.ateMushrooms.vetDecision.emergency.2",
+    "value": "Bloody vomit or black tarry stool"
+  },
+  {
+    "key": "emergency.ateMushrooms.vetDecision.emergency.3",
+    "value": "Collapse, seizures, or hepatic encephalopathy"
+  },
+  {
+    "key": "emergency.ateMushrooms.vetDecision.urgent.0",
+    "value": "Known Amanita/Galerina/Lepiota ingestion"
+  },
+  {
+    "key": "emergency.ateMushrooms.vetDecision.urgent.1",
+    "value": "Any wild mushroom ingestion in small dogs"
+  },
+  {
+    "key": "emergency.ateMushrooms.vetDecision.urgent.2",
+    "value": "Lethargy + vomiting after 12-24 hours"
+  },
+  {
+    "key": "emergency.ateMushrooms.vetDecision.urgent.3",
+    "value": "Abdominal pain on palpation"
+  },
+  {
+    "key": "emergency.ateMushrooms.vetDecision.monitor.0",
+    "value": "Store-bought mushroom ingestion"
+  },
+  {
+    "key": "emergency.ateMushrooms.vetDecision.monitor.1",
+    "value": "No symptoms after 8 hours"
+  },
+  {
+    "key": "emergency.ateMushrooms.vetDecision.monitor.2",
+    "value": "Small amount with no toxin risk identified"
+  },
+  {
+    "key": "emergency.ateMushrooms.vetDecision.monitor.3",
+    "value": "Normal appetite and energy"
+  },
+  {
+    "key": "emergency.ateMushrooms.relatedTools.0.name",
+    "value": "Toxic Food & Plant Checker"
+  },
+  {
+    "key": "emergency.ateMushrooms.relatedTools.0.url",
+    "value": "/shared/toxic-checker/"
+  },
+  {
+    "key": "emergency.ateMushrooms.relatedTools.1.name",
+    "value": "Dog Calorie Calculator"
+  },
+  {
+    "key": "emergency.ateMushrooms.relatedTools.1.url",
+    "value": "/dog/calorie-calculator/"
+  },
+  {
+    "key": "emergency.ateCookedBones.breadcrumbLabel",
+    "value": "Ate Cooked Bones"
+  },
+  {
+    "key": "emergency.ateCookedBones.meta.title",
+    "value": "My Dog Ate Cooked Bones: Emergency Guide | petsMetrics"
+  },
+  {
+    "key": "emergency.ateCookedBones.meta.description",
+    "value": "Emergency guide: Cooked bones splinter and can cause intestinal perforation or obstruction. Learn symptoms (vomiting, bloody stool, pain), when to call the vet, and prevention tips."
+  },
+  {
+    "key": "emergency.ateCookedBones.meta.keywords",
+    "value": "my dog ate cooked bones, cooked bone danger dogs, dog ate chicken bones, splintered bone dog, cooked bones bad for dogs"
+  },
+  {
+    "key": "emergency.ateCookedBones.article.headline",
+    "value": "My Dog Ate Cooked Bones: Emergency Guide"
+  },
+  {
+    "key": "emergency.ateCookedBones.article.description",
+    "value": "Emergency guide for cooked bone ingestion in dogs: splintering risk, obstruction, and treatment."
+  },
+  {
+    "key": "emergency.ateCookedBones.article.ogTitle",
+    "value": "My Dog Ate Cooked Bones: Emergency Guide | petsMetrics"
+  },
+  {
+    "key": "emergency.ateCookedBones.article.ogDescription",
+    "value": "Emergency guide: Cooked bones can splinter and cause life-threatening intestinal damage."
+  },
+  {
+    "key": "emergency.ateCookedBones.banner.severityLabel",
+    "value": "DANGEROUS — Splintering and Obstruction Risk"
+  },
+  {
+    "key": "emergency.ateCookedBones.banner.title",
+    "value": "My Dog Ate Cooked Bones: What to Do Now"
+  },
+  {
+    "key": "emergency.ateCookedBones.banner.subtitle",
+    "value": "Cooked bones splinter into sharp fragments that can puncture the intestinal wall or cause life-threatening obstruction. This is a <strong>mechanical emergency</strong>, not a poisoning. Call your vet immediately."
+  },
+  {
+    "key": "emergency.ateCookedBones.riskAssessment.rows.0.weight",
+    "value": "Large cooked bones (beef, ham)"
+  },
+  {
+    "key": "emergency.ateCookedBones.riskAssessment.rows.0.amount",
+    "value": "Multiple pieces"
+  },
+  {
+    "key": "emergency.ateCookedBones.riskAssessment.rows.0.risk",
+    "value": "High"
+  },
+  {
+    "key": "emergency.ateCookedBones.riskAssessment.rows.0.action",
+    "value": "🚨 Emergency vet NOW — splinter risk"
+  },
+  {
+    "key": "emergency.ateCookedBones.riskAssessment.rows.1.weight",
+    "value": "Poultry bones (chicken, turkey)"
+  },
+  {
+    "key": "emergency.ateCookedBones.riskAssessment.rows.1.amount",
+    "value": "Any amount"
+  },
+  {
+    "key": "emergency.ateCookedBones.riskAssessment.rows.1.risk",
+    "value": "High"
+  },
+  {
+    "key": "emergency.ateCookedBones.riskAssessment.rows.1.action",
+    "value": "🚨 Vet within 1 hour — hollow bones splinter"
+  },
+  {
+    "key": "emergency.ateCookedBones.riskAssessment.rows.2.weight",
+    "value": "Small bones (ribs)"
+  },
+  {
+    "key": "emergency.ateCookedBones.riskAssessment.rows.2.amount",
+    "value": "1-2 pieces"
+  },
+  {
+    "key": "emergency.ateCookedBones.riskAssessment.rows.2.risk",
+    "value": "Moderate"
+  },
+  {
+    "key": "emergency.ateCookedBones.riskAssessment.rows.2.action",
+    "value": "📞 Call vet for X-ray assessment"
+  },
+  {
+    "key": "emergency.ateCookedBones.steps.0.title",
+    "value": "Do NOT Induce Vomiting"
+  },
+  {
+    "key": "emergency.ateCookedBones.steps.0.content",
+    "value": "⚠️ This is critical: vomiting can cause sharp bone fragments to lodge in the esophagus or puncture tissue on the way back up."
+  },
+  {
+    "key": "emergency.ateCookedBones.steps.1.title",
+    "value": "Offer Soft Food to Cushion Fragments"
+  },
+  {
+    "key": "emergency.ateCookedBones.steps.1.content",
+    "value": "Feed bread, cooked rice, or canned pumpkin to help cushion small bone fragments and reduce injury risk. This does NOT replace veterinary evaluation."
+  },
+  {
+    "key": "emergency.ateCookedBones.steps.2.title",
+    "value": "Call Your Vet for X-Ray Assessment"
+  },
+  {
+    "key": "emergency.ateCookedBones.steps.2.content",
+    "value": "Your vet will X-ray to locate bone fragments, assess obstruction risk, and determine if endoscopic or surgical removal is needed."
+  },
+  {
+    "key": "emergency.ateCookedBones.steps.3.title",
+    "value": "Monitor Stool for 3 Days"
+  },
+  {
+    "key": "emergency.ateCookedBones.steps.3.content",
+    "value": "Watch for: bone fragments in stool (normal passage), black/tarry stool (GI bleeding), inability to defecate (obstruction), or blood. Report any abnormalities to your vet immediately."
+  },
+  {
+    "key": "emergency.ateCookedBones.science.content",
+    "value": "Cooking denatures collagen in bones, making them brittle and prone to splintering. Raw bones contain flexible collagen and are less likely to fragment. When cooked bones splinter, sharp fragments (osteoids) can penetrate the GI wall, causing peritonitis — a life-threatening infection. The most common sites of perforation are the esophagus (if swallowed improperly), stomach, and ileocecal junction (where the small intestine narrows). Poultry bones are especially dangerous because they are hollow and shatter into needle-like shards (AAHA, 2023)."
+  },
+  {
+    "key": "emergency.ateCookedBones.toxicityData.minimum",
+    "value": "N/A (mechanical hazard — any size fragment can cause damage)"
+  },
+  {
+    "key": "emergency.ateCookedBones.toxicityData.ld50",
+    "value": "Not applicable — physical trauma, not chemical toxicity"
+  },
+  {
+    "key": "emergency.ateCookedBones.toxicityData.source",
+    "value": "AAHA Guidelines, Merck Veterinary Manual"
+  },
+  {
+    "key": "emergency.ateCookedBones.toxicityData.example",
+    "value": "A single chicken bone can shatter into dozens of needle-like splinters that act like tiny knives in the GI tract."
+  },
+  {
+    "key": "emergency.ateCookedBones.timeline.0.time",
+    "value": "0-2 hours"
+  },
+  {
+    "key": "emergency.ateCookedBones.timeline.0.color",
+    "value": "green"
+  },
+  {
+    "key": "emergency.ateCookedBones.timeline.0.description",
+    "value": "Critical window: vet can induce vomiting (if advised) or perform endoscopy. Do NOT induce without professional guidance."
+  },
+  {
+    "key": "emergency.ateCookedBones.timeline.1.time",
+    "value": "2-24 hours"
+  },
+  {
+    "key": "emergency.ateCookedBones.timeline.1.color",
+    "value": "orange"
+  },
+  {
+    "key": "emergency.ateCookedBones.timeline.1.description",
+    "value": "Fragments may cause esophageal or stomach perforation. Symptoms: drooling, reluctance to eat, pawing at mouth, vomiting."
+  },
+  {
+    "key": "emergency.ateCookedBones.timeline.2.time",
+    "value": "24-72 hours"
+  },
+  {
+    "key": "emergency.ateCookedBones.timeline.2.color",
+    "value": "orange"
+  },
+  {
+    "key": "emergency.ateCookedBones.timeline.2.description",
+    "value": "Intestinal obstruction or perforation symptoms appear: vomiting, no bowel movement, abdominal pain, black tarry stool."
+  },
+  {
+    "key": "emergency.ateCookedBones.timeline.3.time",
+    "value": "3-7 days"
+  },
+  {
+    "key": "emergency.ateCookedBones.timeline.3.color",
+    "value": "green"
+  },
+  {
+    "key": "emergency.ateCookedBones.timeline.3.description",
+    "value": "If bones passed without complications, no further action needed. If surgery was performed, recovery period."
+  },
+  {
+    "key": "emergency.ateCookedBones.faqs.0.question",
+    "value": "Why are cooked bones dangerous for dogs?"
+  },
+  {
+    "key": "emergency.ateCookedBones.faqs.0.answer",
+    "value": "Cooked bones become brittle and splinter into sharp fragments. These shards can: (1) puncture the esophagus, stomach, or intestinal wall, (2) cause life-threatening peritonitis, (3) create intestinal obstruction, or (4) become lodged in the jaw or throat. Raw bones are safer because they are more flexible, but cooked bones are NEVER safe."
+  },
+  {
+    "key": "emergency.ateCookedBones.faqs.1.question",
+    "value": "What are the symptoms if my dog ate cooked bones?"
+  },
+  {
+    "key": "emergency.ateCookedBones.faqs.1.answer",
+    "value": "Symptoms of bone-related injury include: vomiting (possibly bloody), diarrhea (may contain blood or look black/tarry), abdominal pain (hunched posture, reluctance to move), difficulty defecating, excessive drooling, pawing at mouth, and lethargy. Symptoms may appear within hours or be delayed 1-3 days if a slow obstruction develops."
+  },
+  {
+    "key": "emergency.ateCookedBones.faqs.2.question",
+    "value": "Should I induce vomiting if my dog ate cooked bones?"
+  },
+  {
+    "key": "emergency.ateCookedBones.faqs.2.answer",
+    "value": "Do NOT induce vomiting if your dog ate cooked bones. Regurgitating sharp bone fragments can cause additional damage to the esophagus or become lodged in the throat. Contact your vet or ASPCA Poison Control at (888) 426-4435 for immediate guidance."
+  },
+  {
+    "key": "emergency.ateCookedBones.faqs.3.question",
+    "value": "What is the treatment for bone ingestion in dogs?"
+  },
+  {
+    "key": "emergency.ateCookedBones.faqs.3.answer",
+    "value": "Treatment depends on severity: (1) If bone is lodged in throat/mouth — manual removal under sedation. (2) If bone is in stomach — endoscopic retrieval. (3) If obstruction or perforation — emergency surgery. (4) If small, softened pieces — monitoring with bread/bulk diet to cushion passage. X-rays or ultrasound determine the approach."
+  },
+  {
+    "key": "emergency.ateCookedBones.vetDecision.emergency.0",
+    "value": "Vomiting blood or coffee-ground material"
+  },
+  {
+    "key": "emergency.ateCookedBones.vetDecision.emergency.1",
+    "value": "Black, tarry stool (melena)"
+  },
+  {
+    "key": "emergency.ateCookedBones.vetDecision.emergency.2",
+    "value": "Inability to defecate with abdominal pain"
+  },
+  {
+    "key": "emergency.ateCookedBones.vetDecision.emergency.3",
+    "value": "Hunched posture, non-weight bearing"
+  },
+  {
+    "key": "emergency.ateCookedBones.vetDecision.urgent.0",
+    "value": "Repeated vomiting"
+  },
+  {
+    "key": "emergency.ateCookedBones.vetDecision.urgent.1",
+    "value": "Excessive drooling or pawing at mouth"
+  },
+  {
+    "key": "emergency.ateCookedBones.vetDecision.urgent.2",
+    "value": "Reluctance to eat or drink"
+  },
+  {
+    "key": "emergency.ateCookedBones.vetDecision.urgent.3",
+    "value": "Mild abdominal discomfort"
+  },
+  {
+    "key": "emergency.ateCookedBones.vetDecision.monitor.0",
+    "value": "No vomiting after 6 hours"
+  },
+  {
+    "key": "emergency.ateCookedBones.vetDecision.monitor.1",
+    "value": "Normal appetite and energy"
+  },
+  {
+    "key": "emergency.ateCookedBones.vetDecision.monitor.2",
+    "value": "Small amount consumed"
+  },
+  {
+    "key": "emergency.ateCookedBones.vetDecision.monitor.3",
+    "value": "No pain on abdominal palpation"
+  },
+  {
+    "key": "emergency.ateCookedBones.relatedTools.0.name",
+    "value": "Toxic Food & Plant Checker"
+  },
+  {
+    "key": "emergency.ateCookedBones.relatedTools.0.url",
+    "value": "/shared/toxic-checker/"
+  },
+  {
+    "key": "emergency.ateCookedBones.relatedTools.1.name",
+    "value": "Dog Calorie Calculator"
+  },
+  {
+    "key": "emergency.ateCookedBones.relatedTools.1.url",
+    "value": "/dog/calorie-calculator/"
+  },
+  {
+    "key": "emergency.atePlastic.breadcrumbLabel",
+    "value": "Ate Plastic"
+  },
+  {
+    "key": "emergency.atePlastic.meta.title",
+    "value": "My Dog Ate Plastic: What to Do Now | petsMetrics"
+  },
+  {
+    "key": "emergency.atePlastic.meta.description",
+    "value": "Emergency guide: Plastic can cause intestinal blockage in dogs. Learn symptoms (vomiting, no bowel movement), size-based risk assessment, and when emergency surgery is needed. ASPCA Poison Control: (888) 426-4435."
+  },
+  {
+    "key": "emergency.atePlastic.meta.keywords",
+    "value": "my dog ate plastic toy, dog ate plastic bag, dog ate plastic wrapper, plastic blockage dog, dog intestinal obstruction plastic"
+  },
+  {
+    "key": "emergency.atePlastic.article.headline",
+    "value": "My Dog Ate Plastic: What to Do Now"
+  },
+  {
+    "key": "emergency.atePlastic.article.description",
+    "value": "Emergency guide for plastic ingestion in dogs: obstruction risk, symptoms, and treatment options."
+  },
+  {
+    "key": "emergency.atePlastic.article.ogTitle",
+    "value": "My Dog Ate Plastic: What to Do Now | petsMetrics"
+  },
+  {
+    "key": "emergency.atePlastic.article.ogDescription",
+    "value": "Emergency guide: Plastic can cause life-threatening intestinal blockage in dogs."
+  },
+  {
+    "key": "emergency.atePlastic.banner.severityLabel",
+    "value": "MONITOR — Obstruction Risk Depends on Size"
+  },
+  {
+    "key": "emergency.atePlastic.banner.title",
+    "value": "My Dog Ate Plastic: What to Do Now"
+  },
+  {
+    "key": "emergency.atePlastic.banner.subtitle",
+    "value": "Plastic is non-toxic but can cause dangerous intestinal blockage. Risk depends on the size and shape of the object. Call your vet if the piece is larger than 2cm."
+  },
+  {
+    "key": "emergency.atePlastic.decisionGuide.safe",
+    "value": "Plastic piece smaller than 2cm (e.g., corner of wrapper). Monitor stool for 48 hours."
+  },
+  {
+    "key": "emergency.atePlastic.decisionGuide.call",
+    "value": "Plastic piece 2-3cm OR your dog shows ANY vomiting/lethargy. X-ray may be needed."
+  },
+  {
+    "key": "emergency.atePlastic.decisionGuide.emergency",
+    "value": "Plastic larger than 3cm, OR persistent vomiting, OR no bowel movement in 48 hours. Surgery likely needed."
+  },
+  {
+    "key": "emergency.atePlastic.riskAssessment.rows.0.weight",
+    "value": "> 3cm wide"
+  },
+  {
+    "key": "emergency.atePlastic.riskAssessment.rows.0.amount",
+    "value": "Any"
+  },
+  {
+    "key": "emergency.atePlastic.riskAssessment.rows.0.risk",
+    "value": "High"
+  },
+  {
+    "key": "emergency.atePlastic.riskAssessment.rows.0.action",
+    "value": "🚨 Emergency vet NOW — obstruction likely"
+  },
+  {
+    "key": "emergency.atePlastic.riskAssessment.rows.1.weight",
+    "value": "2-3cm wide"
+  },
+  {
+    "key": "emergency.atePlastic.riskAssessment.rows.1.amount",
+    "value": "Irregular or sharp"
+  },
+  {
+    "key": "emergency.atePlastic.riskAssessment.rows.1.risk",
+    "value": "Moderate"
+  },
+  {
+    "key": "emergency.atePlastic.riskAssessment.rows.1.action",
+    "value": "📞 Call vet for X-ray assessment"
+  },
+  {
+    "key": "emergency.atePlastic.riskAssessment.rows.2.weight",
+    "value": "< 2cm wide"
+  },
+  {
+    "key": "emergency.atePlastic.riskAssessment.rows.2.amount",
+    "value": "Smooth and rounded"
+  },
+  {
+    "key": "emergency.atePlastic.riskAssessment.rows.2.risk",
+    "value": "Low"
+  },
+  {
+    "key": "emergency.atePlastic.riskAssessment.rows.2.action",
+    "value": "👀 Monitor stool, watch for symptoms"
+  },
+  {
+    "key": "emergency.atePlastic.steps.0.title",
+    "value": "Assess the Ingested Object"
+  },
+  {
+    "key": "emergency.atePlastic.steps.0.content",
+    "value": "If possible, find the remaining pieces and measure them. Was it a wrapper, toy piece, or bag? Size and shape determine risk."
+  },
+  {
+    "key": "emergency.atePlastic.steps.1.title",
+    "value": "Do NOT Induce Vomiting If Large or Sharp"
+  },
+  {
+    "key": "emergency.atePlastic.steps.1.content",
+    "value": "⚠️ Large objects can lodge in the esophagus; sharp edges can cause damage during regurgitation. Only induce if instructed by a vet for small, smooth items within 30 minutes of ingestion."
+  },
+  {
+    "key": "emergency.atePlastic.steps.2.title",
+    "value": "Feed a Bulk Meal"
+  },
+  {
+    "key": "emergency.atePlastic.steps.2.content",
+    "value": "Offer bread, canned pumpkin, or cooked rice to help wrap the plastic and encourage safe passage. This is NOT a substitute for veterinary care if the object is large."
+  },
+  {
+    "key": "emergency.atePlastic.steps.3.title",
+    "value": "Monitor Closely for 48 Hours"
+  },
+  {
+    "key": "emergency.atePlastic.steps.3.content",
+    "value": "Check: Is your dog eating? Vomiting? Defecating? Locate the plastic in stool if possible. Absence of bowel movement for 24+ hours with vomiting = emergency."
+  },
+  {
+    "key": "emergency.atePlastic.science.content",
+    "value": "Plastic is chemically inert and non-toxic to dogs — the danger is purely mechanical. The canine GI tract narrows at two critical points: the pylorus (stomach exit, ~1-2cm diameter in small dogs) and the ileocecal junction (small-to-large intestine transition). Objects wider than these passages become lodged, causing a complete or partial obstruction. Complete obstructions cause fluid accumulation, electrolyte imbalances, and intestinal necrosis within 48-72 hours. Surgical intervention is required for objects that do not pass within 24-48 hours or cause persistent vomiting (Merck Veterinary Manual, 2023)."
+  },
+  {
+    "key": "emergency.atePlastic.toxicityData.minimum",
+    "value": "N/A (mechanical hazard — not a poisoning)"
+  },
+  {
+    "key": "emergency.atePlastic.toxicityData.ld50",
+    "value": "Not applicable — physical obstruction risk"
+  },
+  {
+    "key": "emergency.atePlastic.toxicityData.source",
+    "value": "Merck Veterinary Manual, ASPCA"
+  },
+  {
+    "key": "emergency.atePlastic.toxicityData.example",
+    "value": "A 2cm plastic toy ball will not pass through a medium-sized dog's pylorus. Objects >2cm require vet assessment."
+  },
+  {
+    "key": "emergency.atePlastic.timeline.0.time",
+    "value": "0-2 hours"
+  },
+  {
+    "key": "emergency.atePlastic.timeline.0.color",
+    "value": "green"
+  },
+  {
+    "key": "emergency.atePlastic.timeline.0.description",
+    "value": "Assess the object. If small (<2cm), monitor. If large or sharp, call vet immediately."
+  },
+  {
+    "key": "emergency.atePlastic.timeline.1.time",
+    "value": "2-24 hours"
+  },
+  {
+    "key": "emergency.atePlastic.timeline.1.color",
+    "value": "orange"
+  },
+  {
+    "key": "emergency.atePlastic.timeline.1.description",
+    "value": "Small pieces may pass through stomach. Watch for vomiting, lethargy, or abdominal pain."
+  },
+  {
+    "key": "emergency.atePlastic.timeline.2.time",
+    "value": "24-48 hours"
+  },
+  {
+    "key": "emergency.atePlastic.timeline.2.color",
+    "value": "orange"
+  },
+  {
+    "key": "emergency.atePlastic.timeline.2.description",
+    "value": "Critical monitoring window. If no bowel movement AND vomiting = possible obstruction. Seek emergency care."
+  },
+  {
+    "key": "emergency.atePlastic.timeline.3.time",
+    "value": "48-96 hours"
+  },
+  {
+    "key": "emergency.atePlastic.timeline.3.color",
+    "value": "green"
+  },
+  {
+    "key": "emergency.atePlastic.timeline.3.description",
+    "value": "If still no bowel movement, X-ray needed to locate blockage. Surgery may be required if object is lodged."
+  },
+  {
+    "key": "emergency.atePlastic.faqs.0.question",
+    "value": "Is plastic dangerous for dogs?"
+  },
+  {
+    "key": "emergency.atePlastic.faqs.0.answer",
+    "value": "Plastic is non-toxic but can cause life-threatening intestinal obstruction. The danger depends on the size and shape of the plastic object relative to your dog. Items larger than 2cm wide are unlikely to pass through the pylorus (stomach exit) or ileocecal junction. Sharp plastic edges can also cause GI perforation."
+  },
+  {
+    "key": "emergency.atePlastic.faqs.1.question",
+    "value": "Symptoms of plastic blockage in dogs?"
+  },
+  {
+    "key": "emergency.atePlastic.faqs.1.answer",
+    "value": "Symptoms appear within 2-48 hours: repeated vomiting (especially after eating), loss of appetite, lethargy, abdominal pain, absence of bowel movements, and dehydration. A complete obstruction causes persistent vomiting, dehydration, and shock within 24-72 hours. This is a surgical emergency."
+  },
+  {
+    "key": "emergency.atePlastic.faqs.2.question",
+    "value": "How long does it take for plastic to pass through a dog?"
+  },
+  {
+    "key": "emergency.atePlastic.faqs.2.answer",
+    "value": "Small plastic pieces (under 2cm) typically pass through the GI tract within 24-48 hours and appear in stool. Larger items may take 3-5 days or become lodged. If plastic has not passed within 48 hours, or if vomiting occurs, veterinary intervention is required."
+  },
+  {
+    "key": "emergency.atePlastic.faqs.3.question",
+    "value": "When should I call the vet if my dog ate plastic?"
+  },
+  {
+    "key": "emergency.atePlastic.faqs.3.answer",
+    "value": "Call your vet immediately if: (1) the plastic object is larger than 2cm in any dimension, (2) your dog vomits more than once, (3) no bowel movement occurs within 48 hours, (4) your dog shows abdominal pain or lethargy, or (5) the plastic piece is sharp/rigid. Do NOT wait for symptoms if the object is large."
+  },
+  {
+    "key": "emergency.atePlastic.vetDecision.emergency.0",
+    "value": "Persistent vomiting with no bowel movement"
+  },
+  {
+    "key": "emergency.atePlastic.vetDecision.emergency.1",
+    "value": "Abdominal pain with distended belly"
+  },
+  {
+    "key": "emergency.atePlastic.vetDecision.emergency.2",
+    "value": "Lethargy and dehydration after 24 hours"
+  },
+  {
+    "key": "emergency.atePlastic.vetDecision.emergency.3",
+    "value": "Sharp or rigid plastic > 2cm consumed"
+  },
+  {
+    "key": "emergency.atePlastic.vetDecision.urgent.0",
+    "value": "Single episode of vomiting"
+  },
+  {
+    "key": "emergency.atePlastic.vetDecision.urgent.1",
+    "value": "Reluctance to eat"
+  },
+  {
+    "key": "emergency.atePlastic.vetDecision.urgent.2",
+    "value": "Object 2-3cm and not seen in stool after 24h"
+  },
+  {
+    "key": "emergency.atePlastic.vetDecision.urgent.3",
+    "value": "Mild abdominal discomfort"
+  },
+  {
+    "key": "emergency.atePlastic.vetDecision.monitor.0",
+    "value": "Object < 2cm, smooth and rounded"
+  },
+  {
+    "key": "emergency.atePlastic.vetDecision.monitor.1",
+    "value": "Dog eating and drinking normally"
+  },
+  {
+    "key": "emergency.atePlastic.vetDecision.monitor.2",
+    "value": "Bowel movements occurring"
+  },
+  {
+    "key": "emergency.atePlastic.vetDecision.monitor.3",
+    "value": "No vomiting after 12 hours"
+  },
+  {
+    "key": "emergency.atePlastic.relatedTools.0.name",
+    "value": "Toxic Food & Plant Checker"
+  },
+  {
+    "key": "emergency.atePlastic.relatedTools.0.url",
+    "value": "/shared/toxic-checker/"
+  },
+  {
+    "key": "emergency.atePlastic.relatedTools.1.name",
+    "value": "Dog Calorie Calculator"
+  },
+  {
+    "key": "emergency.atePlastic.relatedTools.1.url",
+    "value": "/dog/calorie-calculator/"
+  },
+  {
+    "key": "emergency.ateMedication.breadcrumbLabel",
+    "value": "Ate Medication"
+  },
+  {
+    "key": "emergency.ateMedication.meta.title",
+    "value": "My Dog Ate Human Medication: Emergency Guide | petsMetrics"
+  },
+  {
+    "key": "emergency.ateMedication.meta.description",
+    "value": "Emergency guide: Human medications are toxic to dogs. Learn about ibuprofen (NSAID), acetaminophen, and antidepressant toxicity risks, symptoms, and immediate actions. ASPCA Poison Control: (888) 426-4435."
+  },
+  {
+    "key": "emergency.ateMedication.meta.keywords",
+    "value": "my dog ate human medication, dog ate ibuprofen, dog ate acetaminophen, dog ate pills, human medicine toxic dogs"
+  },
+  {
+    "key": "emergency.ateMedication.article.headline",
+    "value": "My Dog Ate Human Medication: Emergency Guide"
+  },
+  {
+    "key": "emergency.ateMedication.article.description",
+    "value": "Emergency guide for human medication ingestion in dogs: NSAID toxicity, acetaminophen poisoning, and treatment."
+  },
+  {
+    "key": "emergency.ateMedication.article.ogTitle",
+    "value": "My Dog Ate Human Medication: Emergency Guide | petsMetrics"
+  },
+  {
+    "key": "emergency.ateMedication.article.ogDescription",
+    "value": "Emergency guide: Human medications like ibuprofen are toxic to dogs. Act immediately."
+  },
+  {
+    "key": "emergency.ateMedication.banner.severityLabel",
+    "value": "TOXIC — Human Medication Can Be Fatal to Dogs"
+  },
+  {
+    "key": "emergency.ateMedication.banner.title",
+    "value": "My Dog Ate Human Medication: What to Do Now"
+  },
+  {
+    "key": "emergency.ateMedication.banner.subtitle",
+    "value": "Human medications are a leading cause of pet poisoning. Even one pill of ibuprofen or acetaminophen can kill a dog. Call ASPCA Poison Control at <strong>(888) 426-4435</strong> IMMEDIATELY."
+  },
+  {
+    "key": "emergency.ateMedication.riskAssessment.rows.0.weight",
+    "value": "NSAIDs (ibuprofen, naproxen)"
+  },
+  {
+    "key": "emergency.ateMedication.riskAssessment.rows.0.amount",
+    "value": "> 50 mg/kg"
+  },
+  {
+    "key": "emergency.ateMedication.riskAssessment.rows.0.risk",
+    "value": "High"
+  },
+  {
+    "key": "emergency.ateMedication.riskAssessment.rows.0.action",
+    "value": "🚨 Emergency vet NOW — GI ulcers, kidney failure"
+  },
+  {
+    "key": "emergency.ateMedication.riskAssessment.rows.1.weight",
+    "value": "Acetaminophen (Tylenol)"
+  },
+  {
+    "key": "emergency.ateMedication.riskAssessment.rows.1.amount",
+    "value": "> 75 mg/kg"
+  }
+]

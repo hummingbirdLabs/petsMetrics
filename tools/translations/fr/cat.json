@@ -1,0 +1,16 @@
+{
+  "guide.title": "🐱 Cat Life Stage Checklists",
+  "guide.description": "Step-by-step checklists for every stage of your cat's life. Interactive, printable, and based on AAFP/ISFM guidelines.",
+  "guide.open": "View Checklist",
+  "guide.newKitten.title": "New Kitten Checklist",
+  "guide.newKitten.desc": "40 essential items for your kitten's first 16 weeks. From litter box to vaccination, everything you need for a healthy start.",
+  "guide.newKitten.aria": "View New Kitten Checklist",
+  "guide.newKitten.meta.title": "New Kitten Checklist: Everything You Need Before Day One | petsMetrics",
+  "guide.newKitten.meta.description": "Complete new kitten checklist with 40 items to check. Interactive, printable PDF, cost estimator, timeline, and expert tips.",
+  "guide.seniorCat.title": "Senior Cat Care Checklist",
+  "guide.seniorCat.desc": "30 health monitoring items for aging cats. Bi-annual vet visits, CKD screening, and pain management.",
+  "guide.seniorCat.aria": "View Senior Cat Care Checklist",
+  "toolGrid.rating": "P0",
+  "toolGrid.priority": "P1",
+  "gestation.facts": "Cat Gestation Facts"
+}

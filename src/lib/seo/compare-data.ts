@@ -20,7 +20,11 @@ type CompareKey =
   | 'grainFreeVsGrainInclusive'
   | 'cannedVsFrozen'
   | 'catWetVsDry'
-  | 'declawingVsScratchingPost';
+  | 'declawingVsScratchingPost'
+  | 'harnessVsCollar'
+  | 'petInsuranceVsEmergencyFund'
+  | 'grainFreeVsWholeGrain'
+  | 'scratchingPostVsCatTree';
 
 const cache: Record<string, ComparePageData | undefined> = {};
 

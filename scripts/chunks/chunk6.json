@@ -1,0 +1,1202 @@
+[
+  {
+    "key": "catEmergency.ateGarlic.faqs.1.answer",
+    "value": "As little as 5g of garlic per kg of body weight can cause toxicity. For a 4kg cat, this equals just 1 small clove (approximately 5g). Toxic effects can also occur from chronic low-dose exposure — even trace amounts in food or supplements over weeks can accumulate and cause anemia."
+  },
+  {
+    "key": "catEmergency.ateGarlic.faqs.2.question",
+    "value": "Is garlic salt/powder dangerous for cats?"
+  },
+  {
+    "key": "catEmergency.ateGarlic.faqs.2.answer",
+    "value": "Yes, garlic powder and salt are concentrated forms. As little as 1/8 teaspoon of garlic powder can be toxic to a small cat. Dry garlic powder, garlic supplements, garlic-flavored treats, and garlic-infused oils all pose risks. Many human foods contain hidden garlic — always check labels."
+  },
+  {
+    "key": "catEmergency.ateGarlic.faqs.3.question",
+    "value": "What are the symptoms of garlic poisoning in cats?"
+  },
+  {
+    "key": "catEmergency.ateGarlic.faqs.3.answer",
+    "value": "Symptoms develop 1-5 days after ingestion: pale gums (anemia), lethargy, weakness, rapid breathing, elevated heart rate, jaundice (yellow gums/eyes), reddish-brown urine, vomiting, and collapse. Heinz body anemia is confirmed by blood smear. Severe cases require blood transfusions."
+  },
+  {
+    "key": "catEmergency.ateGarlic.relatedTools.0.name",
+    "value": "Toxic Food & Plant Checker"
+  },
+  {
+    "key": "catEmergency.ateGarlic.relatedTools.0.url",
+    "value": "/shared/toxic-checker/"
+  },
+  {
+    "key": "catEmergency.ateGarlic.relatedTools.1.name",
+    "value": "Cat BCS & Weight Tracker"
+  },
+  {
+    "key": "catEmergency.ateGarlic.relatedTools.1.url",
+    "value": "/cat/bcs-weight-tracker/"
+  },
+  {
+    "key": "catEmergency.ateEssentialOils.breadcrumbLabel",
+    "value": "Essential Oils"
+  },
+  {
+    "key": "catEmergency.ateEssentialOils.meta.title",
+    "value": "My Cat Ate Essential Oils: Emergency Guide | petsMetrics"
+  },
+  {
+    "key": "catEmergency.ateEssentialOils.meta.description",
+    "value": "Emergency guide: Essential oils (tea tree, eucalyptus, citrus, peppermint) are highly toxic to cats due to lacking glucuronidation enzymes. Learn symptoms and immediate actions. ASPCA Poison Control: (888) 426-4435."
+  },
+  {
+    "key": "catEmergency.ateEssentialOils.meta.keywords",
+    "value": "my cat ate essential oils, tea tree oil cats, essential oils toxic to cats, cat ate eucalyptus oil, essential oil poisoning cats"
+  },
+  {
+    "key": "catEmergency.ateEssentialOils.banner.severityLabel",
+    "value": "TOXIC — Cats Cannot Metabolize Essential Oils"
+  },
+  {
+    "key": "catEmergency.ateEssentialOils.banner.title",
+    "value": "My Cat Ate Essential Oils: What to Do Now"
+  },
+  {
+    "key": "catEmergency.ateEssentialOils.banner.subtitle",
+    "value": "Cats lack liver enzymes to metabolize terpenes and phenols. <strong>Tea tree oil, citrus oils, and eucalyptus</strong> are highly toxic — even topical exposure is dangerous. Call ASPCA Poison Control at <strong>(888) 426-4435</strong>."
+  },
+  {
+    "key": "catEmergency.ateEssentialOils.article.headline",
+    "value": "My Cat Ate Essential Oils: Emergency Guide"
+  },
+  {
+    "key": "catEmergency.ateEssentialOils.article.description",
+    "value": "Emergency guide for essential oil toxicity in cats: tea tree oil, citrus oils, and metabolic vulnerability."
+  },
+  {
+    "key": "catEmergency.ateEssentialOils.article.ogTitle",
+    "value": "My Cat Ate Essential Oils: Emergency Guide | petsMetrics"
+  },
+  {
+    "key": "catEmergency.ateEssentialOils.article.ogDescription",
+    "value": "What to do if your cat is exposed to essential oils."
+  },
+  {
+    "key": "catEmergency.ateEssentialOils.riskAssessment.headers.0",
+    "value": "Oil Type"
+  },
+  {
+    "key": "catEmergency.ateEssentialOils.riskAssessment.headers.1",
+    "value": "Exposure Route"
+  },
+  {
+    "key": "catEmergency.ateEssentialOils.riskAssessment.headers.2",
+    "value": "Risk Level"
+  },
+  {
+    "key": "catEmergency.ateEssentialOils.riskAssessment.headers.3",
+    "value": "Action Required"
+  },
+  {
+    "key": "catEmergency.ateEssentialOils.riskAssessment.rows.0.form",
+    "value": "Tea tree oil"
+  },
+  {
+    "key": "catEmergency.ateEssentialOils.riskAssessment.rows.0.amount",
+    "value": "Any route"
+  },
+  {
+    "key": "catEmergency.ateEssentialOils.riskAssessment.rows.0.risk",
+    "value": "CRITICAL"
+  },
+  {
+    "key": "catEmergency.ateEssentialOils.riskAssessment.rows.0.action",
+    "value": "🚨 Emergency vet NOW — often fatal"
+  },
+  {
+    "key": "catEmergency.ateEssentialOils.riskAssessment.rows.1.form",
+    "value": "Citrus oils (d-limonene)"
+  },
+  {
+    "key": "catEmergency.ateEssentialOils.riskAssessment.rows.1.amount",
+    "value": "Ingested or skin"
+  },
+  {
+    "key": "catEmergency.ateEssentialOils.riskAssessment.rows.1.risk",
+    "value": "HIGH"
+  },
+  {
+    "key": "catEmergency.ateEssentialOils.riskAssessment.rows.1.action",
+    "value": "🚨 Emergency vet — liver damage"
+  },
+  {
+    "key": "catEmergency.ateEssentialOils.riskAssessment.rows.2.form",
+    "value": "Diffuser inhalation"
+  },
+  {
+    "key": "catEmergency.ateEssentialOils.riskAssessment.rows.2.amount",
+    "value": "Respiratory"
+  },
+  {
+    "key": "catEmergency.ateEssentialOils.riskAssessment.rows.2.risk",
+    "value": "Moderate"
+  },
+  {
+    "key": "catEmergency.ateEssentialOils.riskAssessment.rows.2.action",
+    "value": "📞 Vet if respiratory signs"
+  },
+  {
+    "key": "catEmergency.ateEssentialOils.steps.0.title",
+    "value": "Step 1: Wash Your Cat If Oil Is On Fur/Skin"
+  },
+  {
+    "key": "catEmergency.ateEssentialOils.steps.0.content",
+    "value": "Use Dawn dish soap (cuts oil) to wash off any topical exposure. Rinse thoroughly. Do NOT use water alone — oil repels water."
+  },
+  {
+    "key": "catEmergency.ateEssentialOils.steps.1.title",
+    "value": "Step 2: Remove From Exposure Source"
+  },
+  {
+    "key": "catEmergency.ateEssentialOils.steps.1.content",
+    "value": "Turn off diffusers, remove oil containers, and ventilate the area. Move your cat to fresh air."
+  },
+  {
+    "key": "catEmergency.ateEssentialOils.steps.2.title",
+    "value": "Step 3: Call Poison Control"
+  },
+  {
+    "key": "catEmergency.ateEssentialOils.steps.2.content",
+    "value": "📞 <strong>ASPCA Poison Control:</strong> (888) 426-4435. Bring the oil bottle — tell them the botanical name and phenol/terpene content if listed."
+  },
+  {
+    "key": "catEmergency.ateEssentialOils.steps.3.title",
+    "value": "Step 4: Do NOT Induce Vomiting"
+  },
+  {
+    "key": "catEmergency.ateEssentialOils.steps.3.content",
+    "value": "⚠️ Essential oils have high aspiration pneumonia risk. Vomiting can cause oil to enter lungs. Go to vet for safe decontamination."
+  },
+  {
+    "key": "catEmergency.ateEssentialOils.science.content",
+    "value": "Cats lack UDP-glucuronosyltransferase (UGT1A6 and UGT1A9) enzymes required for phase II glucuronidation of terpenes (d-limonene, alpha-terpineol) and phenols (eugenol, thymol). These compounds accumulate in the hepatobiliary system, causing hepatotoxicity and neurotoxicity. Cats also have deficient P-glycoprotein efflux transporters at the blood-brain barrier, increasing CNS exposure. Tea tree oil (Melaleuca alternifolia) monoterpenes cause dose-dependent CNS depression, ataxia, and hypothermia. Even 10mL applied dermally can be fatal in cats (ASPCA, 2023)."
+  },
+  {
+    "key": "catEmergency.ateEssentialOils.faqs.0.question",
+    "value": "Why are essential oils toxic to cats?"
+  },
+  {
+    "key": "catEmergency.ateEssentialOils.faqs.0.answer",
+    "value": "Cats lack UDP-glucuronosyltransferase (UGT) enzymes needed to metabolize certain compounds in essential oils (terpenes, phenols, ketones). This makes them 10x more sensitive than dogs to tea tree oil, citrus oils, eucalyptus, peppermint, and pine oils. Even topical application on skin can cause toxicity if the cat licks it off."
+  },
+  {
+    "key": "catEmergency.ateEssentialOils.faqs.1.question",
+    "value": "Which essential oils are most dangerous for cats?"
+  },
+  {
+    "key": "catEmergency.ateEssentialOils.faqs.1.answer",
+    "value": "Most dangerous: Tea tree (melaleuca), wintergreen, peppermint, pine, eucalyptus, citrus (limonene, linalool), cinnamon, clove, ylang ylang, birch, and thyme. Tea tree oil is most commonly reported — even 10-20mL on skin can be fatal. Diffusers are also dangerous as cats inhale droplets and groom them from fur."
+  },
+  {
+    "key": "catEmergency.ateEssentialOils.faqs.2.question",
+    "value": "What are the symptoms of essential oil poisoning in cats?"
+  },
+  {
+    "key": "catEmergency.ateEssentialOils.faqs.2.answer",
+    "value": "Symptoms depend on oil type and route: (1) Ingestion: drooling, vomiting, tremors, ataxia, weakness, hypothermia. (2) Skin absorption: lethargy, hypersalivation, liver damage. (3) Inhalation: respiratory distress, aspiration pneumonia. Tea tree oil specifically causes severe hypothermia and ataxia within 2-8 hours."
+  },
+  {
+    "key": "catEmergency.ateEssentialOils.faqs.3.question",
+    "value": "Are essential oil diffusers dangerous for cats?"
+  },
+  {
+    "key": "catEmergency.ateEssentialOils.faqs.3.answer",
+    "value": "Yes, diffusers pose three risks: (1) Inhaled droplets settle on fur and are groomed off, causing ingestion. (2) Volatilized oils irritate feline respiratory passages (cats have efficient smell but sensitive airways). (3) Concentrated oil in the diffuser water can be spilled and licked. Use diffusers only in well-ventilated rooms your cat cannot access."
+  },
+  {
+    "key": "catEmergency.ateEssentialOils.relatedTools.0.name",
+    "value": "Toxic Food & Plant Checker"
+  },
+  {
+    "key": "catEmergency.ateEssentialOils.relatedTools.0.url",
+    "value": "/shared/toxic-checker/"
+  },
+  {
+    "key": "catEmergency.ateEssentialOils.relatedTools.1.name",
+    "value": "Cat Hydration Calculator"
+  },
+  {
+    "key": "catEmergency.ateEssentialOils.relatedTools.1.url",
+    "value": "/cat/hydration-calculator/"
+  },
+  {
+    "key": "catEmergency.ateFishingLine.breadcrumbLabel",
+    "value": "Fishing Line"
+  },
+  {
+    "key": "catEmergency.ateFishingLine.meta.title",
+    "value": "My Cat Ate Fishing Line: Emergency Guide | petsMetrics"
+  },
+  {
+    "key": "catEmergency.ateFishingLine.meta.description",
+    "value": "Emergency guide: Fishing line (string) ingestion is deadly for cats. Learn about linear foreign body obstruction, symptoms (string under tongue!), and why immediate surgery is often needed."
+  },
+  {
+    "key": "catEmergency.ateFishingLine.meta.keywords",
+    "value": "my cat ate fishing line, cat ate string, linear foreign body cat, cat string ingestion, fishing line cat emergency"
+  },
+  {
+    "key": "catEmergency.ateFishingLine.banner.severityLabel",
+    "value": "EXTREMELY DANGEROUS — Surgery Often Required"
+  },
+  {
+    "key": "catEmergency.ateFishingLine.banner.title",
+    "value": "My Cat Ate Fishing Line: What to Do Now"
+  },
+  {
+    "key": "catEmergency.ateFishingLine.banner.subtitle",
+    "value": "Fishing line is a <strong>lethal linear foreign body</strong>. It can saw through the intestinal wall causing fatal peritonitis. <strong>Do NOT pull on any string.</strong> Go to emergency vet NOW."
+  },
+  {
+    "key": "catEmergency.ateFishingLine.article.headline",
+    "value": "My Cat Ate Fishing Line: Emergency Guide"
+  },
+  {
+    "key": "catEmergency.ateFishingLine.article.description",
+    "value": "Emergency guide for fishing line ingestion in cats: linear foreign body obstruction, symptoms, and surgical treatment."
+  },
+  {
+    "key": "catEmergency.ateFishingLine.article.ogTitle",
+    "value": "My Cat Ate Fishing Line: Emergency Guide | petsMetrics"
+  },
+  {
+    "key": "catEmergency.ateFishingLine.article.ogDescription",
+    "value": "What to do if your cat ate fishing line."
+  },
+  {
+    "key": "catEmergency.ateFishingLine.criticalWarning.title",
+    "value": "⚠️ Critical Warning"
+  },
+  {
+    "key": "catEmergency.ateFishingLine.criticalWarning.lines.0",
+    "value": "<strong>NEVER pull on string protruding from your cat.</strong> The line may be anchored internally — pulling can cut through the intestine."
+  },
+  {
+    "key": "catEmergency.ateFishingLine.criticalWarning.lines.1",
+    "value": "<strong>ALWAYS check under your cat's tongue.</strong> Fishing line frequently anchors at the base of the tongue."
+  },
+  {
+    "key": "catEmergency.ateFishingLine.criticalWarning.lines.2",
+    "value": "<strong>This requires emergency surgery — do not wait for symptoms.</strong>"
+  },
+  {
+    "key": "catEmergency.ateFishingLine.riskAssessment.headers.0",
+    "value": "Exposure Type"
+  },
+  {
+    "key": "catEmergency.ateFishingLine.riskAssessment.headers.1",
+    "value": "Symptoms Present?"
+  },
+  {
+    "key": "catEmergency.ateFishingLine.riskAssessment.headers.2",
+    "value": "Risk Level"
+  },
+  {
+    "key": "catEmergency.ateFishingLine.riskAssessment.headers.3",
+    "value": "Action Required"
+  },
+  {
+    "key": "catEmergency.ateFishingLine.riskAssessment.rows.0.form",
+    "value": "String visible under tongue"
+  },
+  {
+    "key": "catEmergency.ateFishingLine.riskAssessment.rows.0.amount",
+    "value": "Yes"
+  },
+  {
+    "key": "catEmergency.ateFishingLine.riskAssessment.rows.0.risk",
+    "value": "CRITICAL"
+  },
+  {
+    "key": "catEmergency.ateFishingLine.riskAssessment.rows.0.action",
+    "value": "🚨 DO NOT PULL — Emergency vet NOW"
+  },
+  {
+    "key": "catEmergency.ateFishingLine.riskAssessment.rows.1.form",
+    "value": "String seen swallowed"
+  },
+  {
+    "key": "catEmergency.ateFishingLine.riskAssessment.rows.1.amount",
+    "value": "No symptoms yet"
+  },
+  {
+    "key": "catEmergency.ateFishingLine.riskAssessment.rows.1.risk",
+    "value": "CRITICAL"
+  },
+  {
+    "key": "catEmergency.ateFishingLine.riskAssessment.rows.1.action",
+    "value": "🚨 Emergency vet NOW — likely surgery"
+  },
+  {
+    "key": "catEmergency.ateFishingLine.riskAssessment.rows.2.form",
+    "value": "String protruding from anus"
+  },
+  {
+    "key": "catEmergency.ateFishingLine.riskAssessment.rows.2.amount",
+    "value": "Vomiting, not eating"
+  },
+  {
+    "key": "catEmergency.ateFishingLine.riskAssessment.rows.2.risk",
+    "value": "CRITICAL"
+  },
+  {
+    "key": "catEmergency.ateFishingLine.riskAssessment.rows.2.action",
+    "value": "🚨 DO NOT PULL — Emergency surgery"
+  },
+  {
+    "key": "catEmergency.ateFishingLine.steps.0.title",
+    "value": "Step 1: Check Under Your Cat's Tongue"
+  },
+  {
+    "key": "catEmergency.ateFishingLine.steps.0.content",
+    "value": "Gently open your mouth and look under the tongue and at the base. Fishing line commonly anchors here. If you see string — do NOT pull."
+  },
+  {
+    "key": "catEmergency.ateFishingLine.steps.1.title",
+    "value": "Step 2: Do NOT Pull Any Protruding String"
+  },
+  {
+    "key": "catEmergency.ateFishingLine.steps.1.content",
+    "value": "⚠️ Pulling can cause the line to saw through the intestinal wall. Leave it alone and go to emergency vet."
+  },
+  {
+    "key": "catEmergency.ateFishingLine.steps.2.title",
+    "value": "Step 3: Go to Emergency Vet for X-rays/Surgery"
+  },
+  {
+    "key": "catEmergency.ateFishingLine.steps.2.content",
+    "value": "Linear foreign bodies often require surgical removal. Your vet will take X-rays, start IV fluids, and perform enterotomy to remove the line."
+  },
+  {
+    "key": "catEmergency.ateFishingLine.steps.3.title",
+    "value": "Step 4: Prepare for Hospitalization"
+  },
+  {
+    "key": "catEmergency.ateFishingLine.steps.3.content",
+    "value": "Post-surgery, your cat will need 2-5 days hospitalization for IV antibiotics, pain management, and monitoring for anastomotic leakage."
+  },
+  {
+    "key": "catEmergency.ateFishingLine.science.content",
+    "value": "Linear foreign bodies (string, yarn, fishing line) are surgical emergencies in cats. The proximal end anchors — commonly under the tongue, at the pylorus, or in the stomach. Intestinal peristalsis pulls the distal end taught, causing the intestine to plicate (accordion-fold) around it. The taut line exerts pressure on the mesenteric border, causing ischemic necrosis and perforation. Multiple perforations along the intestinal tract lead to septic peritonitis. Unlike dogs, cats have a smaller intestinal diameter and are more susceptible to linear foreign body complications (AAHA, 2023)."
+  },
+  {
+    "key": "catEmergency.ateFishingLine.faqs.0.question",
+    "value": "Why is fishing line so dangerous for cats?"
+  },
+  {
+    "key": "catEmergency.ateFishingLine.faqs.0.answer",
+    "value": "Fishing line is a linear foreign body — when swallowed, it anchors at one end (under tongue, in stomach, or at pylorus) while the rest extends through the intestines. Peristalsis pulls the line taut, causing the intestine to accordion-pleat around it. The line then saws through the intestinal wall, causing multiple perforations, peritonitis, and death if not surgically removed."
+  },
+  {
+    "key": "catEmergency.ateFishingLine.faqs.1.question",
+    "value": "What are the symptoms of linear foreign body in cats?"
+  },
+  {
+    "key": "catEmergency.ateFishingLine.faqs.1.answer",
+    "value": "Symptoms include: string visible under tongue or protruding from anus, vomiting (especially after eating), drooling, difficulty swallowing, loss of appetite, abdominal pain, lethargy, and fever. CRITICAL: Always check under the tongue and around the base of the tongue — the line may be anchored there."
+  },
+  {
+    "key": "catEmergency.ateFishingLine.faqs.2.question",
+    "value": "Should I pull the string out of my cat?"
+  },
+  {
+    "key": "catEmergency.ateFishingLine.faqs.2.answer",
+    "value": "NO! Never pull on a string or line protruding from your cat mouth or anus. The line may be anchored internally — pulling it can saw through the intestinal wall causing perforations. Go to emergency vet immediately for proper removal under anesthesia."
+  },
+  {
+    "key": "catEmergency.ateFishingLine.faqs.3.question",
+    "value": "What is the treatment for fishing line ingestion in cats?"
+  },
+  {
+    "key": "catEmergency.ateFishingLine.faqs.3.answer",
+    "value": "Treatment requires emergency surgery (enterotomy or gastrotomy) to remove the line. Multiple incisions may be needed along the intestine to release the plicated segments. IV antibiotics treat peritonitis, and fluids correct dehydration. Prognosis depends on how many perforations occurred — early surgery has 80-90% survival; delayed treatment with multiple perforations has 50-60% survival."
+  },
+  {
+    "key": "catEmergency.ateFishingLine.relatedTools.0.name",
+    "value": "Toxic Food & Plant Checker"
+  },
+  {
+    "key": "catEmergency.ateFishingLine.relatedTools.0.url",
+    "value": "/shared/toxic-checker/"
+  },
+  {
+    "key": "catEmergency.ateFishingLine.relatedTools.1.name",
+    "value": "Cat BCS & Weight Tracker"
+  },
+  {
+    "key": "catEmergency.ateFishingLine.relatedTools.1.url",
+    "value": "/cat/bcs-weight-tracker/"
+  },
+  {
+    "key": "catEmergency.ateLily.breadcrumbLabel",
+    "value": "Ate Lily"
+  },
+  {
+    "key": "catEmergency.ateLily.meta.title",
+    "value": "My Cat Ate Lily: What Should I Do? | petsMetrics"
+  },
+  {
+    "key": "catEmergency.ateLily.meta.description",
+    "value": "Emergency guide: What to do if your cat eats any part of a lily plant. Learn about acute kidney failure risk, symptoms, and the critical treatment window. Act NOW."
+  },
+  {
+    "key": "catEmergency.ateLily.meta.keywords",
+    "value": "my cat ate lily what should i do, lily poisoning cats, lily toxicity cats, cat ate lily emergency, are lilies toxic to cats"
+  },
+  {
+    "key": "catEmergency.ateLily.banner.severityLabel",
+    "value": "EXTREMELY TOXIC — EMERGENCY VET NOW"
+  },
+  {
+    "key": "catEmergency.ateLily.banner.title",
+    "value": "My Cat Ate Lily: What Should I Do?"
+  },
+  {
+    "key": "catEmergency.ateLily.banner.subtitle",
+    "value": "All parts of true lilies are deadly to cats — even pollen. Ingestion causes acute kidney failure. Call your vet or ASPCA Poison Control at <strong>(888) 426-4435</strong> IMMEDIATELY."
+  },
+  {
+    "key": "catEmergency.ateLily.article.headline",
+    "value": "My Cat Ate Lily: What Should I Do?"
+  },
+  {
+    "key": "catEmergency.ateLily.article.description",
+    "value": "Emergency guide for lily toxicity in cats: symptoms, treatment, and prevention."
+  },
+  {
+    "key": "catEmergency.ateLily.article.ogTitle",
+    "value": "My Cat Ate Lily: What Should I Do? | petsMetrics"
+  },
+  {
+    "key": "catEmergency.ateLily.article.ogDescription",
+    "value": "Emergency guide: What to do if your cat eats lily. Acute kidney failure risk and critical treatment window."
+  },
+  {
+    "key": "catEmergency.ateLily.steps.0.title",
+    "value": "Step 1: EMERGENCY VET NOW"
+  },
+  {
+    "key": "catEmergency.ateLily.steps.0.content",
+    "value": "Go to the nearest emergency vet immediately. Call ASPCA Poison Control at <strong>(888) 426-4435</strong> en route. Time is critical."
+  },
+  {
+    "key": "catEmergency.ateLily.steps.1.title",
+    "value": "Step 2: Bring a Plant Sample"
+  },
+  {
+    "key": "catEmergency.ateLily.steps.1.content",
+    "value": "Take the lily plant or a photo to the vet. This confirms the species and helps assess toxicity risk."
+  },
+  {
+    "key": "catEmergency.ateLily.steps.2.title",
+    "value": "Step 3: IV Fluids Are Critical"
+  },
+  {
+    "key": "catEmergency.ateLily.steps.2.content",
+    "value": "Your vet will start aggressive IV fluid therapy to protect the kidneys. This must begin within 18 hours of ingestion for best outcomes."
+  },
+  {
+    "key": "catEmergency.ateLily.steps.3.title",
+    "value": "Step 4: Activated Charcoal May Help"
+  },
+  {
+    "key": "catEmergency.ateLily.steps.3.content",
+    "value": "If ingestion was recent, your vet may administer activated charcoal to absorb remaining toxins in the GI tract."
+  },
+  {
+    "key": "catEmergency.ateLily.science.content",
+    "value": "The exact toxic compound in lilies is unidentified, but it causes acute tubular necrosis in feline kidneys. Cats are uniquely susceptible — dogs and humans can eat lilies without harm. The toxin is water-soluble and present in all plant parts: petals, leaves, stems, pollen, and even vase water. Kidney damage begins within hours and progresses to complete renal failure within 24-72 hours without treatment. Early IV fluid therapy (within 18 hours) can prevent permanent damage (ASPCA, 2023)."
+  },
+  {
+    "key": "catEmergency.ateLily.faqs.0.question",
+    "value": "Which lilies are toxic to cats?"
+  },
+  {
+    "key": "catEmergency.ateLily.faqs.0.answer",
+    "value": "True lilies (Lilium spp.) and Hemerocallis (daylilies) are highly toxic: Easter lily, Tiger lily, Asiatic lily, Oriental lily, Stargazer lily. Even pollen, leaves, or water from the vase can cause kidney failure. Not toxic: Peace lily, Lily of the Valley (different toxin), Calla lily."
+  },
+  {
+    "key": "catEmergency.ateLily.faqs.1.question",
+    "value": "How much lily is toxic to cats?"
+  },
+  {
+    "key": "catEmergency.ateLily.faqs.1.answer",
+    "value": "Ingestion of as little as 2-3 petals or leaves, or exposure to pollen (grooming pollen off fur), can cause acute kidney failure. There is no safe amount — any exposure requires emergency veterinary treatment."
+  },
+  {
+    "key": "catEmergency.ateLily.faqs.2.question",
+    "value": "How long after lily ingestion do symptoms appear?"
+  },
+  {
+    "key": "catEmergency.ateLily.faqs.2.answer",
+    "value": "Vomiting and lethargy begin within 1-6 hours. Kidney damage is detectable within 12-24 hours. Without treatment, kidney failure develops within 24-72 hours and is often fatal. Early IV fluid therapy is critical."
+  },
+  {
+    "key": "catEmergency.ateLily.relatedTools.0.name",
+    "value": "Toxic Food & Plant Checker"
+  },
+  {
+    "key": "catEmergency.ateLily.relatedTools.0.url",
+    "value": "/shared/toxic-checker/"
+  },
+  {
+    "key": "catEmergency.ateLily.relatedTools.1.name",
+    "value": "Cat BCS & Weight Tracker"
+  },
+  {
+    "key": "catEmergency.ateLily.relatedTools.1.url",
+    "value": "/cat/bcs-weight-tracker/"
+  },
+  {
+    "key": "catEmergency.ateString.breadcrumbLabel",
+    "value": "Ate String"
+  },
+  {
+    "key": "catEmergency.ateString.meta.title",
+    "value": "Cat Ate String: Emergency Guide | petsMetrics"
+  },
+  {
+    "key": "catEmergency.ateString.meta.description",
+    "value": "Emergency guide: What to do if your cat eats string, yarn, or thread. Learn about linear foreign body danger, intestinal pleating, and when surgery is needed."
+  },
+  {
+    "key": "catEmergency.ateString.meta.keywords",
+    "value": "cat ate string emergency, cat ate yarn, linear foreign body cat, cat string ingestion, cat ate thread what to do"
+  },
+  {
+    "key": "catEmergency.ateString.banner.severityLabel",
+    "value": "LINEAR FOREIGN BODY — Seek Veterinary Care"
+  },
+  {
+    "key": "catEmergency.ateString.banner.title",
+    "value": "Cat Ate String: Emergency Guide"
+  },
+  {
+    "key": "catEmergency.ateString.banner.subtitle",
+    "value": "String, yarn, and thread are linear foreign bodies that can cut through a cat's intestines. Do NOT pull any visible string — call your vet immediately."
+  },
+  {
+    "key": "catEmergency.ateString.article.headline",
+    "value": "Cat Ate String: Emergency Guide"
+  },
+  {
+    "key": "catEmergency.ateString.article.description",
+    "value": "Emergency guide for linear foreign body ingestion in cats: symptoms, treatment, and prevention."
+  },
+  {
+    "key": "catEmergency.ateString.article.ogTitle",
+    "value": "Cat Ate String: Emergency Guide | petsMetrics"
+  },
+  {
+    "key": "catEmergency.ateString.article.ogDescription",
+    "value": "Emergency guide: What to do if your cat eats string. Linear foreign body danger and intestinal damage risk."
+  },
+  {
+    "key": "catEmergency.ateString.steps.0.title",
+    "value": "Step 1: Call Your Vet Immediately"
+  },
+  {
+    "key": "catEmergency.ateString.steps.0.content",
+    "value": "Contact your veterinarian right away. Note when the string was eaten and how much."
+  },
+  {
+    "key": "catEmergency.ateString.steps.1.title",
+    "value": "Step 2: DO NOT Pull Visible String"
+  },
+  {
+    "key": "catEmergency.ateString.steps.1.content",
+    "value": "If string is hanging from the mouth or anus, do NOT pull it. This can cause the anchored end to cut through intestinal tissue."
+  },
+  {
+    "key": "catEmergency.ateString.steps.2.title",
+    "value": "Step 3: Check Under the Tongue"
+  },
+  {
+    "key": "catEmergency.ateString.steps.2.content",
+    "value": "If safe to do so, check if string is wrapped around the base of the tongue. If so, this is an emergency — go to the vet NOW."
+  },
+  {
+    "key": "catEmergency.ateString.steps.3.title",
+    "value": "Step 4: Monitor for Symptoms"
+  },
+  {
+    "key": "catEmergency.ateString.steps.3.content",
+    "value": "Watch for vomiting, loss of appetite, lethargy, drooling, and inability to defecate. These require emergency surgery."
+  },
+  {
+    "key": "catEmergency.ateString.science.content",
+    "value": "Linear foreign bodies (string, yarn, thread, tinsel) are uniquely dangerous because they anchor at one point — typically under the tongue or at the pyloric sphincter — while the rest is pulled through the intestines by normal peristalsis (intestinal contractions). This causes the intestines to bunch up (\"pleat\") along the string, and the taut string can saw through the intestinal wall like a wire. This leads to perforation, peritonitis, sepsis, and death without surgical intervention. Cats are especially prone due to their barbed tongues that easily catch string (AAFP, 2023)."
+  },
+  {
+    "key": "catEmergency.ateString.faqs.0.question",
+    "value": "Why is string dangerous for cats?"
+  },
+  {
+    "key": "catEmergency.ateString.faqs.0.answer",
+    "value": "String is a \"linear foreign body\" — it anchors at the base of the tongue or stomach and the rest is pulled through the intestines as they contract. This causes the intestines to \"pleat\" (bunch up) and the string can cut through the intestinal wall like a wire, causing perforation, peritonitis, and death."
+  },
+  {
+    "key": "catEmergency.ateString.faqs.1.question",
+    "value": "What are the symptoms of string ingestion?"
+  },
+  {
+    "key": "catEmergency.ateString.faqs.1.answer",
+    "value": "Vomiting, loss of appetite, lethargy, drooling, visible string hanging from the mouth or anus, abdominal pain, and inability to defecate. If you see string, DO NOT pull it — this can cause more damage."
+  },
+  {
+    "key": "catEmergency.ateString.faqs.2.question",
+    "value": "How is string ingestion treated?"
+  },
+  {
+    "key": "catEmergency.ateString.faqs.2.answer",
+    "value": "Treatment depends on location. If the string is still in the mouth/tongue, your vet may cut it. If it has entered the GI tract, surgery is often required to remove it safely. X-rays and ultrasound help determine the best approach."
+  },
+  {
+    "key": "catEmergency.ateString.relatedTools.0.name",
+    "value": "Toxic Food & Plant Checker"
+  },
+  {
+    "key": "catEmergency.ateString.relatedTools.0.url",
+    "value": "/shared/toxic-checker/"
+  },
+  {
+    "key": "catEmergency.ateString.relatedTools.1.name",
+    "value": "Cat BCS & Weight Tracker"
+  },
+  {
+    "key": "catEmergency.ateString.relatedTools.1.url",
+    "value": "/cat/bcs-weight-tracker/"
+  },
+  {
+    "key": "guide.checklist.reset",
+    "value": "Reset All"
+  },
+  {
+    "key": "guide.checklist.print",
+    "value": "Print Checklist"
+  },
+  {
+    "key": "guide.checklist.downloadPdf",
+    "value": "Download PDF"
+  },
+  {
+    "key": "guide.checklist.progress",
+    "value": "Progress"
+  },
+  {
+    "key": "guide.checklist.completed",
+    "value": "completed"
+  },
+  {
+    "key": "guide.checklist.required",
+    "value": "Required"
+  },
+  {
+    "key": "guide.checklist.proTip",
+    "value": "Pro Tip"
+  },
+  {
+    "key": "guide.checklist.vetVisit",
+    "value": "Vet Visit"
+  },
+  {
+    "key": "guide.checklist.estimatedCost",
+    "value": "Estimated Cost"
+  },
+  {
+    "key": "guide.checklist.firstYear",
+    "value": "first year"
+  },
+  {
+    "key": "guide.checklist.annual",
+    "value": "annual"
+  },
+  {
+    "key": "seo.title",
+    "value": "Hunde- & Katzen-Tools | Wissenschaftlich fundierte Berechnungen"
+  },
+  {
+    "key": "seo.toolsTitle",
+    "value": "Kostenlose Tools"
+  },
+  {
+    "key": "calculator.title",
+    "value": "Rechner"
+  },
+  {
+    "key": "calculator.weight",
+    "value": "Gewicht"
+  },
+  {
+    "key": "calculator.age",
+    "value": "Alter"
+  },
+  {
+    "key": "calculator.breed",
+    "value": "Rasse"
+  },
+  {
+    "key": "calculator.reproductiveStatus",
+    "value": "Fortpflanzungsstatus"
+  },
+  {
+    "key": "calculator.result",
+    "value": "Ergebnis"
+  },
+  {
+    "key": "calculator.recommended",
+    "value": "Empfohlen"
+  },
+  {
+    "key": "calculator.healthyWeight",
+    "value": "Gesundes Gewicht"
+  },
+  {
+    "key": "calculator.feedAmount",
+    "value": "Futtermenge"
+  },
+  {
+    "key": "compare.dimension",
+    "value": "Dimension"
+  },
+  {
+    "key": "compare.breedMatters",
+    "value": "Breed matters. Golden Retrievers, German Shepherds, and Boxers have different cancer risk profiles than small breeds. Discuss your specific breed's risk factors with your veterinarian before deciding on timing."
+  },
+  {
+    "key": "compare.dryVsWet.title",
+    "value": "Dry Food vs Wet Food for Dogs: Which Is Right?"
+  },
+  {
+    "key": "compare.dryVsWet.subtitle",
+    "value": "A science-based comparison of kibble and canned diets — covering cost, dental health, shelf life, hydration, and palatability. No marketing fluff, just data from AAFCO and veterinary nutritionists."
+  },
+  {
+    "key": "compare.dryVsWet.topicAName",
+    "value": "Dry Food (Kibble)"
+  },
+  {
+    "key": "compare.dryVsWet.topicBName",
+    "value": "Wet Food (Canned/Pouched)"
+  },
+  {
+    "key": "compare.dryVsWet.topicA.pros.0.title",
+    "value": "Cost-Effective"
+  },
+  {
+    "key": "compare.dryVsWet.topicA.pros.0.body",
+    "value": "Kibble costs $0.30–$0.80 per day for a 30kg dog, vs $1.50–$4.00 for wet food. Savings come from lower water content (10% vs 75%) and more efficient manufacturing."
+  },
+  {
+    "key": "compare.dryVsWet.topicA.pros.1.title",
+    "value": "Dental Benefits"
+  },
+  {
+    "key": "compare.dryVsWet.topicA.pros.1.body",
+    "value": "The mechanical crunching action of hard kibble can help reduce tartar buildup. However, most dogs do not chew long enough for significant dental benefit — it is a bonus, not a substitute for brushing."
+  },
+  {
+    "key": "compare.dryVsWet.topicA.pros.2.title",
+    "value": "Shelf-Stable & Convenient"
+  },
+  {
+    "key": "compare.dryVsWet.topicA.pros.2.body",
+    "value": "Unopened bags last 12–18 months at room temperature. No refrigeration needed, easy to store and travel with. Portioning is straightforward with a measuring cup."
+  },
+  {
+    "key": "compare.dryVsWet.topicA.pros.3.title",
+    "value": "Energy-Dense"
+  },
+  {
+    "key": "compare.dryVsWet.topicA.pros.3.body",
+    "value": "With 350–450 kcal per 100g, kibble is ideal for large breeds or active dogs who need many calories without feeling full too quickly."
+  },
+  {
+    "key": "compare.dryVsWet.topicA.cons.0",
+    "value": "Low moisture content (~10%) means dogs must drink separately; lower thirst drive can lead to chronic mild dehydration in some dogs."
+  },
+  {
+    "key": "compare.dryVsWet.topicA.cons.1",
+    "value": "Palatability can be lower than wet food; picky eaters may turn their nose up."
+  },
+  {
+    "key": "compare.dryVsWet.topicA.cons.2",
+    "value": "Quality varies enormously — some kibble relies heavily on grain fillers and plant proteins rather than animal-based proteins."
+  },
+  {
+    "key": "compare.dryVsWet.topicA.bestFor",
+    "value": "Active adult dogs, large breeds, multi-dog households on a budget, and owners who value convenience."
+  },
+  {
+    "key": "compare.dryVsWet.topicB.pros.0.title",
+    "value": "High Moisture Content"
+  },
+  {
+    "key": "compare.dryVsWet.topicB.pros.0.body",
+    "value": "At 75–80% moisture, wet food provides significant hydration. This is especially beneficial for dogs with kidney issues, urinary crystals, or low thirst drive."
+  },
+  {
+    "key": "compare.dryVsWet.topicB.pros.1.title",
+    "value": "Superior Palatability"
+  },
+  {
+    "key": "compare.dryVsWet.topicB.pros.1.body",
+    "value": "The aroma, texture, and fat content make wet food irresistible to most dogs. Ideal for picky eaters, senior dogs losing appetite, or convalescing pets."
+  },
+  {
+    "key": "compare.dryVsWet.topicB.pros.2.title",
+    "value": "Lower Carbohydrates"
+  },
+  {
+    "key": "compare.dryVsWet.topicB.pros.2.body",
+    "value": "Quality wet foods often contain fewer grains and starches, with higher animal protein percentages. This more closely mimics a dog's ancestral diet."
+  },
+  {
+    "key": "compare.dryVsWet.topicB.pros.3.title",
+    "value": "Easier to Eat for Senior Dogs"
+  },
+  {
+    "key": "compare.dryVsWet.topicB.pros.3.body",
+    "value": "Dogs with dental issues, missing teeth, or small mouths (e.g., Chihuahuas, Yorkies) find wet food much easier to consume than hard kibble."
+  },
+  {
+    "key": "compare.dryVsWet.topicB.cons.0",
+    "value": "Cost: 3–5x more expensive per calorie than kibble for the same dog."
+  },
+  {
+    "key": "compare.dryVsWet.topicB.cons.1",
+    "value": "Shelf life: Once opened, canned food must be refrigerated and used within 3–5 days."
+  },
+  {
+    "key": "compare.dryVsWet.topicB.cons.2",
+    "value": "No dental crunch benefit — may contribute to faster tartar accumulation without other dental hygiene."
+  },
+  {
+    "key": "compare.dryVsWet.topicB.cons.3",
+    "value": "Bulky to store and heavier to transport."
+  },
+  {
+    "key": "compare.dryVsWet.topicB.bestFor",
+    "value": "Senior dogs, small breeds, picky eaters, dogs with dental issues, kidney/urinary conditions, and dogs who don't drink enough water."
+  },
+  {
+    "key": "compare.dryVsWet.rows.0.dimension",
+    "value": "Moisture Content"
+  },
+  {
+    "key": "compare.dryVsWet.rows.0.topicA",
+    "value": "~10%"
+  },
+  {
+    "key": "compare.dryVsWet.rows.0.topicB",
+    "value": "75–80%"
+  },
+  {
+    "key": "compare.dryVsWet.rows.1.dimension",
+    "value": "Calorie Density"
+  },
+  {
+    "key": "compare.dryVsWet.rows.1.topicA",
+    "value": "350–450 kcal/100g"
+  },
+  {
+    "key": "compare.dryVsWet.rows.1.topicB",
+    "value": "80–120 kcal/100g"
+  },
+  {
+    "key": "compare.dryVsWet.rows.2.dimension",
+    "value": "Cost/day (30kg dog)"
+  },
+  {
+    "key": "compare.dryVsWet.rows.2.topicA",
+    "value": "$0.50–1.50"
+  },
+  {
+    "key": "compare.dryVsWet.rows.2.topicB",
+    "value": "$2.00–5.00"
+  },
+  {
+    "key": "compare.dryVsWet.rows.3.dimension",
+    "value": "Shelf Life (unopened)"
+  },
+  {
+    "key": "compare.dryVsWet.rows.3.topicA",
+    "value": "12–18 months"
+  },
+  {
+    "key": "compare.dryVsWet.rows.3.topicB",
+    "value": "2–5 years"
+  },
+  {
+    "key": "compare.dryVsWet.rows.4.dimension",
+    "value": "Dental Health"
+  },
+  {
+    "key": "compare.dryVsWet.rows.4.topicA",
+    "value": "Mild tartar reduction"
+  },
+  {
+    "key": "compare.dryVsWet.rows.4.topicB",
+    "value": "No mechanical benefit"
+  },
+  {
+    "key": "compare.dryVsWet.rows.5.dimension",
+    "value": "Palatability"
+  },
+  {
+    "key": "compare.dryVsWet.rows.5.topicA",
+    "value": "Moderate"
+  },
+  {
+    "key": "compare.dryVsWet.rows.5.topicB",
+    "value": "High"
+  },
+  {
+    "key": "compare.dryVsWet.rows.6.dimension",
+    "value": "Carb Content"
+  },
+  {
+    "key": "compare.dryVsWet.rows.6.topicA",
+    "value": "Often higher"
+  },
+  {
+    "key": "compare.dryVsWet.rows.6.topicB",
+    "value": "Often lower"
+  },
+  {
+    "key": "compare.dryVsWet.rows.7.dimension",
+    "value": "Storage"
+  },
+  {
+    "key": "compare.dryVsWet.rows.7.topicA",
+    "value": "Room temp"
+  },
+  {
+    "key": "compare.dryVsWet.rows.7.topicB",
+    "value": "Refrigerate after opening"
+  },
+  {
+    "key": "compare.dryVsWet.verdict",
+    "value": "<strong>Most dogs do well on a mixed feeding approach.</strong> A base of quality kibble for cost-efficiency and dental crunch, supplemented with a small amount of wet food for hydration and palatability. For dogs with kidney disease, urinary issues, or senior dogs with appetite loss, increase wet food proportion. For active large-breed adults on a budget, kibble as the primary diet is perfectly adequate. Consult your veterinarian if your dog has specific health conditions."
+  },
+  {
+    "key": "compare.dryVsWet.faq.0.question",
+    "value": "Can I mix dry and wet dog food?"
+  },
+  {
+    "key": "compare.dryVsWet.faq.0.answer",
+    "value": "Yes, mixing is safe and often recommended. A common approach is 75% kibble + 25% wet food by calorie. Calculate your dog's total daily calorie needs first, then split between the two. Ensure the combined diet meets AAFCO nutrient profiles — most complete & balanced kibble is formulated to be fed alone, so treat wet food as a supplement."
+  },
+  {
+    "key": "compare.dryVsWet.faq.1.question",
+    "value": "Is wet food better for dogs with kidney disease?"
+  },
+  {
+    "key": "compare.dryVsWet.faq.1.answer",
+    "value": "Often yes. The high moisture content (75–80%) helps support kidney function by promoting hydration and flushing toxins. Dogs with chronic kidney disease (CKD) are frequently recommended higher-moisture diets by veterinary nutritionists. A prescription renal diet (wet or dry) may be needed in advanced cases."
+  },
+  {
+    "key": "compare.dryVsWet.faq.2.question",
+    "value": "How much wet food replaces one cup of kibble?"
+  },
+  {
+    "key": "compare.dryVsWet.faq.2.answer",
+    "value": "Approximately 1 cup of kibble (100g, ~350 kcal) equals about 300–400g of wet food (~350 kcal). Always check the calorie content on the can label and adjust based on your dog's specific caloric needs. Use our Dog Calorie Calculator to determine the exact amount."
+  },
+  {
+    "key": "compare.dryVsWet.faq.3.question",
+    "value": "Do dogs need wet food?"
+  },
+  {
+    "key": "compare.dryVsWet.faq.3.answer",
+    "value": "No, dogs do not need wet food if they are eating a complete and balanced dry diet and drinking adequate water. However, wet food provides meaningful benefits for hydration, palatability, and specific health conditions. It is a valuable tool in the dog owner's toolkit, not a necessity."
+  },
+  {
+    "key": "compare.indoorVsOutdoor.title",
+    "value": "Indoor vs Outdoor Cats: Lifespan, Health & Safety Comparison"
+  },
+  {
+    "key": "compare.indoorVsOutdoor.subtitle",
+    "value": "Data-driven comparison of indoor-only and outdoor-access cats — covering lifespan, disease risk, injury rates, behavioral needs, and the \"best of both worlds\" middle ground. Based on AAFP and ISFM feline welfare guidelines."
+  },
+  {
+    "key": "compare.indoorVsOutdoor.topicAName",
+    "value": "Indoor-Only Cats"
+  },
+  {
+    "key": "compare.indoorVsOutdoor.topicBName",
+    "value": "Outdoor-Access Cats"
+  },
+  {
+    "key": "compare.indoorVsOutdoor.topicA.pros.0.title",
+    "value": "Longer Lifespan"
+  },
+  {
+    "key": "compare.indoorVsOutdoor.topicA.pros.0.body",
+    "value": "The average indoor-only cat lives 12–18 years, with many reaching 20+. This is 3–5x longer than the average outdoor cat, primarily due to reduced trauma and disease exposure."
+  },
+  {
+    "key": "compare.indoorVsOutdoor.topicA.pros.1.title",
+    "value": "Lower Disease Risk"
+  },
+  {
+    "key": "compare.indoorVsOutdoor.topicA.pros.1.body",
+    "value": "Indoor cats have minimal exposure to FeLV, FIV, FIP, and rabies from other cats. Parasite exposure is also significantly reduced."
+  },
+  {
+    "key": "compare.indoorVsOutdoor.topicA.pros.2.title",
+    "value": "No Trauma Risk"
+  },
+  {
+    "key": "compare.indoorVsOutdoor.topicA.pros.2.body",
+    "value": "No cars, no dog attacks, no fights with other cats, no predator encounters. The #1 cause of premature death in outdoor cats is vehicular trauma."
+  },
+  {
+    "key": "compare.indoorVsOutdoor.topicA.pros.3.title",
+    "value": "Better Weight Control"
+  },
+  {
+    "key": "compare.indoorVsOutdoor.topicA.pros.3.body",
+    "value": "Indoor cats are fed measured meals rather than hunting or scavenging. Combined with our BCS tracker, obesity is more easily managed."
+  },
+  {
+    "key": "compare.indoorVsOutdoor.topicA.cons.0",
+    "value": "Environmental enrichment is mandatory — without it, indoor cats develop stress-related behaviors (urine marking, over-grooming, aggression)."
+  },
+  {
+    "key": "compare.indoorVsOutdoor.topicA.cons.1",
+    "value": "Obesity is the #1 health risk for indoor cats, affecting 40–60% of indoor-only cats."
+  },
+  {
+    "key": "compare.indoorVsOutdoor.topicA.cons.2",
+    "value": "Needs significant owner time and resource investment (scratching posts, window perches, interactive play)."
+  },
+  {
+    "key": "compare.indoorVsOutdoor.topicA.bestFor",
+    "value": "Most urban/suburban cat owners who can provide adequate environmental enrichment."
+  },
+  {
+    "key": "compare.indoorVsOutdoor.topicB.pros.0.title",
+    "value": "Natural Behavior Expression"
+  },
+  {
+    "key": "compare.indoorVsOutdoor.topicB.pros.0.body",
+    "value": "Outdoor access allows climbing, hunting, territory patrolling, and sun-bathing — all core feline behaviors that are difficult to fully replicate indoors."
+  },
+  {
+    "key": "compare.indoorVsOutdoor.topicB.pros.1.title",
+    "value": "Mental Stimulation"
+  },
+  {
+    "key": "compare.indoorVsOutdoor.topicB.pros.1.body",
+    "value": "The outdoor environment provides endless sensory input. Outdoor cats rarely exhibit boredom-related behaviors seen in under-stimulated indoor cats."
+  },
+  {
+    "key": "compare.indoorVsOutdoor.topicB.pros.2.title",
+    "value": "Exercise & Weight Management"
+  },
+  {
+    "key": "compare.indoorVsOutdoor.topicB.pros.2.body",
+    "value": "Outdoor cats typically get more physical activity, making obesity less of a concern than with sedentary indoor cats."
+  },
+  {
+    "key": "compare.indoorVsOutdoor.topicB.pros.3.title",
+    "value": "Reduced Litter Box Issues"
+  },
+  {
+    "key": "compare.indoorVsOutdoor.topicB.pros.3.body",
+    "value": "Cats with outdoor access rarely urinate or defecate outside the litter box, as they have the option to go outside."
+  },
+  {
+    "key": "compare.indoorVsOutdoor.topicB.cons.0",
+    "value": "Dramatically shorter lifespan: average 2–5 years for free-roaming outdoor cats."
+  },
+  {
+    "key": "compare.indoorVsOutdoor.topicB.cons.1",
+    "value": "High risk of vehicular trauma, predation (coyotes, dogs), poisoning (rodenticides), and fighting injuries."
+  },
+  {
+    "key": "compare.indoorVsOutdoor.topicB.cons.2",
+    "value": "Exposure to infectious diseases: FeLV, FIV, FIP, rabies, and parasites."
+  },
+  {
+    "key": "compare.indoorVsOutdoor.topicB.cons.3",
+    "value": "Neighborhood conflict — digging in gardens, hunting wildlife (ecological impact), and conflicts with other cats or pets."
+  },
+  {
+    "key": "compare.indoorVsOutdoor.topicB.bestFor",
+    "value": "Rural properties with controlled outdoor access (catio, enclosed garden) and owners who accept the risks."
+  },
+  {
+    "key": "compare.indoorVsOutdoor.rows.0.dimension",
+    "value": "Average Lifespan"
+  },
+  {
+    "key": "compare.indoorVsOutdoor.rows.0.topicA",
+    "value": "12–18+ years"
+  },
+  {
+    "key": "compare.indoorVsOutdoor.rows.0.topicB",
+    "value": "2–5 years"
+  },
+  {
+    "key": "compare.indoorVsOutdoor.rows.1.dimension",
+    "value": "Trauma Risk (cars, predators)"
+  },
+  {
+    "key": "compare.indoorVsOutdoor.rows.1.topicA",
+    "value": "Minimal"
+  },
+  {
+    "key": "compare.indoorVsOutdoor.rows.1.topicB",
+    "value": "High"
+  },
+  {
+    "key": "compare.indoorVsOutdoor.rows.2.dimension",
+    "value": "FeLV/FIV Exposure"
+  },
+  {
+    "key": "compare.indoorVsOutdoor.rows.2.topicA",
+    "value": "Very Low"
+  },
+  {
+    "key": "compare.indoorVsOutdoor.rows.2.topicB",
+    "value": "High"
+  },
+  {
+    "key": "compare.indoorVsOutdoor.rows.3.dimension",
+    "value": "Obesity Risk"
+  },
+  {
+    "key": "compare.indoorVsOutdoor.rows.3.topicA",
+    "value": "High (40–60%)"
+  },
+  {
+    "key": "compare.indoorVsOutdoor.rows.3.topicB",
+    "value": "Low"
+  },
+  {
+    "key": "compare.indoorVsOutdoor.rows.4.dimension",
+    "value": "Behavioral Issues"
+  },
+  {
+    "key": "compare.indoorVsOutdoor.rows.4.topicA",
+    "value": "Without enrichment"
+  },
+  {
+    "key": "compare.indoorVsOutdoor.rows.4.topicB",
+    "value": "Rare"
+  },
+  {
+    "key": "compare.indoorVsOutdoor.rows.5.dimension",
+    "value": "Exercise"
+  }
+]

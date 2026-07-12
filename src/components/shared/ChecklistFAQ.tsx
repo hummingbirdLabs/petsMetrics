@@ -1,4 +1,5 @@
 import { JsonLdScript } from './JsonLdScript';
+import { useTranslations } from 'next-intl';
 
 interface FAQItem {
   question: string;
@@ -27,15 +28,17 @@ function generateFaqJsonLd(faqs: FAQItem[]) {
 }
 
 export function ChecklistFAQ({
-  title = 'Frequently Asked Questions',
+  title,
   faqs,
   jsonLdType = 'FAQPage',
 }: ChecklistFAQProps) {
+  const t = useTranslations('common');
+  const displayTitle = title || t('faqHeading');
   return (
     <section aria-labelledby="faq-heading" className="mt-10">
       {jsonLdType === 'FAQPage' && <JsonLdScript data={generateFaqJsonLd(faqs)} />}
       <h2 id="faq-heading" className="text-2xl font-bold tracking-tight text-[--gray-900]">
-        {title}
+        {displayTitle}
       </h2>
 
       <div className="mt-6 space-y-3">

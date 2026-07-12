@@ -1,0 +1,253 @@
+{
+  "emergency": {
+    "ateSock": {
+      "banner": {
+        "subtitle": "Les chaussettes peuvent provoquer des occlusions intestinales mortelles chez les chiens. N'attendez pas — appelez votre vétérinaire ou l'ASPCA Poison Control au <strong>(888) 426-4435</strong> immédiatement."
+      },
+      "science": {
+        "content": "Les corps étrangers en tissu sont particulièrement dangereux car ils peuvent se loger dans l'intestin et provoquer une occlusion. Les chaussettes en coton peuvent absorber l'eau et gonfler, aggravant le blocage. Les signes comprennent les vomissements, la perte d'appétit, la léthargie et l'absence de selles. Une intervention chirurgicale est souvent nécessaire pour retirer le corps étranger."
+      }
+    },
+    "ateAntifreeze": {
+      "meta": {
+        "description": "Guide d'urgence : Que faire si votre chien boit de l'antigel. Apprenez-en plus sur le risque d'insuffisance rénale rapide à l'éthylène glycol, le calendrier des symptômes et les étapes de traitement salvatrices.",
+        "keywords": "chien a bu de l'antigel que faire, empoisonnement à l'antigel chiens, toxicité de l'éthylène glycol chiens, chien a bu de l'antigel urgence"
+      },
+      "article": {
+        "ogTitle": "Chien a Bu de l'Antigel : Que Faire Immédiatement | petsMetrics",
+        "ogDescription": "Guide d'urgence : Que faire si votre chien boit de l'antigel. Insuffisance rénale rapide et risque de mort."
+      },
+      "banner": {
+        "subtitle": "L'antigel (éthylène glycol) provoque une insuffisance rénale rapide et la mort. Aussi peu qu'une cuillère à soupe peut tuer un petit chien. Appelez l'ASPCA Poison Control au <strong>(888) 426-4435</strong> MAINTENANT."
+      },
+      "science": {
+        "content": "L'éthylène glycol lui-même n'est pas toxique — ce sont les métabolites produits par le foie qui causent des dommages. L'alcool déshydrogénase convertit l'éthylène glycol en glycolate, puis en oxalate. L'oxalate de calcium se cristallise dans les reins, provoquant une insuffisance rénale aiguë. Le traitement doit commencer dans les 8-12 heures pour être efficace."
+      }
+    }
+  },
+  "catEmergency": {
+    "shared": {
+      "titles": {
+        "riskAssessment": "Évaluez le Risque de Votre Chat Maintenant",
+        "whatToDo": "Que Faire Maintenant",
+        "theScience": "La Science Derrière Cela",
+        "faq": "Questions Fréquemment Posées",
+        "relatedTools": "Outils Connexes",
+        "criticalWarning": "⚠️ Avertissement Critique"
+      },
+      "breadcrumb": {
+        "home": "Accueil",
+        "catEmergency": "Urgence Chat"
+      },
+      "labels": {
+        "chocolateType": "Type de Chocolat",
+        "amountEaten": "Quantité Ingérée",
+        "riskLevel": "Niveau de Risque",
+        "actionRequired": "Action Requise",
+        "onionForm": "Forme d'Oignon",
+        "garlicForm": "Forme d'Ail",
+        "oilType": "Type d'Huile",
+        "exposureRoute": "Voie d'Exposition",
+        "exposureType": "Type d'Exposition",
+        "symptomsPresent": "Symptômes Présents?"
+      },
+      "tools": {
+        "toxicChecker": "Vérifieur de Nourriture et Plantes Toxiques",
+        "catBcs": "BCS Chat & Suivi du Poids",
+        "catHydration": "Calculateur d'Hydratation Chat"
+      }
+    },
+    "ateChocolate": {
+      "breadcrumbLabel": "A Mangé du Chocolat",
+      "meta": {
+        "title": "Mon Chat a Mangé du Chocolat : Guide d'Urgence | petsMetrics",
+        "description": "Guide d'urgence : Le chocolat est toxique pour les chiens (empoisonnement à la théobromine). Les chats sont plus sensibles que les chiens. Apprenez les symptômes et les actions immédiates.",
+        "keywords": "mon chat a mangé du chocolat urgence, empoisonnement au chocolat chats, toxicité de la théobromine chats"
+      },
+      "banner": {
+        "severityLabel": "TOXIQUE — Chats Plus Sensibles Que les Chiens",
+        "title": "Mon Chat a Mangé du Chocolat : Que Faire Maintenant",
+        "subtitle": "Le chocolat est <strong>plus toxique pour les chats que pour les chiens</strong> en raison d'un métabolisme plus lent de la théobromine. Appelez votre vétérinaire immédiatement."
+      },
+      "article": {
+        "headline": "Mon Chat a Mangé du Chocolat : Guide d'Urgence",
+        "description": "Guide d'urgence pour l'empoisonnement au chocolat chez les chats : empoisonnement à la théobromine, symptômes, traitement.",
+        "ogTitle": "Mon Chat a Mangé du Chocolat : Guide d'Urgence | petsMetrics",
+        "ogDescription": "Que faire si votre chat mange du chocolat."
+      },
+      "science": {
+        "content": "Le chocolat contient de la théobromine et de la caféine — des méthylxanthines que les chats ne peuvent pas métaboliser efficacement. Les chats sont plus sensibles que les chiens car ils manquent de certaines enzymes hépatiques nécessaires à la détoxification."
+      }
+    },
+    "ateOnion": {
+      "breadcrumbLabel": "A Mangé de l'Oignon",
+      "meta": {
+        "title": "Mon Chat a Mangé de l'Oignon : Symptômes et Guide d'Urgence | petsMetrics",
+        "description": "Guide d'urgence : Les oignons provoquent une anémie hémolytique chez les chats. Apprenez les symptômes (gencives pâles, faiblesse), le calendrier et les étapes de traitement.",
+        "keywords": "mon chat a mangé de l'oignon, empoisonnement à l'oignon chats, toxicité de l'oignon chats, symptômes chat a mangé oignon"
+      },
+      "banner": {
+        "severityLabel": "DANGEREUX — Provoque une Anémie Hémolytique",
+        "title": "Mon Chat a Mangé de l'Oignon : Symptômes et Que Faire",
+        "subtitle": "Les oignons sont <strong>plus toxiques pour les chats que pour les chiens</strong>. Même de petites quantités peuvent causer des dommages."
+      },
+      "article": {
+        "headline": "Mon Chat a Mangé de l'Oignon : Symptômes et Guide d'Urgence",
+        "description": "Guide d'urgence pour l'empoisonnement à l'oignon chez les chats : anémie de Heinz, symptômes, traitement.",
+        "ogTitle": "Mon Chat a Mangé de l'Oignon : Symptômes et Guide d'Urgence | petsMetrics",
+        "ogDescription": "Que faire si votre chat mange de l'oignon."
+      },
+      "science": {
+        "content": "Les oignons (Allium cepa) contiennent du N-propyl disulfure et du S-méthylcystéine sulfoxyde. Ces composés provoquent des dommages oxydatifs aux globules rouges, formant des corps de Heinz qui entraînent une anémie hémolytique."
+      }
+    },
+    "ateGarlic": {
+      "breadcrumbLabel": "A Mangé de l'Ail",
+      "meta": {
+        "title": "Mon Chat a Mangé de l'Ail : Que Faire Maintenant | petsMetrics",
+        "description": "Guide d'urgence : L'ail est toxique pour les chats — 5x plus puissant que l'oignon. Apprenez-en plus sur l'anémie de Heinz et les étapes de traitement.",
+        "keywords": "mon chat a mangé de l'ail que faire, empoisonnement à l'ail chats, ail toxique pour les chats, chat a mangé ail"
+      },
+      "banner": {
+        "severityLabel": "DANGEREUX — 5x Plus Toxique Que l'Oignon",
+        "title": "Mon Chat a Mangé de l'Ail : Que Faire Maintenant",
+        "subtitle": "L'ail est <strong>5x plus toxique que l'oignon pour les chats</strong>. Une seule gousse peut causer des dommages."
+      },
+      "article": {
+        "headline": "Mon Chat a Mangé de l'Ail : Que Faire Maintenant",
+        "description": "Guide d'urgence pour l'empoisonnement à l'ail chez les chats : 5x plus puissant que l'oignon, anémie de Heinz, traitement.",
+        "ogTitle": "Mon Chat a Mangé de l'Ail : Que Faire Maintenant | petsMetrics",
+        "ogDescription": "Que faire si votre chat mange de l'ail."
+      },
+      "science": {
+        "content": "L'ail (Allium sativum) contient de l'alliine, qui se transforme en allicine lorsqu'il est écrasé. Ce composé est plus concentré que dans les oignon et cause des dommages oxydatifs plus importants aux globules rouges félins."
+      }
+    },
+    "ateEssentialOils": {
+      "breadcrumbLabel": "Huiles Essentielles",
+      "meta": {
+        "title": "Mon Chat a Mangé des Huiles Essentielles : Guide d'Urgence | petsMetrics",
+        "description": "Guide d'urgence : Les huiles essentielles (arbre à thé, eucalyptus, agrumes, menthe poivrée) sont hautement toxiques pour les chats. Apprenez les symptômes et les actions immédiates.",
+        "keywords": "mon chat a mangé des huiles essentielles, huile d'arbre à thé chats, huiles essentielles toxiques pour les chats"
+      },
+      "banner": {
+        "severityLabel": "TOXIQUE — Les Chats Ne Peuvent Pas Métaboliser les Huiles Essentielles",
+        "title": "Mon Chat a Mangé des Huiles Essentielles : Que Faire Maintenant",
+        "subtitle": "Les chats manquent d'enzymes hépatiques pour métaboliser les térphénols et les phénols. <strong>L'huile d'arbre à thé peut tuer un chat.</strong>"
+      },
+      "article": {
+        "headline": "Mon Chat a Mangé des Huiles Essentielles : Guide d'Urgence",
+        "description": "Guide d'urgence pour l'empoisonnement aux huiles essentielles chez les chats : huile d'arbre à thé, huiles d'agrumes, traitement.",
+        "ogTitle": "Mon Chat a Mangé des Huiles Essentielles : Guide d'Urgence | petsMetrics",
+        "ogDescription": "Que faire si votre chat est exposé aux huiles essentielles."
+      },
+      "science": {
+        "content": "Les chats manquent d'enzymes UDP-glucuronosyltransférase (UGT1A6 et UGT1A9) nécessaires pour le métabolisme des térphénols et phénols. Sans ces enzymes, les composés s'accumulent à des niveaux toxiques, provoquant des dommages hépatiques et neurologiques."
+      }
+    },
+    "ateFishingLine": {
+      "breadcrumbLabel": "Ligne de Pêche",
+      "meta": {
+        "title": "Mon Chat a Mangé de la Ligne de Pêche : Guide d'Urgence | petsMetrics",
+        "description": "Guide d'urgence : L'ingestion de ligne de pêche (ficelle) est mortelle pour les chats. Apprenez-en plus sur le risque de corps étranger linéaire et quand la chirurgie est nécessaire.",
+        "keywords": "mon chat a mangé de la ligne de pêche, chat a mangé de la ficelle, corps étranger linéaire chat, ingestion de ficelle chat"
+      },
+      "banner": {
+        "severityLabel": "EXTRÊMEMENT DANGEREUX — Chirurgie Souvent Nécessaire",
+        "title": "Mon Chat a Mangé de la Ligne de Pêche : Que Faire Maintenant",
+        "subtitle": "La ligne de pêche est un <strong>corps étranger linéaire mortel</strong>. Elle peut scier à travers les intestins de votre chat."
+      },
+      "article": {
+        "headline": "Mon Chat a Mangé de la Ligne de Pêche : Guide d'Urgence",
+        "description": "Guide d'urgence pour l'ingestion de ligne de pêche chez les chats : obstruction par corps étranger linéaire, traitement chirurgical.",
+        "ogTitle": "Mon Chat a Mangé de la Ligne de Pêche : Guide d'Urgence | petsMetrics",
+        "ogDescription": "Que faire si votre chat a mangé de la ligne de pêche."
+      },
+      "criticalWarning": {
+        "title": "⚠️ Avertissement Critique"
+      },
+      "science": {
+        "content": "Les corps étrangers linéaires (ficelle, fil, ligne de pêche) sont des urgences chirurgicales chez les chats. Les mouvements péristaltiques de l'intestin poussent la ligne, provoquant des plis et des perforations dans la paroi intestinale."
+      }
+    },
+    "ateLily": {
+      "breadcrumbLabel": "A Mangé du Lis",
+      "meta": {
+        "title": "Mon Chat a Mangé du Lis : Que Dois-Je Faire? | petsMetrics",
+        "description": "Guide d'urgence : Que faire si votre chat mange une partie d'une plante de lis. Apprenez-en plus sur le risque d'insuffisance rénale aiguë et le traitement immédiat.",
+        "keywords": "mon chat a mangé du lis que dois-je faire, empoisonnement au lis chats, toxicité du lis chats, chat a mangé lis"
+      },
+      "banner": {
+        "severityLabel": "EXTRÊMEMENT TOXIQUE — VÉTÉRINAIRE D'URGENCE MAINTENANT",
+        "title": "Mon Chat a Mangé du Lis : Que Dois-Je Faire?",
+        "subtitle": "Toutes les parties des vrais lis sont mortelles pour les chats — même le pollen. L'ingestion provoque une insuffisance rénale aiguë."
+      },
+      "article": {
+        "headline": "Mon Chat a Mangé du Lis : Que Dois-Je Faire?",
+        "description": "Guide d'urgence pour l'empoisonnement au lis chez les chats : symptômes, traitement, prévention.",
+        "ogTitle": "Mon Chat a Mangé du Lis : Que Dois-Je Faire? | petsMetrics",
+        "ogDescription": "Guide d'urgence : Que faire si votre chat mange du lis. Risque d'insuffisance rénale aiguë et traitement immédiat."
+      },
+      "science": {
+        "content": "Le composé toxique exact dans les lis n'est pas identifié, mais il provoque une nécrose tubulaire aiguë dans les reins. Même de petites quantités de pollen ou de pétales peuvent causer une insuffisance rénale fatale."
+      }
+    },
+    "ateString": {
+      "breadcrumbLabel": "A Mangé de la Ficelle",
+      "meta": {
+        "title": "Chat a Mangé de la Ficelle : Guide d'Urgence | petsMetrics",
+        "description": "Guide d'urgence : Que faire si votre chat mange de la ficelle, du fil ou du fil de laine. Apprenez-en plus sur le risque de corps étranger linéaire.",
+        "keywords": "chat a mangé de la ficelle urgence, chat a mangé du fil, corps étranger linéaire chat, ingestion de ficelle chat"
+      },
+      "banner": {
+        "severityLabel": "CORPS ÉTRANGER LINÉAIRE — Consultez un Vétérinaire",
+        "title": "Chat a Mangé de la Ficelle : Guide d'Urgence",
+        "subtitle": "La ficelle, le fil et le fil de laine sont des corps étrangers linéaires qui peuvent couper les intestins de votre chat."
+      },
+      "article": {
+        "headline": "Chat a Mangé de la Ficelle : Guide d'Urgence",
+        "description": "Guide d'urgence pour l'ingestion de corps étranger linéaire chez les chats : symptômes, traitement, prévention.",
+        "ogTitle": "Chat a Mangé de la Ficelle : Guide d'Urgence | petsMetrics",
+        "ogDescription": "Guide d'urgence : Que faire si votre chat mange de la ficelle. Danger de corps étranger linéaire et traitement."
+      },
+      "science": {
+        "content": "Les corps étrangers linéaires (ficelle, fil, fil de laine, guirlande) sont particulièrement dangereux car les mouvements péristaltiques de l'intestin peuvent faire plier et perforer la paroi intestinale, provoquant une péritonite mortelle."
+      }
+    }
+  },
+  "guide": {
+    "checklist": {
+      "reset": "Réinitialiser Tout",
+      "print": "Imprimer la Liste",
+      "downloadPdf": "Télécharger le PDF",
+      "progress": "Progrès",
+      "completed": "terminé",
+      "required": "Requis",
+      "proTip": "Conseil Pro",
+      "vetVisit": "Visite Vétérinaire",
+      "estimatedCost": "Coût Estimé",
+      "firstYear": "première année",
+      "annual": "annuel"
+    }
+  },
+  "seo": {
+    "description": "Outils en ligne gratuits pour les propriétaires de chiens et de chats. Calculez les calories, l'âge, l'hydratation, le BCS et plus encore.",
+    "toolsDescription": "Outils basés sur la science pour vos animaux de compagnie"
+  },
+  "calculator": {
+    "breedSize": "Taille de Race",
+    "activityLevel": "Niveau d'Activité",
+    "bodyCondition": "Condition Corporelle",
+    "dailyCalories": "Calories Quotidiennes",
+    "waterNeeded": "Eau Nécessaire"
+  },
+  "compare": {
+    "dimension": "Dimension"
+  },
+  "about": {
+    "contact": "Contact"
+  },
+  "terms": {
+    "contact": "9. Contact"
+  }
+}

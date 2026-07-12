@@ -1,0 +1,22 @@
+{
+  "title": "Impfplan — Personalisierter Zeitplan",
+  "subtitle": "Erhalten Sie einen personalisierten Impf- und Entwurmungsplan basierend auf Alter und Region.",
+  "breadcrumbHome": "Startseite",
+  "breadcrumbCurrent": "Impfplan",
+  "form.birthDateLabel": "Geburtsdatum (oder aktuelles Alter)",
+  "form.regionLabel": "Ihre Region",
+  "form.submit": "Plan erstellen",
+  "result.scheduleTitle": "{name}s Impfplan",
+  "result.generatedOn": "Erstellt am: {date} · Basierend auf Geburtsdatum: {birthDate} · Region: {region} · WSAVA Core Vaccine Guidelines",
+  "result.nextDue": "Nächste Fälligkeit: {date}",
+  "result.tableVaccine": "Impfstoff / Behandlung",
+  "result.tableDueDate": "Fälligkeitsdatum",
+  "result.tableStatus": "Status",
+  "result.nonCoreTitle": "Über Nicht-Core-Impfempfehlungen",
+  "result.nonCoreBody": "Als Nicht-Core gekennzeichnete Impfstoffe hängen stark von Ihrer spezifischen Region und der täglichen Routine Ihres Hundes ab. Die obigen Empfehlungen sind ein Ausgangspunkt. Konsultieren Sie Ihren Tierarzt für eine personalisierte Beurteilung.",
+  "result.status.overdue": "Überfällig",
+  "result.status.upcoming": "Bald fällig",
+  "result.status.future": "Anstehend",
+  "shareCta.title": "{name}s personalisierter Impfplan",
+  "shareCta.sharePrompt": "Habe gerade {name}s Impfplan erstellt! Prüfen Sie Ihren → {url} #Hundegesundheit #petsMetrics"
+}

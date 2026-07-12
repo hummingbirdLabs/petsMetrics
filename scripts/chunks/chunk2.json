@@ -1,0 +1,1202 @@
+[
+  {
+    "key": "barf.form.submit",
+    "value": "Calculate Portions"
+  },
+  {
+    "key": "barf.result.muscleMeat",
+    "value": "Muscle Meat"
+  },
+  {
+    "key": "barf.result.bone",
+    "value": "Raw Meaty Bone"
+  },
+  {
+    "key": "barf.result.liver",
+    "value": "Liver"
+  },
+  {
+    "key": "barf.result.organ",
+    "value": "Secreting Organ"
+  },
+  {
+    "key": "barf.result.vegetables",
+    "value": "Vegetables / Berries"
+  },
+  {
+    "key": "barf.result.total",
+    "value": "Total Daily Portion"
+  },
+  {
+    "key": "barf.result.shoppingNote",
+    "value": "These are daily amounts. Multiply by 7 for a weekly shopping list."
+  },
+  {
+    "key": "barf.pdfExport.comingSoon",
+    "value": "PDF Export — Coming Soon"
+  },
+  {
+    "key": "barf.adviceNote",
+    "value": "BARF diet must be properly balanced with vitamin and mineral supplements. Consult a veterinary nutritionist before starting a raw feeding regimen."
+  },
+  {
+    "key": "insurance.form.breedLabel",
+    "value": "Breed"
+  },
+  {
+    "key": "insurance.form.ageLabel",
+    "value": "Age (years)"
+  },
+  {
+    "key": "insurance.form.regionLabel",
+    "value": "State / Region"
+  },
+  {
+    "key": "insurance.form.submit",
+    "value": "Compare Plans"
+  },
+  {
+    "key": "insurance.result.estimatedRange",
+    "value": "Estimated Monthly Premium"
+  },
+  {
+    "key": "insurance.result.disclaimer",
+    "value": "Estimates are based on public pricing data and are not binding quotes. Actual premiums vary by insurer underwriting."
+  },
+  {
+    "key": "insurance.result.providersTitle",
+    "value": "Compare Providers"
+  },
+  {
+    "key": "insurance.result.getQuote",
+    "value": "Get Quote"
+  },
+  {
+    "key": "insurance.result.deductible",
+    "value": "Deductible"
+  },
+  {
+    "key": "insurance.result.reimburse",
+    "value": "Reimburse"
+  },
+  {
+    "key": "emergency.shared.severity.monitor.label",
+    "value": "Monitor"
+  },
+  {
+    "key": "emergency.shared.severity.mildlyToxic.label",
+    "value": "Mildly Toxic"
+  },
+  {
+    "key": "emergency.shared.severity.dangerous.label",
+    "value": "Dangerous"
+  },
+  {
+    "key": "emergency.shared.severity.toxic.label",
+    "value": "Toxic"
+  },
+  {
+    "key": "emergency.shared.severity.extremelyToxic.label",
+    "value": "Extremely Toxic"
+  },
+  {
+    "key": "emergency.shared.riskLevel.high",
+    "value": "High"
+  },
+  {
+    "key": "emergency.shared.riskLevel.critical",
+    "value": "CRITICAL"
+  },
+  {
+    "key": "emergency.shared.riskLevel.moderate",
+    "value": "Moderate"
+  },
+  {
+    "key": "emergency.shared.riskLevel.low",
+    "value": "Low"
+  },
+  {
+    "key": "emergency.shared.action.seekEmergency",
+    "value": "🚨 Seek emergency veterinary care NOW"
+  },
+  {
+    "key": "emergency.shared.action.callNow",
+    "value": "🚨 Emergency vet NOW"
+  },
+  {
+    "key": "emergency.shared.action.callImmediately",
+    "value": "📞 Call vet or poison control immediately"
+  },
+  {
+    "key": "emergency.shared.action.callToday",
+    "value": "📞 Call vet today"
+  },
+  {
+    "key": "emergency.shared.action.monitorSymptoms",
+    "value": "👀 Monitor for symptoms, call vet if concerned"
+  },
+  {
+    "key": "emergency.shared.action.callVet",
+    "value": "📞 Call vet immediately"
+  },
+  {
+    "key": "emergency.shared.labels.petWeightDog",
+    "value": "Dog's Weight"
+  },
+  {
+    "key": "emergency.shared.labels.petWeightCat",
+    "value": "Cat's Weight"
+  },
+  {
+    "key": "emergency.shared.labels.amountEaten",
+    "value": "Amount Eaten"
+  },
+  {
+    "key": "emergency.shared.labels.riskLevel",
+    "value": "Risk Level"
+  },
+  {
+    "key": "emergency.shared.labels.actionRequired",
+    "value": "Action Required"
+  },
+  {
+    "key": "emergency.shared.labels.chocolateType",
+    "value": "Chocolate Type"
+  },
+  {
+    "key": "emergency.shared.labels.whatWasEaten",
+    "value": "What Was Eaten"
+  },
+  {
+    "key": "emergency.shared.labels.catSize",
+    "value": "Cat's Size"
+  },
+  {
+    "key": "emergency.shared.labels.dogSize",
+    "value": "Dog's Size"
+  },
+  {
+    "key": "emergency.shared.labels.anySize",
+    "value": "Any size"
+  },
+  {
+    "key": "emergency.shared.labels.anyAmount",
+    "value": "Any amount"
+  },
+  {
+    "key": "emergency.shared.vetDecision.title",
+    "value": "When to See a Veterinarian"
+  },
+  {
+    "key": "emergency.shared.vetDecision.emergencyTitle",
+    "value": "🚨 Emergency — Go NOW"
+  },
+  {
+    "key": "emergency.shared.vetDecision.urgentTitle",
+    "value": "⚡ Urgent — Within 1-2 Hours"
+  },
+  {
+    "key": "emergency.shared.vetDecision.monitorTitle",
+    "value": "👀 Monitor — Call Vet Today"
+  },
+  {
+    "key": "emergency.shared.titles.riskAssessment",
+    "value": "Assess Your Pet's Risk Right Now"
+  },
+  {
+    "key": "emergency.shared.titles.whatToDo",
+    "value": "What to Do Right Now"
+  },
+  {
+    "key": "emergency.shared.titles.theScience",
+    "value": "The Science Behind It"
+  },
+  {
+    "key": "emergency.shared.titles.toxicDose",
+    "value": "Toxic Dose Calculator"
+  },
+  {
+    "key": "emergency.shared.titles.symptomTimeline",
+    "value": "Symptom Timeline: What to Expect"
+  },
+  {
+    "key": "emergency.shared.titles.faq",
+    "value": "Frequently Asked Questions"
+  },
+  {
+    "key": "emergency.shared.titles.relatedTools",
+    "value": "Related Tools"
+  },
+  {
+    "key": "emergency.shared.aspcaHotline",
+    "value": "ASPCA Poison Control: (888) 426-4435"
+  },
+  {
+    "key": "emergency.shared.aspcaLink",
+    "value": "https://www.aspca.org/pet-care/animal-poison-control"
+  },
+  {
+    "key": "emergency.shared.stepTemplates.removeAll",
+    "value": "Step 1: Remove All [Item] Immediately"
+  },
+  {
+    "key": "emergency.shared.stepTemplates.removeItem",
+    "value": "Step 1: Remove any remaining [item] from your pet's reach."
+  },
+  {
+    "key": "emergency.shared.stepTemplates.determineAmount",
+    "value": "Step 2: Estimate amount your pet consumed and note time of ingestion."
+  },
+  {
+    "key": "emergency.shared.stepTemplates.doNotInduce",
+    "value": "Step: Do NOT induce vomiting unless instructed by a veterinarian."
+  },
+  {
+    "key": "emergency.shared.stepTemplates.contactPoison",
+    "value": "Step: Contact ASPCA Poison Control at (888) 426-4435."
+  },
+  {
+    "key": "emergency.shared.stepTemplates.callVetUrgent",
+    "value": "Step 2: Call Poison Control or Vet"
+  },
+  {
+    "key": "emergency.shared.tools.toxicChecker",
+    "value": "Toxic Food & Plant Checker"
+  },
+  {
+    "key": "emergency.shared.tools.dogCalorie",
+    "value": "Dog Calorie Calculator"
+  },
+  {
+    "key": "emergency.shared.tools.catBcs",
+    "value": "Cat BCS & Weight Tracker"
+  },
+  {
+    "key": "emergency.shared.tools.dogAge",
+    "value": "Dog Age Calculator"
+  },
+  {
+    "key": "emergency.shared.tools.catAge",
+    "value": "Cat Age Calculator"
+  },
+  {
+    "key": "emergency.shared.breadcrumb.home",
+    "value": "Home"
+  },
+  {
+    "key": "emergency.shared.breadcrumb.dogEmergency",
+    "value": "Dog Emergency"
+  },
+  {
+    "key": "emergency.shared.breadcrumb.catEmergency",
+    "value": "Cat Emergency"
+  },
+  {
+    "key": "emergency.ateAvocado.breadcrumbLabel",
+    "value": "Ate Avocado"
+  },
+  {
+    "key": "emergency.ateAvocado.meta.title",
+    "value": "My Dog Ate Avocado: What to Do Now | petsMetrics"
+  },
+  {
+    "key": "emergency.ateAvocado.meta.description",
+    "value": "Emergency guide: Avocado contains persin which is mildly toxic to dogs. The bigger danger is the pit causing intestinal blockage. Learn symptoms, risks, and when to call the vet."
+  },
+  {
+    "key": "emergency.ateAvocado.meta.keywords",
+    "value": "my dog ate avocado what to do, avocado toxicity dogs, dog ate avocado pit, persin poisoning dogs, avocado dangerous for dogs"
+  },
+  {
+    "key": "emergency.ateAvocado.banner.severityLabel",
+    "value": "MILDLY TOXIC — Pit Obstruction Is the Main Danger"
+  },
+  {
+    "key": "emergency.ateAvocado.banner.title",
+    "value": "My Dog Ate Avocado: What to Do Now"
+  },
+  {
+    "key": "emergency.ateAvocado.banner.subtitle",
+    "value": "Avocado flesh is mildly toxic to dogs due to persin, but the <strong>pit is the real danger</strong> — it can cause life-threatening intestinal blockage. Call your vet if the pit was swallowed."
+  },
+  {
+    "key": "emergency.ateAvocado.banner.cta",
+    "value": "Find Emergency Vet Near You"
+  },
+  {
+    "key": "emergency.ateAvocado.article.headline",
+    "value": "My Dog Ate Avocado: What to Do Now"
+  },
+  {
+    "key": "emergency.ateAvocado.article.description",
+    "value": "Emergency guide for avocado ingestion in dogs: persin toxicity, pit obstruction risk, and prevention."
+  },
+  {
+    "key": "emergency.ateAvocado.article.ogTitle",
+    "value": "My Dog Ate Avocado: What to Do Now | petsMetrics"
+  },
+  {
+    "key": "emergency.ateAvocado.article.ogDescription",
+    "value": "What to do if your dog eats avocado."
+  },
+  {
+    "key": "emergency.ateAvocado.riskAssessment.formHeader",
+    "value": "What Was Eaten"
+  },
+  {
+    "key": "emergency.ateAvocado.riskAssessment.rows.0.form",
+    "value": "Entire pit swallowed"
+  },
+  {
+    "key": "emergency.ateAvocado.riskAssessment.rows.0.amount",
+    "value": "Any size"
+  },
+  {
+    "key": "emergency.ateAvocado.riskAssessment.rows.0.risk",
+    "value": "HIGH"
+  },
+  {
+    "key": "emergency.ateAvocado.riskAssessment.rows.0.action",
+    "value": "🚨 Emergency vet NOW — obstruction risk"
+  },
+  {
+    "key": "emergency.ateAvocado.riskAssessment.rows.1.form",
+    "value": "Flesh only (large amount)"
+  },
+  {
+    "key": "emergency.ateAvocado.riskAssessment.rows.1.amount",
+    "value": "< 20 lbs"
+  },
+  {
+    "key": "emergency.ateAvocado.riskAssessment.rows.1.risk",
+    "value": "Moderate"
+  },
+  {
+    "key": "emergency.ateAvocado.riskAssessment.rows.1.action",
+    "value": "📞 Call vet — pancreatitis/persin risk"
+  },
+  {
+    "key": "emergency.ateAvocado.riskAssessment.rows.2.form",
+    "value": "Flesh only (small amount)"
+  },
+  {
+    "key": "emergency.ateAvocado.riskAssessment.rows.2.amount",
+    "value": "> 20 lbs"
+  },
+  {
+    "key": "emergency.ateAvocado.riskAssessment.rows.2.risk",
+    "value": "Low"
+  },
+  {
+    "key": "emergency.ateAvocado.riskAssessment.rows.2.action",
+    "value": "👀 Monitor for vomiting/diarrhea"
+  },
+  {
+    "key": "emergency.ateAvocado.steps.0.title",
+    "value": "Step 1: Determine What Was Ingested"
+  },
+  {
+    "key": "emergency.ateAvocado.steps.0.content",
+    "value": "Check if the pit was swallowed. The flesh alone causes mild GI upset, but the pit is a life-threatening obstruction hazard."
+  },
+  {
+    "key": "emergency.ateAvocado.steps.1.title",
+    "value": "Step 2: Do NOT Induce Vomiting If Pit Was Swallowed"
+  },
+  {
+    "key": "emergency.ateAvocado.steps.1.content",
+    "value": "⚠️ If your dog ate the pit, do NOT induce vomiting — it can lodge in the esophagus on the way back up, causing worse obstruction."
+  },
+  {
+    "key": "emergency.ateAvocado.steps.2.title",
+    "value": "Step 3: Watch for Guacamole Ingredients"
+  },
+  {
+    "key": "emergency.ateAvocado.steps.2.content",
+    "value": "If your dog ate guacamole, check the ingredients — onion, garlic, lime, and salt are additional toxins. Call ASPCA Poison Control at (888) 426-4435."
+  },
+  {
+    "key": "emergency.ateAvocado.steps.3.title",
+    "value": "Step 4: Monitor for Symptoms"
+  },
+  {
+    "key": "emergency.ateAvocado.steps.3.content",
+    "value": "Watch for vomiting, diarrhea, abdominal pain, difficulty defecating (sign of obstruction), and lethargy. Symptoms usually appear within 2-12 hours."
+  },
+  {
+    "key": "emergency.ateAvocado.science.content",
+    "value": "Avocado (Persea americana) contains persin, a fungicidal fatty acid derivative. Dogs are relatively resistant to persin compared to birds, rabbits, and horses, which can suffer fatal heart damage. In dogs, persin causes mild gastrointestinal irritation — vomiting, diarrhea, and abdominal pain. The greater clinical concern is the pit, which measures 3-5 cm and can cause intestinal obstruction, particularly in dogs under 20kg. The high fat content of the flesh (15-20%) also increases pancreatitis risk in predisposed breeds (ASPCA, 2023)."
+  },
+  {
+    "key": "emergency.ateAvocado.toxicityData.minimum",
+    "value": "Flesh low toxicity — mild GI upset at any amount"
+  },
+  {
+    "key": "emergency.ateAvocado.toxicityData.ld50",
+    "value": "LD50: Persin exact LD50 unknown in dogs; pit obstruction is the primary clinical concern, not systemic toxicity"
+  },
+  {
+    "key": "emergency.ateAvocado.toxicityData.source",
+    "value": "Source: ASPCA Animal Poison Control Center; Buoro et al., 1994"
+  },
+  {
+    "key": "emergency.ateAvocado.toxicityData.example",
+    "value": "Example: A 10kg dog eating avocado flesh will usually have mild GI signs; a swallowed pit of 3-5 cm can obstruct the small intestine."
+  },
+  {
+    "key": "emergency.ateAvocado.timeline.0.time",
+    "value": "2-6 hours"
+  },
+  {
+    "key": "emergency.ateAvocado.timeline.0.color",
+    "value": "yellow"
+  },
+  {
+    "key": "emergency.ateAvocado.timeline.0.description",
+    "value": "Mild GI signs from flesh: vomiting, diarrhea, abdominal pain"
+  },
+  {
+    "key": "emergency.ateAvocado.timeline.1.time",
+    "value": "6-24 hours"
+  },
+  {
+    "key": "emergency.ateAvocado.timeline.1.color",
+    "value": "orange"
+  },
+  {
+    "key": "emergency.ateAvocado.timeline.1.description",
+    "value": "Obstruction signs from pit: vomiting, straining to defecate, abdominal pain, lethargy"
+  },
+  {
+    "key": "emergency.ateAvocado.timeline.2.time",
+    "value": "24-48 hours"
+  },
+  {
+    "key": "emergency.ateAvocado.timeline.2.color",
+    "value": "orange"
+  },
+  {
+    "key": "emergency.ateAvocado.timeline.2.description",
+    "value": "Risk window: untreated obstruction can progress to intestinal perforation or necrosis"
+  },
+  {
+    "key": "emergency.ateAvocado.faqs.0.question",
+    "value": "Are avocados toxic to dogs?"
+  },
+  {
+    "key": "emergency.ateAvocado.faqs.0.answer",
+    "value": "Avocado contains persin, a fungicidal toxin that is mildly toxic to dogs. The flesh causes mild GI upset in most dogs, but the pit (seed) poses a far greater danger as it can cause life-threatening intestinal obstruction. The skin and leaves also contain higher persin concentrations than the flesh."
+  },
+  {
+    "key": "emergency.ateAvocado.faqs.1.question",
+    "value": "What should I do if my dog ate an avocado pit?"
+  },
+  {
+    "key": "emergency.ateAvocado.faqs.1.answer",
+    "value": "If your dog swallowed an avocado pit, contact your vet immediately. The pit is large enough to cause intestinal blockage, especially in small and medium dogs. Do NOT induce vomiting — the pit can lodge in the esophagus on the way back up. Your vet will X-ray to locate the pit and determine if surgical removal is needed."
+  },
+  {
+    "key": "emergency.ateAvocado.faqs.2.question",
+    "value": "How much avocado is dangerous for dogs?"
+  },
+  {
+    "key": "emergency.ateAvocado.faqs.2.answer",
+    "value": "The flesh has low toxicity — most dogs experience only mild vomiting or diarrhea from eating avocado flesh. However, the pit is a choking hazard and obstruction risk regardless of amount. The leaves and skin contain higher persin levels and should be avoided. Pancreatitis risk increases with large amounts due to high fat content."
+  },
+  {
+    "key": "emergency.ateAvocado.faqs.3.question",
+    "value": "Can dogs eat guacamole?"
+  },
+  {
+    "key": "emergency.ateAvocado.faqs.3.answer",
+    "value": "No, guacamole is especially dangerous for dogs because it typically contains onion, garlic, lime juice, and salt — all of which are toxic to dogs. Onion and garlic cause hemolytic anemia, salt can cause ion poisoning, and lime peel contains essential oils. Call your vet immediately if your dog ate guacamole."
+  },
+  {
+    "key": "emergency.ateAvocado.vetDecision.emergency.0",
+    "value": "Pit swallowed — unable to vomit it up"
+  },
+  {
+    "key": "emergency.ateAvocado.vetDecision.emergency.1",
+    "value": "Complete intestinal obstruction (no stool, persistent vomiting)"
+  },
+  {
+    "key": "emergency.ateAvocado.vetDecision.emergency.2",
+    "value": "Severe abdominal pain with distended belly"
+  },
+  {
+    "key": "emergency.ateAvocado.vetDecision.emergency.3",
+    "value": "Collapse or unresponsiveness"
+  },
+  {
+    "key": "emergency.ateAvocado.vetDecision.urgent.0",
+    "value": "Pit swallowed in a small dog (< 15 lbs)"
+  },
+  {
+    "key": "emergency.ateAvocado.vetDecision.urgent.1",
+    "value": "Large amount of flesh eaten (pancreatitis risk)"
+  },
+  {
+    "key": "emergency.ateAvocado.vetDecision.urgent.2",
+    "value": "Persistent vomiting or diarrhea beyond 12 hours"
+  },
+  {
+    "key": "emergency.ateAvocado.vetDecision.urgent.3",
+    "value": "Signs of guacamole ingestion (onion/garlic)"
+  },
+  {
+    "key": "emergency.ateAvocado.vetDecision.monitor.0",
+    "value": "Small amount of flesh eaten with no symptoms"
+  },
+  {
+    "key": "emergency.ateAvocado.vetDecision.monitor.1",
+    "value": "Mild single episode of vomiting or diarrhea"
+  },
+  {
+    "key": "emergency.ateAvocado.vetDecision.monitor.2",
+    "value": "Alert, eating, and drinking normally"
+  },
+  {
+    "key": "emergency.ateAvocado.relatedTools.0.name",
+    "value": "Toxic Food & Plant Checker"
+  },
+  {
+    "key": "emergency.ateAvocado.relatedTools.0.url",
+    "value": "/shared/toxic-checker/"
+  },
+  {
+    "key": "emergency.ateAvocado.relatedTools.1.name",
+    "value": "Dog Calorie Calculator"
+  },
+  {
+    "key": "emergency.ateAvocado.relatedTools.1.url",
+    "value": "/dog/calorie-calculator/"
+  },
+  {
+    "key": "emergency.ateCaffeine.breadcrumbLabel",
+    "value": "Ate Caffeine"
+  },
+  {
+    "key": "emergency.ateCaffeine.meta.title",
+    "value": "My Dog Ate Caffeine Pills: Emergency Guide | petsMetrics"
+  },
+  {
+    "key": "emergency.ateCaffeine.meta.description",
+    "value": "Emergency guide: Caffeine is toxic to dogs at 140mg/kg. Learn symptoms (hyperactivity, arrhythmia, seizures), risk assessment, and immediate steps. ASPCA Poison Control: (888) 426-4435."
+  },
+  {
+    "key": "emergency.ateCaffeine.meta.keywords",
+    "value": "my dog ate caffeine pills, caffeine toxicity dogs, dog ate energy drink, caffeine poisoning dogs, what to do if dog eats caffeine"
+  },
+  {
+    "key": "emergency.ateCaffeine.banner.severityLabel",
+    "value": "TOXIC — Rapid Action Required"
+  },
+  {
+    "key": "emergency.ateCaffeine.banner.title",
+    "value": "My Dog Ate Caffeine Pills: What to Do Now"
+  },
+  {
+    "key": "emergency.ateCaffeine.banner.subtitle",
+    "value": "Caffeine is a methylxanthine toxic to dogs at 140mg/kg. Even 1-2 pills (200mg each) can cause seizures in small dogs. Call ASPCA Poison Control at <strong>(888) 426-4435</strong> immediately."
+  },
+  {
+    "key": "emergency.ateCaffeine.banner.cta",
+    "value": "Find Emergency Vet Near You"
+  },
+  {
+    "key": "emergency.ateCaffeine.article.headline",
+    "value": "My Dog Ate Caffeine Pills: Emergency Guide"
+  },
+  {
+    "key": "emergency.ateCaffeine.article.description",
+    "value": "Emergency guide for caffeine toxicity in dogs: symptoms, dosing risk, and treatment."
+  },
+  {
+    "key": "emergency.ateCaffeine.article.ogTitle",
+    "value": "My Dog Ate Caffeine Pills: Emergency Guide | petsMetrics"
+  },
+  {
+    "key": "emergency.ateCaffeine.article.ogDescription",
+    "value": "What to do if your dog eats caffeine pills."
+  },
+  {
+    "key": "emergency.ateCaffeine.riskAssessment.formHeader",
+    "value": "Caffeine Source"
+  },
+  {
+    "key": "emergency.ateCaffeine.riskAssessment.rows.0.form",
+    "value": "Pills/tablets (200mg+)"
+  },
+  {
+    "key": "emergency.ateCaffeine.riskAssessment.rows.0.amount",
+    "value": "Any amount"
+  },
+  {
+    "key": "emergency.ateCaffeine.riskAssessment.rows.0.risk",
+    "value": "HIGH"
+  },
+  {
+    "key": "emergency.ateCaffeine.riskAssessment.rows.0.action",
+    "value": "🚨 Emergency vet NOW for small dogs"
+  },
+  {
+    "key": "emergency.ateCaffeine.riskAssessment.rows.1.form",
+    "value": "Energy drink (500ml)"
+  },
+  {
+    "key": "emergency.ateCaffeine.riskAssessment.rows.1.amount",
+    "value": "150-300mg caffeine"
+  },
+  {
+    "key": "emergency.ateCaffeine.riskAssessment.rows.1.risk",
+    "value": "Moderate"
+  },
+  {
+    "key": "emergency.ateCaffeine.riskAssessment.rows.1.action",
+    "value": "📞 Call vet or poison control immediately"
+  },
+  {
+    "key": "emergency.ateCaffeine.riskAssessment.rows.2.form",
+    "value": "Brewed coffee"
+  },
+  {
+    "key": "emergency.ateCaffeine.riskAssessment.rows.2.amount",
+    "value": "1-2 cups"
+  },
+  {
+    "key": "emergency.ateCaffeine.riskAssessment.rows.2.risk",
+    "value": "Low"
+  },
+  {
+    "key": "emergency.ateCaffeine.riskAssessment.rows.2.action",
+    "value": "👀 Monitor for hyperactivity"
+  },
+  {
+    "key": "emergency.ateCaffeine.steps.0.title",
+    "value": "Step 1: Act Fast — Caffeine Absorbs Quickly"
+  },
+  {
+    "key": "emergency.ateCaffeine.steps.0.content",
+    "value": "Remove any remaining caffeine source. Caffeine is absorbed within 30-60 minutes — time is critical for decontamination."
+  },
+  {
+    "key": "emergency.ateCaffeine.steps.1.title",
+    "value": "Step 2: Call Poison Control or Vet Immediately"
+  },
+  {
+    "key": "emergency.ateCaffeine.steps.1.content",
+    "value": "📞 <strong>ASPCA Poison Control:</strong> (888) 426-4435. Have the product label ready to report caffeine content in mg."
+  },
+  {
+    "key": "emergency.ateCaffeine.steps.2.title",
+    "value": "Step 3: Do NOT Induce Vomiting If Symptoms Present"
+  },
+  {
+    "key": "emergency.ateCaffeine.steps.2.content",
+    "value": "⚠️ If your dog shows trembling, hyperactivity, or seizures, inducing vomiting risks aspiration. Only induce if instructed by a professional AND your dog is asymptomatic within 30 minutes of ingestion."
+  },
+  {
+    "key": "emergency.ateCaffeine.steps.3.title",
+    "value": "Step 4: Monitor Heart and Breathing"
+  },
+  {
+    "key": "emergency.ateCaffeine.steps.3.content",
+    "value": "Watch for rapid breathing, restlessness, and elevated heart rate. Caffeine causes cardiac arrhythmias — if your dog collapses or has difficulty breathing, go to emergency vet NOW."
+  },
+  {
+    "key": "emergency.ateCaffeine.science.content",
+    "value": "Caffeine (1,3,7-trimethylxanthine) is an adenosine receptor antagonist and phosphodiesterase inhibitor. In dogs, it causes central nervous system stimulation, cardiac muscle contraction, and smooth muscle relaxation. Dogs metabolize caffeine much slower than humans — half-life in dogs is 4.5 hours vs 3 hours in humans. This prolongs toxic effects. At high doses, caffeine causes excessive catecholamine release leading to tachycardia, fibrillation, and potentially death (ASPCA, 2023)."
+  },
+  {
+    "key": "emergency.ateCaffeine.toxicityData.minimum",
+    "value": "Mild symptoms at 20mg/kg body weight"
+  },
+  {
+    "key": "emergency.ateCaffeine.toxicityData.ld50",
+    "value": "LD50: ~140mg/kg body weight"
+  },
+  {
+    "key": "emergency.ateCaffeine.toxicityData.source",
+    "value": "Source: ASPCA Animal Poison Control Center"
+  },
+  {
+    "key": "emergency.ateCaffeine.toxicityData.example",
+    "value": "Example: 1-2 caffeine pills (200mg each) can cause serious symptoms in a small dog under 10kg."
+  },
+  {
+    "key": "emergency.ateCaffeine.timeline.0.time",
+    "value": "1-2 hours"
+  },
+  {
+    "key": "emergency.ateCaffeine.timeline.0.color",
+    "value": "orange"
+  },
+  {
+    "key": "emergency.ateCaffeine.timeline.0.description",
+    "value": "Early signs: restlessness, hyperactivity, vomiting, elevated heart rate"
+  },
+  {
+    "key": "emergency.ateCaffeine.timeline.1.time",
+    "value": "2-6 hours"
+  },
+  {
+    "key": "emergency.ateCaffeine.timeline.1.color",
+    "value": "orange"
+  },
+  {
+    "key": "emergency.ateCaffeine.timeline.1.description",
+    "value": "Severe signs: tremors, seizures, cardiac arrhythmias, collapse"
+  },
+  {
+    "key": "emergency.ateCaffeine.timeline.2.time",
+    "value": "12-48 hours"
+  },
+  {
+    "key": "emergency.ateCaffeine.timeline.2.color",
+    "value": "green"
+  },
+  {
+    "key": "emergency.ateCaffeine.timeline.2.description",
+    "value": "Resolution with treatment: hospitalization typically required 24-48 hours; good prognosis with early care"
+  },
+  {
+    "key": "emergency.ateCaffeine.faqs.0.question",
+    "value": "How much caffeine is toxic to dogs?"
+  },
+  {
+    "key": "emergency.ateCaffeine.faqs.0.answer",
+    "value": "Mild symptoms appear at 20mg/kg of body weight. Severe toxicity occurs at 60mg/kg. The lethal dose (LD50) is approximately 140mg/kg. For a 20kg dog, this equals roughly 2,800mg of caffeine — about 28 cups of coffee. However, even small amounts (1-2 caffeine pills of 200mg each) can cause serious symptoms in small dogs."
+  },
+  {
+    "key": "emergency.ateCaffeine.faqs.1.question",
+    "value": "What are the symptoms of caffeine poisoning in dogs?"
+  },
+  {
+    "key": "emergency.ateCaffeine.faqs.1.answer",
+    "value": "Symptoms appear within 1-2 hours and include: restlessness, hyperactivity, vomiting, elevated heart rate, tremors, seizures, and collapse. Caffeine is absorbed rapidly and affects the central nervous system and cardiovascular system. Severe cases cause cardiac arrhythmias that can be fatal."
+  },
+  {
+    "key": "emergency.ateCaffeine.faqs.2.question",
+    "value": "Should I induce vomiting if my dog ate caffeine?"
+  },
+  {
+    "key": "emergency.ateCaffeine.faqs.2.answer",
+    "value": "Inducing vomiting may be recommended if ingestion occurred within 30 minutes and your dog is alert. However, caffeine is rapidly absorbed and can cause seizures — never induce vomiting if your dog shows any neurological symptoms. Call ASPCA Poison Control at (888) 426-4435 for guidance."
+  },
+  {
+    "key": "emergency.ateCaffeine.faqs.3.question",
+    "value": "What is the treatment for caffeine poisoning in dogs?"
+  },
+  {
+    "key": "emergency.ateCaffeine.faqs.3.answer",
+    "value": "Treatment includes: induced vomiting (if early), activated charcoal to reduce absorption, IV fluids for elimination, anti-arrhythmic medications for heart issues, anti-seizure medications, and temperature regulation. Hospitalization is typically required for 24-48 hours. Prognosis is good with early treatment."
+  },
+  {
+    "key": "emergency.ateCaffeine.vetDecision.emergency.0",
+    "value": "Seizures or convulsions"
+  },
+  {
+    "key": "emergency.ateCaffeine.vetDecision.emergency.1",
+    "value": "Loss of consciousness or collapse"
+  },
+  {
+    "key": "emergency.ateCaffeine.vetDecision.emergency.2",
+    "value": "Severe cardiac arrhythmia with weakness"
+  },
+  {
+    "key": "emergency.ateCaffeine.vetDecision.emergency.3",
+    "value": "Inability to stand with elevated heart rate"
+  },
+  {
+    "key": "emergency.ateCaffeine.vetDecision.urgent.0",
+    "value": "Persistent tremors or hyperactivity"
+  },
+  {
+    "key": "emergency.ateCaffeine.vetDecision.urgent.1",
+    "value": "Multiple episodes of vomiting"
+  },
+  {
+    "key": "emergency.ateCaffeine.vetDecision.urgent.2",
+    "value": "Heart rate persistently > 160 bpm"
+  },
+  {
+    "key": "emergency.ateCaffeine.vetDecision.urgent.3",
+    "value": "Restlessness with elevated breathing"
+  },
+  {
+    "key": "emergency.ateCaffeine.vetDecision.monitor.0",
+    "value": "Mild restlessness but responsive"
+  },
+  {
+    "key": "emergency.ateCaffeine.vetDecision.monitor.1",
+    "value": "Single episode of vomiting"
+  },
+  {
+    "key": "emergency.ateCaffeine.vetDecision.monitor.2",
+    "value": "Small amount ingested (< 20mg/kg)"
+  },
+  {
+    "key": "emergency.ateCaffeine.vetDecision.monitor.3",
+    "value": "Alert and ambulatory after 2 hours"
+  },
+  {
+    "key": "emergency.ateCaffeine.relatedTools.0.name",
+    "value": "Toxic Food & Plant Checker"
+  },
+  {
+    "key": "emergency.ateCaffeine.relatedTools.0.url",
+    "value": "/shared/toxic-checker/"
+  },
+  {
+    "key": "emergency.ateCaffeine.relatedTools.1.name",
+    "value": "Dog Calorie Calculator"
+  },
+  {
+    "key": "emergency.ateCaffeine.relatedTools.1.url",
+    "value": "/dog/calorie-calculator/"
+  },
+  {
+    "key": "emergency.ateAlcohol.breadcrumbLabel",
+    "value": "Ate Alcohol"
+  },
+  {
+    "key": "emergency.ateAlcohol.meta.title",
+    "value": "My Dog Drank Alcohol: Emergency Guide | petsMetrics"
+  },
+  {
+    "key": "emergency.ateAlcohol.meta.description",
+    "value": "Emergency guide: Alcohol is highly toxic to dogs. Learn symptoms (ataxia, depression, metabolic acidosis), risk by beverage type, and immediate steps. ASPCA Poison Control: (888) 426-4435."
+  },
+  {
+    "key": "emergency.ateAlcohol.meta.keywords",
+    "value": "my dog drank alcohol, alcohol toxicity dogs, dog drank beer, dog ate wine, dog ethanol poisoning, alcohol dangerous for dogs"
+  },
+  {
+    "key": "emergency.ateAlcohol.banner.severityLabel",
+    "value": "TOXIC — CNS Depressant"
+  },
+  {
+    "key": "emergency.ateAlcohol.banner.title",
+    "value": "My Dog Drank Alcohol: Emergency Guide"
+  },
+  {
+    "key": "emergency.ateAlcohol.banner.subtitle",
+    "value": "Alcohol (ethanol) is a potent CNS depressant in dogs. Even small amounts cause ataxia, depression, and metabolic acidosis. Call ASPCA Poison Control at <strong>(888) 426-4435</strong> immediately."
+  },
+  {
+    "key": "emergency.ateAlcohol.banner.cta",
+    "value": "Find Emergency Vet Near You"
+  },
+  {
+    "key": "emergency.ateAlcohol.article.headline",
+    "value": "My Dog Drank Alcohol: Emergency Guide"
+  },
+  {
+    "key": "emergency.ateAlcohol.article.description",
+    "value": "Emergency guide for alcohol toxicity in dogs: symptoms, risk assessment, and treatment."
+  },
+  {
+    "key": "emergency.ateAlcohol.article.ogTitle",
+    "value": "My Dog Drank Alcohol: Emergency Guide | petsMetrics"
+  },
+  {
+    "key": "emergency.ateAlcohol.article.ogDescription",
+    "value": "What to do if your dog drinks alcohol."
+  },
+  {
+    "key": "emergency.ateAlcohol.riskAssessment.formHeader",
+    "value": "Beverage Type"
+  },
+  {
+    "key": "emergency.ateAlcohol.riskAssessment.rows.0.form",
+    "value": "Liquor (40%+)"
+  },
+  {
+    "key": "emergency.ateAlcohol.riskAssessment.rows.0.amount",
+    "value": "> 1 oz"
+  },
+  {
+    "key": "emergency.ateAlcohol.riskAssessment.rows.0.risk",
+    "value": "CRITICAL"
+  },
+  {
+    "key": "emergency.ateAlcohol.riskAssessment.rows.0.action",
+    "value": "🚨 Emergency vet NOW"
+  },
+  {
+    "key": "emergency.ateAlcohol.riskAssessment.rows.1.form",
+    "value": "Wine/Beer (5-15%)"
+  },
+  {
+    "key": "emergency.ateAlcohol.riskAssessment.rows.1.amount",
+    "value": "> 4 oz"
+  },
+  {
+    "key": "emergency.ateAlcohol.riskAssessment.rows.1.risk",
+    "value": "High"
+  },
+  {
+    "key": "emergency.ateAlcohol.riskAssessment.rows.1.action",
+    "value": "📞 Call vet immediately"
+  },
+  {
+    "key": "emergency.ateAlcohol.riskAssessment.rows.2.form",
+    "value": "Any alcohol"
+  },
+  {
+    "key": "emergency.ateAlcohol.riskAssessment.rows.2.amount",
+    "value": "< 0.5 oz"
+  },
+  {
+    "key": "emergency.ateAlcohol.riskAssessment.rows.2.risk",
+    "value": "Moderate"
+  },
+  {
+    "key": "emergency.ateAlcohol.riskAssessment.rows.2.action",
+    "value": "👀 Monitor, call vet for advice"
+  },
+  {
+    "key": "emergency.ateAlcohol.steps.0.title",
+    "value": "Step 1: Remove All Alcohol Immediately"
+  },
+  {
+    "key": "emergency.ateAlcohol.steps.0.content",
+    "value": "Take away any remaining beverages, food containing alcohol, or raw bread dough. Clean up any spills — dogs may lick floors."
+  },
+  {
+    "key": "emergency.ateAlcohol.steps.1.title",
+    "value": "Step 2: Assess Your Dog's Neurological State"
+  },
+  {
+    "key": "emergency.ateAlcohol.steps.1.content",
+    "value": "Check: Can your dog walk normally? Are they alert or depressed? Vomiting? If your dog cannot stand or is unconscious — go to emergency vet NOW."
+  },
+  {
+    "key": "emergency.ateAlcohol.steps.2.title",
+    "value": "Step 3: Call Poison Control"
+  },
+  {
+    "key": "emergency.ateAlcohol.steps.2.content",
+    "value": "📞 <strong>ASPCA Poison Control:</strong> (888) 426-4435. Calculate approximate alcohol consumed in grams: volume (mL) × alcohol% × 0.789 = grams of ethanol."
+  },
+  {
+    "key": "emergency.ateAlcohol.steps.3.title",
+    "value": "Step 4: Keep Your Dog Safe"
+  },
+  {
+    "key": "emergency.ateAlcohol.steps.3.content",
+    "value": "Prevent falls due to ataxia. Keep your dog warm — alcohol causes vasodilation and hypothermia. Do NOT leave them unattended. Monitor breathing and consciousness every 15 minutes."
+  },
+  {
+    "key": "emergency.ateAlcohol.science.content",
+    "value": "Ethanol (C2H5OH) is absorbed rapidly from the GI tract and crosses the blood-brain barrier within minutes. Dogs lack efficient alcohol dehydrogenase enzymes, making them 3-5 times more sensitive than humans. Ethanol inhibits NMDA receptors and enhances GABA activity, causing CNS depression, respiratory depression, and metabolic acidosis. The lethal dose in dogs is 5.5 mL/kg of pure ethanol. Raw bread dough is doubly dangerous — yeast fermentation continues in the warm stomach, producing more alcohol and expanding the dough (ASPCA, 2023)."
+  },
+  {
+    "key": "emergency.ateAlcohol.toxicityData.minimum",
+    "value": "As little as 1.5 mL/kg of pure ethanol can cause noticeable intoxication"
+  },
+  {
+    "key": "emergency.ateAlcohol.toxicityData.ld50",
+    "value": "LD50: ~5.5 mL/kg of pure ethanol"
+  },
+  {
+    "key": "emergency.ateAlcohol.toxicityData.source",
+    "value": "Source: Merck Veterinary Manual; ASPCA Animal Poison Control Center"
+  },
+  {
+    "key": "emergency.ateAlcohol.toxicityData.example",
+    "value": "Example: A single 12oz beer (5% ABV = 17g ethanol) can cause severe intoxication in a small dog under 10kg."
+  },
+  {
+    "key": "emergency.ateAlcohol.timeline.0.time",
+    "value": "30-90 mins"
+  },
+  {
+    "key": "emergency.ateAlcohol.timeline.0.color",
+    "value": "orange"
+  },
+  {
+    "key": "emergency.ateAlcohol.timeline.0.description",
+    "value": "Early signs: disorientation, ataxia (wobbly gait), vomiting, depression"
+  },
+  {
+    "key": "emergency.ateAlcohol.timeline.1.time",
+    "value": "2-6 hours"
+  },
+  {
+    "key": "emergency.ateAlcohol.timeline.1.color",
+    "value": "orange"
+  },
+  {
+    "key": "emergency.ateAlcohol.timeline.1.description",
+    "value": "Severe signs: slowed breathing, metabolic acidosis, hypothermia, hypoglycemia (especially small dogs/puppies)"
+  },
+  {
+    "key": "emergency.ateAlcohol.timeline.2.time",
+    "value": "4-24 hours"
+  },
+  {
+    "key": "emergency.ateAlcohol.timeline.2.color",
+    "value": "green"
+  },
+  {
+    "key": "emergency.ateAlcohol.timeline.2.description",
+    "value": "Resolution with supportive care: IV fluids, glucose, blood pH monitoring; unmonitored cases risk coma or death"
+  },
+  {
+    "key": "emergency.ateAlcohol.faqs.0.question",
+    "value": "Is alcohol toxic to dogs?"
+  },
+  {
+    "key": "emergency.ateAlcohol.faqs.0.answer",
+    "value": "Yes, alcohol (ethanol) is highly toxic to dogs. The lethal dose is 5.5 mL/kg of pure ethanol. Dogs are much more sensitive than humans because they lack efficient alcohol dehydrogenase enzymes. Even small amounts cause ataxia, depression, and metabolic acidosis. Beer, wine, liquor, and raw bread dough all pose serious risks."
+  },
+  {
+    "key": "emergency.ateAlcohol.faqs.1.question",
+    "value": "What are the symptoms of alcohol poisoning in dogs?"
+  },
+  {
+    "key": "emergency.ateAlcohol.faqs.1.answer",
+    "value": "Symptoms appear within 30-90 minutes: disorientation, loss of coordination (ataxia), vomiting, depression, slowed breathing, metabolic acidosis, and in severe cases, coma and death. Hypoglycemia (low blood sugar) is a dangerous complication, especially in small dogs and puppies."
+  },
+  {
+    "key": "emergency.ateAlcohol.faqs.2.question",
+    "value": "Can beer kill a dog?"
+  },
+  {
+    "key": "emergency.ateAlcohol.faqs.2.answer",
+    "value": "Yes, beer can kill a dog. A single 12oz beer (5% alcohol = 17g ethanol) can cause severe intoxication in a small dog (under 10kg). Dogs metabolize alcohol much slower than humans, so effects accumulate. Carbonation also speeds absorption. Never intentionally give alcohol to dogs."
+  },
+  {
+    "key": "emergency.ateAlcohol.faqs.3.question",
+    "value": "What should I do if my dog accidentally drank alcohol?"
+  },
+  {
+    "key": "emergency.ateAlcohol.faqs.3.answer",
+    "value": "Call ASPCA Poison Control at (888) 426-4435 or your vet immediately. Do NOT induce vomiting if your dog shows neurological symptoms (depression, ataxia). Remove any remaining alcohol. Keep your dog warm and safe from falls. Your vet may need to administer IV fluids, glucose, and monitor blood pH."
+  },
+  {
+    "key": "emergency.ateAlcohol.vetDecision.emergency.0",
+    "value": "Unconsciousness or inability to be roused"
+  },
+  {
+    "key": "emergency.ateAlcohol.vetDecision.emergency.1",
+    "value": "Severe ataxia with inability to stand"
+  },
+  {
+    "key": "emergency.ateAlcohol.vetDecision.emergency.2",
+    "value": "Slowed or irregular breathing"
+  },
+  {
+    "key": "emergency.ateAlcohol.vetDecision.emergency.3",
+    "value": "Hypothermia (low body temperature)"
+  },
+  {
+    "key": "emergency.ateAlcohol.vetDecision.urgent.0",
+    "value": "Persistent disorientation and depression"
+  },
+  {
+    "key": "emergency.ateAlcohol.vetDecision.urgent.1",
+    "value": "Repeated vomiting with lethargy"
+  },
+  {
+    "key": "emergency.ateAlcohol.vetDecision.urgent.2",
+    "value": "Known ingestion of raw bread dough"
+  },
+  {
+    "key": "emergency.ateAlcohol.vetDecision.urgent.3",
+    "value": "Hypoglycemia symptoms (weakness, tremors, seizures)"
+  },
+  {
+    "key": "emergency.ateAlcohol.vetDecision.monitor.0",
+    "value": "Mild wobbliness only"
+  },
+  {
+    "key": "emergency.ateAlcohol.vetDecision.monitor.1",
+    "value": "Very small amount ingested (< 0.5 oz)"
+  },
+  {
+    "key": "emergency.ateAlcohol.vetDecision.monitor.2",
+    "value": "Alert and walking normally after 1 hour"
+  },
+  {
+    "key": "emergency.ateAlcohol.vetDecision.monitor.3",
+    "value": "No vomiting or depression"
+  },
+  {
+    "key": "emergency.ateAlcohol.relatedTools.0.name",
+    "value": "Toxic Food & Plant Checker"
+  },
+  {
+    "key": "emergency.ateAlcohol.relatedTools.0.url",
+    "value": "/shared/toxic-checker/"
+  },
+  {
+    "key": "emergency.ateAlcohol.relatedTools.1.name",
+    "value": "Dog Calorie Calculator"
+  },
+  {
+    "key": "emergency.ateAlcohol.relatedTools.1.url",
+    "value": "/dog/calorie-calculator/"
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.breadcrumbLabel",
+    "value": "Ate Macadamia Nuts"
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.meta.title",
+    "value": "My Dog Ate Macadamia Nuts: What to Do Now | petsMetrics"
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.meta.description",
+    "value": "Emergency guide: Macadamia nuts are toxic to dogs. Learn symptoms (weakness, vomiting, tremors), risk assessment by dog weight, and immediate steps to take. ASPCA Poison Control: (888) 426-4435."
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.meta.keywords",
+    "value": "my dog ate macadamia nuts, macadamia nut toxicity dogs, dog poisoned by macadamia, what to do if dog eats macadamia"
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.banner.severityLabel",
+    "value": "DANGEROUS — Veterinary Treatment Often Required"
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.banner.title",
+    "value": "My Dog Ate Macadamia Nuts: What to Do Now"
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.banner.subtitle",
+    "value": "Macadamia nuts are uniquely toxic to dogs — the toxin is unknown but causes hind leg weakness, tremors, and high fever. Call ASPCA Poison Control at (888) 426-4435 for immediate guidance."
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.banner.cta",
+    "value": "Find Emergency Vet Near You"
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.article.headline",
+    "value": "My Dog Ate Macadamia Nuts: What to Do Now"
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.article.description",
+    "value": "Emergency guide for macadamia nut toxicity in dogs: symptoms, treatment, and prevention."
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.article.ogTitle",
+    "value": "My Dog Ate Macadamia Nuts: Emergency Guide | petsMetrics"
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.article.ogDescription",
+    "value": "What to do if your dog eats macadamia nuts."
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.riskAssessment.rows.0.weight",
+    "value": "< 10 lbs (4.5 kg)"
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.riskAssessment.rows.0.amount",
+    "value": "Any amount"
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.riskAssessment.rows.0.risk",
+    "value": "High"
+  }
+]

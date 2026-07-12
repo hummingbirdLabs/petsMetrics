@@ -196,7 +196,9 @@
     "privacy": {
       "heading": "我们如何保护您的隐私",
       "body": "所有宠物档案、计算器输入和结果都仅存储在您的浏览器本地存储中。数据绝不会上传到我们的服务器。我们不需要账户、不收集个人信息、不跟踪您的活动。每次计算都在您的设备上进行 — 您的宠物数据只属于您。"
-    }
+    },
+    "faqHeading": "常见问题",
+    "sourceLabel": "来源："
   },
   "nav": {
     "home": "首页",
@@ -1034,6 +1036,16 @@
     "shareCta": {
       "title": "{item} 对宠物的安全性为{level} — 查看毒性检测器！",
       "sharePrompt": "{item} 对宠物安全吗？即时查询 200+ 种物品 → {url} #宠物安全 #petsMetrics"
+    },
+    "levelLabels": {
+      "toxic": "有毒",
+      "caution": "注意",
+      "safe": "安全"
+    },
+    "speciesLabels": {
+      "dog": "🐕 狗狗",
+      "cat": "🐱 猫咪",
+      "both": "🐕 狗狗 & 🐱 猫咪"
     }
   },
   "toxicLanding": {
@@ -1065,7 +1077,12 @@
       "heading": "检查另一种食物",
       "description": "想知道其他食物或植物是否安全？搜索我们包含 200+ 物品的完整数据库，查看您的宠物是否可以安全食用。数据来自动物毒物控制中心。",
       "button": "打开完整毒性检查器 →"
-    }
+    },
+    "headingDog": "狗狗可以吃{item}吗？— {level}",
+    "headingCat": "{item}对猫咪有毒吗？— {level}",
+    "sourceAttribution": "来源：{source}。由 petsMetrics 验证。",
+    "faqHeading": "常见问题",
+    "dataCitation": "主要数据来源和引用：ASPCA 动物毒物控制中心、AVMA、AAFP、AKC。"
   },
   "euTravel": {
     "errors": {
@@ -1278,13 +1295,13 @@
           {
             "form": "吞下整个果核",
             "amount": "任何体型",
-            "risk": "HIGH",
+            "risk": "高",
             "action": "🚨 立即前往急诊兽医——梗阻风险"
           },
           {
             "form": "仅果肉（大量）",
             "amount": "< 20 磅",
-            "risk": "Moderate",
+            "risk": "中等",
             "action": "📞 致电兽医——胰腺炎/persin 风险"
           },
           {
@@ -1412,13 +1429,13 @@
           {
             "form": "药丸/片剂（200mg+）",
             "amount": "任何量",
-            "risk": "HIGH",
+            "risk": "高",
             "action": "🚨 小型狗立即前往急诊兽医"
           },
           {
             "form": "能量饮料（500ml）",
             "amount": "150-300mg 咖啡因",
-            "risk": "Moderate",
+            "risk": "中等",
             "action": "📞 立即致电兽医或毒物控制中心"
           },
           {
@@ -1547,19 +1564,19 @@
           {
             "form": "烈酒（40%+）",
             "amount": "> 1 盎司",
-            "risk": "CRITICAL",
+            "risk": "危急",
             "action": "🚨 立即前往急诊兽医"
           },
           {
             "form": "葡萄酒/啤酒（5-15%）",
             "amount": "> 4 盎司",
-            "risk": "High",
+            "risk": "高",
             "action": "📞 立即致电兽医"
           },
           {
             "form": "任何酒精",
             "amount": "< 0.5 盎司",
-            "risk": "Moderate",
+            "risk": "中等",
             "action": "👀 监控，致电兽医咨询"
           }
         ]
@@ -1827,13 +1844,13 @@
           {
             "weight": "未知野生蘑菇",
             "amount": "任何量",
-            "risk": "CRITICAL",
+            "risk": "危急",
             "action": "🚨 立即送急诊 — 不要等待"
           },
           {
             "weight": "院子发现的带帽柄蘑菇",
             "amount": "可能含鹅膏毒素",
-            "risk": "High",
+            "risk": "高",
             "action": "🚨 1 小时内送医 — 诱导呕吐"
           },
           {
@@ -1969,19 +1986,19 @@
           {
             "weight": "大骨头（牛肉、火腿）",
             "amount": "多块",
-            "risk": "High",
+            "risk": "高",
             "action": "🚨 立即送急诊 — 碎裂风险"
           },
           {
             "weight": "禽骨（鸡、火鸡）",
             "amount": "任何量",
-            "risk": "High",
+            "risk": "高",
             "action": "🚨 1 小时内送医 — 中空骨头会碎裂"
           },
           {
             "weight": "小骨头（肋骨）",
             "amount": "1-2 块",
-            "risk": "Moderate",
+            "risk": "中等",
             "action": "📞 致电兽医 X 光评估"
           }
         ]
@@ -2112,13 +2129,13 @@
           {
             "weight": "> 3 厘米宽",
             "amount": "任何形状",
-            "risk": "High",
+            "risk": "高",
             "action": "🚨 立即送急诊 — 可能梗阻"
           },
           {
             "weight": "2-3 厘米宽",
             "amount": "不规则或尖刺",
-            "risk": "Moderate",
+            "risk": "中等",
             "action": "📞 致电兽医 X 光评估"
           },
           {
@@ -2250,19 +2267,19 @@
           {
             "weight": "NSAIDs（布洛芬、萘普生）",
             "amount": "> 50 毫克/千克",
-            "risk": "High",
+            "risk": "高",
             "action": "🚨 立即送急诊 — 胃肠溃疡、肾衰竭"
           },
           {
             "weight": "对乙酰氨基酚（泰诺）",
             "amount": "> 75 毫克/千克",
-            "risk": "High",
+            "risk": "高",
             "action": "🚨 立即送急诊 — 肝衰竭"
           },
           {
             "weight": "维生素 D / 钙补充剂",
             "amount": "任何量",
-            "risk": "Moderate",
+            "risk": "中等",
             "action": "📞 立即致电兽医 — 高钙血症风险"
           }
         ]
@@ -3270,7 +3287,7 @@
         }
       ],
       "science": {
-        "content": "巧克力含有可可碱和咖啡因——猫咪无法有效代谢的甲基黄�呤。与狗狗相比，猫肝脏中细胞色素P450酶活性降低，导致可可碱半衰期延长。这会导致中枢神经系统（癫痫发作）、心血管系统（心律失常）和平滑肌的累积效应。猫咪也是专性肉食动物，处理植物源生物碱的能力较差。体重更轻、代谢更慢、敏感性更高的组合使巧克力对猫咪的危害更大（ASPCA，2023）。"
+        "content": "巧克力含有可可碱和咖啡因——这是猫无法有效代谢的甲基黄嘌呤类物质。猫肝脏中的细胞色素P450酶活性低于犬，导致可可碱半衰期延长。这会对中枢神经系统（癫痫发作）、心血管系统（心律失常）和平滑肌产生累积效应。此外，猫是专性食肉动物，处理植物来源生物碱的能力较弱。体重较小、代谢较慢、敏感性更高，这些因素共同导致巧克力对猫的相对危险性更高（ASPCA，2023）。"
       },
       "faqs": [
         {
@@ -3803,7 +3820,8 @@
         },
         {
           "question": "误食线绳如何治疗？",
-          "content": "治疗取决于位置。如果线绳还在嘴里/舌头上，兽医可能会剪断。如果已经进入消化道，通常需要通过手术安全移除。X光和超声波有助于确定最佳方案。"
+          "content": "治疗取决于位置。如果线绳还在嘴里/舌头上，兽医可能会剪断。如果已经进入消化道，通常需要通过手术安全移除。X光和超声波有助于确定最佳方案。",
+          "answer": "治疗方法取决于线的位置。如果线仍在口腔或舌头上，兽医可能会将其剪断。如果线已进入消化道，通常需要手术才能安全取出。X光和超声检查有助于确定最佳方案。"
         }
       ],
       "relatedTools": [
@@ -3881,115 +3899,115 @@
       "topicA": {
         "pros": [
           {
-            "title": "Cost-Effective",
-            "body": "Kibble costs $0.30–$0.80 per day for a 30kg dog, vs $1.50–$4.00 for wet food. Savings come from lower water content (10% vs 75%) and more efficient manufacturing."
+            "title": "性价比高",
+            "body": "一只30kg的狗粮费约为每天$0.30–$0.80，而湿粮为$1.50–$4.00。节省来源于水分含量较低（10%对比75%）以及更高效的生产工艺。"
           },
           {
-            "title": "Dental Benefits",
-            "body": "The mechanical crunching action of hard kibble can help reduce tartar buildup. However, most dogs do not chew long enough for significant dental benefit — it is a bonus, not a substitute for brushing."
+            "title": "牙齿健康益处",
+            "body": "硬质干粮的咀嚼动作有助于减少牙垢堆积。然而大多数狗咀嚼时间不足以产生显著的牙齿保健效果——这是附加好处，不能替代刷牙。"
           },
           {
-            "title": "Shelf-Stable & Convenient",
-            "body": "Unopened bags last 12–18 months at room temperature. No refrigeration needed, easy to store and travel with. Portioning is straightforward with a measuring cup."
+            "title": "耐储存且使用方便",
+            "body": "未开封的包装袋在室温下可保存12–18个月。无需冷藏，便于储存和旅行携带。用附带的量杯即可轻松定量。"
           },
           {
-            "title": "Energy-Dense",
-            "body": "With 350–450 kcal per 100g, kibble is ideal for large breeds or active dogs who need many calories without feeling full too quickly."
+            "title": "能量密度高",
+            "body": "每100g含350–450大卡，非常适合需要大量热量但又不想过快饱腹的大型犬或运动量较大的狗。"
           }
         ],
         "cons": [
-          "Low moisture content (~10%) means dogs must drink separately; lower thirst drive can lead to chronic mild dehydration in some dogs.",
-          "Palatability can be lower than wet food; picky eaters may turn their nose up.",
-          "Quality varies enormously — some kibble relies heavily on grain fillers and plant proteins rather than animal-based proteins."
+          "含水量低（约10%），狗必须单独饮水；饮水欲望低可能导致部分狗出现慢性轻度脱水。",
+          "适口性可能低于湿粮；挑食的狗可能会拒食。",
+          "品质差异极大——部分狗粮严重依赖谷物填充剂和植物蛋白，而非动物蛋白。"
         ],
         "bestFor": "Active 成年犬, 大型品种, 多狗家庭 on a budget, and owners who value convenience."
       },
       "topicB": {
         "pros": [
           {
-            "title": "High Moisture Content",
-            "body": "At 75–80% moisture, wet food provides significant hydration. This is especially beneficial for dogs with kidney issues, urinary crystals, or low thirst drive."
+            "title": "高含水量",
+            "body": "湿粮含水量达75–80%，可显著补充水分。尤其适合有肾脏问题、尿结晶或饮水欲望较低的狗。"
           },
           {
-            "title": "Superior Palatability",
-            "body": "The aroma, texture, and fat content make wet food irresistible to most dogs. Ideal for picky eaters, senior dogs losing appetite, or convalescing pets."
+            "title": "适口性更佳",
+            "body": "香气、口感和脂肪含量使湿粮对大多数狗极具吸引力。非常适合挑食、食欲下降的老年犬或康复期宠物。"
           },
           {
-            "title": "Lower Carbohydrates",
-            "body": "Quality wet foods often contain fewer grains and starches, with higher animal protein percentages. This more closely mimics a dog's ancestral diet."
+            "title": "碳水化合物较低",
+            "body": "优质湿粮通常含较少谷物和淀粉，动物蛋白比例较高，更接近狗的天然饮食结构。"
           },
           {
-            "title": "Easier to Eat for Senior Dogs",
-            "body": "Dogs with dental issues, missing teeth, or small mouths (e.g., Chihuahuas, Yorkies) find wet food much easier to consume than hard kibble."
+            "title": "方便老年犬进食",
+            "body": "有牙齿问题、缺嘴或嘴型较小的狗（如吉娃娃、约克夏）发现湿粮比硬质干粮更容易食用。"
           }
         ],
         "cons": [
-          "Cost: 3–5x more expensive per calorie than kibble for the same dog.",
-          "Shelf life: Once opened, canned food must be refrigerated and used within 3–5 days.",
-          "No dental crunch benefit — may contribute to faster tartar accumulation without other dental hygiene.",
-          "Bulky to store and heavier to transport."
+          "费用：同等热量的湿粮比干粮贵3–5倍。",
+          "保质期：开封后罐头必须冷藏并在3–5天内食用完毕。",
+          "无咀嚼洁牙作用——缺乏其他口腔清洁可能加速牙垢堆积。",
+          "占用储存空间较大，搬运较重。"
         ],
         "bestFor": "老年狗, 小型品种, picky eaters, dogs with dental issues, kidney/urinary conditions, and dogs who don't drink enough water."
       },
       "rows": [
         {
-          "dimension": "Moisture Content",
-          "topicA": "~10%",
-          "topicB": "75–80%"
+          "dimension": "含水量",
+          "topicA": null,
+          "topicB": null
         },
         {
-          "dimension": "Calorie Density",
-          "topicA": "350–450 kcal/100g",
-          "topicB": "80–120 kcal/100g"
+          "dimension": "热量密度",
+          "topicA": null,
+          "topicB": null
         },
         {
-          "dimension": "Cost/day (30kg dog)",
-          "topicA": "$0.50–1.50",
-          "topicB": "$2.00–5.00"
+          "dimension": "每天费用（30kg犬）",
+          "topicA": null,
+          "topicB": null
         },
         {
-          "dimension": "Shelf Life (unopened)",
-          "topicA": "12–18 months",
-          "topicB": "2–5 years"
+          "dimension": "保质期（未开封）",
+          "topicA": null,
+          "topicB": null
         },
         {
-          "dimension": "Dental Health",
-          "topicA": "Mild tartar reduction",
-          "topicB": "No mechanical benefit"
+          "dimension": "牙齿健康",
+          "topicA": "轻度减少牙垢",
+          "topicB": "无机械性益处"
         },
         {
-          "dimension": "Palatability",
-          "topicA": "Moderate",
-          "topicB": "High"
+          "dimension": "适口性",
+          "topicA": "中等",
+          "topicB": "高"
         },
         {
-          "dimension": "Carb Content",
-          "topicA": "Often higher",
-          "topicB": "Often lower"
+          "dimension": "碳水含量",
+          "topicA": "通常较高",
+          "topicB": "通常较低"
         },
         {
-          "dimension": "Storage",
-          "topicA": "Room temp",
-          "topicB": "Refrigerate after opening"
+          "dimension": "储存方式",
+          "topicA": "室温",
+          "topicB": "开封后冷藏"
         }
       ],
-      "verdict": "<strong>Most dogs do well on a mixed feeding approach.</strong> A base of quality kibble for cost-efficiency and dental crunch, supplemented with a small amount of wet food for hydration and palatability. For dogs with kidney disease, urinary issues, or senior dogs with appetite loss, increase wet food proportion. For active large-breed adults on a budget, kibble as the primary diet is perfectly adequate. Consult your veterinarian if your dog has specific health conditions.",
+      "verdict": "<strong>大多数狗狗采用混合喂养方式效果良好。</strong>以优质干粮作为基础，实现成本效益和牙齿清洁，辅以少量湿粮增加水分摄入和适口性。对于患有肾脏疾病、泌尿问题或食欲减退的老年犬，应增加湿粮比例。对于预算有限、活动量大的成年大型犬，干粮作为主要饮食完全足够。如果狗狗有特定健康状况，请咨询兽医。",
       "faq": [
         {
-          "question": "Can I mix dry and wet dog food?",
-          "answer": "Yes, mixing is safe and often recommended. A common approach is 75% kibble + 25% wet food by calorie. Calculate your dog's total daily calorie needs first, then split between the two. Ensure the combined diet meets AAFCO nutrient profiles — most complete & balanced kibble is formulated to be fed alone, so treat wet food as a supplement."
+          "question": "可以将干粮和湿粮混合喂食吗？",
+          "answer": "可以，混合喂食安全且常被推荐。常见做法是按热量75%干粮搭配25%湿粮。先计算狗每日总热量需求，再按比例分配。确保混合饮食符合AAFCO（美国饲料管理官员协会）营养标准——大多数完整均衡的干粮配方可单独饲喂，因此请将湿粮视为补充。"
         },
         {
-          "question": "Is wet food better for dogs with kidney disease?",
-          "answer": "Often yes. The high moisture content (75–80%) helps support kidney function by promoting hydration and flushing toxins. Dogs with chronic kidney disease (CKD) are frequently recommended higher-moisture diets by veterinary nutritionists. A prescription renal diet (wet or dry) may be needed in advanced cases."
+          "question": "肾脏病犬吃湿粮更好吗？",
+          "answer": "通常是的。高含水量（75–80%）有助于促进水合和毒素排出，支持肾功能。兽医营养学家常建议慢性肾病（CKD）患犬食用含水量较高的处方粮。晚期病例可能需要肾脏处方粮（湿粮或干粮）。"
         },
         {
-          "question": "How much wet food replaces one cup of kibble?",
-          "answer": "Approximately 1 cup of kibble (100g, ~350 kcal) equals about 300–400g of wet food (~350 kcal). Always check the calorie content on the can label and adjust based on your dog's specific caloric needs. Use our Dog Calorie Calculator to determine the exact amount."
+          "question": "一杯干粮等于多少湿粮？",
+          "answer": "约1杯干粮（100g，约350大卡）等效约300–400g湿粮（约350大卡）。请查看罐头标签上的热量含量，并根据犬只具体热量需求调整。可使用我们的狗粮热量计算器确定精确用量。"
         },
         {
-          "question": "Do dogs need wet food?",
-          "answer": "No, dogs do not need wet food if they are eating a complete and balanced dry diet and drinking adequate water. However, wet food provides meaningful benefits for hydration, palatability, and specific health conditions. It is a valuable tool in the dog owner's toolkit, not a necessity."
+          "question": "狗需要吃湿粮吗？",
+          "answer": "不需要。如果狗食用完整均衡的干粮并饮水充足，则无需湿粮。但对补水、适口性和特定健康状况而言，湿粮具有实际益处。它是狗主人工具箱中的有力补充，而非必需品。"
         }
       ]
     },
@@ -4001,115 +4019,115 @@
       "topicA": {
         "pros": [
           {
-            "title": "Longer Lifespan",
-            "body": "The average indoor-only cat lives 12–18 years, with many reaching 20+. This is 3–5x longer than the average outdoor cat, primarily due to reduced trauma and disease exposure."
+            "title": "寿命更长",
+            "body": "纯室内猫的寿命平均为12–18年，许多可活到20年以上。这比室外猫长3–5倍，主要原因是创伤和疾病暴露减少。"
           },
           {
-            "title": "Lower Disease Risk",
-            "body": "Indoor cats have minimal exposure to FeLV, FIV, FIP, and rabies from other cats. Parasite exposure is also significantly reduced."
+            "title": "疾病风险更低",
+            "body": "室内猫几乎不接触FeLV（猫白血病病毒）、FIV（猫免疫缺陷病毒）、FIP（猫传染性腹膜炎）和狂犬病。寄生虫暴露也显著减少。"
           },
           {
-            "title": "No Trauma Risk",
-            "body": "No cars, no dog attacks, no fights with other cats, no predator encounters. The #1 cause of premature death in outdoor cats is vehicular trauma."
+            "title": "无创伤风险",
+            "body": "没有车祸、没有犬只攻击、没有猫间打斗、没有捕食者威胁。室外猫过早死亡的首要原因是车祸创伤。"
           },
           {
-            "title": "Better Weight Control",
-            "body": "Indoor cats are fed measured meals rather than hunting or scavenging. Combined with our BCS tracker, obesity is more easily managed."
+            "title": "体重更易控制",
+            "body": "室内猫采食定量餐食，而非捕猎或觅食。结合BCS（体况评分）追踪工具，肥胖问题更易管理。"
           }
         ],
         "cons": [
-          "Environmental enrichment is mandatory — without it, indoor cats develop stress-related behaviors (urine marking, over-grooming, aggression).",
-          "Obesity is the #1 health risk for indoor cats, affecting 40–60% of indoor-only cats.",
-          "Needs significant owner time and resource investment (scratching posts, window perches, interactive play)."
+          "环境丰容不可或缺——缺乏丰容会导致猫出现应激行为（喷尿、过度梳理、攻击性）。",
+          "肥胖是室内猫的首要健康风险，影响40–60%的纯室内猫。",
+          "需要主人投入大量时间和资源（猫爬架、窗台跳台、互动玩具）。"
         ],
         "bestFor": "[需翻译] Most urban/suburban cat owners who can provide adequate environmental enrichment."
       },
       "topicB": {
         "pros": [
           {
-            "title": "Natural Behavior Expression",
-            "body": "Outdoor access allows climbing, hunting, territory patrolling, and sun-bathing — all core feline behaviors that are difficult to fully replicate indoors."
+            "title": "表达天性行为",
+            "body": "室外活动允许攀爬、狩猎、领地巡逻和晒太阳——这些都是室内难以完全复制的猫科动物核心行为。"
           },
           {
-            "title": "Mental Stimulation",
-            "body": "The outdoor environment provides endless sensory input. Outdoor cats rarely exhibit boredom-related behaviors seen in under-stimulated indoor cats."
+            "title": "精神刺激",
+            "body": "室外环境提供无穷的感官刺激。室外猫很少表现出室内猫因缺乏刺激而出现的行为问题。"
           },
           {
-            "title": "Exercise & Weight Management",
-            "body": "Outdoor cats typically get more physical activity, making obesity less of a concern than with sedentary indoor cats."
+            "title": "运动与体重管理",
+            "body": "室外猫通常运动量较大，肥胖问题较久坐的室内猫更少。"
           },
           {
-            "title": "Reduced Litter Box Issues",
-            "body": "Cats with outdoor access rarely urinate or defecate outside the litter box, as they have the option to go outside."
+            "title": "减少猫砂问题",
+            "body": "有室外活动机会的猫极少在猫砂盆外排泄，因为它们可以选择户外解决。"
           }
         ],
         "cons": [
-          "Dramatically shorter lifespan: average 2–5 years for free-roaming outdoor cats.",
-          "High risk of vehicular trauma, predation (coyotes, dogs), poisoning (rodenticides), and fighting injuries.",
-          "Exposure to infectious diseases: FeLV, FIV, FIP, rabies, and parasites.",
-          "Neighborhood conflict — digging in gardens, hunting wildlife (ecological impact), and conflicts with other cats or pets."
+          "寿命显著缩短：自由漫游的室外猫平均仅活2–5年。",
+          "车祸、捕食者（郊狼、犬）、中毒（鼠药）和打斗受伤风险高。",
+          "暴露于传染病：FeLV、FIV、FIP、狂犬病和寄生虫。",
+          "邻里冲突——挖掘花园、捕猎野生动物（生态影响）以及与其他猫或宠物的冲突。"
         ],
         "bestFor": "[需翻译] Rural properties with controlled outdoor access (catio, enclosed garden) and owners who accept the risks."
       },
       "rows": [
         {
-          "dimension": "Average Lifespan",
-          "topicA": "12–18+ years",
-          "topicB": "2–5 years"
+          "dimension": "平均寿命",
+          "topicA": null,
+          "topicB": null
         },
         {
-          "dimension": "Trauma Risk (cars, predators)",
-          "topicA": "Minimal",
-          "topicB": "High"
+          "dimension": "创伤风险（车祸、捕食者）",
+          "topicA": "极低",
+          "topicB": "高"
         },
         {
-          "dimension": "FeLV/FIV Exposure",
-          "topicA": "Very Low",
-          "topicB": "High"
+          "dimension": "FeLV/FIV暴露风险",
+          "topicA": "很低",
+          "topicB": "高"
         },
         {
-          "dimension": "Obesity Risk",
-          "topicA": "High (40–60%)",
-          "topicB": "Low"
+          "dimension": "肥胖风险",
+          "topicA": "高（40–60%）",
+          "topicB": "低"
         },
         {
-          "dimension": "Behavioral Issues",
-          "topicA": "Without enrichment",
-          "topicB": "Rare"
+          "dimension": "行为问题",
+          "topicA": "缺乏丰容时出现",
+          "topicB": "罕见"
         },
         {
-          "dimension": "Exercise",
-          "topicA": "Must be provided",
-          "topicB": "Natural"
+          "dimension": "运动需求",
+          "topicA": "必须人为提供",
+          "topicB": "自然发生"
         },
         {
-          "dimension": "Wildlife Impact",
-          "topicA": "None",
-          "topicB": "Significant"
+          "dimension": "对野生动物影响",
+          "topicA": "无",
+          "topicB": "显著"
         },
         {
-          "dimension": "Vet Costs / Year",
-          "topicA": "$300–600",
-          "topicB": "$500–2000+"
+          "dimension": "每年兽医费用",
+          "topicA": null,
+          "topicB": null
         }
       ],
-      "verdict": "<strong>The safest and most recommended approach is \"Indoor + Enrichment\" or \"Supervised Outdoor Access.\"</strong> An indoor-only cat with proper environmental enrichment (cat trees, window perches, puzzle feeders, daily interactive play) lives significantly longer and healthier than a free-roaming outdoor cat. If you want your cat to experience the outdoors, consider a catio (enclosed outdoor pen), a secure garden with cat-proof fencing, or leash walks with a harness. This provides outdoor stimulation while maintaining the safety and longevity benefits of indoor living.",
+      "verdict": "<strong>最安全和最推荐的方式是\"室内+环境丰富\"或\"受监督的户外活动\"。</strong>室内饲养且拥有良好的环境丰富（猫树、窗台、益智玩具、每日互动）的猫比散养的猫寿命显著更长更健康。如果想让猫体验户外，可考虑猫围栏、带防护网的花园或牵引绳散步。这样既提供了户外刺激，又保持了室内饲养的安全和长寿优势。",
       "faq": [
         {
-          "question": "Is it cruel to keep a cat indoors?",
-          "answer": "No — with proper environmental enrichment, indoor cats live longer, healthier lives. Cats do not have the same drive for outdoor access as dogs. Key needs: vertical space (cat trees), scratching posts, puzzle feeders, window perches with a view, and 15–20 minutes of daily interactive play. This satisfies their core behavioral needs entirely."
+          "question": "把猫关在室内残忍吗？",
+          "answer": "不惨——提供恰当的环境丰容后，室内猫能活得更长、更健康。猫对户外活动的需求不如狗强烈。关键需求：垂直空间（猫爬架）、猫抓板、益智喂食器、观景窗台，以及每天15–20分钟的互动玩耍。这能充分满足其核心行为需求。"
         },
         {
-          "question": "How do I transition an outdoor cat to indoor?",
-          "answer": "Gradual transition over 2–4 weeks is most effective. Start by bringing them in during meal times, then gradually increase indoor hours simultaneously adding enrichment (cat trees, toys, window perches). Use Feliway diffusers to reduce stress. Interactive wand toy sessions (2x 15min/day) are crucial for exercise and mental stimulation."
+          "question": "如何将室外猫转为室内饲养？",
+          "answer": "2–4周逐步过渡最为有效。起初在喂食时间将猫带入室内，随后逐步增加室内时间，并同步添加丰容设施（猫爬架、玩具、窗台跳台）。使用Feliway费利威扩散器缓解应激。互动逗猫棒游戏（每日2次、每次15分钟）对锻炼和精神刺激至关重要。"
         },
         {
-          "question": "Do indoor cats need vaccines?",
-          "answer": "Yes. Indoor cats still need core vaccines (FVRCP and rabies). While their disease risk is lower, these diseases can be transmitted via contaminated clothing, shoes, or through screens/windows. The AAFP classifies all cats as needing core vaccination regardless of lifestyle. Rabies vaccination is also legally required in most jurisdictions."
+          "question": "室内猫需要接种疫苗吗？",
+          "answer": "是的。室内猫仍需接种核心疫苗（猫三联FVRCP和狂犬病）。虽然疾病风险较低，但这些疾病可通过受污染的衣物、鞋子或门窗纱网传播。AAFP（美国猫科动物从业者协会）建议所有猫无论生活方式如何都应接种核心疫苗。大多数地区法律也要求接种狂犬疫苗。"
         },
         {
-          "question": "What is a catio and does it help?",
-          "answer": "A catio is an enclosed outdoor structure (attached to a window, deck, or freestanding) that allows cats to experience the outdoors safely. Catios provide fresh air, sunshine, bird-watching, and sensory enrichment without the risks of free roaming. They are the single best compromise for owners who want outdoor access for their cat."
+          "question": "猫露台（catio）是什么，有用吗？",
+          "answer": "猫露台是封闭的室外结构（可附于窗户、露台或独立式），让猫安全地体验户外。猫露台提供新鲜空气、日光、观鸟和感官丰容，而没有自由漫游的风险。对于希望满足猫咪户外需求的主人来说，这是最佳的折中方案。"
         }
       ]
     },
@@ -4121,112 +4139,112 @@
       "topicA": {
         "pros": [
           {
-            "title": "Whole, Unprocessed Ingredients",
-            "body": "BARF diets use raw muscle meat, organs, bones, and vegetables — avoiding the high-heat processing that can destroy some nutrients. Proponents report shinier coats, cleaner teeth, and higher energy levels."
+            "title": "完整的未加工食材",
+            "body": "BARF（生物学适宜生食）饮食采用生肌肉、内脏、骨头和蔬菜——避免高温加工对部分营养的破坏。支持者声称被毛更有光泽、牙齿更清洁、精力更旺盛。"
           },
           {
-            "title": "Dental Benefits",
-            "body": "Chewing on raw meaty bones provides significant mechanical cleaning of teeth. Studies show reduced tartar in dogs on raw diets compared to kibble-fed dogs."
+            "title": "牙齿健康益处",
+            "body": "咀嚼生肉骨头可显著机械清洁牙齿。研究显示，生食喂养的狗比食用干粮的狗牙垢更少。"
           },
           {
-            "title": "Bioavailable Nutrients",
-            "body": "Raw proteins and fats are theoretically more bioavailable, with no heat-induced denaturation of amino acids. Some vitamins (B-complex, C) are better preserved without cooking."
+            "title": "营养生物利用度高",
+            "body": "生蛋白和脂肪理论上生物利用度更高，氨基酸未因加热而变性。部分维生素（B族维生素、维生素C）未经烹煮时保存更好。"
           },
           {
-            "title": "No Artificial Additives",
-            "body": "Quality raw diets avoid preservatives, colors, fillers, and artificial flavors often found in commercial pet food."
+            "title": "无人工添加剂",
+            "body": "优质生食不含商业宠物食品中常见的防腐剂、色素、填充剂和人工香料。"
           }
         ],
         "cons": [
-          "Bacterial contamination risk: 30% of commercial raw diets test positive for Salmonella; Campylobacter and E. coli are common. This poses risk to both the pet and the human family.",
-          "Nutritional imbalance: Home-prepared diets are frequently deficient in calcium, phosphorus, or trace minerals. Even commercial raw diets sometimes fail AAFCO feeding trials.",
-          "Cost: $3–8 per day for a 30kg dog — 3–5x more expensive than quality kibble.",
-          "Practical burdens: Requires freezer space, careful handling, travel difficulties, and preparation time."
+          "细菌污染风险：30%的商业生食检出沙门氏菌阳性；弯曲杆菌和大肠杆菌也常见。这对宠物和家庭成员都构成风险。",
+          "营养失衡：自制饮食常缺钙、磷或微量矿物质。即使商业生食有时也未能通过AAFCO喂养试验。",
+          "费用：30kg犬每天$3–8——比优质干粮贵3–5倍。",
+          "使用不便：需要冷冻空间、小心取用、旅行困难，还有准备时间。"
         ],
         "bestFor": "[需翻译] Dedicated owners with veterinary nutritionist guidance, dogs with specific food intolerances not resolved by commercial diets, and those willing to invest significant time and resources."
       },
       "topicB": {
         "pros": [
           {
-            "title": "Nutritionally Complete & Balanced",
-            "body": "Quality kibble meeting AAFCO standards has been formulated through feeding trials to provide complete nutrition for specific life stages. Decades of research back their formulations."
+            "title": "营养完整均衡",
+            "body": "符合AAFCO标准的优质干粮经喂养试验配制，可为特定生命阶段提供完整营养。数十年的研究支持其配方。"
           },
           {
-            "title": "Bacterial Safety",
-            "body": "The extrusion process (high heat/pressure) kills bacteria. Kibble is shelf-stable and safe to handle without contamination risk to humans."
+            "title": "细菌安全",
+            "body": "挤压膨化加工（高温高压）能杀灭细菌。干粮可常温储存、安全取用，对人类无交叉污染风险。"
           },
           {
-            "title": "Consistent Quality Control",
-            "body": "Reputable manufacturers conduct batch testing, feeding trials, and quality audits. Every bag meets the same nutrient profile — no guesswork for the owner."
+            "title": "质量稳定可控",
+            "body": "信誉良好的制造商进行批次检测、喂养试验和质量审核。每袋产品营养组成一致——无需主人猜测。"
           },
           {
-            "title": "Affordability & Convenience",
-            "body": "$0.50–$2.00 per day for most dogs. No prep, no refrigeration, easy to travel with, and available nearly everywhere."
+            "title": "经济实惠且方便",
+            "body": "大多数犬只每天仅需$0.50–$2.00。无需准备、无需冷藏、便于旅行携带，几乎随处可买。"
           }
         ],
         "cons": [
-          "High-heat processing can degrade some heat-sensitive nutrients (though these are typically supplemented back).",
-          "Lower palatability than raw food — some dogs refuse kibble, especially if accustomed to raw.",
-          "Higher carbohydrate content than raw diets (30–50% carbs in many kibble vs 0–10% in raw), though dogs do not have a strict carb requirement.",
-          "Quality varies enormously between brands; some use low-quality protein sources or excessive fillers."
+          "高温加工可能破坏部分热敏营养素（尽管通常会额外补充回来）。",
+          "适口性低于生食——部分狗拒绝食用干粮，尤其是习惯了生食的狗。",
+          "碳水含量高于生食配方（许多干粮含30–50%碳水，而生食仅0–10%），不过狗对碳水并无硬性需求。",
+          "品牌间品质差异极大；部分使用低品质蛋白来源或过量填充剂。"
         ],
         "bestFor": "[需翻译] The vast majority of dog owners — especially those without access to a board-certified veterinary nutritionist or the budget/time for raw feeding."
       },
       "rows": [
         {
-          "dimension": "Nutritional Completeness",
-          "topicA": "Variable unless formulated by nutritionist",
-          "topicB": "AAFCO-tested for balance"
+          "dimension": "营养完整性",
+          "topicA": "不固定，除非由营养师配制",
+          "topicB": "经AAFCO喂养测试确认均衡"
         },
         {
-          "dimension": "Bacterial Risk (Salmonella)",
-          "topicA": "Significant (30% of raw diets)",
-          "topicB": "Minimal (heat-processed)"
+          "dimension": "细菌风险（沙门氏菌）",
+          "topicA": "显著（30%生食）",
+          "topicB": "极低（热处理）"
         },
         {
-          "dimension": "Daily Cost (30kg dog)",
-          "topicA": "$3–8",
-          "topicB": "$0.50–2.00"
+          "dimension": "每日费用（30kg犬）",
+          "topicA": null,
+          "topicB": null
         },
         {
-          "dimension": "Dental Benefit",
-          "topicA": "Significant (bone chewing)",
-          "topicB": "Minimal (minor crunch)"
+          "dimension": "牙齿健康益处",
+          "topicA": "显著（咀嚼骨头）",
+          "topicB": "极低（轻微咀嚼）"
         },
         {
-          "dimension": "Shelf Life",
-          "topicA": "Frozen: 6 months; Thawed: 2 days",
-          "topicB": "12–18 months"
+          "dimension": "保质期",
+          "topicA": null,
+          "topicB": null
         },
         {
-          "dimension": "Human Safety",
-          "topicA": "Requires careful handling",
-          "topicB": "No special handling"
+          "dimension": "人类安全性",
+          "topicA": "需小心取用",
+          "topicB": "无需特殊处理"
         },
         {
-          "dimension": "Research Support",
-          "topicA": "Limited peer-reviewed",
-          "topicB": "Decades of feeding trials"
+          "dimension": "研究支持",
+          "topicA": "有限的同行评议研究",
+          "topicB": "数十年喂养试验"
         },
         {
-          "dimension": "Practicality",
-          "topicA": "Requires freezer, prep, travel planning",
-          "topicB": "Very High"
+          "dimension": "便利性",
+          "topicA": "需要冷冻、准备和旅行规划",
+          "topicB": "非常高"
         }
       ],
-      "verdict": "<strong>For most dog owners, a high-quality commercial kibble is the safest, most practical choice.</strong> If you are committed to raw feeding, work with a board-certified veterinary nutritionist (ACVN) to ensure nutritional completeness, follow strict hygiene protocols, and understand the 30% bacterial contamination risk. The dental benefits of raw bones can be achieved safely with professional dental cleaning and appropriate chew toys. A middle-ground approach — high-quality kibble supplemented with raw meaty bones as treats (not meals) — captures some benefits while minimizing risks.",
+      "verdict": "<strong>对于大多数狗主人，优质商品干粮是最安全、最实用的选择。</strong>如果坚持生食喂养，请与兽医营养专家合作确保营养完整，严格遵守卫生规范，并了解约30%的细菌污染风险。生食的洁牙效果可通过专业洁牙和咀嚼玩具实现。折中方案——优质干粮为主，偶尔用生骨肉作零食——可兼顾部分益处并降低风险。",
       "faq": [
         {
-          "question": "What is the 80-10-10 raw diet?",
-          "answer": "The 80-10-10 ratio refers to 80% muscle meat, 10% raw meaty bone, and 10% organ meat (half liver, half other organs like kidney or spleen). This is a popular BARF formulation, though it may need calcium and micronutrient supplementation to meet NRC standards. The specific ratio should be tailored to your dog's life stage (puppies need more bone calcium)."
+          "question": "什么是80-10-10生食配方？",
+          "answer": "80-10-10比例指80%肌肉、10%生骨肉和10%内脏（一半肝脏、一半肾脏或脾脏等其他内脏）。这是流行的BARF配方，但可能需要额外补充钙和微量矿物质以满足NRC标准。应根据犬只生命阶段调整比例（幼犬需要更多的骨钙）。"
         },
         {
-          "question": "Can puppies eat raw food?",
-          "answer": "Yes, but with extreme caution. Puppies have higher calcium/phosphorus requirements for proper bone development. An improperly balanced raw diet can cause developmental orthopedic disease. If feeding raw to puppies, work with a veterinary nutritionist to ensure proper Ca:P ratio (1.2:1 to 1.4:1) and adequate trace minerals."
+          "question": "幼犬能吃生食吗？",
+          "answer": "可以，但需极度谨慎。幼犬对钙磷比要求较高以促进骨骼发育。配方不当的生食可导致发育性骨科疾病。如给幼犬喂食生食，请与兽医营养师合作，确保适当的钙磷比（1.2:1至1.4:1）和充足的微量矿物质。"
         },
         {
-          "question": "Is raw food better than kibble?",
-          "answer": "\"Better\" depends on your priorities. Raw offers whole-food nutrition and dental benefits but carries bacterial risks and practical burdens. Kibble offers nutritional consistency and safety backed by decades of research. Neither is universally \"better.\" The best diet is one that is nutritionally complete, safe for your family, sustainable for your budget, and that your dog thrives on."
+          "question": "生食比干粮好吗？",
+          "answer": "「更好」取决于您的优先考量。生食提供全食材营养和牙齿益处，但伴有细菌风险和使用不便；干粮提供数十年来研究支持的营养一致性和安全性。两者并无绝对优劣。最佳饮食是营养完整、对您家庭安全、在您预算内可持续、且能让狗健康成长的饮食。"
         }
       ]
     },
@@ -4238,122 +4256,122 @@
       "topicA": {
         "pros": [
           {
-            "title": "Eliminates Pyometra Risk",
-            "body": "Pyometra is a life-threatening uterine infection affecting 25% of unspayed females by age 10. Spaying eliminates this risk entirely — emergency pyometra surgery costs $3,000–$8,000 and carries 4–20% mortality even with treatment."
+            "title": "消除子宫蓄脓风险",
+            "body": "子宫蓄脓是一种危及生命的子宫感染，25%未绝育母犬在10岁前会患病。绝育可完全消除此风险——紧急子宫蓄脓手术费用为$3,000–$8,000，即便接受治疗仍有4–20%的死亡率。"
           },
           {
-            "title": "Dramatically Reduces Mammary Cancer",
-            "body": "Spaying before the first heat cycle reduces mammary tumor risk by 99.5%; before the second heat by 92%. Mammary tumors are the most common cancer in unspayed females; ~50% are malignant."
+            "title": "大幅降低乳腺肿瘤风险",
+            "body": "在第一次发情前绝育可将乳腺肿瘤风险降低99.5%；第二次发情前降低92%。乳腺肿瘤是未绝育母犬最常见的癌症；约50%为恶性。"
           },
           {
-            "title": "Removes Reproductive Organ Cancer Risk",
-            "body": "Spaying eliminates ovarian and uterine cancer (rare but documented). Neutering eliminates testicular cancer (the most common tumor in intact males)."
+            "title": "消除生殖器官癌风险",
+            "body": "绝育可消除卵巢和子宫癌（罕见但有记载）。去势可消除睾丸癌（公犬最常见的肿瘤）。"
           },
           {
-            "title": "Behavioral Benefits",
-            "body": "Reduces roaming (males seeking females in heat), reduces inter-male aggression by up to 60%, and eliminates heat-related behaviors (bleeding, male attention, mood changes in females)."
+            "title": "行为改善",
+            "body": "减少公犬因寻找发情母犬而外出游荡的行为，减少公犬间攻击行为高达60%，消除发情相关行为（母犬出血、吸引公犬、情绪波动）。"
           },
           {
-            "title": "Population Control",
-            "body": "Prevents accidental breeding and the resulting puppies. A single unspayed female and her offspring can theoretically produce 67,000 dogs in 6 years."
+            "title": "控制数量",
+            "body": "防止意外繁殖及由此产生的一窝窝幼犬。理论上，一只未绝育母犬及其后代6年内可繁殖多达67,000只狗。"
           }
         ],
         "cons": [
-          "Increased risk of certain cancers: spayed females have 2–4x higher hemangiosarcoma and osteosarcoma risks, especially in large breeds spayed early.",
-          "Increased risk of cruciate ligament tears and hip dysplasia in large breeds spayed before 12–18 months, due to loss of growth-inhibiting sex hormones on bone development.",
-          "Weight gain: spayed/neutered dogs have 20–30% lower metabolic rate. ~60% become overweight without diet adjustment.",
-          "Possible increased risk of urinary incontinence in spayed females (5–20% in large breeds)."
+          "某些癌症风险增加：绝育母犬患血管肉瘤和骨肉瘤的风险增加2–4倍，尤其是在大型品种中过早绝育的情况。",
+          "大型品种在12–18个月前绝育会增加十字韧带撕裂和髋关节发育不良的风险，原因是性激素对骨骼生长调控的缺失。",
+          "体重增加：绝育/去势犬的代谢率降低20–30%。若不调整饮食，约60%会超重。",
+          "绝育母犬出现尿失禁的风险可能增加（大型品种为5–20%）。"
         ],
         "bestFor": "大多数狗, especially 小型品种, 混种, and any dog not intended for 负责任的繁殖计划."
       },
       "topicB": {
         "pros": [
           {
-            "title": "Hormonal Influence on Skeletal Development",
-            "body": "Sex hormones (estrogen, testosterone) signal proper closure of growth plates. Keeping large/giant breeds intact for 12–24 months allows normal bone development, potentially reducing cruciate tears and joint disorders."
+            "title": "性激素对骨骼发育的正面影响",
+            "body": "性激素（雌激素、睾酮）促进生长板正常闭合。让大型/巨型品种保持完整12–24个月可使骨骼正常发育，可能降低十字韧带撕裂和关节疾病的风险。"
           },
           {
-            "title": "Lower Risk of Certain Cancers",
-            "body": "Intact dogs have lower rates of hemangiosarcoma, osteosarcoma, and prostate cancer compared to neutered males. The protective effect of sex hormones against these cancers is well-documented."
+            "title": "某些癌症风险较低",
+            "body": "完整犬的血管肉瘤、骨肉瘤和前列腺癌发生率低于去势公犬。性激素对这些癌症的保护作用已有充分文献记载。"
           },
           {
-            "title": "No Metabolic Drop",
-            "body": "Intact dogs maintain baseline metabolic rate without the 20–30% reduction seen post-spay/neuter, making weight management easier."
+            "title": "无代谢下降",
+            "body": "完整犬保持基础代谢率，不像绝育/去势犬那样下降20–30%，体重管理更容易。"
           },
           {
-            "title": "No Surgical Risk",
-            "body": "Avoids anesthesia and surgical complications (infection, bleeding, adverse reactions)."
+            "title": "无手术风险",
+            "body": "避免了麻醉和手术并发症（感染、出血、不良反应）。"
           }
         ],
         "cons": [
-          "25% of unspayed females develop pyometra by age 10 — a life-threatening emergency.",
-          "~50% of unspayed females develop mammary tumors by age 10 (half malignant).",
-          "Intact males exhibit more roaming, marking, mounting, and inter-male aggression.",
-          "Unspayed females have heat cycles (bleeding for 2–3 weeks, 2x/year) and attract male dogs.",
-          "Accidental breeding if any outdoor access; adds to shelter overpopulation."
+          "25%未绝育母犬10岁前会发生子宫蓄脓——一种危及生命的急症。",
+          "约50%未绝育母犬10岁前会患乳腺肿瘤（其中一半为恶性）。",
+          "完整公犬表现出更多的游荡、喷尿标记、爬跨和公犬间攻击行为。",
+          "未绝育母犬有发情周期（每年2次，每次持续2–3周），并吸引公犬。",
+          "任何户外活动都可能导致意外繁殖，加剧犬只过剩问题。"
         ],
         "bestFor": "[需翻译] Large/giant breeds where delayed spay/neuter benefits joint health (discuss timing with vet), responsibly managed breeding programs, and dogs where cancer risk from spaying is a particular breed concern."
       },
       "rows": [
         {
-          "dimension": "Pyometra Risk (females)",
-          "topicA": "Eliminated",
-          "topicB": "25% by age 10"
+          "dimension": "子宫蓄脓风险（母犬）",
+          "topicA": "消除",
+          "topicB": "10岁前25%"
         },
         {
-          "dimension": "Mammary Tumor Risk (females)",
-          "topicA": "<1% (before 1st heat)",
-          "topicB": "~50% by age 10"
+          "dimension": "乳腺肿瘤风险（母犬）",
+          "topicA": "<1%（首次发情前）",
+          "topicB": "10岁前约50%"
         },
         {
-          "dimension": "Testicular Cancer (males)",
-          "topicA": "Eliminated",
-          "topicB": "7% lifetime risk"
+          "dimension": "睾丸癌（公犬）",
+          "topicA": "消除",
+          "topicB": "终生风险7%"
         },
         {
-          "dimension": "Hemangiosarcoma",
-          "topicA": "2-4x higher risk",
-          "topicB": "Baseline"
+          "dimension": "血管肉瘤",
+          "topicA": "风险高2–4倍",
+          "topicB": "基线"
         },
         {
-          "dimension": "Cruciate Tear Risk",
-          "topicA": "Higher (early spay)",
-          "topicB": "Baseline"
+          "dimension": "十字韧带撕裂风险",
+          "topicA": "较高（过早绝育）",
+          "topicB": "基线"
         },
         {
-          "dimension": "Osteosarcoma Risk",
-          "topicA": "Higher (early spay)",
-          "topicB": "Baseline"
+          "dimension": "骨肉瘤风险",
+          "topicA": "较高（过早绝育）",
+          "topicB": "基线"
         },
         {
-          "dimension": "Weight Gain Tendency",
-          "topicA": "20-30% more likely",
-          "topicB": "Baseline"
+          "dimension": "体重增加倾向",
+          "topicA": "高20–30%",
+          "topicB": "基线"
         },
         {
-          "dimension": "Roaming/Aggression",
-          "topicA": "Reduced",
-          "topicB": "Higher"
+          "dimension": "游荡/攻击行为",
+          "topicA": "减少",
+          "topicB": "较多"
         },
         {
-          "dimension": "Cost of Procedure",
-          "topicA": "$200-500",
-          "topicB": "$0"
+          "dimension": "手术费用",
+          "topicA": null,
+          "topicB": null
         }
       ],
-      "verdict": "<strong>The benefits of spaying/neutering outweigh the risks for most dogs.</strong> For small breeds (<20kg), spay/neuter at 6–12 months is well-supported. For large breeds (25–45kg), consider delaying to 12–18 months to protect joint development. For giant breeds (>45kg), some veterinarians recommend 18–24 months. Discuss your specific breed's cancer and joint health risks with your veterinarian to determine the optimal timing. Never skip the conversation — the \"when\" matters as much as the \"whether.\"",
+      "verdict": "<strong>对于大多数狗狗，绝育的益处大于风险。</strong>小型犬（<20公斤）在6-12个月绝育有充分依据。大型犬（25-45公斤）可考虑延迟至12-18个月以保护关节发育。巨型犬（>45公斤）部分兽医建议18-24个月。请与兽医讨论您犬种的特定风险，确定最佳时机。务必与兽医讨论——\"何时\"绝育与\"是否\"绝育同样重要。",
       "faq": [
         {
-          "question": "What is the best age to spay a large breed dog?",
-          "answer": "For large breeds (Golden Retriever, Labrador, German Shepherd), current evidence suggests 12–18 months to allow proper closure of growth plates and reduce orthopedic disease risk. Giant breeds (Great Dane, Mastiff) may benefit from 18–24 months. Always discuss with your veterinarian, as cancer risk and joint risk vary by breed and sex."
+          "question": "大型品种犬绝育的最佳年龄是多少？",
+          "answer": "对于大型品种（金毛寻回犬、拉布拉多、德国牧羊犬），目前证据表明12–18个月比较合适，以促进生长板正确闭合、降低骨科疾病风险。巨型品种（大丹犬、獒犬）可能受益于18–24个月。请与您的兽医讨论，因为癌症风险和关节风险因品种和性别而异。"
         },
         {
-          "question": "Will my dog gain weight after being spayed?",
-          "answer": "Likely yes. Spayed/neutered dogs require 20–30% fewer calories to maintain weight. Reduce food portions by 15–20% post-surgery and monitor body condition monthly using the BCS scale. Adjust as needed. Regular exercise is also crucial."
+          "question": "我的狗绝育后会发胖吗？",
+          "answer": "很可能会。绝育/去势犬需要减少20–30%的热量摄入以维持体重。术后减少15–20%喂食量，每月使用BCS（体况评分）量表监测体况，按需调整。定期运动同样至关重要。"
         },
         {
-          "question": "Can a spayed dog still get pregnant?",
-          "answer": "No. A complete ovariohysterectomy (removal of uterus and ovaries) permanently eliminates the ability to conceive. A partial spay (ovaries only) is rarely performed and would still allow pregnancy in extremely rare cases where uterine tissue remains. Always confirm with your vet what procedure was performed."
+          "question": "绝育后的母犬还能怀孕吗？",
+          "answer": "不能。完整的卵巢子宫切除术（子宫和卵巢摘除）永久消除了怀孕可能性。部分卵巢摘除术极少进行，在极罕见情况下若残留子宫组织仍可能怀孕。请向兽医确认具体实施的是哪种手术。"
         }
       ]
     },
@@ -4365,102 +4383,102 @@
       "topicA": {
         "pros": [
           {
-            "title": "Predictable Life Stages",
-            "body": "Dogs have well-defined life stages by breed size: puppy, junior, adult, mature, senior, geriatric. AAHA guidelines provide clear health recommendations for each stage, making preventive care more systematic."
+            "title": "可预测的生命阶段",
+            "body": "犬按体型有明确的生命阶段划分：幼犬、少年、成年、熟年、老年、高龄。AAHA（美国动物医院协会）指南为各阶段提供了明确的健康建议，使预防性保健更有系统性。"
           },
           {
-            "title": "Size-Based Aging Models",
-            "body": "Dog aging is strongly correlated with breed size. Small dogs (<10kg) live 12-16 years; giant breeds (>45kg) live 7-10 years. This predictability helps owners plan for long-term care needs."
+            "title": "基于体型的衰老模式",
+            "body": "狗的衰老与品种体型高度相关。小型犬（<10kg）寿命12-16年；巨型品种（>45kg）仅7-10年。这种可预测性有助于主人规划长期护理需求。"
           },
           {
-            "title": "Extensive Research",
-            "body": "Decades of canine aging research (including the UCSD epigenetic clock study) provide data-driven insights into breed-specific health risks and longevity optimization."
+            "title": "研究丰富",
+            "body": "数十年的犬类衰老研究（包括UCSD表观遗传时钟研究）为品种特异性健康风险和寿命优化提供了数据驱动的洞见。"
           }
         ],
         "cons": [
-          "Large breeds age significantly faster and have shorter lifespans — a Great Dane is 'senior' at 5-6 years while a Chihuahua reaches senior status at 8-10.",
-          "Breed-specific health risks complicate aging — hip dysplasia, bloat, and heart disease vary enormously by breed.",
-          "The outdated '7× rule' persists in public understanding, leading to confusion about true life stage."
+          "大型品种衰老速度明显快、寿命更短——大丹犬5-6岁即进入老年，而吉娃娃8-10岁才达老年。",
+          "品种特异性健康风险使衰老情况复杂化——髋关节发育不良、胃扩张扭转和心脏病在不同品种间差异巨大。",
+          "过时的「7倍规律」在公众认知中仍然存在，导致对真实生命阶段的困惑。"
         ],
         "bestFor": "[需翻译] Owners who want clear, size-adjusted life stage guidance and breed-specific health planning."
       },
       "topicB": {
         "pros": [
           {
-            "title": "Longer Average Lifespan",
-            "body": "Cats live 12-18 years on average, with many reaching 20+. Indoor cats consistently outlive dogs of comparable size due to lower metabolic stress and fewer breed-specific genetic disorders."
+            "title": "平均寿命更长",
+            "body": "猫平均寿命12-18年，许多可超过20年。室内猫因代谢应激较低、品种特异性遗传病较少，其寿命始终优于同等体型的狗。"
           },
           {
-            "title": "Uniform Aging Pattern",
-            "body": "Cats age more uniformly than dogs — no extreme size-based variation. AAFP feline life stage guidelines apply across all breeds, simplifying health planning."
+            "title": "衰老模式统一",
+            "body": "猫的衰老比狗更均匀——无极端体型差异。AAFP（美国猫科兽医协会）的猫科生命阶段指南适用于所有品种，简化了健康规划。"
           },
           {
-            "title": "Lower Genetic Disease Burden",
-            "body": "Cats have fewer breed-specific genetic disorders than dogs. Hypertrophic cardiomyopathy (HCM) and chronic kidney disease (CKD) are the main age-related concerns, affecting all breeds similarly."
+            "title": "遗传病负担较低",
+            "body": "猫的品种特异性遗传病比狗少。肥厚型心肌病（HCM）和慢性肾病（CKD）是主要的年龄相关性隐患，各品种发病情况相似。"
           }
         ],
         "cons": [
-          "Cats mask illness effectively — signs of aging-related disease often appear late, making early detection more difficult.",
-          "Feline aging research is less extensive than canine — fewer breed-specific longevity studies exist.",
-          "Dental disease affects 70-80% of cats by age 3, often progressing silently without obvious symptoms."
+          "猫善于隐藏疾病——衰老相关疾病的症状往往出现较晚，使早期检测更困难。",
+          "猫的衰老研究不如狗深入——针对特定品种的寿命研究较少。",
+          "70-80%的猫3岁前患牙科疾病，通常悄然进展而无明显症状。"
         ],
         "bestFor": "[需翻译] Owners who prefer a more uniform aging model and are proactive about regular veterinary screening."
       },
       "rows": [
         {
-          "dimension": "Average Lifespan",
-          "topicA": "10-13 years (varies by size)",
-          "topicB": "12-18+ years"
+          "dimension": "平均寿命",
+          "topicA": "10-13年（因体型而异）",
+          "topicB": "12-18年以上"
         },
         {
-          "dimension": "Senior Age",
-          "topicA": "5-10 years (size-dependent)",
-          "topicB": "10-11 years"
+          "dimension": "老年界定年龄",
+          "topicA": "5-10岁（取决于体型）",
+          "topicB": "10-11岁"
         },
         {
-          "dimension": "Geriatric Age",
-          "topicA": "7-12 years (size-dependent)",
-          "topicB": "15+ years"
+          "dimension": "高龄界定年龄",
+          "topicA": "7-12岁（取决于体型）",
+          "topicB": "15岁以上"
         },
         {
-          "dimension": "Life Stage Model",
-          "topicA": "6 stages (size-adjusted)",
-          "topicB": "6 stages (uniform)"
+          "dimension": "生命阶段模式",
+          "topicA": "6个阶段（按体型调整）",
+          "topicB": "6个阶段（统一适用）"
         },
         {
-          "dimension": "Aging Research",
-          "topicA": "Extensive (UCSD, AAHA)",
-          "topicB": "Moderate (AAFP)"
+          "dimension": "衰老研究",
+          "topicA": "丰富（UCSD、AAHA）",
+          "topicB": "中等（AAFP）"
         },
         {
-          "dimension": "Genetic Disease Risk",
-          "topicA": "High (breed-specific)",
-          "topicB": "Lower (more uniform)"
+          "dimension": "遗传病风险",
+          "topicA": "高（品种特异性）",
+          "topicB": "较低（更趋统一）"
         },
         {
-          "dimension": "Illness Detection",
-          "topicA": "More obvious symptoms",
-          "topicB": "Masks illness well"
+          "dimension": "疾病检测",
+          "topicA": "症状更明显",
+          "topicB": "善于隐藏疾病"
         },
         {
-          "dimension": "Dental Disease",
-          "topicA": "Common (40-60%)",
-          "topicB": "Very common (70-80%)"
+          "dimension": "牙科疾病",
+          "topicA": "常见（40-60%）",
+          "topicB": "非常常见（70-80%）"
         }
       ],
-      "verdict": "<strong>Dogs and cats age fundamentally differently — neither is 'better'.</strong> Dogs have size-dependent aging with more predictable life stages but shorter average lifespans for large breeds. Cats age more uniformly and live longer but hide illness better, requiring more proactive screening. The key to maximizing either pet's lifespan is regular veterinary checkups, appropriate nutrition for life stage, and early detection of age-related disease. Use our Dog Age Calculator and Cat Age Calculator to determine your pet's current life stage and health priorities.",
+      "verdict": "<strong>狗和猫的衰老方式根本不同——没有谁\"更好\"。</strong>狗的衰老相关体型，有更可预测的生命阶段，但大型犬平均寿命更短。猫衰老更均匀，寿命更长但更善于隐藏疾病，需要更积极的健康筛查。延长宠物寿命的关键是定期体检、适当的阶段营养和早期发现老年病。使用我们的犬龄计算器和猫龄计算器了解宠物的当前生命阶段和健康重点。",
       "faq": [
         {
-          "question": "Do cats age faster than dogs?",
-          "answer": "No — cats generally live longer than dogs. The average cat lives 12-18 years, while the average dog lives 10-13 years. However, large dog breeds age faster in their early years, reaching 'senior' status as early as 5-6 years old. Cats age more uniformly and reach senior status at 10-11 years."
+          "question": "猫比狗老得快吗？",
+          "answer": "不是——猫的寿命通常比狗长。猫平均寿命12-18年，而狗平均10-13年。不过大型犬品种在生命早期衰老更快，最早5-6岁即进入老年。猫的衰老更为均匀，10-11岁才进入老年。"
         },
         {
-          "question": "Why do small dogs live longer than large dogs?",
-          "answer": "Large dogs age faster due to higher metabolic rates, faster growth, and increased oxidative stress. The rapid growth required to reach 40-70kg in 12-18 months causes more cellular damage over time. Additionally, large breeds are prone to age-related diseases like cancer and heart disease at younger ages."
+          "question": "为什么小型犬比大型犬寿命长？",
+          "answer": "大型犬因代谢率更高、生长更快、氧化应激更强而衰老更快。在12-18个月内从幼犬长到40-70kg所需的快速生长随时间推移造成更多细胞损伤。此外，大型品种在较年轻时更易患癌症和心脏病等年龄相关疾病。"
         },
         {
-          "question": "How often should senior pets see the vet?",
-          "answer": "Both dogs and cats over 7 years (or 5 for giant breeds) should have veterinary checkups every 6 months. Senior screening bloodwork (CBC, chemistry, thyroid) is recommended annually to detect kidney disease, diabetes, and other age-related conditions early."
+          "question": "老年宠物应该多久看一次兽医？",
+          "answer": "超过7岁（巨型品种超过5岁）的狗和猫应每6个月进行一次体检。建议每年进行一次老年筛查血液检查（血常规、生化、甲状腺），以及早发现肾病、糖尿病和其他年龄相关疾病。"
         }
       ]
     },
@@ -4472,104 +4490,104 @@
       "topicA": {
         "pros": [
           {
-            "title": "Predictable Monthly Cost",
-            "body": "Pet insurance costs $20-70/month for dogs and $15-50/month for cats. This predictable expense helps budget for veterinary care without surprise bills."
+            "title": "月度费用可预测",
+            "body": "宠物保险狗每月$20-70，猫每月$15-50。这笔可预测的支出有助于为兽医护理编制预算，避免意外账单。"
           },
           {
-            "title": "Covers Catastrophic Costs",
-            "body": "Insurance covers major emergencies: surgery ($3,000-8,000), cancer treatment ($5,000-15,000), and chronic conditions ($1,000-3,000/year). These costs would be devastating without coverage."
+            "title": "覆盖灾难性费用",
+            "body": "保险覆盖重大急症：手术（$3,000-8,000）、癌症治疗（$5,000-15,000）、慢性病治疗（每年$1,000-3,000）。没有保险，这些费用将是毁灭性的。"
           },
           {
-            "title": "Peace of Mind",
-            "body": "With insurance, you can make treatment decisions based on what's best for your pet rather than what you can afford. This removes financial barriers to optimal care."
+            "title": "安心保障",
+            "body": "有了保险，您可以根据宠物的最佳治疗方案做决定，而非受经济能力限制。这消除了获得最佳护理的经济障碍。"
           }
         ],
         "cons": [
-          "Premiums increase with age and breed risk — a senior dog may pay $100-200/month.",
-          "Pre-existing conditions are excluded, and many policies have waiting periods, annual limits, and breed-specific exclusions.",
-          "You still pay out-of-pocket for deductibles (100-1000) and co-pays (10-30%).",
-          "Lifetime costs may exceed savings if your pet stays healthy — insurance is a bet against misfortune."
+          "保费随年龄和品种风险增长——老年犬可能每月需支付$100-200。",
+          "既往症不予赔付，许多保单设有等待期、年度限额和品种免责条款。",
+          "您仍需自付免赔额（100-1000）和共付比例（10-30%）。",
+          "如果宠物一直保持健康，长期总花费可能超过自保储蓄——保险本质上是在对赌不幸。"
         ],
         "bestFor": "[需翻译] Owners who want predictable costs, protection against catastrophic bills, and peace of mind."
       },
       "topicB": {
         "pros": [
           {
-            "title": "Full Control of Funds",
-            "body": "Your money stays in your account, earning interest. If your pet stays healthy, you keep every dollar — no premiums wasted."
+            "title": "资金完全受您控制",
+            "body": "您的钱留在账户中产生利息。如果宠物保持健康，您保住了每一分钱——没有浪费保费。"
           },
           {
-            "title": "No Exclusions or Limitations",
-            "body": "Self-insurance covers everything — pre-existing conditions, breed-specific issues, alternative therapies. No claim denials or policy fine print."
+            "title": "无免责条款或限制",
+            "body": "自保覆盖一切——既往症、品种特异性问题、替代疗法。无拒赔、无细则限制。"
           },
           {
-            "title": "Flexible Use",
-            "body": "Funds can be used for any purpose: emergencies, routine care, medications, or even end-of-life care. No restrictions on treatment choices."
+            "title": "使用灵活",
+            "body": "资金可用于任何目的：急诊、常规护理、药物甚至临终治疗。治疗选择不受任何限制。"
           }
         ],
         "cons": [
-          "Requires discipline — most people struggle to save consistently for a hypothetical future expense.",
-          "A single major emergency ($5,000-15,000) can deplete savings before you've built adequate reserves.",
-          "Early-years costs are high — puppies and kittens need spay/neuter, vaccines, and may have accidents.",
-          "Inflation and rising veterinary costs mean you need to save more each year to maintain adequate coverage."
+          "需要纪律——大多数人都难以为假想中的未来开支坚持存钱。",
+          "一次重大急症（$5,000-15,000）可能在你储蓄充足之前就用光积蓄。",
+          "早期花费高——幼犬和幼猫需要绝育、接种疫苗，可能发生意外。",
+          "通胀和兽医费用上涨意味着你需要每年增加储蓄以维持足够的保障。"
         ],
         "bestFor": "[需翻译] Disciplined savers with stable income, low-risk breeds, and the ability to absorb unexpected costs."
       },
       "rows": [
         {
-          "dimension": "Monthly Cost",
-          "topicA": "$20-200 (age/breed dependent)",
-          "topicB": "Variable (self-directed)"
+          "dimension": "月度费用",
+          "topicA": "$20-200（年龄/品种相关）",
+          "topicB": "不定（自行决定）"
         },
         {
-          "dimension": "Catastrophic Coverage",
-          "topicA": "Yes (after deductible)",
-          "topicB": "Only if adequately funded"
+          "dimension": "灾难性覆盖",
+          "topicA": "有（扣除免赔额后）",
+          "topicB": "仅在有充足储蓄的情况下"
         },
         {
-          "dimension": "Pre-existing Conditions",
-          "topicA": "Excluded",
-          "topicB": "Covered"
+          "dimension": "既往症",
+          "topicA": "不覆盖",
+          "topicB": "覆盖"
         },
         {
-          "dimension": "Peace of Mind",
-          "topicA": "High",
-          "topicB": "Variable"
+          "dimension": "安心程度",
+          "topicA": "高",
+          "topicB": "不定"
         },
         {
-          "dimension": "Fund Accessibility",
-          "topicA": "Reimbursement model",
-          "topicB": "Immediate access"
+          "dimension": "资金获取",
+          "topicA": "报销模式",
+          "topicB": "即时取用"
         },
         {
-          "dimension": "Long-term Cost",
-          "topicA": "Higher if pet stays healthy",
-          "topicB": "Lower if pet stays healthy"
+          "dimension": "长期费用",
+          "topicA": "若宠物健康则更高",
+          "topicB": "若宠物健康则更低"
         },
         {
-          "dimension": "Best For",
-          "topicA": "Risk-averse owners",
-          "topicB": "Disciplined savers"
+          "dimension": "最适合",
+          "topicA": "风险规避型主人",
+          "topicB": "能坚持储蓄的人"
         },
         {
-          "dimension": "Worst Case",
-          "topicA": "Premium increases",
-          "topicB": "Insufficient funds"
+          "dimension": "最坏情况",
+          "topicA": "保费上涨",
+          "topicB": "资金不足"
         }
       ],
-      "verdict": "<strong>For most pet owners, a hybrid approach works best.</strong> Get accident-only insurance ($10-20/month) to cover catastrophic emergencies, and build a dedicated pet savings account for routine care and smaller expenses. This gives you the best of both worlds: protection against bankruptcy-level bills while maintaining control of your money. Start saving $50-100/month from day one — by year 5, you'll have $3,000-6,000 set aside. Use our Pet Insurance Estimator to compare real costs for your pet's breed and age.",
+      "verdict": "<strong>对于大多数宠物主人，混合方案效果最佳。</strong>购买仅意外险（每月10-20美元）以覆盖灾难性紧急情况，同时建立专门的宠物储蓄账户用于日常护理和小额支出。这样既避免了高额账单风险，又能掌控自己的资金。从第一天起每月存50-100美元——到第5年，您将积累3,000-6,000美元。使用我们的宠物保险估算器比较真实成本。",
       "faq": [
         {
-          "question": "Is pet insurance worth it?",
-          "answer": "It depends on your risk tolerance and financial situation. If a $5,000 emergency bill would cause financial hardship, insurance is worth considering. If you can comfortably save $100/month and absorb unexpected costs, self-insurance may be more cost-effective over your pet's lifetime."
+          "question": "宠物保险值得购买吗？",
+          "answer": "取决于您的风险承受能力和经济状况。如果$5,000的急症账单会造成经济困难，值得考虑保险。如果您能轻松每月存下$100并能承受意外支出，自保可能在宠物一生中更划算。"
         },
         {
-          "question": "How much should I save for pet emergencies?",
-          "answer": "Veterinarians recommend having $3,000-5,000 available for emergencies. Start by saving $50-100/month from the day you get your pet. By year 3, you'll have a meaningful emergency fund. Consider a dedicated high-yield savings account."
+          "question": "应为宠物急症储蓄多少钱？",
+          "answer": "兽医建议急症备用金为$3,000-5,000。从接到宠物那天起每月存$50-100。到第3年，你将积累一笔可观的急症基金。建议开设专门的高收益储蓄账户。"
         },
         {
-          "question": "What does pet insurance not cover?",
-          "answer": "Most policies exclude pre-existing conditions, routine/preventive care (unless you add wellness coverage), breeding-related costs, and cosmetic procedures. Some breeds have exclusions for hereditary conditions. Always read the policy carefully before enrolling."
+          "question": "宠物保险不覆盖哪些项目？",
+          "answer": "大多数保单不覆盖既往症、常规/预防性护理（除非附加健康保障）、繁殖相关费用和整形项目。某些品种对遗传性疾病有免责条款。投保前请务必仔细阅读保单。"
         }
       ]
     },
@@ -4581,109 +4599,109 @@
       "topicA": {
         "pros": [
           {
-            "title": "Permanent & Tamper-Proof",
-            "body": "Microchips are implanted under the skin and cannot be removed or altered. ISO-standard chips (15-digit) are globally unique and linked to permanent registration databases."
+            "title": "永久且防篡改",
+            "body": "芯片植入皮下，无法去除或篡改。ISO标准芯片（15位）全球唯一，与永久性登记数据库关联。"
           },
           {
-            "title": "Universal Scanner Compatibility",
-            "body": "ISO 11784/11785 microchips can be read by universal scanners worldwide. Most shelters and vet clinics have scanners that read all major chip frequencies."
+            "title": "通用扫描仪兼容",
+            "body": "ISO 11784/11785芯片可被全球通用扫描仪读取。大多数收容所和动物医院都有能读取所有主要芯片频率的扫描仪。"
           },
           {
-            "title": "Quick & Painless",
-            "body": "Implantation takes seconds — similar to a vaccination. No anesthesia required. The chip lasts the pet's lifetime without maintenance."
+            "title": "快速无痛",
+            "body": "植入仅需数秒——类似疫苗接种。无需麻醉。芯片在宠物整个生命周期中无需维护即可长期使用。"
           },
           {
-            "title": "Required for EU Travel",
-            "body": "ISO microchips are mandatory for EU pet travel under Regulation 576/2013. No other identification method is accepted for pet passports."
+            "title": "欧盟旅行必需",
+            "body": "根据欧盟第576/2013号法规，ISO芯片是欧盟宠物旅行的强制要求。其他任何身份识别方式都不能用于宠物护照。"
           }
         ],
         "cons": [
-          "Requires a scanner to read — a found pet must go to a vet or shelter to be scanned.",
-          "Registration must be kept current — if you move or change phone numbers, the chip is useless unless updated.",
-          "Rare migration — chips can move from the implantation site, though this is uncommon with modern implantation techniques.",
-          "Cost: $25-50 for implantation plus annual registration fees ($0-20)."
+          "需要扫描仪读取——走失的宠物必须去动物医院或收容所才能被扫描。",
+          "登记信息必须保持最新——如果你搬家或更换电话号码，不更新芯片就毫无用处。",
+          "极少数情况会移位——芯片可能从植入部位移动，但现代植入技术已使这种情况很少发生。",
+          "费用：植入$25-50，外加年费注册费（$0-20）。"
         ],
         "bestFor": "[需翻译] All dogs — especially those who travel, live in urban areas, or are at risk of theft."
       },
       "topicB": {
         "pros": [
           {
-            "title": "Visible Identification",
-            "body": "Tattoos can be seen without a scanner — anyone can visually identify a tattooed pet. Ear tattoos or inner thigh tattoos are common placements."
+            "title": "肉眼可见的识别方式",
+            "body": "纹身无需扫描仪即可看见——任何人可直观识别纹身的宠物。常见部位为耳内侧或大腿内侧。"
           },
           {
-            "title": "No Technology Required",
-            "body": "No scanner, database, or electricity needed. A tattoo is immediately readable by anyone who finds your pet."
+            "title": "无需技术设备",
+            "body": "无需扫描仪、数据库或电源。任何发现纹身宠物的人都能立即读取信息。"
           },
           {
-            "title": "Breed Registration Marker",
-            "body": "Many breeders tattoo registration numbers as proof of pedigree. This is standard practice in some breed clubs."
+            "title": "品种登记标记",
+            "body": "部分繁育者会纹注册号码以证明血统。某些品种俱乐部将此作为标准做法。"
           }
         ],
         "cons": [
-          "Fades over time — tattoos become less legible as the pet ages, gains weight, or the fur grows.",
-          "Can be altered or forged — unlike microchips, tattoos are not tamper-proof.",
-          "Not accepted for EU travel — tattoos alone do not meet EU pet travel requirements.",
-          "Requires shaving the area to read — fur obscures the tattoo in most placements.",
-          "Painful application — requires sedation or anesthesia for the tattooing process."
+          "随时间褪色——随着宠物年龄增长、体重增加或毛发生长，纹身会变得模糊不清。",
+          "可被篡改或伪造——与芯片不同，纹身不具备防篡改性。",
+          "不被欧盟旅行认可——仅纹身不符合欧盟宠物旅行要求。",
+          "需要剃毛才能读取——大多数部位的纹身会被毛发遮挡。",
+          "操作过程疼痛——纹身需要镇静或麻醉。"
         ],
         "bestFor": "[需翻译] Breeders who want visible pedigree markers, and as a supplementary ID method alongside microchipping."
       },
       "rows": [
         {
-          "dimension": "Permanence",
-          "topicA": "Lifetime",
-          "topicB": "Fades over years"
+          "dimension": "持久性",
+          "topicA": "终生",
+          "topicB": "多年后褪色"
         },
         {
-          "dimension": "Scanner Required",
-          "topicA": "Yes",
-          "topicB": "No"
+          "dimension": "需要扫描仪",
+          "topicA": "是",
+          "topicB": "否"
         },
         {
-          "dimension": "EU Travel Accepted",
-          "topicA": "Yes (mandatory)",
-          "topicB": "No"
+          "dimension": "欧盟旅行认可",
+          "topicA": "是（强制要求）",
+          "topicB": "否"
         },
         {
-          "dimension": "Tamper-Proof",
-          "topicA": "Yes",
-          "topicB": "No"
+          "dimension": "防篡改",
+          "topicA": "是",
+          "topicB": "否"
         },
         {
-          "dimension": "Cost",
-          "topicA": "$25-50 + registration",
-          "topicB": "$20-100"
+          "dimension": "费用",
+          "topicA": null,
+          "topicB": null
         },
         {
-          "dimension": "Pain Level",
-          "topicA": "Minimal (injection)",
-          "topicB": "Moderate (requires sedation)"
+          "dimension": "疼痛程度",
+          "topicA": "极轻（注射）",
+          "topicB": "中等（需镇静）"
         },
         {
-          "dimension": "Maintenance",
-          "topicA": "Update registration",
-          "topicB": "None (but fades)"
+          "dimension": "维护要求",
+          "topicA": "更新登记信息",
+          "topicB": "无需维护（但会褪色）"
         },
         {
-          "dimension": "Global Standard",
+          "dimension": "全球标准",
           "topicA": "ISO 11784/11785",
-          "topicB": "No standard"
+          "topicB": "无标准"
         }
       ],
-      "verdict": "<strong>Microchipping is the clear winner for all dogs.</strong> It is permanent, tamper-proof, globally standardized, and required for international travel. Tattoos can serve as a visible supplementary ID but should never replace microchipping. The best approach: get your dog microchipped (ISO standard) and keep your registration current. Consider a visible ID collar tag as a third layer of protection. Use our EU Pet Travel Checker to verify microchip requirements for your destination.",
+      "verdict": "<strong>芯片是所有狗狗的明确优选。</strong>它永久、防篡改、全球标准化，且是国际旅行的必备项。纹身可作为可见的补充标识，但绝不能替代芯片。最佳方案：为狗狗植入芯片（ISO标准）并保持注册信息更新。建议使用带有联系方式的项圈作为第三层保护。使用我们的欧盟宠物旅行检查器确认目的地的芯片要求。",
       "faq": [
         {
-          "question": "Does microchipping hurt my dog?",
-          "answer": "Microchip implantation is quick and causes minimal discomfort — similar to a vaccination injection. The needle is slightly larger than a vaccine needle, but most dogs show no sign of pain. No anesthesia is required. The procedure takes less than 10 seconds."
+          "question": "芯片植入会让我的狗疼痛吗？",
+          "answer": "芯片植入快速且不适感极轻——类似疫苗接种注射。针头比疫苗针略粗，但大多数狗没有表现出疼痛迹象。无需麻醉。整个过程不到10秒。"
         },
         {
-          "question": "Can a microchip get lost or stop working?",
-          "answer": "Microchips rarely 'get lost' but can migrate from the implantation site (between the shoulder blades) to nearby tissue. Modern chips are encased in biocompatible glass to prevent rejection. They have no battery and last the pet's lifetime. Scanner compatibility is the main issue — ensure you get an ISO-standard chip."
+          "question": "芯片会移位或停止工作吗？",
+          "answer": "芯片极少「移位」，但可能从植入部位（肩胛骨之间）迁移到附近组织。现代芯片采用生物相容性玻璃封装以防止排异。芯片无电池，使用寿命与宠物终生一致。主要问题是扫描仪兼容性——请确保使用ISO标准芯片。"
         },
         {
-          "question": "Do I still need a collar tag if my dog is microchipped?",
-          "answer": "Yes. A collar tag with your phone number is the fastest way for someone who finds your dog to contact you. A microchip requires a scanner and database lookup, which takes longer. Use both for maximum protection."
+          "question": "如果狗已植入芯片，我还需要项圈牌吗？",
+          "answer": "需要。带有电话号码的项圈牌是让发现者联系你的最快方式。芯片需要扫描仪和数据库查询，耗时更长。两者并用可提供最大保护。"
         }
       ]
     },
@@ -4695,112 +4713,112 @@
       "topicA": {
         "pros": [
           {
-            "title": "Lower Cost",
-            "body": "Adoption fees range $50-300 and typically include spay/neuter, vaccinations, and microchipping. This saves $500-1,000 compared to buying from a breeder plus initial vet costs."
+            "title": "费用更低",
+            "body": "领养费为$50-300，通常包含绝育、疫苗接种和芯片植入。相比从繁育者购买加上初期兽医费用，可节省$500-1,000。"
           },
           {
-            "title": "Saves a Life",
-            "body": "Approximately 920,000 shelter dogs are euthanized annually in the US. Adoption directly reduces this number and makes room for another animal in need."
+            "title": "拯救生命",
+            "body": "美国每年约有92万只收容犬被实施安乐死。领养直接减少这一数字，并为另一只动物腾出救助空间。"
           },
           {
-            "title": "Known Personality",
-            "body": "Adult shelter dogs have established personalities — you can assess temperament, energy level, and compatibility before committing. Many are already house-trained."
+            "title": "性格已知",
+            "body": "成年收容犬性格已经稳定——你可以在决定前评估其性情、活力水平和相处契合度。许多已经过家庭定点排便训练。"
           },
           {
-            "title": "Health Screening",
-            "body": "Reputable shelters conduct behavioral assessments and basic health screenings. Many provide a health guarantee and post-adoption support."
+            "title": "健康筛查",
+            "body": "信誉良好的收容所会进行行为评估和基础健康筛查。许多提供健康保证和领养后支持。"
           }
         ],
         "cons": [
-          "Unknown health history — genetic conditions and early-life health may not be documented.",
-          "Behavioral issues possible — some shelter dogs have trauma, anxiety, or incomplete socialization.",
-          "Limited breed selection — specific breeds or puppies may not be available.",
-          "Adjustment period — shelter dogs need time to decompress and bond with their new family."
+          "健康史不明——遗传病和生命早期健康状况可能无记录。",
+          "可能存在行为问题——部分收容犬有创伤、焦虑或社会化不完全。",
+          "品种选择有限——特定品种或幼犬可能无法获得。",
+          "适应期——收容犬需要时间减压并与新家庭建立信任。"
         ],
         "bestFor": "Owners who want to save money, save a life, and are open to 成年犬 or 混种."
       },
       "topicB": {
         "pros": [
           {
-            "title": "Predictable Traits",
-            "body": "Purebred dogs from responsible breeders have predictable size, temperament, coat type, and energy level based on breed standards and parent traits."
+            "title": "特征可预测",
+            "body": "来自负责任繁育者的纯种犬在体型、性情、被毛类型和活力水平方面具有基于品种标准和亲代特征的可预测性。"
           },
           {
-            "title": "Health Testing",
-            "body": "Responsible breeders conduct genetic health testing (OFA, PennHIP) for breed-specific conditions like hip dysplasia, heart disease, and eye disorders."
+            "title": "健康检测",
+            "body": "负责任的繁育者会进行基因健康检测（OFA、PennHIP），筛查髋关节发育不良、心脏病和眼病等品种特异性疾病。"
           },
           {
-            "title": "Known History",
-            "body": "You know the dog's complete health history, vaccination record, and socialization from birth. This transparency helps with long-term health planning."
+            "title": "历史完整",
+            "body": "你了解狗的完整健康史、疫苗接种记录和社会化历程。这种透明度有助于长期健康规划。"
           },
           {
-            "title": "Puppy Experience",
-            "body": "Buying a puppy allows you to shape behavior from the earliest stages and bond during the critical socialization period (3-14 weeks)."
+            "title": "幼犬体验",
+            "body": "购买幼犬让你能从最早阶段塑造行为，并在关键社会化期（3-14周）建立亲密关系。"
           }
         ],
         "cons": [
-          "High cost — purebred puppies cost $1,000-3,000+ from responsible breeders, plus $500-1,000 in initial vet costs.",
-          "Ethical concerns — demand for purebreds supports an industry that contributes to overpopulation when irresponsible breeders prioritize profit.",
-          "Long wait times — reputable breeders often have waiting lists of 6-18 months.",
-          "No guarantee — even with health testing, genetic conditions can still develop."
+          "费用高昂——负责任繁育者的纯种幼犬价格为$1,000-3,000以上，外加$500-1,000初期兽医费用。",
+          "伦理顾虑——对纯种犬的需求支撑了一个行业，当不负责任的繁育者以利润为重时会加剧犬只过剩问题。",
+          "等待时间长——信誉良好的繁育者通常有6-18个月的等候名单。",
+          "无绝对保证——即使做过健康检测，遗传病仍可能发生。"
         ],
         "bestFor": "[需翻译] Owners who need predictability (allergies, size, temperament) or want to participate in specific breed activities."
       },
       "rows": [
         {
-          "dimension": "Initial Cost",
-          "topicA": "$50-300",
-          "topicB": "$1,000-3,500+"
+          "dimension": "初期费用",
+          "topicA": null,
+          "topicB": null
         },
         {
-          "dimension": "Includes Spay/Neuter",
-          "topicA": "Usually",
-          "topicB": "Rarely"
+          "dimension": "包含绝育",
+          "topicA": "通常包含",
+          "topicB": "通常不包含"
         },
         {
-          "dimension": "Includes Vaccines",
-          "topicA": "Usually",
-          "topicB": "Sometimes"
+          "dimension": "包含疫苗",
+          "topicA": "通常包含",
+          "topicB": "有时包含"
         },
         {
-          "dimension": "Health History",
-          "topicA": "Unknown/partial",
-          "topicB": "Complete"
+          "dimension": "健康史",
+          "topicA": "未知/部分",
+          "topicB": "完整"
         },
         {
-          "dimension": "Breed Predictability",
-          "topicA": "Variable",
-          "topicB": "High"
+          "dimension": "品种可预测性",
+          "topicA": "不定",
+          "topicB": "高"
         },
         {
-          "dimension": "Ethical Impact",
-          "topicA": "Saves a life",
-          "topicB": "Supports breeding"
+          "dimension": "伦理影响",
+          "topicA": "拯救生命",
+          "topicB": "支持繁育"
         },
         {
-          "dimension": "Puppy Availability",
-          "topicA": "Rare",
-          "topicB": "Yes"
+          "dimension": "幼犬可得性",
+          "topicA": "罕见",
+          "topicB": "有"
         },
         {
-          "dimension": "Personality Known",
-          "topicA": "Adult dogs",
-          "topicB": "Developing"
+          "dimension": "性格了解",
+          "topicA": "成年犬",
+          "topicB": "发展中"
         }
       ],
-      "verdict": "<strong>Adoption is the right choice for most families.</strong> It saves money, saves a life, and provides a loving home to a dog in need. If you need predictability (allergies, specific size, working dog traits), seek a responsible breeder who health-tests their breeding stock. Never buy from puppy mills or pet stores — these sources prioritize profit over animal welfare. Consider adopting an adult dog: you skip the destructive puppy phase and get a dog whose personality is already established. Use our Dog Calorie Calculator and Age Calculator to plan care for your new companion.",
+      "verdict": "<strong>领养是大多数家庭的正确选择。</strong>它省钱、救命，为需要的狗狗提供温暖的家。如果您需要确定性（过敏、特定体型、工作犬特征），寻找进行健康检测的负责任繁育者。切勿从繁殖场或宠物店购买——这些渠道将利润置于动物福利之上。考虑领养成年犬：可以跳过破坏性幼犬期，直接获得性格已确定的狗狗。",
       "faq": [
         {
-          "question": "Is it better to adopt or buy a dog?",
-          "answer": "For most families, adoption is the better choice — it saves money, saves a life, and provides a loving home. However, if you need a specific breed for allergies, working purposes, or size predictability, a responsible breeder may be appropriate. Always research breeders thoroughly and avoid puppy mills."
+          "question": "领养还是购买狗更好？",
+          "answer": "对大多数家庭来说，领养是更优选择——省钱、拯救生命、提供温馨家庭。但如果您因过敏、工作用途或体型可预测性需要特定品种，负责任繁育者可能更合适。请务必深入调查繁育者，远离幼犬工厂。"
         },
         {
-          "question": "What are the hidden costs of adopting a dog?",
-          "answer": "While adoption fees are low, budget for: food ($30-60/month), routine vet care ($200-400/year), unexpected illness or injury ($500-5,000+), training classes ($100-300), supplies ($200-500 initial), and pet insurance or emergency savings ($20-70/month)."
+          "question": "领养狗有哪些隐性费用？",
+          "answer": "虽然领养费较低，但需预算：食物（每月$30-60）、常规兽医护理（每年$200-400）、意外疾病或受伤（$500-5,000以上）、训练课程（$100-300）、用品（初期$200-500）以及宠物保险或急症储蓄（每月$20-70）。"
         },
         {
-          "question": "How do I identify a responsible breeder?",
-          "answer": "Responsible breeders: health-test breeding stock (OFA, PennHIP), allow you to visit and meet the parents, provide a health guarantee, ask you questions about your home, take back any dog if you can't keep it, and limit breeding to 1-2 litters per year. Avoid breeders who won't show you the facility or have multiple breeds available immediately."
+          "question": "如何识别负责任的繁育者？",
+          "answer": "负责任的繁育者：对种犬进行健康检测（OFA、PennHIP）、允许你参观并见到幼犬父母、提供健康保证、询问你家庭情况、若你无法继续饲养会收回犬只、每年限繁育1-2胎。拒绝让你参观设施或同时提供多个品种的繁育者应避免。"
         }
       ]
     },
@@ -4812,108 +4830,108 @@
       "topicA": {
         "pros": [
           {
-            "title": "Lower Carbohydrate Content",
-            "body": "Grain-free diets typically replace grains with legumes (peas, lentils) or potatoes, resulting in lower carbohydrate content. This may benefit dogs with grain allergies (rare but real)."
+            "title": "碳水化合物含量较低",
+            "body": "无谷饮食通常用豆类（豌豆、扁豆）或土豆替代谷物，碳水含量较低。可能对谷物过敏（虽罕见但确实存在）的狗有益。"
           },
           {
-            "title": "Higher Protein Percentage",
-            "body": "Many grain-free foods have higher protein percentages (28-35%) compared to grain-inclusive foods (22-28%), which can benefit active or working dogs."
+            "title": "蛋白质比例更高",
+            "body": "许多无谷食品的蛋白质比例（28-35%）高于含谷食品（22-28%），有利于活跃犬或工作犬。"
           },
           {
-            "title": "Marketing Appeal",
-            "body": "Grain-free is heavily marketed as 'ancestral' or 'biologically appropriate,' appealing to owners who want to feed a 'natural' diet."
+            "title": "营销吸引力",
+            "body": "无谷被大力宣传为「天然」或「符合生物学特性」，吸引希望喂食「天然」饮食的主人。"
           }
         ],
         "cons": [
-          "FDA investigation link to DCM: Grain-free diets have been associated with dilated cardiomyopathy (DCM) in breeds not genetically predisposed. The link appears related to legume-heavy formulations.",
-          "Higher cost: Grain-free foods cost 20-40% more than comparable grain-inclusive options.",
-          "Unnecessary for most dogs: True grain allergies affect less than 1% of dogs. Most dogs digest grains perfectly well.",
-          "Nutritional imbalance risk: Some grain-free foods are deficient in taurine or other amino acids critical for heart health."
+          "FDA调查与DCM关联：无谷饮食与非遗传易感品种中扩张型心肌病（DCM）的发生有关联。关联似乎与豆类配方偏重有关。",
+          "费用更高：无谷食品比同类含谷产品贵20-40%。",
+          "对大多数狗并非必要：真正的谷物过敏影响不到1%的狗。大多数狗能很好地消化谷物。",
+          "营养失衡风险：部分无谷食品缺乏牛磺酸或其他对心脏健康至关重要的氨基酸。"
         ],
         "bestFor": "[需翻译] Dogs with confirmed grain allergies (rare) and owners who understand the DCM risk and choose taurine-supplemented formulas."
       },
       "topicB": {
         "pros": [
           {
-            "title": "Lower DCM Risk",
-            "body": "Grain-inclusive diets have not been associated with the DCM spike observed with grain-free diets. Whole grains provide taurine and other heart-healthy nutrients."
+            "title": "DCM风险较低",
+            "body": "含谷饮食未发现与无谷饮食相关的DCM激增有关联。全谷物提供牛磺酸和其他心脏健康营养素。"
           },
           {
-            "title": "More Affordable",
-            "body": "Grain-inclusive foods are generally 20-40% less expensive than grain-free equivalents, making quality nutrition accessible to more owners."
+            "title": "更经济实惠",
+            "body": "含谷食品通常比无谷同类产品便宜20-40%，使更多主人能获得优质营养。"
           },
           {
-            "title": "Better Digestibility",
-            "body": "Cooked grains (rice, oats, barley) are highly digestible for dogs (85-90% digestibility). They provide steady energy and fiber for gut health."
+            "title": "消化率更好",
+            "body": "烹煮过的谷物（大米、燕麦、大麦）对狗的消化率很高（85-90%）。提供稳定能量和有益肠道健康的纤维。"
           },
           {
-            "title": "AAFCO Compliance",
-            "body": "Most grain-incomplete foods meet AAFCO nutrient profiles through feeding trials, ensuring nutritional completeness for specific life stages."
+            "title": "AAFCO合规",
+            "body": "大多数含谷食品通过喂养试验符合AAFCO营养标准，确保特定生命阶段的营养完整性。"
           }
         ],
         "cons": [
-          "Higher carbohydrate content (30-50%) may not suit all dogs, especially those with diabetes or insulin resistance.",
-          "Some dogs have true grain allergies (wheat, corn) — though this affects less than 1% of dogs.",
-          "Quality varies enormously — some grain-inclusive foods use low-quality grain fillers rather than whole grains.",
-          "May be less palatable for some dogs compared to high-protein grain-free formulas."
+          "碳水含量较高（30-50%）可能不适合所有狗，尤其是糖尿病或胰岛素抵抗的狗。",
+          "部分狗确实对谷物过敏（小麦、玉米）——尽管影响不到1%的狗。",
+          "品质差异极大——部分含谷食品使用低质量谷物填充剂而非全谷物。",
+          "对某些狗可能不如高蛋白无谷配方适口。"
         ],
         "bestFor": "[需翻译] The vast majority of dogs — especially those without grain allergies and owners concerned about DCM risk."
       },
       "rows": [
         {
-          "dimension": "DCM Risk",
-          "topicA": "Investigated by FDA",
-          "topicB": "No association"
+          "dimension": "DCM风险",
+          "topicA": "FDA正在调查",
+          "topicB": "无关联"
         },
         {
-          "dimension": "Carb Content",
-          "topicA": "Lower (20-35%)",
-          "topicB": "Higher (30-50%)"
+          "dimension": "碳水含量",
+          "topicA": "较低（20-35%）",
+          "topicB": "较高（30-50%）"
         },
         {
-          "dimension": "Protein %",
-          "topicA": "Often higher (28-35%)",
-          "topicB": "Moderate (22-28%)"
+          "dimension": "蛋白质比例",
+          "topicA": "通常较高（28-35%）",
+          "topicB": "中等（22-28%）"
         },
         {
-          "dimension": "Cost",
-          "topicA": "20-40% more expensive",
-          "topicB": "More affordable"
+          "dimension": "费用",
+          "topicA": "贵20-40%",
+          "topicB": "更经济"
         },
         {
-          "dimension": "Grain Allergy Risk",
-          "topicA": "Avoids grains",
-          "topicB": "May contain allergens"
+          "dimension": "谷物过敏风险",
+          "topicA": "避免谷物",
+          "topicB": "可能含过敏原"
         },
         {
-          "dimension": "Taurine Content",
-          "topicA": "Variable (may be low)",
-          "topicB": "Usually adequate"
+          "dimension": "牛磺酸含量",
+          "topicA": "不定（可能偏低）",
+          "topicB": "通常充足"
         },
         {
-          "dimension": "Digestibility",
-          "topicA": "Variable",
-          "topicB": "High (cooked grains)"
+          "dimension": "消化率",
+          "topicA": "不定",
+          "topicB": "高（烹煮谷物）"
         },
         {
-          "dimension": "AAFCO Feeding Trials",
-          "topicA": "Some brands",
-          "topicB": "Most major brands"
+          "dimension": "AAFCO喂养试验",
+          "topicA": "部分品牌",
+          "topicB": "大多数主要品牌"
         }
       ],
-      "verdict": "<strong>For most dogs, grain-inclusive food from a reputable brand is the safer, more cost-effective choice.</strong> The FDA investigation into grain-free diets and DCM is ongoing, but the association is concerning enough that veterinary nutritionists recommend caution. If your dog has a confirmed grain allergy (rare), choose a grain-free formula that is taurine-supplemented and has undergone AAFCO feeding trials. For all other dogs, a quality grain-inclusive diet provides complete nutrition at lower cost with no DCM association. Consult your veterinarian before making dietary changes.",
+      "verdict": "<strong>对于大多数狗狗，含谷物的优质品牌食品是更安全、更具性价比的选择。</strong>FDA对无谷物饮食与DCM关联的调查仍在进行中，但这种关联已引起兽医营养学家的足够担忧。如果狗狗确诊谷物过敏（罕见），选择补充牛磺酸且经过AAFCO喂养试验的无谷物配方。对于其他狗狗，优质含谷物饮食以更低的成本提供完整营养且无DCM关联。",
       "faq": [
         {
-          "question": "Is grain-free dog food bad for dogs?",
-          "answer": "The FDA is investigating a potential link between grain-free diets and DCM (dilated cardiomyopathy) in dogs. While not conclusive, the association is strong enough that veterinary nutritionists recommend caution. Grain-free diets heavy in legumes (peas, lentils) may interfere with taurine absorption, potentially leading to heart disease."
+          "question": "无谷狗粮对狗有害吗？",
+          "answer": "FDA正在调查无谷饮食与狗扩张型心肌病（DCM）之间的潜在关联。虽然尚无定论，但关联性已足够强，兽医营养学家建议谨慎对待。富含豆类（豌豆、扁豆）的无谷饮食可能干扰牛磺酸吸收，潜在导致心脏病。"
         },
         {
-          "question": "Do dogs need grains in their diet?",
-          "answer": "No, dogs do not require grains — but they digest cooked grains well and benefit from the nutrients grains provide (fiber, B vitamins, taurine). Grains are not 'fillers' in quality dog food; they are nutritious ingredients. Only dogs with confirmed grain allergies (less than 1% of dogs) need grain-free diets."
+          "question": "狗需要谷物吗？",
+          "answer": "不需要——狗并不需要谷物——但它们能很好地消化烹煮谷物，并从谷物提供的营养素（纤维、B族维生素、牛磺酸）中获益。在优质狗粮中，谷物不是「填充剂」，而是有营养的成分。只有确诊谷物过敏的狗（不到1%）才需要无谷饮食。"
         },
         {
-          "question": "What should I look for in dog food?",
-          "body": "Choose a food that: meets AAFCO nutrient profiles for your dog's life stage, has undergone feeding trials (not just formulation), lists a named animal protein as the first ingredient, and comes from a reputable manufacturer with veterinary nutritionist involvement. Use our Dog Calorie Calculator to determine proper feeding amounts."
+          "question": "选择狗粮时应注意什么？",
+          "body": "选择符合以下条件的食品：符合AAFCO针对狗生命阶段营养标准、经过喂养试验（非仅配方计算）、首位成分为明确标注的动物蛋白、由有兽医营养师参与的知名生产商制造。可使用我们的狗粮热量计算器确定适当喂食量。"
         }
       ]
     },
@@ -4925,113 +4943,113 @@
       "topicA": {
         "pros": [
           {
-            "title": "Long Shelf Life",
-            "body": "Unopened canned food lasts 2-5 years at room temperature. No refrigeration needed until opened, making it ideal for storage and travel."
+            "title": "保质期长",
+            "body": "未开封的罐头在室温下可保存2-5年。开封前无需冷藏，非常适合储存和旅行携带。"
           },
           {
-            "title": "High Moisture Content",
-            "body": "At 75-80% moisture, canned food provides significant hydration. This benefits dogs with kidney issues, urinary crystals, or low thirst drive."
+            "title": "含水量高",
+            "body": "罐头含水量达75-80%，可显著补充水分。对有肾脏问题、尿结晶或饮水欲望低的狗有益。"
           },
           {
-            "title": "Wide Availability",
-            "body": "Canned food is available at virtually every pet store, grocery store, and online retailer. Hundreds of brands and formulas to choose from."
+            "title": "购买渠道广泛",
+            "body": "几乎所有宠物店、超市和线上零售商都有罐头食品出售。数百种品牌和配方可供选择。"
           },
           {
-            "title": "Easy to Serve",
-            "body": "Straight from the can — no thawing, no preparation. Ideal for busy owners or those who need to travel with their dog."
+            "title": "食用方便",
+            "body": "开罐即食——无需解冻、无需准备。适合忙碌的主人或需要携带宠物出行的情况。"
           }
         ],
         "cons": [
-          "Lower calorie density (80-120 kcal/100g) means dogs need to eat more volume to meet energy needs.",
-          "Contains preservatives (even 'natural' ones) to maintain shelf stability.",
-          "Can contribute to faster tartar buildup without dental hygiene.",
-          "Once opened, must be refrigerated and used within 3-5 days."
+          "热量密度较低（80-120大卡/100g），狗需要摄入更多量才能满足能量需求。",
+          "含防腐剂（即使是「天然」防腐剂）以保持货架稳定性。",
+          "缺乏咀嚼洁牙作用，可能加速牙垢堆积。",
+          "开封后必须冷藏并在3-5天内用完。"
         ],
         "bestFor": "老年狗, 小型品种, picky eaters, dogs with dental issues, and owners who value convenience."
       },
       "topicB": {
         "pros": [
           {
-            "title": "Minimal Processing",
-            "body": "Frozen food is flash-frozen rather than heat-processed, preserving more heat-sensitive nutrients (B vitamins, vitamin C, enzymes) that can be destroyed by canning."
+            "title": "加工程度最低",
+            "body": "冷冻食品采用速冻而非高温加工，更好地保留了罐装过程中可能破坏的热敏营养素（B族维生素、维生素C、酶）。"
           },
           {
-            "title": "Whole Food Ingredients",
-            "body": "Frozen diets often contain visible whole ingredients — chunks of meat, vegetables, and organs — with fewer additives and preservatives than canned food."
+            "title": "全食材配方",
+            "body": "冷冻饮食通常含有可见的完整食材——肉块、蔬菜和内脏——添加剂和防腐剂比罐头少。"
           },
           {
-            "title": "Higher Palatability",
-            "body": "The fresh-like texture and aroma make frozen food highly palatable. Ideal for picky eaters or dogs transitioning from raw diets."
+            "title": "适口性更佳",
+            "body": "类似新鲜食物的口感和香气使冷冻食品极具吸引力。适合挑食或从生食过渡的狗。"
           },
           {
-            "title": "No Preservatives Needed",
-            "body": "Freezing preserves food naturally without chemical preservatives. This appeals to owners seeking 'clean label' products."
+            "title": "无需防腐剂",
+            "body": "冷冻天然保存食物，无需化学防腐剂。这吸引了追求「清洁标签」产品的消费者。"
           }
         ],
         "cons": [
-          "Requires freezer space — bulky to store and impossible to travel with easily.",
-          "Must be thawed before serving (12-24 hours in refrigerator) — no spontaneous feeding.",
-          "Shorter shelf life once thawed (2-3 days refrigerated).",
-          "Higher cost than canned food — typically $3-8/day for a 30kg dog.",
-          "Limited availability — fewer brands and formulas than canned food."
+          "需要冷冻储存空间——占用空间大，旅行携带不便。",
+          "食用前必须解冻（冷藏12-24小时）——无法随时喂食。",
+          "解冻后保质期短（冷藏2-3天）。",
+          "费用高于罐头——30kg犬每天约$3-8。",
+          "购买渠道有限——品牌和配方选择少于罐头。"
         ],
         "bestFor": "[需翻译] Owners who want minimally processed nutrition, have adequate freezer space, and are willing to plan meals ahead."
       },
       "rows": [
         {
-          "dimension": "Shelf Life (unopened)",
-          "topicA": "2-5 years",
-          "topicB": "6-12 months (frozen)"
+          "dimension": "保质期（未开封）",
+          "topicA": "2-5年",
+          "topicB": "6-12个月（冷冻）"
         },
         {
-          "dimension": "Moisture Content",
+          "dimension": "水分含量",
           "topicA": "75-80%",
           "topicB": "65-75%"
         },
         {
-          "dimension": "Calorie Density",
+          "dimension": "热量密度",
           "topicA": "80-120 kcal/100g",
           "topicB": "120-180 kcal/100g"
         },
         {
-          "dimension": "Processing",
-          "topicA": "Heat-processed",
-          "topicB": "Flash-frozen"
+          "dimension": "加工方式",
+          "topicA": "高温加工",
+          "topicB": "速冻"
         },
         {
-          "dimension": "Preservatives",
-          "topicA": "Usually present",
-          "topicB": "None needed"
+          "dimension": "防腐剂",
+          "topicA": "通常含防腐剂",
+          "topicB": "无需防腐"
         },
         {
-          "dimension": "Cost/day (30kg dog)",
-          "topicA": "$2-5",
-          "topicB": "$3-8"
+          "dimension": "每日花费（30kg狗）",
+          "topicA": null,
+          "topicB": null
         },
         {
-          "dimension": "Storage",
-          "topicA": "Room temp",
-          "topicB": "Freezer required"
+          "dimension": "储存方式",
+          "topicA": "常温",
+          "topicB": "需冷冻"
         },
         {
-          "dimension": "Prep Required",
-          "topicA": "None",
-          "topicB": "Thawing (12-24 hrs)"
+          "dimension": "准备工作",
+          "topicA": "无需准备",
+          "topicB": "需解冻（12-24小时）"
         }
       ],
-      "verdict": "<strong>Canned food wins on convenience and cost; frozen food wins on ingredient quality.</strong> For most owners, canned food is the practical choice — it's affordable, shelf-stable, and widely available. If you prioritize minimal processing and whole-food ingredients, frozen food is worth the extra cost and planning. A mixed approach works well: canned food as the daily base, with frozen food as a weekly 'fresh' meal. Always ensure any diet meets AAFCO nutrient profiles for your dog's life stage.",
+      "verdict": "<strong>罐头食品胜在便利和成本；冷冻食品胜在原料品质。</strong>对于大多数主人，罐头是实用选择——价格实惠、保质期长、购买方便。如果您追求最低加工和全食物原料，冷冻食品值得额外花费和规划。混合方案效果很好：罐头日常主食，冷冻食品每周作为\"新鲜\"餐。确保任何饮食都符合AAFCO营养标准。",
       "faq": [
         {
-          "question": "Is frozen dog food better than canned?",
-          "answer": "Frozen food retains more heat-sensitive nutrients and contains fewer preservatives, but 'better' depends on your priorities. Frozen food is more expensive and requires freezer space and thawing time. Canned food is more convenient and affordable. Both can be nutritionally complete if they meet AAFCO standards."
+          "question": "冷冻狗粮是否比罐头狗粮更好？",
+          "answer": "冷冻食品保留了更多热敏性营养成分，且含有更少的防腐剂，但是否「更好」取决于您的优先考量。冷冻食品更贵，需要冰箱空间和解冻时间。罐头食品则更便捷、更经济实惠。只要符合美国饲料管理官员协会（AAFCO）标准，两者都可以提供完整的营养。"
         },
         {
-          "question": "How do I transition my dog to frozen food?",
-          "answer": "Transition gradually over 7-10 days: start with 25% frozen + 75% current food, then 50/50, then 75/25, then 100% frozen. Thaw frozen food in the refrigerator for 12-24 hours before serving. Never microwave frozen dog food — it creates hot spots and destroys nutrients."
+          "question": "如何转换为冷冻狗粮？",
+          "answer": "需逐步过渡7-10天：开始时25%冷冻食品+75%当前食品，然后50/50，再75/25，最后全部转换为冷冻食品。喂食前需在冰箱中解冻冷冻食品12-24小时。切勿用微波解冻狗冷冻食品——这会产生热点并破坏营养。"
         },
         {
-          "question": "Can I mix canned and frozen dog food?",
-          "answer": "Yes, mixing is safe and can provide the benefits of both. Calculate your dog's total daily calorie needs first, then split between the two. Ensure the combined diet meets AAFCO nutrient profiles — most complete & balanced foods are formulated to be fed alone, so treat supplements as additions to a complete base."
+          "question": "可以混合喂食罐头和冷冻狗粮吗？",
+          "answer": "是的，混合喂食是安全的，且可以兼顾两者的益处。先计算狗每日总卡路里需求，再在两者之间分配。确保混合饮食符合美国饲料管理官员协会（AAFCO）营养标准——大多数全营养均衡食品是单独喂养设计的，补充剂应添加到已完成营养配比的主食基础上。"
         }
       ]
     },
@@ -5043,112 +5061,112 @@
       "topicA": {
         "pros": [
           {
-            "title": "High Moisture Content",
-            "body": "At 75-80% moisture, wet food provides significant hydration. Cats have a low thirst drive (desert ancestors) and often don't drink enough water. Wet food helps prevent chronic dehydration, a major contributor to urinary and kidney disease."
+            "title": "高含水量",
+            "body": "湿粮水分含量达75-80%，可提供大量水分补充。猫口渴驱动力低（沙漠祖先），常常饮水不足。湿粮有助于预防慢性脱水，这是泌尿系统和肾脏疾病的主要诱因。"
           },
           {
-            "title": "Lower Carbohydrates",
-            "body": "Quality wet foods contain fewer carbohydrates (0-10%) than dry food (30-50%). Cats are obligate carnivores with no nutritional requirement for carbs — lower carb diets more closely mimic their natural prey diet."
+            "title": "低碳水化合物",
+            "body": "优质湿粮碳水化合物含量（0-10%）低于干粮（30-50%）。猫是专性肉食动物，对碳水没有营养需求——低碳饮食更接近其自然猎物饮食。"
           },
           {
-            "title": "Better for Urinary Health",
-            "body": "The high moisture content dilutes urine, reducing the risk of urinary crystals, stones, and feline lower urinary tract disease (FLUTD). This is especially important for male cats, who are more prone to urinary blockages."
+            "title": "更利于泌尿系统健康",
+            "body": "高含水量可以稀释尿液，降低尿结晶、结石和下泌尿道疾病（FLUTD）的风险。这对公猫尤为重要，因为公猫更容易出现尿道阻塞。"
           },
           {
-            "title": "Higher Protein",
-            "body": "Wet food typically has higher animal protein percentages (40-50% on dry matter basis) compared to dry food (30-40%), supporting lean muscle mass in aging cats."
+            "title": "高蛋白质",
+            "body": "湿粮通常有更高的动物蛋白比例（干物质基础40-50%，干粮为30-40%），支持老年猫的肌肉量维持。"
           }
         ],
         "cons": [
-          "Cost: 2-4x more expensive per calorie than dry food for the same cat.",
-          "Shelf life: Once opened, wet food must be refrigerated and used within 2-3 days.",
-          "No dental benefit: Wet food provides no mechanical cleaning action for teeth.",
-          "Inconvenient for free-feeding: Wet food spoils if left out for more than 30 minutes."
+          "成本：同等卡路里下，湿粮价格是干粮的2-4倍。",
+          "保质期：开封后，湿粮必须冷藏并在2-3天内使用完。",
+          "无洁牙功效：湿粮对牙齿没有机械清洁作用。",
+          "不适合自由采食：湿粮放置超过30分钟会变质。"
         ],
         "bestFor": "[需翻译] All cats — especially males, seniors, cats with urinary issues, and those on dry-food-only diets."
       },
       "topicB": {
         "pros": [
           {
-            "title": "Cost-Effective",
-            "body": "Dry food costs $0.30-0.80/day for an average cat, vs $1.00-3.00 for wet food. This makes quality nutrition accessible to more owners."
+            "title": "经济实惠",
+            "body": "干粮每天花费$0.30-0.80，湿粮则为$1.00-3.00。这使得更多主人能够承担优质营养。"
           },
           {
-            "title": "Convenient",
-            "body": "Dry food can be free-fed (left out for grazing) without spoiling. Ideal for busy owners or cats that prefer to eat small meals throughout the day."
+            "title": "方便省心",
+            "body": "干粮可以放置供猫自由采食而不变质。适合忙碌的主人或喜欢全天少量多餐的猫。"
           },
           {
-            "title": "Dental Benefits",
-            "body": "Some dental-specific kibbles are designed to reduce tartar buildup through mechanical crunching. However, most cats don't chew kibble long enough for significant benefit."
+            "title": "洁牙功效",
+            "body": "一些专门的洁牙型猫粮颗粒通过机械咀嚼来减少牙垢堆积。然而大多数猫咀嚼时间不长，效果有限。"
           },
           {
-            "title": "Energy-Dense",
-            "body": "With 350-450 kcal per 100g, dry food is ideal for underweight cats or those needing to gain weight without feeling overly full."
+            "title": "高能量密度",
+            "body": "干粮每100g含350-450千卡热量，非常适合体重偏轻或需要增重但又不想吃太多的猫。"
           }
         ],
         "cons": [
-          "Low moisture content (10%) contributes to chronic dehydration — a major risk factor for kidney disease and urinary crystals.",
-          "High carbohydrate content (30-50%) is unnatural for obligate carnivores and can contribute to obesity and diabetes.",
-          "Palatability can be lower than wet food — some cats refuse dry food, especially as seniors.",
-          "Free-feeding often leads to overeating — 40-60% of indoor cats are overweight."
+          "水分含量低（10%）易导致慢性脱水——这是肾病和尿结晶的主要风险因素。",
+          "高碳水化合物含量（30-50%）对专性肉食动物不自然，可能导致肥胖和糖尿病。",
+          "适口性可能低于湿粮——部分猫会拒绝干粮，尤其是老年猫。",
+          "自由采食容易导致暴食——40-60%的室内猫超重。"
         ],
         "bestFor": "[需翻译] Healthy adult cats with adequate water intake, owners on a budget, and cats that self-regulate food intake."
       },
       "rows": [
         {
-          "dimension": "Moisture Content",
+          "dimension": "水分含量",
           "topicA": "75-80%",
           "topicB": "~10%"
         },
         {
-          "dimension": "Carb Content",
+          "dimension": "碳水含量",
           "topicA": "0-10%",
           "topicB": "30-50%"
         },
         {
-          "dimension": "Protein (dry matter)",
+          "dimension": "蛋白质（干物质）",
           "topicA": "40-50%",
           "topicB": "30-40%"
         },
         {
-          "dimension": "Cost/day (avg cat)",
-          "topicA": "$1.00-3.00",
-          "topicB": "$0.30-0.80"
+          "dimension": "日均花费（一般猫）",
+          "topicA": null,
+          "topicB": null
         },
         {
-          "dimension": "Urinary Health",
-          "topicA": "Excellent",
-          "topicB": "Poor (without extra water)"
+          "dimension": "泌尿健康",
+          "topicA": "优秀",
+          "topicB": "差（不额外饮水）"
         },
         {
-          "dimension": "Dental Health",
-          "topicA": "No benefit",
-          "topicB": "Mild (dental kibbles)"
+          "dimension": "口腔健康",
+          "topicA": "无益处",
+          "topicB": "轻微（洁牙型猫粮）"
         },
         {
-          "dimension": "Free-Feeding",
-          "topicA": "Not recommended",
-          "topicB": "Yes"
+          "dimension": "自由采食",
+          "topicA": "不推荐",
+          "topicB": "可以"
         },
         {
-          "dimension": "Shelf Life (opened)",
-          "topicA": "2-3 days (refrigerated)",
-          "topicB": "Room temp OK"
+          "dimension": "保质期（开封后）",
+          "topicA": "2-3天（冷藏）",
+          "topicB": "常温保存即可"
         }
       ],
-      "verdict": "<strong>Wet food is the healthier choice for most cats.</strong> The high moisture content supports urinary and kidney health — the two most common health issues in aging cats. If budget allows, feed wet food exclusively or as the primary diet (75% wet + 25% dry). If you must feed dry food, ensure your cat drinks adequate water (use a water fountain) and monitor urinary health with regular vet checks. Use our Cat Hydration Calculator to determine your cat's daily water needs.",
+      "verdict": "<strong>湿粮是大多数猫咪更健康的选择。</strong>高水分含量支持泌尿和肾脏健康——老年猫最常见的两大健康问题。如果预算允许，完全或主要以湿粮喂养（75%湿+25%干）。如果必须喂干粮，确保猫咪饮充足的水（使用流动水碗）并定期检查泌尿健康。使用我们的猫咪水分计算器确定每日饮水需求。",
       "faq": [
         {
-          "question": "Should cats eat wet or dry food?",
-          "answer": "Wet food is generally healthier for cats due to its high moisture content, which supports urinary and kidney health. Cats evolved as desert animals with low thirst drives — they get most of their water from prey in the wild. Wet food mimics this natural hydration. However, dry food is more convenient and affordable. A mixed approach (75% wet + 25% dry) offers the best of both worlds."
+          "question": "猫应该吃湿粮还是干粮？",
+          "answer": "一般来说湿粮更健康，因为其高含水量有利于泌尿系统和肾脏健康。猫是沙漠动物的后代，口渴驱动力低——它们在野外从猎物中获取大部分水分。湿粮模拟了这种自然补水方式。但干粮更方便、更经济。混合方式（75%湿粮+25%干粮）则是鱼与熊掌兼得的最佳方案。"
         },
         {
-          "question": "How much wet food should I feed my cat?",
-          "answer": "An average adult cat (4-5kg) needs approximately 200-250 kcal/day. Most wet food cans (85g) provide 70-100 kcal, so 2-3 cans per day is typical. Use our Cat Hydration Calculator to determine exact needs based on your cat's weight, age, and activity level."
+          "question": "应该给猫喂多少湿粮？",
+          "answer": "一只成年猫（4-5kg）每天大约需要200-250千卡热量。大多数湿粮罐头（85g）提供70-100千卡热量，因此每天通常需要2-3罐。请使用我们猫的补水计算器，根据猫的体重、年龄和活动量来确定精确需求。"
         },
         {
-          "question": "Is dry food bad for cats?",
-          "answer": "Dry food is not inherently 'bad' but it contributes to chronic dehydration because cats don't compensate by drinking enough water. This increases the risk of urinary crystals, kidney disease, and FLUTD. If feeding dry food, ensure fresh water is always available (cats prefer running water — consider a fountain) and monitor urine output and concentration."
+          "question": "干粮对猫有害吗？",
+          "answer": "干粮本身并非「有害」，但会导致慢性脱水，因为猫不会通过多喝水来补偿。这增加了尿结晶、肾病和FLUTD的风险。如果喂干粮，请确保始终有新鲜饮水（猫偏好流动水——可考虑饮水机），并监测尿量和尿液浓度。"
         }
       ]
     },
@@ -5160,105 +5178,105 @@
       "topicA": {
         "pros": [
           {
-            "title": "Eliminates Scratching Damage",
-            "body": "Declawing permanently removes the claws, eliminating furniture damage and scratch injuries to humans or other pets."
+            "title": "消除抓挠损害",
+            "body": "去爪永久去除爪子，消除家具损坏和抓伤人或其他宠物的风险。"
           },
           {
-            "title": "One-Time Procedure",
-            "body": "The surgery is performed once (usually at 3-6 months) and requires no ongoing maintenance or training."
+            "title": "一次性手术",
+            "body": "手术只需进行一次（通常在3-6月龄），无需后续维护或训练。"
           }
         ],
         "cons": [
-          "Illegal or restricted in many jurisdictions: declawing is banned in the UK, EU, Australia, and several US states (New York, Maryland) due to animal welfare concerns.",
-          "Surgical complications: pain, infection, nerve damage, bone spurs, and incomplete claw regrowth occur in 10-50% of cases.",
-          "Behavioral consequences: declawed cats are more likely to bite (losing their primary defense) and may develop litter box aversion due to pain when scratching in the litter.",
-          "Chronic pain: the procedure amputates the last toe bone — equivalent to cutting off human fingers at the last joint.",
-          "Ethical concerns: AAFP, ISFM, and AVMA all oppose declawing as unnecessary and harmful."
+          "在许多司法管辖区被禁止或限制：由于动物保护考虑，英国、欧盟、澳大利亚以及美国部分州（纽约州、马里兰州）已禁止去爪手术。",
+          "手术并发症：10-50%的病例会出现疼痛、感染、神经损伤、骨刺和不完全爪再生。",
+          "行为后果：去爪猫更容易咬人（失去主要防御能力），并可能因刨猫砂时疼痛而出现乱排泄问题。",
+          "慢性疼痛：该手术截断最后一节脚趾骨——相当于人类从最后一个指节切断手指。",
+          "伦理问题：美国猫科执业兽医师协会（AAFP）、国际猫科医学协会（ISFM）和美国兽医医学协会（AVMA）均反对将去爪作为不必要且有害的行为。"
         ],
         "bestFor": "[需翻译] Not recommended for any cat. Humane alternatives exist for all scratching concerns."
       },
       "topicB": {
         "pros": [
           {
-            "title": "Natural Behavior Preservation",
-            "body": "Scratching is a natural feline behavior for marking territory, stretching muscles, and maintaining claw health. Scratching posts allow this behavior without damage."
+            "title": "保留自然行为",
+            "body": "抓挠是猫科动物的自然行为，用于标记领地、伸展肌肉和维护猫爪健康。猫抓板可以在不损害物品的情况下满足这种行为。"
           },
           {
-            "title": "No Pain or Health Risks",
-            "body": "Proper scratching post training involves no surgery, pain, or medical complications. It is entirely humane and preserves the cat's physical integrity."
+            "title": "无疼痛或健康风险",
+            "body": "正确的猫抓板训练不涉及手术、疼痛或医疗并发症。它完全人道，保护了猫的身体完整性。"
           },
           {
-            "title": "Strengthens Bond",
-            "body": "Interactive play with scratching posts and positive reinforcement strengthens the human-cat bond. Training sessions provide mental stimulation and exercise."
+            "title": "增进感情",
+            "body": "与猫抓板的互动游戏加上正向强化可以增进人与猫之间的感情。训练过程提供精神刺激和运动。"
           },
           {
-            "title": "Legal Everywhere",
-            "body": "Scratching post training is legal in all jurisdictions and endorsed by all major veterinary organizations."
+            "title": "全球通用合法",
+            "body": "猫抓板训练在所有司法管辖区均合法，并得到所有主要兽医组织的认可。"
           }
         ],
         "cons": [
-          "Requires patience and consistency — training takes 2-8 weeks for most cats.",
-          "Multiple posts needed — cats prefer different textures (sisal, cardboard, carpet) and locations (vertical, horizontal).",
-          "Does not eliminate scratching — redirects it. Some cats may still scratch furniture if posts are not appealing or well-placed.",
-          "Nail trimming still needed — even with scratching posts, cats benefit from regular nail trims every 2-4 weeks."
+          "需要耐心和坚持——大多数猫需要2-8周的训练。",
+          "需要多个抓板——猫偏好不同的材质（剑麻、纸板、地毯）和位置（垂直、水平）。",
+          "不能消除抓挠行为——只是转移行为。如果抓板不够吸引人或位置不合适，猫仍可能抓家具。",
+          "仍需定期剪指甲——即使有猫抓板，猫仍需要每2-4周修剪指甲一次。"
         ],
         "bestFor": "[需翻译] All cats and owners — this is the only humane and recommended approach."
       },
       "rows": [
         {
-          "dimension": "Pain Level",
-          "topicA": "Significant (surgery)",
-          "topicB": "None"
+          "dimension": "疼痛程度",
+          "topicA": "明显（手术）",
+          "topicB": "无"
         },
         {
-          "dimension": "Legal Status",
-          "topicA": "Banned in many regions",
-          "topicB": "Legal everywhere"
+          "dimension": "法律状态",
+          "topicA": "许多地区禁止",
+          "topicB": "各地均合法"
         },
         {
-          "dimension": "Effectiveness",
-          "topicA": "100% (removes claws)",
-          "topicB": "80-95% (redirects behavior)"
+          "dimension": "有效性",
+          "topicA": "100%（去除爪子）",
+          "topicB": "80-95%（转移行为）"
         },
         {
-          "dimension": "Health Risks",
-          "topicA": "Infection, nerve damage, chronic pain",
-          "topicB": "None"
+          "dimension": "健康风险",
+          "topicA": "感染、神经损伤、慢性疼痛",
+          "topicB": "无"
         },
         {
-          "dimension": "Behavioral Impact",
-          "topicA": "Increased biting, litter box aversion",
-          "topicB": "Positive (natural behavior preserved)"
+          "dimension": "行为影响",
+          "topicA": "咬人增加、乱排泄",
+          "topicB": "正向（保留自然行为）"
         },
         {
-          "dimension": "Cost",
-          "topicA": "$200-800 (surgery)",
-          "topicB": "$20-100 (posts + training)"
+          "dimension": "费用",
+          "topicA": "$200-800（手术）",
+          "topicB": "$20-100（抓板+训练）"
         },
         {
-          "dimension": "Veterinary Stance",
-          "topicA": "Opposed by AAFP/ISFM/AVMA",
-          "topicB": "Endorsed by all organizations"
+          "dimension": "兽医界态度",
+          "topicA": "被AAFP/ISFM/AVMA反对",
+          "topicB": "获得所有组织认可"
         },
         {
-          "dimension": "Long-term Outcome",
-          "topicA": "Permanent physical alteration",
-          "topicB": "Sustainable behavior management"
+          "dimension": "长期结果",
+          "topicA": "永久性身体改变",
+          "topicB": "可持续的行为管理"
         }
       ],
-      "verdict": "<strong>Scratching post training is the only humane and recommended approach.</strong> Declawing is opposed by all major veterinary organizations and is illegal in many jurisdictions. It causes unnecessary pain, can lead to behavioral problems, and permanently alters the cat's physical integrity. Scratching post training, combined with regular nail trims and soft nail caps (Soft Paws), effectively manages scratching without harm. If your cat is scratching furniture, consult your veterinarian or a feline behaviorist for a personalized training plan.",
+      "verdict": "<strong>猫抓板训练是唯一人道的推荐方法。</strong>所有主要兽医组织都反对去爪术，许多地区已将其定为非法。去爪造成不必要的疼痛，可能导致行为问题，永久改变猫的身体完整性。猫抓板训练结合定期指甲修剪和软甲套能有效管理抓挠行为而不伤害猫咪。",
       "faq": [
         {
-          "question": "Is declawing cruel?",
-          "answer": "Yes — declawing (onychectomy) is the surgical amputation of the last bone of each toe, equivalent to cutting off human fingers at the last joint. It causes significant pain, can lead to chronic pain and behavioral problems, and is opposed by AAFP, ISFM, and AVMA. It is banned in the UK, EU, Australia, and several US states."
+          "question": "去爪残忍吗？",
+          "answer": "是的——去爪术（甲床切除术）是截断每根脚趾最后一节骨头的外科手术，相当于在人类最后一个指节处切断手指。它会引起剧痛，可能导致慢性疼痛和行为问题，并被美国猫科执业兽医师协会（AAFP）、国际猫科医学协会（ISFM）和美国兽医医学协会（AVMA）所反对。该手术在英国、欧盟、澳大利亚和美国部分州已被禁止。"
         },
         {
-          "question": "How do I train my cat to use a scratching post?",
-          "answer": "Place posts near where your cat already scratches (favorite furniture, sleeping areas). Use sisal, cardboard, or carpet textures. Encourage use with catnip, treats, and interactive play. Reward with praise when they use the post. Be patient — training takes 2-8 weeks. Never punish or force your cat's paws on the post."
+          "question": "如何训练猫使用猫抓板？",
+          "answer": "将抓板放置在猫常抓挠的地方（喜欢的家具旁、睡觉区附近）。使用剑麻、纸板或地毯材质。用猫薄荷、零食和互动游戏鼓励使用。猫使用抓板时要给予表扬奖励。要有耐心——训练需要2-8周。切勿惩罚或将猫爪强行按在抓板上。"
         },
         {
-          "question": "What are soft nail caps?",
-          "answer": "Soft nail caps (like Soft Paws) are small vinyl caps glued over the cat's claws. They blunt the claws temporarily (4-6 weeks) without surgery. They are humane, painless, and effective for preventing furniture damage. Applied by your vet or at home with practice."
+          "question": "什么是软指甲套？",
+          "answer": "软指甲套（如Soft Paws）是粘在猫爪上的小乙烯基套管。它们可以在不手术的情况下临时钝化爪子（维持4-6周）。这是人道、无痛的，能有效防止家具损坏。可以在兽医处或练习后在家自行安装。"
         }
       ]
     },
@@ -5276,6 +5294,461 @@
       "dogGuides": "狗狗指南",
       "catGuides": "猫咪指南",
       "viewAll": "查看全部"
+    },
+    "harnessVsCollar": {
+      "title": "狗狗胸背带 vs 项圈：哪个更适合？",
+      "subtitle": "基于科学证据的胸背带与平项圈对比 — 涵盖颈部安全、牵引控制、逃脱风险以及犬种专属建议。参考 AAHA 和兽医行为学指南。",
+      "topicAName": "背扣式胸背带",
+      "topicBName": "平项圈",
+      "topicA": {
+        "pros": [
+          {
+            "title": "颈部安全",
+            "body": "将压力分散到胸部和肩膀，消除因牵引导致的甲状腺和气管压迫。对短鼻犬种至关重要。"
+          },
+          {
+            "title": "牵引控制",
+            "body": "背扣式胸背带在狗狗前冲时将其向侧边引导，减少前冲欲望。前扣型号提供更强的转向控制力。"
+          },
+          {
+            "title": "防逃脱",
+            "body": "正确穿戴的胸背带比松垮的项圈更难被狗狗挣脱，降低走失风险。"
+          },
+          {
+            "title": "短鼻犬种首选",
+            "body": "斗牛犬、巴哥、法国斗牛犬等短鼻犬种气道已有缺陷，散步时使用项圈存在风险。"
+          }
+        ],
+        "cons": [
+          "如不配合训练，可能养成持续前冲的习惯",
+          "正确穿戴较复杂 — 许多主人使用尺寸不当或调整不正确的胸背带",
+          "如穿戴不当可能在腋下摩擦皮肤",
+          "部分狗狗初次穿戴需要适应期",
+          "不适合挂载永久性身份标牌"
+        ],
+        "bestFor": "短鼻犬种、幼犬、有气管或甲状腺问题的犬只、强力牵引的狗狗以及正在从颈部伤病中恢复的犬只。"
+      },
+      "topicB": {
+        "pros": [
+          {
+            "title": "简单快捷",
+            "body": "穿脱方便，无需适应期。适合快速如厕散步。"
+          },
+          {
+            "title": "身份标牌佩戴",
+            "body": "项圈是身份标牌、疫苗标牌和联系信息的天然佩戴位置。"
+          },
+          {
+            "title": "价格更低",
+            "body": "高质量平项圈价格 ¥70-200，而优质胸背带则需 ¥180-400。"
+          },
+          {
+            "title": "无摩擦风险",
+            "body": "正确穿戴的平项圈不会摩擦皮肤或限制肩部活动。"
+          }
+        ],
+        "cons": [
+          "牵引时压力集中在甲状腺和颈椎上",
+          "短鼻犬种即使轻微牵引也可能出现危险的呼吸受限",
+          "部分狗狗可以挣脱松垮的项圈（格力犬、惠比特犬及头部窄小的犬种）",
+          "对强牵引犬只没有机械控制优势",
+          "窒息链和刺钉项圈为 AVSAB 劝阻使用的方式"
+        ],
+        "bestFor": "散步温和、训练有素的犬种（不拉扯），以及需要佩戴身份标牌的日常使用。"
+      },
+      "rows": [
+        {
+          "dimension": "颈部安全性",
+          "topicA": "出色（无颈部压力）",
+          "topicB": "牵引时存在气管压迫风险"
+        },
+        {
+          "dimension": "牵引控制",
+          "topicA": "良好（尤其前扣式）",
+          "topicB": "无"
+        },
+        {
+          "dimension": "逃脱风险",
+          "topicA": "低（正确穿戴）",
+          "topicB": "中等（可能挣脱）"
+        },
+        {
+          "dimension": "舒适度",
+          "topicA": "良好（Y 前式设计）",
+          "topicB": "良好（正确穿戴）"
+        },
+        {
+          "dimension": "短鼻犬安全性",
+          "topicA": "推荐",
+          "topicB": "谨慎使用"
+        },
+        {
+          "dimension": "初始费用",
+          "topicA": "¥180-400",
+          "topicB": "¥70-200"
+        },
+        {
+          "dimension": "身份标牌佩戴",
+          "topicA": "不适合",
+          "topicB": "理想"
+        },
+        {
+          "dimension": "兽医建议",
+          "topicA": "散步推荐使用",
+          "topicB": "仅用于身份识别"
+        }
+      ],
+      "verdict": "<strong>对大多数狗狗（尤其是短鼻种、幼犬和牵引力度大的犬只）而言，一款合身的 Y 前式胸背带是散步时的更安全选择。</strong> 平项圈仍适用于身份标牌和快速如厕散步，但不应用于会持续牵引的犬只。AVSAB 和 AAHA 均劝阻使用窒息型项圈，并建议有气道或颈部问题的狗狗使用胸背带。大多数兽医建议两者同时佩戴：胸背带用于散步，另戴一条带身份标牌的平项圈。",
+      "faq": [
+        {
+          "question": "对前冲的狗狗来说，胸背带比项圈更好吗？",
+          "answer": "是的。前扣式胸背带在狗狗前冲时将其向侧边引导，消除项圈的反射抵抗。背扣式胸背带如不配合训练仍可能导致持续前冲。最佳方案：前扣式胸背带配合松绳训练。"
+        },
+        {
+          "question": "法国斗牛犬使用哪种胸背带最好？",
+          "answer": "Y 前式胸背带（限制肩部腋下摩擦），且不能压迫颈部。短鼻犬种需要肩部自由活动以保持呼吸顺畅。"
+        },
+        {
+          "question": "狗狗可以同时戴胸背带和项圈吗？",
+          "answer": "可以 — 这是推荐的方式。始终佩戴带身份标牌的平项圈（以防走失），散步时使用胸背带（用于控制和安全）。"
+        }
+      ]
+    },
+    "petInsuranceVsEmergencyFund": {
+      "title": "宠物保险 vs 紧急储备金：哪种更好？",
+      "subtitle": "宠物保险和自保紧急储备金的综合财务对比 — 涵盖月度成本、覆盖范围、理赔流程和盈亏平衡分析。参考 NAPHIA 数据。",
+      "topicAName": "宠物保险",
+      "topicBName": "自保紧急储备金",
+      "topicA": {
+        "pros": [
+          {
+            "title": "覆盖灾难性开支",
+            "body": "癌症治疗费用 ¥20,000-70,000+，保险可防止因财务问题被迫选择安乐死。"
+          },
+          {
+            "title": "月度支出可预测",
+            "body": "固定的月度保费 (¥200-1000) 分摊成本，避免一次性支付 ¥35,000+ 的风险。"
+          },
+          {
+            "title": "多宠折扣",
+            "body": "多数保险公司为多只宠物提供 5-10% 折扣。"
+          },
+          {
+            "title": "附加险选项",
+            "body": "健康附加险可覆盖常规护理（疫苗、洗牙），每月额外 ¥70-200。"
+          }
+        ],
+        "cons": [
+          "不涵盖既往症 — 等待期后投保会增加除外责任",
+          "报销模式：先支付兽医费用再申请理赔（30-60 天处理期）",
+          "年度和终身限额：多数保单每年最高赔付 ¥35,000-100,000",
+          "品种特异性排除情况可能在第一年适用",
+          "保费随年龄增长：8 岁狗狗保费是 2 岁狗狗的 2-4 倍"
+        ],
+        "bestFor": "年轻健康宠物、希望成本可预测的主人、有遗传病风险的品种以及无力承担突发大额账单的家庭。"
+      },
+      "topicB": {
+        "pros": [
+          {
+            "title": "无保费",
+            "body": "无需月度缴费 — 每一元都用于您自己的宠物护理。"
+          },
+          {
+            "title": "完全控制",
+            "body": "无覆盖限制、无等待期、无理赔拒绝。"
+          },
+          {
+            "title": "产生利息",
+            "body": "高息储蓄账户（年息 4-5%）可使储备金增值。"
+          },
+          {
+            "title": "无报销延迟",
+            "body": "直接支付治疗费用，无需等待理赔处理。"
+          }
+        ],
+        "cons": [
+          "必须在紧急情况前储备充足 — 第一年发生 ¥35,000 紧急情况则策略失败",
+          "需要纪律：连续 5 年以上每月存 ¥700-1400 的坚持",
+          "在储备达到足够规模前无法覆盖灾难性费用",
+          "多宠家庭每只宠物需要单独的 ¥35,000-70,000 储备",
+          "通货膨胀长期可能侵蚀储备金的实际价值"
+        ],
+        "bestFor": "财务纪律强的老年宠物主人（已产生既往症）以及高额免赔额保险的补充方案。"
+      },
+      "rows": [
+        {
+          "dimension": "月度成本",
+          "topicA": "¥200-1000/月",
+          "topicB": "¥0（每月存 ¥700-1400 建立储备）"
+        },
+        {
+          "dimension": "既往症",
+          "topicA": "不覆盖",
+          "topicB": "完全覆盖（无限制）"
+        },
+        {
+          "dimension": "紧急情况覆盖",
+          "topicA": "免赔额后覆盖",
+          "topicB": "仅在储备金充足后（5 年以上）"
+        },
+        {
+          "dimension": "理赔时间",
+          "topicA": "30-60 天",
+          "topicB": "无（直接支付）"
+        },
+        {
+          "dimension": "灾难性疾病",
+          "topicA": "覆盖（受限额限制）",
+          "topicB": "须已储备足够金额"
+        },
+        {
+          "dimension": "开始时间",
+          "topicA": "幼年期（无除外责任）",
+          "topicB": "立即（但需多年积累）"
+        }
+      ],
+      "verdict": "<strong>宠物保险的目的是防止因灾难性情况被迫安乐死 — 自保紧急储备金无法在第一年覆盖 ¥55,000 的癌症治疗费用。</strong> 最佳策略是两者结合：在宠物年轻时投保意外加疾病险，同时建立相当于免赔额加紧急备用金的储备。从风险管理角度来看，保险胜出。NAPHIA 数据显示，每 3 只宠物中就有 1 只需要紧急兽医护理，保险受益巨大。",
+      "faq": [
+        {
+          "question": "宠物保险经济上划算吗？",
+          "answer": "从数学角度看，健康宠物的平均主人支付的保费高于获得的理赔。但保险为灾难性风险存在：如果宠物患癌，¥55,000-100,000 的治疗费扣除免赔额后可由保险承担。纯成本效益：如果你无法承受 ¥35,000 的突发兽医账单，就值得购买。"
+        },
+        {
+          "question": "宠物紧急储备金应存多少？",
+          "answer": "兽医财务顾问建议每只宠物 ¥20,000-35,000 — 足以支付标准紧急手术。存放在单独的高息储蓄账户中。切勿投入股市 — 需保持流动性。"
+        },
+        {
+          "question": "买保险还是存钱更好？",
+          "answer": "最佳策略是两者结合。在小狗/小猫时期投保（避开既往症除外条款），同时建立 ¥20,000+ 的紧急储备用于免赔额和未覆盖项目。"
+        }
+      ]
+    },
+    "grainFreeVsWholeGrain": {
+      "title": "无谷物 vs 全谷物狗粮：哪种更健康？",
+      "subtitle": "无谷物与全谷物干粮的循证对比 — 涵盖 DCM 风险、原料质量、升糖反应、过敏和兽医共识。参考 AAFCO、FDA 和 WSAVA 营养指南。",
+      "topicAName": "无谷物日粮",
+      "topicBName": "全谷物日粮",
+      "topicA": {
+        "pros": [
+          {
+            "title": "升糖负荷较低",
+            "body": "使用豆类和土豆替代谷物 — 葡萄糖释放速度比玉米和小麦更慢。"
+          },
+          {
+            "title": "低敏声称",
+            "body": "可能帮助真正谷物过敏的狗狗（尽管这种情况很少见 — 不到 1% 的狗）。"
+          },
+          {
+            "title": "蛋白质含量更高",
+            "body": "无谷物配方通常干物质蛋白高 2-5%。"
+          }
+        ],
+        "cons": [
+          "FDA 调查（2018-2023）：无谷物日粮与饮食相关扩张型心肌病 (DCM) 存在强相关性",
+          "豆类（豌豆、小扁豆、鹰嘴豆）和土豆作为替代原料可能干扰牛磺酸吸收",
+          "大多数狗狗没有谷物过敏 — 对 99% 的狗狗无益",
+          "对大多数狗狗而言成本更高但没有经过证实的益处",
+          "AAFCO 尚未确立豆类在犬日粮中的安全最低限量"
+        ],
+        "bestFor": "确诊谷物过敏的狗狗（罕见 — 仅在兽医监督下经排除饮食试验确认）。"
+      },
+      "topicB": {
+        "pros": [
+          {
+            "title": "研究充分的营养",
+            "body": "全谷物在犬类营养中有 50+ 年的安全数据记录。无 DCM 风险。"
+          },
+          {
+            "title": "完整营养",
+            "body": "全谷物天然提供 B 族维生素、纤维、铁、镁和必需脂肪酸。"
+          },
+          {
+            "title": "成本更低",
+            "body": "同等品质的全谷物日粮价格 ¥7-14/磅，无谷物则为 ¥10-21/磅。"
+          },
+          {
+            "title": "AAFCO 合规",
+            "body": "主要品牌的全谷物日粮均满足 AAFCO 营养标准。"
+          },
+          {
+            "title": "消化纤维",
+            "body": "燕麦和大麦纤维促进肠道菌群多样性。"
+          }
+        ],
+        "cons": [
+          "升糖负荷略高（对健康狗狗无临床意义）",
+          "干物质蛋白含量较低"
+        ],
+        "bestFor": "绝大多数狗狗 — 全谷物日粮是 WSAVA 和大多数兽医营养学家的推荐默认选择。"
+      },
+      "rows": [
+        {
+          "dimension": "DCM 风险 (FDA)",
+          "topicA": "已调查（豆类相关性）",
+          "topicB": "无相关性"
+        },
+        {
+          "dimension": "蛋白质含量",
+          "topicA": "通常 26-34%",
+          "topicB": "通常 22-28%"
+        },
+        {
+          "dimension": "每磅成本",
+          "topicA": "¥10-21",
+          "topicB": "¥7-14"
+        },
+        {
+          "dimension": "升糖负荷",
+          "topicA": "较低（豆类/土豆）",
+          "topicB": "中等（复合碳水）"
+        },
+        {
+          "dimension": "研究历史",
+          "topicA": "有限（2010 年后兴起）",
+          "topicB": "50+ 年"
+        },
+        {
+          "dimension": "过敏益处",
+          "topicA": "罕见（真谷物过敏 <1%）",
+          "topicB": "标准（谷物极少致敏）"
+        },
+        {
+          "dimension": "兽医共识",
+          "topicA": "WSAVA 建议谨慎",
+          "topicB": "推荐默认"
+        }
+      ],
+      "verdict": "<strong>对大多数狗狗而言，由配备兽医营养学家并开展饲养试验的生产商制造的 AAFCO 合规全谷物日粮是推荐选择。</strong> FDA DCM 调查发现含豆类或土豆的无谷物饮食与 DCM 存在统计学相关。对未确诊谷物过敏的狗狗而言，无谷物没有经过证实的益处。WSAVA 钻石标准推荐使用老牌厂商的全谷物日粮。",
+      "faq": [
+        {
+          "question": "无谷物狗粮是否危险？",
+          "answer": "FDA 在 2018-2023 年间调查了含豆类/土豆的无谷物饮食与犬扩张型心肌病 (DCM) 的统计学相关性。WSAVA 建议对非完全合规厂家生产的无谷物日粮谨慎使用。对健康狗狗而言，无谷物可能无害但价格更高且无益。"
+        },
+        {
+          "question": "狗狗需要食物中含有谷物吗？",
+          "answer": "不需要 — 狗狗在生物学上不依赖谷物。然而全谷物提供 B 族维生素、纤维和必需脂肪酸等营养益处。不依赖豆类、已适当补充牛磺酸的优质无谷物日粮存在但价格更高。"
+        },
+        {
+          "question": "兽医营养学家推荐什么？",
+          "answer": "认证兽医营养学家和 WSAVA 建议：喂食由开展喂养试验的生产商制造的 AAFCO 合规日粮；全谷物日粮优于无谷物；仅在兽医指导下为确诊谷物过敏的狗狗使用无谷物。"
+        }
+      ]
+    },
+    "scratchingPostVsCatTree": {
+      "title": "猫抓板 vs 猫树：你的猫需要哪个？",
+      "subtitle": "详细对比猫抓板和猫树 — 涵盖空间需求、磨爪行为、垂直领地、多猫家庭和费用。参考 AAFP 和 ISFM 猫科环境丰容指南。",
+      "topicAName": "猫抓板（独立式）",
+      "topicBName": "猫树（多层平台）",
+      "topicA": {
+        "pros": [
+          {
+            "title": "价格实惠",
+            "body": "基础剑麻猫抓柱 ¥100-280。纸板猫抓板 ¥35-105。远低于猫树。"
+          },
+          {
+            "title": "节省空间",
+            "body": "占地 0.1-0.2 平米 — 适合小户型。"
+          },
+          {
+            "title": "即装即用",
+            "body": "柱形无需组装即可使用。"
+          },
+          {
+            "title": "材质多样",
+            "body": "剑麻绳、剑麻布、地毯、纸板和树皮等多种质地适合不同的猫咪。"
+          }
+        ],
+        "cons": [
+          "无垂直空间 — 猫咪偏爱安全的俯视休息处",
+          "仅限磨爪 — 无攀爬、休息或躲藏功能",
+          "如底座不重容易翻倒",
+          "不能满足多猫垂直层级需求"
+        ],
+        "bestFor": "空间有限单猫家庭、预算有限的主人，或作为猫树的补充。"
+      },
+      "topicB": {
+        "pros": [
+          {
+            "title": "垂直领地",
+            "body": "升高平台提供安全感、温暖（热气上升）和猫咪本能偏好的减压观察点。"
+          },
+          {
+            "title": "多功能",
+            "body": "磨爪柱、休息台、躲藏处和吊挂活动一体。"
+          },
+          {
+            "title": "多猫和谐",
+            "body": "多层平台减少多猫家庭中的领地冲突。"
+          },
+          {
+            "title": "运动与健身",
+            "body": "层间攀爬和跳跃为室内猫咪提供锻炼。"
+          },
+          {
+            "title": "躲藏处的丰容",
+            "body": "封闭隔间提供猫咪在压力下寻求的黑暗躲藏处。"
+          }
+        ],
+        "cons": [
+          "¥350-2000+ — 优质猫树 ¥1000+",
+          "占地面积大 — 优质猫树需 0.2-0.4 平米和 1.5-2.1 米层高",
+          "沉重难以搬动",
+          "低质量猫树摇晃不稳（猫咪不会使用不稳定的平台）"
+        ],
+        "bestFor": "多猫家庭、空间充足的单猫家庭，以及表现出攀爬倾向的猫咪。"
+      },
+      "rows": [
+        {
+          "dimension": "成本",
+          "topicA": "¥35-280",
+          "topicB": "¥350-2000+"
+        },
+        {
+          "dimension": "占地面积",
+          "topicA": "0.1-0.2 平米",
+          "topicB": "0.2-0.4 平米"
+        },
+        {
+          "dimension": "磨爪用途",
+          "topicA": "主要功能",
+          "topicB": "内置功能"
+        },
+        {
+          "dimension": "垂直领地",
+          "topicA": "无",
+          "topicB": "主要功能"
+        },
+        {
+          "dimension": "多猫和谐",
+          "topicA": "不适合",
+          "topicB": "极好"
+        },
+        {
+          "dimension": "运动价值",
+          "topicA": "最小",
+          "topicB": "高（攀爬/跳跃）"
+        },
+        {
+          "dimension": "便携性",
+          "topicA": "容易",
+          "topicB": "困难"
+        }
+      ],
+      "verdict": "<strong>以每只猫一个稳固的磨爪柱开始，如空间预算充足则添加猫树进行全面丰容。</strong> AAFP 和 ISFM 指南将垂直领地推荐为猫的核心需求。在小户型单猫家庭中，2-3 个猫抓柱加窗台休息处可能够用。多猫家庭则因猫树提供的垂直层级减少冲突而受益。优先确保稳定性：摇晃的猫树会被猫咪拒绝使用。最小平台尺寸：30x35 厘米。最小高度：至少 3 层，顶层平台 1.2 米以上。",
+      "faq": [
+        {
+          "question": "需要同时买猫抓柱和猫树吗？",
+          "answer": "取决于猫的数量和可用空间。单猫有充足空间：一个优质猫树加一个额外抓柱即可。多猫：每猫一个猫抓柱加至少每两只猫一棵猫树。"
+        },
+        {
+          "question": "猫抓柱什么材质最好？",
+          "answer": "剑麻绳或剑麻布：多数猫咪喜欢，使用寿命 2-5 年。纸板：许多猫咪喜欢但寿命短（1-3 个月）。避免使用像家居地毯的材质以防混淆。"
+        },
+        {
+          "question": "猫树应多高？",
+          "answer": "一般单猫家庭最低 1.2-1.8 米，3 层以上平台。攀高欲强或焦虑的猫咪推荐 1.8 米以上触及天花板。确保树稳定 — 摇晃的平台会被猫拒绝使用。"
+        }
+      ]
     }
   },
   "privacy": {
@@ -5357,5 +5830,1004 @@
     "changesP1": "我们保留随时修改这些条款的权利。",
     "contact": "联系信息",
     "contactP1": "如有关于这些条款的问题，请联系我们。"
+  },
+  "faqHub": {
+    "breadcrumb": {
+      "home": "首页",
+      "dog": "狗狗",
+      "cat": "猫咪",
+      "faq": "常见问题",
+      "nutrition": "营养",
+      "health": "健康",
+      "aging": "衰老"
+    },
+    "lastUpdated": "最后更新：{date}。来源：{sources}",
+    "overview": "本页汇总了 {count} 个常见问题",
+    "overviewDetail": "来自我们的指南和计算器。",
+    "toc": "目录",
+    "questions": "个问题",
+    "goToTool": "前往 {tool}",
+    "source": "来源",
+    "relatedTools": "相关工具",
+    "references": "参考来源与数据",
+    "whyTrust": "为什么信任 petsMetrics？",
+    "trustContent1": "petsMetrics 上的所有内容均基于权威来源发布的兽医指南，包括 AAHA、WSAVA、AAFCO、AAFCO、AAFCO 和 ASPCA。我们的计算器使用同行评审的公式，我们的毒性数据来自动物毒物控制中心数据库。每个声明都引用其原始来源以供独立验证。",
+    "trustContent2": "我们的团队包括兽医专业人员和研究人员，他们在发布前审查所有内容以确保准确性。我们遵循严格的编辑政策：不匿名来源、不未经验证声明、不商业偏见。当兽医指南更新时，我们会相应更新内容。",
+    "disclaimer": "petsMetrics 提供的信息仅供教育用途，不构成兽医建议。关于宠物健康的决定，请务必咨询持证兽医。如果您的宠物遇到医疗紧急情况，请立即联系您的兽医或最近的急诊动物医院。"
+  },
+  "seasonal": {
+    "lastUpdated": "最后更新：{date}。来源：{sources}",
+    "knowledgeCards": "知识卡片",
+    "prevention": "预防",
+    "symptoms": "症状",
+    "firstAid": "急救",
+    "emergencyLink": "紧急情况：这可能危及生命",
+    "emergencyLinkDesc": "如果您的宠物出现严重症状，请不要等待。立即联系您的兽医或最近的急诊动物医院。",
+    "goToEmergency": "前往急救指南",
+    "faqs": "常见问题",
+    "relatedTools": "相关工具",
+    "references": "参考来源与数据",
+    "disclaimer": "petsMetrics 提供的信息仅供教育用途，不构成兽医建议。关于宠物健康的决定，请务必咨询持证兽医。如果您的宠物遇到医疗紧急情况，请立即联系您的兽医或最近的急诊动物医院。",
+    "summer-heat": {
+      "slug": "summer-heat",
+      "title": "如何让狗在夏天保持凉爽：防暑安全指南",
+      "description": "预防狗中暑的完整指南——识别早期症状、降温技巧、不安全温度阈值和急救措施。基于美国动物中毒控制中心（ASPCA）和兽医急诊数据。",
+      "keywords": [
+        "夏天如何让狗保持凉爽",
+        "狗中暑预防",
+        "狗中暑症状",
+        "炎热天气狗狗安全",
+        "狗会中暑吗"
+      ],
+      "severity": "高风险",
+      "season": "夏季（6月–8月）",
+      "knowledgeCards": [
+        {
+          "title": "了解犬类中暑",
+          "body": "与人类不同，狗只能通过脚垫出汗，主要依赖喘气降温。当环境温度超过体温（101-102.5°F）时，喘气就失效了。当中暑时，核心体温会超过106°F，几分钟内就会造成器官损伤。据ASPCA数据，每年夏天有数百只狗死于中暑，其中许多是因为可预防的原因。"
+        },
+        {
+          "title": "不安全温度阈值",
+          "body": "在80-85°F（27-29°C）时，大型犬和短鼻犬（斗牛犬、巴哥、拳师犬）风险增加。在90°F（32°C）时，所有犬只户外活动都应限制时间。在85°F的天气里，汽车内部10分钟内达到102°F，30分钟内达到120°F——即使车窗留缝也如此。（来源：AVMA温度研究）"
+        },
+        {
+          "title": "最高风险品种",
+          "body": "短鼻品种（巴哥、斗牛犬、法国斗牛犬、拳师犬、波士顿梗）由于气道狭窄，中暑风险高2-3倍。大型/巨型犬（獒犬、圣伯纳犬、纽芬兰犬）更容易蓄热。厚毛双层被毛品种（哈士奇、马拉穆特犬、松狮犬）在潮湿环境中更容易中暑。6月龄以下幼犬和7岁以上犬只风险也较高。"
+        },
+        {
+          "title": "地面温度法则",
+          "body": "只看气温是危险的误导。在85°F气温下，沥青路面可达140°F——足以在60秒内烫伤脚垫。用7秒测试法：手掌朝下放在路面上7秒。如果您觉得不舒服，那就会烫伤狗狗。请在上午10点前或下午6点后带狗在草地上散步。"
+        }
+      ],
+      "prevention": [
+        "在上午10点前和下午6点后遛狗，此时地面温度安全",
+        "户外活动时要始终提供阴凉和新鲜饮水",
+        "永远不要把狗留在停着的车里——即使只是「一小会儿」",
+        "在室内使用降温垫、离地犬床或湿毛巾",
+        "超过15分钟的遛狗要携带水和折叠碗",
+        "湿度大（湿度超60%）时减少运动强度",
+        "可以考虑修剪长毛犬的被毛（但请勿剃除双层被毛）"
+      ],
+      "symptoms": [
+        "过度喘气或呼吸困难",
+        "牙龈和舌头鲜红或苍白",
+        "粘稠、丝状的口水",
+        "呕吐或腹泻（可能有血）",
+        "行走不稳、虚弱或迷失方向",
+        "直肠温度升高（正常：101-102.5°F；中暑：>104°F）",
+        "虚脱、抽搐或失去意识"
+      ],
+      "firstAid": [
+        {
+          "title": "第1步：立即移至凉爽区域",
+          "content": "将狗从高温处转移到阴凉处或空调房。移除任何胸背带或紧束衣物。"
+        },
+        {
+          "title": "第2步：用温水降温（不要用冰）",
+          "content": "将凉爽（非冰水）的水浇在脖子、腋下和腹股沟区域，这些部位血管靠近表面。冰水会导致血管收缩，将热量困在体内。如果狗无法吞咽，切勿强行灌水。"
+        },
+        {
+          "title": "第3步：提供少量水",
+          "content": "让狗少量饮用冷水——切勿用注射器强行灌水（有误吸风险）。可放入冰块诱使狗喝水。"
+        },
+        {
+          "title": "第4步：立即送医",
+          "content": "中暑可能引起肉眼不可见的内部器官损伤。即使狗看起来已恢复，也要带去兽医处检查。如果不确定严重程度，请致电美国动物中毒控制中心（ASPCA Poison Control）。"
+        }
+      ],
+      "relatedEmergency": "/dog/emergency/",
+      "faqs": [
+        {
+          "question": "什么温度下狗会中暑？",
+          "answer": "气温高于85°F（29°C）时，狗可能发生中暑，尤其是在阳光直射且湿度超过60%的情况下。超过90°F时急剧上升。短鼻品种可能因气道解剖结构受损而在低至75°F的温度下中暑。关键危险区：体温超过104°F开始造成器官损伤；超过106°F则危及生命。"
+        },
+        {
+          "question": "狗会在室内中暑吗？",
+          "answer": "会的，如果家里缺乏空调或足够通风，室内中暑很常见。猫在高温房间内无法有效降温，尤其是高湿环境时。风险因素包括：上层房间（热气上升）、封闭无通风的笼子、以及阳光通过窗户直射的房间。始终为狗提供凉爽区域（瓷砖地板、风扇或降温垫）。"
+        },
+        {
+          "question": "如何快速安全地给狗降温？",
+          "answer": "用凉水（非冰水）浇淋脖子、腋下和腹股沟。让少量饮用凉水。移至空调房或阴凉处。切勿将狗浸入冰水中——这会引起危险休克。切勿使用酒精（舔舐有毒）。即使症状改善也要送医，因为内部损伤可能不会立即显现。"
+        },
+        {
+          "question": "狗在车内多久会中暑？",
+          "answer": "车内温度危险上升极快：在85°F的天气里，车内仅10分钟就达102°F，30分钟达到120°F——即使车窗留缝2英寸也如此。在这种温度下，狗可能在15-20分钟内发生致命中暑。没有安全时长。无论在何种外部温度或天气条件下，切勿将狗留在停驶的车内。"
+        }
+      ],
+      "relatedTools": [
+        {
+          "name": "狗狗卡路里计算器",
+          "href": null,
+          "description": "根据夏季减少的活动量调整喂食。"
+        },
+        {
+          "name": "有毒食品检测器",
+          "href": null,
+          "description": "确认夏季食品安全（烧烤的葡萄、玉米棒等）。"
+        }
+      ],
+      "citations": [
+        {
+          "name": "美国动物中毒控制中心（ASPCA Animal Poison Control）— 中暑",
+          "url": "https://www.aspca.org/news/heat-safety-pets"
+        },
+        {
+          "name": "美国兽医医学协会（AVMA）— 宠物中暑预防",
+          "url": "https://www.avma.org/resources/pet-owners/petcare/pet-heatstroke"
+        },
+        {
+          "name": "美国动物医院协会（AAHA）— 犬生命阶段指南",
+          "url": "https://www.aaha.org/aaha-guidelines/life-stage-canine-2021/"
+        }
+      ],
+      "bodyParagraphs": [
+        "夏季高温对狗构成严重且常被低估的威胁。与人类全身遍布汗腺不同，狗主要通过喘气和脚垫有限出汗来散热。这种生理特点使它们在温暖天气下特别脆弱，尤其是当湿度降低了喘息蒸发降温效率时。",
+        "最关键的误区是认为中暑只在极端高温才会发生。实际上，美国动物中毒控制中心（ASPCA）处理的犬类中暑案例，许多发生在主人认为「中等温暖」的天气——80-85°F——特别是狗在被通风不良空间限制或运动时。短鼻品种面临更大的风险：它们原本气道就狭窄，降温所需的呼吸需求增加会迅速超过其氧气交换能力。",
+        "地面温度是另一个常被忽视的危险。在75°F气温时，沥青路面可达125°F；在86°F气温时，达到135°F。140°F时，脚垫在60秒内发生二度烫伤。在让狗行走之前，务必用7秒手掌法测试地表温度。"
+      ]
+    },
+    "winter-paw-care": {
+      "slug": "winter-paw-care",
+      "title": "冬季狗爪保护：冰冷与盐的安全防护",
+      "description": "保护狗爪的权威指南——防止冻伤、冰灼伤和道路盐刺激。包含爪部护理流程、犬鞋选择和寒冷天气损伤的急救处理。",
+      "keywords": [
+        "冬季狗爪保护",
+        "狗爪冻伤治疗",
+        "狗道路盐伤害",
+        "冬季狗狗护爪",
+        "冬季狗鞋"
+      ],
+      "severity": "中等风险",
+      "season": "冬季（12月–2月）",
+      "knowledgeCards": [
+        {
+          "title": "狗爪垫的解剖结构",
+          "body": "狗爪垫含有脂肪组织作为绝缘层，但这种脂肪在低于20°F（-6°C）时会冻结。趾垫和掌垫的血液供应有限，使其特别容易冻伤。反复接触寒冷地面会导致爪垫皮肤开裂出血，为感染创造入口。"
+        },
+        {
+          "title": "道路盐和化学融雪剂",
+          "body": "常见融雪剂包括氯化钠、氯化钙和氯化镁。这些化学物质接触爪垫组织会造成灼伤，被舔舐后引起胃部不适。氯化钙最危险——接触湿皮肤时会产生热量，可导致化学灼伤。「宠物安全」融雪剂使用尿素或二醇基配方，刺激性较小。"
+        },
+        {
+          "title": "冰球危险",
+          "body": "冰雪在脚趾间积聚，形成紧扎的冰球，割伤脚趾蹼并限制血流。这很痛苦，可能造成组织损伤。长毛品种（尤其是趾间）最容易受害。湿雪中行走10-15分钟就会形成冰球。"
+        },
+        {
+          "title": "狗爪冻伤分级",
+          "body": "第一阶段：皮肤发白、触感冰凉，触碰疼痛。第二阶段：皮肤变硬发凉，可能出现变色（蓝灰色）。第三阶段：起水泡、组织发黑提示坏死。正常和冻伤组织之间的边界并不总是清晰——看似轻微损伤的组织可能在24-48小时后随着血流恢复而恶化。"
+        }
+      ],
+      "prevention": [
+        "出门前涂抹护爪膏（Musher's Secret或类似产品）形成保护屏障",
+        "修剪趾间毛发防止冰球形成",
+        "在冰雪中超过10分钟遛狗时穿犬鞋（合脚、透气）",
+        "每次遛狗后用温热（非热水）水彻底清洗爪子",
+        "避免在撒过盐和融雪剂的道路和车道附近行走",
+        "如不穿犬鞋可在遛狗前给爪垫涂抹凡士林",
+        "每次遛狗后检查爪垫有无开裂、发红或出血"
+      ],
+      "symptoms": [
+        "跛行或不愿行走（尤其在硬地面上）",
+        "过度舔舐或啃咬爪子",
+        "爪垫开裂、干燥或出血",
+        "爪垫皮肤发黑或变色（蓝灰色提示冻伤）",
+        "脚趾蹼肿胀或疼痛",
+        "脚趾间可见冰球",
+        "爪垫上有小切口或擦伤"
+      ],
+      "firstAid": [
+        {
+          "title": "第1步：脱离寒冷并温和升温",
+          "content": "将狗带进室内。用温水（体温温度）或温毛巾温暖受影响的爪子15-20分钟。切勿使用热水或加热垫——冻伤组织感觉迟钝，容易烫伤。"
+        },
+        {
+          "title": "第2步：清除冰球和碎屑",
+          "content": "用温水融化后轻轻清除脚趾间的冰球。不要直接拉扯冰块——会撕裂皮肤。用软毛巾轻轻拍干。"
+        },
+        {
+          "title": "第3步：处理化学灼伤",
+          "content": "如果接触了道路盐，用温水轻轻冲洗爪子5分钟以去除残留物。涂抹薄薄一层宠物专用保湿霜（非人用乳液——应为羊毛脂和维生素E基底的）。"
+        },
+        {
+          "title": "第4步：冻伤需就医",
+          "content": "如果爪垫变黑、非常苍白按压后无血液回流，或狗明显疼痛，请立即就医。冻伤治疗可能需要止痛药和预防继发感染的抗生素。"
+        }
+      ],
+      "relatedEmergency": "/dog/emergency/",
+      "faqs": [
+        {
+          "question": "狗爪会冻伤吗？",
+          "answer": "会的，狗爪是犬类冻伤最常见的部位之一。爪垫脂肪绝缘层有限，靠近冷表面的血管会迅速收缩，减少组织供氧。低于20°F（-6°C）时开始有冻伤风险，潮湿和风寒会加速发生。患有基础疾病（糖尿病、心脏病）的狗因循环障碍会提前出现冻伤。"
+        },
+        {
+          "question": "道路盐对狗有害吗？",
+          "answer": "是的——常见道路盐（氯化钠，尤其是氯化钙）接触爪垫组织会造成化学灼伤，被舔舐清理时会引起胃部不适。表现包括：爪垫发红开裂、不愿走路、过度舔爪。在家周围使用宠物安全融雪剂（尿素基底），并在接触处理后路面的遛狗后立即擦拭狗的爪子。"
+        },
+        {
+          "question": "什么是犬鞋？有效吗？",
+          "answer": "犬鞋提供寒冷防护、盐/化学品保护和冰面牵引力。选择要点：合脚（不紧）、透气材质、柔软鞋底、可调节绑带。需逐渐引入——许多狗最初拒绝穿鞋。从家中5分钟短时间接触开始，帮助其适应。（哈士奇、马拉穆特犬等厚脚毛品种在剧烈运动中穿鞋可能会过热）"
+        },
+        {
+          "question": "如何在不穿犬鞋的情况下保护狗爪？",
+          "answer": "每次遛狗前涂抹护爪膏（Musher's Secret、Musher's Choice）——能在盐和可之间形成透气的蜡状屏障。修剪趾间毛发防止冰球形成。在低于25°F时将遛狗时间限制在15-20分钟。遛狗后用温水洗爪，彻底拍干，尤其注意趾间。"
+        }
+      ],
+      "relatedTools": [
+        {
+          "name": "狗狗卡路里计算器",
+          "href": null,
+          "description": "根据冬季增加的能量需求进行调整。"
+        },
+        {
+          "name": "有毒食品检测器",
+          "href": null,
+          "description": "确认冬季节日食品安全。"
+        }
+      ],
+      "citations": [
+        {
+          "name": "美国动物中毒控制中心（ASPCA）— 寒冷天气宠物安全",
+          "url": "https://www.aspca.org/news/cold-weather-pet-safety"
+        },
+        {
+          "name": "美国兽医医学协会（AVMA）— 宠物冬季危害",
+          "url": "https://www.avma.org/resources-tools/pet-owners/petcare/cold-weather-animal-safety"
+        },
+        {
+          "name": "美国犬业俱乐部（AKC）— 冬季护爪",
+          "url": "https://www.akc.org/expert-advice/health/winter-paw-care/"
+        }
+      ],
+      "bodyParagraphs": [
+        "冬季为狗爪健康带来一系列独特挑战，许多主人直到伤害发生后才意识到问题。同样的爪垫在温暖地面上提供牵引力和感官反馈，但当暴露在冰冻温度、融雪化学物质和锐利冰缘下时，就容易受到冻伤、化学灼伤和磨损伤。",
+        "了解寒冷天气爪部损伤的发展进程，有助于主人在永久性损伤之前进行干预。第一阶段是简单的爪垫干裂——不太舒服但容易治疗。如果不加保护，接触盐和冰会发展为化学性皮炎，爪垫皮肤发炎甚至溃烂。继续在极寒中暴露会导致冻伤，组织冻结，可能需要兽医干预（包括止痛药和抗生素）。",
+        "一个经常被忽视的危险是每天暴露的累积效应。在洒盐的人行道上散步15分钟可能只造成轻微刺激，但每周5-7天如此，会导致慢性爪垫炎症和干裂。类似地，在中等寒冷（30-35°F）下短时间暴露在潮湿和风寒综合作用下，30分钟内就可能造成冻伤。"
+      ]
+    },
+    "christmas-foods": {
+      "slug": "christmas-foods",
+      "title": "圣诞节对狗有毒的节日食品：假日食品安全指南",
+      "description": "圣诞节对狗危险食品完整指南——巧克力、含木糖醇甜品、煮骨头、葡萄、洋葱和酒精。包括急救症状以及狗吃了有毒圣诞食品后的处理措施。",
+      "keywords": [
+        "对狗有毒的圣诞食品",
+        "狗吃了圣诞巧克力",
+        "狗吃了圣诞火腿",
+        "木糖醇圣诞饼干狗",
+        "假日食品安全狗"
+      ],
+      "severity": "高风险",
+      "season": "圣诞季（12月）",
+      "knowledgeCards": [
+        {
+          "title": "圣诞食品：有害与安全",
+          "body": "对狗最危险的圣诞食品包括：巧克力（所有形式都含可可碱——烘焙巧克力毒性最强）、无糖糖果和蛋糕中的木糖醇（0.1g/kg导致低血糖，肝衰竭）、圣诞布丁和水果蛋糕中的葡萄和葡萄干（0.3-0.6 oz/kg导致肾衰竭）、馅料和肉汁中的洋葱和蒜（导致溶血性贫血）、煮骨头（会碎裂刺穿）、饼干中的澳洲坚果、以及蛋酒或朗姆蛋糕中的酒精。"
+        },
+        {
+          "title": "为什么圣诞季是急诊高峰期",
+          "body": "美国动物中毒控制中心（ASPCA Poison Control）报告12月20-26日期间假期相关宠物中毒事件比正常周增加200-400%。主要原因包括：咖啡桌上遗留的无看管盘子、可接触到的装有巧克力的礼品篮、放在狗能触及的无糖糖果和口香糖、好心的客人喂食「零食」，以及狗能触及的圣诞袜中含有毒物品。"
+        },
+        {
+          "title": "巧克力毒性等级",
+          "body": "烘焙巧克力（无糖）：1盎司可使20磅狗严重中毒。黑巧克力（70%以上）：20磅狗2盎司。牛奶巧克力：20磅狗8盎司。白巧克力：可可碱风险极小，但高脂肪含量会导致胰腺炎。圣诞巧克力什锦盒特别危险，因为含有混合类型——即使只吃一块烘焙巧克力也可能危及生命。"
+        },
+        {
+          "title": "节日烘焙中的木糖醇",
+          "body": "无糖圣诞饼干、蛋糕和糖果常含有木糖醇（桦树糖），目前在生酮和糖尿病食谱中流行。一块无糖饼干可能含有5-10g木糖醇——对一只30磅的狗来说，仅3g即可中毒。木糖醇会在15-30分钟内引起胰岛素激增导致低血糖，高剂量下在12-24小时内导致急性肝衰竭。"
+        }
+      ],
+      "prevention": [
+        "将所有巧克力储存在关闭的橱柜或高架子上，让狗无法触及",
+        "将无糖糖果/饼干放在密封容器中（而非装饰碗中）",
+        "告知所有客人禁止喂狗吃任何东西",
+        "立即将装食物残渣的垃圾袋封好",
+        "在厨房准备一个狗安全零食罐，供想喂零食的客人使用",
+        "饭后立即从餐桌上收走盘子",
+        "检查圣诞袜是否有巧克力币、拐杖糖（木糖醇风险）和葡萄干"
+      ],
+      "symptoms": [
+        "呕吐和腹泻（大多数毒素在2-12小时内发生）",
+        "极度亢奋、不安、心跳加速（巧克力、咖啡因）",
+        "虚弱、虚脱、抽搐（木糖醇性低血糖）",
+        "过度口渴、排尿减少（葡萄/葡萄干中毒）",
+        "牙龈苍白、虚弱（洋葱/蒜贫血——可能需2-5天才显现）",
+        "腹痛、血便（骨头梗阻或胰腺炎）",
+        "发抖、站立不稳（酒精或澳洲坚果中毒）"
+      ],
+      "firstAid": [
+        {
+          "title": "第1步：识别已摄入物",
+          "content": "立即查看成分表。巧克力类型、是否含木糖醇、葡萄/葡萄干量和是否吞食骨头共同决定了紧急程度。如可能，拍下成分表照片。"
+        },
+        {
+          "title": "第2步：估算量和时间",
+          "content": "记录大约吞食量和食入时间。这些信息对美国动物中毒控制中心（ASPCA Poison Control）和兽医判断中毒剂量、是否需要干预至关重要。"
+        },
+        {
+          "title": "第3步：立即联系毒物控制中心",
+          "content": "拨打美国动物中毒控制中心（ASPCA Animal Poison Control）或宠物毒物防控热线（Pet Poison Helpline）。切勿等待症状出现——超过吸收窗口后治疗成功率显著下降。未经指导切勿催吐。"
+        },
+        {
+          "title": "第4步：准备就医",
+          "content": "如被要求前往兽医处，带上包装/标签和呕吐物样本（如有）。运输过程中让狗保持安静和限制活动。可能需要进行静脉输液、活性炭和血液检查。"
+        }
+      ],
+      "relatedEmergency": "/dog/emergency/ate-chocolate/",
+      "faqs": [
+        {
+          "question": "我的狗吃了圣诞巧克力糖果，我该怎么办？",
+          "answer": "立即拨打美国动物中毒控制中心（ASPCA Poison Control），提供：狗的体重、吃下的巧克力类型和量，以及食入后的时间。切勿等待症状出现。如果量超过狗的体型对应的毒性阈值（使用我们的毒物检测器或询问热线），去急诊兽医处进行催吐和活性炭处理。巧克力中的可可碱可在狗体内存留长达72小时。"
+        },
+        {
+          "question": "煮熟的圣诞火腿骨头对狗安全吗？",
+          "answer": "不安全。任何种类的煮骨头——包括火腿、火鸡和牛骨头——都会变脆碎裂，可能造成致命的喉咙、胃或肠道穿孔。甚至大块煮骨头也会崩碎牙齿。将骨头残渣丢弃在有盖的户外垃圾桶中，切勿将煮骨头丢给狗。"
+        },
+        {
+          "question": "圣诞布丁对狗危险吗？",
+          "answer": "极度危险。圣诞布丁通常含有葡萄、葡萄干和醋栗（都会导致狗肾衰竭）、酒精（神经毒素）、板油（高脂导致胰腺atitis），有时还有白兰地黄油（酒精和脂肪）。即使吃一小口也可能有毒。将布丁远离狗，确保狗无法接触到掉落的碎块。"
+        },
+        {
+          "question": "圣诞节能给狗吃火鸡吗？",
+          "answer": "少量原味、未调料的火鸡（中型狗1-2汤匙）通常可以安全食用。但是：去除所有表皮（高脂会导致胰腺炎），确保无骨头，并确认制作过程中未使用洋葱或蒜（馅料和肉汁中常见，两者都有毒）。不要给狗提供用过香草、黄油、洋葱或蒜制作的火鸡。"
+        }
+      ],
+      "relatedTools": [
+        {
+          "name": "有毒食品检测器",
+          "href": null,
+          "description": "即时确认任何节日食品成分的安全性。"
+        },
+        {
+          "name": "狗狗卡路里计算器",
+          "href": null,
+          "description": "追踪假日额外零食的热量。"
+        },
+        {
+          "name": "紧急情况：吃了巧克力",
+          "href": null,
+          "description": "完整巧克力毒性紧急指南。"
+        }
+      ],
+      "citations": [
+        {
+          "name": "美国动物中毒控制中心（ASPCA Animal Poison Control）— 节日危害",
+          "url": "https://www.aspca.org/pet-care/animal-poison-control/holiday-safety"
+        },
+        {
+          "name": "宠物毒物防控热线（Pet Poison Helpline）— 节日危害",
+          "url": "https://www.petpoisonhelpline.com/pet-owners/holidays/"
+        },
+        {
+          "name": "美国动物医院协会（AAHA）— 假日宠物安全",
+          "url": "https://www.aaha.org/"
+        }
+      ],
+      "bodyParagraphs": [
+        "圣诞节制造了宠物中毒风险的完美风暴：大量有毒食品触手可及，日常作息被打乱，不知道宠物安全规则的客人可能会无意中喂食危险物品。美国动物中毒控制中心（ASPCA）的数据显示，圣诞到元旦期间始终是一年内宠物中毒电话量最高的时期。",
+        "许多传统圣诞食品各自就有危险，但最大风险来自于组合食入。一块圣诞布丁就含有葡萄（肾毒素）、酒精（神经毒素）和板油（胰腺炎诱因）。同样，节日饼干拼盘可能含有巧克力豆（可可碱）、无糖饼干（木糖醇）和澳洲坚果（神经毒素）——它们来自不同毒物类别，需要不同的处理方法。",
+        "在假日中毒预防方面，预防比治疗更有效得多。涉及的毒素（可可碱、木糖醇、葡萄毒素）没有解毒剂——治疗依赖于早期清除（催吐）、支持性护理（静脉输液）和时间。实施了简单屏障（橱柜关闭、客人教育、密封垃圾）的主人可以消除90%的中毒风险。"
+      ]
+    },
+    "halloween-candy": {
+      "slug": "halloween-candy",
+      "title": "我的狗吃了万圣节糖果：紧急行动计划",
+      "description": "狗吃了万圣节糖果的紧急指南——识别毒性迹象、何时紧急送医、哪些糖果类型最危险，以及如何预防万圣节宠物紧急事件。",
+      "keywords": [
+        "狗吃了万圣节糖果",
+        "万圣节糖果对狗有毒",
+        "狗吃了万圣节巧克力",
+        "木糖醇万圣节糖果狗",
+        "万圣节宠物紧急情况"
+      ],
+      "severity": "致命风险",
+      "season": "万圣节（10月）",
+      "knowledgeCards": [
+        {
+          "title": "四大有毒糖果类型",
+          "body": "1）巧克力（所有形态——可可碱中毒）。2）木糖醇（无糖口香糖、糖果——低血糖和肝衰竭）。3）葡萄干（某些零食盒中——肾衰竭）。4）糖果包装纸（锡纸/塑料可导致肠梗阻）。根据ASPCA的数据，单块木糖醇口香糖即可导致15磅重的狗致命。"
+        },
+        {
+          "title": "万圣节特有风险因素",
+          "body": "万圣节期间，放在地板或低矮桌子上的「不给糖就捣蛋」袋子、门口无人看管的糖果碗、孩子们掉落在地上的糖果碎片，以及与狗「分享糖果」的时刻，共同构成了万圣节的宠物中毒高峰期。ASPCA报告称，万圣节是每年宠物中毒事件最多的三大日子之一。大量糖果与监管松懈的叠加，使得接触毒物的风险急剧增加。"
+        },
+        {
+          "title": "糖果包装纸的危险",
+          "body": "锡纸和塑料糖果包装纸往往与糖果被一起吞下。对小狗而言，几块包装纸就可能引起肠梗阻，需要手术取出。锡纸中可能还残留可吸收的巧克力。肠梗阻的症状包括：呕吐（尤其频繁呕吐）、无排便、嗜睡以及12-48小时内的腹痛。"
+        },
+        {
+          "title": "巧克力+木糖醇组合风险",
+          "body": "许多万圣节糖果混合包中含有巧克力涂层产品和无糖口香糖/糖果。如果你的狗吃了混合包中的糖果，可能同时接触可可碱（来自巧克力）和木糖醇（来自无糖产品）。这种组合尤其危险，因为两者症状相似（呕吐、虚弱）但治疗方案截然不同。"
+        }
+      ],
+      "prevention": [
+        "将所有「不给糖就捣蛋」糖果存放在高于台面高度的密封容器中",
+        "为「不给糖就捣蛋」的孩子们使用带紧闭盖的封闭式糖果碗（不要敞口碗）",
+        "在「不给糖就捣蛋」活动期间将狗安置在单独的房间中",
+        "孩子回家后立即检查他们的「战利品」中是否有掉落的糖果",
+        "永远不要亲手或从盘子里给狗糖果",
+        "对于被门铃声困扰的狗，可以考虑使用安抚零食或信息素扩香器",
+        "提前了解兽医急诊电话和ASPCA毒物控制电话（(888) 426-4435）"
+      ],
+      "symptoms": [
+        "2-12小时内呕吐或腹泻",
+        "呼吸急促、心率加快、焦躁不安（巧克力/可可碱中毒）",
+        "15-30分钟内嗜睡、虚弱、虚脱（木糖醇低血糖）",
+        "过度口渴和排尿，随后排尿减少（葡萄干中毒）",
+        "频繁呕吐且无排便（可能为肠梗阻）",
+        "抽搐、惊厥（严重巧克力或木糖醇中毒）",
+        "腹胀或腹痛"
+      ],
+      "firstAid": [
+        {
+          "title": "第一步：评估吃了什么",
+          "content": "立即识别糖果类型：巧克力（牛奶/黑巧克力/烘焙巧克力）、口香糖（查看前三种成分是否含有木糖醇）、葡萄干或包装纸。保留所有包装——成分表和重量信息至关重要。"
+        },
+        {
+          "title": "第二步：采取行动前拨打毒物控制电话",
+          "content": "拨打ASPCA毒物控制电话(888) 426-4435。不要在家催吐——这可能加重某些毒素的暴露。仅在专业人员指导下催吐，且当狗已经呕吐、抽搐或失去意识时绝不可催吐。"
+        },
+        {
+          "title": "第三步：记录时间和数量",
+          "content": "估算吞食的糖果数量、类型（按重量）和时间。拍摄包装照片带去兽医处。这些信息决定了中毒的严重程度和治疗方案。"
+        },
+        {
+          "title": "第四步：如指示则送往急诊兽医",
+          "content": "如毒物控制中心指示前往兽医处，请立即出发——不要等到症状出现。巧克力和木糖醇中毒是时间敏感的。催吐在摄入后1-2小时内最有效。"
+        }
+      ],
+      "relatedEmergency": "/dog/emergency/ate-xylitol/",
+      "faqs": [
+        {
+          "question": "多少万圣节糖果对狗有毒？",
+          "answer": "取决于种类，而不仅仅是摄入量。有毒阈值：木糖醇：0.1克/公斤体重（一块口香糖对15磅重的狗即可致命）。黑巧克力：每10磅体重0.5盎司。烘焙巧克力：每10磅体重0.1盎司。牛奶巧克力：每10磅体重1盎司。葡萄干：每10磅体重0.1盎司。糖果包装纸：任何剂量都可能在小狗中引起梗阻。"
+        },
+        {
+          "question": "我的狗吃了巧克力糖果包装纸。我该怎么办？",
+          "answer": "拨打毒物控制电话(888) 426-4435，告知巧克力种类和估算的摄入量。包装纸增加了两个顾虑：（1）锡纸/塑料可能导致肠梗阻，尤其对体重低于15磅的狗；（2）包装纸残留的可吸收巧克力增加了可可碱摄入量。需监测48小时，关注呕吐、排便停止和腹痛等症状。"
+        },
+        {
+          "question": "我的狗吃了糖果后我可以在家催吐吗？",
+          "answer": "除非兽医或毒物控制明确指示，否则不要在家使用过氧化氢或盐给狗催吐。以下情况禁忌催吐：腐蚀性物质、狗已经呕吐、狗嗜睡或抽搐，或已超过2小时。不当操作可能导致吸入性肺炎或加重损伤。"
+        },
+        {
+          "question": "糖果中毒对狗的影响有多快？",
+          "answer": "木糖醇：15-30分钟（低血糖）或8-12小时（肝衰竭）。巧克力：2-4小时（症状出现），12-24小时达高峰。葡萄干：6-24小时（呕吐），24-72小时（肾损伤）。包装纸：12-48小时（梗阻症状）。始终将糖果摄入视为紧急情况，并立即联系毒物控制中心。"
+        }
+      ],
+      "relatedTools": [
+        {
+          "name": "有毒食物检查器",
+          "href": null,
+          "description": "即时检查任何糖果成分是否有毒。"
+        },
+        {
+          "name": "急诊：吞食木糖醇",
+          "href": null,
+          "description": "木糖醇中毒急诊处理方案。"
+        },
+        {
+          "name": "急诊：吞食巧克力",
+          "href": null,
+          "description": "巧克力中毒急诊指南。"
+        }
+      ],
+      "citations": [
+        {
+          "name": "ASPCA毒物控制——万圣节宠物安全",
+          "url": null
+        },
+        {
+          "name": "宠物毒物热线——万圣节危险",
+          "url": null
+        },
+        {
+          "name": "FDA——木糖醇与你的狗",
+          "url": null
+        }
+      ],
+      "bodyParagraphs": [
+        "万圣节是全年宠物中毒风险最高的时段之一。大量有毒物质（巧克力、木糖醇、葡萄干）的汇集、混乱的家庭常态，以及对危险缺乏认知的儿童，共同构成了即使照顾得当的狗也可能迅速摄入致命剂量毒物的条件。",
+        "木糖醇风险尤其值得强调，因为无糖糖果和口香糖在万圣节糖果混合包中越来越常见。与巧克力（达到毒性所需剂量相对较大）不同，木糖醇在极小剂量下即可致命——某些品牌的一块无糖口香糖中含有足量木糖醇，可在30分钟内导致小狗致命性低血糖。许多主人并不知道自己的狗吃了口香糖，因为包装纸往往与口香糖本身分开被丢弃。",
+        "快速识别和应对能显著改善预后。在吞食木糖醇后1-2小时内接受治疗的狗预后良好；治疗延迟超过6小时则死亡率显著增加。巧克力摄入同样具有时间敏感性——在1小时内进行催吐可清除40-50%的胃内容物，但2小时后胃排空基本完成，催吐几乎无效。"
+      ]
+    },
+    "fireworks-anxiety": {
+      "slug": "fireworks-anxiety",
+      "title": "如何在烟花期间安抚焦虑的狗：焦虑管理指南",
+      "description": "全面的狗狗烟花焦虑管理指南——从预防策略和环境管理到药物治疗、行为技术，以及如果你的狗出现恐慌的应对方法。",
+      "keywords": [
+        "烟花期间如何让狗狗冷静",
+        "狗狗烟花焦虑治疗",
+        "烟花声吓坏狗狗",
+        "狗狗雷烟花恐惧症",
+        "烟花之夜狗狗安全"
+      ],
+      "severity": "中高风险",
+      "season": "新年及节日庆典（12月/1月、7月4日）",
+      "knowledgeCards": [
+        {
+          "title": "了解犬类噪音恐惧症",
+          "body": "根据行为学研究，40-60%的狗对烟花或雷声表现恐惧反应。其中约20%会发展为需要临床干预的噪音恐惧症。烟花特别令人痛苦，原因在于：（1）突然的不可预测巨响触发惊吓反射，（2）低频振动通过身体被感知，（3）闪烁的灯光产生狗认为有威胁的频闪效应，（4）某些狗身上积累的静电增加了不适感。"
+        },
+        {
+          "title": "烟花恐慌带来的身体危险",
+          "body": "烟花焦虑的狗面临以下风险：逃跑（根据AKC数据，美国7月4日走失狗事件中50%与烟花有关）、冲入车流、跳跃围栏（即使平时不逃跑的狗）、为试图逃跑而在窗户或门上受伤，以及在极端情况下因应激反应引发心脏事件。有些狗在试图咬破门或笼子时会弄断牙齿或指甲。"
+        },
+        {
+          "title": "当焦虑发展为恐惧症",
+          "body": "你的狗已从焦虑发展为恐惧症的迹象：在日落后数小时就开始出现预期性焦虑，拒绝在晚间外出，躲在难以触及的地方，即使在极低音量播放声音时也表现出压力迹象，以及焦虑从烟花之夜延伸为持续的高度警觉。恐惧症狗狗通常需要兽医处方的药物治疗配合行为矫正。"
+        },
+        {
+          "title": "药物治疗与天然选择",
+          "body": "对于中度分段性焦虑：兽医开具的情境性药物（曲唑酮、加巴喷丁、西利奥）安全有效。对于轻度焦虑：信息素扩香器（爱舒缓）、抗压背心（雷电背心）、L-茶氨酸补充剂和安抚零食可能有帮助。对于恐惧症狗狗：需要多模式联合方案，包括药物+环境管理+数周至数月的脱敏训练。"
+        }
+      ],
+      "prevention": [
+        "在烟花开始前充分运动你的狗（疲惫感可降低焦虑反应）",
+        "创造一个「安全房间」——无窗的室内房间，伴有白噪音和熟悉的睡床",
+        "在已知烟花日期之前4-6周开始脱敏训练（不在烟花期间进行）",
+        "在预测的事件前2周开始使用爱舒缓信息素扩香器",
+        "确保芯片信息已更新且颈部识别标签完好",
+        "拉上窗帘/百叶窗并打开电视或音乐来掩盖噪音",
+        "移除通往门窗和玻璃门的通道"
+      ],
+      "symptoms": [
+        "气喘、来回走动、颤抖",
+        "呜咽、对声音吠叫",
+        "试图躲藏或逃跑",
+        "拒绝进食或零食",
+        "过度流涎、瞳孔放大",
+        "紧缠主人或试图爬上膝盖",
+        "失禁（严重恐惧中失去膀胱控制）",
+        "破坏性行为（咬门、抓墙）"
+      ],
+      "firstAid": [
+        {
+          "title": "第一步：保持冷静和自信",
+          "content": "你的狗狗会从你这里接收情绪暗示。用欢快、随意的语调说话，而不是安慰（安慰语气会强化恐惧）。不要惩罚焦虑行为——你的狗正在经历真正的恐惧，不是不听话。"
+        },
+        {
+          "title": "第二步：提供安全的退避空间",
+          "content": "引导你的狗进入安静的内屋并关上门。打开电视或白噪音机器到中等音量。提供它们最喜欢的、敞开门的睡床或笼子（绝不要强迫狗进笼子——如果它们将笼子与恐惧中的禁锢联系在一起，会增加恐慌）。"
+        },
+        {
+          "title": "第三步：使用分散注意力的技巧",
+          "content": "提供高价值零食（花生酱Kong、冷冻零食）来转移注意力。练习你的狗熟悉的简单指令——「坐」、「触」或「找」能将大脑焦点从恐惧转移到工作上。如果你的狗更喜欢躲藏，不要强迫互动。"
+        },
+        {
+          "title": "第四步：防止逃跑",
+          "content": "如果你的狗冲向门，使用牵引绳或身体阻挡——绝不要追逐，因为这会加剧恐慌。烟花结束后，在你的狗平静下来之前不要打开外门。在最后一声响动后监测20-30分钟再允许外出。"
+        }
+      ],
+      "relatedEmergency": "/emergency",
+      "faqs": [
+        {
+          "question": "我可以给我的狗用什么来缓解烟花焦虑？",
+          "answer": "根据严重程度选择不同方案：轻度：L-茶氨酸补充剂（思明/舒宁）、信息素（爱舒缓扩香器/项圈）、抗压背心（雷电背心）。中度：兽医开具的曲唑酮或加巴喷丁（需1-2小时见效）。严重：西利奥（右美托咪定凝胶，涂抹牙龈，FDA批准的犬类药物用于噪音焦虑）或镇静。切勿在没有兽医指导的情况下给予人类抗焦虑药物。"
+        },
+        {
+          "question": "在烟花开始前多久应该给狗服用抗焦虑药物？",
+          "answer": "提前计划：曲唑酮/加巴喷丁需要1-2小时才能达到效果。在烟花开始前给药——一旦你的狗进入完全恐慌状态，口服药物难以发挥作用且起效太慢。对于已知的烟花日期（新年、7月4日），在日落后2-3小时开始给药。"
+        },
+        {
+          "question": "我如何对我的狗进行烟花脱敏训练？",
+          "answer": "脱敏训练需要在烟花季前8-12周开始：（1）在积极活动（喂食、玩耍）期间以极低音量播放烟花声音（几乎听不见）。（2）在数周内逐渐增加音量。（3）如果你的狗在任何音量下表现出恐惧，则降低音量——这意味着你进展太快了。（4）将声音与高价值零食配对以建立积极联系。对于严重恐惧症，考虑聘请认证行为学家。"
+        },
+        {
+          "question": "烟花会损害我的狗的听力吗？",
+          "answer": "烟花可达150-175分贝——足以造成永久性听力损伤（狗的疼痛阈值约为130分贝，低于人类）。狗的听力更敏感，耳道放大能力更强。这是狗恐慌的另一个原因——它们真的在承受痛苦。绝不要让狗观看烟花，即使在户外远处也不行。"
+        }
+      ],
+      "relatedTools": [
+        {
+          "name": "狗狗年龄计算器",
+          "href": null,
+          "description": "老年狗的抗焦虑药物剂量可能需要调整。"
+        }
+      ],
+      "citations": [
+        {
+          "name": "AKC——烟花与狗",
+          "url": null
+        },
+        {
+          "name": "AVMA——宠物的噪音焦虑",
+          "url": null
+        },
+        {
+          "name": "AVSAB——行为指南",
+          "url": null
+        }
+      ],
+      "bodyParagraphs": [
+        "狗的烟花焦虑是宠物主人报告的最常见的行为问题之一，它不仅带来不安，还伴随着真实的身体风险。每年，美国动物收容所在7月4日前后报告流浪狗数量增加30-60%，世界各地的新年庆祝活动和其他烟花密集假期也呈现类似模式。",
+        "从轻度焦虑发展为严重恐惧症往往是一个渐进的过程：最初只是颤抖但能恢复的狗，会在事件发生前数小时出现预期性焦虑，然后在任何类似烟花之夜的傍晚都表现出压力。早期干预使用合适工具可以防止这种恶化。经历了恐慌发作的狗，其压力激素可能在接下来数天内维持升高状态，影响功能和质量睡眠。",
+        "重要的是要理解，安慰受惊的狗并不会强化恐惧——这个持久的神话导致主人忽视了狗狗的痛苦。经历噪音恐惧症的狗处于真正的恐惧中，而不是在寻求关注。提供安全的空间和平静的存在有助于它们感到安全。然而，戏剧性地夸张安慰（「乖孩子，别担心，一切都很好」）可能被理解为焦虑——相反，应以一切正常的方式表现。"
+      ]
+    },
+    "spring-allergies": {
+      "slug": "spring-allergies",
+      "title": "狗狗春季过敏：症状、治疗与预防",
+      "description": "全面的犬类春季过敏指南——花粉、草、霉菌。学习识别过敏症状、区分感染，并根据兽医皮肤科学指南实施有效的治疗方案。",
+      "keywords": [
+        "狗狗春季过敏症状",
+        "狗狗花粉过敏治疗",
+        "狗狗春季季节性过敏",
+        "犬特应性皮炎",
+        "狗狗皮肤过敏"
+      ],
+      "severity": "慢性风险",
+      "season": "春季（3月–5月）",
+      "knowledgeCards": [
+        {
+          "title": "狗春季过敏的类型",
+          "body": "犬类春季过敏分为三类：（1）特应性皮炎——吸入花粉（树木、草、杂草）引起的过敏反应，影响皮肤和耳朵。（2）接触性过敏——直接接触草、覆盖物或杀虫剂引起的皮肤反应。（3）跳蚤过敏性皮炎——春季跳蚤数量爆发，即使单只跳蚤叮咬也会引发严重反应。根据美国动物医院协会的数据，至少10-15%的狗患有季节性过敏。"
+        },
+        {
+          "title": "常见春季过敏原时间表",
+          "body": "树木花粉高峰期在3-4月（橡树、桦树、雪松、枫树）。草花粉高峰期在5-6月（百慕大草、梯牧草、肯塔基蓝草）。杂草花粉6月下旬开始。春季降雨增加孢子霉菌。了解当地的花粉日历（可在pollen.com查询）有助于预测你的狗何时会出现症状加重，并允许预防性治疗。"
+        },
+        {
+          "title": "继发感染：隐藏的危险",
+          "body": "过敏性皮肤创造了温暖、潮湿、发炎的环境，非常适合细菌（葡萄球菌）和酵母菌（马拉色菌）过度生长。研究显示，60-80%的特应性皮炎犬会发展为继发感染，即使在过敏原暴露减少后仍持续瘙痒循环。继发感染的迹象包括：皮肤油腻、甜/酵母味、皮肤变黑/变色，以及即使在低花粉日也持续瘙痒。"
+        },
+        {
+          "title": "舔脚-挠耳-抓挠模式",
+          "body": "犬类春季过敏的典型表现：过度舔脚（尤其脚趾间）、耳部感染（摇头、在家具上摩擦耳朵）以及抓挠体侧/腋下。这种特定模式可以区分过敏与其他皮肤状况。如果你在春季同时看到这三种症状，季节性过敏很可能是原因。"
+        }
+      ],
+      "prevention": [
+        "每次户外散步后用湿布擦拭狗脚以去除花粉",
+        "在花粉高峰周每周用低敏洗发水给狗洗澡",
+        "在高花粉天关窗；室内使用HEPA过滤系统",
+        "避免走过刚修剪的草地或高高的杂草",
+        "过敏季节每周用热水清洗狗床品",
+        "咨询兽医在花粉季节高峰前是否开始服用抗组胺药",
+        "春季积极管理跳蚤预防（单次跳蚤叮咬可加重过敏性炎症）"
+      ],
+      "symptoms": [
+        "过度舔脚和咬脚",
+        "反复出现的耳部感染（摇头、耳部异味）",
+        "腋下、腹股沟和腹部皮肤发红、刺激",
+        "抓挠身体两侧（胁腹部位）",
+        "眼睛流泪或流鼻涕",
+        "用脸摩擦家具或地毯",
+        "因抓挠或舔咬导致脱毛",
+        "皮肤油腻并有异味（继发感染迹象）"
+      ],
+      "firstAid": [
+        {
+          "title": "第一步：评估严重程度",
+          "content": "轻度：偶尔抓挠，但饮食和玩耍正常。中度：持续瘙痒、睡眠受干扰、轻度皮肤发红。重度：开放性伤口、皮肤出血、拒食、持续不适。严重过敏需要兽医处方治疗——不仅仅是家庭护理。"
+        },
+        {
+          "title": "第二步：即时缓解措施",
+          "content": "使用含胶体燕麦基的洗发水给狗洗冷水澡（非冷水）以去除花粉和舒缓皮肤。散步后用湿布擦拭脚部。在热点处敷冷敷垫。如果你的狗不停地舔热点，使用伊丽莎白圈（头套）。"
+        },
+        {
+          "title": "第三步：监测感染",
+          "content": "每天检查受刺激部位是否有：油腻或结痂分泌物、甜/酵母味以及皮肤颜色变黑。这些表明需要兽医处方抗生素或抗真菌药治疗的细菌或酵母菌继发感染——而非单纯的过敏管理。"
+        },
+        {
+          "title": "第四步：预约兽医",
+          "content": "如果基础护理1周后症状持续，或继发感染迹象出现，请预约兽医就诊。兽医可能开具爱克宁（奥拉替尼）、赛妥诺注射液（抗IL-31）或过敏免疫疗法（脱敏针）进行长期控制。"
+        }
+      ],
+      "relatedEmergency": "/dog/emergency/",
+      "faqs": [
+        {
+          "question": "我怎么知道我的狗是春季过敏还是感染？",
+          "answer": "季节性过敏遵循规律：症状每年春/夏复发，脚部舔咬和耳部问题突出，对抗组胺药反应迅速。感染通常有局部异味、分泌物和油腻皮肤。打破规律的迹象是过敏季节之外仍有症状——这提示特应性皮炎（全年性过敏）或需要兽医诊断的非过敏性皮肤病。"
+        },
+        {
+          "question": "我可以给我的狗服用苯海拉明（Benadryl）治疗过敏吗？",
+          "answer": "是的，苯海拉明通常用于犬类，剂量为每磅体重1毫克，每8-12小时一次。仅使用纯苯海拉明——避免含有减充血剂（伪麻黄碱）或酒精的配方，这些对狗有毒。苯海拉明对30%的过敏犬有效。兽医开具的更好选择包括爱克宁（奥拉替尼）和赛妥诺注射液，它们更特异地针对瘙痒。请先与兽医确认剂量。"
+        },
+        {
+          "question": "什么时候是狗春季过敏最严重的季节？",
+          "answer": "北美犬春季过敏高峰期为4-6月，此时树木花粉和早期草花粉浓度最高。在温暖气候地区，过敏季节开始得更早（2月）并持续更久。夏秋季节也各有过敏原高峰。全年追踪你的狗的症状——如果持续超过3个月，它们可能已从季节性发展为全年性过敏。"
+        },
+        {
+          "question": "某些品种的狗春季过敏更严重吗？",
+          "answer": "是的——易患特应性皮炎的品种包括：西部高地白梗、法国斗牛犬、英国斗牛犬、金毛寻回犬、拉布拉多寻回犬、德国牧羊犬、可卡犬、拳师犬和波士顿梗。短头品种（斗牛犬、巴哥犬）常同时患有皮肤褶皮炎，随过敏性炎症而加重。对这些品种进行早期干预尤为重要。"
+        }
+      ],
+      "relatedTools": [
+        {
+          "name": "狗狗卡路里计算器",
+          "href": null,
+          "description": "如果过敏导致因应激引起的体重下降，需要调整喂养量。"
+        }
+      ],
+      "citations": [
+        {
+          "name": "AAHA——特应性皮炎管理",
+          "url": null
+        },
+        {
+          "name": "兽医皮肤病学——犬类特应性皮炎指南",
+          "url": null
+        },
+        {
+          "name": "AKC——犬类季节性过敏",
+          "url": null
+        }
+      ],
+      "bodyParagraphs": [
+        "狗的春季过敏代表了显著的生活质量下降问题，但往往得不到充分治疗，因为主人会误将慢性抓挠视为正常行为。与人类主要表现为呼吸道症状（打喷嚏、鼻塞）不同，狗主要通过皮肤表现过敏。这种表现差异意味着犬类过敏经常被误诊为卫生问题而非真正的过敏性疾病。",
+        "瘙痒-搔抓循环使过敏性皮肤病在最初过敏原暴露之外持续存在。抓挠损伤皮肤屏障，使细菌和酵母菌定殖，从而引发更多炎症和瘙痒。这就是为什么最初只在春季抓挠的过敏性狗，如果发展为不能自行消退的慢性继发感染，可能会发展为全年的皮肤问题。",
+        "现代兽医过敏管理已不再仅仅局限于症状抑制。像赛妥诺（一种靶向IL-31——主要瘙痒细胞因子的单克隆抗体注射）这样的治疗提供了有针对性的缓解，没有长期使用类固醇的副作用。爱克宁（奥拉替尼）在4小时内靶向多种炎症途径。这些处方选择在针对中重度病例方面比非处方抗组胺药更有效。"
+      ]
+    },
+    "thanksgiving": {
+      "slug": "thanksgiving",
+      "title": "感恩节狗狗可以吃的食物：安全与危险指南",
+      "description": "感恩节狗狗全面的食品安全指南——哪些食物安全（纯火鸡、南瓜、绿豆）、哪些有毒（葡萄、洋葱、黄油、酒精），以及分量控制建议。包含中毒事件中的急救措施。",
+      "keywords": [
+        "感恩节狗狗可以吃的食物",
+        "狗狗吃了感恩节火鸡",
+        "狗狗感恩节安全食物",
+        "狗狗吃了感恩节填馅",
+        "感恩节火鸡对狗狗安全吗"
+      ],
+      "severity": "高风险",
+      "season": "感恩节（11月）",
+      "knowledgeCards": [
+        {
+          "title": "感恩节食物：狗狗的安全食物",
+          "body": "适合狗狗食用（少量）：纯白肉或黑肉火鸡（不加调料）、纯煮熟绿豆（无黄油/大蒜）、纯煮熟红薯（不加棉花糖）、纯南瓜（纯南瓜泥，不要含糖的那种）、煮熟胡萝卜（无黄油）和纯白米饭。这些食物都应不加调料、不放黄油、小量喂食——约每20磅体重1-2汤匙。"
+        },
+        {
+          "title": "感恩节食物：狗狗的危险或有毒食物",
+          "body": "危险/有毒：填馅料（洋葱、鼠尾草）、肉汁（大蒜、洋葱、脂肪）、土豆泥（黄油、大蒜、细香葱）、蜜饯山药/棉花糖红薯（糖分高，部分含木糖醇）、餐食面包（面团膨胀且酵母发酵）、蔓越莓酱（高糖分，有时含葡萄/木糖醇）、南瓜派（肉豆蔻有毒，加上糖/脂肪）、各类巧克力甜点、澳洲坚果派以及任何含洋葱或大蒜的食物。"
+        },
+        {
+          "title": "面团危险：生酵母膨胀",
+          "body": "未烤熟的餐食面包面团对狗极其危险。狗胃部温暖潮湿的环境使酵母发酵，产生酒精（乙醇中毒）并且面团膨胀可能堵塞胃部。症状包括：腹部膨胀、呕吐、意识混乱和走路不稳。一块面包大小的面团即可导致20磅重的狗酒精中毒。"
+        },
+        {
+          "title": "脂肪毒性和胰腺炎",
+          "body": "感恩节食物通常脂肪含量很高（黄油、油、肉汁、火鸡皮）。高脂饮食是诱发犬类胰腺炎的头号饮食因素，胰腺炎是一种危及生命的胰腺炎症。胰腺炎通常在摄入高脂食物12-72小时后出现症状：剧烈腹痛（祈祷姿势）、嗜睡和发热。需要立即进行静脉输液和疼痛管理等兽医治疗。"
+        }
+      ],
+      "prevention": [
+        "在感恩节大餐开始前准备一小盘安全食物（纯火鸡、绿豆、纯红薯）",
+        "将其提前放置在远离餐桌的位置以防在桌边乞食",
+        "告知客人「禁止喂食桌上残羹」的政策是出于健康考虑",
+        "立即将所有火鸡骨头和食物残渣丢弃到室外垃圾桶",
+        "及时清理餐桌上的盘子——狗是机会主义者",
+        "在烹饪和用餐期间不要让狗进入厨房或餐厅区域",
+        "监控垃圾处理系统——狗可能接触未加盖垃圾桶中的食物垃圾"
+      ],
+      "symptoms": [
+        "2-24小时内呕吐（尤其反复呕吐）或腹泻",
+        "腹痛表现为「祈祷姿势」（前胸贴地、后腿立起）",
+        "严重嗜睡、虚弱或不愿活动",
+        "腹部膨胀或胀气（可能为胃扩张或面团膨胀）",
+        "抽搐、意识混乱（发酵面团引起的酒精中毒）",
+        "过度口渴或排尿后停止（葡萄中毒——24-48小时后）",
+        "牙龈苍白、虚弱、呼吸急促（洋葱/大蒜引起的溶血性贫血——2-5天后）"
+      ],
+      "firstAid": [
+        {
+          "title": "第一步：识别你的狗吃了什么",
+          "content": "快速检查什么食物无人看管。肉汁、填馅料和涂满黄油的蔬菜表明高脂暴露（胰腺炎风险）。如吃了面团，应考虑酒精中毒的可能。如吃了葡萄/葡萄干，则存在肾衰竭风险。根据识别的具体毒素确定优先处理方案。"
+        },
+        {
+          "title": "第二步：拨打毒物控制电话",
+          "content": "ASPCA动物毒物控制：(888) 426-4435。提供以下信息：狗的体重、吃了什么、估算的摄入量以及食用时间。高脂饮食即使没有立即出现症状，也需要监测72小时以防胰腺炎。"
+        },
+        {
+          "title": "第三步：不要等出现症状",
+          "content": "如果你的狗吃了面团（酒精风险）、葡萄（肾衰竭风险）或大量洋葱/大蒜（贫血风险），应在症状出现前就寻求兽医治疗。摄入与症状出现之间的延迟可达12-72小时，这期间可能已发生不可逆的损伤。"
+        },
+        {
+          "title": "第四步：任何贪食后均需监测",
+          "content": "即使没有识别出具体毒素，高脂摄入也需要监测12-72小时以防出现胰腺炎迹象。摄入高脂食物后限食12小时（允许饮水），然后提供少量清淡饮食。如出现呕吐或持续呕吐，立即寻求兽医治疗。"
+        }
+      ],
+      "relatedEmergency": "/dog/emergency/ate-grapes/",
+      "faqs": [
+        {
+          "question": "狗狗可以吃感恩节火鸡吗？",
+          "answer": "可以，纯无调味火鸡（无皮、无骨）适量喂食对狗是安全的——约每20磅体重1-2汤匙。必须去除所有骨头（有碎裂风险）、鸡皮（高脂肪），并确认未使用任何调味料（洋葱、大蒜、香草）。白肉脂肪含量低于黑肉，对有胰腺炎风险的狗更安全。"
+        },
+        {
+          "question": "南瓜派对狗安全吗？",
+          "answer": "不安全。南瓜派含有肉豆蔻（对狗有毒，可导致幻觉和心动过速）、高糖分（肠胃不适，长期影响牙齿/糖尿病）、乳脂（许多狗有乳糖不耐受）以及各香料。纯南瓜罐头（纯南瓜，非派馅料）是安全且对消化有益——每10磅体重最多1汤匙。"
+        },
+        {
+          "question": "我的狗吃了感恩节填馅。我该怎么办？",
+          "answer": "拨打毒物控制电话(888) 426-4435。填馅料通常含有多种毒素：洋葱和大蒜（以体重0.5%摄入可致溶血性贫血）、大量黄油/脂肪（胰腺炎风险）以及有时添加的香草（鼠尾草可引起胃肠道不适）。洋葱/大蒜中毒的症状可能在2-5天后才出现，因此早期兽医监测很重要。"
+        },
+        {
+          "question": "狗狗可以吃感恩节土豆泥吗？",
+          "answer": "传统土豆泥对狗不安全，因为添加了黄油（高脂肪）、牛奶（乳糖不耐受风险）、大蒜（有毒）和细香葱（有毒）。不添加任何调料的纯煮土豆在少量食用下是安全的。对狗最安全的感恩节蔬菜是纯煮熟的绿豆或胡萝卜，不加任何调料。"
+        }
+      ],
+      "relatedTools": [
+        {
+          "name": "有毒食物检查器",
+          "href": null,
+          "description": "验证任何感恩节食材的安全性。"
+        },
+        {
+          "name": "狗狗卡路里计算器",
+          "href": null,
+          "description": "计算节日额外摄入的卡路里。"
+        },
+        {
+          "name": "急诊：吞食葡萄",
+          "href": null,
+          "description": "葡萄/葡萄干中毒急诊指南。"
+        }
+      ],
+      "citations": [
+        {
+          "name": "ASPCA——感恩节宠物安全",
+          "url": null
+        },
+        {
+          "name": "宠物毒物热线——节日食品",
+          "url": null
+        },
+        {
+          "name": "AKC——感恩节狗狗可以吃的食物",
+          "url": null
+        }
+      ],
+      "bodyParagraphs": [
+        "感恩节创造了独特的风险环境：多种有毒食物同时被制备，食物长时间处于可获取状态，以及高脂肪成分与含毒素食物（填馅料中的洋葱、沙拉中的葡萄）的组合，共同带来了普通餐食所不具备的复合性危险。",
+        "胰腺炎在感恩节期间尤其值得关注，因为它是最常见的感恩节相关兽医急诊。该疾病发生在胰腺内酶类被过早激活时，导致胰腺实质上自我消化。即使积极治疗，重症胰腺炎死亡率仍可达20-40%。感恩节发作胰腺炎的狗往往会发展为慢性、反复性疾病，永久影响其生活质量。",
+        "带狗过感恩节的负责方式是在餐前为狗狗准备一份由安全无味食物组成的单独「狗盘」。这满足了主人想在节日中包括宠物的愿望，同时完全避开了有毒食物的暴露。事实上，即使是看似无害的节日食物，其累积的风险也突破了「吃一口没关系」的安全假设。"
+      ]
+    },
+    "easter-chocolate": {
+      "slug": "easter-chocolate",
+      "title": "复活节巧克力与狗狗：复活节彩蛋寻找安全指南",
+      "description": "针对狗主人的复活节巧克力中毒指南——可可碱中毒阈值、复活节特有危害（彩蛋、纸丝、百合花）、症状时间线和巧克力摄入的急救治疗。",
+      "keywords": [
+        "复活节巧克力狗狗",
+        "狗狗吃了复活节巧克力",
+        "复活节彩蛋寻找狗狗安全",
+        "复活节百合狗狗中毒",
+        "复活节巧克力中毒狗狗"
+      ],
+      "severity": "致命风险",
+      "season": "复活节（3月/4月）",
+      "knowledgeCards": [
+        {
+          "title": "复活节特有的巧克力危险",
+          "body": "复活节集中了多种巧克力风险：（1）巧克力蛋和巧克力兔子通常为黑巧克力或半甜巧克力（可可碱含量高于牛奶巧克力）。（2）锡纸包装的彩蛋构成双重危险——巧克力中毒加上锡纸引起的肠梗阻。（3）复活节彩蛋篮常被放在咖啡桌上，狗能轻易够到。（4）复活节纸丝（塑料或塑料绳）被吞食后可导致肠梗阻。（5）狂欢活动通常同时使用大量巧克力。"
+        },
+        {
+          "title": "巧克力毒性数学计算",
+          "body": "各类巧克力的可可碱含量（每盎司）：白巧克力：0.25毫克。牛奶巧克力：44-60毫克。半甜巧克力：150毫克。烘焙巧克力（无糖）：390-450毫克。狗的中毒阈值：轻度症状20毫克/公斤，重度40毫克/公斤，抽搐60毫克/公斤。一只20磅（9公斤）的狗吃下一个3盎司的巧克力兔子（牛奶巧克力约含150毫克可可碱）即可达到中度中毒阈值。仅需1盎司烘焙巧克力即可对同一只狗构成严重中毒。"
+        },
+        {
+          "title": "复活节纸丝：隐藏的危险",
+          "body": "塑料复活节纸丝是线性异物危险——它可能在胃内锚定并锯穿肠壁。纸质丝条部分可消化但可能结块引起梗阻。两种类型的纸丝对狗都有吸引力，因为它们沾有来自复活节彩蛋篮的巧克力残留。梗阻症状包括：反复呕吐、无排便、腹痛以及12-72小时内嗜睡。"
+        },
+        {
+          "title": "症状时间线",
+          "body": "0-2小时：喘气、烦躁不安、口渴增加、呕吐。2-12小时：心率加快（>100次/分钟）、肌肉震颤、排尿增多。12-48小时：抽搐（最严重者）、心律失常、高热（>104°F）。48-72小时：症状逐渐缓解（经支持治疗），但心脏损伤可能持续存在。关键治疗窗口：1小时内催吐可清除30-50%胃内容物；2小时后效果急剧下降。"
+        }
+      ],
+      "prevention": [
+        "将复活节彩蛋篮放在狗够不到的高处或存放在关门的房间内",
+        "在复活节寻找彩蛋前后清点巧克力物品——立即了解是否丢失",
+        "决不允许狗和孩子们一起寻找复活节彩蛋——巧克力蛋必须与宠物零食分开存放",
+        "在部分藏好的彩蛋内放入狗狗安全零食（胡萝卜、苹果片、狗零食）作为诱饵",
+        "使用纸质丝条代替塑料丝条（梗阻风险较低）",
+        "将所有巧克力包装和锡纸丢弃在有盖的室外垃圾桶中",
+        "在复活节寻找彩蛋期间将狗留在室内（如未用牵引绳直接控制）"
+      ],
+      "symptoms": [
+        "呕吐或腹泻（可能含有巧克力碎片或锡纸）",
+        "焦躁不安、过度活跃或躁动",
+        "过度气喘和心率加快",
+        "口渴和排尿增加",
+        "肌肉抽搐或颤动",
+        "抽搐（表明严重中毒）",
+        "僵硬或步态异常"
+      ],
+      "firstAid": [
+        {
+          "title": "第一步：计算中毒剂量",
+          "content": "确定：（1）食用的巧克力种类（牛奶黑巧克力/烘焙巧克力），（2）消耗的大约重量（盎司），（3）狗的体重。使用中毒阈值计算器：牛奶巧克力在每10磅体重1盎司时有毒；黑巧克力在每10磅体重0.5盎司时有毒；烘焙巧克力在每10磅体重0.1盎司时有毒。"
+        },
+        {
+          "title": "第二步：立即拨打毒物控制电话",
+          "content": "ASPCA动物毒物控制：(888) 426-4435。报告计算出的剂量。如果超过阈值，请前往急诊兽医处。不要等待症状出现——可可碱在12小时以上持续吸收，症状可能在已发生严重损伤后才出现。"
+        },
+        {
+          "title": "第三步：不要在家催吐",
+          "content": "不要试图在家使用过氧化氢催吐。如果你的狗已经抽搐、意识障碍，或巧克力摄入已超过1-2小时（重新呕吐不能排出大量毒素），这可能是危险的。仅在兽医指导下催吐。"
+        },
+        {
+          "title": "第四步：兽医治疗",
+          "content": "巧克力中毒的治疗：（1）在1-2小时内催吐，（2）活性炭结合剩余可可碱，（3）静脉输液加速肾脏排泄，（4）12-24小时心率监测，（5）如需要则使用抗惊厥药。中度中毒通常需要住院12-36小时。"
+        }
+      ],
+      "relatedEmergency": "/dog/emergency/ate-chocolate/",
+      "faqs": [
+        {
+          "question": "我的狗吃了复活节巧克力蛋。多少算有毒？",
+          "answer": "取决于巧克力种类、彩蛋重量和您的狗的大小。典型的锡纸包装牛奶巧克力复活节彩蛋重1-2盎司（30-60克）——对一只20磅重的狗来说，一颗蛋即达到中度中毒阈值（20毫克/公斤可可碱）。黑巧克力彩蛋在相同重量下毒性是牛奶巧克力的3-4倍。烘焙巧克力彩蛋可能对小体重狗致命。请拨打ASPCA毒物控制中心电话(888) 426-4435，告知巧克力种类和您的狗的体重以评估即时风险。"
+        },
+        {
+          "question": "复活节百合对狗有危险吗？",
+          "answer": "复活节百合（Lilium longiflorum）对狗并不像对猫那样会引起致命性肾衰竭。但是，啃咬百合茎/叶的狗可能会出现轻度胃肠道不适（呕吐、腹泻）。更危险的复活节危害包括：巧克力蛋（可可碱）、塑料复活节纸丝（肠梗阻）以及无糖糖果中的木糖醇。在有多种宠物的家庭中，应将百合远离猫。"
+        },
+        {
+          "question": "吃巧克力后多久需要开始担心我的狗？",
+          "answer": "巧克力中的可可碱在6-12小时内被吸收，症状最迟可在摄入后72小时出现。木糖醇作用更快：15-30分钟内低血糖，8-12小时内肝衰竭。如果您知道您的狗吃了巧克力或木糖醇，请立即拨打毒物控制电话。在2小时内接受治疗的狗结果更好。即使治疗后也需监测72小时。"
+        }
+      ],
+      "relatedTools": [
+        {
+          "name": "有毒食物检查器",
+          "href": null,
+          "description": "即时验证巧克力/糖果的毒性。"
+        },
+        {
+          "name": "急诊：吞食巧克力",
+          "href": null,
+          "description": "完整巧克力中毒急救方案。"
+        }
+      ],
+      "citations": [
+        {
+          "name": "ASPCA——复活节宠物安全",
+          "url": null
+        },
+        {
+          "name": "宠物毒物热线——巧克力",
+          "url": null
+        },
+        {
+          "name": "ASPCA植物指南",
+          "url": null
+        }
+      ],
+      "bodyParagraphs": [
+        "复活节将多种毒素（巧克力、木糖醇）与物理危害（纸丝、玩具）结合在一起，在这个环境中，狗被限制在室内，面临着糖果之外的各种诱惑。",
+        "巧克力症状时间线会造成虚假的安全感——可可碱在摄入后10-12小时才达到峰值。心脏损害可能在狗狗「看起来没事」之后很久才发展。请立即联系毒物控制中心，不要等待。",
+        "「少量巧克力不会有危害」的说法是危险地错误的。一颗黑巧克力复活节蛋即可对中型犬构成有毒剂量。被标榜为「健康」的无糖糖果往往含有木糖醇，在极小剂量下即可致命。"
+      ]
+    },
+    "breadcrumb": {
+      "home": "首页",
+      "dog": "狗狗",
+      "cat": "猫咪",
+      "seasonal": "季节性危险",
+      "summerHeat": "夏季防暑安全",
+      "winterPawCare": "冬季爪子护理",
+      "christmasFoods": "圣诞食物安全",
+      "halloweenCandy": "万圣节糖果安全",
+      "fireworksAnxiety": "烟花焦虑",
+      "springAllergies": "春季过敏",
+      "thanksgiving": "感恩节安全",
+      "easterChocolate": "复活节巧克力安全"
+    }
   }
 }

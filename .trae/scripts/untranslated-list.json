@@ -1,0 +1,1587 @@
+[
+  {
+    "key": "cat.toolGrid.priority",
+    "en": "P1",
+    "ko": "P1"
+  },
+  {
+    "key": "cat.toolGrid.rating",
+    "en": "P0",
+    "ko": "P0"
+  },
+  {
+    "key": "catBcs.result.bcsScore",
+    "en": "BCS {score}/9",
+    "ko": "BCS {score}/9"
+  },
+  {
+    "key": "catEmergency.ateChocolate.article.description",
+    "en": "Emergency guide for chocolate toxicity in cats: theobromine poisoning, symptoms, and treatment.",
+    "ko": "Emergency guide for chocolate toxicity in cats: theobromine poisoning, symptoms, and treatment."
+  },
+  {
+    "key": "catEmergency.ateChocolate.article.headline",
+    "en": "My Cat Ate Chocolate: Emergency Guide",
+    "ko": "My Cat Ate Chocolate: Emergency Guide"
+  },
+  {
+    "key": "catEmergency.ateChocolate.article.ogDescription",
+    "en": "What to do if your cat eats chocolate.",
+    "ko": "What to do if your cat eats chocolate."
+  },
+  {
+    "key": "catEmergency.ateChocolate.article.ogTitle",
+    "en": "My Cat Ate Chocolate: Emergency Guide | petsMetrics",
+    "ko": "My Cat Ate Chocolate: Emergency Guide | petsMetrics"
+  },
+  {
+    "key": "catEmergency.ateChocolate.banner.subtitle",
+    "en": "Chocolate is <strong>more toxic to cats than dogs</strong> due to slower theobromine metabolism and smaller body weight. Call ASPCA Poison Control at <strong>(888) 426-4435</strong> immediately.",
+    "ko": "Chocolate is <strong>more toxic to cats than dogs</strong> due to slower theobromine metabolism and smaller body weight. Call ASPCA Poison Control at <strong>(888) 426-4435</strong> immediately."
+  },
+  {
+    "key": "catEmergency.ateChocolate.meta.description",
+    "en": "Emergency guide: Chocolate is toxic to cats (theobromine poisoning). Cats are more sensitive than dogs. Learn symptoms, risk levels by chocolate type, and immediate actions. ASPCA Poison Control: (888) 426-4435.",
+    "ko": "Emergency guide: Chocolate is toxic to cats (theobromine poisoning). Cats are more sensitive than dogs. Learn symptoms, risk levels by chocolate type, and immediate actions. ASPCA Poison Control: (888) 426-4435."
+  },
+  {
+    "key": "catEmergency.ateChocolate.meta.keywords",
+    "en": "my cat ate chocolate emergency, chocolate poisoning cats, cat theobromine toxicity, cats and chocolate, what to do if cat eats chocolate",
+    "ko": "my cat ate chocolate emergency, chocolate poisoning cats, cat theobromine toxicity, cats and chocolate, what to do if cat eats chocolate"
+  },
+  {
+    "key": "catEmergency.ateChocolate.meta.title",
+    "en": "My Cat Ate Chocolate: Emergency Guide | petsMetrics",
+    "ko": "My Cat Ate Chocolate: Emergency Guide | petsMetrics"
+  },
+  {
+    "key": "catEmergency.ateChocolate.science.content",
+    "en": "Chocolate contains theobromine and caffeine — methylxanthines that cats cannot efficiently metabolize. Cytochrome P450 enzymes in feline liver have reduced activity compared to dogs, causing prolonged theobromine half-life. This leads to cumulative effects on the CNS (seizures), cardiovascular system (arrhythmias), and smooth muscles. Cats are also obligate carnivores with less capacity to process plant-derived alkaloids. The combination of smaller body weight, slower metabolism, and greater sensitivity makes chocolate proportionally more dangerous for cats (ASPCA, 2023).",
+    "ko": "Chocolate contains theobromine and caffeine — methylxanthines that cats cannot efficiently metabolize. Cytochrome P450 enzymes in feline liver have reduced activity compared to dogs, causing prolonged theobromine half-life. This leads to cumulative effects on the CNS (seizures), cardiovascular system (arrhythmias), and smooth muscles. Cats are also obligate carnivores with less capacity to process plant-derived alkaloids. The combination of smaller body weight, slower metabolism, and greater sensitivity makes chocolate proportionally more dangerous for cats (ASPCA, 2023)."
+  },
+  {
+    "key": "catEmergency.ateEssentialOils.article.description",
+    "en": "Emergency guide for essential oil toxicity in cats: tea tree oil, citrus oils, and metabolic vulnerability.",
+    "ko": "Emergency guide for essential oil toxicity in cats: tea tree oil, citrus oils, and metabolic vulnerability."
+  },
+  {
+    "key": "catEmergency.ateEssentialOils.article.headline",
+    "en": "My Cat Ate Essential Oils: Emergency Guide",
+    "ko": "My Cat Ate Essential Oils: Emergency Guide"
+  },
+  {
+    "key": "catEmergency.ateEssentialOils.article.ogDescription",
+    "en": "What to do if your cat is exposed to essential oils.",
+    "ko": "What to do if your cat is exposed to essential oils."
+  },
+  {
+    "key": "catEmergency.ateEssentialOils.article.ogTitle",
+    "en": "My Cat Ate Essential Oils: Emergency Guide | petsMetrics",
+    "ko": "My Cat Ate Essential Oils: Emergency Guide | petsMetrics"
+  },
+  {
+    "key": "catEmergency.ateEssentialOils.banner.subtitle",
+    "en": "Cats lack liver enzymes to metabolize terpenes and phenols. <strong>Tea tree oil, citrus oils, and eucalyptus</strong> are highly toxic — even topical exposure is dangerous. Call ASPCA Poison Control at <strong>(888) 426-4435</strong>.",
+    "ko": "Cats lack liver enzymes to metabolize terpenes and phenols. <strong>Tea tree oil, citrus oils, and eucalyptus</strong> are highly toxic — even topical exposure is dangerous. Call ASPCA Poison Control at <strong>(888) 426-4435</strong>."
+  },
+  {
+    "key": "catEmergency.ateEssentialOils.meta.description",
+    "en": "Emergency guide: Essential oils (tea tree, eucalyptus, citrus, peppermint) are highly toxic to cats due to lacking glucuronidation enzymes. Learn symptoms and immediate actions. ASPCA Poison Control: (888) 426-4435.",
+    "ko": "Emergency guide: Essential oils (tea tree, eucalyptus, citrus, peppermint) are highly toxic to cats due to lacking glucuronidation enzymes. Learn symptoms and immediate actions. ASPCA Poison Control: (888) 426-4435."
+  },
+  {
+    "key": "catEmergency.ateEssentialOils.meta.keywords",
+    "en": "my cat ate essential oils, tea tree oil cats, essential oils toxic to cats, cat ate eucalyptus oil, essential oil poisoning cats",
+    "ko": "my cat ate essential oils, tea tree oil cats, essential oils toxic to cats, cat ate eucalyptus oil, essential oil poisoning cats"
+  },
+  {
+    "key": "catEmergency.ateEssentialOils.meta.title",
+    "en": "My Cat Ate Essential Oils: Emergency Guide | petsMetrics",
+    "ko": "My Cat Ate Essential Oils: Emergency Guide | petsMetrics"
+  },
+  {
+    "key": "catEmergency.ateEssentialOils.science.content",
+    "en": "Cats lack UDP-glucuronosyltransferase (UGT1A6 and UGT1A9) enzymes required for phase II glucuronidation of terpenes (d-limonene, alpha-terpineol) and phenols (eugenol, thymol). These compounds accumulate in the hepatobiliary system, causing hepatotoxicity and neurotoxicity. Cats also have deficient P-glycoprotein efflux transporters at the blood-brain barrier, increasing CNS exposure. Tea tree oil (Melaleuca alternifolia) monoterpenes cause dose-dependent CNS depression, ataxia, and hypothermia. Even 10mL applied dermally can be fatal in cats (ASPCA, 2023).",
+    "ko": "Cats lack UDP-glucuronosyltransferase (UGT1A6 and UGT1A9) enzymes required for phase II glucuronidation of terpenes (d-limonene, alpha-terpineol) and phenols (eugenol, thymol). These compounds accumulate in the hepatobiliary system, causing hepatotoxicity and neurotoxicity. Cats also have deficient P-glycoprotein efflux transporters at the blood-brain barrier, increasing CNS exposure. Tea tree oil (Melaleuca alternifolia) monoterpenes cause dose-dependent CNS depression, ataxia, and hypothermia. Even 10mL applied dermally can be fatal in cats (ASPCA, 2023)."
+  },
+  {
+    "key": "catEmergency.ateFishingLine.article.description",
+    "en": "Emergency guide for fishing line ingestion in cats: linear foreign body obstruction, symptoms, and surgical treatment.",
+    "ko": "Emergency guide for fishing line ingestion in cats: linear foreign body obstruction, symptoms, and surgical treatment."
+  },
+  {
+    "key": "catEmergency.ateFishingLine.article.headline",
+    "en": "My Cat Ate Fishing Line: Emergency Guide",
+    "ko": "My Cat Ate Fishing Line: Emergency Guide"
+  },
+  {
+    "key": "catEmergency.ateFishingLine.article.ogDescription",
+    "en": "What to do if your cat ate fishing line.",
+    "ko": "What to do if your cat ate fishing line."
+  },
+  {
+    "key": "catEmergency.ateFishingLine.article.ogTitle",
+    "en": "My Cat Ate Fishing Line: Emergency Guide | petsMetrics",
+    "ko": "My Cat Ate Fishing Line: Emergency Guide | petsMetrics"
+  },
+  {
+    "key": "catEmergency.ateFishingLine.banner.subtitle",
+    "en": "Fishing line is a <strong>lethal linear foreign body</strong>. It can saw through the intestinal wall causing fatal peritonitis. <strong>Do NOT pull on any string.</strong> Go to emergency vet NOW.",
+    "ko": "Fishing line is a <strong>lethal linear foreign body</strong>. It can saw through the intestinal wall causing fatal peritonitis. <strong>Do NOT pull on any string.</strong> Go to emergency vet NOW."
+  },
+  {
+    "key": "catEmergency.ateFishingLine.meta.description",
+    "en": "Emergency guide: Fishing line (string) ingestion is deadly for cats. Learn about linear foreign body obstruction, symptoms (string under tongue!), and why immediate surgery is often needed.",
+    "ko": "Emergency guide: Fishing line (string) ingestion is deadly for cats. Learn about linear foreign body obstruction, symptoms (string under tongue!), and why immediate surgery is often needed."
+  },
+  {
+    "key": "catEmergency.ateFishingLine.meta.keywords",
+    "en": "my cat ate fishing line, cat ate string, linear foreign body cat, cat string ingestion, fishing line cat emergency",
+    "ko": "my cat ate fishing line, cat ate string, linear foreign body cat, cat string ingestion, fishing line cat emergency"
+  },
+  {
+    "key": "catEmergency.ateFishingLine.meta.title",
+    "en": "My Cat Ate Fishing Line: Emergency Guide | petsMetrics",
+    "ko": "My Cat Ate Fishing Line: Emergency Guide | petsMetrics"
+  },
+  {
+    "key": "catEmergency.ateFishingLine.science.content",
+    "en": "Linear foreign bodies (string, yarn, fishing line) are surgical emergencies in cats. The proximal end anchors — commonly under the tongue, at the pylorus, or in the stomach. Intestinal peristalsis pulls the distal end taught, causing the intestine to plicate (accordion-fold) around it. The taut line exerts pressure on the mesenteric border, causing ischemic necrosis and perforation. Multiple perforations along the intestinal tract lead to septic peritonitis. Unlike dogs, cats have a smaller intestinal diameter and are more susceptible to linear foreign body complications (AAHA, 2023).",
+    "ko": "Linear foreign bodies (string, yarn, fishing line) are surgical emergencies in cats. The proximal end anchors — commonly under the tongue, at the pylorus, or in the stomach. Intestinal peristalsis pulls the distal end taught, causing the intestine to plicate (accordion-fold) around it. The taut line exerts pressure on the mesenteric border, causing ischemic necrosis and perforation. Multiple perforations along the intestinal tract lead to septic peritonitis. Unlike dogs, cats have a smaller intestinal diameter and are more susceptible to linear foreign body complications (AAHA, 2023)."
+  },
+  {
+    "key": "catEmergency.ateGarlic.article.description",
+    "en": "Emergency guide for garlic toxicity in cats: 5x more potent than onion, Heinz body anemia, and treatment.",
+    "ko": "Emergency guide for garlic toxicity in cats: 5x more potent than onion, Heinz body anemia, and treatment."
+  },
+  {
+    "key": "catEmergency.ateGarlic.article.headline",
+    "en": "My Cat Ate Garlic: What to Do Now",
+    "ko": "My Cat Ate Garlic: What to Do Now"
+  },
+  {
+    "key": "catEmergency.ateGarlic.article.ogDescription",
+    "en": "What to do if your cat eats garlic.",
+    "ko": "What to do if your cat eats garlic."
+  },
+  {
+    "key": "catEmergency.ateGarlic.article.ogTitle",
+    "en": "My Cat Ate Garlic: What to Do Now | petsMetrics",
+    "ko": "My Cat Ate Garlic: What to Do Now | petsMetrics"
+  },
+  {
+    "key": "catEmergency.ateGarlic.banner.subtitle",
+    "en": "Garlic is <strong>5x more toxic than onion for cats</strong>. A single clove can cause hemolytic anemia. Call ASPCA Poison Control at <strong>(888) 426-4435</strong> immediately.",
+    "ko": "Garlic is <strong>5x more toxic than onion for cats</strong>. A single clove can cause hemolytic anemia. Call ASPCA Poison Control at <strong>(888) 426-4435</strong> immediately."
+  },
+  {
+    "key": "catEmergency.ateGarlic.meta.description",
+    "en": "Emergency guide: Garlic is toxic to cats — 5x more potent than onion. Learn about Heinz body anemia, symptoms, toxic dose, and why even small amounts are dangerous. ASPCA Poison Control: (888) 426-4435.",
+    "ko": "Emergency guide: Garlic is toxic to cats — 5x more potent than onion. Learn about Heinz body anemia, symptoms, toxic dose, and why even small amounts are dangerous. ASPCA Poison Control: (888) 426-4435."
+  },
+  {
+    "key": "catEmergency.ateGarlic.meta.keywords",
+    "en": "my cat ate garlic what to do, garlic poisoning cats, garlic toxic to cats, cat ate garlic symptoms, garlic anemia cats",
+    "ko": "my cat ate garlic what to do, garlic poisoning cats, garlic toxic to cats, cat ate garlic symptoms, garlic anemia cats"
+  },
+  {
+    "key": "catEmergency.ateGarlic.meta.title",
+    "en": "My Cat Ate Garlic: What to Do Now | petsMetrics",
+    "ko": "My Cat Ate Garlic: What to Do Now | petsMetrics"
+  },
+  {
+    "key": "catEmergency.ateGarlic.science.content",
+    "en": "Garlic (Allium sativum) contains alliin, which converts to allicin when crushed or chewed. Allicin and its derivatives (allyl propyl disulfide, ajoene) cause oxidative denaturation of hemoglobin in feline erythrocytes. The feline hemoglobin molecule has 8-10 sulfhydryl groups (vs 2-4 in dogs), making it 2-3x more susceptible to oxidative damage. The resulting Heinz bodies are phagocytosed by splenic macrophages, causing extravascular hemolysis. Unlike onions, garlic's thiosulfates are more bioavailable in cats due to differences in hepatic metabolism (Merck Veterinary Manual, 2023).",
+    "ko": "Garlic (Allium sativum) contains alliin, which converts to allicin when crushed or chewed. Allicin and its derivatives (allyl propyl disulfide, ajoene) cause oxidative denaturation of hemoglobin in feline erythrocytes. The feline hemoglobin molecule has 8-10 sulfhydryl groups (vs 2-4 in dogs), making it 2-3x more susceptible to oxidative damage. The resulting Heinz bodies are phagocytosed by splenic macrophages, causing extravascular hemolysis. Unlike onions, garlic's thiosulfates are more bioavailable in cats due to differences in hepatic metabolism (Merck Veterinary Manual, 2023)."
+  },
+  {
+    "key": "catEmergency.ateLily.article.description",
+    "en": "Emergency guide for lily toxicity in cats: symptoms, treatment, and prevention.",
+    "ko": "Emergency guide for lily toxicity in cats: symptoms, treatment, and prevention."
+  },
+  {
+    "key": "catEmergency.ateLily.article.headline",
+    "en": "My Cat Ate Lily: What Should I Do?",
+    "ko": "My Cat Ate Lily: What Should I Do?"
+  },
+  {
+    "key": "catEmergency.ateLily.article.ogDescription",
+    "en": "Emergency guide: What to do if your cat eats lily. Acute kidney failure risk and critical treatment window.",
+    "ko": "Emergency guide: What to do if your cat eats lily. Acute kidney failure risk and critical treatment window."
+  },
+  {
+    "key": "catEmergency.ateLily.article.ogTitle",
+    "en": "My Cat Ate Lily: What Should I Do? | petsMetrics",
+    "ko": "My Cat Ate Lily: What Should I Do? | petsMetrics"
+  },
+  {
+    "key": "catEmergency.ateLily.banner.subtitle",
+    "en": "All parts of true lilies are deadly to cats — even pollen. Ingestion causes acute kidney failure. Call your vet or ASPCA Poison Control at <strong>(888) 426-4435</strong> IMMEDIATELY.",
+    "ko": "All parts of true lilies are deadly to cats — even pollen. Ingestion causes acute kidney failure. Call your vet or ASPCA Poison Control at <strong>(888) 426-4435</strong> IMMEDIATELY."
+  },
+  {
+    "key": "catEmergency.ateLily.meta.description",
+    "en": "Emergency guide: What to do if your cat eats any part of a lily plant. Learn about acute kidney failure risk, symptoms, and the critical treatment window. Act NOW.",
+    "ko": "Emergency guide: What to do if your cat eats any part of a lily plant. Learn about acute kidney failure risk, symptoms, and the critical treatment window. Act NOW."
+  },
+  {
+    "key": "catEmergency.ateLily.meta.keywords",
+    "en": "my cat ate lily what should i do, lily poisoning cats, lily toxicity cats, cat ate lily emergency, are lilies toxic to cats",
+    "ko": "my cat ate lily what should i do, lily poisoning cats, lily toxicity cats, cat ate lily emergency, are lilies toxic to cats"
+  },
+  {
+    "key": "catEmergency.ateLily.meta.title",
+    "en": "My Cat Ate Lily: What Should I Do? | petsMetrics",
+    "ko": "My Cat Ate Lily: What Should I Do? | petsMetrics"
+  },
+  {
+    "key": "catEmergency.ateLily.science.content",
+    "en": "The exact toxic compound in lilies is unidentified, but it causes acute tubular necrosis in feline kidneys. Cats are uniquely susceptible — dogs and humans can eat lilies without harm. The toxin is water-soluble and present in all plant parts: petals, leaves, stems, pollen, and even vase water. Kidney damage begins within hours and progresses to complete renal failure within 24-72 hours without treatment. Early IV fluid therapy (within 18 hours) can prevent permanent damage (ASPCA, 2023).",
+    "ko": "The exact toxic compound in lilies is unidentified, but it causes acute tubular necrosis in feline kidneys. Cats are uniquely susceptible — dogs and humans can eat lilies without harm. The toxin is water-soluble and present in all plant parts: petals, leaves, stems, pollen, and even vase water. Kidney damage begins within hours and progresses to complete renal failure within 24-72 hours without treatment. Early IV fluid therapy (within 18 hours) can prevent permanent damage (ASPCA, 2023)."
+  },
+  {
+    "key": "catEmergency.ateOnion.article.description",
+    "en": "Emergency guide for onion toxicity in cats: Heinz body anemia, symptoms, and treatment.",
+    "ko": "Emergency guide for onion toxicity in cats: Heinz body anemia, symptoms, and treatment."
+  },
+  {
+    "key": "catEmergency.ateOnion.article.headline",
+    "en": "My Cat Ate Onion: Symptoms and Emergency Guide",
+    "ko": "My Cat Ate Onion: Symptoms and Emergency Guide"
+  },
+  {
+    "key": "catEmergency.ateOnion.article.ogDescription",
+    "en": "What to do if your cat eats onion.",
+    "ko": "What to do if your cat eats onion."
+  },
+  {
+    "key": "catEmergency.ateOnion.article.ogTitle",
+    "en": "My Cat Ate Onion: Symptoms and Emergency Guide | petsMetrics",
+    "ko": "My Cat Ate Onion: Symptoms and Emergency Guide | petsMetrics"
+  },
+  {
+    "key": "catEmergency.ateOnion.banner.subtitle",
+    "en": "Onions are <strong>more toxic to cats than dogs</strong>. Even small amounts cause Heinz body hemolytic anemia. Call ASPCA Poison Control at <strong>(888) 426-4435</strong> immediately.",
+    "ko": "Onions are <strong>more toxic to cats than dogs</strong>. Even small amounts cause Heinz body hemolytic anemia. Call ASPCA Poison Control at <strong>(888) 426-4435</strong> immediately."
+  },
+  {
+    "key": "catEmergency.ateOnion.meta.description",
+    "en": "Emergency guide: Onions cause hemolytic anemia in cats. Learn symptoms (pale gums, weakness, Heinz body anemia), toxic dose, and why even small amounts are dangerous. ASPCA Poison Control: (888) 426-4435.",
+    "ko": "Emergency guide: Onions cause hemolytic anemia in cats. Learn symptoms (pale gums, weakness, Heinz body anemia), toxic dose, and why even small amounts are dangerous. ASPCA Poison Control: (888) 426-4435."
+  },
+  {
+    "key": "catEmergency.ateOnion.meta.keywords",
+    "en": "my cat ate onion, onion poisoning cats, onion toxicity cats, cat ate onion symptoms, onion toxic to cats",
+    "ko": "my cat ate onion, onion poisoning cats, onion toxicity cats, cat ate onion symptoms, onion toxic to cats"
+  },
+  {
+    "key": "catEmergency.ateOnion.meta.title",
+    "en": "My Cat Ate Onion: Symptoms and Emergency Guide | petsMetrics",
+    "ko": "My Cat Ate Onion: Symptoms and Emergency Guide | petsMetrics"
+  },
+  {
+    "key": "catEmergency.ateOnion.science.content",
+    "en": "Onions (Allium cepa) contain N-propyl disulfide and S-methylcysteine sulfoxide. These compounds cause oxidative damage to hemoglobin, forming Heinz bodies (denatured hemoglobin precipitates). The spleen removes damaged cells, causing hemolytic anemia. Cats are especially vulnerable because feline hemoglobin contains more sulfhydryl groups than other species, making it more susceptible to oxidation. Additionally, cats have lower glucose-6-phosphate dehydrogenase (G6PD) activity, reducing their ability to protect red blood cells from oxidative injury. Anemia typically peaks 3-5 days post-ingestion (Merck Veterinary Manual, 2023).",
+    "ko": "Onions (Allium cepa) contain N-propyl disulfide and S-methylcysteine sulfoxide. These compounds cause oxidative damage to hemoglobin, forming Heinz bodies (denatured hemoglobin precipitates). The spleen removes damaged cells, causing hemolytic anemia. Cats are especially vulnerable because feline hemoglobin contains more sulfhydryl groups than other species, making it more susceptible to oxidation. Additionally, cats have lower glucose-6-phosphate dehydrogenase (G6PD) activity, reducing their ability to protect red blood cells from oxidative injury. Anemia typically peaks 3-5 days post-ingestion (Merck Veterinary Manual, 2023)."
+  },
+  {
+    "key": "catEmergency.ateString.article.description",
+    "en": "Emergency guide for linear foreign body ingestion in cats: symptoms, treatment, and prevention.",
+    "ko": "Emergency guide for linear foreign body ingestion in cats: symptoms, treatment, and prevention."
+  },
+  {
+    "key": "catEmergency.ateString.article.headline",
+    "en": "Cat Ate String: Emergency Guide",
+    "ko": "Cat Ate String: Emergency Guide"
+  },
+  {
+    "key": "catEmergency.ateString.article.ogDescription",
+    "en": "Emergency guide: What to do if your cat eats string. Linear foreign body danger and intestinal damage risk.",
+    "ko": "Emergency guide: What to do if your cat eats string. Linear foreign body danger and intestinal damage risk."
+  },
+  {
+    "key": "catEmergency.ateString.article.ogTitle",
+    "en": "Cat Ate String: Emergency Guide | petsMetrics",
+    "ko": "Cat Ate String: Emergency Guide | petsMetrics"
+  },
+  {
+    "key": "catEmergency.ateString.banner.subtitle",
+    "en": "String, yarn, and thread are linear foreign bodies that can cut through a cat's intestines. Do NOT pull any visible string — call your vet immediately.",
+    "ko": "String, yarn, and thread are linear foreign bodies that can cut through a cat's intestines. Do NOT pull any visible string — call your vet immediately."
+  },
+  {
+    "key": "catEmergency.ateString.meta.description",
+    "en": "Emergency guide: What to do if your cat eats string, yarn, or thread. Learn about linear foreign body danger, intestinal pleating, and when surgery is needed.",
+    "ko": "Emergency guide: What to do if your cat eats string, yarn, or thread. Learn about linear foreign body danger, intestinal pleating, and when surgery is needed."
+  },
+  {
+    "key": "catEmergency.ateString.meta.keywords",
+    "en": "cat ate string emergency, cat ate yarn, linear foreign body cat, cat string ingestion, cat ate thread what to do",
+    "ko": "cat ate string emergency, cat ate yarn, linear foreign body cat, cat string ingestion, cat ate thread what to do"
+  },
+  {
+    "key": "catEmergency.ateString.meta.title",
+    "en": "Cat Ate String: Emergency Guide | petsMetrics",
+    "ko": "Cat Ate String: Emergency Guide | petsMetrics"
+  },
+  {
+    "key": "catEmergency.ateString.science.content",
+    "en": "Linear foreign bodies (string, yarn, thread, tinsel) are uniquely dangerous because they anchor at one point — typically under the tongue or at the pyloric sphincter — while the rest is pulled through the intestines by normal peristalsis (intestinal contractions). This causes the intestines to bunch up (\"pleat\") along the string, and the taut string can saw through the intestinal wall like a wire. This leads to perforation, peritonitis, sepsis, and death without surgical intervention. Cats are especially prone due to their barbed tongues that easily catch string (AAFP, 2023).",
+    "ko": "Linear foreign bodies (string, yarn, thread, tinsel) are uniquely dangerous because they anchor at one point — typically under the tongue or at the pyloric sphincter — while the rest is pulled through the intestines by normal peristalsis (intestinal contractions). This causes the intestines to bunch up (\"pleat\") along the string, and the taut string can saw through the intestinal wall like a wire. This leads to perforation, peritonitis, sepsis, and death without surgical intervention. Cats are especially prone due to their barbed tongues that easily catch string (AAFP, 2023)."
+  },
+  {
+    "key": "catEmergency.shared.labels.exposureRoute",
+    "en": "Exposure Route",
+    "ko": "Exposure Route"
+  },
+  {
+    "key": "catEmergency.shared.labels.exposureType",
+    "en": "Exposure Type",
+    "ko": "Exposure Type"
+  },
+  {
+    "key": "catEmergency.shared.labels.garlicForm",
+    "en": "Garlic Form",
+    "ko": "Garlic Form"
+  },
+  {
+    "key": "catEmergency.shared.labels.oilType",
+    "en": "Oil Type",
+    "ko": "Oil Type"
+  },
+  {
+    "key": "catEmergency.shared.labels.onionForm",
+    "en": "Onion Form",
+    "ko": "Onion Form"
+  },
+  {
+    "key": "catEmergency.shared.labels.symptomsPresent",
+    "en": "Symptoms Present?",
+    "ko": "Symptoms Present?"
+  },
+  {
+    "key": "common.notFound.title",
+    "en": "404",
+    "ko": "404"
+  },
+  {
+    "key": "common.unit.kcal",
+    "en": "kcal",
+    "ko": "kcal"
+  },
+  {
+    "key": "common.unit.kg",
+    "en": "kg",
+    "ko": "kg"
+  },
+  {
+    "key": "common.unit.lb",
+    "en": "lb",
+    "ko": "lb"
+  },
+  {
+    "key": "common.unit.ml",
+    "en": "ml",
+    "ko": "ml"
+  },
+  {
+    "key": "common.unit.oz",
+    "en": "oz",
+    "ko": "oz"
+  },
+  {
+    "key": "compare.breedMatters",
+    "en": "Breed matters. Golden Retrievers, German Shepherds, and Boxers have different cancer risk profiles than small breeds. Discuss your specific breed's risk factors with your veterinarian before deciding on timing.",
+    "ko": "Breed matters. Golden Retrievers, German Shepherds, and Boxers have different cancer risk profiles than small breeds. Discuss your specific breed's risk factors with your veterinarian before deciding on timing."
+  },
+  {
+    "key": "compare.dryVsWet.subtitle",
+    "en": "A science-based comparison of kibble and canned diets — covering cost, dental health, shelf life, hydration, and palatability. No marketing fluff, just data from AAFCO and veterinary nutritionists.",
+    "ko": "A science-based comparison of kibble and canned diets — covering cost, dental health, shelf life, hydration, and palatability. No marketing fluff, just data from AAFCO and veterinary nutritionists."
+  },
+  {
+    "key": "compare.dryVsWet.title",
+    "en": "Dry Food vs Wet Food for Dogs: Which Is Right?",
+    "ko": "Dry Food vs Wet Food for Dogs: Which Is Right?"
+  },
+  {
+    "key": "compare.dryVsWet.topicA.bestFor",
+    "en": "Active adult dogs, large breeds, multi-dog households on a budget, and owners who value convenience.",
+    "ko": "Active adult dogs, large breeds, multi-dog households on a budget, and owners who value convenience."
+  },
+  {
+    "key": "compare.dryVsWet.topicB.bestFor",
+    "en": "Senior dogs, small breeds, picky eaters, dogs with dental issues, kidney/urinary conditions, and dogs who don't drink enough water.",
+    "ko": "Senior dogs, small breeds, picky eaters, dogs with dental issues, kidney/urinary conditions, and dogs who don't drink enough water."
+  },
+  {
+    "key": "compare.grainFreeVsWholeGrain.topicB.bestFor",
+    "en": "The vast majority of dogs - whole grain diets are the recommended default by WSAVA and most veterinary nutritionists.",
+    "ko": "99%� - WSAVA �."
+  },
+  {
+    "key": "compare.indoorVsOutdoor.subtitle",
+    "en": "Data-driven comparison of indoor-only and outdoor-access cats — covering lifespan, disease risk, injury rates, behavioral needs, and the \"best of both worlds\" middle ground. Based on AAFP and ISFM feline welfare guidelines.",
+    "ko": "Data-driven comparison of indoor-only and outdoor-access cats — covering lifespan, disease risk, injury rates, behavioral needs, and the \"best of both worlds\" middle ground. Based on AAFP and ISFM feline welfare guidelines."
+  },
+  {
+    "key": "compare.indoorVsOutdoor.title",
+    "en": "Indoor vs Outdoor Cats: Lifespan, Health & Safety Comparison",
+    "ko": "Indoor vs Outdoor Cats: Lifespan, Health & Safety Comparison"
+  },
+  {
+    "key": "compare.indoorVsOutdoor.topicA.bestFor",
+    "en": "Most urban/suburban cat owners who can provide adequate environmental enrichment.",
+    "ko": "Most urban/suburban cat owners who can provide adequate environmental enrichment."
+  },
+  {
+    "key": "compare.indoorVsOutdoor.topicB.bestFor",
+    "en": "Rural properties with controlled outdoor access (catio, enclosed garden) and owners who accept the risks.",
+    "ko": "Rural properties with controlled outdoor access (catio, enclosed garden) and owners who accept the risks."
+  },
+  {
+    "key": "compare.rawVsKibble.subtitle",
+    "en": "An objective comparison of BARF (Biologically Appropriate Raw Food) diets and commercial kibble — covering nutritional completeness, bacterial risks, dental benefits, and practical feasibility. Based on AVMA, NRC, and peer-reviewed research.",
+    "ko": "An objective comparison of BARF (Biologically Appropriate Raw Food) diets and commercial kibble — covering nutritional completeness, bacterial risks, dental benefits, and practical feasibility. Based on AVMA, NRC, and peer-reviewed research."
+  },
+  {
+    "key": "compare.rawVsKibble.title",
+    "en": "Raw Diet vs Kibble for Dogs: Science, Safety & Cost Compared",
+    "ko": "Raw Diet vs Kibble for Dogs: Science, Safety & Cost Compared"
+  },
+  {
+    "key": "compare.rawVsKibble.topicA.bestFor",
+    "en": "Dedicated owners with veterinary nutritionist guidance, dogs with specific food intolerances not resolved by commercial diets, and those willing to invest significant time and resources.",
+    "ko": "Dedicated owners with veterinary nutritionist guidance, dogs with specific food intolerances not resolved by commercial diets, and those willing to invest significant time and resources."
+  },
+  {
+    "key": "compare.rawVsKibble.topicB.bestFor",
+    "en": "The vast majority of dog owners — especially those without access to a board-certified veterinary nutritionist or the budget/time for raw feeding.",
+    "ko": "The vast majority of dog owners — especially those without access to a board-certified veterinary nutritionist or the budget/time for raw feeding."
+  },
+  {
+    "key": "compare.spayedVsUnspayed.subtitle",
+    "en": "A balanced comparison of spay/neuter vs. keeping your dog intact — covering cancer risks, orthopedic concerns, behavioral changes, and breed-specific timing recommendations. Based on AAHA and AVMA veterinary guidelines.",
+    "ko": "A balanced comparison of spay/neuter vs. keeping your dog intact — covering cancer risks, orthopedic concerns, behavioral changes, and breed-specific timing recommendations. Based on AAHA and AVMA veterinary guidelines."
+  },
+  {
+    "key": "compare.spayedVsUnspayed.title",
+    "en": "Spayed vs Unspayed Dog: Health, Behavior & Timing",
+    "ko": "Spayed vs Unspayed Dog: Health, Behavior & Timing"
+  },
+  {
+    "key": "compare.spayedVsUnspayed.topicA.bestFor",
+    "en": "Most dogs, especially small breeds, mixed breeds, and any dog not intended for responsible breeding programs.",
+    "ko": "Most dogs, especially small breeds, mixed breeds, and any dog not intended for responsible breeding programs."
+  },
+  {
+    "key": "compare.spayedVsUnspayed.topicB.bestFor",
+    "en": "Large/giant breeds where delayed spay/neuter benefits joint health (discuss timing with vet), responsibly managed breeding programs, and dogs where cancer risk from spaying is a particular breed concern.",
+    "ko": "Large/giant breeds where delayed spay/neuter benefits joint health (discuss timing with vet), responsibly managed breeding programs, and dogs where cancer risk from spaying is a particular breed concern."
+  },
+  {
+    "key": "dog.toolGrid.priority",
+    "en": "P1",
+    "ko": "P1"
+  },
+  {
+    "key": "dog.toolGrid.rating",
+    "en": "P0",
+    "ko": "P0"
+  },
+  {
+    "key": "dogAge.lifeStage.cardTitle",
+    "en": "{stage} — {stageName}",
+    "ko": "{stage} — {stageName}"
+  },
+  {
+    "key": "emergency.ateAlcohol.article.description",
+    "en": "Emergency guide for alcohol toxicity in dogs: symptoms, risk assessment, and treatment.",
+    "ko": "Emergency guide for alcohol toxicity in dogs: symptoms, risk assessment, and treatment."
+  },
+  {
+    "key": "emergency.ateAlcohol.article.headline",
+    "en": "My Dog Drank Alcohol: Emergency Guide",
+    "ko": "My Dog Drank Alcohol: Emergency Guide"
+  },
+  {
+    "key": "emergency.ateAlcohol.article.ogDescription",
+    "en": "What to do if your dog drinks alcohol.",
+    "ko": "What to do if your dog drinks alcohol."
+  },
+  {
+    "key": "emergency.ateAlcohol.article.ogTitle",
+    "en": "My Dog Drank Alcohol: Emergency Guide | petsMetrics",
+    "ko": "My Dog Drank Alcohol: Emergency Guide | petsMetrics"
+  },
+  {
+    "key": "emergency.ateAlcohol.banner.subtitle",
+    "en": "Alcohol (ethanol) is a potent CNS depressant in dogs. Even small amounts cause ataxia, depression, and metabolic acidosis. Call ASPCA Poison Control at <strong>(888) 426-4435</strong> immediately.",
+    "ko": "Alcohol (ethanol) is a potent CNS depressant in dogs. Even small amounts cause ataxia, depression, and metabolic acidosis. Call ASPCA Poison Control at <strong>(888) 426-4435</strong> immediately."
+  },
+  {
+    "key": "emergency.ateAlcohol.meta.description",
+    "en": "Emergency guide: Alcohol is highly toxic to dogs. Learn symptoms (ataxia, depression, metabolic acidosis), risk by beverage type, and immediate steps. ASPCA Poison Control: (888) 426-4435.",
+    "ko": "Emergency guide: Alcohol is highly toxic to dogs. Learn symptoms (ataxia, depression, metabolic acidosis), risk by beverage type, and immediate steps. ASPCA Poison Control: (888) 426-4435."
+  },
+  {
+    "key": "emergency.ateAlcohol.meta.keywords",
+    "en": "my dog drank alcohol, alcohol toxicity dogs, dog drank beer, dog ate wine, dog ethanol poisoning, alcohol dangerous for dogs",
+    "ko": "my dog drank alcohol, alcohol toxicity dogs, dog drank beer, dog ate wine, dog ethanol poisoning, alcohol dangerous for dogs"
+  },
+  {
+    "key": "emergency.ateAlcohol.meta.title",
+    "en": "My Dog Drank Alcohol: Emergency Guide | petsMetrics",
+    "ko": "My Dog Drank Alcohol: Emergency Guide | petsMetrics"
+  },
+  {
+    "key": "emergency.ateAlcohol.riskAssessment.formHeader",
+    "en": "Beverage Type",
+    "ko": "Beverage Type"
+  },
+  {
+    "key": "emergency.ateAlcohol.science.content",
+    "en": "Ethanol (C2H5OH) is absorbed rapidly from the GI tract and crosses the blood-brain barrier within minutes. Dogs lack efficient alcohol dehydrogenase enzymes, making them 3-5 times more sensitive than humans. Ethanol inhibits NMDA receptors and enhances GABA activity, causing CNS depression, respiratory depression, and metabolic acidosis. The lethal dose in dogs is 5.5 mL/kg of pure ethanol. Raw bread dough is doubly dangerous — yeast fermentation continues in the warm stomach, producing more alcohol and expanding the dough (ASPCA, 2023).",
+    "ko": "Ethanol (C2H5OH) is absorbed rapidly from the GI tract and crosses the blood-brain barrier within minutes. Dogs lack efficient alcohol dehydrogenase enzymes, making them 3-5 times more sensitive than humans. Ethanol inhibits NMDA receptors and enhances GABA activity, causing CNS depression, respiratory depression, and metabolic acidosis. The lethal dose in dogs is 5.5 mL/kg of pure ethanol. Raw bread dough is doubly dangerous — yeast fermentation continues in the warm stomach, producing more alcohol and expanding the dough (ASPCA, 2023)."
+  },
+  {
+    "key": "emergency.ateAlcohol.toxicityData.example",
+    "en": "Example: A single 12oz beer (5% ABV = 17g ethanol) can cause severe intoxication in a small dog under 10kg.",
+    "ko": "Example: A single 12oz beer (5% ABV = 17g ethanol) can cause severe intoxication in a small dog under 10kg."
+  },
+  {
+    "key": "emergency.ateAlcohol.toxicityData.ld50",
+    "en": "LD50: ~5.5 mL/kg of pure ethanol",
+    "ko": "LD50: ~5.5 mL/kg of pure ethanol"
+  },
+  {
+    "key": "emergency.ateAlcohol.toxicityData.minimum",
+    "en": "As little as 1.5 mL/kg of pure ethanol can cause noticeable intoxication",
+    "ko": "As little as 1.5 mL/kg of pure ethanol can cause noticeable intoxication"
+  },
+  {
+    "key": "emergency.ateAlcohol.toxicityData.source",
+    "en": "Source: Merck Veterinary Manual; ASPCA Animal Poison Control Center",
+    "ko": "Source: Merck Veterinary Manual; ASPCA Animal Poison Control Center"
+  },
+  {
+    "key": "emergency.ateAntifreeze.article.description",
+    "en": "Emergency guide for antifreeze (ethylene glycol) poisoning in dogs: symptoms, treatment, and prevention.",
+    "ko": "Emergency guide for antifreeze (ethylene glycol) poisoning in dogs: symptoms, treatment, and prevention."
+  },
+  {
+    "key": "emergency.ateAntifreeze.article.headline",
+    "en": "Dog Ate Antifreeze: What to Do Immediately",
+    "ko": "Dog Ate Antifreeze: What to Do Immediately"
+  },
+  {
+    "key": "emergency.ateAntifreeze.article.ogDescription",
+    "en": "Emergency guide: What to do if your dog drinks antifreeze. Rapid kidney failure and narrow treatment window.",
+    "ko": "Emergency guide: What to do if your dog drinks antifreeze. Rapid kidney failure and narrow treatment window."
+  },
+  {
+    "key": "emergency.ateAntifreeze.article.ogTitle",
+    "en": "Dog Ate Antifreeze: What to Do Immediately | petsMetrics",
+    "ko": "Dog Ate Antifreeze: What to Do Immediately | petsMetrics"
+  },
+  {
+    "key": "emergency.ateAntifreeze.banner.subtitle",
+    "en": "Antifreeze (ethylene glycol) causes rapid kidney failure and death. As little as 1 teaspoon can kill — call your vet or ASPCA Poison Control at <strong>(888) 426-4435</strong> IMMEDIATELY.",
+    "ko": "Antifreeze (ethylene glycol) causes rapid kidney failure and death. As little as 1 teaspoon can kill — call your vet or ASPCA Poison Control at <strong>(888) 426-4435</strong> IMMEDIATELY."
+  },
+  {
+    "key": "emergency.ateAntifreeze.meta.description",
+    "en": "Emergency guide: What to do if your dog drinks antifreeze. Learn about ethylene glycol poisoning, rapid kidney failure, and the narrow treatment window. Act NOW.",
+    "ko": "Emergency guide: What to do if your dog drinks antifreeze. Learn about ethylene glycol poisoning, rapid kidney failure, and the narrow treatment window. Act NOW."
+  },
+  {
+    "key": "emergency.ateAntifreeze.meta.keywords",
+    "en": "dog ate antifreeze what to do, antifreeze poisoning dogs, ethylene glycol toxicity dogs, dog antifreeze emergency, antifreeze dog treatment",
+    "ko": "dog ate antifreeze what to do, antifreeze poisoning dogs, ethylene glycol toxicity dogs, dog antifreeze emergency, antifreeze dog treatment"
+  },
+  {
+    "key": "emergency.ateAntifreeze.meta.title",
+    "en": "Dog Ate Antifreeze: What to Do Immediately | petsMetrics",
+    "ko": "Dog Ate Antifreeze: What to Do Immediately | petsMetrics"
+  },
+  {
+    "key": "emergency.ateAntifreeze.science.content",
+    "en": "Ethylene glycol itself is not toxic — it is the metabolites produced by the liver that cause damage. Alcohol dehydrogenase converts ethylene glycol to glycoaldehyde, then glycolic acid, then oxalic acid. Oxalic acid binds with calcium to form calcium oxalate crystals that destroy kidney tissue. This process causes metabolic acidosis and acute kidney failure within 12-36 hours. The antidote works by blocking alcohol dehydrogenase, preventing toxic metabolite formation (ASPCA, 2023).",
+    "ko": "Ethylene glycol itself is not toxic — it is the metabolites produced by the liver that cause damage. Alcohol dehydrogenase converts ethylene glycol to glycoaldehyde, then glycolic acid, then oxalic acid. Oxalic acid binds with calcium to form calcium oxalate crystals that destroy kidney tissue. This process causes metabolic acidosis and acute kidney failure within 12-36 hours. The antidote works by blocking alcohol dehydrogenase, preventing toxic metabolite formation (ASPCA, 2023)."
+  },
+  {
+    "key": "emergency.ateAvocado.article.description",
+    "en": "Emergency guide for avocado ingestion in dogs: persin toxicity, pit obstruction risk, and prevention.",
+    "ko": "Emergency guide for avocado ingestion in dogs: persin toxicity, pit obstruction risk, and prevention."
+  },
+  {
+    "key": "emergency.ateAvocado.article.headline",
+    "en": "My Dog Ate Avocado: What to Do Now",
+    "ko": "My Dog Ate Avocado: What to Do Now"
+  },
+  {
+    "key": "emergency.ateAvocado.article.ogDescription",
+    "en": "What to do if your dog eats avocado.",
+    "ko": "What to do if your dog eats avocado."
+  },
+  {
+    "key": "emergency.ateAvocado.article.ogTitle",
+    "en": "My Dog Ate Avocado: What to Do Now | petsMetrics",
+    "ko": "My Dog Ate Avocado: What to Do Now | petsMetrics"
+  },
+  {
+    "key": "emergency.ateAvocado.banner.subtitle",
+    "en": "Avocado flesh is mildly toxic to dogs due to persin, but the <strong>pit is the real danger</strong> — it can cause life-threatening intestinal blockage. Call your vet if the pit was swallowed.",
+    "ko": "Avocado flesh is mildly toxic to dogs due to persin, but the <strong>pit is the real danger</strong> — it can cause life-threatening intestinal blockage. Call your vet if the pit was swallowed."
+  },
+  {
+    "key": "emergency.ateAvocado.meta.description",
+    "en": "Emergency guide: Avocado contains persin which is mildly toxic to dogs. The bigger danger is the pit causing intestinal blockage. Learn symptoms, risks, and when to call the vet.",
+    "ko": "Emergency guide: Avocado contains persin which is mildly toxic to dogs. The bigger danger is the pit causing intestinal blockage. Learn symptoms, risks, and when to call the vet."
+  },
+  {
+    "key": "emergency.ateAvocado.meta.keywords",
+    "en": "my dog ate avocado what to do, avocado toxicity dogs, dog ate avocado pit, persin poisoning dogs, avocado dangerous for dogs",
+    "ko": "my dog ate avocado what to do, avocado toxicity dogs, dog ate avocado pit, persin poisoning dogs, avocado dangerous for dogs"
+  },
+  {
+    "key": "emergency.ateAvocado.meta.title",
+    "en": "My Dog Ate Avocado: What to Do Now | petsMetrics",
+    "ko": "My Dog Ate Avocado: What to Do Now | petsMetrics"
+  },
+  {
+    "key": "emergency.ateAvocado.science.content",
+    "en": "Avocado (Persea americana) contains persin, a fungicidal fatty acid derivative. Dogs are relatively resistant to persin compared to birds, rabbits, and horses, which can suffer fatal heart damage. In dogs, persin causes mild gastrointestinal irritation — vomiting, diarrhea, and abdominal pain. The greater clinical concern is the pit, which measures 3-5 cm and can cause intestinal obstruction, particularly in dogs under 20kg. The high fat content of the flesh (15-20%) also increases pancreatitis risk in predisposed breeds (ASPCA, 2023).",
+    "ko": "Avocado (Persea americana) contains persin, a fungicidal fatty acid derivative. Dogs are relatively resistant to persin compared to birds, rabbits, and horses, which can suffer fatal heart damage. In dogs, persin causes mild gastrointestinal irritation — vomiting, diarrhea, and abdominal pain. The greater clinical concern is the pit, which measures 3-5 cm and can cause intestinal obstruction, particularly in dogs under 20kg. The high fat content of the flesh (15-20%) also increases pancreatitis risk in predisposed breeds (ASPCA, 2023)."
+  },
+  {
+    "key": "emergency.ateAvocado.toxicityData.example",
+    "en": "Example: A 10kg dog eating avocado flesh will usually have mild GI signs; a swallowed pit of 3-5 cm can obstruct the small intestine.",
+    "ko": "Example: A 10kg dog eating avocado flesh will usually have mild GI signs; a swallowed pit of 3-5 cm can obstruct the small intestine."
+  },
+  {
+    "key": "emergency.ateAvocado.toxicityData.ld50",
+    "en": "LD50: Persin exact LD50 unknown in dogs; pit obstruction is the primary clinical concern, not systemic toxicity",
+    "ko": "LD50: Persin exact LD50 unknown in dogs; pit obstruction is the primary clinical concern, not systemic toxicity"
+  },
+  {
+    "key": "emergency.ateAvocado.toxicityData.minimum",
+    "en": "Flesh low toxicity — mild GI upset at any amount",
+    "ko": "Flesh low toxicity — mild GI upset at any amount"
+  },
+  {
+    "key": "emergency.ateAvocado.toxicityData.source",
+    "en": "Source: ASPCA Animal Poison Control Center; Buoro et al., 1994",
+    "ko": "Source: ASPCA Animal Poison Control Center; Buoro et al., 1994"
+  },
+  {
+    "key": "emergency.ateCaffeine.article.description",
+    "en": "Emergency guide for caffeine toxicity in dogs: symptoms, dosing risk, and treatment.",
+    "ko": "Emergency guide for caffeine toxicity in dogs: symptoms, dosing risk, and treatment."
+  },
+  {
+    "key": "emergency.ateCaffeine.article.headline",
+    "en": "My Dog Ate Caffeine Pills: Emergency Guide",
+    "ko": "My Dog Ate Caffeine Pills: Emergency Guide"
+  },
+  {
+    "key": "emergency.ateCaffeine.article.ogDescription",
+    "en": "What to do if your dog eats caffeine pills.",
+    "ko": "What to do if your dog eats caffeine pills."
+  },
+  {
+    "key": "emergency.ateCaffeine.article.ogTitle",
+    "en": "My Dog Ate Caffeine Pills: Emergency Guide | petsMetrics",
+    "ko": "My Dog Ate Caffeine Pills: Emergency Guide | petsMetrics"
+  },
+  {
+    "key": "emergency.ateCaffeine.banner.subtitle",
+    "en": "Caffeine is a methylxanthine toxic to dogs at 140mg/kg. Even 1-2 pills (200mg each) can cause seizures in small dogs. Call ASPCA Poison Control at <strong>(888) 426-4435</strong> immediately.",
+    "ko": "Caffeine is a methylxanthine toxic to dogs at 140mg/kg. Even 1-2 pills (200mg each) can cause seizures in small dogs. Call ASPCA Poison Control at <strong>(888) 426-4435</strong> immediately."
+  },
+  {
+    "key": "emergency.ateCaffeine.meta.description",
+    "en": "Emergency guide: Caffeine is toxic to dogs at 140mg/kg. Learn symptoms (hyperactivity, arrhythmia, seizures), risk assessment, and immediate steps. ASPCA Poison Control: (888) 426-4435.",
+    "ko": "Emergency guide: Caffeine is toxic to dogs at 140mg/kg. Learn symptoms (hyperactivity, arrhythmia, seizures), risk assessment, and immediate steps. ASPCA Poison Control: (888) 426-4435."
+  },
+  {
+    "key": "emergency.ateCaffeine.meta.keywords",
+    "en": "my dog ate caffeine pills, caffeine toxicity dogs, dog ate energy drink, caffeine poisoning dogs, what to do if dog eats caffeine",
+    "ko": "my dog ate caffeine pills, caffeine toxicity dogs, dog ate energy drink, caffeine poisoning dogs, what to do if dog eats caffeine"
+  },
+  {
+    "key": "emergency.ateCaffeine.meta.title",
+    "en": "My Dog Ate Caffeine Pills: Emergency Guide | petsMetrics",
+    "ko": "My Dog Ate Caffeine Pills: Emergency Guide | petsMetrics"
+  },
+  {
+    "key": "emergency.ateCaffeine.riskAssessment.formHeader",
+    "en": "Caffeine Source",
+    "ko": "Caffeine Source"
+  },
+  {
+    "key": "emergency.ateCaffeine.science.content",
+    "en": "Caffeine (1,3,7-trimethylxanthine) is an adenosine receptor antagonist and phosphodiesterase inhibitor. In dogs, it causes central nervous system stimulation, cardiac muscle contraction, and smooth muscle relaxation. Dogs metabolize caffeine much slower than humans — half-life in dogs is 4.5 hours vs 3 hours in humans. This prolongs toxic effects. At high doses, caffeine causes excessive catecholamine release leading to tachycardia, fibrillation, and potentially death (ASPCA, 2023).",
+    "ko": "Caffeine (1,3,7-trimethylxanthine) is an adenosine receptor antagonist and phosphodiesterase inhibitor. In dogs, it causes central nervous system stimulation, cardiac muscle contraction, and smooth muscle relaxation. Dogs metabolize caffeine much slower than humans — half-life in dogs is 4.5 hours vs 3 hours in humans. This prolongs toxic effects. At high doses, caffeine causes excessive catecholamine release leading to tachycardia, fibrillation, and potentially death (ASPCA, 2023)."
+  },
+  {
+    "key": "emergency.ateCaffeine.toxicityData.example",
+    "en": "Example: 1-2 caffeine pills (200mg each) can cause serious symptoms in a small dog under 10kg.",
+    "ko": "Example: 1-2 caffeine pills (200mg each) can cause serious symptoms in a small dog under 10kg."
+  },
+  {
+    "key": "emergency.ateCaffeine.toxicityData.ld50",
+    "en": "LD50: ~140mg/kg body weight",
+    "ko": "LD50: ~140mg/kg body weight"
+  },
+  {
+    "key": "emergency.ateCaffeine.toxicityData.minimum",
+    "en": "Mild symptoms at 20mg/kg body weight",
+    "ko": "Mild symptoms at 20mg/kg body weight"
+  },
+  {
+    "key": "emergency.ateCaffeine.toxicityData.source",
+    "en": "Source: ASPCA Animal Poison Control Center",
+    "ko": "Source: ASPCA Animal Poison Control Center"
+  },
+  {
+    "key": "emergency.ateChocolate.article.description",
+    "en": "Emergency guide for dog chocolate toxicity: symptoms, treatment, and prevention.",
+    "ko": "Emergency guide for dog chocolate toxicity: symptoms, treatment, and prevention."
+  },
+  {
+    "key": "emergency.ateChocolate.article.headline",
+    "en": "My Dog Ate Chocolate: What to Do Now",
+    "ko": "My Dog Ate Chocolate: What to Do Now"
+  },
+  {
+    "key": "emergency.ateChocolate.article.ogDescription",
+    "en": "Emergency guide: What to do if your dog eats chocolate. Toxicity levels, symptoms timeline, and when to call the vet.",
+    "ko": "Emergency guide: What to do if your dog eats chocolate. Toxicity levels, symptoms timeline, and when to call the vet."
+  },
+  {
+    "key": "emergency.ateChocolate.article.ogTitle",
+    "en": "My Dog Ate Chocolate: What to Do Now | petsMetrics",
+    "ko": "My Dog Ate Chocolate: What to Do Now | petsMetrics"
+  },
+  {
+    "key": "emergency.ateChocolate.banner.subtitle",
+    "en": "Chocolate contains theobromine, which dogs cannot metabolize effectively. Immediate action is critical — call your vet or ASPCA Poison Control at <strong>(888) 426-4435</strong> right away.",
+    "ko": "Chocolate contains theobromine, which dogs cannot metabolize effectively. Immediate action is critical — call your vet or ASPCA Poison Control at <strong>(888) 426-4435</strong> right away."
+  },
+  {
+    "key": "emergency.ateChocolate.meta.description",
+    "en": "Emergency guide: What to do if your dog eats chocolate. Learn toxicity levels, symptoms timeline, and when to call the vet. ASPCA Poison Control: (888) 426-4435.",
+    "ko": "Emergency guide: What to do if your dog eats chocolate. Learn toxicity levels, symptoms timeline, and when to call the vet. ASPCA Poison Control: (888) 426-4435."
+  },
+  {
+    "key": "emergency.ateChocolate.meta.keywords",
+    "en": "my dog ate chocolate what do i do, dog chocolate toxicity, chocolate poisoning in dogs, dog ate chocolate emergency, what to do if dog eats chocolate",
+    "ko": "my dog ate chocolate what do i do, dog chocolate toxicity, chocolate poisoning in dogs, dog ate chocolate emergency, what to do if dog eats chocolate"
+  },
+  {
+    "key": "emergency.ateChocolate.meta.title",
+    "en": "My Dog Ate Chocolate: What to Do Now | petsMetrics",
+    "ko": "My Dog Ate Chocolate: What to Do Now | petsMetrics"
+  },
+  {
+    "key": "emergency.ateChocolate.riskAssessment.headers.theobromine",
+    "en": "Theobromine Level",
+    "ko": "Theobromine Level"
+  },
+  {
+    "key": "emergency.ateChocolate.science.content",
+    "en": "Chocolate contains theobromine and caffeine, both methylxanthines that dogs metabolize much more slowly than humans. While humans eliminate theobromine in 2-3 hours, dogs take 17.5 hours or more. This allows toxic levels to build up in their system. Theobromine affects the central nervous system, cardiovascular system, and smooth muscles. At high doses, it causes seizures, cardiac arrhythmias, and potentially death (ASPCA, 2023).",
+    "ko": "Chocolate contains theobromine and caffeine, both methylxanthines that dogs metabolize much more slowly than humans. While humans eliminate theobromine in 2-3 hours, dogs take 17.5 hours or more. This allows toxic levels to build up in their system. Theobromine affects the central nervous system, cardiovascular system, and smooth muscles. At high doses, it causes seizures, cardiac arrhythmias, and potentially death (ASPCA, 2023)."
+  },
+  {
+    "key": "emergency.ateCookedBones.article.description",
+    "en": "Emergency guide for cooked bone ingestion in dogs: splintering risk, obstruction, and treatment.",
+    "ko": "Emergency guide for cooked bone ingestion in dogs: splintering risk, obstruction, and treatment."
+  },
+  {
+    "key": "emergency.ateCookedBones.article.headline",
+    "en": "My Dog Ate Cooked Bones: Emergency Guide",
+    "ko": "My Dog Ate Cooked Bones: Emergency Guide"
+  },
+  {
+    "key": "emergency.ateCookedBones.article.ogDescription",
+    "en": "Emergency guide: Cooked bones can splinter and cause life-threatening intestinal damage.",
+    "ko": "Emergency guide: Cooked bones can splinter and cause life-threatening intestinal damage."
+  },
+  {
+    "key": "emergency.ateCookedBones.article.ogTitle",
+    "en": "My Dog Ate Cooked Bones: Emergency Guide | petsMetrics",
+    "ko": "My Dog Ate Cooked Bones: Emergency Guide | petsMetrics"
+  },
+  {
+    "key": "emergency.ateCookedBones.banner.subtitle",
+    "en": "Cooked bones splinter into sharp fragments that can puncture the intestinal wall or cause life-threatening obstruction. This is a <strong>mechanical emergency</strong>, not a poisoning. Call your vet immediately.",
+    "ko": "Cooked bones splinter into sharp fragments that can puncture the intestinal wall or cause life-threatening obstruction. This is a <strong>mechanical emergency</strong>, not a poisoning. Call your vet immediately."
+  },
+  {
+    "key": "emergency.ateCookedBones.meta.description",
+    "en": "Emergency guide: Cooked bones splinter and can cause intestinal perforation or obstruction. Learn symptoms (vomiting, bloody stool, pain), when to call the vet, and prevention tips.",
+    "ko": "Emergency guide: Cooked bones splinter and can cause intestinal perforation or obstruction. Learn symptoms (vomiting, bloody stool, pain), when to call the vet, and prevention tips."
+  },
+  {
+    "key": "emergency.ateCookedBones.meta.keywords",
+    "en": "my dog ate cooked bones, cooked bone danger dogs, dog ate chicken bones, splintered bone dog, cooked bones bad for dogs",
+    "ko": "my dog ate cooked bones, cooked bone danger dogs, dog ate chicken bones, splintered bone dog, cooked bones bad for dogs"
+  },
+  {
+    "key": "emergency.ateCookedBones.meta.title",
+    "en": "My Dog Ate Cooked Bones: Emergency Guide | petsMetrics",
+    "ko": "My Dog Ate Cooked Bones: Emergency Guide | petsMetrics"
+  },
+  {
+    "key": "emergency.ateCookedBones.science.content",
+    "en": "Cooking denatures collagen in bones, making them brittle and prone to splintering. Raw bones contain flexible collagen and are less likely to fragment. When cooked bones splinter, sharp fragments (osteoids) can penetrate the GI wall, causing peritonitis — a life-threatening infection. The most common sites of perforation are the esophagus (if swallowed improperly), stomach, and ileocecal junction (where the small intestine narrows). Poultry bones are especially dangerous because they are hollow and shatter into needle-like shards (AAHA, 2023).",
+    "ko": "Cooking denatures collagen in bones, making them brittle and prone to splintering. Raw bones contain flexible collagen and are less likely to fragment. When cooked bones splinter, sharp fragments (osteoids) can penetrate the GI wall, causing peritonitis — a life-threatening infection. The most common sites of perforation are the esophagus (if swallowed improperly), stomach, and ileocecal junction (where the small intestine narrows). Poultry bones are especially dangerous because they are hollow and shatter into needle-like shards (AAHA, 2023)."
+  },
+  {
+    "key": "emergency.ateCookedBones.toxicityData.example",
+    "en": "A single chicken bone can shatter into dozens of needle-like splinters that act like tiny knives in the GI tract.",
+    "ko": "A single chicken bone can shatter into dozens of needle-like splinters that act like tiny knives in the GI tract."
+  },
+  {
+    "key": "emergency.ateCookedBones.toxicityData.ld50",
+    "en": "Not applicable — physical trauma, not chemical toxicity",
+    "ko": "Not applicable — physical trauma, not chemical toxicity"
+  },
+  {
+    "key": "emergency.ateCookedBones.toxicityData.minimum",
+    "en": "N/A (mechanical hazard — any size fragment can cause damage)",
+    "ko": "N/A (mechanical hazard — any size fragment can cause damage)"
+  },
+  {
+    "key": "emergency.ateCookedBones.toxicityData.source",
+    "en": "AAHA Guidelines, Merck Veterinary Manual",
+    "ko": "AAHA Guidelines, Merck Veterinary Manual"
+  },
+  {
+    "key": "emergency.ateGrapes.article.description",
+    "en": "Emergency guide for grape and raisin toxicity in dogs: symptoms, treatment, and prevention.",
+    "ko": "Emergency guide for grape and raisin toxicity in dogs: symptoms, treatment, and prevention."
+  },
+  {
+    "key": "emergency.ateGrapes.article.headline",
+    "en": "My Dog Ate Grapes: What Should I Do?",
+    "ko": "My Dog Ate Grapes: What Should I Do?"
+  },
+  {
+    "key": "emergency.ateGrapes.article.ogDescription",
+    "en": "Emergency guide: What to do if your dog eats grapes or raisins. Kidney injury risk and immediate treatment steps.",
+    "ko": "Emergency guide: What to do if your dog eats grapes or raisins. Kidney injury risk and immediate treatment steps."
+  },
+  {
+    "key": "emergency.ateGrapes.article.ogTitle",
+    "en": "My Dog Ate Grapes: What Should I Do? | petsMetrics",
+    "ko": "My Dog Ate Grapes: What Should I Do? | petsMetrics"
+  },
+  {
+    "key": "emergency.ateGrapes.banner.subtitle",
+    "en": "Grapes and raisins can cause acute kidney failure in dogs. Even small amounts are dangerous — call your vet or ASPCA Poison Control at <strong>(888) 426-4435</strong> immediately.",
+    "ko": "Grapes and raisins can cause acute kidney failure in dogs. Even small amounts are dangerous — call your vet or ASPCA Poison Control at <strong>(888) 426-4435</strong> immediately."
+  },
+  {
+    "key": "emergency.ateGrapes.meta.description",
+    "en": "Emergency guide: What to do if your dog eats grapes or raisins. Learn about acute kidney injury risk, symptoms timeline, and immediate treatment steps.",
+    "ko": "Emergency guide: What to do if your dog eats grapes or raisins. Learn about acute kidney injury risk, symptoms timeline, and immediate treatment steps."
+  },
+  {
+    "key": "emergency.ateGrapes.meta.keywords",
+    "en": "my dog ate grapes what should i do, dog ate grapes emergency, grape toxicity in dogs, raisins toxic to dogs, dog grape poisoning",
+    "ko": "my dog ate grapes what should i do, dog ate grapes emergency, grape toxicity in dogs, raisins toxic to dogs, dog grape poisoning"
+  },
+  {
+    "key": "emergency.ateGrapes.meta.title",
+    "en": "My Dog Ate Grapes: What Should I Do? | petsMetrics",
+    "ko": "My Dog Ate Grapes: What Should I Do? | petsMetrics"
+  },
+  {
+    "key": "emergency.ateGrapes.science.content",
+    "en": "The exact toxic compound in grapes and raisins remains unidentified, but tartaric acid is the leading suspect. This compound causes acute tubular necrosis in the kidneys, leading to rapid kidney failure. The toxic dose is unpredictable — some dogs develop kidney failure from just a few grapes, while others tolerate more. This variability makes any ingestion a medical emergency (ASPCA, 2023).",
+    "ko": "The exact toxic compound in grapes and raisins remains unidentified, but tartaric acid is the leading suspect. This compound causes acute tubular necrosis in the kidneys, leading to rapid kidney failure. The toxic dose is unpredictable — some dogs develop kidney failure from just a few grapes, while others tolerate more. This variability makes any ingestion a medical emergency (ASPCA, 2023)."
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.article.description",
+    "en": "Emergency guide for macadamia nut toxicity in dogs: symptoms, treatment, and prevention.",
+    "ko": "Emergency guide for macadamia nut toxicity in dogs: symptoms, treatment, and prevention."
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.article.headline",
+    "en": "My Dog Ate Macadamia Nuts: What to Do Now",
+    "ko": "My Dog Ate Macadamia Nuts: What to Do Now"
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.article.ogDescription",
+    "en": "What to do if your dog eats macadamia nuts.",
+    "ko": "What to do if your dog eats macadamia nuts."
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.article.ogTitle",
+    "en": "My Dog Ate Macadamia Nuts: Emergency Guide | petsMetrics",
+    "ko": "My Dog Ate Macadamia Nuts: Emergency Guide | petsMetrics"
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.banner.subtitle",
+    "en": "Macadamia nuts are uniquely toxic to dogs — the toxin is unknown but causes hind leg weakness, tremors, and high fever. Call ASPCA Poison Control at (888) 426-4435 for immediate guidance.",
+    "ko": "Macadamia nuts are uniquely toxic to dogs — the toxin is unknown but causes hind leg weakness, tremors, and high fever. Call ASPCA Poison Control at (888) 426-4435 for immediate guidance."
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.meta.description",
+    "en": "Emergency guide: Macadamia nuts are toxic to dogs. Learn symptoms (weakness, vomiting, tremors), risk assessment by dog weight, and immediate steps to take. ASPCA Poison Control: (888) 426-4435.",
+    "ko": "Emergency guide: Macadamia nuts are toxic to dogs. Learn symptoms (weakness, vomiting, tremors), risk assessment by dog weight, and immediate steps to take. ASPCA Poison Control: (888) 426-4435."
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.meta.keywords",
+    "en": "my dog ate macadamia nuts, macadamia nut toxicity dogs, dog poisoned by macadamia, what to do if dog eats macadamia",
+    "ko": "my dog ate macadamia nuts, macadamia nut toxicity dogs, dog poisoned by macadamia, what to do if dog eats macadamia"
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.meta.title",
+    "en": "My Dog Ate Macadamia Nuts: What to Do Now | petsMetrics",
+    "ko": "My Dog Ate Macadamia Nuts: What to Do Now | petsMetrics"
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.science.content",
+    "en": "Macadamia nuts contain an unidentified toxin that uniquely affects dogs' neuromuscular system. The compound causes reversible weakness and ataxia in hind limbs, likely through disruption of motor neuron signaling. Unlike many toxins, the exact mechanism remains unknown despite decades of clinical observation. Research by Morton (2002) established the LD50 at 2.4 g/kg. The toxin is heat-stable and present in all forms: raw, roasted, salted, and in baked goods. Symptoms are dose-dependent and typically resolve within 12-48 hours with supportive care (ASPCA, 2023).",
+    "ko": "Macadamia nuts contain an unidentified toxin that uniquely affects dogs' neuromuscular system. The compound causes reversible weakness and ataxia in hind limbs, likely through disruption of motor neuron signaling. Unlike many toxins, the exact mechanism remains unknown despite decades of clinical observation. Research by Morton (2002) established the LD50 at 2.4 g/kg. The toxin is heat-stable and present in all forms: raw, roasted, salted, and in baked goods. Symptoms are dose-dependent and typically resolve within 12-48 hours with supportive care (ASPCA, 2023)."
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.toxicityData.example",
+    "en": "Example: A 15kg (33lb) dog eating 15g of macadamia nuts (approximately 12-15 nuts) would reach the minimum toxic threshold. A typical nut weighs about 1.2-1.5g.",
+    "ko": "Example: A 15kg (33lb) dog eating 15g of macadamia nuts (approximately 12-15 nuts) would reach the minimum toxic threshold. A typical nut weighs about 1.2-1.5g."
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.toxicityData.ld50",
+    "en": "LD50: 2.4 g/kg body weight (severe symptoms)",
+    "ko": "LD50: 2.4 g/kg body weight (severe symptoms)"
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.toxicityData.minimum",
+    "en": "Minimum toxic dose: 0.5 g/kg body weight (mild symptoms)",
+    "ko": "Minimum toxic dose: 0.5 g/kg body weight (mild symptoms)"
+  },
+  {
+    "key": "emergency.ateMacadamiaNuts.toxicityData.source",
+    "en": "Source: Morton, 2002 — Journal of Veterinary Diagnostic Investigation",
+    "ko": "Source: Morton, 2002 — Journal of Veterinary Diagnostic Investigation"
+  },
+  {
+    "key": "emergency.ateMarijuana.article.description",
+    "en": "Emergency guide for THC toxicity in dogs: marijuana edibles, symptoms, and treatment.",
+    "ko": "Emergency guide for THC toxicity in dogs: marijuana edibles, symptoms, and treatment."
+  },
+  {
+    "key": "emergency.ateMarijuana.article.headline",
+    "en": "My Dog Ate Marijuana/Edibles: Emergency Guide",
+    "ko": "My Dog Ate Marijuana/Edibles: Emergency Guide"
+  },
+  {
+    "key": "emergency.ateMarijuana.article.ogDescription",
+    "en": "Emergency guide: Marijuana edibles are toxic to dogs. Act immediately.",
+    "ko": "Emergency guide: Marijuana edibles are toxic to dogs. Act immediately."
+  },
+  {
+    "key": "emergency.ateMarijuana.article.ogTitle",
+    "en": "My Dog Ate Marijuana: Emergency Guide | petsMetrics",
+    "ko": "My Dog Ate Marijuana: Emergency Guide | petsMetrics"
+  },
+  {
+    "key": "emergency.ateMarijuana.banner.subtitle",
+    "en": "Dogs are more sensitive to THC than humans. Edibles (gummies, brownies) are especially dangerous due to high concentration. Call ASPCA Poison Control at <strong>(888) 426-4435</strong>.",
+    "ko": "Dogs are more sensitive to THC than humans. Edibles (gummies, brownies) are especially dangerous due to high concentration. Call ASPCA Poison Control at <strong>(888) 426-4435</strong>."
+  },
+  {
+    "key": "emergency.ateMarijuana.honestySection.content",
+    "en": "Veterinarians are <strong>required to treat, not report</strong>, pet poisonings. Accurate information about marijuana ingestion ensures your dog receives proper care without unnecessary testing. Your honesty is protected and helps save your dog's life.",
+    "ko": "Veterinarians are <strong>required to treat, not report</strong>, pet poisonings. Accurate information about marijuana ingestion ensures your dog receives proper care without unnecessary testing. Your honesty is protected and helps save your dog's life."
+  },
+  {
+    "key": "emergency.ateMarijuana.honestySection.title",
+    "en": "📋 Important: Be Honest With Your Vet",
+    "ko": "📋 Important: Be Honest With Your Vet"
+  },
+  {
+    "key": "emergency.ateMarijuana.meta.description",
+    "en": "Emergency guide: THC is toxic to dogs. Marijuana edibles (gummies, brownies) are extremely dangerous due to high THC concentration and chocolate. Learn symptoms and immediate actions. ASPCA Poison Control: (888) 426-4435.",
+    "ko": "Emergency guide: THC is toxic to dogs. Marijuana edibles (gummies, brownies) are extremely dangerous due to high THC concentration and chocolate. Learn symptoms and immediate actions. ASPCA Poison Control: (888) 426-4435."
+  },
+  {
+    "key": "emergency.ateMarijuana.meta.keywords",
+    "en": "my dog ate marijuana edibles, dog ate THC, dog ate weed, marijuana poisoning dogs, dog ate cannabis gummies",
+    "ko": "my dog ate marijuana edibles, dog ate THC, dog ate weed, marijuana poisoning dogs, dog ate cannabis gummies"
+  },
+  {
+    "key": "emergency.ateMarijuana.meta.title",
+    "en": "My Dog Ate Marijuana/Edibles: Emergency Guide | petsMetrics",
+    "ko": "My Dog Ate Marijuana/Edibles: Emergency Guide | petsMetrics"
+  },
+  {
+    "key": "emergency.ateMarijuana.riskAssessment.headers.productType",
+    "en": "Product Type",
+    "ko": "Product Type"
+  },
+  {
+    "key": "emergency.ateMarijuana.science.content",
+    "en": "Delta-9-tetrahydrocannabinol (THC) binds to CB1 cannabinoid receptors in the canine central nervous system. Dogs have a higher density of CB1 receptors in the cerebellum (responsible for coordination) and brainstem than humans, explaining their heightened sensitivity. THC is lipophilic and undergoes enterohepatic recirculation, prolonging effects. Edibles are dangerous because the GI tract absorbs THC rapidly, and the liver converts 11-hydroxy-THC, which is 5x more psychoactive. Most cases are supportive — there is no specific antidote, but IV lipid emulsion therapy can accelerate THC clearance (ASPCA, 2023).",
+    "ko": "Delta-9-tetrahydrocannabinol (THC) binds to CB1 cannabinoid receptors in the canine central nervous system. Dogs have a higher density of CB1 receptors in the cerebellum (responsible for coordination) and brainstem than humans, explaining their heightened sensitivity. THC is lipophilic and undergoes enterohepatic recirculation, prolonging effects. Edibles are dangerous because the GI tract absorbs THC rapidly, and the liver converts 11-hydroxy-THC, which is 5x more psychoactive. Most cases are supportive — there is no specific antidote, but IV lipid emulsion therapy can accelerate THC clearance (ASPCA, 2023)."
+  },
+  {
+    "key": "emergency.ateMedication.article.description",
+    "en": "Emergency guide for human medication ingestion in dogs: NSAID toxicity, acetaminophen poisoning, and treatment.",
+    "ko": "Emergency guide for human medication ingestion in dogs: NSAID toxicity, acetaminophen poisoning, and treatment."
+  },
+  {
+    "key": "emergency.ateMedication.article.headline",
+    "en": "My Dog Ate Human Medication: Emergency Guide",
+    "ko": "My Dog Ate Human Medication: Emergency Guide"
+  },
+  {
+    "key": "emergency.ateMedication.article.ogDescription",
+    "en": "Emergency guide: Human medications like ibuprofen are toxic to dogs. Act immediately.",
+    "ko": "Emergency guide: Human medications like ibuprofen are toxic to dogs. Act immediately."
+  },
+  {
+    "key": "emergency.ateMedication.article.ogTitle",
+    "en": "My Dog Ate Human Medication: Emergency Guide | petsMetrics",
+    "ko": "My Dog Ate Human Medication: Emergency Guide | petsMetrics"
+  },
+  {
+    "key": "emergency.ateMedication.banner.subtitle",
+    "en": "Human medications are a leading cause of pet poisoning. Even one pill of ibuprofen or acetaminophen can kill a dog. Call ASPCA Poison Control at <strong>(888) 426-4435</strong> IMMEDIATELY.",
+    "ko": "Human medications are a leading cause of pet poisoning. Even one pill of ibuprofen or acetaminophen can kill a dog. Call ASPCA Poison Control at <strong>(888) 426-4435</strong> IMMEDIATELY."
+  },
+  {
+    "key": "emergency.ateMedication.meta.description",
+    "en": "Emergency guide: Human medications are toxic to dogs. Learn about ibuprofen (NSAID), acetaminophen, and antidepressant toxicity risks, symptoms, and immediate actions. ASPCA Poison Control: (888) 426-4435.",
+    "ko": "Emergency guide: Human medications are toxic to dogs. Learn about ibuprofen (NSAID), acetaminophen, and antidepressant toxicity risks, symptoms, and immediate actions. ASPCA Poison Control: (888) 426-4435."
+  },
+  {
+    "key": "emergency.ateMedication.meta.keywords",
+    "en": "my dog ate human medication, dog ate ibuprofen, dog ate acetaminophen, dog ate pills, human medicine toxic dogs",
+    "ko": "my dog ate human medication, dog ate ibuprofen, dog ate acetaminophen, dog ate pills, human medicine toxic dogs"
+  },
+  {
+    "key": "emergency.ateMedication.meta.title",
+    "en": "My Dog Ate Human Medication: Emergency Guide | petsMetrics",
+    "ko": "My Dog Ate Human Medication: Emergency Guide | petsMetrics"
+  },
+  {
+    "key": "emergency.ateMedication.science.content",
+    "en": "Dogs metabolize many drugs differently than humans. NSAIDs (ibuprofen) inhibit cyclooxygenase enzymes, reducing protective prostaglandins in the GI tract and kidneys, leading to ulceration and renal failure. Acetaminophen depletes glutathione in canine hepatocytes and converts hemoglobin to methemoglobin, impairing oxygen transport. Dogs are particularly sensitive to many ADHD medications (amphetamines) due to their effect on catecholamine release. Even \"harmless\" supplements like vitamin D can cause fatal hypercalcemia when ingested in large amounts (ASPCA, 2023).",
+    "ko": "Dogs metabolize many drugs differently than humans. NSAIDs (ibuprofen) inhibit cyclooxygenase enzymes, reducing protective prostaglandins in the GI tract and kidneys, leading to ulceration and renal failure. Acetaminophen depletes glutathione in canine hepatocytes and converts hemoglobin to methemoglobin, impairing oxygen transport. Dogs are particularly sensitive to many ADHD medications (amphetamines) due to their effect on catecholamine release. Even \"harmless\" supplements like vitamin D can cause fatal hypercalcemia when ingested in large amounts (ASPCA, 2023)."
+  },
+  {
+    "key": "emergency.ateMedication.toxicityData.example",
+    "en": "A single 200mg ibuprofen tablet can cause kidney failure in a 4kg dog. Five tablets (1000mg) = 250mg/kg = potentially fatal dose.",
+    "ko": "A single 200mg ibuprofen tablet can cause kidney failure in a 4kg dog. Five tablets (1000mg) = 250mg/kg = potentially fatal dose."
+  },
+  {
+    "key": "emergency.ateMedication.toxicityData.ld50",
+    "en": "Ibuprofen: 100mg/kg (fatal), Acetaminophen: 150mg/kg (Source: ASPCA)",
+    "ko": "Ibuprofen: 100mg/kg (fatal), Acetaminophen: 150mg/kg (Source: ASPCA)"
+  },
+  {
+    "key": "emergency.ateMedication.toxicityData.minimum",
+    "en": "Drug-dependent: Ibuprofen 50mg/kg, Acetaminophen 75mg/kg, single pill of some ADHD meds",
+    "ko": "Drug-dependent: Ibuprofen 50mg/kg, Acetaminophen 75mg/kg, single pill of some ADHD meds"
+  },
+  {
+    "key": "emergency.ateMedication.toxicityData.source",
+    "en": "ASPCA Animal Poison Control Center, 2023",
+    "ko": "ASPCA Animal Poison Control Center, 2023"
+  },
+  {
+    "key": "emergency.ateMushrooms.article.description",
+    "en": "Emergency guide for wild mushroom toxicity in dogs: Amanita poisoning, liver failure risk, and immediate treatment.",
+    "ko": "Emergency guide for wild mushroom toxicity in dogs: Amanita poisoning, liver failure risk, and immediate treatment."
+  },
+  {
+    "key": "emergency.ateMushrooms.article.headline",
+    "en": "My Dog Ate a Mushroom in the Yard: Emergency Guide",
+    "ko": "My Dog Ate a Mushroom in the Yard: Emergency Guide"
+  },
+  {
+    "key": "emergency.ateMushrooms.article.ogDescription",
+    "en": "Emergency guide: Wild mushrooms can cause fatal liver failure in dogs. Act immediately.",
+    "ko": "Emergency guide: Wild mushrooms can cause fatal liver failure in dogs. Act immediately."
+  },
+  {
+    "key": "emergency.ateMushrooms.article.ogTitle",
+    "en": "My Dog Ate a Mushroom: Emergency Guide | petsMetrics",
+    "ko": "My Dog Ate a Mushroom: Emergency Guide | petsMetrics"
+  },
+  {
+    "key": "emergency.ateMushrooms.banner.subtitle",
+    "en": "Wild mushrooms can cause fatal liver failure — symptoms are DELAYED 6-24 hours. <strong>Do not wait for symptoms.</strong> Call ASPCA Poison Control at <strong>(888) 426-4435</strong> IMMEDIATELY.",
+    "ko": "Wild mushrooms can cause fatal liver failure — symptoms are DELAYED 6-24 hours. <strong>Do not wait for symptoms.</strong> Call ASPCA Poison Control at <strong>(888) 426-4435</strong> IMMEDIATELY."
+  },
+  {
+    "key": "emergency.ateMushrooms.meta.description",
+    "en": "Emergency guide: Wild mushrooms can be deadly toxic to dogs. Learn about Amanita poisoning (liver failure), symptom timeline, and why every mushroom ingestion is an emergency. ASPCA Poison Control: (888) 426-4435.",
+    "ko": "Emergency guide: Wild mushrooms can be deadly toxic to dogs. Learn about Amanita poisoning (liver failure), symptom timeline, and why every mushroom ingestion is an emergency. ASPCA Poison Control: (888) 426-4435."
+  },
+  {
+    "key": "emergency.ateMushrooms.meta.keywords",
+    "en": "my dog ate mushroom in yard, mushroom poisoning dogs, amanita mushroom dogs, wild mushrooms toxic to dogs, dog ate mushroom symptoms",
+    "ko": "my dog ate mushroom in yard, mushroom poisoning dogs, amanita mushroom dogs, wild mushrooms toxic to dogs, dog ate mushroom symptoms"
+  },
+  {
+    "key": "emergency.ateMushrooms.meta.title",
+    "en": "My Dog Ate a Mushroom in the Yard: Emergency Guide | petsMetrics",
+    "ko": "My Dog Ate a Mushroom in the Yard: Emergency Guide | petsMetrics"
+  },
+  {
+    "key": "emergency.ateMushrooms.science.content",
+    "en": "Amatoxins (alpha-amanitin, beta-amanitin) are bicyclic octapeptides found in Amanita, Galerina, and Lepiota species. They inhibit RNA polymerase II, halting protein synthesis in hepatocytes. The liver is the primary target because amatoxins undergo enterohepatic recirculation. After ingestion, there is a 6-12 hour latent period, followed by a gastroenteritis phase, a brief false recovery (12-24 hours), then fulminant liver failure with coagulopathy, encephalopathy, and death. Treatment within 12 hours has a 90% survival rate; after 24 hours, survival drops to 30% (ASPCA, 2023).",
+    "ko": "Amatoxins (alpha-amanitin, beta-amanitin) are bicyclic octapeptides found in Amanita, Galerina, and Lepiota species. They inhibit RNA polymerase II, halting protein synthesis in hepatocytes. The liver is the primary target because amatoxins undergo enterohepatic recirculation. After ingestion, there is a 6-12 hour latent period, followed by a gastroenteritis phase, a brief false recovery (12-24 hours), then fulminant liver failure with coagulopathy, encephalopathy, and death. Treatment within 12 hours has a 90% survival rate; after 24 hours, survival drops to 30% (ASPCA, 2023)."
+  },
+  {
+    "key": "emergency.ateMushrooms.toxicityData.example",
+    "en": "A single Amanita phalloides cap contains enough amatoxin to kill a 10-20kg dog. Partial ingestion is still life-threatening.",
+    "ko": "A single Amanita phalloides cap contains enough amatoxin to kill a 10-20kg dog. Partial ingestion is still life-threatening."
+  },
+  {
+    "key": "emergency.ateMushrooms.toxicityData.ld50",
+    "en": "Not well-established; 0.1mg/kg amatoxin potentially fatal",
+    "ko": "Not well-established; 0.1mg/kg amatoxin potentially fatal"
+  },
+  {
+    "key": "emergency.ateMushrooms.toxicityData.minimum",
+    "en": "0.1 mg/kg amatoxin (one Death Cap = 10-15mg)",
+    "ko": "0.1 mg/kg amatoxin (one Death Cap = 10-15mg)"
+  },
+  {
+    "key": "emergency.ateMushrooms.toxicityData.source",
+    "en": "ASPCA Animal Poison Control Center, 2023",
+    "ko": "ASPCA Animal Poison Control Center, 2023"
+  },
+  {
+    "key": "emergency.ateOnion.article.description",
+    "en": "Emergency guide for onion toxicity in dogs: symptoms, treatment, and prevention.",
+    "ko": "Emergency guide for onion toxicity in dogs: symptoms, treatment, and prevention."
+  },
+  {
+    "key": "emergency.ateOnion.article.headline",
+    "en": "Dog Ate Onion: What to Do Now",
+    "ko": "Dog Ate Onion: What to Do Now"
+  },
+  {
+    "key": "emergency.ateOnion.article.ogDescription",
+    "en": "Emergency guide: What to do if your dog eats onions. Hemolytic anemia risk and treatment steps.",
+    "ko": "Emergency guide: What to do if your dog eats onions. Hemolytic anemia risk and treatment steps."
+  },
+  {
+    "key": "emergency.ateOnion.article.ogTitle",
+    "en": "Dog Ate Onion: What to Do Now | petsMetrics",
+    "ko": "Dog Ate Onion: What to Do Now | petsMetrics"
+  },
+  {
+    "key": "emergency.ateOnion.banner.subtitle",
+    "en": "Onions cause hemolytic anemia in dogs by destroying red blood cells. All forms are toxic — call your vet or ASPCA Poison Control at <strong>(888) 426-4435</strong>.",
+    "ko": "Onions cause hemolytic anemia in dogs by destroying red blood cells. All forms are toxic — call your vet or ASPCA Poison Control at <strong>(888) 426-4435</strong>."
+  },
+  {
+    "key": "emergency.ateOnion.meta.description",
+    "en": "Emergency guide: What to do if your dog eats onions. Learn about hemolytic anemia risk, symptoms timeline, and treatment steps. All onion forms are toxic.",
+    "ko": "Emergency guide: What to do if your dog eats onions. Learn about hemolytic anemia risk, symptoms timeline, and treatment steps. All onion forms are toxic."
+  },
+  {
+    "key": "emergency.ateOnion.meta.keywords",
+    "en": "dog ate onion what to do, onion toxicity dogs, onion poisoning in dogs, dog ate onion emergency, are onions toxic to dogs",
+    "ko": "dog ate onion what to do, onion toxicity dogs, onion poisoning in dogs, dog ate onion emergency, are onions toxic to dogs"
+  },
+  {
+    "key": "emergency.ateOnion.meta.title",
+    "en": "Dog Ate Onion: What to Do Now | petsMetrics",
+    "ko": "Dog Ate Onion: What to Do Now | petsMetrics"
+  },
+  {
+    "key": "emergency.ateOnion.science.content",
+    "en": "Onions contain thiosulfate compounds (n-propyl disulfide) that dogs cannot metabolize. These compounds cause oxidative damage to red blood cells, forming Heinz bodies — damaged hemoglobin that precipitates inside the cell. The spleen then destroys these damaged cells, leading to hemolytic anemia. This process takes 1-3 days, which is why symptoms are delayed (ASPCA, 2023).",
+    "ko": "Onions contain thiosulfate compounds (n-propyl disulfide) that dogs cannot metabolize. These compounds cause oxidative damage to red blood cells, forming Heinz bodies — damaged hemoglobin that precipitates inside the cell. The spleen then destroys these damaged cells, leading to hemolytic anemia. This process takes 1-3 days, which is why symptoms are delayed (ASPCA, 2023)."
+  },
+  {
+    "key": "emergency.atePlastic.article.description",
+    "en": "Emergency guide for plastic ingestion in dogs: obstruction risk, symptoms, and treatment options.",
+    "ko": "Emergency guide for plastic ingestion in dogs: obstruction risk, symptoms, and treatment options."
+  },
+  {
+    "key": "emergency.atePlastic.article.headline",
+    "en": "My Dog Ate Plastic: What to Do Now",
+    "ko": "My Dog Ate Plastic: What to Do Now"
+  },
+  {
+    "key": "emergency.atePlastic.article.ogDescription",
+    "en": "Emergency guide: Plastic can cause life-threatening intestinal blockage in dogs.",
+    "ko": "Emergency guide: Plastic can cause life-threatening intestinal blockage in dogs."
+  },
+  {
+    "key": "emergency.atePlastic.article.ogTitle",
+    "en": "My Dog Ate Plastic: What to Do Now | petsMetrics",
+    "ko": "My Dog Ate Plastic: What to Do Now | petsMetrics"
+  },
+  {
+    "key": "emergency.atePlastic.banner.subtitle",
+    "en": "Plastic is non-toxic but can cause dangerous intestinal blockage. Risk depends on the size and shape of the object. Call your vet if the piece is larger than 2cm.",
+    "ko": "Plastic is non-toxic but can cause dangerous intestinal blockage. Risk depends on the size and shape of the object. Call your vet if the piece is larger than 2cm."
+  },
+  {
+    "key": "emergency.atePlastic.decisionGuide.call",
+    "en": "Plastic piece 2-3cm OR your dog shows ANY vomiting/lethargy. X-ray may be needed.",
+    "ko": "Plastic piece 2-3cm OR your dog shows ANY vomiting/lethargy. X-ray may be needed."
+  },
+  {
+    "key": "emergency.atePlastic.decisionGuide.emergency",
+    "en": "Plastic larger than 3cm, OR persistent vomiting, OR no bowel movement in 48 hours. Surgery likely needed.",
+    "ko": "Plastic larger than 3cm, OR persistent vomiting, OR no bowel movement in 48 hours. Surgery likely needed."
+  },
+  {
+    "key": "emergency.atePlastic.decisionGuide.safe",
+    "en": "Plastic piece smaller than 2cm (e.g., corner of wrapper). Monitor stool for 48 hours.",
+    "ko": "Plastic piece smaller than 2cm (e.g., corner of wrapper). Monitor stool for 48 hours."
+  },
+  {
+    "key": "emergency.atePlastic.meta.description",
+    "en": "Emergency guide: Plastic can cause intestinal blockage in dogs. Learn symptoms (vomiting, no bowel movement), size-based risk assessment, and when emergency surgery is needed. ASPCA Poison Control: (888) 426-4435.",
+    "ko": "Emergency guide: Plastic can cause intestinal blockage in dogs. Learn symptoms (vomiting, no bowel movement), size-based risk assessment, and when emergency surgery is needed. ASPCA Poison Control: (888) 426-4435."
+  },
+  {
+    "key": "emergency.atePlastic.meta.keywords",
+    "en": "my dog ate plastic toy, dog ate plastic bag, dog ate plastic wrapper, plastic blockage dog, dog intestinal obstruction plastic",
+    "ko": "my dog ate plastic toy, dog ate plastic bag, dog ate plastic wrapper, plastic blockage dog, dog intestinal obstruction plastic"
+  },
+  {
+    "key": "emergency.atePlastic.meta.title",
+    "en": "My Dog Ate Plastic: What to Do Now | petsMetrics",
+    "ko": "My Dog Ate Plastic: What to Do Now | petsMetrics"
+  },
+  {
+    "key": "emergency.atePlastic.science.content",
+    "en": "Plastic is chemically inert and non-toxic to dogs — the danger is purely mechanical. The canine GI tract narrows at two critical points: the pylorus (stomach exit, ~1-2cm diameter in small dogs) and the ileocecal junction (small-to-large intestine transition). Objects wider than these passages become lodged, causing a complete or partial obstruction. Complete obstructions cause fluid accumulation, electrolyte imbalances, and intestinal necrosis within 48-72 hours. Surgical intervention is required for objects that do not pass within 24-48 hours or cause persistent vomiting (Merck Veterinary Manual, 2023).",
+    "ko": "Plastic is chemically inert and non-toxic to dogs — the danger is purely mechanical. The canine GI tract narrows at two critical points: the pylorus (stomach exit, ~1-2cm diameter in small dogs) and the ileocecal junction (small-to-large intestine transition). Objects wider than these passages become lodged, causing a complete or partial obstruction. Complete obstructions cause fluid accumulation, electrolyte imbalances, and intestinal necrosis within 48-72 hours. Surgical intervention is required for objects that do not pass within 24-48 hours or cause persistent vomiting (Merck Veterinary Manual, 2023)."
+  },
+  {
+    "key": "emergency.atePlastic.toxicityData.example",
+    "en": "A 2cm plastic toy ball will not pass through a medium-sized dog's pylorus. Objects >2cm require vet assessment.",
+    "ko": "A 2cm plastic toy ball will not pass through a medium-sized dog's pylorus. Objects >2cm require vet assessment."
+  },
+  {
+    "key": "emergency.atePlastic.toxicityData.ld50",
+    "en": "Not applicable — physical obstruction risk",
+    "ko": "Not applicable — physical obstruction risk"
+  },
+  {
+    "key": "emergency.atePlastic.toxicityData.minimum",
+    "en": "N/A (mechanical hazard — not a poisoning)",
+    "ko": "N/A (mechanical hazard — not a poisoning)"
+  },
+  {
+    "key": "emergency.atePlastic.toxicityData.source",
+    "en": "Merck Veterinary Manual, ASPCA",
+    "ko": "Merck Veterinary Manual, ASPCA"
+  },
+  {
+    "key": "emergency.ateRodenticide.article.description",
+    "en": "Emergency guide for rodenticide poisoning in dogs: anticoagulant and neurotoxic types, symptoms, and treatment.",
+    "ko": "Emergency guide for rodenticide poisoning in dogs: anticoagulant and neurotoxic types, symptoms, and treatment."
+  },
+  {
+    "key": "emergency.ateRodenticide.article.headline",
+    "en": "My Dog Ate Rat Poison: Emergency Guide",
+    "ko": "My Dog Ate Rat Poison: Emergency Guide"
+  },
+  {
+    "key": "emergency.ateRodenticide.article.ogDescription",
+    "en": "Emergency guide: Rodenticide is deadly toxic to dogs. Even small amounts require immediate treatment.",
+    "ko": "Emergency guide: Rodenticide is deadly toxic to dogs. Even small amounts require immediate treatment."
+  },
+  {
+    "key": "emergency.ateRodenticide.article.ogTitle",
+    "en": "My Dog Ate Rat Poison: Emergency Guide | petsMetrics",
+    "ko": "My Dog Ate Rat Poison: Emergency Guide | petsMetrics"
+  },
+  {
+    "key": "emergency.ateRodenticide.banner.subtitle",
+    "en": "Rodenticide is one of the deadliest dog toxins. <strong>Do not wait for symptoms</strong> — anticoagulant effects are delayed 2-5 days. Call ASPCA Poison Control at <strong>(888) 426-4435</strong> and go to emergency vet NOW.",
+    "ko": "Rodenticide is one of the deadliest dog toxins. <strong>Do not wait for symptoms</strong> — anticoagulant effects are delayed 2-5 days. Call ASPCA Poison Control at <strong>(888) 426-4435</strong> and go to emergency vet NOW."
+  },
+  {
+    "key": "emergency.ateRodenticide.meta.description",
+    "en": "Emergency guide: Rodenticide (rat poison) is extremely toxic to dogs. Learn about anticoagulant vs neurotoxic types, symptoms, and why immediate treatment is critical. ASPCA Poison Control: (888) 426-4435.",
+    "ko": "Emergency guide: Rodenticide (rat poison) is extremely toxic to dogs. Learn about anticoagulant vs neurotoxic types, symptoms, and why immediate treatment is critical. ASPCA Poison Control: (888) 426-4435."
+  },
+  {
+    "key": "emergency.ateRodenticide.meta.keywords",
+    "en": "my dog ate rat poison, rodenticide poisoning dogs, dog ate rat bait, anticoagulant poisoning dogs, dog ate bromethalin",
+    "ko": "my dog ate rat poison, rodenticide poisoning dogs, dog ate rat bait, anticoagulant poisoning dogs, dog ate bromethalin"
+  },
+  {
+    "key": "emergency.ateRodenticide.meta.title",
+    "en": "My Dog Ate Rat Poison: Emergency Guide | petsMetrics",
+    "ko": "My Dog Ate Rat Poison: Emergency Guide | petsMetrics"
+  },
+  {
+    "key": "emergency.ateRodenticide.riskAssessment.headers.activeIngredient",
+    "en": "Active Ingredient",
+    "ko": "Active Ingredient"
+  },
+  {
+    "key": "emergency.ateRodenticide.riskAssessment.headers.type",
+    "en": "Rodenticide Type",
+    "ko": "Rodenticide Type"
+  },
+  {
+    "key": "emergency.ateRodenticide.science.content",
+    "en": "Anticoagulant rodenticides inhibit vitamin K epoxide reductase (VKOR), preventing recycling of vitamin K. This depletes active clotting factors (II, VII, IX, X), causing spontaneous hemorrhage. Second-generation anticoagulants (brodifacoum, bromadiolone) are 100x more potent than warfarin and persist in the liver for weeks. Bromethalin uncouples oxidative phosphorylation in brain cells, causing cerebral edema and increased intracranial pressure. Cholecalciferol (vitamin D3) causes hypercalcemia, leading to metastatic calcification of kidneys, heart, and blood vessels (ASPCA, 2023).",
+    "ko": "Anticoagulant rodenticides inhibit vitamin K epoxide reductase (VKOR), preventing recycling of vitamin K. This depletes active clotting factors (II, VII, IX, X), causing spontaneous hemorrhage. Second-generation anticoagulants (brodifacoum, bromadiolone) are 100x more potent than warfarin and persist in the liver for weeks. Bromethalin uncouples oxidative phosphorylation in brain cells, causing cerebral edema and increased intracranial pressure. Cholecalciferol (vitamin D3) causes hypercalcemia, leading to metastatic calcification of kidneys, heart, and blood vessels (ASPCA, 2023)."
+  },
+  {
+    "key": "emergency.ateSock.article.description",
+    "en": "Emergency guide for foreign body ingestion in dogs: symptoms, treatment, and prevention.",
+    "ko": "Emergency guide for foreign body ingestion in dogs: symptoms, treatment, and prevention."
+  },
+  {
+    "key": "emergency.ateSock.article.headline",
+    "en": "My Puppy Ate aSock: What to Do Now",
+    "ko": "My Puppy Ate aSock: What to Do Now"
+  },
+  {
+    "key": "emergency.ateSock.article.ogDescription",
+    "en": "Emergency guide: What to do if your dog eats a sock. Intestinal blockage risk and when surgery is needed.",
+    "ko": "Emergency guide: What to do if your dog eats a sock. Intestinal blockage risk and when surgery is needed."
+  },
+  {
+    "key": "emergency.ateSock.article.ogTitle",
+    "en": "My Puppy Ate aSock: What to Do Now | petsMetrics",
+    "ko": "My Puppy Ate aSock: What to Do Now | petsMetrics"
+  },
+  {
+    "key": "emergency.ateSock.banner.subtitle",
+    "en": "Socks can cause life-threatening intestinal blockages in dogs. Do not wait — call your vet immediately for assessment and possible intervention.",
+    "ko": "Socks can cause life-threatening intestinal blockages in dogs. Do not wait — call your vet immediately for assessment and possible intervention."
+  },
+  {
+    "key": "emergency.ateSock.meta.description",
+    "en": "Emergency guide: What to do if your dog eats a sock. Learn about intestinal blockage risk, symptoms, and when surgery is needed. Act fast — time matters.",
+    "ko": "Emergency guide: What to do if your dog eats a sock. Learn about intestinal blockage risk, symptoms, and when surgery is needed. Act fast — time matters."
+  },
+  {
+    "key": "emergency.ateSock.meta.keywords",
+    "en": "my puppy ate a sock, dog ate sock emergency, dog intestinal blockage, dog ate foreign object, sock ingestion dog",
+    "ko": "my puppy ate a sock, dog ate sock emergency, dog intestinal blockage, dog ate foreign object, sock ingestion dog"
+  },
+  {
+    "key": "emergency.ateSock.meta.title",
+    "en": "My Puppy Ate aSock: What to Do Now | petsMetrics",
+    "ko": "My Puppy Ate aSock: What to Do Now | petsMetrics"
+  },
+  {
+    "key": "emergency.ateSock.science.content",
+    "en": "Fabric foreign bodies are particularly dangerous because they can become lodged at the pyloric sphincter (stomach exit) or in the small intestine. Once stuck, they cause a complete blockage — nothing can pass, and the intestinal wall may become necrotic (die) from pressure. This leads to perforation, peritonitis, and death without surgical intervention. Puppies and small dogs are at highest risk due to their narrower intestinal diameter (AVMA, 2023).",
+    "ko": "Fabric foreign bodies are particularly dangerous because they can become lodged at the pyloric sphincter (stomach exit) or in the small intestine. Once stuck, they cause a complete blockage — nothing can pass, and the intestinal wall may become necrotic (die) from pressure. This leads to perforation, peritonitis, and death without surgical intervention. Puppies and small dogs are at highest risk due to their narrower intestinal diameter (AVMA, 2023)."
+  },
+  {
+    "key": "emergency.ateTobacco.article.description",
+    "en": "Emergency guide for nicotine toxicity in dogs: cigarettes, e-liquid, nicotine gum, and patches.",
+    "ko": "Emergency guide for nicotine toxicity in dogs: cigarettes, e-liquid, nicotine gum, and patches."
+  },
+  {
+    "key": "emergency.ateTobacco.article.headline",
+    "en": "My Dog Ate Tobacco/Cigarettes: Emergency Guide",
+    "ko": "My Dog Ate Tobacco/Cigarettes: Emergency Guide"
+  },
+  {
+    "key": "emergency.ateTobacco.article.ogDescription",
+    "en": "Emergency guide: Nicotine is toxic to dogs. Assess risk, symptoms, and treatment.",
+    "ko": "Emergency guide: Nicotine is toxic to dogs. Assess risk, symptoms, and treatment."
+  },
+  {
+    "key": "emergency.ateTobacco.article.ogTitle",
+    "en": "My Dog Ate Tobacco: Emergency Guide | petsMetrics",
+    "ko": "My Dog Ate Tobacco: Emergency Guide | petsMetrics"
+  },
+  {
+    "key": "emergency.ateTobacco.banner.subtitle",
+    "en": "Nicotine is highly toxic to dogs at 20-100mg/kg. E-liquid (vape juice) is especially dangerous due to high concentration. Call ASPCA Poison Control at <strong>(888) 426-4435</strong> immediately.",
+    "ko": "Nicotine is highly toxic to dogs at 20-100mg/kg. E-liquid (vape juice) is especially dangerous due to high concentration. Call ASPCA Poison Control at <strong>(888) 426-4435</strong> immediately."
+  },
+  {
+    "key": "emergency.ateTobacco.meta.description",
+    "en": "Emergency guide: Nicotine in tobacco, cigarettes, and e-liquid is highly toxic to dogs. Learn symptoms (vomiting, tachycardia, seizures), toxic doses, and immediate actions. ASPCA Poison Control: (888) 426-4435.",
+    "ko": "Emergency guide: Nicotine in tobacco, cigarettes, and e-liquid is highly toxic to dogs. Learn symptoms (vomiting, tachycardia, seizures), toxic doses, and immediate actions. ASPCA Poison Control: (888) 426-4435."
+  },
+  {
+    "key": "emergency.ateTobacco.meta.keywords",
+    "en": "my dog ate cigarettes, dog ate nicotine, dog ate vape liquid, tobacco poisoning dogs, dog ate cigarette butt",
+    "ko": "my dog ate cigarettes, dog ate nicotine, dog ate vape liquid, tobacco poisoning dogs, dog ate cigarette butt"
+  },
+  {
+    "key": "emergency.ateTobacco.meta.title",
+    "en": "My Dog Ate Tobacco/Cigarettes: Emergency Guide | petsMetrics",
+    "ko": "My Dog Ate Tobacco/Cigarettes: Emergency Guide | petsMetrics"
+  },
+  {
+    "key": "emergency.ateTobacco.riskAssessment.headers.amount",
+    "en": "Amount",
+    "ko": "Amount"
+  },
+  {
+    "key": "emergency.ateTobacco.riskAssessment.headers.source",
+    "en": "Nicotine Source",
+    "ko": "Nicotine Source"
+  },
+  {
+    "key": "emergency.ateTobacco.science.content",
+    "en": "Nicotine is an alkaloid that binds to nicotinic acetylcholine receptors (nAChRs) in the autonomic ganglia, neuromuscular junctions, and CNS. At low doses, it stimulates receptors causing tachycardia, hypertension, and CNS excitation. At high doses, it causes receptor depolarization blockade, leading to bradycardia, respiratory paralysis, and coma. The biphasic effect (stimulation then depression) is pathognomonic. Dogs metabolize nicotine primarily via hepatic N-oxidation, with a half-life of approximately 1.5 hours. E-liquid poses extreme danger because 1mL can contain 3-24mg of nicotine absorbed rapidly through oral mucosa (ASPCA, 2023).",
+    "ko": "Nicotine is an alkaloid that binds to nicotinic acetylcholine receptors (nAChRs) in the autonomic ganglia, neuromuscular junctions, and CNS. At low doses, it stimulates receptors causing tachycardia, hypertension, and CNS excitation. At high doses, it causes receptor depolarization blockade, leading to bradycardia, respiratory paralysis, and coma. The biphasic effect (stimulation then depression) is pathognomonic. Dogs metabolize nicotine primarily via hepatic N-oxidation, with a half-life of approximately 1.5 hours. E-liquid poses extreme danger because 1mL can contain 3-24mg of nicotine absorbed rapidly through oral mucosa (ASPCA, 2023)."
+  },
+  {
+    "key": "emergency.ateXylitol.article.description",
+    "en": "Emergency guide for xylitol toxicity in dogs: symptoms, treatment, and prevention.",
+    "ko": "Emergency guide for xylitol toxicity in dogs: symptoms, treatment, and prevention."
+  },
+  {
+    "key": "emergency.ateXylitol.article.headline",
+    "en": "Dog Ate Xylitol: What to Do Immediately",
+    "ko": "Dog Ate Xylitol: What to Do Immediately"
+  },
+  {
+    "key": "emergency.ateXylitol.article.ogDescription",
+    "en": "Emergency guide: What to do if your dog eats xylitol. Rapid hypoglycemia and liver failure risk.",
+    "ko": "Emergency guide: What to do if your dog eats xylitol. Rapid hypoglycemia and liver failure risk."
+  },
+  {
+    "key": "emergency.ateXylitol.article.ogTitle",
+    "en": "Dog Ate Xylitol: What to Do Immediately | petsMetrics",
+    "ko": "Dog Ate Xylitol: What to Do Immediately | petsMetrics"
+  },
+  {
+    "key": "emergency.ateXylitol.banner.subtitle",
+    "en": "Xylitol causes rapid hypoglycemia and can lead to liver failure. Even small amounts are life-threatening — call your vet or ASPCA Poison Control at <strong>(888) 426-4435</strong> NOW.",
+    "ko": "Xylitol causes rapid hypoglycemia and can lead to liver failure. Even small amounts are life-threatening — call your vet or ASPCA Poison Control at <strong>(888) 426-4435</strong> NOW."
+  },
+  {
+    "key": "emergency.ateXylitol.meta.description",
+    "en": "Emergency guide: What to do if your dog eats xylitol (birch sugar). Learn about rapid hypoglycemia, liver failure risk, and life-saving treatment steps.",
+    "ko": "Emergency guide: What to do if your dog eats xylitol (birch sugar). Learn about rapid hypoglycemia, liver failure risk, and life-saving treatment steps."
+  },
+  {
+    "key": "emergency.ateXylitol.meta.keywords",
+    "en": "dog ate xylitol what to do, xylitol poisoning dogs, xylitol toxicity dogs, dog ate gum emergency, birch sugar toxic dogs",
+    "ko": "dog ate xylitol what to do, xylitol poisoning dogs, xylitol toxicity dogs, dog ate gum emergency, birch sugar toxic dogs"
+  },
+  {
+    "key": "emergency.ateXylitol.meta.title",
+    "en": "Dog Ate Xylitol: What to Do Immediately | petsMetrics",
+    "ko": "Dog Ate Xylitol: What to Do Immediately | petsMetrics"
+  },
+  {
+    "key": "emergency.ateXylitol.science.content",
+    "en": "Xylitol is a sugar alcohol that triggers a rapid, massive insulin release from the dog's pancreas. This causes blood sugar to plummet within 10-30 minutes. At higher doses, xylitol causes acute liver failure through mechanisms that are not fully understood. Unlike humans, dogs absorb xylitol rapidly and their bodies mistake it for real sugar, triggering this dangerous insulin response (ASPCA, 2023).",
+    "ko": "Xylitol is a sugar alcohol that triggers a rapid, massive insulin release from the dog's pancreas. This causes blood sugar to plummet within 10-30 minutes. At higher doses, xylitol causes acute liver failure through mechanisms that are not fully understood. Unlike humans, dogs absorb xylitol rapidly and their bodies mistake it for real sugar, triggering this dangerous insulin response (ASPCA, 2023)."
+  },
+  {
+    "key": "emergency.ateXylitolGum.article.description",
+    "en": "Emergency guide for xylitol toxicity in dogs: hypoglycemia, liver failure, and life-saving treatment.",
+    "ko": "Emergency guide for xylitol toxicity in dogs: hypoglycemia, liver failure, and life-saving treatment."
+  },
+  {
+    "key": "emergency.ateXylitolGum.article.headline",
+    "en": "My Dog Ate Xylitol Gum: Emergency Guide",
+    "ko": "My Dog Ate Xylitol Gum: Emergency Guide"
+  },
+  {
+    "key": "emergency.ateXylitolGum.article.ogDescription",
+    "en": "Emergency guide: Xylitol causes fatal hypoglycemia and liver failure in dogs. Act immediately.",
+    "ko": "Emergency guide: Xylitol causes fatal hypoglycemia and liver failure in dogs. Act immediately."
+  },
+  {
+    "key": "emergency.ateXylitolGum.article.ogTitle",
+    "en": "My Dog Ate Xylitol Gum: Emergency Guide | petsMetrics",
+    "ko": "My Dog Ate Xylitol Gum: Emergency Guide | petsMetrics"
+  },
+  {
+    "key": "emergency.ateXylitolGum.banner.subtitle",
+    "en": "Xylitol triggers a massive insulin release causing life-threatening hypoglycemia and liver failure. <strong>One piece of gum can kill a small dog.</strong> Go to emergency vet NOW.",
+    "ko": "Xylitol triggers a massive insulin release causing life-threatening hypoglycemia and liver failure. <strong>One piece of gum can kill a small dog.</strong> Go to emergency vet NOW."
+  },
+  {
+    "key": "emergency.ateXylitolGum.meta.description",
+    "en": "Emergency guide: Xylitol (birch sugar) is extremely toxic to dogs. Even one piece of gum causes life-threatening hypoglycemia and liver failure. Learn symptoms and immediate actions. ASPCA Poison Control: (888) 426-4435.",
+    "ko": "Emergency guide: Xylitol (birch sugar) is extremely toxic to dogs. Even one piece of gum causes life-threatening hypoglycemia and liver failure. Learn symptoms and immediate actions. ASPCA Poison Control: (888) 426-4435."
+  },
+  {
+    "key": "emergency.ateXylitolGum.meta.keywords",
+    "en": "my dog ate xylitol gum, xylitol poisoning dogs, dog ate sugar free gum, xylitol toxic to dogs, dog ate birch sugar",
+    "ko": "my dog ate xylitol gum, xylitol poisoning dogs, dog ate sugar free gum, xylitol toxic to dogs, dog ate birch sugar"
+  },
+  {
+    "key": "emergency.ateXylitolGum.meta.title",
+    "en": "My Dog Ate Xylitol Gum: Emergency Guide | petsMetrics",
+    "ko": "My Dog Ate Xylitol Gum: Emergency Guide | petsMetrics"
+  },
+  {
+    "key": "emergency.ateXylitolGum.riskAssessment.headers.xylitolContent",
+    "en": "Xylitol Content",
+    "ko": "Xylitol Content"
+  },
+  {
+    "key": "emergency.ateXylitolGum.science.content",
+    "en": "Xylitol is a sugar alcohol (polyol) that triggers a rapid, exaggerated insulin release from canine beta cells — up to 6-7x the amount released by glucose. This is because dogs metabolize xylitol via the same pathway as glucose but with different kinetics. The resulting hypoglycemia (blood glucose <60mg/dL) causes neurological dysfunction, seizures, and death. At higher doses (>0.5g/kg), xylitol causes acute hepatic necrosis through ATP depletion and oxidative stress. The mechanism is dose-dependent and unique to dogs — cats appear to be less susceptible (ASPCA, 2023).",
+    "ko": "Xylitol is a sugar alcohol (polyol) that triggers a rapid, exaggerated insulin release from canine beta cells — up to 6-7x the amount released by glucose. This is because dogs metabolize xylitol via the same pathway as glucose but with different kinetics. The resulting hypoglycemia (blood glucose <60mg/dL) causes neurological dysfunction, seizures, and death. At higher doses (>0.5g/kg), xylitol causes acute hepatic necrosis through ATP depletion and oxidative stress. The mechanism is dose-dependent and unique to dogs — cats appear to be less susceptible (ASPCA, 2023)."
+  },
+  {
+    "key": "emergency.shared.aspcaLink",
+    "en": "https://www.aspca.org/pet-care/animal-poison-control",
+    "ko": "https://www.aspca.org/pet-care/animal-poison-control"
+  },
+  {
+    "key": "footer.copyright",
+    "en": "petsMetrics. All rights reserved.",
+    "ko": "petsMetrics. All rights reserved."
+  },
+  {
+    "key": "header.logoAlt",
+    "en": "petsMetrics",
+    "ko": "petsMetrics"
+  },
+  {
+    "key": "puppyGrowth.result.predictedRange",
+    "en": "{min} – {max} kg",
+    "ko": "{min} – {max} kg"
+  },
+  {
+    "key": "seo.description",
+    "en": "Free online tools for dog and cat owners. Calculate calories, age, hydration, and more. Based on AAHA, WSAVA & AAFCO standards.",
+    "ko": "Free online tools for dog and cat owners. Calculate calories, age, hydration, and more. Based on AAHA, WSAVA & AAFCO standards."
+  },
+  {
+    "key": "seo.title",
+    "en": "Hunde- & Katzen-Tools | Wissenschaftlich fundierte Berechnungen",
+    "ko": "Hunde- & Katzen-Tools | Wissenschaftlich fundierte Berechnungen"
+  },
+  {
+    "key": "seo.toolsDescription",
+    "en": "Science-based tools for your pets",
+    "ko": "Science-based tools for your pets"
+  },
+  {
+    "key": "seo.toolsTitle",
+    "en": "Kostenlose Tools",
+    "ko": "Kostenlose Tools"
+  },
+  {
+    "key": "toxicLanding.aspcaNumber",
+    "en": "(888) 426-4435",
+    "ko": "(888) 426-4435"
+  },
+  {
+    "key": "toxicLanding.petPoisonNumber",
+    "en": "(855) 764-7661",
+    "ko": "(855) 764-7661"
+  }
+]

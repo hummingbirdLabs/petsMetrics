@@ -1,0 +1,23 @@
+{
+  "searching": "Suche...",
+  "emptyState": "Geben Sie oben einen Lebensmittel- oder Pflanzennamen ein.",
+  "popularSearches": "Beliebte Suchanfragen:",
+  "noResults": "Keine passenden Einträge gefunden. Versuchen Sie einen anderen Suchbegriff.",
+  "affectedSpecies": "Betroffene Tierarten",
+  "form.speciesLabel": "Prüfen für:",
+  "form.searchLabel": "Lebensmittel oder Pflanze suchen",
+  "form.searchPlaceholder": "z.B. \"Trauben\", \"Schokolade\", \"Lilien\"...",
+  "form.clear": "Suche löschen",
+  "result.toxicHeader": "Dieser Eintrag ist giftig für Ihr Haustier. Suchen Sie sofort tierärztliche Hilfe, wenn eine Aufnahme erfolgt ist.",
+  "result.cautionHeader": "Dieser Eintrag erfordert Vorsicht. Nur begrenzte oder beaufsichtigte Exposition.",
+  "result.safeHeader": "Dieser Eintrag ist im Allgemeinen sicher für Ihr Haustier.",
+  "result.symptoms": "Häufige Symptome:",
+  "result.safeAmount": "Falls gefüttert, sichere Menge",
+  "result.safeAmountLabel": "Sichere Menge",
+  "result.emergencyTitle": "Wenn Ihr Haustier diesen Eintrag aufgenommen hat, kontaktieren Sie sofort:",
+  "result.emergencyNumbers": "ASPCA Giftnotruf: (888) 426-4435 · Haustier-Giftnotruf: (855) 764-7661",
+  "result.source": "Quelle",
+  "result.otherResults": "Weitere Treffer",
+  "shareCta.title": "{item} ist {level} für Haustiere — prüfen Sie den Gift-Checker!",
+  "shareCta.sharePrompt": "Ist {item} sicher für Haustiere? Prüfen Sie über 200 Einträge sofort → {url} #HaustierSicherheit #petsMetrics"
+}

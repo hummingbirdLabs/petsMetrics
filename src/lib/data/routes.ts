@@ -70,6 +70,28 @@ export function getAllToolRoutes(): string[] {
     'cat/emergency/ate-garlic',
     'cat/emergency/ate-onion',
     'cat/emergency/ate-chocolate',
+    // FAQ Hub pages - Dog (3 items)
+    'dog/faq/nutrition',
+    'dog/faq/health',
+    'dog/faq/aging',
+    // FAQ Hub pages - Cat (3 items)
+    'cat/faq/nutrition',
+    'cat/faq/health',
+    'cat/faq/aging',
+    // Comparison pages EXT - 4 new comparisons
+    'dog/compare/harness-vs-collar',
+    'shared/compare/pet-insurance-vs-emergency-fund',
+    'dog/compare/grain-free-vs-whole-grain',
+    'cat/compare/scratching-post-vs-cat-tree',
+    // Seasonal Danger pages - Dog (8 items)
+    'dog/seasonal-dangers/summer-heat',
+    'dog/seasonal-dangers/winter-paw-care',
+    'dog/seasonal-dangers/christmas-foods',
+    'dog/seasonal-dangers/halloween-candy',
+    'dog/seasonal-dangers/fireworks-anxiety',
+    'dog/seasonal-dangers/spring-allergies',
+    'dog/seasonal-dangers/thanksgiving',
+    'dog/seasonal-dangers/easter-chocolate',
   ];
 }
 

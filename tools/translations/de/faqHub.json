@@ -1,0 +1,22 @@
+{
+  "breadcrumb.home": "Startseite",
+  "breadcrumb.dog": "Hund-Hub",
+  "breadcrumb.cat": "Katzen-Hub",
+  "breadcrumb.faq": "FAQs",
+  "breadcrumb.nutrition": "Ernährung",
+  "breadcrumb.health": "Gesundheit",
+  "breadcrumb.aging": "Altern & Langlebigkeit",
+  "lastUpdated": "Zuletzt aktualisiert: {date} · Daten geprüft anhand von {sources}.",
+  "overview": "{count} Expertenantworten nach Themen geordnet.",
+  "overviewDetail": "Jede Antwort stammt aus unseren geprüften Tools und forschungsbasierten Inhalten. Klicken Sie auf eine Frage, um sie zu erweitern.",
+  "toc": "Inhaltsverzeichnis",
+  "questions": "Fragen",
+  "goToTool": "{tool} öffnen",
+  "source": "Beantwortet in",
+  "relatedTools": "Verwandte Tools",
+  "references": "Referenzen & Datenquellen",
+  "whyTrust": "Warum unseren Antworten vertrauen?",
+  "trustContent1": "petsMetrics folgt den Richtlinien der AAHA (American Animal Hospital Association), AAFCO, WSAVA und AAFP für alle Ernährungs-, Gesundheits- und Altersthemen. Jede Antwort wird anhand aktueller veterinärmedizinischer Forschung überprüft und vierteljährlich aktualisiert, um die neuesten Erkenntnisse widerzuspiegeln. Unsere Formeln und Empfehlungen basieren auf peer-reviewten Studien — niemals auf anekdotischen Beweisen oder Marketing-Behauptungen.",
+  "trustContent2": "Wir sind transparent bezüglich unserer Grenzen: Jede FAQ gibt klar an, wann individuelle Abweichungen gelten, wann eine tierärztliche Konsultation erforderlich ist und wie stark die Evidenz ist. Wenn die Evidenz unsicher ist, sagen wir das. Dieses Engagement für evidenzbasierte Transparenz unterscheidet petsMetrics von allgemeinen Haustier-Blogs.",
+  "disclaimer": "Diese FAQs bieten ausschließlich allgemeine Bildungsinformationen und stellen keine tierärztliche Beratung dar. Einzelne Haustiere können besondere gesundheitliche Bedürfnisse haben, die von allgemeinen Richtlinien abweichen. Konsultieren Sie immer einen zugelassenen Tierarzt für Entscheidungen bezüglich der spezifischen Gesundheit, Ernährung oder medizinischen Behandlung Ihres Haustiers. In Notfällen kontaktieren Sie sofort Ihre nächstgelegene Tierklinik."
+}
