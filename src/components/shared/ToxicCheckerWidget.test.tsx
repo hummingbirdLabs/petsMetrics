@@ -73,7 +73,7 @@ describe('ToxicCheckerWidget', () => {
 
     render(<ToxicCheckerWidget />);
 
-    expect(screen.getByText('TOXIC')).toBeInTheDocument();
+    expect(screen.getByText('result.toxicHeader')).toBeInTheDocument();
   });
 
   it('displays SAFE badge when a safe item is searched', async () => {
@@ -91,7 +91,7 @@ describe('ToxicCheckerWidget', () => {
 
     render(<ToxicCheckerWidget />);
 
-    expect(screen.getByText('SAFE')).toBeInTheDocument();
+    expect(screen.getByText('result.safeHeader')).toBeInTheDocument();
   });
 
   it('displays CAUTION badge for caution items', async () => {
@@ -109,7 +109,7 @@ describe('ToxicCheckerWidget', () => {
 
     render(<ToxicCheckerWidget />);
 
-    expect(screen.getByText('CAUTION')).toBeInTheDocument();
+    expect(screen.getByText('result.cautionHeader')).toBeInTheDocument();
   });
 
   it('shows loading state when searching', async () => {
