@@ -1,26 +1,22 @@
-'use client';
-
-import { useEffect } from 'react';
-
 /**
  * Root redirect page — / → /en/
  * With output: 'export', no server middleware is available.
- * This client-side redirect handles the root URL for SSG deployment.
+ * Immediate script redirect before React hydration to avoid visible flash.
  */
-export default function RootPage() {
-  useEffect(() => {
-    window.location.replace('/en/');
-  }, []);
 
+export default function RootPage() {
   return (
     <html lang="en">
       <head>
+        <meta charSet="utf-8" />
         <meta httpEquiv="refresh" content="0;url=/en/" />
-        <title>Redirecting to petsMetrics</title>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `location.replace('/en/')`,
+          }}
+        />
       </head>
-      <body>
-        <p>Redirecting to <a href="/en/">petsMetrics</a>...</p>
-      </body>
+      <body />
     </html>
   );
 }
