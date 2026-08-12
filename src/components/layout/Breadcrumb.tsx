@@ -1,6 +1,7 @@
 'use client';
 import { useTranslations } from 'next-intl';
 import { usePageUrlBuilder } from '@/hooks/usePageUrl';
+import { SITE_URL } from '@/constants';
 
 type BreadcrumbItem = {
   label: string;
@@ -22,7 +23,7 @@ export function Breadcrumb({ items, className = '' }: BreadcrumbProps) {
       '@type': 'ListItem',
       position: i + 1,
       name: item.label,
-      item: item.href ? `https://petsmetrics.com${pageUrl(item.href)}` : undefined,
+      item: item.href ? `${SITE_URL}${pageUrl(item.href)}` : undefined,
     })),
   };
 
